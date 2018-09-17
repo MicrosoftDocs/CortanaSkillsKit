@@ -181,7 +181,6 @@ We explore these steps in more detail here.
 
 ### <span id="Handoff"></span><span id="handoff"></span><span id="HANDOFF"></span>Handoff
 
-| --- | --- |
 | ![end to end: find trip no handoff screen ](../images/voicecommands/cortana-backgroundapp-result.png) |
 |--- |
 | Find trip no handoff screen |
@@ -219,8 +218,6 @@ The GUI and TTS strings can be the same, but don’t need to be. Try to keep the
 
 ### <span id="Progress"></span><span id="progress"></span><span id="PROGRESS"></span>Progress
 
-| Screenshot | Description |
-| --- | --- |
 | ![end to end: cancel trip with progress screen ](../images/voicecommands/e2e-canceltrip-progress.png) |
 | --- |
 | Cancel trip with progress screen |  
@@ -258,8 +255,6 @@ Use an action verb that confirms the task is underway.
 
 ### <span id="Confirmation"></span><span id="confirmation"></span><span id="CONFIRMATION"></span>Confirmation
 
-| Screenshot | Description |
-| --- | --- |
 | ![end to end: cancel trip with confirmation screen ](../images/voicecommands/e2e-canceltrip-confirmation.png) |
 | --- |
 | Cancel trip with confirmation screen | 
