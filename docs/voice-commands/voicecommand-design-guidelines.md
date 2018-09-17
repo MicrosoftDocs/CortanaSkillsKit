@@ -181,6 +181,8 @@ We explore these steps in more detail here.
 
 ### <span id="Handoff"></span><span id="handoff"></span><span id="HANDOFF"></span>Handoff
 
+| Name | Example |
+| --- | --- |
 | ![end to end: find trip no handoff screen ](../images/voicecommands/cortana-backgroundapp-result.png) |
 |--- |
 | Find trip no handoff screen |
@@ -188,6 +190,7 @@ We explore these steps in more detail here.
 | ![end to end: cancel trip with handoff screen ](../images/voicecommands/cortana-backgroundapp-progress-result.png) |
 |--- |
 | Cancel trip with handoff screen | 
+
 <br />
 
 Tasks that take less than 500ms for your app to respond, and require no additional information from the user, can be completed without further participation from **Cortana**, other than displaying the completion screen.
@@ -208,14 +211,17 @@ Be clear that the task hasn’t already taken place if the app still needs to re
 
 The GUI and TTS strings can be the same, but don’t need to be. Try to keep the GUI string short to avoid truncation and duplication of other visual assets.
 
-| TTS                                                    | GUI                                 |
-|--------------------------------------------------------|-------------------------------------|
-| Looking for your next Adventure Works trip.            | Looking for your next trip…         |
+| TTS | GUI |
+| --- | --- |
+| Looking for your next Adventure Works trip. | Looking for your next trip… |
 | Searching for your Adventure Works trip to Falls City. | Searching for trip to Falls City... |
+
 <br />
 
 ### <span id="Progress"></span><span id="progress"></span><span id="PROGRESS"></span>Progress
 
+| Screenshot | Description |
+| --- | --- |
 | ![end to end: cancel trip with progress screen ](../images/voicecommands/e2e-canceltrip-progress.png) |
 | --- |
 | Cancel trip with progress screen |  
@@ -243,15 +249,18 @@ Use an action verb that confirms the task is underway.
 
 **TTS**: You should only include a TTS string on the first progress screen. If further progress screens are required, send an empty string, {}, as your TTS string, and provide a GUI string only.
 
-| Conditions                                              | TTS                            | GUI                            |
-|---------------------------------------------------------|--------------------------------|--------------------------------|
+| Conditions  | TTS | GUI |
+| --- | --- | --- |
 | ENTITY READ ON PRIOR TURN / ENTITY SHOWN ON DISPLAY     | Cancelling this trip…          | Cancelling this trip…          |
 | ENTITY NOT READ ON PRIOR TURN / ENTITY SHOWN ON DISPLAY | Cancelling your trip to Vegas… | Cancelling this trip…          |
 | ENTITY NOT READ ON PRIOR TURN / ENTITY NOT SHOWN        | Cancelling your trip to Vegas… | Cancelling your trip to Vegas… |
+
 <br />
 
 ### <span id="Confirmation"></span><span id="confirmation"></span><span id="CONFIRMATION"></span>Confirmation
 
+| Screenshot | Description |
+| --- | --- |
 | ![end to end: cancel trip with confirmation screen ](../images/voicecommands/e2e-canceltrip-confirmation.png) |
 | --- |
 | Cancel trip with confirmation screen | 
@@ -288,13 +297,14 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 
 **TTS**: For clarity, always reference the specific item or entity, unless it was read out by the system on the previous turn.
 
-| Conditions                                              | TTS                                        | GUI                                           |
-|---------------------------------------------------------|--------------------------------------------|-----------------------------------------------|
+| Conditions | TTS | GUI |
+| --- | --- | --- |
 | ENTITY NOT READ ON PRIOR TURN / ENTITY SHOWN ON DISPLAY | Do you wanna cancel Vegas Tech Conference? | Cancel this trip?                             |
 | ENTITY NOT READ ON PRIOR TURN / ENTITY NOT SHOWN        | Do you wanna cancel Vegas Tech Conference? | Cancel Vegas Tech Conference?                 |
 | ENTITY READ ON PRIOR TURN / ENTITY NOT SHOWN            | Do you wanna cancel this trip?             | Cancel this trip?                             |
 | REPROMPT WITH ENTITY SHOWN                              | Did you wanna cancel this trip?            | Did you want to cancel this trip?             |
 | REPROMPT WITH ENTITY NOT SHOWN                          | Did you wanna cancel this trip?            | Did you want to cancel Vegas Tech Conference? |
+
 <br />
 
 ### <span id="Disambiguation"></span><span id="disambiguation"></span><span id="DISAMBIGUATION"></span>Disambiguation
@@ -330,6 +340,7 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 | PROMPT - 3 OR FEWER ITEMS  | Which Vegas trip do you wanna cancel? Vegas Tech Conference or Party in Vegas? | Which one do you want to cancel? |
 | PROMPT - MORE THAN 3 ITEMS | Which Vegas trip do you wanna cancel?                                          | Which one do you want to cancel? |
 | REPROMPT                   | Which Vegas trip did you wanna cancel?                                         | Which one do you want to cancel? |
+
 <br />
 
 ### <span id="Completion"></span><span id="completion"></span><span id="COMPLETION"></span>Completion
@@ -337,6 +348,7 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 | ![end to end: cancel trip with completion screen ](../images/voicecommands/e2e-canceltrip-completion.png) |
 | --- |
 | Cancel trip with completion screen |
+
 <br />
 
 On successful task completion, your app should inform the user that the requested task was completed successfully.
@@ -357,14 +369,14 @@ If the entity is shown, or it has been referenced on prior turn, only reference 
 |--------------------------------------------------|-------------------------------------------------|------------------------------------|
 | ENTITY SHOWN / ENTITY READ ON PRIOR TURN         | I’ve cancelled this trip.                       | Cancelled this trip.               |
 | ENTITY NOT SHOWN / ENTITY NOT READ ON PRIOR TURN | I’ve cancelled your Vegas Tech Conference trip. | Cancelled "Vegas Tech Conference." |
-<br />
+
 
 ### <span id="Error"></span><span id="error"></span><span id="ERROR"></span>Error
 
 | ![end to end: cancel trip with error screen](../images/voicecommands/e2e-canceltrip-error.png) |
 | --- |
 | Cancel trip with error screen |
-<br />
+
 
 When one of the following errors occur, **Cortana** displays the same generic error message.
 
