@@ -147,6 +147,8 @@ Here are the supported templates (with examples):
 | Name | Example |
 | --- | --- |
 | Title only  | ![Title only](../images/voicecommands/voicecommandcontenttiletype-titleonly-small.png) |
+
+
 | Title with text   | ![Title with text](../images/voicecommands/voicecommandcontenttiletype-titlewithtext-small.png) |
 | Title with 68x68 icon   | no image |
 | Title with 68x68 icon and text   | ![Title with 68x68 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x68iconandtext-small.png) |
