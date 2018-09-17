@@ -191,6 +191,7 @@ Here, we illustrate the Cortana flight confirmation experience.
 | 1. Estella books a flight through Blue Yonder Airlines and receives a confirmation email. | 2. She goes to her Start menu and taps the Cortana tile. | 3.Cortana offers to track Estella's flight. Estella taps yes. |
 | ![Cortana tracking feedback](../images/email/email-cortana-feedback.png) | ![Cortana live tile](../images/email/email-cortana-livetile.png) | ![Updated flight info on Cortana canvas](../images/email/email-cortana-status.png) |
 | 4. Cortana informs Estella that she will start receiving updates 24 hours before departure. | 5. On the day of the flight, the latest flight status is displayed on the Cortana live tile.  | 6. Estella taps the tile and Cortana displays the flight information. |
+
 <br />
 
 ### Complex flight confirmation
