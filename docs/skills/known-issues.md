@@ -1,4 +1,4 @@
-﻿---
+---
 title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
 author: richbrun
@@ -124,7 +124,7 @@ Cortana Skills currently does not provide a Smart Home Skill API. However, a cus
 
 The likely causes are as follows:
 
-* Cortana supports [SSML v1.0](http://www.w3.org/TR/speech-synthesis/) while Alexa supports some [SSML v1.1](http://www.w3.org/TR/speech-synthesis11/) tags, primarily the [w](http://www.w3.org/TR/speech-synthesis11/#edef_word) tag.
+* Cortana supports [SSML v1.0](https://www.w3.org/TR/speech-synthesis/) while Alexa supports some [SSML v1.1](https://www.w3.org/TR/speech-synthesis11/) tags, primarily the [w](https://www.w3.org/TR/speech-synthesis11/#edef_word) tag.
 * Alexa and Cortana support different phonetic alphabets for the phoneme tag:
   * Alexa: 
     * International Phonetic Alphabet (IPA)

@@ -48,7 +48,7 @@ By integrating the basic functionality of your app, and providing a central entr
 * [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

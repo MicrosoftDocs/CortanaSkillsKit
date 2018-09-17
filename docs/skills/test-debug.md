@@ -1,4 +1,4 @@
-﻿---
+---
 title: Testing and debugging Cortana Skills
 description: Tips on testing and debugging Cortana Skills.
 author: richbrun
@@ -71,9 +71,9 @@ The following provides suggestions for solving common problems.
 
 ### Stack Overflow forums
 
-- [Bot Framework](http://stackoverflow.com/questions/tagged/botframework)
-- [Cortana Skills Kit](http://stackoverflow.com/questions/tagged/cortana-skills-kit)
-- [LUIS](http://stackoverflow.com/questions/tagged/luis)
+- [Bot Framework](https://stackoverflow.com/questions/tagged/botframework)
+- [Cortana Skills Kit](https://stackoverflow.com/questions/tagged/cortana-skills-kit)
+- [LUIS](https://stackoverflow.com/questions/tagged/luis)
 - [Cognitive Services](https://stackoverflow.com/questions/tagged/microsoft-cognitive)
 
 

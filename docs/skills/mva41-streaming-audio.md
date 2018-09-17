@@ -39,7 +39,7 @@ To increase the speed at which Cortana speaks, revise the **MixtapeIntent** meth
             var response = context.MakeMessage();
             response.Text = "Welcome to Mixtape! Let's find a song to play.";
 
-            var ssml = @"<speak version=""1.0"" xmlns = ""http://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
+            var ssml = @"<speak version=""1.0"" xmlns = ""https://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
                 <prosody rate=""fast"">
                 Welcome to Mixtape! Let's find a song to play. 
                 </prosody>
@@ -63,7 +63,7 @@ You can also use SSML to embed an audio clip in Cortana's response. For example,
             var response = context.MakeMessage();
             response.Text = "Welcome to Mixtape! Let's find a song to play.";
 
-            var ssml = @"<speak version=""1.0"" xmlns = ""http://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
+            var ssml = @"<speak version=""1.0"" xmlns = ""https://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
                 <prosody rate=""fast"">
                 Welcome to Mixtape! 
                 <audio src=""https://myaudio/tada.mp3>""/>

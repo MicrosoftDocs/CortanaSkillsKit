@@ -1,4 +1,4 @@
-﻿---
+---
 title: Privacy policy guidelines 
 description: Provides guidelines for creating a privacy policy for your Cortana skill
 author: richbrun
@@ -22,8 +22,8 @@ Your privacy policy, together with any disclosures or consents you provide withi
 
 Your privacy policy must be kept up-to-date as you add new features and functionality to your skill. You'll need to provide a link to your privacy policy and terms of service with your skill submission for publication in the Cortana Skills Store. Such links will be made available to users in the Cortana Skills Store and related end user facing Cortana Skills description. If you don’t have a privacy statement, here are a couple third-party resources that might be of some assistance:
 
-* Future of Privacy Forum – [Application Privacy Policy Generator](http://www.applicationprivacy.org/do-tools/privacy-policy-generator/)
-* Iubenda – [Privacy Policy Generator](http://www.iubenda.com/en)
+* Future of Privacy Forum – [Application Privacy Policy Generator](https://www.applicationprivacy.org/do-tools/privacy-policy-generator/)
+* Iubenda – [Privacy Policy Generator](https://www.iubenda.com/en)
 
 ## Next steps
 

@@ -34,7 +34,7 @@ If you want to activate an app in the background using voice commands, see [Acti
 
 > A voice command definition can vary in complexity. It can support anything from a single, constrained utterance to a collection of more flexible, natural language utterances, all denoting the same intent.
 
-To demonstrate foreground app features, we'll use a trip planning and management app named **Adventure Works** from the [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899).
+To demonstrate foreground app features, we'll use a trip planning and management app named **Adventure Works** from the [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899).
 
 To create a new **Adventure Works** trip without **Cortana**, a user would launch the app and navigate to the **New trip** page. To view an existing trip, a user would launch the app, navigate to the **Upcoming trips** page, and select the trip.
 
@@ -106,7 +106,7 @@ We recommend that you mark the default language on string resource files (such a
 ## <span id="Edit_the_VCD_file"></span><span id="edit_the_vcd_file"></span><span id="EDIT_THE_VCD_FILE"></span>Edit the VCD file
 
 
-Add a **VoiceCommands** element with an **xmlns** attribute pointing to `http://schemas.microsoft.com/voicecommands/1.2`.
+Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https://schemas.microsoft.com/voicecommands/1.2`.
 
 1. For each language supported by your app, create a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) element that contains the voice commands supported by your app.
 
@@ -138,7 +138,7 @@ Here's a portion of the [**VCD**](https://msdn.microsoft.com/library/windows/app
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="en-us" Name="AdventureWorksCommandSet_en-us">
     <AppName> Adventure Works </AppName>
     <Example> Show trip to London </Example>
@@ -390,7 +390,7 @@ private string SemanticInterpretation(string interpretationKey, SpeechRecognitio
 * [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

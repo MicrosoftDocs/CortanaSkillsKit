@@ -53,7 +53,7 @@ Now that you configured your Cortana skill to request user profile data, you can
             var response = context.MakeMessage();
             response.Text = "Welcome to Mixtape, " + userName + "! Let's find a song to play.";
 
-            var ssml = @"<speak version=""1.0"" xmlns = ""http://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
+            var ssml = @"<speak version=""1.0"" xmlns = ""https://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
                 <prosody rate=""fast"">
                 Welcome to Mixtape" + userName + @"! 
                 <audio src=""https://myaudio/tada.mp3>""/>

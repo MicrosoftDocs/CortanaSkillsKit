@@ -53,7 +53,7 @@ To add a visual interface element that displays a title heading and text to the 
 
         AudioCard card = new AudioCard
         { 
-            Media = new MediaUrl[] { new MediaUrl("http://myaudio.azurewebsites.net/song.mp3") }
+            Media = new MediaUrl[] { new MediaUrl("https://myaudio.azurewebsites.net/song.mp3") }
         };
 
         response.Attachments.Add(visuals.ToAttachment());

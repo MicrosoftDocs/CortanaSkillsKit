@@ -33,7 +33,7 @@ Adaptive Cards can include elements, containers, actions, and inputs. A basic Ad
 
 The Adaptive Cards Visualizer provides an interactive preview environment where you can view and edit an adaptive card's JSON schema, and see the results in a preview pane:
 
-http://adaptivecards.io/visualizer/
+https://adaptivecards.io/visualizer/
 
 For example, the following text block provides the title text for the Adaptive Cards Visualizer's sample card:
 
@@ -71,4 +71,4 @@ To create an Adaptive Card using .NET, first install the `Microsoft.AdaptiveCard
     await context.PostAsync(response);
     context.Wait(MessageReceived);
 
-For more information about Adaptive Cards, see [Adaptive Cards](http://adaptivecards.io/). For an additional example of creating an Adaptive Card using .NET, see [Add an Adaptive card to a message](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card).
+For more information about Adaptive Cards, see [Adaptive Cards](https://adaptivecards.io/). For an additional example of creating an Adaptive Card using .NET, see [Add an Adaptive card to a message](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card).

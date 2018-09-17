@@ -155,7 +155,7 @@ Here is a VCD file that demonstrates various ways to provide more natural langua
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.1">
   <CommandSet xml:lang="en-us" Name="commandSet_en-us">
     <AppName>Adventure Works</AppName>
     <Example> When is my trip to Las Vegas? </Example>
@@ -208,7 +208,7 @@ Here is a VCD file that demonstrates various ways to provide more natural langua
 * [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

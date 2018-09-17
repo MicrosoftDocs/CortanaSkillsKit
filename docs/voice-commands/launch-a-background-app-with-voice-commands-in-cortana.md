@@ -31,7 +31,7 @@ If you want to activate an app to the foreground using voice commands, see [Acti
 >
 > A voice command definition can vary in complexity. It can support anything from a single, constrained utterance to a collection of more flexible, natural language utterances, all denoting the same intent.
 
-To demonstrate background app features, we'll use a trip planning and management app named **Adventure Works** from the [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899).
+To demonstrate background app features, we'll use a trip planning and management app named **Adventure Works** from the [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899).
 
 Here's an overview of the **Adventure Works** app integrated with the **Cortana** canvas.
 
@@ -292,7 +292,7 @@ Here's the manifest from the Adventure Works app:
 
 ## <span id="Edit_the_VCD_file"></span><span id="edit_the_vcd_file"></span><span id="EDIT_THE_VCD_FILE"></span>Edit the VCD file
 
-1. Add a **VoiceCommands** element with an **xmlns** attribute pointing to `http://schemas.microsoft.com/voicecommands/1.2`.
+1. Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https://schemas.microsoft.com/voicecommands/1.2`.
 
 2. For each language supported by your app, create a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) element that contains the voice commands supported by your app.
 
@@ -323,7 +323,7 @@ Here's a portion of the [**VCD**](https://msdn.microsoft.com/library/windows/app
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="en-us" Name="AdventureWorksCommandSet_en-us">
     <AppName> Adventure Works </AppName>
     <Example> Show trip to London </Example>
@@ -757,7 +757,7 @@ If the app takes longer than .5 seconds to make the call, **Cortana** inserts a 
 * [Guidelines for tile and icon assets](https://msdn.microsoft.com/library/windows/apps/mt412102)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

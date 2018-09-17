@@ -23,10 +23,10 @@ Schema.org is a standardized vocabulary and data model for machine-readable sema
 ### Microdata
 Microdata is the preferred option for adding [schema.org](https://schema.org/) annotations in-line with the body of content in your email.
 
-Microdata is a set of HTML5 attributes and an associated usage model for adding semantic information to HTML documents, including email. In Microdata, you set the value of an itemtype attribute to a Schema.org class, such as [http://schema.org/Thing](http://schema.org/Thing), and then describe one or more properties of that class by using the **itemprop** attribute with its value set to the name of a [schema.org](https://schema.org/) property, such as "description". The **itemscope** attribute associates child elements of an HTML element with a class.  
+Microdata is a set of HTML5 attributes and an associated usage model for adding semantic information to HTML documents, including email. In Microdata, you set the value of an itemtype attribute to a Schema.org class, such as [https://schema.org/Thing](https://schema.org/Thing), and then describe one or more properties of that class by using the **itemprop** attribute with its value set to the name of a [schema.org](https://schema.org/) property, such as "description". The **itemscope** attribute associates child elements of an HTML element with a class.  
 
 ### JSON-LD 
-JSON-LD is a JSON-based syntax that describes the semantics of an HTML document within the scope of a `<script>` tag. In JSON-LD, set the `@context` key to “http://schema.org”, set the `@type` key to the name of a Schema.org class, and then use Schema.org property names as the value of keys describing the properties of your typed objects. JSON-LD is a good option for representing semantics in the scope of a well-defined and consolidated JSON object.
+JSON-LD is a JSON-based syntax that describes the semantics of an HTML document within the scope of a `<script>` tag. In JSON-LD, set the `@context` key to “https://schema.org”, set the `@type` key to the name of a Schema.org class, and then use Schema.org property names as the value of keys describing the properties of your typed objects. JSON-LD is a good option for representing semantics in the scope of a well-defined and consolidated JSON object.
 
 ## <a name="flightinfo"></a>Exposing flight information to Cortana
 
@@ -60,11 +60,11 @@ Defines a flight reservation. This is the parent class for all flight data.
     
     The flight being reserved.
 
-[`Person`](http://schema.org/Person)
+[`Person`](https://schema.org/Person)
 
 Defines a person.
 
-- [`name`](http://schema.org/name)
+- [`name`](https://schema.org/name)
     
     The name of the person on the ticket.
 
@@ -88,7 +88,7 @@ Defines the flight that was reserved.
 
     The date and time the flight arrives, expressed in ISO 8601 format.
 
-- [`provider`](http://schema.org/provider) 
+- [`provider`](https://schema.org/provider) 
 
     The agency through which the flight was reserved.
 
@@ -121,25 +121,25 @@ For this example we demonstrate a reservation confirmation email for a one-way, 
 
 #### HTML
 ```html
-<div itemscope itemtype="http://schema.org/FlightReservation">
+<div itemscope itemtype="https://schema.org/FlightReservation">
   <meta itemprop="reservationNumber" content="QWERT0123456789"/>
-  <meta itemprop="reservationStatus" content="http://schema.org/Confirmed"/>
-  <div itemprop="underName" itemscope itemtype="http://schema.org/Person">
+  <meta itemprop="reservationStatus" content="https://schema.org/Confirmed"/>
+  <div itemprop="underName" itemscope itemtype="https://schema.org/Person">
     <meta itemprop="name" content="Estella Gallagher"/>
   </div>
-  <div itemprop="reservationFor" itemscope itemtype="http://schema.org/Flight">
+  <div itemprop="reservationFor" itemscope itemtype="https://schema.org/Flight">
     <meta itemprop="flightNumber" content="123"/>
-    <div itemprop="departureAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="departureAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="Seattle-Tacoma International Airport"/>
       <meta itemprop="iataCode" content="SEA"/>
     </div>
-    <div itemprop="arrivalAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="arrivalAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="John F. Kennedy International Airport"/>
       <meta itemprop="iataCode" content="JFK"/>
     </div>
     <meta itemprop="departureTime" content="2014-04-02T10:32:00Z"/>
     <meta itemprop="arrivalTime" content="2014-04-02T11:45:00Z"/>
-    <div itemprop="airline" itemscope itemtype="http://schema.org/Airline">
+    <div itemprop="airline" itemscope itemtype="https://schema.org/Airline">
       <meta itemprop="name" content="Blue Yonder Airlines"/>
       <meta itemprop="iataCode" content="BY"/>
     </div>
@@ -151,10 +151,10 @@ For this example we demonstrate a reservation confirmation email for a one-way, 
 ```json
 <script type="application/ld+json"> 
 { 
-  "@context": "http://schema.org/", 
+  "@context": "https://schema.org/", 
   "@type": "FlightReservation", 
   "reservationNumber": "QWERT0123456789",
-  "reservationStatus": "http://schema.org/Confirmed", 
+  "reservationStatus": "https://schema.org/Confirmed", 
   "underName":{ 
     "@type": "Person", 
     "name": "Estella Gallagher"
@@ -205,97 +205,97 @@ Each `FlightReservation` item describes a single, non-stop flight for a single p
 
 #### HTML
 ```html
-<div itemscope itemtype="http://schema.org/FlightReservation">
+<div itemscope itemtype="https://schema.org/FlightReservation">
   <meta itemprop="reservationNumber" content="QWERT0123456789"/>
-  <meta itemprop="reservationStatus" content="http://schema.org/Confirmed"/>
-  <div itemprop="underName" itemscope itemtype="http://schema.org/Person">
+  <meta itemprop="reservationStatus" content="https://schema.org/Confirmed"/>
+  <div itemprop="underName" itemscope itemtype="https://schema.org/Person">
     <meta itemprop="name" content="Estella Gallagher"/>
   </div>
-  <div itemprop="reservationFor" itemscope itemtype="http://schema.org/Flight">
+  <div itemprop="reservationFor" itemscope itemtype="https://schema.org/Flight">
     <meta itemprop="flightNumber" content="123"/>
-    <div itemprop="departureAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="departureAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content=" Seattle-Tacoma International Airport"/>
       <meta itemprop="iataCode" content="SEA"/>
     </div>
-    <div itemprop="arrivalAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="arrivalAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="Chicago O'Hare International Airport"/>
       <meta itemprop="iataCode" content="ORD"/>
     </div>
     <meta itemprop="departureTime" content="2014-04-02T02:52:00Z"/>
     <meta itemprop="arrivalTime" content="2014-04-02T06:21:00Z"/>
-    <div itemprop="airline" itemscope itemtype="http://schema.org/Airline">
+    <div itemprop="airline" itemscope itemtype="https://schema.org/Airline">
       <meta itemprop="name" content="Blue Yonder Airlines"/>
       <meta itemprop="iataCode" content="BY"/>
     </div>
   </div>
 </div>
-<div itemscope itemtype="http://schema.org/FlightReservation">
+<div itemscope itemtype="https://schema.org/FlightReservation">
   <meta itemprop="reservationNumber" content="ASDFG0987654321"/>
-  <meta itemprop="reservationStatus" content="http://schema.org/Confirmed"/>
-  <div itemprop="underName" itemscope itemtype="http://schema.org/Person">
+  <meta itemprop="reservationStatus" content="https://schema.org/Confirmed"/>
+  <div itemprop="underName" itemscope itemtype="https://schema.org/Person">
     <meta itemprop="name" content="Estella Gallagher"/>
   </div>
-  <div itemprop="reservationFor" itemscope itemtype="http://schema.org/Flight">
+  <div itemprop="reservationFor" itemscope itemtype="https://schema.org/Flight">
     <meta itemprop="flightNumber" content="456"/>
-    <div itemprop="departureAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="departureAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="Chicago O'Hare International Airport"/>
       <meta itemprop="iataCode" content="ORD"/>
     </div>
-    <div itemprop="arrivalAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="arrivalAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="John F. Kennedy International Airport"/>
       <meta itemprop="iataCode" content="JFK"/>
     </div>
     <meta itemprop="departureTime" content="2014-04-02T07:19:00Z"/>
     <meta itemprop="arrivalTime" content="2014-04-02T10:45:00Z"/>
-    <div itemprop="airline" itemscope itemtype="http://schema.org/Airline">
+    <div itemprop="airline" itemscope itemtype="https://schema.org/Airline">
       <meta itemprop="name" content="Blue Yonder Airlines"/>
       <meta itemprop="iataCode" content="BY"/>
     </div>
   </div>
 </div>
-<div itemscope itemtype="http://schema.org/FlightReservation">
+<div itemscope itemtype="https://schema.org/FlightReservation">
   <meta itemprop="reservationNumber" content="ZXCVB0123456789"/>
-  <meta itemprop="reservationStatus" content="http://schema.org/Confirmed"/>
-  <div itemprop="underName" itemscope itemtype="http://schema.org/Person">
+  <meta itemprop="reservationStatus" content="https://schema.org/Confirmed"/>
+  <div itemprop="underName" itemscope itemtype="https://schema.org/Person">
     <meta itemprop="name" content="Barney Desimone"/>
   </div>
-  <div itemprop="reservationFor" itemscope itemtype="http://schema.org/Flight">
+  <div itemprop="reservationFor" itemscope itemtype="https://schema.org/Flight">
     <meta itemprop="flightNumber" content="123"/>
-    <div itemprop="departureAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="departureAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content=" Seattle-Tacoma International Airport"/>
       <meta itemprop="iataCode" content="SEA"/>
     </div>
-    <div itemprop="arrivalAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="arrivalAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="Chicago O'Hare International Airport"/>
       <meta itemprop="iataCode" content="ORD"/>
     </div>
     <meta itemprop="departureTime" content="2014-04-02T02:52:00Z"/>
     <meta itemprop="arrivalTime" content="2014-04-02T06:21:00Z"/>
-    <div itemprop="airline" itemscope itemtype="http://schema.org/Airline">
+    <div itemprop="airline" itemscope itemtype="https://schema.org/Airline">
       <meta itemprop="name" content="Blue Yonder Airlines"/>
       <meta itemprop="iataCode" content="BY"/>
     </div>
   </div>
 </div>
-<div itemscope itemtype="http://schema.org/FlightReservation">
+<div itemscope itemtype="https://schema.org/FlightReservation">
   <meta itemprop="reservationNumber" content="YUIOP0987654321"/>
-  <meta itemprop="reservationStatus" content="http://schema.org/Confirmed"/>
-  <div itemprop="underName" itemscope itemtype="http://schema.org/Person">
+  <meta itemprop="reservationStatus" content="https://schema.org/Confirmed"/>
+  <div itemprop="underName" itemscope itemtype="https://schema.org/Person">
     <meta itemprop="name" content="Barney Desimone"/>
   </div>
-  <div itemprop="reservationFor" itemscope itemtype="http://schema.org/Flight">
+  <div itemprop="reservationFor" itemscope itemtype="https://schema.org/Flight">
     <meta itemprop="flightNumber" content="456"/>
-    <div itemprop="departureAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="departureAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="Chicago O'Hare International Airport"/>
       <meta itemprop="iataCode" content="ORD"/>
     </div>
-    <div itemprop="arrivalAirport" itemscope itemtype="http://schema.org/Airport">
+    <div itemprop="arrivalAirport" itemscope itemtype="https://schema.org/Airport">
       <meta itemprop="name" content="John F. Kennedy International Airport"/>
       <meta itemprop="iataCode" content="JFK"/>
     </div>
     <meta itemprop="departureTime" content="2014-04-02T07:19:00Z"/>
     <meta itemprop="arrivalTime" content="2014-04-02T10:45:00Z"/>
-    <div itemprop="airline" itemscope itemtype="http://schema.org/Airline">
+    <div itemprop="airline" itemscope itemtype="https://schema.org/Airline">
       <meta itemprop="name" content="Blue Yonder Airlines"/>
       <meta itemprop="iataCode" content="BY"/>
     </div>
@@ -306,10 +306,10 @@ Each `FlightReservation` item describes a single, non-stop flight for a single p
 ```json
 <script type="application/ld+json"> 
 [{ 
-  "@context": "http://schema.org/", 
+  "@context": "https://schema.org/", 
   "@type": "FlightReservation", 
   "reservationNumber": "QWERT0123456789",
-  "reservationStatus": "http://schema.org/Confirmed", 
+  "reservationStatus": "https://schema.org/Confirmed", 
   "underName":{ 
     "@type": "Person", 
     "name": "Estella Gallagher"
@@ -337,10 +337,10 @@ Each `FlightReservation` item describes a single, non-stop flight for a single p
   } 
 },
 {
-  "@context": "http://schema.org/", 
+  "@context": "https://schema.org/", 
   "@type": "FlightReservation", 
   "reservationNumber": "ASDFG0987654321",
-  "reservationStatus": "http://schema.org/Confirmed", 
+  "reservationStatus": "https://schema.org/Confirmed", 
   "underName":{ 
     "@type": "Person", 
     "name": "Estella Gallagher"
@@ -368,10 +368,10 @@ Each `FlightReservation` item describes a single, non-stop flight for a single p
   } 
 },
 {
-  "@context": "http://schema.org/", 
+  "@context": "https://schema.org/", 
   "@type": "FlightReservation", 
   "reservationNumber": "ZXCVB0123456789",
-  "reservationStatus": "http://schema.org/Confirmed", 
+  "reservationStatus": "https://schema.org/Confirmed", 
   "underName":{ 
     "@type": "Person", 
     "name": "Barney Desimone"
@@ -399,10 +399,10 @@ Each `FlightReservation` item describes a single, non-stop flight for a single p
   } 
 },
 {
-  "@context": "http://schema.org/", 
+  "@context": "https://schema.org/", 
   "@type": "FlightReservation", 
   "reservationNumber": "YUIOP0987654321",
-  "reservationStatus": "http://schema.org/Confirmed", 
+  "reservationStatus": "https://schema.org/Confirmed", 
   "underName":{ 
     "@type": "Person", 
     "name": "Barney Desimone"
