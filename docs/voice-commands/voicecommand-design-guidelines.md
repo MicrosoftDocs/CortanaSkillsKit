@@ -181,7 +181,6 @@ We explore these steps in more detail here.
 
 ### <span id="Handoff"></span><span id="handoff"></span><span id="HANDOFF"></span>Handoff
 
-| Name | Example |
 | --- | --- |
 | ![end to end: find trip no handoff screen ](../images/voicecommands/cortana-backgroundapp-result.png) |
 |--- |
