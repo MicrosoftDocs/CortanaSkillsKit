@@ -147,16 +147,16 @@ Here are the supported templates (with examples):
 | Name | Example |
 | --- | --- |
 | Title only  | ![Title only](../images/voicecommands/voicecommandcontenttiletype-titleonly-small.png) |
+| Title with text | ![Title with text](../images/voicecommands/voicecommandcontenttiletype-titlewithtext-small.png) |
+| Title with 68x68 icon | no image |
+| Title with 68x68 icon and text | ![Title with 68x68 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x68iconandtext-small.png) |
+| Title with 68x92 icon | no image |
+| Title with 68x92 icon and text | ![Title with 68x92 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x92iconandtext-small.png) |
+| Title with 280x140 icon | no image |
+| Title with 280x140 icon and text | ![Title with 280x140 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith280x140iconandtext-small.png) |
 
-
-| Title with text   | ![Title with text](../images/voicecommands/voicecommandcontenttiletype-titlewithtext-small.png) |
-| Title with 68x68 icon   | no image |
-| Title with 68x68 icon and text   | ![Title with 68x68 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x68iconandtext-small.png) |
-| Title with 68x92 icon   | no image |
-| Title with 68x92 icon and text    | ![Title with 68x92 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x92iconandtext-small.png) |
-| Title with 280x140 icon   | no image |
-| Title with 280x140 icon and text    | ![Title with 280x140 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith280x140iconandtext-small.png) |
 <br />
+
 See [VoiceCommandContentTileType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.voicecommands.voicecommandcontenttiletype.aspx) for more info on Cortana templates.
 
 ## <span id="Example"></span><span id="example"></span><span id="EXAMPLE"></span>Example
