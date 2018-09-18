@@ -37,11 +37,19 @@
     "globalMetadata": {
       "breadcrumb_path": "/cortana/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "uhfHeaderId": "MSDocsHeader-Cortana",
+      "titleSuffix": "Cortana",
+      "ms.prod": "windows",
+      "ms.date": "9/11/2018",
+      "author": "JohnBucyMSFT", 
+      "ms.author": "jobucy",
+      "keywords": "Cortana, AI, Skills Kit, Tutorials, Samples, APIs, Quickstart",
+      "searchScope": ["Cortana"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/CortanaSkillsKit"
     },
     "fileMetadata": {},
     "template": [],
     "dest": "Cortana",
     "markdownEngineName": "markdig"
   }
-}
