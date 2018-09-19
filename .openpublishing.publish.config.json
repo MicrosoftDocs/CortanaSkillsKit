@@ -3,7 +3,7 @@
     {
       "docset_name": "CortanaSkillsKit",
       "build_source_folder": "CortanaSkillsKit/docs",
-      "build_output_subfolder": "CortanaSkillsKit",
+      "build_output_subfolder": "CortanaSkillsKit/docs",
       "locale": "en-us",
       "monikers": [],
       "moniker_ranges": [],
