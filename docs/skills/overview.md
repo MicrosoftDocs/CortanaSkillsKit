@@ -2,7 +2,6 @@
 title: Overview of Cortana Skills - Cortana skills design and development
 description: Provides an overview of Cortana Skills Kit and how you can use it to extend Cortana so your users can use Cortana to interact with your service.
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.author: scottwhi
 ms.date: 9/21/2017
 ms.topic: article
 keywords: cortana
