@@ -1,14 +1,8 @@
 ---
 title: Using client code with Cortana skills
 description: Describes how to use client code with a Cortana skill.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stsau
 ms.date: 1/5/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

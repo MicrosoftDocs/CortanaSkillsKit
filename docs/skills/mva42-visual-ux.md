@@ -1,14 +1,9 @@
 ---
 title: Adding visual elements to Cortana skills
 description: Describes how to develop a Cortana skill that uses visual elements.
-author: v-stsau
-manager: mujtabak
 label: Conceptual
-
-ms.author: v-stsau
 ms.date: 1/3/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

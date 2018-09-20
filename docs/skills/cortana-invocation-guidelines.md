@@ -1,13 +1,9 @@
 ---
 title: Cortana invocation guidelines
 description: Choose an invocation name that is easily spoken and readily recognized by the Cortana natural language speech engine.  
-author: richbrun
-label: Conceptual
 ms.assetid: 8887c784-abc1-434c-b0ef-01ec71ddf11d
-ms.author: v-stwohl
 ms.date: 05/31/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

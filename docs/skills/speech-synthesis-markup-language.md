@@ -1,13 +1,9 @@
 ---
 title: Speech Synthesis Markup Language (SSML) Reference
 description: Overview of the SSML schema used by Cortana.
-author: richbrun
-label: Conceptual
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.author: wdg-dev-content
 ms.date: 04/4/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -160,7 +156,7 @@ An optional empty used to insert pauses between words.
 | Attribute | Description |
 |-----------|-------------|
 | strength | **Optional.** Specifies the relative duration of a pause using one of the following values:<ul><li>none</li><li>x-weak</li><li>weak</li><li>medium (default)</li><li>strong</li><li>x-strong</li></ul> |
-| time | **Optional.** Specifies the absolute duration of a pause in seconds or milliseconds. Examples of valid values are 2s and 500ms. |
+| time | **Optional.** Specifies the absolute duration of a pause in seconds or milliseconds. Examples of valid values are 2s and 500|
 
 **Remarks**
 

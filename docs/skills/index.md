@@ -1,11 +1,7 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: HubPage
-hide_bc: true
-author: swhite-msft
-ms.author: apexprodleads
 ms.date: 10-25-2017
-ms.prod: cortana
 ms.topic: hub-page
 title: Cortana Skills Documentation
 description: Provides details for writing your own Cortana Skill.

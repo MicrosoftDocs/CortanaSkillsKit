@@ -1,13 +1,10 @@
 ﻿---
 title: Cortana User Profile & Contextual Information Reference
 description: Defines the user profile and contextual information objects.
-author: richbrun
 label: Conceptual
 ms.assetid: 41f911c9-b5eb-4cd3-b4d9-2dc7453e3f51
-ms.author: wdg-dev-content
 ms.date: 4/25/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

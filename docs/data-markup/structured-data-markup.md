@@ -4,10 +4,10 @@ description: Structured data markup describes the embedding of structured data i
 author: kbridge
 label: Conceptual
 ms.assetid: 315a5dd0-b88d-499b-a177-6164daacbe30
-ms.author: wdg-dev-content
+
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 
