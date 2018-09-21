@@ -4,10 +4,9 @@ description: Use voice commands to activate your app to the foreground and execu
 author: kbridge
 label: Conceptual
 ms.assetid: e4bf3714-6f62-466f-9e7c-3b03ee86a117
-ms.author: wdg-dev-content
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 
@@ -34,7 +33,7 @@ If you want to activate an app in the background using voice commands, see [Acti
 
 > A voice command definition can vary in complexity. It can support anything from a single, constrained utterance to a collection of more flexible, natural language utterances, all denoting the same intent.
 
-To demonstrate foreground app features, we'll use a trip planning and management app named **Adventure Works** from the [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899).
+To demonstrate foreground app features, we'll use a trip planning and management app named **Adventure Works** from the [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899).
 
 To create a new **Adventure Works** trip without **Cortana**, a user would launch the app and navigate to the **New trip** page. To view an existing trip, a user would launch the app, navigate to the **Upcoming trips** page, and select the trip.
 
@@ -93,7 +92,6 @@ The standard naming convention is `foldername/qualifiername-value[_qualifiername
 We recommend that you mark the default language on string resource files (such as `en-US\resources.resw`) and the default scale factor on images (such as `logo.scale-100.png`), even if you do not currently plan to provide localized or multiple resolution resources. However, at a minimum, we recommend that you provide assets for 100, 200, and 400 scale factors.
 
 > [!IMPORTANT]
-
 > The app icon used in the title area of the **Cortana** canvas is the Square44x44Logo icon specified in the "Package.appxmanifest" file. 
     
 ## <span id="Create_a_VCD_file"></span><span id="create_a_vcd_file"></span><span id="CREATE_A_VCD_FILE"></span>Create a VCD file
@@ -106,7 +104,7 @@ We recommend that you mark the default language on string resource files (such a
 ## <span id="Edit_the_VCD_file"></span><span id="edit_the_vcd_file"></span><span id="EDIT_THE_VCD_FILE"></span>Edit the VCD file
 
 
-Add a **VoiceCommands** element with an **xmlns** attribute pointing to `http://schemas.microsoft.com/voicecommands/1.2`.
+Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https://schemas.microsoft.com/voicecommands/1.2`.
 
 1. For each language supported by your app, create a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) element that contains the voice commands supported by your app.
 
@@ -138,7 +136,7 @@ Here's a portion of the [**VCD**](https://msdn.microsoft.com/library/windows/app
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="en-us" Name="AdventureWorksCommandSet_en-us">
     <AppName> Adventure Works </AppName>
     <Example> Show trip to London </Example>
@@ -390,7 +388,7 @@ private string SemanticInterpretation(string interpretationKey, SpeechRecognitio
 * [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

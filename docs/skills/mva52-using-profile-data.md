@@ -1,14 +1,8 @@
 ---
 title: Using profile data in your Cortana skill
 description: Describes how to use profile data in your Cortana skill.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stwohl
-ms.date: 5/03/2018
+ms.date: 05/03/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -53,7 +47,7 @@ Now that you configured your Cortana skill to request user profile data, you can
             var response = context.MakeMessage();
             response.Text = "Welcome to Mixtape, " + userName + "! Let's find a song to play.";
 
-            var ssml = @"<speak version=""1.0"" xmlns = ""http://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
+            var ssml = @"<speak version=""1.0"" xmlns = ""https://www.w3.org/2001/10/synthesis"" xml:lang = ""en-US""> 
                 <prosody rate=""fast"">
                 Welcome to Mixtape" + userName + @"! 
                 <audio src=""https://myaudio/tada.mp3>""/>

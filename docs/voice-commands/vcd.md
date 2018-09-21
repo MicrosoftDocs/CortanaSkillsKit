@@ -4,10 +4,10 @@ description: Extend the basic functionality of Cortana with voice commands that 
 author: kbridge
 label: Conceptual
 ms.assetid: 18e45699-6f2f-431a-a4e7-7706171d1d8b
-ms.author: wdg-dev-content
+
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 
@@ -48,7 +48,7 @@ By integrating the basic functionality of your app, and providing a central entr
 * [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

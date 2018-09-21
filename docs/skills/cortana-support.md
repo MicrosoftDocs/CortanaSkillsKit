@@ -1,13 +1,9 @@
 ---
 title: Cortana support resources
 description: A list of options for getting help with Cortana Skill issues.  
-author: swhite-msft
-label: Conceptual
 ms.assetid: AEF28CE6-C449-4AC6-8681-061445ADE3B5
-ms.author: scottwhi
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

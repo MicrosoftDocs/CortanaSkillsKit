@@ -4,10 +4,10 @@ description: Extend Cortana with more flexible and natural voice commands that l
 author: kbridge
 label: Conceptual
 ms.assetid: c2959c1b-c2f2-4a8d-8f3e-79585f69afcf
-ms.author: wdg-dev-content
+
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 
@@ -155,7 +155,7 @@ Here is a VCD file that demonstrates various ways to provide more natural langua
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.1">
   <CommandSet xml:lang="en-us" Name="commandSet_en-us">
     <AppName>Adventure Works</AppName>
     <Example> When is my trip to Las Vegas? </Example>
@@ -208,7 +208,7 @@ Here is a VCD file that demonstrates various ways to provide more natural langua
 * [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

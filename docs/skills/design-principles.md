@@ -1,14 +1,9 @@
-﻿---
+---
 title: Principles of Cortana Skill Design
 description: Overview of Cortana Skill Design Best Practices.
-author: swhite-msft
-label: Conceptual
-
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.author: scottwhi
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -428,6 +423,7 @@ If you're porting a text-based app to voice, you likely need to change the desig
 
 
 <a name="visualelements" />
+
 ## Design your skill's visual elements 
 
 Although the goal is to design your skill for voice only, for some skills that's not practical. There are times when displaying visual elements to support the information that your skill speaks is required. For example, if the user asks for recipes, displaying pictures of the prepared food with links to the recipe can be a better experience than trying to describe each recipe with voice only. Visual elements should not be required to communicate the intent, they should only support the intent.
@@ -565,4 +561,3 @@ When you publish your skill to the world, the Cortana team reviews your skill to
 <!-- Think about include bot framework's design principals 
 
 Checkout Bot Framework's [Principals of bot design](https://docs.microsoft.com/en-us/bot-framework/bot-design-principles).
--->

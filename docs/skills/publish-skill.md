@@ -1,13 +1,10 @@
 ---
 title: Cortana Skills publishing process
 description: Describes the Cortana Skills publishing process and how to deploy skills to self, group, and world.
-author: v-stwohl
 label: Conceptual
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.author: wdg-dev-content
-ms.date: 5/04/2017
+ms.date: 05/04/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -70,7 +67,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
    **Domain**
 
-   The **Domain** is a required field for the internal identifier of your OAuth2 provider. For example, if Microsoft is your OAuth2 provider, enter www.microsoft.com in to this field.
+   The **Domain** is a required field for the internal identifier of your OAuth2 provider. For example, if Microsoft is your OAuth2 provider, enter `www.microsoft.com` in to this field.
 
    **Client ID for third-party services**
 

@@ -1,14 +1,8 @@
 ---
 title: Sharing your Cortana skill to a group
 description: Describes how to share your Cortana skill to a group.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stwohl
-ms.date: 5/03/2018
+ms.date: 05/03/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

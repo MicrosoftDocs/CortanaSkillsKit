@@ -1,13 +1,9 @@
 ---
 title: Dynamically modify Cortana VCD phrase lists - Cortana UWP design and development
 description: Access and update the list of supported phrases (PhraseList elements) in a Voice Command Definition (VCD) file at run time using the speech recognition result.
-author: kbridge
-label: Conceptual
 ms.assetid: b497145b-c7a0-454a-8329-6bc1228953bb
-ms.author: wdg-dev-content
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -47,7 +43,7 @@ Here's an example VCD file that defines a **Command** "showTripToDestination" an
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.1">
   <CommandSet xml:lang="en-us" Name="AdventureWorksCommandSet_en-us">
     <AppName> Adventure Works, </AppName>
     <Example> Show trip to London </Example>
@@ -103,7 +99,7 @@ In our example, we have a **PhraseTopic** with a **Scenario** of "Search", furth
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>
-<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.1">
+<VoiceCommands xmlns="https://schemas.microsoft.com/voicecommands/1.1">
   <CommandSet xml:lang="en-us" Name="AdventureWorksCommandSet_en-us">
     <AppName> Adventure Works, </AppName>
     <Example> Show trip to London </Example>
@@ -142,7 +138,7 @@ In our example, we have a **PhraseTopic** with a **Scenario** of "Search", furth
 * [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

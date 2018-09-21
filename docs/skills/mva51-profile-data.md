@@ -1,14 +1,8 @@
 ---
 title: Understanding Cortana's user profile data
 description: Introduces Cortana user profile data.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stsau
-ms.date: 1/22/2018
+ms.date: 01/22/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -29,7 +23,7 @@ You can view a variety of information in the Cortana Notebook. For example, you 
 
 ![Cuisine Preferences](../images/mva51-eat-drink.png)
 
-You can also update many user profile items. For example, you can add or remove items from your cuisine preferences by clicking **Add a cuisine** or selecting a cuisine and clicking the trash can icon.
+You can also update many user profile iteFor example, you can add or remove items from your cuisine preferences by clicking **Add a cuisine** or selecting a cuisine and clicking the trash can icon.
 
 When you are developing a Cortana skill, you can customize the skill to the user by including information from the user profile. For example, with a user's consent you can customize your skill to include the user's name, email address, location, or cuisine preference.
 

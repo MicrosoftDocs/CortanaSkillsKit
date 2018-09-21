@@ -1,13 +1,10 @@
 ---
 title: Deep link from a background app in Cortana to a foreground app - Cortana UWP design and development
 description: Provide deep links from a background app in **Cortana** that launch the app to the foreground in a specific state or context.
-author: kbridge
 label: Conceptual
 ms.assetid: 6fe5fcc5-9ee4-4c04-92f4-7b1bf7ef5651
-ms.author: wdg-dev-content
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -282,7 +279,7 @@ if (args.Kind == ActivationKind.Protocol)
 * [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
 
 **Samples**
-* [Cortana voice command sample](http://go.microsoft.com/fwlink/p/?LinkID=619899)
+* [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  

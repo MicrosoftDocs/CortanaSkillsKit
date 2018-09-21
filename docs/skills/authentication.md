@@ -1,13 +1,11 @@
 ﻿---
 title: Adding authentication to your  Skills
 description: Learn how to add authentication to your bot-based skill.
-author: richbrun
 label: Conceptual
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.author: v-stwohl
 ms.date: 08/01/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 
@@ -15,7 +13,6 @@ keywords: cortana
 
 > [!NOTE]
 > This documentation provides details around authenticating skills built using the Microsoft Bot Framework.
-> 
 
 
 There are two ways to add authentication to your skill.

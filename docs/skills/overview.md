@@ -1,15 +1,9 @@
 ---
 title: Overview of Cortana Skills - Cortana skills design and development
 description: Provides an overview of Cortana Skills Kit and how you can use it to extend Cortana so your users can use Cortana to interact with your service.
-author: scottwhi-msft
-manager: ehansen
-label: Conceptual
-
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.author: scottwhi
-ms.date: 9/21/2017
+ms.date: 09/21/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -19,7 +13,7 @@ keywords: cortana
 > Cortana Skills Kit is currently in public preview.  
 
 
-Cortana is a digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. Cortana invokes the skills based on spoken input from the user. You can extend Cortana by adding your own skills that let your users use Cortana to interact with your service.
+Cortana is a digital assistant that keeps users informed and productive, helping them get things done across devices and platforSkills define the tasks that Cortana can accomplish. Cortana invokes the skills based on spoken input from the user. You can extend Cortana by adding your own skills that let your users use Cortana to interact with your service.
 
 To extend Cortana, use the Cortana Skills Kit. The kit is a suite of tools that help you build skills that connect users to your custom services and solutions. 
 
@@ -116,7 +110,7 @@ For the full list of services that you can integrate into your skill, see [Add i
 
 Interactions between users and skills is mostly free-form, so skills need to understand language naturally and contextually. Skills determine what a user wants to do by identifying their intent from spoken or textual input, or utterances. The intent maps utterances to actions that the skill takes, such as invoking a dialog. A skill may also need to extract entities, which are important words in utterances.
 
-You could use a simple method such as using regular expressions to inspect the content of a message and determine intent, but you're encouraged to use [Language Understanding Intelligent Service (LUIS)](http://luis.ai). LUIS is a powerful tool that processes natural language using pre-built or custom-trained language models. LUIS uses the models to determine what users want, identifies concepts and entities in a given sentence, and ultimately allows your skill to respond with the appropriate action.
+You could use a simple method such as using regular expressions to inspect the content of a message and determine intent, but you're encouraged to use [Language Understanding Intelligent Service (LUIS)](https://luis.ai). LUIS is a powerful tool that processes natural language using pre-built or custom-trained language models. LUIS uses the models to determine what users want, identifies concepts and entities in a given sentence, and ultimately allows your skill to respond with the appropriate action.
 
 
 Depending on the Bot Framework SDK that you use, for information about recognizing intents and entities with LUIS, see [Using LUIS with the Node.js SDK](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-luis-dialogs).

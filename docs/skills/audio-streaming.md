@@ -1,13 +1,11 @@
 ﻿---
 title: Add audio streaming to your skill
 description: Learn how to add audio streaming to your bot-based skill.
-author: swhite-msft
 label: Conceptual
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.author: v-stwohl
 ms.date: 05/03/2018
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 

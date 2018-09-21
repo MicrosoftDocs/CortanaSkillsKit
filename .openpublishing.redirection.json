@@ -1,0 +1,165 @@
+{ 
+    "redirections": [  
+        {   
+            "source_path": "docs/vcd.md", 
+            "redirect_url": "/cortana/voice-commands/vcd", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/voicecommand-design-guidelines.md", 
+            "redirect_url": "/cortana/voice-commands/design-guidelines", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/launch-a-foreground-app-with-voice-commands-in-cortana.md", 
+            "redirect_url": "/cortana/voice-commands/launch-foreground-app", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/dynamically-modify-voice-command-definition-vcd-phrase-lists.md", 
+            "redirect_url": "/cortana/voice-commands/dynamically-modify-phrase-lists", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/launch-a-background-app-with-voice-commands-in-cortana.md", 
+            "redirect_url": "/cortana/voice-commands/launch-background-app", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/interact-with-a-background-app-in-cortana.md", 
+            "redirect_url": "/cortana/voice-commands/interact-with-background-app", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/deep-link-into-your-app-from-cortana.md", 
+            "redirect_url": "/cortana/voice-commands/deep-link-background-foreground-apps", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/voicecommands/support-natural-language-voice-commands-in-cortana.md", 
+            "redirect_url": "/cortana/voice-commands/natural-language-voice-commands", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/structured-data-markup.md", 
+            "redirect_url": "/cortana/data-markup/structured-data-markup", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/getstarted.md", 
+            "redirect_url": "/cortana/skills/overview", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/design-guides/skill-design-principles.md", 
+            "redirect_url": "/cortana/skills/design-principles", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/design-guides/voice-design-best-practices.md", 
+            "redirect_url": "/cortana/skills/design-principles", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/design-guides/card-design-best-practices.md", 
+            "redirect_url": "/cortana/skills/design-principles", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/design-guides/guide-invocation.md", 
+            "redirect_url": "/cortana/skills/invocation-guidelines", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/testing/performance.md", 
+            "redirect_url": "/cortana/skills/performance-guidelines", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/testing/testing-and-debugging.md", 
+            "redirect_url": "/cortana/skills/test-debug", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/testing/known-issues.md", 
+            "redirect_url": "/cortana/skills/known-issues", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/publishing/publishing.md", 
+            "redirect_url": "/cortana/skills/publish-skill", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/publishing/skills-kit-review-guidelines.md", 
+            "redirect_url": "/cortana/skills/skill-review-guidelines", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/publishing/privacy-tou-guide.md", 
+            "redirect_url": "/cortana/skills/terms-of-use", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/reference/platform-requirements.md", 
+            "redirect_url": "/cortana/skills/overview", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/reference/ssml.md", 
+            "redirect_url": "/cortana/skills/speech-synthesis-markup-language", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/reference/supported-locales.md", 
+            "redirect_url": "/cortana/skills/supported-locales", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/reference/contextual-info.md", 
+            "redirect_url": "/cortana/skills/user-profile-contextual-info", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/skills-faq.md", 
+            "redirect_url": "/cortana/skills/faq", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/tutorials/bot-skills/creating-a-bot-based-skill.md", 
+            "redirect_url": "/cortana/skills/get-started", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/tutorials/bot-skills/teach-your-bot-to-speak.md", 
+            "redirect_url": "/cortana/skills/get-started", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/tutorials/bot-skills/bot-entity-channel-data.md", 
+            "redirect_url": "/cortana/skills/cortana-channel-data", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md", 
+            "redirect_url": "/cortana/skills/authentication", 
+            "redirect_document_id": true 
+        }, 
+        {   
+            "source_path": "docs/tutorials/bot-skills/add-bot-to-cortana-channel.md", 
+            "redirect_url": "/cortana/skills/get-started", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/tutorials/create-skill-from-scratch.md", 
+            "redirect_url": "/cortana/skills/get-started", 
+            "redirect_document_id": false 
+        }, 
+        {   
+            "source_path": "docs/tutorials/setup-dev-env.md", 
+            "redirect_url": "/cortana/skills/get-started", 
+            "redirect_document_id": false 
+        } 
+    ] 
+  } 
+  

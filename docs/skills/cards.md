@@ -1,14 +1,9 @@
 ---
 title: Using Bot Framework cards in a Cortana Skill
 description: Identifies the different cards that you can use in your skill to display information to the user.
-author: scottwhi-msft
-manager: ehansen
 label: Conceptual
-
-ms.author: scottwhi
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 --- 
 
@@ -37,9 +32,9 @@ If these cards and prompts don't meet your needs, see [Adaptive Cards](https://d
 - [Platform SDKs](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots#platform-sdks)&mdash;Provides information about downloading the adaptive card SDKs for Node.js and .NET.
 - [Adaptive card example using Node.js](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards#send-an-adaptive-card)
 - [Adaptive card example using .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card)
-- [Schema explorer](http://adaptivecards.io/explorer/) and [Card schema](https://docs.microsoft.com/en-us/adaptive-cards/create/cardschema)&mdash;Provides details about the adaptive card schema.
-- [Visualizer](http://adaptivecards.io/visualizer/)&mdash;Lets you see how your adaptive card renders as you're design it. 
-- [AdaptiveCards.io](http://adaptivecards.io)&mdash;The adaptive card developer portal. 
+- [Schema explorer](https://adaptivecards.io/explorer/) and [Card schema](https://docs.microsoft.com/en-us/adaptive-cards/create/cardschema)&mdash;Provides details about the adaptive card schema.
+- [Visualizer](https://adaptivecards.io/visualizer/)&mdash;Lets you see how your adaptive card renders as you're design it. 
+- [AdaptiveCards.io](https://adaptivecards.io)&mdash;The adaptive card developer portal. 
 
 
 ## What happens if the user is using a speaker-only device

@@ -1,13 +1,9 @@
-﻿---
+---
 title: Speech Synthesis Markup Language (SSML) Reference
 description: Overview of the SSML schema used by Cortana.
-author: richbrun
-label: Conceptual
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.author: wdg-dev-content
 ms.date: 04/4/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
@@ -16,11 +12,11 @@ keywords: cortana
 
 SSML is an XML-based markup language that skill developers use to specify the speech text that Cortana translates to speech. Using SSML improves the quality of synthesized content over sending Cortana plain text. SSML handles normal punctuation, such as pausing after a period, or speaking a sentence that ends with a question mark as a question. However, in some cases, you may want additional control over various characteristics of synthetic speech or text-to-speech (TTS)output, including pitch, rate, volume, pronunciation, and other characteristics. 
 
-Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech Synthesis Markup Language Version 1.0](http://www.w3.org/TR/speech-synthesis/). 
+Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech Synthesis Markup Language Version 1.0](https://www.w3.org/TR/speech-synthesis/). 
 
 For information about using SMML in your skill, see Add speech to messages in [Node.js](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-text-to-speech) and [.NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-text-to-speech).
 
-<!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](http://www.w3.org/TR/emotionml/) and []().-->
+<!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](https://www.w3.org/TR/emotionml/) and []().-->
 
 <!--
 ## Using SSML in your Cortana Skill
@@ -129,7 +125,7 @@ The `audio` element may contain text and the following elements: `audio`, `break
      
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <p>
         <audio src="https://example.com/opinionprompt.wav"/> 
@@ -160,7 +156,7 @@ An optional empty used to insert pauses between words.
 | Attribute | Description |
 |-----------|-------------|
 | strength | **Optional.** Specifies the relative duration of a pause using one of the following values:<ul><li>none</li><li>x-weak</li><li>weak</li><li>medium (default)</li><li>strong</li><li>x-strong</li></ul> |
-| time | **Optional.** Specifies the absolute duration of a pause in seconds or milliseconds. Examples of valid values are 2s and 500ms. |
+| time | **Optional.** Specifies the absolute duration of a pause in seconds or milliseconds. Examples of valid values are 2s and 500|
 
 **Remarks**
 
@@ -170,7 +166,7 @@ Use this element to override the default behavior of text-to-speech (TTS) for a 
      
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <sentence>
         The phone number is one eight hundred <break strength="weak" /> 
@@ -237,7 +233,7 @@ The following example specifies a lexicon that defines a pronunciation for an un
 ```XML
 <?xml version="1.0"?>
 <speak version="1.0"
-    xmlns="http://www.w3.org/2001/10/synthesis"
+    xmlns="https://www.w3.org/2001/10/synthesis"
     xml:lang="en-US"> 
     <lexicon uri="https://Test/whatchamacallit.pls" type="application/pls+xml"/>  
     Gimme the whatchamacallit.
@@ -249,7 +245,7 @@ The following are the contents of the SSML prompt file, **whatchamacallit.pls**.
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
 <lexicon version="1.0" 
-    xmlns="http://www.w3.org/2005/01/pronunciation-lexicon"
+    xmlns="https://www.w3.org/2005/01/pronunciation-lexicon"
     alphabet="x-microsoft-ups" xml:lang="en-US">
     <lexeme>
         <grapheme>whatchamacallit</grapheme>
@@ -322,7 +318,7 @@ The `s` element may contain text and the following elements: `audio`, `break`, `
 
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <p>
         <s>Introducing the sentence element.</s>
@@ -369,7 +365,7 @@ The `phoneme` element may contain only text (no elements). You should always inc
 
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <s>His name is Mike <phoneme alphabet="ups" ph="JH AU"> Zhou </phoneme></s>
 </speak>
@@ -422,7 +418,7 @@ The `prosody` element may contain text and the following elements: `audio`, `bre
 
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <s>
     Your order for <prosody pitch="+1st" rate="x-slow" volume="50">8 books</prosody> 
@@ -476,7 +472,7 @@ The speech synthesis engine speaks the following example as "Your first request 
  
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <p>
     Your <say-as interpret-as="ordinal"> 1st </say-as> request was for <say-as interpret-as="cardinal"> 1 </say-as> room
@@ -493,7 +489,7 @@ The root element of the SSML document.
 **Syntax**
 
 ```XML
-<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="string"></speak>
+<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis" xml:lang="string"></speak>
 ```
 
 **Attributes**
@@ -502,7 +498,7 @@ The root element of the SSML document.
 |-----------|-------------|
 | version | **Required.** Indicates the version of the SSML specification used to interpret the document markup. The current version is 1.0. | 
 | xml:lang | **Required.** Specifies the language of the root document. The value may contain a lowercase, two-letter language code (for example, **en**), or the language code and uppercase country/region (for example, **en-US**).  |
-| xmlns | **Required.** Specifies the URI to the document that defines the markup vocabulary (the element types and attribute names) of the SSML document. The current URI is http://www.w3.org/2001/10/synthesis. |
+| xmlns | **Required.** Specifies the URI to the document that defines the markup vocabulary (the element types and attribute names) of the SSML document. The current URI is https://www.w3.org/2001/10/synthesis. |
 
 **Usage**
 
@@ -514,7 +510,7 @@ The `speak` element may contain only text and the following elements: `audio`, `
      
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     This is the text that is spoken by Cortana.
 </speak>
@@ -553,7 +549,7 @@ The following instructs the text-to-speech engine to pronounce the string "SAPI"
 
 ```XML
 <speak version="1.0"
- xmlns="http://www.w3.org/2001/10/synthesis"
+ xmlns="https://www.w3.org/2001/10/synthesis"
  xml:lang="en-US">
     <sub alias="Speech Application Programming Interface">SAPI</sub>
 </speak>

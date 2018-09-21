@@ -1,4 +1,4 @@
-﻿---
+---
 redirect_url: /cortana/skills/speech-synthesis-markup-language
 ---
 
@@ -65,7 +65,7 @@ session.say('Hello World', 'This is the text that will be spoken by Cortana.');
 **Have SSML read by Cortana**
 
 ```javascript
-session.say('Hello World', '<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" xml:lang="en-US">This is the text that will be spoken by Cortana.</speak>');
+session.say('Hello World', '<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis" xml:lang="en-US">This is the text that will be spoken by Cortana.</speak>');
 ```
 
 **Add an InputHint to let Cortana know to expect user input**
@@ -113,7 +113,7 @@ reply.Speak = "This is the text that will be spoken by Cortana.";
 
 ```csharp
 Activity reply = activity.CreateReply("Cortana will display this in her canvas.");
-reply.Speak = "<speak version=\"1.0\" xmlns=\"http://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\">This is the text that will be spoken by Cortana.</speak>";
+reply.Speak = "<speak version=\"1.0\" xmlns=\"https://www.w3.org/2001/10/synthesis\" xml:lang=\"en-US\">This is the text that will be spoken by Cortana.</speak>";
 ```
 
 **Add an InputHint to let Cortana know to expect user input**
