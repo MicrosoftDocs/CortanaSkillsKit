@@ -1,7 +1,3 @@
 - name: Cortana Skills
   tocHref: /skills/
   topicHref: /skills/index
-  items:
-  - name: test
-    tocHref: /
-    topicHref: /
