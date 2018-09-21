@@ -220,7 +220,7 @@ Your interactions should be:
 | **Efficient** <br/> Use as few words as possible and put the most important information up front. | Sure, what movie do you want to watch? | Sure can do, what movie would you like to search for today? We have a large collection. 
 | **Relevant** <br/> Provide information pertinent to the task, content, and context. | I’ve added it to your playlist. | I’ve added it to your playlist. Just so you know, your battery is getting low. 
 | **Clear** <br/> Avoid ambiguity. Use everyday language instead of technical jargon. | I couldn’t find any trips to Las Vegas. | No results for query "Trips to Las Vegas".
-| **Trustworthy** <br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalog. | I couldn’t find that movie, it must not have been released yet. 
+| **Trustworthy** <br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalogue. | I couldn’t find that movie, it must not have been released yet. 
 
 
 
@@ -252,9 +252,9 @@ Good uses of a directed prompt are when:
 
 * A wide variety of users use the skill, or they use it on an infrequent basis. For example, a call center application is best suited to use directed prompts.  
   
-* There are never more than three options. 
+* There is never more than three options. 
 
-For directed prompts, use the form, "Please select X, Y, or Z." Don't use the form, "Would you like X or do you want Y or Z," because it may lead to Yes or No response instead of an X or Y or Z response.  
+For directed prompts, use the form, "Please select X, Y, or Z." Don't use the form, "Would you like X or do you want Y or Z," because it may lead to Yes or No response instead of a X or Y or Z response.  
 
 If the list of options is long (for example, a list of stock investments) or variable (for example, movie titles), using a directed prompt is impractical. In this case, use an open prompt. For example:
 
@@ -418,7 +418,7 @@ For example:
 
 
 <!--
-If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principles since the purpose of using voice is to get to a result faster.
+If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principals since the purpose of using voice is to get to a result faster.
 -->
 
 
@@ -553,12 +553,11 @@ Cortana's persona has been well crafted and it's very important that you maintai
 
 For performance design considerations, including Azure services, see [Performance guidelines](performance-guidelines.md).
 
-For do's and don'ts with your invocation name, see [Invocation name guidelines](cortana-invocation-guidelines.md).
+For invocation name do's and don'ts, see [Invocation name guidelines](cortana-invocation-guidelines.md).
 
 
-When you publish your skill to the world, the Cortana team reviews your skill to make sure it's compliant with the design principles in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish you skill (see [Cortana skills certification requirements](skill-review-guidelines.md)).
+When you publish your skill to the world, the Cortana team reviews your skill to make sure it's compliant with the design principals in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish you skill (see [Cortana skills certification requirements](skill-review-guidelines.md)).
 
-<!-- Think about include bot framework's design principles 
+<!-- Think about include bot framework's design principals 
 
-Checkout Bot Framework's [Principles of bot design](https://docs.microsoft.com/en-us/bot-framework/bot-design-principles).
--->
+Checkout Bot Framework's [Principals of bot design](https://docs.microsoft.com/en-us/bot-framework/bot-design-principles).
