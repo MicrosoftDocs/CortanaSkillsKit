@@ -11,13 +11,14 @@ keywords: cortana
 
 >[!NOTE]
 > Cortana Skills Kit for Enterprise is currently available through Technology Adoption Program. Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.  
+
 Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capability by building their own custom skills for domains ranging from HR, IT, Helpdesk, Sales to areas like Smart Building:  
 
 :::row:::
     :::column:::
         ![globe](../images/blue-globe-20x20.png)
     :::column-end:::
-    :::column:::
+    :::column span="2":::
         To make information retrieval an easy task  
     :::column-end:::
 :::row-end:::
@@ -25,7 +26,7 @@ Cortana is a digital assistant that keeps users informed and productive, helping
     :::column:::
         ![screwdriver and wrench](../images/blue-screwdriver_and_wrench-20x20.png)
     :::column-end:::
-    :::column:::
+    :::column span="2":::
         To complete company specific tasks and different workflows more easily with voice  
     :::column-end:::
 :::row-end:::
@@ -33,7 +34,7 @@ Cortana is a digital assistant that keeps users informed and productive, helping
     :::column:::
         ![clock](../images/blue-clock-20x20.png)
     :::column-end:::
-    :::column:::
+    :::column span="2":::
         Help employees save more time and focus on things that matter most  
     :::column-end:::
 :::row-end:::
