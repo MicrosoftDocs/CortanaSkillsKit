@@ -1,14 +1,8 @@
 ---
 title: Understanding types of conversations
 description: Explains the different types of Cortana conversations.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stsau
 ms.date: 12/5/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 --- 
 

@@ -1,13 +1,9 @@
 ---
 title: Dynamically modify Cortana VCD phrase lists - Cortana UWP design and development
 description: Access and update the list of supported phrases (PhraseList elements) in a Voice Command Definition (VCD) file at run time using the speech recognition result.
-author: kbridge
-label: Conceptual
 ms.assetid: b497145b-c7a0-454a-8329-6bc1228953bb
-ms.author: wdg-dev-content
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

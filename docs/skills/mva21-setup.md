@@ -1,14 +1,8 @@
 ---
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stwohl
-ms.date: 5/03/2018
+ms.date: 05/03/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 --- 
 

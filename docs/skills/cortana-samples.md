@@ -1,13 +1,9 @@
 ---
 title: Cortana Skills samples
 description: A list of samples that show how to exercise different skill features.  
-author: swhite-msft
-label: Conceptual
 ms.assetid: 9632367B-E7C6-470A-A0A9-2BA9AE4B8EBD
-ms.author: scottwhi
 ms.date: 10/19/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

@@ -4,10 +4,10 @@ description: Extend Cortana with more flexible and natural voice commands that l
 author: kbridge
 label: Conceptual
 ms.assetid: c2959c1b-c2f2-4a8d-8f3e-79585f69afcf
-ms.author: wdg-dev-content
+
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 

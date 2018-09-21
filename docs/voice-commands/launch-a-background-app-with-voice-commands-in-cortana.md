@@ -4,10 +4,8 @@ description: Extend Cortana with features from your app (as a background task) u
 author: kbridge
 label: Conceptual
 ms.assetid: e2c7eae3-6beb-4156-92a5-474bba53451e
-ms.author: wdg-dev-content
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

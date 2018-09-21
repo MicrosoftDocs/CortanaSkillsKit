@@ -1,13 +1,9 @@
 ---
 title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
-author: richbrun
-label: Conceptual
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.author: wdg-dev-content
 ms.date: 03/30/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

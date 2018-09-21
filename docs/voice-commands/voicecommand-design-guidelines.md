@@ -4,10 +4,10 @@ description: These guidelines and recommendations describe how your app can use 
 author: kbridge
 label: Guidelines
 ms.assetid: 332ccb95-0e56-410e-ab63-cc028fce4192
-ms.author: wdg-dev-content
+
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 

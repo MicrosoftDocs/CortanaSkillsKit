@@ -1,13 +1,11 @@
 ﻿---
 title: Adding authentication to your  Skills
 description: Learn how to add authentication to your bot-based skill.
-author: richbrun
 label: Conceptual
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.author: v-stwohl
 ms.date: 05/03/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 

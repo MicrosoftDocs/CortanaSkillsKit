@@ -1,14 +1,8 @@
 ---
 title: Publishing your Cortana skill
 description: Describes how to publish your Cortana skill.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stwohl
-ms.date: 5/04/2018
+ms.date: 05/04/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
