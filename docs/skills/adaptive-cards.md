@@ -1,14 +1,11 @@
 ---
 title: Using Adaptive Cards in your skill
 description: Learn how to use Adaptive Cards in your bot-based skill.
-author: jm-aditi-ms
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.author: v-josema
 ms.date: 3/14/2018
 ms.topic: article
-ms.prod: cortana
 
 keywords: cortana
 ---

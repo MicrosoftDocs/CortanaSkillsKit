@@ -1,13 +1,10 @@
 ---
 title: Cortana Skills Kit Locale Reference
 description: List of compatible locales for Cortana extensibility.
-author: dobrown
 label: Conceptual
 ms.assetid: a9ea219e-1baa-42be-82bc-2a514e58518d
-ms.author: wdg-dev-content
 ms.date: 02/10/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 

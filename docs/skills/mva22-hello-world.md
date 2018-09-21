@@ -1,14 +1,8 @@
 ---
 title: Create your first Cortana skill
 description: Describes how to create your first Cortana skill.
-author: v-stsau
-manager: mujtabak
-label: Conceptual
-
-ms.author: v-stwohl
 ms.date: 5/3/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 --- 
 

@@ -1,14 +1,9 @@
 ﻿---
 title: Cortana Skills Publishing Review Guidelines
 description: Describes the requirements for publishing a skill to the world.
-author: swhite-msft
-label: Conceptual
-
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.author: v-stwohl
 ms.date: 05/31/2018
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 --- 
 
@@ -270,7 +265,7 @@ Your skill must not contain any content that is defamatory, libelous, slanderous
 
 ### 3.4 Offensive Content
 
-Your skill and associated metadata must not contain potentially sensitive or offensive content. Content may be considered sensitive or offensive in certain countries/regions because of local laws or cultural norms. In addition, your skill and associated metadata must not contain content that advocates discrimination, hatred, or violence based on considerations of race, ethnicity, national origin, language, gender, age, disability, religion, sexual orientation, status as a veteran, or membership in any other social group.
+Your skill and associated metadata must not contain potentially sensitive or offensive content. Content may be considered sensitive or offensive in certain countries/regions because of local laws or cultural norIn addition, your skill and associated metadata must not contain content that advocates discrimination, hatred, or violence based on considerations of race, ethnicity, national origin, language, gender, age, disability, religion, sexual orientation, status as a veteran, or membership in any other social group.
 
 ### 3.5 Alcohol, Tobacco, Weapons and Drugs
 
@@ -304,7 +299,7 @@ Your skill must not spam users in any way. Spam may include skills whose primary
 
 ### 3.12 Country/Region Specific Requirements
 
-Skills may not contain content that is offensive in any country/region that it targets. Content may be considered offensive in certain countries/regions because of local laws or cultural norms. The skills kit is only supported in the US at this time.
+Skills may not contain content that is offensive in any country/region that it targets. Content may be considered offensive in certain countries/regions because of local laws or cultural norThe skills kit is only supported in the US at this time.
 
 ### 3.13 Promotion
 

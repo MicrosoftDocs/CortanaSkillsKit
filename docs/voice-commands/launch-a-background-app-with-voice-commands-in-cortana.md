@@ -5,11 +5,8 @@ author: jm-aditi-ms
 label: Conceptual
 
 ms.assetid: e2c7eae3-6beb-4156-92a5-474bba53451e
-ms.author: v-josema
-ms.date: 09/19/2018
+ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
-
 keywords: cortana
 ---
 

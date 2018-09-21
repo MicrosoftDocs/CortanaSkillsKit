@@ -4,10 +4,10 @@ description: Use voice commands to activate your app to the foreground and execu
 author: kbridge
 label: Conceptual
 ms.assetid: e4bf3714-6f62-466f-9e7c-3b03ee86a117
-ms.author: wdg-dev-content
+
 ms.date: 02/08/2017
 ms.topic: article
-ms.prod: cortana
+
 keywords: cortana
 ---
 

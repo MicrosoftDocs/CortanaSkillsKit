@@ -1,14 +1,9 @@
 ---
 title: Cortana Skills performance guidelines
 description: Tips and guidelines for crating performant Cortana skills.
-author: ahosma
-label: Conceptual
-
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.author: wdg-dev-content
 ms.date: 9/5/2017
 ms.topic: article
-ms.prod: cortana
 keywords: cortana
 ---
 
