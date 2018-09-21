@@ -18,7 +18,7 @@ Cortana is a digital assistant that keeps users informed and productive, helping
     :::column:::
         ![globe](../images/blue-globe-20x20.png)
     :::column-end:::
-    :::column span="2":::
+    :::column span="5":::
         To make information retrieval an easy task  
     :::column-end:::
 :::row-end:::
@@ -26,7 +26,7 @@ Cortana is a digital assistant that keeps users informed and productive, helping
     :::column:::
         ![screwdriver and wrench](../images/blue-screwdriver_and_wrench-20x20.png)
     :::column-end:::
-    :::column span="2":::
+    :::column span="5":::
         To complete company specific tasks and different workflows more easily with voice  
     :::column-end:::
 :::row-end:::
@@ -34,7 +34,7 @@ Cortana is a digital assistant that keeps users informed and productive, helping
     :::column:::
         ![clock](../images/blue-clock-20x20.png)
     :::column-end:::
-    :::column span="2":::
+    :::column span="5":::
         Help employees save more time and focus on things that matter most  
     :::column-end:::
 :::row-end:::
