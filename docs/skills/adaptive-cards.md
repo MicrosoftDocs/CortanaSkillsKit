@@ -2,6 +2,7 @@
 title: Using Adaptive Cards in your skill
 description: Learn how to use Adaptive Cards in your bot-based skill.
 label: Conceptual
+
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
 ms.date: 03/14/2018
 ms.topic: article
@@ -9,64 +10,112 @@ ms.topic: article
 keywords: cortana
 ---
 
-# Using Adaptive Cards in your skill
+# Use Adaptive Cards in Your Cortana Skill
 
-You can use a variety of interface elements, or *cards*, to enhance the user experience in your Cortana skill. The most versatile option is an Adaptive Card, a customizable card that can contain any combination of text, speech, images, buttons, and input fields.
+Cards are interface elements that you may use to enhance the user experience in your Cortana skill.  
+The most versatile card is an Adaptive Card. An Adaptive Card is a customizable card that includes any combination of text, speech, images, buttons, and input fields.  
 
-Adaptive Cards provide:
+## Adaptive Cards  
 
-* **Input controls**: You can add input controls for text, date, number, time, toggle switch and choice set.
-* **Richer text**: Text in the cards is not limited to title, subtitle and text fixed formats. You can use a variety of font sizes, formats, and colors.
-* **A single open card exchange format**: You can use your existing cards in a common and consistent way and extend them with rich controls using a common schema.
+Adaptive Cards provide the following options.  
 
-For more information about Bot Framework cards, see [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments) for .NET or [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) for Node.js. 
+:::row:::
+    :::column span="1":::
+        **Input controls**
+    :::column-end:::
+    :::column span="2":::
+        Add input controls for text, date, number, time, toggle switch, and choice set.  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        **Richer text**
+    :::column-end:::
+    :::column span="2":::
+        Text in your card is not limited to title, subtitle, and text fixed formats. Use a variety of font sizes, formats, and colors.  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        **A single open card exchange format**
+    :::column-end:::
+    :::column span="2":::
+        Use your existing cards in a common and consistent way and extend your cards with rich controls using a common schema.  
+    :::column-end:::
+:::row-end:::
 
-Adaptive Cards use an open card exchange format that lets you specify user interface content in your skill in a common and consistent way. You describe the content as a simple JSON object. That content can then be rendered natively by the skill, automatically adapting to the skill's look and feel.
+*   **Input controls** : Add input controls for text, date, number, time, toggle switch, and choice set.  
+*   **Richer text** : Text in your card is not limited to title, subtitle, and text fixed formats. Use a variety of font sizes, formats, and colors.  
+*   **A single open card exchange format** : Use your existing cards in a common and consistent way and extend your cards with rich controls using a common schema.  
 
-Adaptive Cards can include elements, containers, actions, and inputs. A basic Adaptive Card is made up of: 
+Adaptive Cards use an open card exchange format. The open card exchange format enables you to specify user interface content in your skill in a common and consistent way. You describe the content as a simple JSON object. The JSON content is natively displayed by the skill and automatically adapts to the look and feel of your skill.  
 
-* The Adaptive Card root object.
-* The Adaptive Card body, which includes the card's elements. 
-* Any Adaptive Card's actions, which are typically displayed in an action bar at the bottom of the card.
+Adaptive Cards include elements, containers, actions, and inputs.  
+A basic Adaptive Card includes the following items.   
+*   The Adaptive Card root object.  
+*   The Adaptive Card body, which includes the elements of your card.  
+*   Any actions for your Adaptive Card, which are typically displayed in an action bar at the bottom of your card.  
 
-The Adaptive Cards Visualizer provides an interactive preview environment where you can view and edit an adaptive card's JSON schema, and see the results in a preview pane:
+## Adaptive Cards Visualizer  
 
-https://adaptivecards.io/visualizer/
+The Adaptive Cards Visualizer provides an interactive preview environment to view and edit the JSON schema of your Adaptive Card and see the results in a preview pane.  
 
-For example, the following text block provides the title text for the Adaptive Cards Visualizer's sample card:
+*   [adaptivecards.io/visualizer](https://adaptivecards.io/visualizer)
 
-    "type": "TextBlock",
-    "text": "Publish Adaptive Card schema",
-    "weight": "bolder",
-    "size": "medium"
+>[!TIP]
+> The following text block provides the title text for the sample card in the Adaptive Cards Visualizer.
+> 
+> ```json
+> "type": "TextBlock",
+> "text": "Publish Adaptive Card schema",
+> "weight": "bolder",
+> "size": "medium"
+> ```
+> 
+> ![Sample Card](../images/AC_Visualizer1.png)  
+> 
+> Change the titles text using the following text to updated the text block.  
+> 
+> ```json
+> "type": "TextBlock",
+> "text": "This is a test",
+> "weight": "bolder",
+> "size": "medium"
+> ```  
+>
+> ![Revised Card](../images/AC_Visualizer2.png)  
 
-![Sample Card](../images/AC_Visualizer1.png)
+## Create an Adaptive Card using .NET
 
-You can update the text block as follows to change the title text:
+1.  Install the `Microsoft.AdaptiveCards` NuGet package.
+2.  Specify the elements of your card in code.
+3.  Add the card to your Cortana skill as an attachment.
 
-    "type": "TextBlock",
-    "text": "This is a test",
-    "weight": "bolder",
-    "size": "medium"
+>[!TIP]
+> The following code adds an Adaptive Card to a Cortana skill response.
+>
+> ```csharp
+> var response = context.MakeMessage();
+>
+> AdaptiveCard card = new AdaptiveCard();
+>
+> card.Body.Add(new TextBlock()
+>     {
+>         Text = "This is a test",
+>         Weight = TextWeight.Bolder
+>         Size = TextSize.Medium,
+>     }
+> );
+>
+> response.Attachments.Add(card.ToAttachment());
+>
+> await context.PostAsync(response);
+> context.Wait(MessageReceived);
+> ```  
 
-![Revised Card](../images/AC_Visualizer2.png)
+## More Information  
 
-To create an Adaptive Card using .NET, first install the `Microsoft.AdaptiveCards` NuGet package. You can then specify the elements of the card in code and add the card to your Cortana skill as an attachment. For example, the following code adds an Adaptive Card to a Cortana skill response:
-
-    var response = context.MakeMessage();
-    
-    AdaptiveCard card = new AdaptiveCard();
-
-    card.Body.Add(new TextBlock()
-    {
-        Text = "This is a test",
-        Weight = TextWeight.Bolder
-        Size = TextSize.Medium,
-    });
-
-    response.Attachments.Add(card.ToAttachment());
-
-    await context.PostAsync(response);
-    context.Wait(MessageReceived);
-
-For more information about Adaptive Cards, see [Adaptive Cards](https://adaptivecards.io/). For an additional example of creating an Adaptive Card using .NET, see [Add an Adaptive card to a message](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card).
+*   For more information about Adaptive Cards, visit the Adaptive Cards page located at  [adaptivecards.io](https://adaptivecards.io/).  
+*   For more information about Bot Framework cards using .Net, visit the Add rich card attachments to messages for .NET page located at [docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments).
+*   For more information about Bot Framework cards using Node.js, visit the Add rich card attachments to messages for Node.js page located at [docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards).
+*   For an example of creating an Adaptive Card using .NET, visit the Add an Adaptive card to a message section located at [docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card).  
