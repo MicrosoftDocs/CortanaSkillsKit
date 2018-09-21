@@ -67,7 +67,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
    **Domain**
 
-   The **Domain** is a required field for the internal identifier of your OAuth2 provider. For example, if Microsoft is your OAuth2 provider, enter www.microsoft.com in to this field.
+   The **Domain** is a required field for the internal identifier of your OAuth2 provider. For example, if Microsoft is your OAuth2 provider, enter `www.microsoft.com` in to this field.
 
    **Client ID for third-party services**
 
