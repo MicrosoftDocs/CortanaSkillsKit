@@ -2,7 +2,7 @@
 title: Get Cortana's device type
 description: Shows how to get the type of device that Cortana is running on.
 ms.assetid: BB5B2186-2EDF-4BBB-9C53-B5CE64B2E042
-ms.date: 4/15/2017
+ms.date: 04/15/2017
 ms.topic: article
 keywords: cortana
 ---

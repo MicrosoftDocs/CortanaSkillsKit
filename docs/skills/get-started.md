@@ -2,7 +2,7 @@
 title: Creating a Cortana Skill
 description: Shows how to create a bot-based Skill.
 ms.assetid: d9cc74a2-af6d-452f-bd71-42fe27a5c673
-ms.date: 9/22/2017
+ms.date: 09/22/2017
 ms.topic: article
 keywords: cortana
 --- 

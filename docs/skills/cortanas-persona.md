@@ -2,7 +2,7 @@
 title: Cortana's persona
 description: Defines Cortana's persona and guidelines for maintaining it in your skill.
 ms.assetid: 3A6C5D06-2573-47A9-8AF7-8FD7E9321924
-ms.date: 9/30/2017
+ms.date: 09/30/2017
 ms.topic: article
 keywords: cortana
 ---

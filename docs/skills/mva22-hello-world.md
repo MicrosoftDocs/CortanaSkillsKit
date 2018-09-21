@@ -1,7 +1,7 @@
 ---
 title: Create your first Cortana skill
 description: Describes how to create your first Cortana skill.
-ms.date: 5/3/2018
+ms.date: 05/3/2018
 ms.topic: article
 keywords: cortana
 --- 

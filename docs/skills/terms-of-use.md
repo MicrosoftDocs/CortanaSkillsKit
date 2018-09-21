@@ -3,7 +3,7 @@ title: Example Terms of Use for Cortana Skills
 description: Provides an example Terms of Use that you can use with your Cortana skill.
 label: Conceptual
 ms.assetid: 4A17CB6A-A863-415C-9148-61B7022B2854
-ms.date: 4/25/2017
+ms.date: 04/25/2017
 ms.topic: article
 keywords: cortana
 ---
