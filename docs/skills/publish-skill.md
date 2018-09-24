@@ -134,7 +134,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
 Clicking the Manage button under the Discovery and Management section enables a developer to publish their Cortana skill to the [Publish to self](#publish-to-self), [Publish to group](#publish-to-group), and [Publish to world](#publish-to-world) deployment options.
 
-![Discovery and Management](../images/discovery_management_1.png)
+<!-- DELETE ![Discovery and Management](../images/discovery_management_1.png) -->
 
 To access the **Publish to self**, **Publish to group**, and **Publish to world** deployment options, click the **Publish** menu tab listed in the **Control Panel**. 
 
@@ -272,7 +272,7 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
 14.	Select a **Canvas Screenshot**, and then click **Choose file**.
 
-    ![Canvas Screenshot](../images/canvas_screenshot.png)
+    <!-- DELETE ![Canvas Screenshot](../images/canvas_screenshot.png) -->
 
     **Notes**: To select a canvas for a mobile device, click **Mobile**, and then click **Choose file**. Select the image to upload and click **Done**. Repeat the same steps to select a canvas for a **Desktop** computer.
 
@@ -306,7 +306,7 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
     A review status message will display in the Publish to World panel indicating that your skill is being reviewed by the Cortana team. If the Cortana team has any concerns or questions during the review process, they will contact you by e-mail. You can use this location to verify if your skill has been accepted or rejected. If a skill has been rejected, details about the reasons why it has been rejected will be provided. If all skill requirements are met, your Cortana skill will be approved and then deployed.  In the **Publish to world** panel, the **Review Status** will display the word **Approved**.
 
-    ![Review Status](../images/review_status_world_1.png)
+    <!-- DELETE ![Review Status](../images/review_status_world_1.png) -->
 
     **Support Information**
 
