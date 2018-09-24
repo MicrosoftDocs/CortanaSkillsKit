@@ -32,7 +32,7 @@ The required and optional Cortana Configuration fields and how to edit them are 
 
 3. In the **Connect to channels** page, click **Edit**. 
 
-    ![Connect to channels](../images/connect_to_channels_1.PNG)
+    ![Connect to channels](../images/connect_to_channels_1.png)
 
 4. (**Optional**) Modify the **Display name**, **Invocation name**, and **Description** fields.
 
@@ -55,7 +55,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
    **Note**: You are not allowed to collect user profile data unless your skill actually uses it. 
 
-   ![Request user profile data](../images/user_profile_data_2.PNG) 
+   ![Request user profile data](../images/user_profile_data_2.png) 
       
 9. (**Optional**) Under the section **Manage user identity through Connected Services**, click the toggle switch to allow Cortana to manage a user's identity through a connected service. 
 
@@ -63,7 +63,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
    To add OAuth2 configurations on your Cortana skill, you must complete all the required fields that are marked with an asterisk (*). All the required and optional fields are described below the image. 
 
-   ![OAuth2 configuration fields](../images/OAuth2_config_fields_2.PNG)
+   ![OAuth2 configuration fields](../images/OAuth2_config_fields_2.png)
 
    **Domain**
 
@@ -134,7 +134,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
 Clicking the Manage button under the Discovery and Management section enables a developer to publish their Cortana skill to the [Publish to self](#publish-to-self), [Publish to group](#publish-to-group), and [Publish to world](#publish-to-world) deployment options.
 
-![Discovery and Management](../images/discovery_management_1.PNG)
+![Discovery and Management](../images/discovery_management_1.png)
 
 To access the **Publish to self**, **Publish to group**, and **Publish to world** deployment options, click the **Publish** menu tab listed in the **Control Panel**. 
 
@@ -160,11 +160,11 @@ To edit the **Publish to self** property fields, refer to the steps below.
 
 6. Hover your mouse over the **Publish to self** panel, and then click **Edit**. 
 
-   ![Publish to self](../images/publish_self_panel_2.PNG)
+   ![Publish to self](../images/publish_self_panel_2.png)
 
 7.	Edit the fields or click **Upload new skill image** to replace the default skill image.
 
-    ![Upload a skill image](../images/upload_a_skill_image_1.PNG)
+    ![Upload a skill image](../images/upload_a_skill_image_1.png)
 
  8.	Click **Publish** to save your changes.
 
@@ -200,7 +200,7 @@ The following are the steps to publish your skill to **group**.
 
 8.	(**Optional**) Modify the display text for the skill along with the invocation name.
 
-    ![Display text invocation](../images/display_text_invocation_2.PNG)
+    ![Display text invocation](../images/display_text_invocation_2.png)
 
 9. Enter an MSA e-mail address, and then click Add. 
 **Note**: Use semicolons to separate multiple MSA e-mail addresses (e.g., abc@hotmail.com;test123@outlook.com). 
@@ -243,7 +243,7 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
 6. Click the **Publish to world** panel.
 
-   ![Publish to World](../images/publish_to_world.PNG)
+   ![Publish to World](../images/publish_to_world.png)
 
 
 7.	Click **Upload a new skill image**.
@@ -272,7 +272,7 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
 14.	Select a **Canvas Screenshot**, and then click **Choose file**.
 
-    ![Canvas Screenshot](../images/canvas_screenshot.PNG)
+    ![Canvas Screenshot](../images/canvas_screenshot.png)
 
     **Notes**: To select a canvas for a mobile device, click **Mobile**, and then click **Choose file**. Select the image to upload and click **Done**. Repeat the same steps to select a canvas for a **Desktop** computer.
 
@@ -306,7 +306,7 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
     A review status message will display in the Publish to World panel indicating that your skill is being reviewed by the Cortana team. If the Cortana team has any concerns or questions during the review process, they will contact you by e-mail. You can use this location to verify if your skill has been accepted or rejected. If a skill has been rejected, details about the reasons why it has been rejected will be provided. If all skill requirements are met, your Cortana skill will be approved and then deployed.  In the **Publish to world** panel, the **Review Status** will display the word **Approved**.
 
-    ![Review Status](../images/review_status_world_1.PNG)
+    ![Review Status](../images/review_status_world_1.png)
 
     **Support Information**
 
@@ -356,4 +356,4 @@ If you need to delete a skill that is published to **world**, you must contact t
 
 5.	Click **Yes, delete it**.
 
-    ![Delete Channel](../images/delete_channel_button_1.PNG) 
+    ![Delete Channel](../images/delete_channel_button_1.png) 
