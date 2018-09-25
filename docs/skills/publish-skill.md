@@ -31,8 +31,10 @@ The required and optional Cortana Configuration fields and how to edit them are 
 2. In the **My bots** page, click the name of the bot that is connected to the Cortana channel.
 
 3. In the **Connect to channels** page, click **Edit**. 
-
-    ![Connect to channels](../images/connect_to_channels_1.png)
+   
+   **REPLACE**  
+   ![Connect to channels](../images/connect_to_channels_1.png)
+   **REPLACE**  
 
 4. (**Optional**) Modify the **Display name**, **Invocation name**, and **Description** fields.
 
@@ -55,15 +57,21 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
    **Note**: You are not allowed to collect user profile data unless your skill actually uses it. 
 
+   **REPLACE**  
    ![Request user profile data](../images/user_profile_data_2.png) 
-      
+   **REPLACE**  
+
 9. (**Optional**) Under the section **Manage user identity through Connected Services**, click the toggle switch to allow Cortana to manage a user's identity through a connected service. 
 
+   **REPLACE**  
    ![Manage user identity through Connected Services](../images/toggle_user_identity_2.png)
+   **REPLACE**  
 
    To add OAuth2 configurations on your Cortana skill, you must complete all the required fields that are marked with an asterisk (*). All the required and optional fields are described below the image. 
 
+   **REPLACE**  
    ![OAuth2 configuration fields](../images/OAuth2_config_fields_2.png)
+   **REPLACE**  
 
    **Domain**
 
@@ -138,8 +146,9 @@ Clicking the Manage button under the Discovery and Management section enables a 
 
 To access the **Publish to self**, **Publish to group**, and **Publish to world** deployment options, click the **Publish** menu tab listed in the **Control Panel**. 
 
+**REPLACE**  
 ![Publish](../images/publish_menu_tab_2.png)
-
+**REPLACE**  
 
 
 ## Publish to self
@@ -160,11 +169,15 @@ To edit the **Publish to self** property fields, refer to the steps below.
 
 6. Hover your mouse over the **Publish to self** panel, and then click **Edit**. 
 
+   **REPLACE**  
    ![Publish to self](../images/publish_self_panel_2.png)
+   **REPLACE**  
 
 7.	Edit the fields or click **Upload new skill image** to replace the default skill image.
 
+    **REPLACE**  
     ![Upload a skill image](../images/upload_a_skill_image_1.png)
+    **REPLACE**  
 
  8.	Click **Publish** to save your changes.
 
@@ -192,29 +205,39 @@ The following are the steps to publish your skill to **group**.
 
 6. Click the **Publish to group** panel.
 
+   **REPLACE**  
    ![Publish to Group](../images/publish_to_group[1].png) 
+   **REPLACE**  
 
 7. (**Optional**) Click **Upload a new skill image** to replace the default skill image.
 
+   **REPLACE**  
    ![Upload a skill image](../images/upload_a_skill_image[1].png) 
+   **REPLACE**  
 
 8.	(**Optional**) Modify the display text for the skill along with the invocation name.
 
+    **REPLACE**  
     ![Display text invocation](../images/display_text_invocation_2.png)
+    **REPLACE**  
 
 9. Enter an MSA e-mail address, and then click Add. 
 **Note**: Use semicolons to separate multiple MSA e-mail addresses (e.g., abc@hotmail.com;test123@outlook.com). 
 
+   **REPLACE**  
    ![MSA e-mail addresses](../images/msa_email_addresses_2.png)
+   **REPLACE**  
 
 10.	(**Optional**) Click the drop-down list to add **User data** entity choices.
 
     **Note**: If you selected some of the **User data** entity choices in the **Publish to self** deployment option, they will automatically get carried over to the publishing options **group** and **world**.
 
-11. Click **Publish** to save the changes and to deploy the Cortana skill to the group.
-The result of the skill published to the group is shown in the image below.
+11. Click **Publish** to save the changes and to deploy the Cortana skill to the group.  
+    The result of the skill published to the group is shown in the image below.
 
+    **REPLACE**  
     ![Group Access URL](../images/publish_to_group_details_2[1].png) 
+    **REPLACE**  
 
 **Group Access URL**
 
@@ -243,8 +266,9 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
 6. Click the **Publish to world** panel.
 
+   **REPLACE**  
    ![Publish to World](../images/publish_to_world.png)
-
+   **REPLACE**  
 
 7.	Click **Upload a new skill image**.
 
@@ -260,7 +284,9 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
      **Notes**: If you do not include all the support platforms in this step, then you must enter a disclaimer as noted in step 19. If you include all the supported platforms in this step, then the disclaimer noted in step 19 is optional. You may also delete a supported platform by clicking **Delete**.
 
+    **REPLACE**  
     ![Supported Platfomrs](../images/supported_platforms_1.png)
+    **REPLACE**  
 
 12.	Click **Yes** if this Cortana skill collects personal information or click **No** if the skill does not collect personal information.
 
@@ -296,7 +322,9 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
     The image below displays the status of the skill.
 
+    **REPLACE**  
     ![Submit for review](../images/submit_for_review[1].png)
+    **REPLACE**  
 
 22.	Click **Submit for review**.
 
@@ -321,7 +349,9 @@ Publishing your Cortana skill to **world** makes it available in all markets tha
 
 Because the skill is locked while it's under review, you may not make changes to it. If you want to make changes to your skill,  click **Withdraw your submission**. 
 
+ **REPLACE**  
  ![Withdraw skill](../images/withdraw_skill[1].png)
+ **REPLACE**  
 
 You may withdraw your skill only while it's being reviewed or has been approved but not published to the **world**. All the properties entered in **Publish to world** will still be saved. You can go back and make changes to your skill's publishing properties and then resubmit your skill back for review and certification. 
 
@@ -356,4 +386,6 @@ If you need to delete a skill that is published to **world**, you must contact t
 
 5.	Click **Yes, delete it**.
 
+    **REPLACE**  
     ![Delete Channel](../images/delete_channel_button_1.png) 
+    **REPLACE**  

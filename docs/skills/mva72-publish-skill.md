@@ -35,12 +35,15 @@ Before your Cortana skill can be published to the world, it must be reviewed and
 
 Like the **Publish to self** and **Publish to group** channel configurations, the **Publish to world** channel configuration requires you to specify basic information for your skill, such as the display text and invocation name. In addition, you must specify a variety of information required for certification, such as skill invocation phrases and a category that indicates how the skill might be organized when it is displayed with other skills.
 
+**REPLACE**  
 ![Publish to World Config](../images/mva72-world-config.png)
-
+**REPLACE**  
 
 After you have specified the **Publish to world** channel configuration information for your skill, click **Preview** to see a summary of the status of the submission.
 
+**REPLACE**  
 ![Submit for Review](../images/mva72-submit-review.png)
+**REPLACE**  
 
 If you have specified all the required information, click **Submit for review** to complete the submission process. The Cortana team will inform you when your skill has passed certification and is published, or if you need to supply additional information for certification.
 

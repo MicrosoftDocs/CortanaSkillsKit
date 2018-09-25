@@ -33,11 +33,15 @@ To create a group of users who can use and test your Cortana skill, update the s
 
 In the **Add user's Microsoft accounts** box, specify the members of the group by entering an email address associated with a Microsoft account for each user. The email account does not have to be a Microsoft account, such as an Outlook or Hotmail account, but it must be associated with a registered Microsoft account. Separate the email addresses with a semicolon.
 
+**REPLACE**  
 ![Publish to Group](../images/mva71-publish-group.png)
+**REPLACE**  
 
 To create the group, click **Publish latest changes**. 
 
+**REPLACE**  
 ![Create Group](../images/mva71-group-created.png)
+**REPLACE**  
 
 ## Step 2 - Invite users to join the group
 
