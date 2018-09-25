@@ -1,9 +1,11 @@
 ---
 title: Speech Synthesis Markup Language (SSML) Reference
 description: Overview of the SSML schema used by Cortana.
+
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 04/4/2017
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
