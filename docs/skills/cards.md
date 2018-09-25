@@ -2,8 +2,10 @@
 title: Using Bot Framework cards in a Cortana Skill
 description: Identifies the different cards that you can use in your skill to display information to the user.
 label: Conceptual
-ms.date: 10/25/2017
+
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 

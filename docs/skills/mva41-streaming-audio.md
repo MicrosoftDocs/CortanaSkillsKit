@@ -1,8 +1,10 @@
 ---
 title: Adding audio to Cortana skills
 description: Describes how to develop a Cortana skill that uses SSML and streaming audio.
-ms.date: 12/27/2017
+
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 

@@ -1,8 +1,10 @@
 ---
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
-ms.date: 5/03/2018
+
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 

@@ -1,8 +1,10 @@
 ---
 title: Understanding types of conversations
 description: Explains the different types of Cortana conversations.
-ms.date: 12/5/2017
+
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 

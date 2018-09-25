@@ -1,9 +1,11 @@
 ---
 title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
+
 ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 10/11/2017
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 

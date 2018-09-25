@@ -1,9 +1,11 @@
 ---
 title: Principles of Cortana Skill Design
 description: Overview of Cortana Skill Design Best Practices.
+
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 09/25/2017
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 

@@ -1,9 +1,11 @@
 ---
 title: Get the user's profile and contextual information
 description: Shows how to get the user's profile and contextual information.
+
 ms.assetid: CE72258E-7934-4B5B-9CE7-15BE3905096C
-ms.date: 05/03/2018
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 

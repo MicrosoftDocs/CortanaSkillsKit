@@ -1,8 +1,10 @@
 ---
 title: Using client code with Cortana skills
 description: Describes how to use client code with a Cortana skill.
-ms.date: 1/5/2018
+
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 

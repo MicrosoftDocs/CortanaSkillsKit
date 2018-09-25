@@ -1,8 +1,10 @@
 ---
 title: Understanding Cortana's user profile data
 description: Introduces Cortana user profile data.
-ms.date: 1/22/2018
+
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
