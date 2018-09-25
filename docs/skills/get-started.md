@@ -62,7 +62,7 @@ If you encounter issues, see [Test your Cortana Skill](test-debug.md).
 
 ## Next steps
 
-To design the perfect skill, see [Skill design principals](design-principles.md).
+To design the perfect skill, see [Skill design principles](design-principles.md).
 
 To make your skill smart, see [Add intelligence to your skill](https://docs.microsoft.com/bot-framework/cognitive-services-bot-intelligence-overview). 
 
