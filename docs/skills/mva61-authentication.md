@@ -16,11 +16,11 @@ If your Cortana skill uses a service that requires authentication, you can let C
 
 Once the authentication takes place, Cortana uses an authentication token to manage authentication for the skill. Rather than prompting the user again for credentials, Cortana uses the token to authenticate the user. In this module, you'll learn how to customize the **Mixtape** skill developed in previous modules to use authentication.
 
-For more information about adding authentication to your skill, see [Adding authentication to your skill](https://docs.microsoft.com/en-us/cortana/skills/authentication).
+For more information about adding authentication to your skill, see [Adding authentication to your skill](./authentication.md).
 
 ## Step 1 - Configure your skill to use authentication
 
-As you learned in [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) and [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations), you register a Cortana skill by connecting your bot to the Cortana channel.
+As you learned in [Create your first Cortana skill](./mva22-hello-world.md) and [Building conversations](./mva32-building-conversations.md), you register a Cortana skill by connecting your bot to the Cortana channel.
 
 
 To enable authentication for your Cortana skill, update the skill's authentication settings by clicking the **Authentication** menu tab.

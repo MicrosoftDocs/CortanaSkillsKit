@@ -27,7 +27,7 @@ You can also update many user profile iteFor example, you can add or remove item
 
 When you are developing a Cortana skill, you can customize the skill to the user by including information from the user profile. For example, with a user's consent you can customize your skill to include the user's name, email address, location, or cuisine preference.
 
-For more information about user profile and contextual information, see [Get the user's profile and contextual information](https://docs.microsoft.com/en-us/cortana/skills/get-user-profile-context). 
+For more information about user profile and contextual information, see [Get the user's profile and contextual information](./get-user-profile-context.md). 
 
-For reference information on the user profile entities you can use in code when you are developing your Cortana skill, see [Cortana user profile and contextual information reference](https://docs.microsoft.com/en-us/cortana/skills/user-profile-contextual-info).
+For reference information on the user profile entities you can use in code when you are developing your Cortana skill, see [Cortana user profile and contextual information reference](./user-profile-contextual-info.md).
 

@@ -121,7 +121,7 @@ Roleplay the conversation to make sure it's natural and intuitive. Just like in 
 The conversational design process should identify intents, entities, and utterances. Intents are the actions that the user wants to perform and entities are the data required to perform the action. For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM," the intent is to book a flight, and New York and 6:00 PM are the entities.
 
 
-When building your skill, you're encouraged to use Microsoft's [Language Understanding Intelligent Services](https://www.luis.ai) (**LUIS.ai**) to model your intents and entities. For information about modeling intents and entities in LUIS, see [intents](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-intents) and [entities](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-entities). For a list of built-in entities in LUIS, see [Prebuilt entities](https://docs.microsoft.com/en-us/azure/cognitive-services/luis/pre-builtentities). 
+When building your skill, you're encouraged to use Microsoft's [Language Understanding Intelligent Services](https://www.luis.ai) (**LUIS.ai**) to model your intents and entities. For information about modeling intents and entities in LUIS, see [intents](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-intents) and [entities](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-entities). For a list of built-in entities in LUIS, see [Prebuilt entities](https://docs.microsoft.com/azure/cognitive-services/luis/pre-builtentities). 
 
 
 Intents fall into the following categories:

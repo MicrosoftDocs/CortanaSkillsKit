@@ -12,7 +12,7 @@ keywords: cortana
 
 
 > [!NOTE]
-> This article describes Cortana’s three deployment groups and how to publish a skill.  It is assumed that you have already created a skill.  If you’ve never created a skill and need information on where to get started, see [Create your first skill](https://docs.microsoft.com/en-us/cortana/skills/get-started). 
+> This article describes Cortana’s three deployment groups and how to publish a skill.  It is assumed that you have already created a skill.  If you’ve never created a skill and need information on where to get started, see [Create your first skill](./get-started.md). 
 
 Cortana provides three deployment groups that you can deploy your skill to: [Publish to self](#publish-to-self), [Publish to group](#publish-to-group), and [Publish to world](#publish-to-world).
 
@@ -38,7 +38,7 @@ The required and optional Cortana Configuration fields and how to edit them are 
 
    **Note**: The Display name is limited to 30 characters. 
 
-   For more information about the bot configuration fields, see [Connect a bot to Cortana](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channel-connect-cortana). 
+   For more information about the bot configuration fields, see [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana). 
 
 5. (**Required**) In the **Primary category** field, click the drop-down list and select a category that your skill belongs to (e.g., developer tools, entertainment, or health & fitness).
 
@@ -103,7 +103,7 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
    **User tenant auth**
 
-   Select this option if you want your bot to authenticate with your own service that is hosted in Microsoft Azure and uses the Azure Active Directory (AAD). For more details on authorizing access to web applications using OAuth 2.0 and AAD, see [OAuth2 and Microsoft Azure Active Directory Protocol](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-protocols-oauth-code).
+   Select this option if you want your bot to authenticate with your own service that is hosted in Microsoft Azure and uses the Azure Active Directory (AAD). For more details on authorizing access to web applications using OAuth 2.0 and AAD, see [OAuth2 and Microsoft Azure Active Directory Protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
    **Redirect URL (URI)**
 
@@ -170,7 +170,7 @@ To edit the **Publish to self** property fields, refer to the steps below.
 
     Another way to confirm that your skill was deployed, log in to the [Cortana dashboard](https://developer.microsoft.com/en-us/cortana/dashboard#!/home) using the same Microsoft account (MSA) that you used to register it in Bot Frameworks.
 
-    For information about testing your skill, see [Testing and debugging Cortana Skills](https://docs.microsoft.com/en-us/cortana/skills/test-debug).
+    For information about testing your skill, see [Testing and debugging Cortana Skills](./test-debug.md).
 
       
 
@@ -229,7 +229,7 @@ This section describes the remaining required fields that must be completed befo
 
 If you complete some of the required fields but need to stop what you are doing, don't worry about having to re-enter the fields all over again. Just click the **Save and Close** button located at the bottom of the **Publish to world** window. This feature enables you to preserve the fields that you've already populated. You can then go back and resume populating the rest of the required fields.
 
-Publishing your Cortana skill to **world** makes it available in all markets that you specified when you registered your bot. Before publishing your skill to **world**, ensure that you read and comply with the [Cortana skills certification requirements](https://docs.microsoft.com/en-us/cortana/skills/skill-review-guidelines).
+Publishing your Cortana skill to **world** makes it available in all markets that you specified when you registered your bot. Before publishing your skill to **world**, ensure that you read and comply with the [Cortana skills certification requirements](./skill-review-guidelines.md).
 
 1. Sign in to the [BotFramework](https://dev.botframework.com/) portal and click **My bots**.
 

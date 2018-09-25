@@ -31,7 +31,7 @@ Developing a Cortana skill requires a variety of cloud resources. For example, y
 
 Other resources include:
 
-* **Bot Framework**. To create a Cortana skill, you must first create a bot. Then log in to the [Bot Framework Developer Portal](https://dev.botframework.com/) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world).
+* **Bot Framework**. To create a Cortana skill, you must first create a bot. Then log in to the [Bot Framework Developer Portal](https://dev.botframework.com/) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
 
 ![Bot Framework developer portal](../images/Bot-Framework-dev-portal.png)
 

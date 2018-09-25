@@ -14,7 +14,7 @@ keywords: cortana
 
 In previous modules, you learned how to use the **Publish to self** option to publish your Cortana skill when you are developing and testing the skill, and the **Publish to group** option to make your skill available to a group of users. In this module, you'll learn about the **Publish to world** option to make your skill public when it is fully tested and ready to be made available to any Cortana user.
 
-For more information on making your skill available to a group of users, see [Sharing your Cortana skill to a group](https://docs.microsoft.com/en-us/cortana/skills/mva71-share-skill). For more information on Cortana publishing options, see [Publishing Cortana Skills](https://docs.microsoft.com/en-us/cortana/skills/publish-skill).
+For more information on making your skill available to a group of users, see [Sharing your Cortana skill to a group](./mva71-share-skill.md). For more information on Cortana publishing options, see [Publishing Cortana Skills](./publish-skill.md).
 
 ## Step 1 - Make sure your skill meets certification requirements
 
@@ -25,7 +25,7 @@ Unlike the **Publish to self** and **Publish to group** options, the **Publish t
 * The skill must work as intended based on the submission information you specify.
 * The skill must follow specified design, performance, and personality guidelines.
 
-For more information on certification requirements, see [Cortana skills certification requirements](https://docs.microsoft.com/en-us/cortana/skills/skill-review-guidelines).
+For more information on certification requirements, see [Cortana skills certification requirements](./skill-review-guidelines.md).
 
 ## Step 2 - Submit your skill for review
 

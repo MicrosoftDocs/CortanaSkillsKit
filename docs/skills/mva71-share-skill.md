@@ -12,7 +12,7 @@ keywords: cortana
 | - | - |
 | ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=IjcRvxeoE_1611787171) about sharing your Cortana skill to a group. |
 
-In [Using profile data in your Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva52-using-profile-data), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings. 
+In [Using profile data in your Cortana skill](./mva52-using-profile-data.md), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings. 
 
 That module described using **Publish to self** option, which is the best publishing option to use when you are developing and testing a skill. **Publish to self** makes the skill available only to you. You must be logged in to your Microsoft account to use and test the skill.
 
@@ -21,9 +21,9 @@ When you are done testing your skill and ready to share it with other users, you
 * **Publish to group**, which lets you deploy the skill to a specified group of users.
 * **Publish to world**, which makes your completed skill available to all Cortana users after it has passed certification.
 
-In this module, you'll learn how to publish the **Mixtape** skill developed in previous modules to a group. In [Publishing your Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva72-publish-skill), you'll learn how to publish your completed skill.
+In this module, you'll learn how to publish the **Mixtape** skill developed in previous modules to a group. In [Publishing your Cortana skill](./mva72-publish-skill.md), you'll learn how to publish your completed skill.
 
-For more information on Cortana publishing options, [Publishing Cortana Skills](https://docs.microsoft.com/en-us/cortana/skills/publish-skill)
+For more information on Cortana publishing options, [Publishing Cortana Skills](./publish-skill.md)
 
 ## Step 1 - Create a group
 

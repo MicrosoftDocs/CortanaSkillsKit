@@ -61,7 +61,7 @@ Here are some additional things to consider when designing a conversation for a 
 * How does the skill react if it reaches a dead end; for example, if the task doesn't complete or gets something wrong?
 * What environments could the skill be used in?
 
-For more information on designing skills, see [Principles of Cortana Skills design](https://docs.microsoft.com/en-us/cortana/skills/design-principles).
+For more information on designing skills, see [Principles of Cortana Skills design](./design-principles.md).
 
 
 

@@ -56,7 +56,7 @@ NOTE: It may take up to 10 minutes for the newly generated keys to take effect.
 
 **Avoid cold starts in Azure**
 
-If an Azure Function and Web app is not used for a period of time (typically about 20 minutes), Azure recycles it. Recycled functions and apps can take up to 10 seconds to start. This is known as a cold start. You can prevent cold starts by enabling the [Always On](https://docs.microsoft.com/en-us/azure/azure-functions/functions-scale#always-on) option in the application settings of your Azure [Function](https://docs.microsoft.com/en-us/azure/azure-functions/functions-how-to-use-azure-function-app-settings) or [Web app](https://docs.microsoft.com/azure/app-service-web/web-sites-configure).
+If an Azure Function and Web app is not used for a period of time (typically about 20 minutes), Azure recycles it. Recycled functions and apps can take up to 10 seconds to start. This is known as a cold start. You can prevent cold starts by enabling the [Always On](https://docs.microsoft.com/azure/azure-functions/functions-scale#always-on) option in the application settings of your Azure [Function](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings) or [Web app](https://docs.microsoft.com/azure/app-service-web/web-sites-configure).
 
 Azure Functions and Web apps that are on Free or Shared App Service plans do not have the option to be always on.
 
@@ -67,5 +67,5 @@ If you are not using Azure's automatic scaling feature, you should disable appli
 ## Additional performance resources
 
 - [Troubleshoot performance issues in Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)
-- [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-best-practices)
+- [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)
 - [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/bot-framework/troubleshoot-general-problems)
