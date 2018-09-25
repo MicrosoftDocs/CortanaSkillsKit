@@ -144,7 +144,7 @@ To access the **Publish to self**, **Publish to group**, and **Publish to world*
 
 ## Publish to self
 
-Deploying to **Publish to self** makes the skill available to you only, so you can thoroughly test your skill before deploying it to one of the other environments. After configuring the Cortana channel for your skill (see [Configure Cortana Channel](https://docs.microsoft.com/en-us/bot-framework/channel-connect-cortana)), it's automatically deployed to **Publish to self**. 
+Deploying to **Publish to self** makes the skill available to you only, so you can thoroughly test your skill before deploying it to one of the other environments. After configuring the Cortana channel for your skill (see [Configure Cortana Channel](https://docs.microsoft.com/bot-framework/channel-connect-cortana)), it's automatically deployed to **Publish to self**. 
 
 To edit the **Publish to self** property fields, refer to the steps below.
 

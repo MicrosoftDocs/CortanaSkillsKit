@@ -19,8 +19,8 @@ To extend Cortana, use the Cortana Skills Kit. The kit is a suite of tools that 
 
 The following components make up the skills kit.
 
-- [Bot Framework](https://docs.microsoft.com/en-us/bot-framework/)  
-  A skill is a speech bot. Use the Bot Framework to build your speech bot, register it, and define your Cortana channel. The framework provides a .NET SDK and Node.js SDK that you use to build your bot. The Bot Framework SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. The Bot Builder SDK is provided as open source on GitHub (see [BotBuilder](https://github.com/Microsoft/BotBuilder)). For an overview of how the framework works, see [How the Bot Framework works](https://docs.microsoft.com/en-us/bot-framework/overview-how-bot-framework-works).
+- [Bot Framework](https://docs.microsoft.com/bot-framework/)  
+  A skill is a speech bot. Use the Bot Framework to build your speech bot, register it, and define your Cortana channel. The framework provides a .NET SDK and Node.js SDK that you use to build your bot. The Bot Framework SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler. The Bot Builder SDK is provided as open source on GitHub (see [BotBuilder](https://github.com/Microsoft/BotBuilder)). For an overview of how the framework works, see [How the Bot Framework works](https://docs.microsoft.com/bot-framework/overview-how-bot-framework-works).
 
 
   
@@ -102,7 +102,7 @@ Microsoft Cognitive Services lets you tap into a growing collection of powerful 
 
 Intelligent skills respond as if they can see the world as people see it. They discover information and extract knowledge from different sources to provide useful answers, and, best of all, they learn as they acquire more experience to continuously improve their capabilities.
 
-For the full list of services that you can integrate into your skill, see [Add intelligence to bots with Cognitive Services](https://docs.microsoft.com/en-us/bot-framework/cognitive-services-bot-intelligence-overview).
+For the full list of services that you can integrate into your skill, see [Add intelligence to bots with Cognitive Services](https://docs.microsoft.com/bot-framework/cognitive-services-bot-intelligence-overview).
 
 
 
@@ -113,7 +113,7 @@ Interactions between users and skills is mostly free-form, so skills need to und
 You could use a simple method such as using regular expressions to inspect the content of a message and determine intent, but you're encouraged to use [Language Understanding Intelligent Service (LUIS)](https://luis.ai). LUIS is a powerful tool that processes natural language using pre-built or custom-trained language models. LUIS uses the models to determine what users want, identifies concepts and entities in a given sentence, and ultimately allows your skill to respond with the appropriate action.
 
 
-Depending on the Bot Framework SDK that you use, for information about recognizing intents and entities with LUIS, see [Using LUIS with the Node.js SDK](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-luis-dialogs).
+Depending on the Bot Framework SDK that you use, for information about recognizing intents and entities with LUIS, see [Using LUIS with the Node.js SDK](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-luis-dialogs).
 
 For information about modeling intents and entities in LUIS, see [intents](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-intents) and [entities](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-entities).
 

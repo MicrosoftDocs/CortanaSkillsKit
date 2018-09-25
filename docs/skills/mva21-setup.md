@@ -56,7 +56,7 @@ Although you can use any development environment, Microsoft Visual Studio offers
 > [!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
-For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
+For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
 
 If you are developing your skill on a Mac, or developing for an iOS, Android, or Harman Kardon Invoke device, you also need to set up the device where Cortana invokes the skill. Since Cortana is not available in a Mac environment, skills developed in a Mac environment must be invoked on a mobile device or in a virtual machine environment running Windows.
 

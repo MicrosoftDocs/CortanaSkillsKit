@@ -467,9 +467,9 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 ![Cortana's Canvas](../images/reference/cortana-canvas.png)
 
-To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) or [Add cards to your skill using .NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments).  
+To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) or [Add cards to your skill using .NET](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments).  
 
-In addition to cards, Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt#prompt-types).
+In addition to cards, Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt#prompt-types).
 
 
 ### Card design tips
@@ -536,9 +536,9 @@ Need to add a section like this:
 
 In addition to cards, Bot Framework provides the following UI elements that your skill may use. 
 
-Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt#prompt-types).
+Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt#prompt-types).
 
-.NET users can use [FormFlow](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-formflow).
+.NET users can use [FormFlow](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-formflow).
 
 What design rules apply to Node.js prompts?
 What design rules apply to .NET FormFlows?
@@ -560,5 +560,5 @@ When you publish your skill to the world, the Cortana team reviews your skill to
 
 <!-- Think about include bot framework's design principles 
 
-Checkout Bot Framework's [Principles of bot design](https://docs.microsoft.com/en-us/bot-framework/bot-design-principles).
+Checkout Bot Framework's [Principles of bot design](https://docs.microsoft.com/bot-framework/bot-design-principles).
 -->

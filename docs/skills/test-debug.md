@@ -12,16 +12,16 @@ keywords: cortana
 
 The following are the options available to test and debug your skill.
 
-- Use Bot Framework's emulator to test and debug your skill while you're developing it. The emulator lets you interact with your bot and see the messages that are exchanged. For details about using the emulator, see [Debug with the emulator](https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator). Currently, the emulator does not support passing user profile and contextual information to the skill. 
+- Use Bot Framework's emulator to test and debug your skill while you're developing it. The emulator lets you interact with your bot and see the messages that are exchanged. For details about using the emulator, see [Debug with the emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator). Currently, the emulator does not support passing user profile and contextual information to the skill. 
   
-- Use the debugger in Visual Studio Code to walk through your code as it executes in the console window. For details, see [Debug a Bot Service bot](https://docs.microsoft.com/en-us/bot-framework/bot-service-debug-bot).
+- Use the debugger in Visual Studio Code to walk through your code as it executes in the console window. For details, see [Debug a Bot Service bot](https://docs.microsoft.com/bot-framework/bot-service-debug-bot).
   
 - Use the Chat window in the Bot Framework portal. Typically, you do this after you configure your Cortana channel and deploy the service to confirm that it's running.  
   
 -  Enable debug in Cortana so you can see the message exchange between Cortana and your skill. For information about enabling debugging, see [Enable debugging in Cortana](#Enable-debugging-in-Cortana).
 
 
-For details about debugging your skill in Azure's [continuous publishing](https://docs.microsoft.com/en-us/bot-framework/azure-bot-service-continuous-deployment#set-up-continuous-deployment) environment, see [Debug an Azure Bot Service bot](https://docs.microsoft.com/en-us/bot-framework/azure-bot-service-debug-bot).
+For details about debugging your skill in Azure's [continuous publishing](https://docs.microsoft.com/bot-framework/azure-bot-service-continuous-deployment#set-up-continuous-deployment) environment, see [Debug an Azure Bot Service bot](https://docs.microsoft.com/bot-framework/azure-bot-service-debug-bot).
 
 
 But before you start debugging your skill, check out [Troubleshooting tips](#Troubleshooting-tips) and [Known Issues](known-issues.md).

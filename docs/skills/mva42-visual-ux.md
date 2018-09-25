@@ -32,7 +32,7 @@ You can add a variety of visual interface elements, or *cards*, to your Cortana 
 * Receipt card - A card that contains an invoice or receipt.
 * SignIn card - A card that lets the user sign-in to a service that the skill uses.
 
-For more information about Bot Framework cards, see [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments) for .NET or [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) for Node.js. 
+For more information about Bot Framework cards, see [Add rich card attachments to messages](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments) for .NET or [Add rich card attachments to messages](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) for Node.js. 
 
 To add a visual interface element that displays a title heading and text to the Mixtape skill, add a Hero card. For example, revise the Mixtape skill's **PlaySongIntent** method as follows:
 
