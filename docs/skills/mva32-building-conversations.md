@@ -1,17 +1,20 @@
 ---
 title: Building conversations
 description: Describes how to build Cortana conversations.
-ms.date: 12/5/2017
+
+ms.date: 09/26/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 
 # Building conversations
 
+<!--
 |   |   |
 | - | - |
 | ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=I5mDbPfnE_3111787171) about building conversations. |
-
+-->
  
 In [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed. 
 
