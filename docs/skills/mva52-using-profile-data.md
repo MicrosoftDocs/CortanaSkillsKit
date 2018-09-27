@@ -1,16 +1,20 @@
 ---
-title: Using profile data in your Cortana skill
-description: Describes how to use profile data in your Cortana skill.
-ms.date: 05/03/2018
+title: Using profile data in your Cortana Skill
+description: Describes how to use profile data in your Cortana Skill.
+
+ms.date: 09/26/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
 # Using profile data in your Cortana skill
 
+<!--
 |   |   |
 | - | - |
 | ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=4XLAOweoE_7311787171) about using profile data in your Cortana skill. |
+-->
 
 As you learned in [Understanding Cortana's user profile data](https://docs.microsoft.com/en-us/cortana/skills/mva51-profile-data), Cortana's user profile contains a variety of information that you can view and use in your Cortana skill with the user's consent. In this module, you'll learn how to customize the **Mixtape** skill developed in previous modules to include profile data.
 

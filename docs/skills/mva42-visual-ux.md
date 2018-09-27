@@ -1,18 +1,20 @@
 ---
-title: Adding visual elements to Cortana skills
-description: Describes how to develop a Cortana skill that uses visual elements.
-label: Conceptual
-ms.date: 01/3/2018
+title: Adding visual elements to Cortana Skills
+description: Describes how to develop a Cortana Skill that uses visual elements.
+
+ms.date: 09/26/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
 # Adding visual elements to Cortana skills
 
+<!--
 |   |   |
 | - | - |
 | ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=HE02aQfnE_6911787171) about adding visual elements to Cortana skills. |
-
+-->
 
 If you are creating a Cortana skill for a device with a screen, such as a PC or mobile device, you should consider the skill's visual  interface. In [Adding audio to Cortana skills](https://docs.microsoft.com/en-us/cortana/skills/mva41-streaming-audio), you learned how to use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips, and how to use an Audio card to stream audio. In this module you'll see how to extend the **Mixtape** skill to add visual elements.
 
