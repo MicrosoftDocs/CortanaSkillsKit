@@ -12,24 +12,28 @@ keywords: cortana
 # Cortana Skills Kit for Enterprise  
 
 >[!NOTE]
-> Cortana Skills Kit for Enterprise is currently available through Technology Adoption Program.  
-> Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.  
+> Cortana Skills Kit for Enterprise is currently available through Technology Adoption Program. Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.  
 
 Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capability by building their own custom skills for domains ranging from HR, IT, Helpdesk, Sales to areas like Smart Building:  
 
-<!-- html insertion for look and feel - start -->
-<ul style="list-style: square inside url('../images/blue-globe-20x20.png');">  
-  <li>To make information retrieval an easy task</li>  
-</ul>  
-
-<ul style="list-style: square inside url('../images/blue-screwdriver_and_wrench-20x20.png');">  
-  <li>To complete company specific tasks and different workflows more easily with voice</li>  
-</ul>  
-
-<ul style="list-style: square inside url('../images/blue-clock-20x20.png');">  
-  <li>Help employees save more time and focus on things that matter most</li>  
-</ul>  
-<!-- html insertion for look and feel - end -->
+:::row:::
+    :::column:::
+        ![globe](../images/blue-globe-20x20.png)  
+        To make information retrieval an easy task  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        ![screwdriver and wrench](../images/blue-screwdriver_and_wrench-20x20.png)  
+        To complete company specific tasks and different workflows more easily with voice  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        ![clock](../images/blue-clock-20x20.png)  
+        Help employees save more time and focus on things that matter most  
+    :::column-end:::
+:::row-end:::
 
 Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and leverages Azure Active Directory to manage building, testing and deployment of the custom skills within the tenant.  
 *   [Azure Bot Service](https://azure.microsoft.com/services/bot-service)  
