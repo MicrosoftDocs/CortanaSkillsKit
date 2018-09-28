@@ -151,9 +151,9 @@ In the Azure Portal, click the Channels tab to view the available channels, and 
 
 On the Configure Cortana page, scroll down to the **Discovery and Management** section and click **Manage**. Click the **Publish** menu tab and then **Publish to self** to open the channel configuration settings, where you can specify an optional icon for the skill, and a display name and invocation name. Cortana uses the invocation name you specify to invoke the skill.
 
-**REPLACE**  
-![Configure Cortana Skill](../images/mva22-configure.png)
-**REPLACE**  
+<!-- new -->  
+![Configure Cortana Skill](../images/cortana-configure-settings.png)  
+<!-- new -->  
 
 On the Channels tab of the Azure Portal, you can now see Cortana listed as an *mva-hello-world* bot service channel. 
 
