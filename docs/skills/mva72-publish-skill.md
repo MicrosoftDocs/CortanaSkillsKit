@@ -29,24 +29,88 @@ Unlike the **Publish to self** and **Publish to group** options, the **Publish t
 
 For more information on certification requirements, see [Cortana skills certification requirements](./skill-review-guidelines.md).
 
-## Step 2 - Submit your skill for review
+## Step 2 - Submit your skill for review  
 
-Before your Cortana skill can be published to the world, it must be reviewed and certified by the Cortana team. To start this process, update the skill's **Publish to world** channel configuration settings. 
+<!-- new -->
+The Cortana team must review and certify your Cortana Skills prior to publication to the world. To start this process, update the World settings channel configuration settings for your Cortana Skill.  
 
-Like the **Publish to self** and **Publish to group** channel configurations, the **Publish to world** channel configuration requires you to specify basic information for your skill, such as the display text and invocation name. In addition, you must specify a variety of information required for certification, such as skill invocation phrases and a category that indicates how the skill might be organized when it is displayed with other skills.
+Like the Default settings and Group settings channel configurations, the World settings channel configuration requires you to provide basic information for your Cortana Skill. Basic information may include the display text and invocation name. In addition, you must provide information required for certification. Certification information may include skill invocation phrases and a category that indicates how the skill might be organized when it is displayed with other skills.  
 
-**REPLACE**  
-![Publish to World Config](../images/mva72-world-config.png)
-**REPLACE**  
+<!-- new -->  
+![Publish to World Config](../images/skill_information-skill_icon.png)  
 
-After you have specified the **Publish to world** channel configuration information for your skill, click **Preview** to see a summary of the status of the submission.
+![Publish to World Config](../images/skill_information-display_name.png)  
 
-**REPLACE**  
-![Submit for Review](../images/mva72-submit-review.png)
-**REPLACE**  
+![Publish to World Config](../images/skill_information-invocation_name.png)  
 
-If you have specified all the required information, click **Submit for review** to complete the submission process. The Cortana team will inform you when your skill has passed certification and is published, or if you need to supply additional information for certification.
+![Publish to World Config](../images/skill_information-short_description.png)  
 
+![Publish to World Config](../images/skill_information-long_description.png)  
+
+![Publish to World Config](../images/skill_information-sample_invocation_phrase.png)  
+
+![Publish to World Config](../images/skill_information-primary_category.png)  
+
+![Publish to World Config](../images/skill_information-secondary_category.png)  
+
+![Publish to World Config](../images/skill_information-tags.png)  
+
+![Publish to World Config](../images/skill_information-supported_platforms.png)  
+
+![Publish to World Config](../images/skill_information-collect_users_personal_information.png) 
+
+![Publish to World Config](../images/developer_account-developer_account_type.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-first_name.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-last_name.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-email.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-phone_number.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-address.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-city_district.png)  
+
+![Publish to World Config]
+(../images/developer_account-developer_information-state.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-zip_code.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-country.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-developed_for.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-published_by.png)  
+
+![Publish to World Config](../images/developer_account-developer_information-developer_company_website_url.png)  
+
+![Publish to World Config](../images/developer_account-support_contact-email.png)  
+
+![Publish to World Config](../images/developer_account-support_contact-website_url.png)  
+
+![Publish to World Config](../images/developer_account-publisher_information-name.png)  
+
+![Publish to World Config](../images/developer_account-publisher_information-email.png)  
+
+![Publish to World Config](../images/developer_account-publisher_information-phone_number.png)  
+
+![Publish to World Config](../images/developer_account-privacy_policy_and_tou-privacy_policy_url.png)  
+
+![Publish to World Config](../images/developer_account-privacy_policy_and_tou-terms_of_use_url.png)  
+
+![Publish to World Config](../images/developer_account-privacy_policy_and_tou-notices.png)  
+
+After you have specified the **World settings** channel configuration information for your skill, click **Preview** to see a summary of the status of the submission.
+
+If you provided all the required information, then click on the Submit for Review button to complete the submission process. 
+
+![Developer Account - Validation and Testing Instructions](../images/developer_account-validation_and_testing_instructions.png)  
+
+The Cortana team informs you when your Cortana Skill passes certification and is published.  
+The Cortana team contacts you if additional information for certification is needed.  
+<!-- new --> 
 
 ## Step 3 - Test your published skill
 
@@ -57,4 +121,3 @@ Once you have published your skill to the world, any Cortana user can invoke the
 Cortana prompts for credentials, if necessary, and launches the Mixtape skill:
 
 ![Launch Skill](../images/mva41-tada.png)
-
