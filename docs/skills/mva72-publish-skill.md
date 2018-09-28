@@ -2,7 +2,7 @@
 title: Publishing your Cortana skill
 description: Describes how to publish your Cortana skill.
 
-ms.date: 09/25/2018
+ms.date: 09/28/2018
 ms.topic: article
 
 keywords: cortana
