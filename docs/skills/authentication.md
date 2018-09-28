@@ -13,7 +13,7 @@ keywords: cortana
 # Adding Authentication to Your Cortana Skill  
 
 >[!WARNING]
-> Cortana Skills handle authenication differently than Microsoft Bot Framework.
+> Cortana Skills handle authentication differently than Microsoft Bot Framework.
 
 
 There are two ways to add authentication to your Cortana Skill.  
