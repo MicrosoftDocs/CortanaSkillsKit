@@ -29,19 +29,27 @@ For more information on Cortana publishing options, [Publishing Cortana Skills](
 
 ## Step 1 - Create a group
 
-To create a group of users who can use and test your Cortana skill, update the skill's **Publish to group** channel configuration settings. 
+To create a group of users who can use and test your Cortana skill, update the Group Settings channel configuration settings.  
 
-In the **Add user's Microsoft accounts** box, specify the members of the group by entering an email address associated with a Microsoft account for each user. The email account does not have to be a Microsoft account, such as an Outlook or Hotmail account, but it must be associated with a registered Microsoft account. Separate the email addresses with a semicolon.
+<!-- new -->
+![Publish to Group](../images/settings-group_setting-configured.png)  
 
-**REPLACE**  
-![Publish to Group](../images/mva71-publish-group.png)
-**REPLACE**  
+![Publish to Group](../images/group_settings_configured-request_user_profile_data-data.png)  
 
-To create the group, click **Publish latest changes**. 
+Under the Group section, under the Member email list, click on the Add team member link to add the member emails to the group.  
+The Member email list displays the email address associated with a Microsoft account for each user.  
 
-**REPLACE**  
-![Create Group](../images/mva71-group-created.png)
-**REPLACE**  
+>[!NOTE]
+> The email account does not have to be a Microsoft account, but must be associated with a registered Microsoft account.  
+
+![Publish to Group](../images/group_settings_configured-group-member_email.png)  
+
+Each Member email may be deleted by clicking on the trash button.  
+
+![Publish to Group](../images/group_settings_configured-group-group_access_url.png) 
+
+To create the group, click on the Save changes button.  
+<!-- new -->
 
 ## Step 2 - Invite users to join the group
 
