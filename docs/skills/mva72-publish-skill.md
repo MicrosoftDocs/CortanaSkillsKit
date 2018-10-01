@@ -73,8 +73,7 @@ Like the Default settings and Group settings channel configurations, the World s
 
 ![Publish to World Config](../images/developer_account-developer_information-city_district.png)  
 
-![Publish to World Config]
-(../images/developer_account-developer_information-state.png)  
+![Publish to World Config](../images/developer_account-developer_information-state.png)  
 
 ![Publish to World Config](../images/developer_account-developer_information-zip_code.png)  
 
