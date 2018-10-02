@@ -25,7 +25,7 @@ The following components make up the skills kit.
 
   
 - [Cortana Skills Dashboard](https://developer.microsoft.com/en-us/cortana/dashboard#!/home)  
-  The dashboard lists the skills that you have configured a Cortana channel for. Use the dashboard to deploy your skill to yourself (default), a group of users, or the world. Publishing your bot in Bot Framework does not make it available to users. To make your skill available to users, you must use the dashboard. You also use the dashboard to turn on debugging so you can see the message exchange between your bot and Cortana.
+  The dashboard lists the skills for which you have configured a Cortana channel. Use the dashboard to deploy your skill to yourself (default), a group of users, or the world. Publishing your bot in Bot Framework does not make it available to users. To make your skill available to users, you must use the dashboard. You also use the dashboard to turn on debugging so you can see the message exchange between your bot and Cortana.
 
 
 Because Cortana is available on many different devices, some may have a screen while others may be a standalone speaker. You should ensure that your bot is capable of handling both scenarios. The bot framework provides device information as an entity of the activity. 
