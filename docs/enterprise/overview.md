@@ -2,7 +2,7 @@
 title: Overview of Cortana Skills Kit for Enterprise | Cortana Skills Kit for Enterprise
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
-ms.date: 9/27/2018
+ms.date: 10/02/2018
 ms.topic: article
 ms.prod: cortana
 
