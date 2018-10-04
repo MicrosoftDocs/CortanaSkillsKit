@@ -1,10 +1,10 @@
-﻿---
+---
 title: Adding Authentication to Your Cortana Skills
 description: Learn how to add authentication to your bot-based skill.
 label: Conceptual
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 09/27/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
@@ -103,8 +103,9 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
         >[!NOTE]
         > Your resource provider informs you about the resources to which you are requesting.  
         > The resources must be *space delimited*.  
-        > Example: Microsoft Graph, you may set `User.Read.ALl`.  
-        > Example: A third-party service, you may set `all`.  
+        > Example: Microsoft Graph, you may set `User.Read.All`.  
+        > >[!NOTE]
+        > > A third-party service, you may set anything.  
 
     4.  **Authorization URL**  
         Your OAuth Authorization URL.  
@@ -184,7 +185,7 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
     // Is the user authenticated?
     string authAccessToken = String.Empty;
     
-    if (activity.Entities != null) {
+    Example: Request a sign-in with an OAuthCard for Cortana using C\#.      if (activity.Entities != null) {
         foreach (var entity in activity.Entities) {
             if (entity.Type == "AuthorizationToken") {
                 dynamic authResult = entity.Properties;
@@ -205,48 +206,52 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
     ```
 
     If the token is empty or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  
-
-    >[!NOTE]
-    > A C\# code example is currently not available.  
+    
+    Example: Request a sign-in with an OAuthCard for Cortana using C\#.  
+    
+    ```csharp
+    private Activity CreateOAuthCard( Activity activity )
+    {
+        Activity message = activity.CreateReply();
+        if (message.Attachments == null) {
+            message.Attachments = new List<Attachment>();
+        }
+           
+        // Create the attachment.
+        Attachment attachment = new Attachment() {
+            ContentType = OAuthCard.ContentType,
+            Content = new OAuthCard();// Cortana ignores any card configuration
+        };
+        
+        message.Attachments.Add(attachment);
+        return message;
+    }
+    ```
 
     Example: Request a sign-in with an OAuthCard for Cortana using Node.js.  
 
     ```js
-    builder.OAuthCard.create(connector, session, connectionName, "Please sign in", "Sign in", (createSignInErr, signInMessage) => {
-            if(!createSignInErr) console.log( createSignInErr );
-            if (signInMessage) {
-                session.send(signInMessage);
-            } else {
-                session.send("Something went wrong trying to sign you in.");
-            }  
-        }
-    );
+    var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
     ```  
 
     Example: How to add your access token to your resource request using C\#.  
 
     ```csharp
-    // Use access token to get user info from Live API
-    var url = "https://apis.live.net/v5.0/me?access_token=" + authAccessToken;
-    using (var client = new HttpClient())
-    {
-        // Alternative way of passing an access_token is in the Authorization header
-        // Example:
-        // client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken);
-    
+    C#
+    var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
+    using (var client = new HttpClient()) {
+        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
         var response = await client.GetAsync(url);
-        ...
-    }
+        
+        …
     ```  
 
     Example: How to add your access token to your resource request using Node.js.  
 
     ```js
-    // Use access token to get user info from Live API
-    var url = 'https://apis.live.net/v5.0/me?access_token=' + tokenEntity.token;
+    var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
     request.get(url, (err, response, body) => {
-        }
-    );
+    … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token
     ```  
 
     >[!NOTE]
