@@ -2,7 +2,7 @@
 title: Sharing your Cortana Skill to a group
 description: Describes how to share your Cortana Skill to a group.
 
-ms.date: 09/26/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
@@ -10,13 +10,7 @@ keywords: cortana
 
 # Sharing your Cortana skill to a group
 
-<!--
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=IjcRvxeoE_1611787171) about sharing your Cortana skill to a group. |
--->
-
-In [Using profile data in your Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva52-using-profile-data), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings. 
+In [Using profile data in your Cortana skill](./mva52-using-profile-data.md), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings. 
 
 That module described using **Publish to self** option, which is the best publishing option to use when you are developing and testing a skill. **Publish to self** makes the skill available only to you. You must be logged in to your Microsoft account to use and test the skill.
 
@@ -25,21 +19,33 @@ When you are done testing your skill and ready to share it with other users, you
 * **Publish to group**, which lets you deploy the skill to a specified group of users.
 * **Publish to world**, which makes your completed skill available to all Cortana users after it has passed certification.
 
-In this module, you'll learn how to publish the **Mixtape** skill developed in previous modules to a group. In [Publishing your Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva72-publish-skill), you'll learn how to publish your completed skill.
+In this module, you'll learn how to publish the **Mixtape** skill developed in previous modules to a group. In [Publishing your Cortana skill](./mva72-publish-skill.md), you'll learn how to publish your completed skill.
 
-For more information on Cortana publishing options, [Publishing Cortana Skills](https://docs.microsoft.com/en-us/cortana/skills/publish-skill)
+For more information on Cortana publishing options, [Publishing Cortana Skills](./publish-skill.md)
 
 ## Step 1 - Create a group
 
-To create a group of users who can use and test your Cortana skill, update the skill's **Publish to group** channel configuration settings. 
+To create a group of users who can use and test your Cortana skill, update the Group Settings channel configuration settings.  
 
-In the **Add user's Microsoft accounts** box, specify the members of the group by entering an email address associated with a Microsoft account for each user. The email account does not have to be a Microsoft account, such as an Outlook or Hotmail account, but it must be associated with a registered Microsoft account. Separate the email addresses with a semicolon.
+<!-- new -->
+![Publish to Group](../images/settings-group_setting-configured.png)  
 
-![Publish to Group](../images/mva71-publish-group.png)
+![Publish to Group](../images/group_settings_configured-request_user_profile_data-data.png)  
 
-To create the group, click **Publish latest changes**. 
+Under the Group section, under the Member email list, click on the Add team member link to add the member emails to the group.  
+The Member email list displays the email address associated with a Microsoft account for each user.  
 
-![Create Group](../images/mva71-group-created.png)
+>[!NOTE]
+> The email account does not have to be a Microsoft account, but must be associated with a registered Microsoft account.  
+
+![Publish to Group](../images/group_settings_configured-group-member_email.png)  
+
+Each Member email may be deleted by clicking on the trash button.  
+
+![Publish to Group](../images/group_settings_configured-group-group_access_url.png) 
+
+To create the group, click on the Save changes button.  
+<!-- new -->
 
 ## Step 2 - Invite users to join the group
 

@@ -2,21 +2,15 @@
 title: Building conversations
 description: Describes how to build Cortana conversations.
 
-ms.date: 09/26/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Building conversations
-
-<!--
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=I5mDbPfnE_3111787171) about building conversations. |
--->
  
-In [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed. 
+In [Create your first Cortana skill](./mva22-hello-world.md) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed. 
 
 For many Cortana skills, a single-turn conversation is all you need. However, natural language understanding technology such as [LUIS](https://www.luis.ai/about) (Language Understanding Intelligent Service) makes it possible to create Cortana skills that support multi-turn conversations. Users can then interact with Cortana in a variety of ways.
 
@@ -28,7 +22,7 @@ When you create a LUIS bot, Microsoft Azure automatically creates a correspondin
 
 ![LUIS account](../images/mva32-LUIS-account.png)
 
-You can then follow the initial steps in [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) to create the bot:
+You can then follow the initial steps in [Create your first Cortana skill](./mva22-hello-world.md) to create the bot:
 
 * Log in to the [Microsoft Azure Portal](https://ms.portal.azure.com) with your Microsoft account.
 * Click **New** to open the **Azure Marketplace** pane.
@@ -41,7 +35,7 @@ The language understanding service automatically creates a LUIS application for 
 
 ![LUIS MyApps](../images/mva32-LUIS-myapps.png)
 
-For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/en-us/bot-framework/azure-bot-service-template-language-understanding).
+For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/bot-framework/azure-bot-service-template-language-understanding).
 
 ## Step 2 - Add intents to your LUIS application
 

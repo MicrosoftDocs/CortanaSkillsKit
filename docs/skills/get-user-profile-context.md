@@ -1,9 +1,11 @@
 ---
 title: Get the user's profile and contextual information
 description: Shows how to get the user's profile and contextual information.
+
 ms.assetid: CE72258E-7934-4B5B-9CE7-15BE3905096C
-ms.date: 05/03/2018
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -19,7 +21,7 @@ Cortana can send the user's profile and contextual information as part of the me
 
 User contextual information is information that Cortana has discovered about the user and changes more frequently such as their location. The Notebook also contains this information, but the user typically can't edit it.
 
-To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see [Request user profile data](https://docs.microsoft.com/en-us/bot-framework/channel-connect-cortana#request-user-profile-data)).
+To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see [Request user profile data](https://docs.microsoft.com/bot-framework/channel-connect-cortana#request-user-profile-data)).
 
 For each piece of user data that you request, you specify a friendly name that identifies that piece of data. Cortana uses the friendly name as the property name in the `UserData` object. For information about the types of profile and contextual information that's available, see [User Profile Reference](user-profile-contextual-info.md).
 

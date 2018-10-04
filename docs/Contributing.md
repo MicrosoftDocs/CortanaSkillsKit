@@ -51,7 +51,7 @@ Use the following workflow to create new articles in the documentation via web b
 2. In the **Docs** folder, click the **Create new file** button in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
-   ![Name your new page.](images/contributing/newpagetitle.PNG)
+   ![Name your new page.](images/contributing/newpagetitle.png)
 4. At the top of your new page, add the following metadata block:
 
    ```md
@@ -71,7 +71,7 @@ Use the following workflow to create new articles in the documentation via web b
 8. When finished, click **Commit new file**.
 9. Click **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/CortanaSkillsKit 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](images/contributing/pr_to_master.PNG)
+   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](images/contributing/pr_to_master.png)
 
 ## Markdown basics
 
@@ -148,7 +148,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 1. Make sure your cloned fork is up-to-date with the official repo.
    1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/CortanaSkillsKit 'master' to your fork (make sure the arrow is pointing the right way).
       
-      ![Sync changes from MicrosoftDocs/CortanaSkillsKit to your fork](images/contributing/sync_repos.PNG)
+      ![Sync changes from MicrosoftDocs/CortanaSkillsKit to your fork](images/contributing/sync_repos.png)
    2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
       
       ![Click the sync button](images/contributing/sync_clone.png)
@@ -165,7 +165,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
       ![Click the sync button](images/contributing/sync_back.png)
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/CortanaSkillsKit 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](images/contributing/pr_to_master.PNG)
+   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](images/contributing/pr_to_master.png)
 
 ### Useful extensions
 
