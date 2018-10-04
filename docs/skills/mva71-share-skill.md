@@ -1,16 +1,20 @@
 ---
-title: Sharing your Cortana skill to a group
-description: Describes how to share your Cortana skill to a group.
-ms.date: 05/03/2018
+title: Sharing your Cortana Skill to a group
+description: Describes how to share your Cortana Skill to a group.
+
+ms.date: 09/26/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
 # Sharing your Cortana skill to a group
 
+<!--
 |   |   |
 | - | - |
 | ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=IjcRvxeoE_1611787171) about sharing your Cortana skill to a group. |
+-->
 
 In [Using profile data in your Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva52-using-profile-data), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings. 
 

@@ -1,16 +1,20 @@
 ---
-title: Using authenticationn in your Cortana skill
-description: Describes how to use authentication in your Cortana skill.
-ms.date: 05/03/2018
+title: Using authentication in your Cortana Skill
+description: Describes how to use authentication in your Cortana Skill.
+
+ms.date: 09/26/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
 # Using authentication in your Cortana skill
 
+<!--
 |   |   |
 | - | - |
 | ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=obdsHxeoE_5811787171) about using authentication with your Cortana skill. |
+-->
 
 If your Cortana skill uses a service that requires authentication, you can let Cortana manage authentication by configuring the skill to use a connected service. You can specify whether to prompt the user for authentication credentials when Cortana invokes the skill. 
 
