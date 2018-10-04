@@ -2,20 +2,13 @@
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
 
-ms.date: 09/26/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Set up your development environment
-
-<!--
-|   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=EkOyiMfnE_7911787171) about how to set up your development environment. | 
--->
-
 
 Before you can build your first skill, you need to set up your development environment. Here are a few things you may need to do:
 
@@ -35,7 +28,7 @@ Developing a Cortana skill requires a variety of cloud resources. For example, y
 
 Other resources include:
 
-* **Bot Framework**. To create a Cortana skill, you must first create a bot. Then log in to the [Bot Framework Developer Portal](https://dev.botframework.com/) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world).
+* **Bot Framework**. To create a Cortana skill, you must first create a bot. Then log in to the [Bot Framework Developer Portal](https://dev.botframework.com/) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
 
 ![Bot Framework developer portal](../images/Bot-Framework-dev-portal.png)
 
@@ -60,7 +53,7 @@ Although you can use any development environment, Microsoft Visual Studio offers
 > [!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
-For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
+For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
 
 If you are developing your skill on a Mac, or developing for an iOS, Android, or Harman Kardon Invoke device, you also need to set up the device where Cortana invokes the skill. Since Cortana is not available in a Mac environment, skills developed in a Mac environment must be invoked on a mobile device or in a virtual machine environment running Windows.
 
@@ -75,6 +68,3 @@ Finally, make sure Cortana is set up to work with your skill:
 * Make sure you are logged in to Cortana on your computer or device with your Microsoft account.
 * Make sure the microphone on your computer or device is set up and working so that you can speak to Cortana.
 * Optionally, set debug mode in the [Cortana Developer Center](https://developer.microsoft.com/cortana). When you invoke a Cortana skill in debug mode, Cortana gives you additional information that you can use fine-tune how the skill works.
-
-
-

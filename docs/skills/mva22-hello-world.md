@@ -2,7 +2,7 @@
 title: Create your first Cortana Skill
 description: Describes how to create your first Cortana Skill.
 
-ms.date: 09/26/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
@@ -10,17 +10,11 @@ keywords: cortana
 
 # Create your first Cortana skill
 
-<!--
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=3AxP2NfnE_8211787171) about creating your first Cortana skill. |
--->
-
-Once you have set up your environment, you can dive in and build your first Cortana skill. As you learned in the previous module, you can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. For more information on setting up your development environment, see [Set up your development environment](https://docs.microsoft.com/en-us/cortana/skills/mva21-setup).
+Once you have set up your environment, you can dive in and build your first Cortana skill. As you learned in the previous module, you can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. For more information on setting up your development environment, see [Set up your development environment](./mva21-setup.md).
 
 This module shows the basics of creating a Cortana skill using the Azure Portal and Azure Bot Service. First, you'll create a bot, and then register it and connect it to the Cortana channel to make it a Cortana skill.
 
-For more information on creating your first skill, see [Create your first skill](https://docs.microsoft.com/en-us/cortana/skills/get-started).
+For more information on creating your first skill, see [Create your first skill](./get-started.md).
 
 ## Step 1 - Create a bot using the Azure Bot Service
 
@@ -152,8 +146,9 @@ In the Azure Portal, click the Channels tab to view the available channels, and 
 
 On the Configure Cortana page, scroll down to the **Discovery and Management** section and click **Manage**. Click the **Publish** menu tab and then **Publish to self** to open the channel configuration settings, where you can specify an optional icon for the skill, and a display name and invocation name. Cortana uses the invocation name you specify to invoke the skill.
 
-![Configure Cortana Skill](../images/mva22-configure.png)
-
+<!-- new -->  
+![Configure Cortana Skill](../images/cortana-configure-settings.png)  
+<!-- new -->  
 
 On the Channels tab of the Azure Portal, you can now see Cortana listed as an *mva-hello-world* bot service channel. 
 
@@ -162,6 +157,3 @@ On the Channels tab of the Azure Portal, you can now see Cortana listed as an *m
 To return to the Configure Cortana page, where you can update the skill's configuration settings, click **Edit**. To test your new skill, direct Cortana to invoke the skill using the invocation name you specified; for example, "Ask Hello World 'Hello World'."
 
 ![Hello World Cortana](../images/mva22-helloworld-cortana.png)
-
-
-
