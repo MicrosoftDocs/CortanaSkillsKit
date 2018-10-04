@@ -22,7 +22,7 @@ Cortana assigns two IDs to your skill, `skillId` and `skillProductId`. Cortana p
 
 The skill's product ID is unique across deployment groups.
 
-## Cortana Configuration Fields
+## Cortana Configuration Fields (old)  
 
 The required and optional Cortana Configuration fields and how to edit them are described below.
 
@@ -129,6 +129,10 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
     **Note**: The Save button will not be enabled if all the required fields are not completed.  
 
+
+## Cortana Configuration Fields (old)  
+
+{{open-cortana-configiration.md}}  
 
 ## Discovery and Management
 
