@@ -1,16 +1,20 @@
 ---
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
-ms.date: 05/03/2018
+
+ms.date: 09/26/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 
 # Set up your development environment
 
-|   |   |
+<!--
+|   |
 | - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=EkOyiMfnE_7911787171) about how to set up your development environment. |
+| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=EkOyiMfnE_7911787171) about how to set up your development environment. | 
+-->
 
 
 Before you can build your first skill, you need to set up your development environment. Here are a few things you may need to do:
