@@ -132,7 +132,11 @@ to select the user profile information (i.e., user.info.email). Repeat this step
 
 ## Cortana Configuration Fields (old)  
 
-{{open-cortana-configiration.md}}  
+`{{open-cortana-configuration.md}}`  
+{{open-cortana-configuration.md}}  
+
+`include({{open-cortana-configuration.md}})`  
+include({{open-cortana-configuration.md}})  
 
 ## Discovery and Management
 
