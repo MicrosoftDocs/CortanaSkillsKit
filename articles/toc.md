@@ -97,7 +97,7 @@
 # Additional Cortana APIs
 
 ## [Voice Commands]
-### [Overview](./voice-commands/vcd.md)
+### [Overview](./voice-commands/voice-command-definition.md)
 ### [Cortana voice command design guidelines](./voice-commands/voicecommand-design-guidelines.md)
 ### [Activate a foreground app with voice commands through Cortana](./voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana.md)
 ### [Dynamically modify VCD phrase lists](./voice-commands/dynamically-modify-voice-command-definition-vcd-phrase-lists.md)

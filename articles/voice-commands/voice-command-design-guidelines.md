@@ -383,5 +383,5 @@ When one of the following errors occur, **Cortana** displays the same generic er
 
 **Developers**
 
-* [Voice commands](vcd.md)
+* [Voice commands](./voice-command-definition.md)
 * [Cortana skills](../skills/get-started.md)

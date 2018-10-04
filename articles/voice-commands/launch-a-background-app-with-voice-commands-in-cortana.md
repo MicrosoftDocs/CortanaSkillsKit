@@ -684,7 +684,7 @@ If the app takes longer than 0.5 second to make the call, **Cortana** inserts a 
 ## Related Articles 
 
 ### Developers  
-*   [Voice Commands](./vcd.md)  
+*   [Voice Commands](./voice-command-definition.md)  
 *   [Interact with a Background App in Cortana](./interact-with-a-background-app-in-cortana.md)  
 *   [VCD elements and attributes v1.2](https://msdn.microsoft.com/library/windows/apps/dn706593)  
 *   [Quickstart: Using file or image resources](https://msdn.microsoft.com/library/windows/apps/xaml/hh965325)  

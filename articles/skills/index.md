@@ -1,15 +1,15 @@
 ---
 # aka.ms/skyeye/meta for more information
 layout: HubPage
-ms.date: 10-25-2017
+ms.date: 10/04/2018
 ms.topic: hub-page
-title: Cortana Skills Documentation
-description: Provides details for writing your own Cortana Skill.
+title: Cortana Skills Kit Documentation
+description: Provides details for writing your Cortana Skill.
 ---
 
 <div id="main" class="v2">    
     <div class="container">
-        <h1>Cortana Skills Documentation</h1>
+        <h1>Cortana Skills Kit Documentation</h1>
         <ul class="pivots">
             <li>
                 <a href="#start">Get Started</a>
@@ -475,7 +475,10 @@ description: Provides details for writing your own Cortana Skill.
                         </ul>
                     </li>
                 </ul>
-            </li>            
+            </li>
+            <li>
+                <a href="/cortana/enterprise/overview">Enterprise</a>
+            </li>
         </ul>
     </div>
 </div>

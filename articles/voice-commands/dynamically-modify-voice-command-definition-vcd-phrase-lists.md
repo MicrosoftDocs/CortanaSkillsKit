@@ -128,7 +128,7 @@ In our example, we have a **PhraseTopic** with a **Scenario** of "Search", furth
 
 
 **Developers**
-* [Voice commands](vcd.md)
+* [Voice commands](./voice-command-definition.md)
 * [Launch a foreground app with voice commands in Cortana](launch-a-foreground-app-with-voice-commands-in-cortana.md)
 * [Launch a background app with voice commands in Cortana](launch-a-background-app-with-voice-commands-in-cortana.md)
 * [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)

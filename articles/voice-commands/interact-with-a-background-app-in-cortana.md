@@ -456,7 +456,7 @@ var userMessage = new VoiceCommandUserMessage();
 
 
 **Developers**
-* [Voice commands](vcd.md)
+* [Voice commands](./voice-command-definition.md)
 * [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
 
 **Designers**

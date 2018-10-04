@@ -200,7 +200,7 @@ Here is a VCD file that demonstrates various ways to provide more natural langua
 
 
 **Developers**
-* [Voice commands](vcd.md)
+* [Voice commands](./voice-command-definition.md)
 * [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
 
 **Designers**
