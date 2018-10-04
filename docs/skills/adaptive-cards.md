@@ -4,7 +4,7 @@ description: Learn how to use Adaptive Cards in your bot-based skill.
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 3/14/2018
+ms.date: 03/14/2018
 ms.topic: article
 
 keywords: cortana
@@ -18,31 +18,6 @@ The most versatile card is an Adaptive Card. An Adaptive Card is a customizable 
 ## Adaptive Cards  
 
 Adaptive Cards provide the following options.  
-
-:::row:::
-    :::column span="1":::
-        **Input controls**
-    :::column-end:::
-    :::column span="2":::
-        Add input controls for text, date, number, time, toggle switch, and choice set.  
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        **Richer text**
-    :::column-end:::
-    :::column span="2":::
-        Text in your card is not limited to title, subtitle, and text fixed formats. Use a variety of font sizes, formats, and colors.  
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        **A single open card exchange format**
-    :::column-end:::
-    :::column span="2":::
-        Use your existing cards in a common and consistent way and extend your cards with rich controls using a common schema.  
-    :::column-end:::
-:::row-end:::
 
 *   **Input controls** : Add input controls for text, date, number, time, toggle switch, and choice set.  
 *   **Richer text** : Text in your card is not limited to title, subtitle, and text fixed formats. Use a variety of font sizes, formats, and colors.  

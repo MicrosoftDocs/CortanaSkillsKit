@@ -1,15 +1,13 @@
-﻿---
+---
 title: Example Terms of Use for Cortana Skills 
 description: Provides an example Terms of Use that you can use with your Cortana skill.
-label: Conceptual
 
 ms.assetid: 4A17CB6A-A863-415C-9148-61B7022B2854
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 ---
-
 
 # Terms of Use guidelines
 
@@ -22,7 +20,6 @@ For a sample terms of use for your skill, see [Sample Terms for Cortana Skills](
 3.  Microsoft makes no representations, guarantees, or warranties about the Sample Terms for Cortana Skills. For example, Microsoft does not guarantee that the Sample Terms for skills are legally enforceable or comply with local laws. Microsoft also does not guarantee the Sample Terms for Cortana Skills anticipate every legal scenario.
 4.  Your use of these the Sample Terms for Cortana Skills is your agreement with your end users and Microsoft is not liable for any and all liability, claims, damages, or losses which may be sustained in connection with use of the Sample Terms for Cortana Skills (such as a court concluding that they are unenforceable or a regulator deciding that they are illegal under local law).
 
-<a name="SAMPLE-TERMS-FOR-CORTANA-SKILLS"></a>
 ## SAMPLE TERMS FOR CORTANA SKILLS
 
 These terms are an agreement between you and skill publisher for the use of the skill available through Cortana and Cortana enable devices (“Cortana Services”). Please read them. They apply to your use of the Company Skill, including any updates to the skill, unless skill publisher provides you with separate terms, in which case those terms apply. Skill publisher means the entity making the skill available to you, as identified in the Cortana Skill description.
@@ -64,8 +61,6 @@ These terms are an agreement between you and skill publisher for the use of the 
     2.  **This limitation applies even if:**
         1.  **This remedy doesn’t fully compensate you for any losses; or**
         2.  **The skill publisher knew or should have known about the possibility of the damages.**
-
-
 
 ## Next steps
 

@@ -4,7 +4,6 @@ description: Use voice commands to activate your app to the foreground and execu
 author: kbridge
 label: Conceptual
 ms.assetid: e4bf3714-6f62-466f-9e7c-3b03ee86a117
-
 ms.date: 02/08/2017
 ms.topic: article
 
@@ -93,7 +92,6 @@ The standard naming convention is `foldername/qualifiername-value[_qualifiername
 We recommend that you mark the default language on string resource files (such as `en-US\resources.resw`) and the default scale factor on images (such as `logo.scale-100.png`), even if you do not currently plan to provide localized or multiple resolution resources. However, at a minimum, we recommend that you provide assets for 100, 200, and 400 scale factors.
 
 > [!IMPORTANT]
-
 > The app icon used in the title area of the **Cortana** canvas is the Square44x44Logo icon specified in the "Package.appxmanifest" file. 
     
 ## <span id="Create_a_VCD_file"></span><span id="create_a_vcd_file"></span><span id="CREATE_A_VCD_FILE"></span>Create a VCD file

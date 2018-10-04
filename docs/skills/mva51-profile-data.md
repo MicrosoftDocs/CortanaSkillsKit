@@ -1,19 +1,14 @@
 ---
-title: Understanding Cortana's user profile data
+title: Understanding Cortana user profile data
 description: Introduces Cortana user profile data.
 
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
 # Understanding Cortana's user profile data
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=abnk8veoE_1611787171) about Cortana's user profile data. |
-
 
 In previous modules, you learned how to build conversation in your Cortana skill, how to use audio and visual elements, and how to launch apps or web sites from your skill. In this module, you'll learn the basics about Cortana's user profile data, which you'll use in the next module to customize your Cortana skill.
 
@@ -32,4 +27,3 @@ When you are developing a Cortana skill, you can customize the skill to the user
 For more information about user profile and contextual information, see [Get the user's profile and contextual information](./get-user-profile-context.md). 
 
 For reference information on the user profile entities you can use in code when you are developing your Cortana skill, see [Cortana user profile and contextual information reference](./user-profile-contextual-info.md).
-

@@ -2,18 +2,13 @@
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
 
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Set up your development environment
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=EkOyiMfnE_7911787171) about how to set up your development environment. |
-
 
 Before you can build your first skill, you need to set up your development environment. Here are a few things you may need to do:
 
@@ -73,6 +68,3 @@ Finally, make sure Cortana is set up to work with your skill:
 * Make sure you are logged in to Cortana on your computer or device with your Microsoft account.
 * Make sure the microphone on your computer or device is set up and working so that you can speak to Cortana.
 * Optionally, set debug mode in the [Cortana Developer Center](https://developer.microsoft.com/cortana). When you invoke a Cortana skill in debug mode, Cortana gives you additional information that you can use fine-tune how the skill works.
-
-
-

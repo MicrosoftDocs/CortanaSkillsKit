@@ -1,19 +1,14 @@
 ---
-title: Create your first Cortana skill
-description: Describes how to create your first Cortana skill.
+title: Create your first Cortana Skill
+description: Describes how to create your first Cortana Skill.
 
-ms.date: 09/28/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Create your first Cortana skill
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=3AxP2NfnE_8211787171) about creating your first Cortana skill. |
-
 
 Once you have set up your environment, you can dive in and build your first Cortana skill. As you learned in the previous module, you can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. For more information on setting up your development environment, see [Set up your development environment](./mva21-setup.md).
 
@@ -162,6 +157,3 @@ On the Channels tab of the Azure Portal, you can now see Cortana listed as an *m
 To return to the Configure Cortana page, where you can update the skill's configuration settings, click **Edit**. To test your new skill, direct Cortana to invoke the skill using the invocation name you specified; for example, "Ask Hello World 'Hello World'."
 
 ![Hello World Cortana](../images/mva22-helloworld-cortana.png)
-
-
-

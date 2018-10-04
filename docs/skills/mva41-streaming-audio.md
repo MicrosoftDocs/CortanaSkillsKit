@@ -1,19 +1,14 @@
 ---
-title: Adding audio to Cortana skills
-description: Describes how to develop a Cortana skill that uses SSML and streaming audio.
+title: Adding audio to Cortana Skills
+description: Describes how to develop a Cortana Skill that uses SSML and streaming audio.
 
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Adding audio to Cortana skills
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=drnIMQfnE_7211787171) about adding audio to Cortana skills. |
-
 
 Whether you are developing a Cortana skill for a device without a screen such as the Invoke speaker (a *headless device*), or a device with a screen such as a PC or mobile device, you can use a variety of audio features to enhance a user's experience. 
 

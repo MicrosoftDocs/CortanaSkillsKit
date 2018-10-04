@@ -2,7 +2,7 @@
 title: Launching apps and websites from Cortana skills
 description: Shows how to launch apps and website from your skill.
 ms.assetid: 6B89584E-AE15-4A6E-8104-A77062F2C835
-ms.date: 4/15/2017
+ms.date: 04/15/2017
 ms.topic: article
 keywords: cortana
 ---

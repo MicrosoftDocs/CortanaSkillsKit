@@ -2,17 +2,13 @@
 title: Publishing your Cortana skill
 description: Describes how to publish your Cortana skill.
 
-ms.date: 09/28/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
 # Publishing your Cortana skill
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=75bH5yeoE_9811787171) about publishing your Cortana skill. |
 
 In previous modules, you learned how to use the **Publish to self** option to publish your Cortana skill when you are developing and testing the skill, and the **Publish to group** option to make your skill available to a group of users. In this module, you'll learn about the **Publish to world** option to make your skill public when it is fully tested and ready to be made available to any Cortana user.
 

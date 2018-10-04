@@ -1,18 +1,14 @@
 ---
-title: Using authenticationn in your Cortana skill
-description: Describes how to use authentication in your Cortana skill.
+title: Using authentication in your Cortana Skill
+description: Describes how to use authentication in your Cortana Skill.
 
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
 # Using authentication in your Cortana skill
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=obdsHxeoE_5811787171) about using authentication with your Cortana skill. |
 
 If your Cortana skill uses a service that requires authentication, you can let Cortana manage authentication by configuring the skill to use a connected service. You can specify whether to prompt the user for authentication credentials when Cortana invokes the skill. 
 
@@ -46,7 +42,6 @@ Some settings are required and others are optional, although it is recommended t
 * **Client Secret:** The password generated when you registered your bot as a Cortana skill.
 * **Token URL:** Your OAuth2 provider's Token URL.
 * **Scope:** The level of access to authenticate.
-
 
 To save the configuration, click **Create OAuth2 Config**. 
 

@@ -3,7 +3,7 @@ title: Principles of Cortana Skill Design
 description: Overview of Cortana Skill Design Best Practices.
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
@@ -49,7 +49,6 @@ The following are the cases when it makes sense to create a skill.
 **When the social setting is not appropriate**
   * There are situations when the user won't want to use voice, or it isn't polite to use voice. For example, if a user is on a crowded bus, they may not want to use voice.
 
-
 **When the environment doesn't suit using voice**
   * There are situations where it's easier to type or view information than to use voice. For example, a noisy room.
 
@@ -65,12 +64,10 @@ The following are the cases when it makes sense to create a skill.
   * Requiring the user to memorize a lot of things so they can complete a task can be difficult.
   * Ensure that your Cortana skill isn't too brittle. Consider the different ways a user may say something and handle them in your language model. For instance, saying "play jazz" and "play some jazz" should trigger the same task in your skill.
 
-
 **Challenging speech tasks**
   * Certain words or phrases are challenging to say such as a gamer tag, while others may be difficult for the speech engine to get correctly such as homophones (words that sound the same but have different spelling). For example, weight and wait, or light and lite. These words sound the same, but have completely different meanings. Be sure that if your Cortana skill does require users to use these types of words that your skill is able to handle homophones. 
 
 -->
-
 
 If you decided that building a skill makes sense, consider the following throughout the design process.
 
@@ -82,8 +79,6 @@ If you decided that building a skill makes sense, consider the following through
 
 A great user experience does not require users to talk too much, repeat themselves, or explain things that the skill should automatically know.
 
-
-
 ## Design for the most common scenario
 
 Define the key scenarios you want your skill to target. 
@@ -94,8 +89,6 @@ Of these scenarios, which work well with voice? 
 * Which scenarios are relatively quick to complete with minimal steps? 
 
 Select the scenarios that meet the above criteria.
-
-
 
 ## Design the conversation
 
@@ -113,18 +106,13 @@ Next, design a conversation that sounds natural and is intuitive. Start out thin
 * How the skill reacts if it reaches a dead end? For example, the task doesn't complete or gets it wrong.
 * What environments could the skill be used in and how potential touch interactions might impact your design.
 
-
-
 Roleplay the conversation to make sure it's natural and intuitive. Just like in real life, conversations with users vary depending on the user. Your skill should be adept in handling conversations with different users. 
-
 
 ## Identify the intents, entities, and utterances
 
 The conversational design process should identify intents, entities, and utterances. Intents are the actions that the user wants to perform and entities are the data required to perform the action. For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM," the intent is to book a flight, and New York and 6:00 PM are the entities.
 
-
 When building your skill, you're encouraged to use Microsoft's [Language Understanding Intelligent Services](https://www.luis.ai) (**LUIS.ai**) to model your intents and entities. For information about modeling intents and entities in LUIS, see [intents](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-intents) and [entities](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-entities). For a list of built-in entities in LUIS, see [Prebuilt entities](https://docs.microsoft.com/azure/cognitive-services/luis/pre-builtentities). 
-
 
 Intents fall into the following categories:
 
@@ -132,12 +120,9 @@ Intents fall into the following categories:
 * [Partial intent](#Partial-intent)
 * [No intent](#No-intent)
 
-
-<a name="Full-intent"></a>
 ### Full intents
 
 **Full intent** is when the user fully expresses what they want to do in a single utterance. When the user provides a complete request in their first utterance, you should respond directly to their request and either propose further interaction, if required, or end the conversation.
-
 
 For example:
 
@@ -150,9 +135,6 @@ Because there are many ways to express the same intent, you need to develop as m
 
 If you display interaction examples in a card on Cortana's canvas (for example, if they ask for help), try to show full intent examples. This helps train the users on the most effective way to communicate with your skill.
 
-
-
-<a name="Partial-intent"></a>
 ### Partial intents
 
 **Partial intent** is when a user partially expresses what they want but the utterance is missing a required entity. Your skill should detect the missing element and automatically provide a follow-up prompt that asks for the missing entity. 
@@ -164,7 +146,6 @@ User: Hey Cortana, ask Mileage Wizard if I have miles.
 Mileage Wizard: Miles to travel?
 ```
 
-<a name="No-intent"></a>
 ### No intents
 
 **No intent** is when a user uses a skill for the first time and they only give the minimum information which is not sufficient to engage in the conversation. When this happens, you need to tell the user how to interact with your skill.
@@ -180,7 +161,6 @@ Mileage Wizard: Do you want available miles, used miles, or discounts?
 
 In LUIS, the language models have the predefined "None" intent. 
 
-
 <!--
 ## Designing an entity
 
@@ -192,8 +172,6 @@ Because entities describe information that's relevant to the intent, it's import
 * Be careful about revealing private information.
 
 -->
-
-
 
 ## Asking users questions
 
@@ -222,9 +200,7 @@ Your interactions should be:
 | **Efficient** <br/> Use as few words as possible and put the most important information up front. | Sure, what movie do you want to watch? | Sure can do, what movie would you like to search for today? We have a large collection. 
 | **Relevant** <br/> Provide information pertinent to the task, content, and context. | I’ve added it to your playlist. | I’ve added it to your playlist. Just so you know, your battery is getting low. 
 | **Clear** <br/> Avoid ambiguity. Use everyday language instead of technical jargon. | I couldn’t find any trips to Las Vegas. | No results for query "Trips to Las Vegas".
-| **Trustworthy** <br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalog. | I couldn’t find that movie, it must not have been released yet. 
-
-
+| **Trustworthy** <br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalogue. | I couldn’t find that movie, it must not have been released yet. 
 
 ### Presenting options
 
@@ -241,9 +217,6 @@ Cortana: What type of directions would you like, walking or driving?
 ```
 Because users can't quickly scan and skip content like they can in a visual interface, it is important to keep your questions simple and concise.
 
-
-
-
 ### Asking questions using a directed prompt or open prompt
 
 You can ask users questions using either a directed prompt or an open prompt. A **directed prompt** lists specific choices for the user. For example, "Please select cheese, pepperoni, or sausage." Directed prompts often minimize user confusion. An **open prompt** lets the user provide their own choice. For example, "Which movie would you like?" If users are familiar with the choices, open prompts are fine. 
@@ -254,9 +227,9 @@ Good uses of a directed prompt are when:
 
 * A wide variety of users use the skill, or they use it on an infrequent basis. For example, a call center application is best suited to use directed prompts.  
   
-* There are never more than three options. 
+* There is never more than three options. 
 
-For directed prompts, use the form, "Please select X, Y, or Z." Don't use the form, "Would you like X or do you want Y or Z," because it may lead to Yes or No response instead of an X or Y or Z response.  
+For directed prompts, use the form, "Please select X, Y, or Z." Don't use the form, "Would you like X or do you want Y or Z," because it may lead to Yes or No response instead of a X or Y or Z response.  
 
 If the list of options is long (for example, a list of stock investments) or variable (for example, movie titles), using a directed prompt is impractical. In this case, use an open prompt. For example:
 
@@ -265,8 +238,6 @@ Cortana: Please say a stock's name.
 User: Help.
 Cortana: Please say a stock's name. For example, say Microsoft.
 ```
-
-
 
 ## Confirming a user's answer
 
@@ -327,7 +298,6 @@ Cortana: Flying from Vancouver. Which date?
 
 Answering with a simple yes does not answer this kind of question. 
 
-
 <!--
 Removed per Dorrene
 
@@ -336,7 +306,6 @@ Removed per Dorrene
 ### Short time-out confirmation
 
 Short time-out confirmations echo the user's answer and waits a short period of time for a user's utterance. The lack of an utterance by the user within the time-out period implies acceptance. The skill does not expect a response. Instead, the skill makes a statement of its understanding to the user and invites a correction. Assuming that the skill is correct most of the time, the conversation flows quickly and smoothly.
-
 
 ```
 Cortana: Which city do you want to fly to?
@@ -361,7 +330,6 @@ Cortana: Am I right with Seattle?
 
 ## Other design considerations
 
-
 ### Presenting help
 
 Your design should include help prompts, especially for critical areas of your skill. If the user asks for help, you should list the skill's capabilities and options for that specific area. 
@@ -376,11 +344,9 @@ Cortana: You can say things like 'pool', 'parking', or 'breakfast'
 User: pool and parking
 ```
 
-
 ### Using default values
 
 Use default values when the user is not specific. For example, if the user says, "Make my room warmer," Cortana should say, "I’ve raised your room temperature to 72 degrees" instead of "Sure, what temperature?" 
-
 
 ### Identifying the skill when invoked
 
@@ -390,8 +356,6 @@ If the user invokes your skill without including an utterance, you should identi
 Good: Welcome to My Travel Agent. To book a trip say, "Book a trip," or to get the status of your miles say, "Available miles" or "Used miles."
 Bad: What can I do for you?
 ```
-
-
 
 ### Break lists into manageable pieces
 
@@ -413,18 +377,9 @@ For example:
   * "Shopping Ctr." is spoken as "shopping center"
   * "Lake Shore Dr." is spoken as "Lake Shore Drive"
 
-
-
-
-
-
-
 <!--
-If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principles since the purpose of using voice is to get to a result faster.
+If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principals since the purpose of using voice is to get to a result faster.
 -->
-
-
-<a name="visualelements" />
 
 ## Design your skill's visual elements 
 
@@ -438,7 +393,6 @@ Things to consider when designing the visual elements:
    
 * Keep tasks glanceable. The skill must allow users to multi-task with minimal visual attention. Consider every piece of information on the canvas and eliminate anything that is not required.
 
-
 ### Adding visual elements to your skill
 
 Cortana supports Bot Framework cards, which are rich, graphical controls that contain text, images, and interactive buttons. Skills may include the following cards:
@@ -450,7 +404,6 @@ Cortana supports Bot Framework cards, which are rich, graphical controls that co
 | Thumbnail Card | A card with a single small image | Single or Carousel |
 | Receipt Card | A card that lets the user deliver an invoice or receipt | Single |
 | Sign-In Card | A card that lets the skill initiate a sign-in procedure | Single |
-
 
 The following image shows a card displayed on Cortana's canvas.
 
@@ -473,9 +426,7 @@ To add cards to your skill, see [Add cards to your skill using Node.js](https://
 
 In addition to cards, Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-dialog-prompt#prompt-types).
 
-
 ### Card design tips
-
 
 **Limit the card's title to 84 characters or less**
 
@@ -495,7 +446,6 @@ If your card does extend beyond the height of the canvas, ensure that buttons ar
 
 <!-- I thought they didn't have control over the placement of the buttons - they just define the card's components and the framework builds the cards in a consistent format. A. Adaptive cards supports this in the future, but listed cards don't support placing buttons.-->
 
-
 **Use cards to provide details**
 
 Cards are meant to provide additional information beyond what the skill speaks. If a user has to listen to Cortana read all the details that are on the card, it often won't be the best user experience. Provide a summary of the card using voice and use the card for the details. For example, if the card shows shirt choices, the skill might say, "Select the shirt's color."
@@ -513,7 +463,6 @@ Bad: Open the companion app to see the list of ingredients.
 
 Note that the time between user utterances is limited. On a speaker-only device, if a timeout occurs, the skill ends. On Windows, the skill is still active but the microphone turns off. For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.
 
-
 **Tailor the experience**
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. For example, if a user is shopping for a gift, the following are ideas on how to present the information to the user.
@@ -524,7 +473,6 @@ Tailor the experience based on the device the user is using. If they are using a
 * Device with screen: 
   * Voice: The Contoso shirt is a custom-made shirt that retails for $30.
   * Card: Show an image and additional details such as sizes/dimensions and color options. The Bot Framework's Hero card is a good option for this case. If presenting several items to the user, a carousel of Hero cards works well.
-
 
 **Use horizontal lists**
 
@@ -547,20 +495,17 @@ What design rules apply to .NET FormFlows?
 
 -->
 
-
-
 ## Next steps
 
 Cortana's persona has been well crafted and it's very important that you maintain her character in all interactions with users. For information about maintaining her persona in your skill, see [Cortana's persona](cortanas-persona.md).
 
 For performance design considerations, including Azure services, see [Performance guidelines](performance-guidelines.md).
 
-For do's and don'ts with your invocation name, see [Invocation name guidelines](cortana-invocation-guidelines.md).
+For invocation name do's and don'ts, see [Invocation name guidelines](cortana-invocation-guidelines.md).
 
 
-When you publish your skill to the world, the Cortana team reviews your skill to make sure it's compliant with the design principles in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish you skill (see [Cortana skills certification requirements](skill-review-guidelines.md)).
+When you publish your skill to the world, the Cortana team reviews your skill to make sure it's compliant with the design principals in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish you skill (see [Cortana skills certification requirements](skill-review-guidelines.md)).
 
-<!-- Think about include bot framework's design principles 
+<!-- Think about include bot framework's design principals 
 
-Checkout Bot Framework's [Principles of bot design](https://docs.microsoft.com/bot-framework/bot-design-principles).
--->
+Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/bot-framework/bot-design-principles).

@@ -2,18 +2,14 @@
 title: Understanding types of conversations
 description: Explains the different types of Cortana conversations.
 
-ms.date: 09/25/2018
+
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Understanding types of conversations
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=SKEGNPfnE_8211787171) about types of Cortana conversations. |
-
  
 Underlying what makes Cortana invoke a skill is a simple concept: Cortana responds to input it receives from a user. It is a conversation. 
 
@@ -64,6 +60,3 @@ Here are some additional things to consider when designing a conversation for a 
 * What environments could the skill be used in?
 
 For more information on designing skills, see [Principles of Cortana Skills design](./design-principles.md).
-
-
-

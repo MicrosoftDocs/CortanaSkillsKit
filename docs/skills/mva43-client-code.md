@@ -1,19 +1,14 @@
 ---
-title: Using client code with Cortana skills
-description: Describes how to use client code with a Cortana skill.
+title: Using client code with Cortana Skills
+description: Describes how to use client code with a Cortana Skill.
 
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
 # Using client code with Cortana skills
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=03ED05boE_4411787171) about using client code with Cortana skills. |
-
 
 In addition to developing audio and video interfaces to enhance your Cortana skill, you can create interfaces that launch native code on a user's active device. In [Adding audio to Cortana skills](./mva41-streaming-audio.md) and [Adding visual elements to Cortana skills](./mva42-visual-ux.md), you learned how to use audio and visual elements in your skill. In this module you'll see how to extend the **Mixtape** skill to use client code.
 

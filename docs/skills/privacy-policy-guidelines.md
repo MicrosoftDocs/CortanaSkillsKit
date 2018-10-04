@@ -2,7 +2,7 @@
 title: Privacy policy guidelines 
 description: Provides guidelines for creating a privacy policy for your Cortana skill
 ms.assetid: 04D98CB2-0FA0-463D-ABB5-EDAEFA74C1E7
-ms.date: 4/25/2017
+ms.date: 04/25/2017
 ms.topic: article
 keywords: cortana
 ---

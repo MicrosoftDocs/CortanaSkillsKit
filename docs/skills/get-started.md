@@ -1,10 +1,9 @@
-﻿---
+---
 title: Creating a Cortana Skill
 description: Shows how to create a bot-based Skill.
 
 ms.assetid: d9cc74a2-af6d-452f-bd71-42fe27a5c673
-ms.date: 09/25/2018
-ms.topic: article
+ms.date: 10/03/2018
 
 keywords: cortana
 --- 
@@ -25,7 +24,6 @@ The following are the Bot Framework topics that contain the information that you
 
 
 At this point, if you followed the steps in **Create a bot**, **Deploy a bot**, and **Add speech to your bot**, you successfully ran your skill in Bot Framework's emulator. To run your skill locally in Cortana, you need to perform a couple of more steps. First, [register](https://docs.microsoft.com/bot-framework/portal-register-bot) your bot to get your app ID and password. Then, [connect](https://docs.microsoft.com/bot-framework/channel-connect-cortana) your skill to Bot Framework's Cortana channel. For this exercise, specify only the configuration settings listed under **General bot information**.
-
 
 <!-- i hate duplicating work, but it may be useful to include a Hello, world example so they don't have to piece the example together from the two topics. -->
 
@@ -53,12 +51,9 @@ If you see your skill in the dashboard, you can invoke your skill from Cortana. 
      <br />  
   3. Under **Microphone**, click **Get started**
 
-
 When you're all set, click Cortana's microphone and invoke your skill. For example, if your skill's invocation name is "Northwind Photo", you can invoke your skill by saying, "Ask Northwind Photo to..." or "Tell Northwind Photo that...". If Cortana recognizes your skill, she launches it and display it on her canvas.
 
-
 If you encounter issues, see [Test your Cortana Skill](test-debug.md).
-
 
 ## Next steps
 
@@ -75,4 +70,4 @@ To personalize your skill, see [Use the user's profile and contextual informatio
 
 To publish your skill to a group of friends or coworkers, or to publish it to the world, see [Publish your skill](publish-skill.md).
 
-Check out the Bot Framework's speech samples. [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill) | [.NET](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill)
+Check out the Bot Framework speech samples. [Node.js](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/demo-RollerSkill) | [.NET](https://github.com/Microsoft/BotBuilder-Samples/tree/master/CSharp/demo-RollerSkill)

@@ -1,18 +1,14 @@
 ---
-title: Using profile data in your Cortana skill
-description: Describes how to use profile data in your Cortana skill.
+title: Using profile data in your Cortana Skill
+description: Describes how to use profile data in your Cortana Skill.
 
-ms.date: 09/25/2018
+ms.date: 10/03/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
 # Using profile data in your Cortana skill
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=4XLAOweoE_7311787171) about using profile data in your Cortana skill. |
 
 As you learned in [Understanding Cortana's user profile data](./mva51-profile-data.md), Cortana's user profile contains a variety of information that you can view and use in your Cortana skill with the user's consent. In this module, you'll learn how to customize the **Mixtape** skill developed in previous modules to include profile data.
 
@@ -23,7 +19,6 @@ For reference information on the user profile entities you can use in code when 
 ## Step 1 - Configure your skill to request user profile data
 
 As you learned in [Create your first Cortana skill](./mva22-hello-world.md) and [Building conversations](./mva32-building-conversations.md), you register a Cortana skill by connecting your bot to the Cortana channel.
-
 
 To make user profile data available to your Cortana skill, update the skill's channel configuration settings.
 
