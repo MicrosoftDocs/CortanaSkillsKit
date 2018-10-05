@@ -12,4 +12,4 @@ Follow the instructions to access the Cortana Configuration page and update each
     
 4.  On the *Connect to channels* page, under the *Add a featured channel* section, click on the **Configure Cortana Channel** icon.  
 
-![Configure Cortana](./media/images/configure_cortana.png)  
+    ![Configure Cortana](./media/images/configure_cortana.png)  
