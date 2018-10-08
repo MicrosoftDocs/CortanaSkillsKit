@@ -2,117 +2,126 @@
 title: Publishing your Cortana skill
 description: Describes how to publish your Cortana skill.
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
-# Publishing your Cortana skill
+# Publishing Your Cortana Skill  
 
-In previous modules, you learned how to use the **Publish to self** option to publish your Cortana skill when you are developing and testing the skill, and the **Publish to group** option to make your skill available to a group of users. In this module, you'll learn about the **Publish to world** option to make your skill public when it is fully tested and ready to be made available to any Cortana user.
+In previous modules, you use the **Default settings** option to publish your Cortana Skill when you are developing and testing the skill, and the **Test Group settings** option to make your Cortana Skill available to a group of users.  
+In this module, you use the **World settings** option to make your Cortana Skill public after you fully tested and made ready for availability to any Cortana user.  
 
-For more information on making your skill available to a group of users, see [Sharing your Cortana skill to a group](./mva71-share-skill.md). For more information on Cortana publishing options, see [Publishing Cortana Skills](./publish-skill.md).
+>[!TIP]
+> For more information on making your skill available to a group of users, visit the [Sharing your Cortana skill to a group](./mva71-share-skill.md) page.  
+> For more information on Cortana publishing options, visit the  [Publishing Cortana Skills](./publish-skill.md) page.  
 
-## Step 1 - Make sure your skill meets certification requirements
+## Verify Your Cortana Skill Meets Certification Requirements  
 
-Unlike the **Publish to self** and **Publish to group** options, the **Publish to world** option requires that you submit your skill to the Cortana team for certification. The skill must meet certain requirements before it can be released to the world. For example:
+Unlike the **Default settings** and **Test Group settings** options, the **World settings** option requires that you submit your skill to the Cortana team for certification.  
 
-* The skill must work on devices without a screen such as the Invoke speaker (*headless devices*), as well as devices with a screen such as a PC or mobile device.
-* Any user profile data requested by the skill must be used appropriately and fully.
-* The skill must work as intended based on the submission information you specify.
-* The skill must follow specified design, performance, and personality guidelines.
+>[!IMPORTANT]
+> Your Cortana Skill must meet certification requirements before being published to the world.  
+> *   Must work on devices without a screen such as the Invoke speaker (*headless devices*), as well as devices with a screen such as a PC or mobile device.  
+> *   Any user profile data requested by the skill must be used appropriately and fully.  
+> *   Must work as intended based on the submission information you specify.  
+> *   Must follow specified design, performance, and personality guidelines.  
+>
+> >[!TIP]
+> > For more information about certification requirements, visit the [Cortana skills certification requirements](./skill-review-guidelines.md) page.  
 
-For more information on certification requirements, see [Cortana skills certification requirements](./skill-review-guidelines.md).
+## Submit Your for Review  
 
-## Step 2 - Submit your skill for review  
+The Cortana team must review and certify your Cortana Skills prior to publication to the world. To start this process, update the **World settings** channel configuration settings for your Cortana Skill.  
 
-<!-- new -->
-The Cortana team must review and certify your Cortana Skills prior to publication to the world. To start this process, update the World settings channel configuration settings for your Cortana Skill.  
+Like the **Default settings** and **Test Group settings** channel configurations, the World settings channel configuration requires you to provide basic information for your Cortana Skill. Basic information includes the display text and invocation name. In addition, you must provide information required for certification.  Certification information may include skill invocation phrases and a category that indicates how the skill might be organized when it is displayed with other skills.  
 
-Like the Default settings and Group settings channel configurations, the World settings channel configuration requires you to provide basic information for your Cortana Skill. Basic information may include the display text and invocation name. In addition, you must provide information required for certification. Certification information may include skill invocation phrases and a category that indicates how the skill might be organized when it is displayed with other skills.  
+1.  On the *Configure Cortana* page, under the *World Settings* section, enter the following information.  
+    
+    ![World Settings - not configured](./media/images/world_settings-not_configured.png)  
+    
+    1.  Skill information section  
+        
+        ![Skills information](./media/images/world_settings-skill_information.png)  
+        
+        *   `Skill icon`  
+        *   `Display name`  
+        *   `Invocation name`  
+        *   `Short description`  
+        *   `Long description`  
+        *   `Sample Invocation Phrase`  
+        *   `Primary category`  
+        *   `Secondary category (Optional)`  
+        *   `Tags`  
+        *   `Supported platforms`  
 
-<!-- new -->  
-![Publish to World Config](../images/skill_information-skill_icon.png)  
+    2.  `Does this Cortana skill collect users' personal information?`  
+         
+        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-off.png)  
+        
+        *   Request user profile data
+            
+            ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)  
+            
+            *   `User data`  
+                *   ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)  
+                    
+            *   `Additional User Data`  
 
-![Publish to World Config](../images/skill_information-display_name.png)  
-
-![Publish to World Config](../images/skill_information-invocation_name.png)  
-
-![Publish to World Config](../images/skill_information-short_description.png)  
-
-![Publish to World Config](../images/skill_information-long_description.png)  
-
-![Publish to World Config](../images/skill_information-sample_invocation_phrase.png)  
-
-![Publish to World Config](../images/skill_information-primary_category.png)  
-
-![Publish to World Config](../images/skill_information-secondary_category.png)  
-
-![Publish to World Config](../images/skill_information-tags.png)  
-
-![Publish to World Config](../images/skill_information-supported_platforms.png)  
-
-![Publish to World Config](../images/skill_information-collect_users_personal_information.png) 
-
-![Publish to World Config](../images/developer_account-developer_account_type.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-first_name.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-last_name.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-email.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-phone_number.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-address.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-city_district.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-state.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-zip_code.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-country.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-developed_for.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-published_by.png)  
-
-![Publish to World Config](../images/developer_account-developer_information-developer_company_website_url.png)  
-
-![Publish to World Config](../images/developer_account-support_contact-email.png)  
-
-![Publish to World Config](../images/developer_account-support_contact-website_url.png)  
-
-![Publish to World Config](../images/developer_account-publisher_information-name.png)  
-
-![Publish to World Config](../images/developer_account-publisher_information-email.png)  
-
-![Publish to World Config](../images/developer_account-publisher_information-phone_number.png)  
-
-![Publish to World Config](../images/developer_account-privacy_policy_and_tou-privacy_policy_url.png)  
-
-![Publish to World Config](../images/developer_account-privacy_policy_and_tou-terms_of_use_url.png)  
-
-![Publish to World Config](../images/developer_account-privacy_policy_and_tou-notices.png)  
-
-After you have specified the **World settings** channel configuration information for your skill, click **Preview** to see a summary of the status of the submission.
-
-If you provided all the required information, then click on the Submit for Review button to complete the submission process. 
-
-![Developer Account - Validation and Testing Instructions](../images/developer_account-validation_and_testing_instructions.png)  
+    3.  Developer Account section  
+        
+        ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)  
+        
+        *   `Developer Account Type`  
+                  
+    4.  Developer Information section  
+        
+        ![Developer Information](./media/images/world_settings-developer_information.png)
+        
+        *   `First name`              
+        *   `Last name`              
+        *   `Email`             
+        *   `Phone number`  
+        *   `Address 1` and `Address 2`  
+        *   `City/District`  
+        *   `State`  
+        *   `Zip code`  
+        *   `Country`  
+        *   `Developed by (for ISVs)`  
+        *   `Published by`  
+        *   `Developer or Company Website URL`  
+    5.  Support Contact section  
+        
+        ![Support Contact](./media/images/world_settings-support_contact.png)
+        
+        *   `Email`  
+        *   `Website URL`  
+    6.  Publisher Information section  
+        
+        ![Publisher Information](./media/images/world_settings-publisher_information.png)
+        
+        *   `Name`  
+        *   `Email`  
+        *   `Phone number`  
+    7.  Privacy policy and terms of use section  
+        
+        ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
+          
+        *   `Privacy policy (URL)`  
+        *   `Terms of Use (URL)`  
+        *   `Notices`  
+    8.  Validation and testing instructions section  
+        
+        ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)  
+        
+2.  Click **Submit for review**.  
+    
+    ![Submit for Review - enabled](./media/images/world_settings-back-save-submit-active.png)
 
 The Cortana team informs you when your Cortana Skill passes certification and is published.  
 The Cortana team contacts you if additional information for certification is needed.  
-<!-- new --> 
 
-## Step 3 - Test your published skill
+## Test Your Published Cortana Skill
 
-Once you have published your skill to the world, any Cortana user can invoke the skill. For example, any user can direct Cortana to invoke the Mixtape skill:
-
-*Ask Mixtape to make me a mixtape.* 
-
-Cortana prompts for credentials, if necessary, and launches the Mixtape skill:
-
-![Launch Skill](../images/mva41-tada.png)
+After you have published to the **world**, any Cortana user may invoke your Cortana Skill.  

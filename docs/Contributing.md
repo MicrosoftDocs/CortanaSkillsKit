@@ -27,7 +27,7 @@ Use the following workflow to make updates to the documentation via web browser:
 1. Navigate to the article you wish to edit.
 2. Click the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off master.
 
-   ![Edit an article.](../media/images/contributing/editpage.png)
+   ![Edit an article.](./media/images/contributing/editpage.png)
 3. Edit the content of the article (see ["Markdown basics"](#markdown-basics) below for guidance).
 4. Update metadata as relevant at the top of each article:
    * title: This is the page title that appears in the browser tab when the article is being viewed. As this is used for SEO and indexing, you shouldn't change the title unless necessary (though this is less critical before documentation goes public).
