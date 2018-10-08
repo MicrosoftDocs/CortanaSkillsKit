@@ -3,7 +3,7 @@ title: Overview of Cortana Skills - Cortana skills design and development
 description: Provides an overview of Cortana Skills Kit and how you can use it to extend Cortana so your users can use Cortana to interact with your service.
 
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -30,7 +30,7 @@ Because Cortana is available on many different devices, some may have a screen w
 
 The following image shows how users interact with Cortana and your skill.
 
-![Cortana Skills workflow](../images/workflow.png)
+![Cortana Skills workflow](./media/images/workflow.png)
 
 ## How do users invoke skills?
 
@@ -38,13 +38,13 @@ Users invoke skills simply by speaking to Cortana. Users don't install or activa
 
 <!-- I'm confused by "don't install or activate" because there's this site where they can discover new skills: https://www.microsoft.com/en-us/windows/cortana/cortana-skills/. And in Cortana Notebook there's Skills, which they use to "manage and control what skills you've connected to."-->
 
-Users invoke skills by speaking or typing to Cortana, optionally by providing an **invocation phrase**. The invocation phrase includes an **invocation name**, which uniquely identifies the skill to invoke. For example, if a skill's invocation name is "Northwind Photo", the user might say "Ask Northwind Photo to..." or "Tell Northwind Photo that...". You specify the name when you configure the Cortana channel for your skill. For a list of invocation phrases, see [Invocation Name Guidelines](cortana-invocation-guidelines.md). 
+Users invoke skills by speaking or typing to Cortana, optionally by providing an **invocation phrase**. The invocation phrase includes an **invocation name**, which uniquely identifies the skill to invoke. For example, if a skill's invocation name is "Northwind Photo", the user might say "Ask Northwind Photo to..." or "Tell Northwind Photo that...". You specify the name when you configure the Cortana channel for your skill. For a list of invocation phrases, see [Invocation Name Guidelines](./cortana-invocation-guidelines.md). 
 
 If an invocation name is not provided, Cortana will try to suggest a skill to the user in order to fulfill their request.
 
 Users can invoke skills on any platform that includes Cortana. For a list of platforms, see (#Platform-requirements).
 
-For a list of locales where users can invoke skills, [Supported locales](supported-locales.md).
+For a list of locales where users can invoke skills, [Supported locales](./supported-locales.md).
 
 >[!NOTE]
 > Cortana supports skills in the en-US locale only.
@@ -62,7 +62,7 @@ Cortana: "It is currently 58 degrees and mostly cloudy..."
 
 If the user is using Cortana on a device that has a screen, she also displays a card with additional information on her canvas.
 
-![Weather Card](../images/getstarted/weather-card.png)
+![Weather Card](./media/images/weather-card.png)
 
 If a user wants to invoke a custom skill, they speak an invocation phrase using the skill's invocation name. For example, if a user wants to use the "Northwind Photo" skill to check the status of an order and make a change, the conversation might go something like this:
 
@@ -79,16 +79,16 @@ Cortana: "Your order has been updated."
 
 Take a look at the following design guides to create engaging user experiences:
 
-* [Skill design principles](design-principles.md)
-* [Invocation name guidelines](cortana-invocation-guidelines.md)
-* [Performance guidelines](performance-guidelines.md)
-* [Publishing review guidelines](skill-review-guidelines.md)
-* [Maintaining Cortana's persona](cortanas-persona.md)
+* [Skill design principles](./design-principles.md)
+* [Invocation name guidelines](./cortana-invocation-guidelines.md)
+* [Performance guidelines](./performance-guidelines.md)
+* [Publishing review guidelines](./skill-review-guidelines.md)
+* [Maintaining Cortana's persona](./cortanas-persona.md)
 
 
 ## Personalize the user's experiences using user insights
 
-With permission, Cortana can send your skill the user's profile and contextual information, which you can use to personalize the user's experience. User profile information is data that Cortana knows about the user, such as their name and email address. Contextual information is data that may change more frequently, such as their current location and cuisine preference. For information about how Cortana passes the user's data to your skill when she invokes it, see [Get user profile and contextual information](get-user-profile-context.md).
+With permission, Cortana can send your skill the user's profile and contextual information, which you can use to personalize the user's experience. User profile information is data that Cortana knows about the user, such as their name and email address. Contextual information is data that may change more frequently, such as their current location and cuisine preference. For information about how Cortana passes the user's data to your skill when she invokes it, see [Get user profile and contextual information](./get-user-profile-context.md).
 
 ## Add intelligence to your skill using Microsoft Cognitive Services
 
@@ -120,6 +120,6 @@ Cortana can run skills on any platform that Cortana runs on. Cortana is availabl
 
 ## Next steps
 
-Ready to create a skill? For details about creating your first skill, see [Get started](get-started.md).
+Ready to create a skill? For details about creating your first skill, see [Get started](./get-started.md).
 
-For answers to commonly asked questions, see [FAQ](faq.md).
+For answers to commonly asked questions, see [FAQ](./faq.md).

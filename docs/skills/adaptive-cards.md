@@ -4,7 +4,7 @@ description: Learn how to use Adaptive Cards in your bot-based skill.
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 03/14/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -47,7 +47,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 > "size": "medium"
 > ```
 > 
-> ![Sample Card](../images/AC_Visualizer1.png)  
+> ![Sample Card](./media/images/ac_visualizer1.png)  
 > 
 > Change the titles text using the following text to updated the text block.  
 > 
@@ -58,7 +58,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 > "size": "medium"
 > ```  
 >
-> ![Revised Card](../images/AC_Visualizer2.png)  
+> ![Revised Card](./media/images/ac_visualizer2.png)  
 
 ## Create an Adaptive Card using .NET
 
