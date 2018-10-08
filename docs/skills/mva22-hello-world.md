@@ -2,7 +2,7 @@
 title: Create your first Cortana Skill
 description: Describes how to create your first Cortana Skill.
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -22,31 +22,31 @@ To create a bot using the Azure Bot Service, first open the [Microsoft Azure Por
 
 In the Azure Marketplace pane, click **AI + Cognitive Services**, and then **Web App Bot**.
 
-![Azure Marketplace](../images/mva22-azure-marketplace.png)
+![Azure Marketplace](./media/images/mva22-azure-marketplace.png)
 
 Enter a name for your bot. The bot service uses the bot name as the default name for the resource group name and app name. 
 
 Specify your subscription plan, location, app name, and the bot template you want to use, and then click **Create**. To create a basic, single-dialog bot that echoes back the user input, use the **Basic** template. 
 
-![Create Pane](../images/mva22-create.png)
+![Create Pane](./media/images/mva22-create.png)
 
 It may take a few minutes to provision and initialize your bot. When the process is complete, you can test your bot. Click **Test in Web Chat** to open the **Test** pane.
 
-![Open Test](../images/mva22-open-test.png)
+![Open Test](./media/images/mva22-open-test.png)
 
 Try typing something into the **Type your message** prompt. The bot repeats what you typed, preceded by *You said* and a count of how many messages you've typed. You can reset the count by typing *reset*.
 
-![Test Bot](../images/mva22-test.png)
+![Test Bot](./media/images/mva22-test.png)
 
 ## Step 2 - Explore the code
 
 The mva-hello-world bot uses C#.NET code that is part of the Basic bot template. To view the code behind the bot, click **Build** and then **Open online code editor** to open the **App Service Editor**.
 
-![Open Code Editor](../images/mva22-open-code-editor.png)
+![Open Code Editor](./media/images/mva22-open-code-editor.png)
 
 The code that handles the bot's response to the message you type can be found in the *MessagesController.cs* and *EchoDialog.cs* modules. Expand the **Controllers** and **Dialogs** trees under WWWROOT in the **App Service Editor** to view the code.
 
-![Code Modules](../images/mva22-modules.png)
+![Code Modules](./media/images/mva22-modules.png)
 
 The Post method in *MessagesController.cs* invokes an instance of the EchoDialog class when a user types a message:
 
@@ -132,11 +132,11 @@ You can revise the code to customize the response. For example, you could revise
 
 For the changes to take effect, you need to redeploy the bot. In the **App Service Editor**, click the **Open Console** icon to open the **Console** window, and then enter *build.cmd*.
 
-![Console Window](../images/mva22-console-window.png)
+![Console Window](./media/images/mva22-console-window.png)
 
 Once the redeployment is complete, you can return to the **Test** pane to test your bot.
 
-![Revised Bot](../images/mva22-revised-bot.png)
+![Revised Bot](./media/images/mva22-revised-bot.png)
 
 ## Step 3 - Connect your Azure Bot to the Cortana Channel
 
@@ -147,13 +147,13 @@ In the Azure Portal, click the Channels tab to view the available channels, and 
 On the Configure Cortana page, scroll down to the **Discovery and Management** section and click **Manage**. Click the **Publish** menu tab and then **Publish to self** to open the channel configuration settings, where you can specify an optional icon for the skill, and a display name and invocation name. Cortana uses the invocation name you specify to invoke the skill.
 
 <!-- new -->  
-![Configure Cortana Skill](../images/cortana-configure-settings.png)  
+![Configure Cortana Skill](./media/images/cortana-configure-settings.png)  
 <!-- new -->  
 
 On the Channels tab of the Azure Portal, you can now see Cortana listed as an *mva-hello-world* bot service channel. 
 
-![Bot Channel](../images/mva22-helloworld-channel.png)
+![Bot Channel](./media/images/mva22-helloworld-channel.png)
 
 To return to the Configure Cortana page, where you can update the skill's configuration settings, click **Edit**. To test your new skill, direct Cortana to invoke the skill using the invocation name you specified; for example, "Ask Hello World 'Hello World'."
 
-![Hello World Cortana](../images/mva22-helloworld-cortana.png)
+![Hello World Cortana](./media/images/mva22-helloworld-cortana.png)

@@ -3,7 +3,7 @@ title: Understanding types of conversations
 description: Explains the different types of Cortana conversations.
 
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -20,7 +20,7 @@ The most basic Cortana conversation is a *single-turn* conversation. For example
     User: Hey Cortana, what's the weather today?
     Cortana: The forecast shows light rain with a high of 47 and a low of 42.
 
-![Forecast](../images/mva31-forecast.png)
+![Forecast](./media/images/mva31-forecast.png)
 
 You can also have a *multi-turn* conversation, in which there a dialog between Cortana and the user:
 
@@ -29,7 +29,7 @@ You can also have a *multi-turn* conversation, in which there a dialog between C
     User: Should I bring a jacket?
     Cortana: Yes, you'll probably want a jacket today.
 
-![Forecast](../images/mva31-jacket.png)
+![Forecast](./media/images/mva31-jacket.png)
 
     User: Thanks!
     Cortana: My pleasure!

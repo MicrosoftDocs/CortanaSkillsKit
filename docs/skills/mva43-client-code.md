@@ -2,7 +2,7 @@
 title: Using client code with Cortana Skills
 description: Describes how to use client code with a Cortana Skill.
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -39,7 +39,7 @@ You can use Cortana's **ChannelData** object to launch the default client email 
 
 For more information on working with the **ChannelData** object, see [Get Cortana's channel data](./cortana-channel-data.md).
 
-You can also use the **ChannelData** object to launch a variety of apps or websites from a Cortana skill. For more information, see [Launching apps or websites from a Cortana skill](./launch-apps-from-skills#launching-and-deep-linking-an-app.md).
+You can also use the **ChannelData** object to launch a variety of apps or websites from a Cortana skill. For more information, see [Launching apps or websites from a Cortana skill](./launch-apps-from-skills.md#launching-and-deep-linking-an-app).
 
 ## Step 2 - Vary the skill's response depending on the type of device
 
@@ -111,4 +111,4 @@ To test your revised skill, direct Cortana to invoke the Mixtape skill using an 
 
 If you invoked the skill on a device that supports visual display, Cortana responds by launching the device's default mail application with the subject line you specified.
 
-![Save CSongard](../images/mva43-save-song.png)
+![Save CSongard](./media/images/mva43-save-song.png)

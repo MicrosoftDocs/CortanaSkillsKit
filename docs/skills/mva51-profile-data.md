@@ -2,7 +2,7 @@
 title: Understanding Cortana user profile data
 description: Introduces Cortana user profile data.
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -14,11 +14,11 @@ In previous modules, you learned how to build conversation in your Cortana skill
 
 Your user profile information can be found in the Cortana Notebook, which you can view by clicking the Notebook icon in the Cortana canvas.
 
-![Cortana Notebook](../images/mva51-notebook.png)
+![Cortana Notebook](./media/images/mva51-notebook.png)
 
 You can view a variety of information in the Cortana Notebook. For example, you can view a list of your Cortana skills, your preferences for how Cortana manages commute and traffic information, or your cuisine preferences.
 
-![Cuisine Preferences](../images/mva51-eat-drink.png)
+![Cuisine Preferences](./media/images/mva51-eat-drink.png)
 
 You can also update many user profile iteFor example, you can add or remove items from your cuisine preferences by clicking **Add a cuisine** or selecting a cuisine and clicking the trash can icon.
 
