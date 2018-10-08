@@ -2,7 +2,7 @@
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -24,25 +24,25 @@ Developing a Cortana skill requires a variety of cloud resources. For example, y
 > [!NOTE]
 > To develop a Cortana skill, you must use a [Microsoft account](https://account.microsoft.com/account) rather than an Azure Active Directory (Azure AD) organizational account, such as an account associated with Office 365.
 
-![Microsoft account site](../images/microsoft-account.png)
+![Microsoft account site](./media/images/microsoft-account.png)
 
 Other resources include:
 
 * **Bot Framework**. To create a Cortana skill, you must first create a bot. Then log in to the [Bot Framework Developer Portal](https://dev.botframework.com/) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
 
-![Bot Framework developer portal](../images/Bot-Framework-dev-portal.png)
+![Bot Framework developer portal](./media/images/bot-framework-dev-portal.png)
 
 * **Cortana Developer Center**. Log in to the [Cortana Developer Center](https://developer.microsoft.com/cortana) using your Microsoft account to open your Cortana Skills Dashboard. The developer center provides a variety of resources for developing a Cortana skill.
 
-![Cortana Dev Center](../images/Cortana-dev-center.png)
+![Cortana Dev Center](./media/images/cortana-dev-center.png)
 
 * **LUIS (Language Understanding Intelligent Service)**. Log in to [LUIS.ai](https://www.luis.ai) using your Microsoft account to create and manage LUIS applications that let you use language understanding technology in your Cortana skill. 
 
-![LUIS Site](../images/mva32-LUIS-account.png)
+![LUIS Site](./media/images/mva32-huis-account.png)
 
 * **A cloud hosting service**. Optionally, you can use a cloud hosting service such as [Microsoft Azure](https://azure.microsoft.com). This is required if you want to want the skill to be available to Cortana using a web address.
 
-![Azure Site](../images/Azure-site.png)
+![Azure Site](./media/images/azure-site.png)
 
 ## Step 2 - Set up your PC, Mac, or Cortana device
 

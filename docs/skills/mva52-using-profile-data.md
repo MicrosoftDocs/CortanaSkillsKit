@@ -2,7 +2,7 @@
 title: Using profile data in your Cortana Skill
 description: Describes how to use profile data in your Cortana Skill.
 
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -22,11 +22,11 @@ As you learned in [Create your first Cortana skill](./mva22-hello-world.md) and 
 
 To make user profile data available to your Cortana skill, update the skill's channel configuration settings.
 
-![Knowledge Store Publish](../images/mva52-KS-publish.png)
+![Knowledge Store Publish](./media/images/mva52-KS-publish.png)
 
 Select **Publish to self**. In the **User data** box, specify the user profile data that you want to make available. For example, to make the user's name available, select **User.Info.Name**.
 
-![User Data](../images/mva52-info-name.png)
+![User Data](./media/images/mva52-info-name.png)
 
 ## Step 2 - Revise your skill to use profile data
 
@@ -69,8 +69,6 @@ To test your revised skill, direct Cortana to invoke the Mixtape skill using an 
 
 Since you have configured Cortana to request user profile data, Cortana asks your consent before launching the skill. Cortana will not use information from the user profile without explicit consent.
 
-![Ask Consent](../images/mva52-ask-consent.png)
+![Ask Consent](./media/images/mva52-ask-consent.png)
 
 If you give your consent, Cortana responds by launching the Mixtape skill with a personalized greeting, using the name specified in the user profile.
-
-

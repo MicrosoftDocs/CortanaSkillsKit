@@ -32,156 +32,33 @@ Cortana passes the IDs in the channel information of the message.
 
 ## Cortana Configuration Fields  
 
-Follow the instructions to access the Cortana Configuration page and update each of the parameters for your Cortana Skill.  
+[!INCLUDE [open-configure-cortana](../../includes/open-configure-cortana.md)]  
 
-1.  Sign into the [BotFramework](https://dev.botframework.com) portal and click on the **My bots** link.  
-
-2.  On the *My bots* page, click the name of your bot.  
-    
-    ![your Web App Bot blade menu](../images/web_app_bot_blade-menu.png)  
-    
-3.  On the *Microsoft Azure* portal, in your Web App Bot blade, under the *Bot Management* section, click on the **Channels** icon.  
-    
-    ![Bot management - Channels](../images/bot_management-channels.png)  
-    
-4.  On the *Connect to channels* page, under the *Add a featured channel* section, click on the **Configure Cortana Channel** icon.  
-
-    :::row:::
-        :::column span="5":::
-            ![Configure Cortana](../images/configure_cortana.png)
-        :::column-end:::
-    :::row-end:::
-    :::row:::
-        :::column span="1":::
-            ![Default settings](../images/default_settings.png)
-        :::column-end:::
-        :::column span="1":::
-            ![Test Group settings](../images/test_group_settings-not_configured.png)
-        :::column-end:::
-        :::column span="1":::
-            ![Test Group settings - Configured](../images/test_group_settings-configured.png)
-        :::column-end:::
-        :::column span="1":::
-            ![World settings](../images/world_settings-not_configured.png))
-        :::column-end:::
-        :::column span="1":::
-            ![World settings - Configured](../images/world_settings-configured.png)
-        :::column-end:::
-    :::row-end:::
-
-
-<!--
-5.  On the *Configure Cortana* page, under the *Default Settings* section, enter the following information.  
-    
-    ![Default settings](../images/default_settings.png)  
-    
-    You must complete the required fields that are marked with an asterisk (`*`).
-    
-    >[!NOTE]
-    > For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
-    
-    1.  Skill information section  
-        
-        ![Skills information](../images/default_settings-skill_information.png)  
-        
-        *   `Skill icon`  
-            *   Click on the Upload icon button and select an icon for your Cortana Skill.  
-        *   `Display name`  
-            *   >[!WARNING]
-                > The value is limited to 30 characters.  
-        *   `Invocation name`  
-            *  The name used to invoke your Cortana Skill.  
-    2.  Manage user identity through Connected Services  
-        
-        ![Manage user identity through Connected Services](../images/default_settings-manage_user_identity_connected_services-off.png)
-        
-        *   `Cortana should manage my user's identity`  
-            *   >[!IMPORTANT]
-                > If you select this option, then you must complete the following fields.  
-                
-                ![Manage user identity through Connected Services](../images/default_settings-manage_user_identity_connected_services-on.png)  
-                
-            *   `When should Cortana prompt for a user to sign in?`  
-                *   Possible values are `Sign in at invocation` or `Sign in when required`  
-
-            *   `Account name`  
-                *   The name of your Account.  
-            *   `Client ID for third-party services`  
-                *   The application ID of your bot. 
-                    >[!TIP]
-                    > If you use a Microsoft service, the you get your application ID on the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/#/appList) page. Click the name of your BotFramework bot listed under the My Applications section.    
-            *   `Space-seperated list of scopes`  
-                *   The list of scopes. The list must be space-separated.  
-            *   `Authorization URL`  
-                *   The authorization URL of your OAuth 2.0 provider.  
-                    >[!TIP]
-                    > If you use a Microsoft service, then set to the following value.  
-                    >
-                    > ```url
-                    > https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-                    > ```  
-                    
-            *   `Token options`  
-                *   Possible values are `GET` or `POST`  
-            *   `Grant type`  
-                *   Possible values are `Authorization code` or `Implicit`  
-            *   `Token URL`  
-                *   The token URL of your OAuth 2.0 provider.  
-                    >[!TIP]
-                    > If you are using a Microsoft service, then set to the following value.  
-                    
-                    ```url
-                    https://login.microsoftonline.com/common/oauth2/v2.0/token
-                    ```  
-                    
-            *   `Client secret/password for third party services`  
-                *   The password of your bot.  
-                    >[!TIP]
-                    > If you are using a Microsoft Identity Service, then the password is generated when you registered your bot in the *Microsoft Application Registration* portal.  
-                    >
-                    > >[!NOTE]
-                    >  The Client Secret is displayed only once under the *Application Secrets* section of the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/#/appList) page.  
-                    >  To recreate or reveal the secret password of your application, click on the **Generate New password** button.  
-                    
-            *   `Client authorization scheme`  
-                *   The client authorization scheme.  
-                    Possible values are `HTTP Basic (Recommended)` or `Credentials in request body`  
-                    
-                    >[!NOTE]
-                    > If you do not know your client authorization scheme, then set `HTTP Basic (Recommended)` as the default option.  
-                    
-            *   `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).`  
-                *   Your app requires access to an intranet.  
-    3.  Request user profile data  
-        
-        ![Request user profile](../images/default_settings-request_user_profile_data-empty.png)
-        
-        *   `Data`  
-            *   Click on the **Add a user profile request** link and select the user profile information from the drop-down menu.  
-                Possible values are `user.info.email`  
-                
-                >[!TIP]
-                > Repeat this step to select additional user profile data.  
-                
-                >[!IMPORTANT]
-                > You are allowed to collect user profile data only to add to your Cortana Skill functionality.  
-                
-                ![Request user profile - all](../images/default_settings-request_user_profile_data-all.png)
-                
-    >[!TIP]
-    > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
-        
-    >[!IMPORTANT]
-    > The **Deploy on Cortana** button is enabled only after all of the required fields are completed.  
-    
-    ![Deploy on Cortana - not enabled](../images/test_group_settings-group-contoso_hotmail.png)  
-    
-6.  Click on the **Deploy on Cortana** button.  
-
-    >[!IMPORTANT]
-    > The **Deploy on Cortana** button is enabled only after all of the required fields are completed.  
--->
-
+:::row:::
+    :::column span="1":::
+        ![Default settings](../images/default_settings.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        ![Test Group settings](../images/test_group_settings-not_configured.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        ![Test Group settings - Configured](../images/test_group_settings-configured.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        ![World settings](../images/world_settings-not_configured.png)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        ![World settings - Configured](../images/world_settings-configured.png)
+    :::column-end:::
+:::row-end:::
 
 ## Default Settings  
 
@@ -545,7 +422,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
         
     *   The **World Setting** link is updated.  
         
-        ![Test Group Settings - configured](../images/world_settings-configured.png)  
+        ![World Settings - configured](../images/world_settings-configured.png)  
         
 
     >[!IMPORTANT]
