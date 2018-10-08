@@ -27,7 +27,7 @@ Use the following workflow to make updates to the documentation via web browser:
 1. Navigate to the article you wish to edit.
 2. Click the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off master.
 
-   ![Edit an article.](images/contributing/editpage.png)
+   ![Edit an article.](../media/images/contributing/editpage.png)
 3. Edit the content of the article (see ["Markdown basics"](#markdown-basics) below for guidance).
 4. Update metadata as relevant at the top of each article:
    * title: This is the page title that appears in the browser tab when the article is being viewed. As this is used for SEO and indexing, you shouldn't change the title unless necessary (though this is less critical before documentation goes public).
@@ -47,11 +47,11 @@ Use the following workflow to create new articles in the documentation via web b
 
 1. Create a fork off the MicrosoftDocs/CortanaSkillsKit 'master' branch (using the **Fork** button in the top right).
 
-   ![Fork the master branch.](images/contributing/forkbranch.png)
+   ![Fork the master branch.](./media/images/contributing/forkbranch.png)
 2. In the **Docs** folder, click the **Create new file** button in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
-   ![Name your new page.](images/contributing/newpagetitle.png)
+   ![Name your new page.](./media/images/contributing/newpagetitle.png)
 4. At the top of your new page, add the following metadata block:
 
    ```md
@@ -71,14 +71,14 @@ Use the following workflow to create new articles in the documentation via web b
 8. When finished, click **Commit new file**.
 9. Click **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/CortanaSkillsKit 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](images/contributing/pr_to_master.png)
+   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](./media/images/contributing/pr_to_master.png)
 
 ## Markdown basics
 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
 - [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
-- [Markdown-at-a-glance reference poster](images/MarkdownPoster.pdf)
+- [Markdown-at-a-glance reference poster](./media/MarkdownPoster.pdf)
 - [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
 - [Unique Markdig differences](https://review.docs.microsoft.com/en-us/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/en-us/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
 
@@ -148,24 +148,24 @@ Use the following workflow to make changes to the documentation with Visual Stud
 1. Make sure your cloned fork is up-to-date with the official repo.
    1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/CortanaSkillsKit 'master' to your fork (make sure the arrow is pointing the right way).
       
-      ![Sync changes from MicrosoftDocs/CortanaSkillsKit to your fork](images/contributing/sync_repos.png)
+      ![Sync changes from MicrosoftDocs/CortanaSkillsKit to your fork](./media/images/contributing/sync_repos.png)
    2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
       
-      ![Click the sync button](images/contributing/sync_clone.png)
+      ![Click the sync button](./media/images/contributing/sync_clone.png)
 2. Create or edit articles in your cloned repo using Visual Studio Code.
    1. Edit one or more articles (add images to “images” folder if necessary).
    2. **Save** changes in **Explorer**.
       
-      ![Choose "Save all" in Explorer](images/contributing/explorer_save.png)
+      ![Choose "Save all" in Explorer](./media/images/contributing/explorer_save.png)
    3. **Commit all** changes in **Source Control** (write commit message when prompted).
       
-      ![Choose "Commit all" in Source Control](images/contributing/source_control_commit.png)
+      ![Choose "Commit all" in Source Control](./media/images/contributing/source_control_commit.png)
    4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
-      ![Click the sync button](images/contributing/sync_back.png)
+      ![Click the sync button](./media/images/contributing/sync_back.png)
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/CortanaSkillsKit 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](images/contributing/pr_to_master.png)
+   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](./media/images/contributing/pr_to_master.png)
 
 ### Useful extensions
 
