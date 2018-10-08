@@ -32,42 +32,25 @@ Cortana passes the IDs in the channel information of the message.
 
 ## Cortana Configuration Fields  
 
-Follow the instructions to access the Cortana Configuration page and update each of the parameters for your Cortana Skill.  
+[!INCLUDE [open-configure-cortana](../../includes/open-configure-cortana.md)]  
 
-1.  Sign into the [BotFramework](https://dev.botframework.com) portal and click on the **My bots** link.  
-
-2.  On the *My bots* page, click the name of your bot.  
-    
-    ![your Web App Bot blade menu](../images/web_app_bot_blade-menu.png)  
-    
-3.  On the *Microsoft Azure* portal, in your Web App Bot blade, under the *Bot Management* section, click on the **Channels** icon.  
-    
-    ![Bot management - Channels](../images/bot_management-channels.png)  
-    
-4.  On the *Connect to channels* page, under the *Add a featured channel* section, click on the **Configure Cortana Channel** icon.  
-
-    :::row:::
-        :::column span="5":::
-            ![Configure Cortana](../images/configure_cortana.png)
-        :::column-end:::
-    :::row-end:::
-    :::row:::
-        :::column span="1":::
-            ![Default settings](../images/default_settings.png)
-        :::column-end:::
-        :::column span="1":::
-            ![Test Group settings](../images/test_group_settings-not_configured.png)
-        :::column-end:::
-        :::column span="1":::
-            ![Test Group settings - Configured](../images/test_group_settings-configured.png)
-        :::column-end:::
-        :::column span="1":::
-            ![World settings](../images/world_settings-not_configured.png))
-        :::column-end:::
-        :::column span="1":::
-            ![World settings - Configured](../images/world_settings-configured.png)
-        :::column-end:::
-    :::row-end:::
+:::row:::
+    :::column span="1":::
+        ![Default settings](../images/default_settings.png)
+    :::column-end:::
+    :::column span="1":::
+        ![Test Group settings](../images/test_group_settings-not_configured.png)
+    :::column-end:::
+    :::column span="1":::
+        ![Test Group settings - Configured](../images/test_group_settings-configured.png)
+    :::column-end:::
+    :::column span="1":::
+        ![World settings](../images/world_settings-not_configured.png)
+    :::column-end:::
+    :::column span="1":::
+        ![World settings - Configured](../images/world_settings-configured.png)
+    :::column-end:::
+:::row-end:::
 
 
 <!--
