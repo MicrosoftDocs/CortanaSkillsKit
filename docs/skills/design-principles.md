@@ -3,7 +3,7 @@ title: Principles of Cortana Skill Design
 description: Overview of Cortana Skill Design Best Practices.
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 10/03/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -420,7 +420,7 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 <!-- //TODO: AITSkills that have been imported from Alexa are limited an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
 
-![Cortana's Canvas](../images/reference/cortana-canvas.png)
+![Cortana's Canvas](./media/images/cortana-canvas.png)
 
 To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) or [Add cards to your skill using .NET](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments).  
 
@@ -497,14 +497,14 @@ What design rules apply to .NET FormFlows?
 
 ## Next steps
 
-Cortana's persona has been well crafted and it's very important that you maintain her character in all interactions with users. For information about maintaining her persona in your skill, see [Cortana's persona](cortanas-persona.md).
+Cortana's persona has been well crafted and it's very important that you maintain her character in all interactions with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md).
 
-For performance design considerations, including Azure services, see [Performance guidelines](performance-guidelines.md).
+For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
 
-For invocation name do's and don'ts, see [Invocation name guidelines](cortana-invocation-guidelines.md).
+For invocation name do's and don'ts, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
 
 
-When you publish your skill to the world, the Cortana team reviews your skill to make sure it's compliant with the design principals in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish you skill (see [Cortana skills certification requirements](skill-review-guidelines.md)).
+When you publish your skill to the world, the Cortana team reviews your skill to make sure it's compliant with the design principals in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish you skill (see [Cortana skills certification requirements](./skill-review-guidelines.md)).
 
 <!-- Think about include bot framework's design principals 
 
