@@ -32,24 +32,24 @@ Configuring the Cortana channel adds your skill to Cortana on your computer. To 
 If you see your skill in the dashboard, you can invoke your skill from Cortana. But before invoking your skill, make sure:
 
 1. You're signed into Cortana using the same Microsoft account that you used to register the skill in Bot Framework. To confirm:  
-  1. Open Cortana by clicking **Type here to search** in the task bar.  
+    1. Open Cortana by clicking **Type here to search** in the task bar.  
      <br />  
      ![Cortana](../images/getstarted/open-cortana.png)  
      <br />  
-  2. Open Cortana's Notebook by clicking the notebook icon.  
+    2. Open Cortana's Notebook by clicking the notebook icon.  
      <br />  
      ![Cortana's Notebook](../images/getstarted/notebook.png)  
      <br />  
-  3. Click **About Me**  
-  4. Confirm the account shown is the same one you used to register your skill. If not, sign out and then sign back in with the correct account.  
+    3. Click **About Me**  
+    4. Confirm the account shown is the same one you used to register your skill. If not, sign out and then sign back in with the correct account.  
   
 2. Cortana's microphone is enabled.  
-  1. Open Cortana
-  2. Open Cortana's settings  
+    1. Open Cortana
+    2. Open Cortana's settings  
      <br />  
      ![Cortana's settings](../images/getstarted/cortana-settings.png)  
      <br />  
-  3. Under **Microphone**, click **Get started**
+    3. Under **Microphone**, click **Get started**
 
 
 When you're all set, click Cortana's microphone and invoke your skill. For example, if your skill's invocation name is "Northwind Photo", you can invoke your skill by saying, "Ask Northwind Photo to..." or "Tell Northwind Photo that...". If Cortana recognizes your skill, she launches it and display it on her canvas.
