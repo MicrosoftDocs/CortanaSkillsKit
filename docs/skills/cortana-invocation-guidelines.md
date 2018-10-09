@@ -11,47 +11,47 @@ keywords: cortana
 
 The invocation name is an essential part of the natural language phrase or utterance that invokes your Cortana skill. Your invocation name must conform to the following requirements in addition to those found in section 2.1 of [Cortana Skills Kit Review Guidelines](skill-review-guidelines.md#2.1-distinct-function-and-accurate-representation).
 
-**Avoid the term "bot" in the invocation name**
+**Avoid the term "bot" in the invocation name.**
 Avoid using the term "bot" in the invocation name because it is not user friendly for Cortana users. It can also be confused with Microsoft's use of the term “bot.” 
 
-**Avoid trademarked or copyrighted names**
+**Avoid trademarked or copyrighted names.**
 Unless you have permission from the owner of a trademarked or copyrighted name, don't use it as an invocation name. If you do, your skill may not pass the publishing review.
 
 All content in your skill and associated metadata must be either originally created by you (the skill provider), appropriately licensed from the third-party rights holder, used as permitted by the rights holder, or used as otherwise permitted by law. 
 
-**Must not be longer than three words**
+**Must not be longer than three words.**
 An invocation name of more than three words is difficult to distinguish from the utterance. For example, use "One Bus Away" instead of "One Bus Away Corp." 
 
-**Avoid duplicate names**
+**Avoid duplicate names.**
 Your skill must not clone or duplicate another skill. The name is verified when you configure your Cortana channel and specify your skills name. Duplicate names are rejected.
 
-**Avoid the use of common proper nouns**
+**Avoid the use of common proper nouns.**
 Invocation names and titles should not consist of proper nouns, names, or places unless you have exclusive rights to use that name in a commercial application.
 
 
 
-## Invocation name recommendations
+## Invocation name recommendations.
 The following recommendations can improve recognition significantly.
 
-**Specify a clear and easily recognized invocation name​**
+**Specify a clear and easily recognized invocation name.​**
 When creating a language model, it is important that you define a "high quality" invocation name. If your invocation name is hard to pronounce or sounds similar to other words, Cortana might have difficulty recognizing it without introducing a disambiguation step. ​
 
-**Avoid words that are homophones​**
+**Avoid words that are homophones.​**
 Try not to include words that sound the same as another word but have different meanings like "Peak/Peek" or "Wait/Weight".  Also try to avoid overly clever word plays that will cause collisions with common English words or phrases.​
 
-**Use words with multiple syllables and invocation names with multiple words​**
+**Use words with multiple syllables and invocation names with multiple words.​**
 Using invocation names with multiple syllables or words are easier to recognize.  ​
 
-**Avoid compound words unless required for branding**
+**Avoid compound words unless required for branding.**
 Compound words can be difficult to recognize.  
  
-**Avoid hard to pronounce word​s**
+**Avoid hard to pronounce word​s.**
 An invocation name that contains difficult words to pronounce, such as Quinoa, Façade, makes it harder for your users to pronounce and for Cortana to understand.​
 
-**Avoid names that combine multiple words into one**
+**Avoid names that combine multiple words into one.**
 An invocation name that combines multiple words into one increases the chance that Cortana will not recognize it. For example, instead of "sixSigma5," consider "six Sigma 5" or "six Sigma five".
 
-**Prime speech recognition for your skill**
+**Prime speech recognition for your skill.**
 If your skill uses a Language Understanding Intelligence Service app (from luis.ai), you can use it to achieve optimal speech recognition performance when users invoke your skill. Although the system learns over time, seeding it with the highest probability intents leads to a better first experience. This in turn leads to greater usage and faster improvement of the system. ​For example, the user could ask your skill to play classical music in different ways with all of them returning the correct intent.
 
 * Ask My Radio to play classical
