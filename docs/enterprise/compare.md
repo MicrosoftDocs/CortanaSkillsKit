@@ -15,9 +15,9 @@ keywords: cortana
 |:---                                                 |:---                         |:---             |  
 | Endpoints                                           | Windows 10, Mobile, Speaker | Windows 10 only |  
 | Accounts                                            | MSA                         | Azure AD tenant |  
-| [Feature: Personalization](feature-personalization) | Available                   | No              |  
-| [Feature: Play Audio](feature-play-audio)           | Available                   | No              |  
-| [Feature: Publication](feature-publication)         | Available                   | No              |  
+| [Feature: Personalization](#feature-personalization) | Available                   | No              |  
+| [Feature: Play Audio](#feature-play-audio)           | Available                   | No              |  
+| [Feature: Publication](#feature-publication)         | Available                   | No              |  
 | Invocations                                         | Text, Voice                 | Voice only      |  
 
 
