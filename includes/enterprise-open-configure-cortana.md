@@ -9,6 +9,6 @@
                 1.  Under the *Connect to channels* section, next to the *Cortana* icon, click on the **Edit** icon.  
                 2.  On the *Configure Cortana Enterprise Skill* page.  
                     
-                    ![Configure Cortana Enterprise Skill](./media/images/enterprise-configure_cortana_skill.png)  
-                    ![Run Cortana in Debug Mode](./media/images/enterprise-run_debug_mode.png)  
+                    ![Configure Cortana Enterprise Skill](../media/images/enterprise-configure_cortana_skill.png)  
+                    ![Run Cortana in Debug Mode](../media/images/enterprise-run_debug_mode.png)  
                     
