@@ -158,7 +158,8 @@ To support applications that only use Azure AD, you must complete the following 
 [!INCLUDE [enterprise-open-configure-cortana](../../includes/enterprise-open-configure-cortana.md)]  
 
 ### Update Configure Cortana Channel  
-3.  Under the *Manage user identity through Connected Services* section.  
+
+1.  Under the *Manage user identity through Connected Services* section.  
     1.  `Cortana should manage my user's identity`  
         1.  Activate. 
     2.  Complete the fields.  
@@ -196,7 +197,7 @@ To support applications that only use Azure AD, you must complete the following 
                 >[!Note]
                 > If your Cortana Skill fails during the OAuth flow with the http status code 401 and an error, then try changing the option.  
                 
-4.  Click on the **Deploy on Cortana** button.  
+2.  Click on the **Deploy on Cortana** button.  
 
 Your bot and Azure AD should be configured to send requests to secured resources.  
 
