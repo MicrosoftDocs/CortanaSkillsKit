@@ -19,7 +19,8 @@ Bots are designed to handle input and output with multiple platforms.
 
 ## Connect to Cortana Channel  
 
-<!--
+### Access Configure Cortana Channel  
+
 1.  On the Azure portal, click on the **All services** icon.  
     1.  On the *All services* blade.  
         1.  Under the *AI + Machine Learning* section, click on the **Bot Services** icon.  
@@ -34,21 +35,23 @@ Bots are designed to handle input and output with multiple platforms.
                     ![Configure Cortana Enterprise Skill](./media/images/enterprise-configure_cortana_skill.png)  
                     ![Run Cortana in Debug Mode](./media/images/enterprise-run_debug_mode.png)  
 
--->
+
 [!INCLUDE [enterprise-open-configure-cortana](../../includes/enterprise-open-configure-cortana.md)]  
-                    
-                    3.  In the **Default settings**  
-                        *   Update the `Invocation Name`.
-                            
-                            ![Skill Information](./media/images/default_settings-skill_information.png)  
-                            
-                            >[!TIP]
-                            > Follow the guidance on the [insert](./.md) page for invocation phrases.  
-                            
-                    4.  Click on the **Deploy on Cortana** button.  
+
+### Update Configure Cortana Channel  
+                
+1.  In the *Default settings* section. 
+    *   Update the `Invocation Name`.
+        
+        ![Skill Information](./media/images/default_settings-skill_information.png)  
+        
+        >[!TIP]
+        > Follow the guidance on the [insert](./.md) page for invocation phrases.  
+        
+2.  Click on the **Deploy on Cortana** button.  
                         
-                        ![Back to Channels, Deploy on Cortana](./media/images/enterprise-back-deploy-active.png)  
+![Back to Channels, Deploy on Cortana](./media/images/enterprise-back-deploy-active.png)  
                         
-2.  Invoke your Cortana Skill.  
+3.  Invoke your Cortana Skill.  
 
 ## Next Steps  

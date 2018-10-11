@@ -153,57 +153,51 @@ To support applications that only use Azure AD, you must complete the following 
                             > >[!WARNING]
                             > > This value only appears once.  
                             
-### Configure Cortana Channel  
+### Access Configure Cortana Channel  
 
 [!INCLUDE [enterprise-open-configure-cortana](../../includes/enterprise-open-configure-cortana.md)]  
 
-<!-- 
-1.  a
-    1.  a
-        1.  a
-            1.  a
-                1.  a
--->
-                    3.  Under the *Manage user identity through Connected Services* section.  
-                        1.  `Cortana should manage my user's identity`  
-                            1.  Activate. 
-                        2.  Complete the fields.  
-                            *   `When should Cortana prompt for a user to sign in?`
-                                *   `Sign in at invocation`  
-                                    *   Get an Authorization key the first time the user uses your Cortana Skill.  
-                                *   `Sign in when required`  
-                                    *   Send an OAuthCard before accessing each resource.  
-                                
-                                >[!Note]
-                                > If you have an Authorization key, then Cortana ignores the OAuthCard attachment.  
-                                
-                            *   `Account name` | required  
-                                *   The name of your organization or organizational unit.  
-                            *   `Client Id` | required  
-                                *   The application ID you created and mentioned in the previous AD configuration.  
-                            *   `Space-seperated list of scopes`  
-                                *   The required permission from the previous Azure AD configuration and should match exactly.  
-                            *   `Authorization URL` | required  
-                                *    `https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/authorize`  
-                            *   `Token Options` | required  
-                                *    `POST`  
-                            *   `Grant Type` | required  
-                                *    The Authorization Code unless you intent to use the more sophisticated implicit flow [OAuth 2.0](https://oauth.net/2) page.  
-                            *   `Token URL` | required  
-                                *    `https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token`  
-                            *   `Client secret` | required  
-                                *   The secret generated from the previous Azure AD configuration.  
-                            *   `Client authorization scheme`  
-                                *   `Credentials in request body`  
-                                    If `Token Options` is set to `POST`.  
-                            *   `This skill's Connected Service requires intranet access to authenticate users`  
-                                *   If your Cortana Skill requires authentication to use your intranet, then check this option.  
-                                    
-                                    >[!Note]
-                                    > If your Cortana Skill fails during the OAuth flow with the http status code 401 and an error, then try changing the option.  
-                                    
-                    4.  Click on the **Deploy on Cortana** button.  
-                    
+### Update Configure Cortana Channel  
+3.  Under the *Manage user identity through Connected Services* section.  
+    1.  `Cortana should manage my user's identity`  
+        1.  Activate. 
+    2.  Complete the fields.  
+        *   `When should Cortana prompt for a user to sign in?`
+            *   `Sign in at invocation`  
+                *   Get an Authorization key the first time the user uses your Cortana Skill.  
+            *   `Sign in when required`  
+                *   Send an OAuthCard before accessing each resource.  
+            
+            >[!Note]
+            > If you have an Authorization key, then Cortana ignores the OAuthCard attachment.  
+            
+        *   `Account name` | required  
+            *   The name of your organization or organizational unit.  
+        *   `Client Id` | required  
+            *   The application ID you created and mentioned in the previous AD configuration.  
+        *   `Space-seperated list of scopes`  
+            *   The required permission from the previous Azure AD configuration and should match exactly.  
+        *   `Authorization URL` | required  
+            *    `https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/authorize`  
+        *   `Token Options` | required  
+            *    `POST`  
+        *   `Grant Type` | required  
+            *    The Authorization Code unless you intent to use the more sophisticated implicit flow [OAuth 2.0](https://oauth.net/2) page.  
+        *   `Token URL` | required  
+            *    `https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token`  
+        *   `Client secret` | required  
+            *   The secret generated from the previous Azure AD configuration.  
+        *   `Client authorization scheme`  
+            *   `Credentials in request body`  
+                If `Token Options` is set to `POST`.  
+        *   `This skill's Connected Service requires intranet access to authenticate users`  
+            *   If your Cortana Skill requires authentication to use your intranet, then check this option.  
+                
+                >[!Note]
+                > If your Cortana Skill fails during the OAuth flow with the http status code 401 and an error, then try changing the option.  
+                
+4.  Click on the **Deploy on Cortana** button.  
+
 Your bot and Azure AD should be configured to send requests to secured resources.  
 
 >[!TIP]
