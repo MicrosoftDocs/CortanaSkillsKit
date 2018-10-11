@@ -12,7 +12,7 @@ keywords: cortana
 # Onboard  
 
 Microsoft requires specific information to onboard your enterprise and supporting developers for building internal enterprise skills using Bot Framework.  
-To onboard your Azure Active Directory (Azure AD) tenant to the Cortana Skills Kit for Enterprise program, Please send an email with the following information to [Cortana Skills Kit for Enterprise Support](entskills@microsoft.com).  
+To onboard your Azure Active Directory (Azure AD) tenant to the Cortana Skills Kit for Enterprise program, Please send an email with the following information to [Cortana Skills Kit for Enterprise Support](mailto:entskills@microsoft.com).  
 *   Azure AD tenant name  
 *   Azure AD tenant identifier (ID)  
 *   IT Admin name and email address  
