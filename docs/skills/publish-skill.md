@@ -17,13 +17,13 @@ keywords: cortana
 
 Deploy your Cortana Skill to each of the three deployment groups.  
 *   [Default Settings](#default-settings)  
-*   [Test Group Settings](#test-group-settings) : Not Configured / Configured  
-*   [World Settings](#world-settings) : Not Configured / Configured  
+*   [Test Group Settings](#test-group-settings)  
+*   [World Settings](#world-settings)  
 
-All of deployment groups contain the same instance of your Cortana Skill.  
+All deployment groups contain the same instance of your Cortana Skill.  
 Two identifiers are assigned to your Cortana Skill.  
 *   `skillId`  
-    *   The identifier (ID) of your Cortana Skill is unique per deployment group. If your skill checks the ID, then verify the IDs are different for each group. You should use the ID of your Cortana Skill if you want to turn on more logging in the group environment.  
+    *   The identifier (ID) of your Cortana Skill is unique per deployment group. If your skill checks the ID, then verify the IDs are different for each group. Use the ID of your Cortana Skill if you want to turn on additional logging for the group environment.  
 *   `skillProductId`  
     *   The product ID of your Cortana Skill is unique across deployment groups.  
 
@@ -36,27 +36,42 @@ Cortana passes the IDs in the channel information of the message.
 
 :::row:::
     :::column span="1":::
-        ![Default settings](./media/images/default_settings.png)
+        You should see this heading while and after you configure your Cortana Skill for individual testing.  
+    :::column-end:::
+    :::column span="1":::
+        ![Default settings](./media/images/default_settings.png)  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
-        ![Test Group settings](./media/images/test_group_settings-not_configured.png)
+        You should see this heading while you configure your Cortana Skill for group testing.  
+    :::column-end:::
+    :::column span="1":::
+        ![Test Group settings](./media/images/test_group_settings-not_configured.png)  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
-        ![Test Group settings - Configured](./media/images/test_group_settings-configured.png)
+        You should see this heading after you configure your Cortana Skill for group testing.  
+    :::column-end:::
+    :::column span="1":::
+        ![Test Group settings - Configured](./media/images/test_group_settings-configured.png)  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
-        ![World settings](./media/images/world_settings-not_configured.png)
+        You should see this heading while you configure your Cortana Skill for deployment.  
+    :::column-end:::
+    :::column span="1":::
+        ![World settings](./media/images/world_settings-not_configured.png)  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column span="1":::
-        ![World settings - Configured](./media/images/world_settings-configured.png)
+        You should see this heading after you deploy your Cortana Skill.  
+    :::column-end:::
+    :::column span="1":::
+        ![World settings - Configured](./media/images/world_settings-configured.png)  
     :::column-end:::
 :::row-end:::
 
@@ -71,7 +86,7 @@ Deploying to **Default Settings** makes the skill available to you only, so you 
     
     ![Default settings](./media/images/default_settings.png)  
     
-    You must complete the required fields that are marked with an asterisk (`*`).
+    Complete the required fields that are marked with an asterisk (`*`).
     
     >[!TIP]
     > For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
@@ -87,6 +102,13 @@ Deploying to **Default Settings** makes the skill available to you only, so you 
                 > The value is limited to 30 characters.  
         *   `Invocation name`  
             *  The name used to invoke your Cortana Skill.  
+               
+               >[!WARNING]
+               > This value must be unique across Cortana (all Cortana Skills).  
+               >
+               > >[!TIP]
+               > > For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.  
+               
     2.  Manage user identity through Connected Services  
         
         ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-off.png)
@@ -98,9 +120,13 @@ Deploying to **Default Settings** makes the skill available to you only, so you 
                 ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-on.png)  
                 
             *   `When should Cortana prompt for a user to sign in?`  
-                *   Possible values are `Sign in at invocation` or `Sign in when required`  
+                *   `Sign in at invocation`  
+                *   `Sign in when required`  
+                    *   >[!IMPORTANT]
+                        > You must send an OAuthCard to the user to trigger the sign in.  
+                        
             *   `Account name`  
-                *   The name of the your Account.  
+                *   The name of your Account.  
             *   `Client ID for third-party services`  
                 *   The application ID of your bot.  
                     
@@ -180,10 +206,7 @@ Deploying to **Default Settings** makes the skill available to you only, so you 
     ![Deploy on Cortana - enabled](./media/images/default_settings-back-deploy-manage-active.png)  
 
 >[!NOTE]
-> You may also confirm your Cortana Skill is deployed on the *Cortana dashboard* page using the same Microsoft account (MSA) that you registered in *Bot Framework* portal.  
-> 
-> >[!TIP]
-> >To access the Cortana dashboard, visit the [Cortana dashboard](https://developer.microsoft.com/cortana/dashboard#!/home) page.  
+> You may confirm your Cortana Skill is deployed on Bot Framework portal or Azure portal page using the same Microsoft account (MSA) that you registered in *Bot Framework* portal.  
 
 >[!TIP]
 > For more information about testing your skill, visit the [Testing and Debugging Cortana Skills](./test-debug.md) page.  
@@ -191,13 +214,13 @@ Deploying to **Default Settings** makes the skill available to you only, so you 
 
 ## Test Group Settings  
 
-Deploying to **Test Group** makes your Cortana Skill available to a group of users that you specify using individual MSA email addresses. Typically, you create a test group to have others test your Cortana Skill and provide feedback. This is done so you are able to update your Cortana Skill before making generally available.  
+Deploying to **Test Group** makes your Cortana Skill available to a group of users that you specify using individual MSA email addresses. Typically, you create a test group to have others test your Cortana Skill and provide feedback. Update your Cortana Skill before making generally available.  
 
 1.  On the *Configure Cortana* page, under the *Test Group Settings* section, enter the following information.  
     
     ![Test Group Settings - not configured](./media/images/test_group_settings-not_configured.png)  
     
-    You must complete the required fields that are marked with an asterisk (`*`).
+    Complete the required fields that are marked with an asterisk (`*`).
     
     >[!NOTE]
     > For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
@@ -272,7 +295,12 @@ Deploying to **Test Group** makes your Cortana Skill available to a group of use
         
         ![Test Group Settings - configured](./media/images/test_group_settings-configured.png)  
         
-
+        >[!WARNING]
+        > The **Reset Group** button removes all members of the group.  
+        
+>[!IMPORTANT] 
+> To avoid issues, remove all of the member of the group on promotion to *World*.  
+        
 ## World Settings  
 
 >[!IMPORTANT]
@@ -293,7 +321,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
     
     ![World Settings - not configured](./media/images/world_settings-not_configured.png)  
     
-    You must complete the required fields that are marked with an asterisk (`*`).
+    Complete the required fields that are marked with an asterisk (`*`).
     
     >[!NOTE]
     > For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
@@ -429,7 +457,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
     > A review status message that indicates the review status for your Cortana Skill by the Cortana Certification team. If the Cortana Certification team has any concerns or questions during the review process, then you receive an email message. You may refer to the *World Settings* section to verify acceptance state of your Cortana Skill. If rejected, then the details and reasons for rejection are provided. If all requirements are met, then your Cortana Skill is approved and deployed. In the *World Settings* section, the word `Approved` following by the approval date is displayed.  
     
     >[!TIP]
-    > If you encounter any technical issues and you require assistance, then please send an email message to Cortana Skills Kit Support at [skillsup@microsoft.com](mailto:skillsup@microsoft.com) .
+    > If you encounter any technical issues and you require assistance, then please send an email message to [Cortana Skills Kit Support@microsoft.com](mailto:skillsup@microsoft.com).  
 
     >[!TIP]
     > To read or post Cortana Skills Kit questions on Stackoverflow, visit the [Stackoverflow - Cortana Skills Kit Questions](https://stackoverflow.com/questions/tagged/cortana-skills-kit) page.  
@@ -437,7 +465,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
 
 ### Withdraw Your Submission  
 
-During submission your Cortana Skill is locked. If you want to make changes to your Cortana Skill, then click on the **Withdraw your submission**.  
+Your Cortana Skill is locked during submission review. If you want to make changes to your Cortana Skill, then click on the **Withdraw your submission**.  
 
 >[!IMPORTANT]
 > You may withdraw your Cortana Skill only during the following stages.  
@@ -456,7 +484,7 @@ There are some common reasons why a Cortana Skill fails the review.
 *   Your submission does not provide sample invocation phrase.  
     Provide at least three sample invocation phrases that demonstrate your Cortana Skill.  
     Ensure that the invocation phrases actually work.  
-    You should provide enough samples that demonstrate all key features.  
+    Provide enough samples that demonstrate all key features.  
 *   You provide sample phrases with at least on of the following issues.  
     *   Forget to include a launch word (Ask, Tell, and so on) or invocation name.  
         

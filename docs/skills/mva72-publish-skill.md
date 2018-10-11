@@ -11,7 +11,7 @@ keywords: cortana
 # Publishing Your Cortana Skill  
 
 In previous modules, you use the **Default settings** option to publish your Cortana Skill when you are developing and testing the skill, and the **Test Group settings** option to make your Cortana Skill available to a group of users.  
-In this module, you use the **World settings** option to make your Cortana Skill public after you fully tested and made ready for availability to any Cortana user.  
+In this module, you use the **World settings** option to make your Cortana Skill public after testing and make-ready for availability to any Cortana user.  
 
 >[!TIP]
 > For more information on making your skill available to a group of users, visit the [Sharing your Cortana skill to a group](./mva71-share-skill.md) page.  
@@ -24,14 +24,19 @@ Unlike the **Default settings** and **Test Group settings** options, the **World
 >[!IMPORTANT]
 > Your Cortana Skill must meet certification requirements before being published to the world.  
 > *   Must work on devices without a screen such as the Invoke speaker (*headless devices*), as well as devices with a screen such as a PC or mobile device.  
-> *   Any user profile data requested by the skill must be used appropriately and fully.  
+> *   Any user profile data requested by you Cortana Skill must be used appropriately.  
+>     
+>     > [!WARNING]
+>     > Your Cortana Skill must use all of the user data that you request.  
+>     > If your Cortana Skill is not using any data, then disable access to the data.  
+>     
 > *   Must work as intended based on the submission information you specify.  
 > *   Must follow specified design, performance, and personality guidelines.  
 >
 > >[!TIP]
 > > For more information about certification requirements, visit the [Cortana skills certification requirements](./skill-review-guidelines.md) page.  
 
-## Submit Your for Review  
+## Submit for Review  
 
 The Cortana team must review and certify your Cortana Skills prior to publication to the world. To start this process, update the **World settings** channel configuration settings for your Cortana Skill.  
 
