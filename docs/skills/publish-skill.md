@@ -80,7 +80,7 @@ Cortana passes the IDs in the channel information of the message.
 Deploying to **Default Settings** makes the skill available to you only, so you can thoroughly test your skill before deploying it to one of the other environments. After configuring the Cortana channel for your skill, it is automatically deployed to **Default Settings**.  
 
 >[!TIP]
-> For more information about configuring the Cortana channel, visit the [Configure Cortana Channel](https://docs.microsoft.com/bot-framework/channel-connect-cortana) page.  
+> For more information about configuring the Cortana channel, visit the [Configure Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0) page.  
     
 1.  On the *Configure Cortana* page, under the *Default Settings* section, enter the following information.  
     

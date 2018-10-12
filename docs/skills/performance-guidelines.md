@@ -68,4 +68,4 @@ If you are not using Azure's automatic scaling feature, you should disable appli
 
 - [Troubleshoot performance issues in Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)
 - [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)
-- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/bot-framework/troubleshoot-general-problems)
+- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-3.0)

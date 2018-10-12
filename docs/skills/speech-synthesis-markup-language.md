@@ -16,7 +16,7 @@ SSML is an XML-based markup language that skill developers use to specify the sp
 
 Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech Synthesis Markup Language Version 1.0](https://www.w3.org/TR/speech-synthesis/). 
 
-For information about using SMML in your skill, see Add speech to messages in [Node.js](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-text-to-speech) and [.NET](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-text-to-speech).
+For information about using SMML in your skill, see Add speech to messages in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-3.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
 
 <!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](https://www.w3.org/TR/emotionml/) and []().-->
 

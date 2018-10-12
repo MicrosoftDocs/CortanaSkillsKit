@@ -35,7 +35,7 @@ The language understanding service automatically creates a LUIS application for 
 
 ![LUIS MyApps](./media/images/mva32_luis_myapps.png)
 
-For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/bot-framework/azure-bot-service-template-language-understanding).
+For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/azure/bot-service/bot-service-concept-templates?view=azure-bot-service-3.0#language-understanding-bot).
 
 ## Step 2 - Add intents to your LUIS application
 

@@ -25,7 +25,7 @@ The following components make up the skills kit.
     For more information about the Bot Builder SDK is provided as open source on GitHub, visit the [BotBuilder](https://github.com/Microsoft/BotBuilder) page.  
     
     >[!TIP]
-    >For an overview of how the framework works, vist the [How the Bot Framework works](https://docs.microsoft.com/bot-framework/overview-how-bot-framework-works) page.  
+    >For an overview of how the framework works, vist the [How the Bot Framework works](https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-3.0) page.  
     
 *   [My Bot List Configured for Cortana](https://dev.botframework.com/bots?c=cortana)  
     View the list of bots that you configured for Cortana. Create new bots.  
@@ -118,7 +118,7 @@ Microsoft Cognitive Services taps into a growing collection of powerful AI algor
 An intelligently-designed Cortana Skill responds like a person who sees the world as people see it. Your Cortana Skill discovers information and extracts knowledge from different sources to provide useful answers. Best of all, Your Cortana Skill learns by acquiring more experience and continuously improves the capabilities.  
 
 >[!TIP]
-> For the full list of services that you may integrate, visit the [Add intelligence to bots with Cognitive Services](https://docs.microsoft.com/bot-framework/cognitive-services-bot-intelligence-overview) page.  
+> For the full list of services that you may integrate, visit the [Add intelligence to bots with Cognitive Services](https://docs.microsoft.com/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-3.0) page.  
 
 ## Natural Language Understanding  
 
@@ -129,7 +129,7 @@ You could use a simple method such as using regular expressions to inspect the c
 Depending on the Bot Framework SDK that you use.  
 
 >[!TIP]
-> For information about recognizing intents and entities with LUIS, visit the  [Using LUIS with the Node.js SDK](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-luis-dialogs) page.  
+> For information about recognizing intents and entities with LUIS, visit the  [Using LUIS with the Node.js SDK](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-3.0) page.  
 
 >[!TIP]
 > For information about modeling intents and entities in LUIS, visit the  [Manage intents](https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-add-intents) and [Manage entities](https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-add-entities) pages.  
