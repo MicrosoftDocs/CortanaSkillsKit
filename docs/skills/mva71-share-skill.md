@@ -51,19 +51,19 @@ To create the group, click on the Save changes button.
 
 Users in the group can access the skill using the group access URL. Invite them to join the group by send them the URL.
 
-![Send URL](./media/images/mva71-send-URL.png)
+![Send URL](./media/images/mva71_send_url.png)
 
 Opening the URL in a browser displays a prompt asking if the user wants to join the group.
 
-![Join Group](./media/images/mva71-join-group.png)
+![Join Group](./media/images/mva71_join_group.png)
 
 Click **Accept** to accept the invitation and recieve a confirmation.
 
-![Confirm Join](./media/images/mva71-confirm-join.png)
+![Confirm Join](./media/images/mva71_confirm_join.png)
 
 Each user in the group who has accepted the invitation should now have access to the skill in Cortana.
 
-![Skill Access](./media/images/mva41-tada.png)
+![Skill Access](./media/images/mva41_tada.png)
 
 To leave the group, a user can open the group access URL and click **Leave**.
 
@@ -75,4 +75,4 @@ Once you have published your skill to the group, any group member can invoke the
 
 Cortana prompts for credentials, if necessary, and launches the Mixtape skill:
 
-![Launch Skill](./media/images/mva41-tada.png)
+![Launch Skill](./media/images/mva41_tada.png)

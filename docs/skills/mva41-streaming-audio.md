@@ -77,7 +77,7 @@ Before you can test the revised skill, you must republish it. If you are working
 
 To test your revised skill, direct Cortana to invoke the skill using the invocation name you specified. Cortana responds with the text you specified and plays the *tada.mp3* audio file.
 
-![Play Audio](./media/images/mva41-tada.png)
+![Play Audio](./media/images/mva41_tada.png)
 
 ## Step 4 - Play an audio track in response to a request
 

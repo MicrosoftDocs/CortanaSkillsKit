@@ -111,4 +111,4 @@ To test your revised skill, direct Cortana to invoke the Mixtape skill using an 
 
 If you invoked the skill on a device that supports visual display, Cortana responds by launching the device's default mail application with the subject line you specified.
 
-![Save CSongard](./media/images/mva43-save-song.png)
+![Save CSongard](./media/images/mva43_save_song.png)
