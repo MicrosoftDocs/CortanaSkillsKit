@@ -43,7 +43,7 @@ If Cortana reports an error when running your skill, follow these steps to turn 
  7. Click Cortana's microphone icon and invoke your skill. For information about invoking skills, see [Invocation name guidelines](cortana-invocation-guidelines.md).
  8. The canvas includes a debug button that you click to see the message exchange details. 
 
-![Debugging Information](./media/images//testing/debugging-info.png)
+![Debugging Information](./media/images/debugging-info.png)
 
 ## Troubleshooting tips
 
@@ -91,7 +91,7 @@ The following provides suggestions for solving common problems.
 * [Troubleshooting Bot Framework authentication](https://aka.ms/aei8qy)
 
 <!--
-![Debugging using Bot Framework Channel Emulator](./media/images//testing/bot-emulator-debugging.png)
+![Debugging using Bot Framework Channel Emulator](./media/images/bot-emulator-debugging.png)
 
 **Not all Bot Framework Cards are supported in Cortana**
 
