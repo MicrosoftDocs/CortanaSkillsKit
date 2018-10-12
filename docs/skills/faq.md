@@ -1,9 +1,11 @@
 ﻿---
 title: Cortana Skills Kit FAQ
 description: Tips on Testing & Debugging Cortana Skills.
+
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 03/30/2017
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -115,7 +117,7 @@ Yes. Cortana does not support using a custom voice.
 
 **What markets are supported and what is the timeline?**
 
-Currently, Cortana Skills supports only the en-US market. LUIS supports a wider range of locales, and the Cortana skills team is certainly planning to add support for more locales in the near future. For a list of languages that LUIS supports, see [LUIS Supported Languages](https://docs.microsoft.com/en-us/azure/cognitive-services/LUIS/Home#supported-languages).
+Currently, Cortana Skills supports only the en-US market. LUIS supports a wider range of locales, and the Cortana skills team is certainly planning to add support for more locales in the near future. For a list of languages that LUIS supports, see [LUIS Supported Languages](https://docs.microsoft.com/azure/cognitive-services/LUIS/Home#supported-languages).
 
 <!-- //TODO update regions -->
 

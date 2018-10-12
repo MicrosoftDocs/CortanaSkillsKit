@@ -2,21 +2,15 @@
 title: Building conversations
 description: Describes how to build Cortana conversations.
 
-ms.date: 09/26/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
 --- 
 
 # Building conversations
-
-<!--
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=I5mDbPfnE_3111787171) about building conversations. |
--->
  
-In [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed. 
+In [Create your first Cortana skill](./mva22-hello-world.md) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed. 
 
 For many Cortana skills, a single-turn conversation is all you need. However, natural language understanding technology such as [LUIS](https://www.luis.ai/about) (Language Understanding Intelligent Service) makes it possible to create Cortana skills that support multi-turn conversations. Users can then interact with Cortana in a variety of ways.
 
@@ -26,22 +20,22 @@ Creating a Cortana skill that uses LUIS is similar to creating a basic Cortana s
 
 When you create a LUIS bot, Microsoft Azure automatically creates a corresponding LUIS application where you can specify language understanding criteria. Before creating the bot, open the [LUIS.ai](https://www.luis.ai) site to create a LUIS account.
 
-![LUIS account](../images/mva32-LUIS-account.png)
+![LUIS account](./media/images/mva32_luis_account.png)
 
-You can then follow the initial steps in [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) to create the bot:
+You can then follow the initial steps in [Create your first Cortana skill](./mva22-hello-world.md) to create the bot:
 
 * Log in to the [Microsoft Azure Portal](https://ms.portal.azure.com) with your Microsoft account.
 * Click **New** to open the **Azure Marketplace** pane.
 * In the **Azure Marketplace** pane, click **AI + Cognitive Services**, and then **Web App Bot**.
 * In the **Bot Service** pane, enter a name for your bot, the location and app service plan, and the bot template you want to use. To create a LUIS bot, select the **Language understanding** template. Then click **Create**.
 
-![LUIS Template](../images/mva32-choose-template.png)
+![LUIS Template](./media/images/mva32_choose_template.png)
 
 The language understanding service automatically creates a LUIS application for your bot. Log in to your LUIS account or refresh the MyApps page on [LUIS.ai](https://www.luis.ai) to see the LUIS application.
 
-![LUIS MyApps](../images/mva32-LUIS-myapps.png)
+![LUIS MyApps](./media/images/mva32_luis_myapps.png)
 
-For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/en-us/bot-framework/azure-bot-service-template-language-understanding).
+For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/bot-framework/azure-bot-service-template-language-understanding).
 
 ## Step 2 - Add intents to your LUIS application
 
@@ -49,19 +43,19 @@ For more information about creating a LUIS bot, see [Create a bot using the Lang
 
  To add an intent to your LUIS application, click the application name on the MyApps page on [LUIS.ai](https://www.luis.ai) to open the application's dashboard, and then click **Intents** to open the **Intents** page.
 
-![Intents Page](../images/mva32-LUIS-addintent.png)
+![Intents Page](./media/images/mva32_luis_addintent.png)
 
 Click **Create new intent** to open the **Create new intent** dialog box, and then specify a name for the intent. 
 
-![Create Intent](../images/mva32-LUIS-create-intent.png)
+![Create Intent](./media/images/mva32_luis_create_intent.png)
 
 Optionally, you can specify *utterances* associated with the intent. An utterance is a possible input from a user that is associated with the intent. LUIS starts with the utterances you specify. When your Cortana skill is published and users enter their own utterances, LUIS uses *active learning* to help Cortana better understand how to respond.
 
-![LUIS Utterances](../images/mva32-LUIS-utterances.png)
+![LUIS Utterances](./media/images/mva32_luis_utterances.png)
 
 You can add additional intents and utterances to your LUIS application.
 
-![LUIS Intents](../images/mva32-LUIS-intents.png)
+![LUIS Intents](./media/images/mva32_luis_intents.png)
 
 After you have created intents in your LUIS application, you can add code to your LUIS bot that specifies how Cortana responds to an intent.
 
@@ -71,15 +65,15 @@ To add code to your LUIS bot, return to the Azure portal, open the bot's managem
 
 You can add code to the bot using the online code editor on the Azure portal, or you can download the source code and edit it in your choice of development environment. To download the source code, click **Download zip file** under **Download source code**. 
 
-![Download Code](../images/mva32-download-zip.png)
+![Download Code](./media/images/mva32_download_zip.png)
 
 Save the zip file to your machine and extract the project files. To edit the code in Visual Studio, open the Visual Studio Solution file in the project's root directory.
 
-![Edit Code](../images/mva32-open-solution.png)
+![Edit Code](./media/images/mva32_open_solution.png)
 
 Then open the BasicLuisDialog module.
 
-![LUIS Dialog](../images/mva32-LUIS-dialog.png)
+![LUIS Dialog](./media/images/mva32_luis_dialog.png)
 
 Add a reference to the **Microsoft.Bot.Connector** namespace to allow your LUIS bot to send and receive messages to the Cortana channel.
 
@@ -139,36 +133,36 @@ Then replace the **LuisIntent** blocks in the **Microsoft.Bot.Sample.LuisBot** n
 
  You can deploy your LUIS bot to whatever cloud service you choose. To deploy your LUIS bot from Visual Studio to Microsoft Azure, first right-click the project name in **Solution Explorer**, and then select **Publish**.
 
-![Publish Bot](../images/mva32-publish-bot.png)
+![Publish Bot](./media/images/mva32_publish_bot.png)
 
 On the **Publish** page, click **Create new profile**.
 
-![Click Publish](../images/mva32-click-publish.png)
+![Click Publish](./media/images/mva32_click_publish.png)
 
 > [!NOTE]
 > If you receive an error message that the specified path or file name is too long, delete the ...\obj\Release\Package\PackageTmp folder from your project.
 
 On the **Pick a publish target** page, select **Microsoft Azure App Service** and **Select Existing**, and then click **Publish**. 
 
-![Pick Target](../images/mva32-pick-target.png)
+![Pick Target](./media/images/mva32_pick_target.png)
 
 On the **App Service** page, select the Azure app service associated with your bot.
 
-![App Service](../images/mva32-app-service.png)
+![App Service](./media/images/mva32_app_service.png)
 
 Visual Studio returns to the **Publish** page. Click **Publish** to deploy the revised bot to your Azure portal.
 
 To view the updated code on the Azure portal, open the bot, click **Build** and then **Open online code editor**.
 
-![Open Online](../images/mva32-open-online.png)
+![Open Online](./media/images/mva32_open_online.png)
 
 Then open the *BasicLuisDialog.cs* module.
 
-![Open Module](../images/mva32-open-module.png)
+![Open Module](./media/images/mva32_open_module.png)
 
 To test the revised bot, click **Test in Web Chat**, and then type a message in the prompt.
 
-![Test Bot](../images/mva32-test-bot.png)
+![Test Bot](./media/images/mva32_test_bot.png)
 
 ## Step 5 - Connect your LUIS bot to the Cortana Channel
 
@@ -177,6 +171,5 @@ Once you have created a LUIS bot, connect it to the Cortana channel to make it a
 In the Azure Portal, click the Channels tab to view the available channels, and then click the Cortana channel.
 
 On the Configure Cortana page, scroll down to the **Discovery and Management** section and click **Manage**. Click **Publish** menu tab and then **Publish to self** to open the channel configuration settings, where you can specify an optional icon for the skill, and a display name and invocation name. Cortana uses the invocation name you specify to invoke the skill.
-
 
 To test your new skill, direct Cortana to invoke the skill using the invocation name you specified.

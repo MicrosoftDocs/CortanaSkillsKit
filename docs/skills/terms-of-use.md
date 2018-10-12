@@ -1,13 +1,13 @@
-﻿---
+---
 title: Example Terms of Use for Cortana Skills 
 description: Provides an example Terms of Use that you can use with your Cortana skill.
-label: Conceptual
+
 ms.assetid: 4A17CB6A-A863-415C-9148-61B7022B2854
-ms.date: 04/25/2017
+ms.date: 10/03/2018
 ms.topic: article
+
 keywords: cortana
 ---
-
 
 # Terms of Use guidelines
 
@@ -20,7 +20,6 @@ For a sample terms of use for your skill, see [Sample Terms for Cortana Skills](
 3.  Microsoft makes no representations, guarantees, or warranties about the Sample Terms for Cortana Skills. For example, Microsoft does not guarantee that the Sample Terms for skills are legally enforceable or comply with local laws. Microsoft also does not guarantee the Sample Terms for Cortana Skills anticipate every legal scenario.
 4.  Your use of these the Sample Terms for Cortana Skills is your agreement with your end users and Microsoft is not liable for any and all liability, claims, damages, or losses which may be sustained in connection with use of the Sample Terms for Cortana Skills (such as a court concluding that they are unenforceable or a regulator deciding that they are illegal under local law).
 
-<a name="SAMPLE-TERMS-FOR-CORTANA-SKILLS"></a>
 ## SAMPLE TERMS FOR CORTANA SKILLS
 
 These terms are an agreement between you and skill publisher for the use of the skill available through Cortana and Cortana enable devices (“Cortana Services”). Please read them. They apply to your use of the Company Skill, including any updates to the skill, unless skill publisher provides you with separate terms, in which case those terms apply. Skill publisher means the entity making the skill available to you, as identified in the Cortana Skill description.
@@ -51,7 +50,7 @@ These terms are an agreement between you and skill publisher for the use of the 
 7.  **CHANGES TO TERMS.** Skill publisher may update these terms of use at any time by amending this page. Please check this page from time to time to take notice of any changes, as they are binding on you.
 8.  **ENTIRE AGREEMENT.** This agreement and any applicable privacy policy are the entire agreement between you and the skill publisher.
 9.  **APPLICABLE LAW.**
-    1.  **United States and Canada.** If you acquired the skill in the United States or Canada, the laws of the state or province where you live (or, if a business, where your principal place of business is located) govern the interpretation of these terms, claims for breach of them, and all other claims (including consumer protection, unfair competition, and tort claims), regardless of conflict of law principles.
+    1.  **United States and Canada.** If you acquired the skill in the United States or Canada, the laws of the state or province where you live (or, if a business, where your principle place of business is located) govern the interpretation of these terms, claims for breach of them, and all other claims (including consumer protection, unfair competition, and tort claims), regardless of conflict of law principles.
     2.  **Outside the United States and Canada.** If you acquired the skill in any other country, the laws of that country apply.
 10. **LEGAL EFFECT.** This agreement describes certain legal rights. You may have other rights under the laws of your state or country. This agreement doesn’t change your rights under the laws of your state or country if the laws of your state or country don’t permit it to do so.
 11. **DISCLAIMER OF WARRANTY.** The skill and the service accessed via the skill are provided “as is” “with all faults” and “as available”. You bear the risk as to its quality and performance. The skill publisher gives no express warranties, guarantees, or conditions in relation to the skill. To the extent permitted under your local laws, skill publisher excludes any implied warranties or conditions, including those of merchantability, fitness for a particular purpose and non-infringement.
@@ -62,8 +61,6 @@ These terms are an agreement between you and skill publisher for the use of the 
     2.  **This limitation applies even if:**
         1.  **This remedy doesn’t fully compensate you for any losses; or**
         2.  **The skill publisher knew or should have known about the possibility of the damages.**
-
-
 
 ## Next steps
 

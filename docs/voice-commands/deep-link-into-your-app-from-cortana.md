@@ -1,10 +1,12 @@
 ---
 title: Deep link from a background app in Cortana to a foreground app - Cortana UWP design and development
 description: Provide deep links from a background app in **Cortana** that launch the app to the foreground in a specific state or context.
-label: Conceptual
+
+
 ms.assetid: 6fe5fcc5-9ee4-4c04-92f4-7b1bf7ef5651
-ms.date: 02/08/2017
+ms.date: 10/08/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -23,11 +25,11 @@ Provide deep links from a background app in **Cortana** that launch the app to t
 
 A deep link is displayed by default on the **Cortana** completion screen as shown here ("Go to AdventureWorks"), but you can display deep links on various other screens. 
 
-![cortana background app completion screen](../images/voicecommands/cortana-completion-screen-upcomingtrip-small.png)
+![cortana background app completion screen](./media/images/cortana-completion-screen-upcomingtrip-small.png)
 
 **Prerequisites**
 
-This topic builds on [Interact with a background app in Cortana](interact-with-a-background-app-in-cortana.md). We continue using a trip planning and management app named **Adventure Works** to demonstrate various **Cortana** features.
+This topic builds on [Interact with a background app in Cortana](./interact-with-a-background-app-in-cortana.md). We continue using a trip planning and management app named **Adventure Works** to demonstrate various **Cortana** features.
 
 If you're new to developing Universal Windows Platform (UWP) apps, have a look through these topics to get familiar with the technologies discussed here.
 
@@ -43,8 +45,8 @@ See [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/
 
 Users can access your app through **Cortana** by:
 
--   Activating it as a foreground app (see [Activate a foreground app with voice commands through Cortana](launch-a-foreground-app-with-voice-commands-in-cortana.md)).
--   Exposing specific functionality as a background app service (see [Activate a background app with voice commands through Cortana](launch-a-background-app-with-voice-commands-in-cortana.md)).
+-   Activating it as a foreground app (see [Activate a foreground app with voice commands through Cortana](./launch-a-foreground-app-with-voice-commands-in-cortana.md)).
+-   Exposing specific functionality as a background app service (see [Activate a background app with voice commands through Cortana](./launch-a-background-app-with-voice-commands-in-cortana.md)).
 -   Deep linking to specific pages, content, and state or context.
 
 We discuss deep linking here.
@@ -62,7 +64,7 @@ There are three ways to provide deep links:
 
 **Cortana** displays a "Go to &lt;app&gt;" deep link below the content card on most screens.
 
-![cortana background app completion screen](../images/voicecommands/cortana-completion-screen.png)
+![cortana background app completion screen](./media/images/cortana-completion-screen.png)
 
 You can provide a launch argument for this link that opens your app in similar context as the app service. If you don't provide a launch argument, the app is launched to the main screen.
 
@@ -105,7 +107,7 @@ private async Task SendCompletionMessageForDestination(string destination)
 
 You can add deep links to content cards on various **Cortana** screens.
 
-![cortana background app hand-off screen ](../images/voicecommands/cortana-backgroundapp-progress-result.png)
+![cortana background app hand-off screen ](./media/images/cortana-backgroundapp-progress-result.png)
 
 Like the "Go to &lt;app&gt;" links, you can provide a launch argument to open your app with similar context as the app service. If you don't provide a launch argument, the content tile does not link to your app.
 
@@ -271,7 +273,7 @@ if (args.Kind == ActivationKind.Protocol)
 
 
 **Developers**
-* [Voice commands](vcd.md)
+* [Voice commands](./vcd.md)
 * [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
 
 **Designers**
@@ -280,10 +282,4 @@ if (args.Kind == ActivationKind.Protocol)
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
- 
-
- 
-
-
-
 
