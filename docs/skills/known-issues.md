@@ -1,9 +1,11 @@
 ---
 title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
+
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 03/30/2017
+ms.date: 10/12/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -54,11 +56,6 @@ Currently, the user's email address from the user's profile information is not a
 <!-- Bug 750050 -->
 
 Currently, Cortana does not support logging into skills on Windows Phone. Log in using any other supported device first before using the skill on Windows Phone.
-
-**"Coming soon" displayed on the Cortana dashboard**
-
-This occurs when signed in with an organizational account that uses AAD. Sign-out and sign back in using a Microsoft account (MSA).
-
 
 
 ## Known Bot Framework issues affecting skills

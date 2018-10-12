@@ -3,7 +3,7 @@ title: Principles of Cortana Skill Design
 description: Overview of Cortana Skill Design Best Practices.
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 10/08/2018
+ms.date: 10/12/2018
 ms.topic: article
 
 keywords: cortana
@@ -108,17 +108,22 @@ Next, design a conversation that sounds natural and is intuitive. Start out thin
 
 Roleplay the conversation to make sure it's natural and intuitive. Just like in real life, conversations with users vary depending on the user. Your skill should be adept in handling conversations with different users. 
 
-## Identify the intents, entities, and utterances
+## Identify the intents, entities, and utterances  
 
-The conversational design process should identify intents, entities, and utterances. Intents are the actions that the user wants to perform and entities are the data required to perform the action. For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM," the intent is to book a flight, and New York and 6:00 PM are the entities.
+When building your skill, you are encouraged to use Microsoft [Language Understanding Intelligent Services](https://www.luis.ai) (**LUIS.ai**) to model your intents and entities.  
 
-When building your skill, you're encouraged to use Microsoft's [Language Understanding Intelligent Services](https://www.luis.ai) (**LUIS.ai**) to model your intents and entities. For information about modeling intents and entities in LUIS, see [intents](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-intents) and [entities](https://www.microsoft.com/cognitive-services/en-us/LUIS-api/documentation/Add-entities). For a list of built-in entities in LUIS, see [Prebuilt entities](https://docs.microsoft.com/azure/cognitive-services/luis/pre-builtentities). 
+>[!TIP]
+> For information about modeling intents and entities in LUIS, visit the [Manage intents](https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-add-intents) and [Manage entities](https://docs.microsoft.com/azure/cognitive-services/luis/luis-how-to-add-entities) pages. 
 
-Intents fall into the following categories:
+>[!TIP]
+> For a list of built-in entities in LUIS, visit the [Prebuilt entities](https://docs.microsoft.com/azure/cognitive-services/luis/pre-builtentities) page.  
 
-* [Full intent](#Full-intent)
-* [Partial intent](#Partial-intent)
-* [No intent](#No-intent)
+The conversational design process should identify intents, entities, and utterances. Intents are the actions that the user wants to perform and entities are the data required to perform the action. For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM," the intent is to book a flight, and New York and 6:00 PM are the entities.  
+
+Intents fall into the following categories.  
+*   [Full intent](#full-intent)  
+*   [Partial intent](#partial-intent)  
+*   [No intent](#no-intent)  
 
 ### Full intents
 
