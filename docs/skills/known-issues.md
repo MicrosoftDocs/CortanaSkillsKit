@@ -57,10 +57,11 @@ Currently, the user's email address from the user's profile information is not a
 
 Currently, Cortana does not support logging into skills on Windows Phone. Log in using any other supported device first before using the skill on Windows Phone.
 
-
+<!--
 ## Known Bot Framework issues affecting skills
 
 See the [Bot Build SDK Issues tab on GitHub](https://github.com/Microsoft/BotBuilder/issues).
+-->
 
 <!-- if this isn't getting fixed, this should be in a LUIS how-to topic. -->
 

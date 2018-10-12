@@ -20,12 +20,14 @@ To extend Cortana, use the Cortana Skills Kit. The kit is a suite of tools that 
 
 The following components make up the skills kit.  
 
-*   [Bot Framework](https://docs.microsoft.com/bot-framework/)  
+*   [Bot Framework](https://docs.microsoft.com/bot-framework)  
     A skill is a speech bot. Use the Bot Framework to build your speech bot, register it, and define your Cortana channel. The framework provides a .NET SDK and Node.js SDK that you use to build your bot. The Bot Framework SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler.  
-    For more information about the Bot Builder SDK is provided as open source on GitHub, visit the [BotBuilder](https://github.com/Microsoft/BotBuilder) page.  
     
     >[!TIP]
-    >For an overview of how the framework works, vist the [How the Bot Framework works](https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-3.0) page.  
+    > For more information about the Bot Builder SDK is provided as open source on GitHub, visit the [BotBuilder](https://github.com/microsoft/botbuilder-v3) page.  
+    
+    >[!TIP]
+    > For an overview of how the framework works, vist the [How the Bot Framework works](https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-3.0) page.  
     
 *   [My Bot List Configured for Cortana](https://dev.botframework.com/bots?c=cortana)  
     View the list of bots that you configured for Cortana. Create new bots.  

@@ -42,7 +42,7 @@ Other resources include:
 
 ## Step 2 - Set up your PC, Mac, or Cortana device
 
-You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/Microsoft/BotBuilder).
+You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/microsoft/botbuilder-v3).
 
 Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
 
