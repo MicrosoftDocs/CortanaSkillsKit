@@ -24,7 +24,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-build-skill-learn-about.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-learn-about.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -43,7 +43,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-build-skill-create-skill.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-create-skill.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -62,7 +62,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-build-skill-personalize.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-personalize.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -81,7 +81,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-build-skill-authentication.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-authentication.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -100,7 +100,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-build-skill-language.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-language.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -119,7 +119,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-build-skill-smarter.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-build-skill-smarter.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -143,7 +143,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-design-skills-principles.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-principles.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -162,7 +162,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-design-skills-invocation.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-invocation.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -181,7 +181,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-design-skills-performance.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-performance.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -205,7 +205,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-testing-debugging.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-testing-debugging.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -224,7 +224,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-testing-known-issues.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-testing-known-issues.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -248,7 +248,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-publish-publishing.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-publish-publishing.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -267,7 +267,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-get-started-publish-review-guidelines.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-publish-review-guidelines.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -296,7 +296,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-reference-speech.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-reference-speech.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -315,7 +315,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-reference-user-profile.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-reference-user-profile.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -334,7 +334,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-reference-locales.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-reference-locales.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -364,7 +364,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-resources-support.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-support.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -383,7 +383,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-resources-faq.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-faq.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -402,7 +402,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-resources-terms-guidelines.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-terms-guidelines.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -421,7 +421,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-resources-policy.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-policy.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -440,7 +440,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-resources-samples.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-samples.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -459,7 +459,7 @@ description: Provides details for writing your own Cortana Skill.
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/en-us/media/hubs/cortana/cortana-resources-blog.svg" alt="" />
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-blog.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">

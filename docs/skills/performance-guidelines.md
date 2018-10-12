@@ -62,7 +62,7 @@ Azure Functions and Web apps that are on Free or Shared App Service plans do not
 
 **Disable ARR affinity cache**
 
-If you are not using Azure's automatic scaling feature, you should disable application request routing. For more information, see [Disabling ARR’s Instance Affinity in Windows Azure Web Sites](https://azure.microsoft.com/en-us/blog/disabling-arrs-instance-affinity-in-windows-azure-web-sites/)
+If you are not using Azure's automatic scaling feature, you should disable application request routing. For more information, see [Disabling ARR’s Instance Affinity in Windows Azure Web Sites](https://azure.microsoft.com/en-us/blog/disabling-arrs-instance-affinity-in-windows-azure-web-sites)
 
 ## Additional performance resources
 

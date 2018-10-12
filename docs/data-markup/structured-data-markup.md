@@ -13,15 +13,15 @@ keywords: cortana
 # Cortana and structured data markup
 Structured data markup describes the embedding of structured data in e-mail messages and websites for consumption by Cortana. 
 
-The structured data is in the form of schema.org markup in either [schema.org](https://schema.org/) [Microdata and JSON-LD](https://schema.org/docs/gs.html) formats. Cortana extracts and interprets the structured data and exposes an skill based on that data.
+The structured data is in the form of schema.org markup in either [schema.org](https://schema.org) [Microdata and JSON-LD](https://schema.org/docs/gs.html) formats. Cortana extracts and interprets the structured data and exposes an skill based on that data.
 
 ## <a name="schema.org"></a>Schema.org basics
 Schema.org is a standardized vocabulary and data model for machine-readable semantic annotation that uses a combination of classes and properties to describe things. 
 
 ### Microdata
-Microdata is the preferred option for adding [schema.org](https://schema.org/) annotations in-line with the body of content in your email.
+Microdata is the preferred option for adding [schema.org](https://schema.org) annotations in-line with the body of content in your email.
 
-Microdata is a set of HTML5 attributes and an associated usage model for adding semantic information to HTML documents, including email. In Microdata, you set the value of an itemtype attribute to a Schema.org class, such as [https://schema.org/Thing](https://schema.org/Thing), and then describe one or more properties of that class by using the **itemprop** attribute with its value set to the name of a [schema.org](https://schema.org/) property, such as "description". The **itemscope** attribute associates child elements of an HTML element with a class.  
+Microdata is a set of HTML5 attributes and an associated usage model for adding semantic information to HTML documents, including email. In Microdata, you set the value of an itemtype attribute to a Schema.org class, such as [https://schema.org/Thing](https://schema.org/Thing), and then describe one or more properties of that class by using the **itemprop** attribute with its value set to the name of a [schema.org](https://schema.org) property, such as "description". The **itemscope** attribute associates child elements of an HTML element with a class.  
 
 ### JSON-LD 
 JSON-LD is a JSON-based syntax that describes the semantics of an HTML document within the scope of a `<script>` tag. In JSON-LD, set the `@context` key to “https://schema.org”, set the `@type` key to the name of a Schema.org class, and then use Schema.org property names as the value of keys describing the properties of your typed objects. JSON-LD is a good option for representing semantics in the scope of a well-defined and consolidated JSON object.
