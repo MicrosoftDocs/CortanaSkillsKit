@@ -7,7 +7,7 @@ Welcome to the [public repo for Cortana Skillset developer documentation](https:
 If you don't already have one, you'll need to [create a GitHub account](https://github.com/join).
 
 >[!NOTE]
->If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com/). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations).
+>If you're a Microsoft employee, link your GitHub account to your Microsoft alias on the [Microsoft Open Source portal](https://repos.opensource.microsoft.com). Join the **"Microsoft"** and **"MicrosoftDocs"** organizations).
 
 When setting up your GitHub account, we also recommend these security precautions:
 - Create a [strong password for your Github account](https://github.com/settings/admin).
@@ -27,7 +27,7 @@ Use the following workflow to make updates to the documentation via web browser:
 1. Navigate to the article you wish to edit.
 2. Click the edit button (pencil icon) in the top right. This will automatically fork a disposable branch off master.
 
-   ![Edit an article.](./media/images/contributing/editpage.png)
+   ![Edit an article.](./media/images/editpage.png)
 3. Edit the content of the article (see ["Markdown basics"](#markdown-basics) below for guidance).
 4. Update metadata as relevant at the top of each article:
    * title: This is the page title that appears in the browser tab when the article is being viewed. As this is used for SEO and indexing, you shouldn't change the title unless necessary (though this is less critical before documentation goes public).
@@ -47,11 +47,11 @@ Use the following workflow to create new articles in the documentation via web b
 
 1. Create a fork off the MicrosoftDocs/CortanaSkillsKit 'master' branch (using the **Fork** button in the top right).
 
-   ![Fork the master branch.](./media/images/contributing/forkbranch.png)
+   ![Fork the master branch.](./media/images/forkbranch.png)
 2. In the **Docs** folder, click the **Create new file** button in the top right.
 3. Create a page name for the article (use hyphens instead of spaces and don't use punctuation or apostrophes) and append ".md"
 
-   ![Name your new page.](./media/images/contributing/newpagetitle.png)
+   ![Name your new page.](./media/images/newpagetitle.png)
 4. At the top of your new page, add the following metadata block:
 
    ```md
@@ -71,26 +71,26 @@ Use the following workflow to create new articles in the documentation via web b
 8. When finished, click **Commit new file**.
 9. Click **New pull request** and merge your fork's 'master' branch into MicrosoftDocs/CortanaSkillsKit 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](./media/images/contributing/pr_to_master.png)
+   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](./media/images/pr_to_master.png)
 
 ## Markdown basics
 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
-- [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+- [Markdown basics](https://help.github.com/articles/basic-writing-and-formatting-syntax)
 - [Markdown-at-a-glance reference poster](./media/MarkdownPoster.pdf)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/en-us/help/contribute/contribute-how-to-write-use-markdown?branch=master)
-- [Unique Markdig differences](https://review.docs.microsoft.com/en-us/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/en-us/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
+- [Additional resources for writing Markdown for docs.microsoft.com](https://review.docs.microsoft.com/help/contribute/contribute-how-to-write-use-markdown?branch=master)
+- [Unique Markdig differences](https://review.docs.microsoft.com/new-hope/engineering/tools/markdig/markdig-migration-information?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
 
 ### Adding tables
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles, even if you try inline CSS. It will appear to work for a short period of time, but eventually the platform will strip the styling out of the table. So plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit the documentation.
+The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit the documentation.
 
 ### Adding images
 
-You’ll need to upload your images to the images folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively. [You can find solid guidance here.](https://review.docs.microsoft.com/en-us/help/style/style-how-to-visuals-static-art-types?branch=master)
+You’ll need to upload your images to the images folder in the repo, and then reference them appropriately in the article. Images will automatically show up at full-size, which means if your image is large, it’ll fill the entire width of the article. Thus, we recommend pre-sizing your images before uploading them. The recommended width is between 600 and 700 pixels, though you should size up or down if it’s a dense screenshot or a fraction of a screenshot, respectively. [You can find solid guidance here.](https://review.docs.microsoft.com/help/style/style-how-to-visuals-static-art-types?branch=master)
 
 >[!IMPORTANT]
 >You can only upload images to your forked repo. So, if you plan on adding images to an article, you'll need to [use Visual Studio Code](#using-visual-studio-code) or make sure you've done the following in a web browser:
@@ -109,7 +109,7 @@ While editing in the browser, you can click the **Preview** tab near the top of 
 >[!NOTE]
 >Previewing your changes on review.docs.microsoft.com is only available to Microsoft employees
 
-Once your contributions have been merged into the 'master' branch, you can see what the documentation will look like when it goes public at https://review.docs.microsoft.com/en-us/cortana/skills/overview?branch=master (find your article using the table of contents in the left column.)
+Once your contributions have been merged into the 'master' branch, you can see what the documentation will look like when it goes public at https://review.docs.microsoft.com/cortana/skills/overview?branch=master (find your article using the table of contents in the left column.)
 
 ## Editing in the browser vs. editing with a desktop client
 
@@ -119,16 +119,16 @@ Editing in the browser is the easiest way to make quick changes, however, there 
 - You don't get any smart-linking to other articles (you have to manually type the article's filename).
 - It can be a hassle to upload and reference images.
 
-If you'd rather not deal with these issues, you may prefer to use a desktop client like [Visual Studio Code](https://code.visualstudio.com/) with a couple [helpful extensions](#useful-extensions) to contribute to documentation.
+If you'd rather not deal with these issues, you may prefer to use a desktop client like [Visual Studio Code](https://code.visualstudio.com) with a couple [helpful extensions](#useful-extensions) to contribute to documentation.
 
 ## Using Visual Studio Code
 
-For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop-client), you may prefer using a desktop client to edit documentation instead of a web browser. We recommend using [Visual Studio Code](https://code.visualstudio.com/).
+For the reasons listed [above](#editing-in-the-browser-vs-editing-with-a-desktop-client), you may prefer using a desktop client to edit documentation instead of a web browser. We recommend using [Visual Studio Code](https://code.visualstudio.com).
 
 ### Setup
 
 1. In a web browser:
-    1. Install [Visual Studio Code](https://code.visualstudio.com/).
+    1. Install [Visual Studio Code](https://code.visualstudio.com).
     2. [Fork MicrosoftDocs/CortanaSkillsKit](#creating-a-new-article) if you haven't already.
     3. In your fork, click **Clone or download** and copy the URL.
 2. Create a local clone of your fork in Visual Studio Code:
@@ -148,30 +148,30 @@ Use the following workflow to make changes to the documentation with Visual Stud
 1. Make sure your cloned fork is up-to-date with the official repo.
    1. In a web browser, create a pull request to sync recent changes from other contributors in MicrosoftDocs/CortanaSkillsKit 'master' to your fork (make sure the arrow is pointing the right way).
       
-      ![Sync changes from MicrosoftDocs/CortanaSkillsKit to your fork](./media/images/contributing/sync_repos.png)
+      ![Sync changes from MicrosoftDocs/CortanaSkillsKit to your fork](./media/images/sync_repos.png)
    2. In Visual Studio Code, click the sync button to sync your freshly updated fork to the local clone.
       
-      ![Click the sync button](./media/images/contributing/sync_clone.png)
+      ![Click the sync button](./media/images/sync_clone.png)
 2. Create or edit articles in your cloned repo using Visual Studio Code.
    1. Edit one or more articles (add images to “images” folder if necessary).
    2. **Save** changes in **Explorer**.
       
-      ![Choose "Save all" in Explorer](./media/images/contributing/explorer_save.png)
+      ![Choose "Save all" in Explorer](./media/images/explorer_save.png)
    3. **Commit all** changes in **Source Control** (write commit message when prompted).
       
-      ![Choose "Commit all" in Source Control](./media/images/contributing/source_control_commit.png)
+      ![Choose "Commit all" in Source Control](./media/images/source_control_commit.png)
    4. Click the **sync** button to sync your changes back to origin (your fork on GitHub).
       
-      ![Click the sync button](./media/images/contributing/sync_back.png)
+      ![Click the sync button](./media/images/sync_back.png)
 3. In a web browser, create a pull request to sync new changes in your fork back to MicrosoftDocs/CortanaSkillsKit 'master' (make sure the arrow is pointing the correct way).
 
-   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](./media/images/contributing/pr_to_master.png)
+   ![Create pull request from your fork into MicrosoftDocs/CortanaSkillsKit](./media/images/pr_to_master.png)
 
 ### Useful extensions
 
 The following Visual Studio Code extensions are very useful when editing documentation:
 
-- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/en-us/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
+- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) - Use **Alt+M** to bring up a menu of docs authoring options like:
    - Search and reference images you've uploaded.
    - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
    - Search and reference internal links and bookmarks (links to specific sections within a page).
