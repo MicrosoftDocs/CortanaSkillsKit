@@ -16,11 +16,16 @@
 ### [Debug](./debug.md)  
 ### [Test](./test.md)  
 
-## Deploy to Tenant
+## Deploy to Tenant  
 
-### Operate
-### Monitor
-### Measure
+### [Configure Tenant Publication](./configure-tenant.md)  
+### [Request Deployment](./request-deployment.md)  
+### [Administer Deployment Requests](./admin-request.md)  
+
+## Operate  
+
+### [Monitor](./monitor.md)  
+### [Measure](./measure.md)  
 
 ## [Audience](./audience.md)  
  
