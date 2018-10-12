@@ -21,36 +21,36 @@ Before you can build your first skill, you need to set up your development envir
 
 Developing a Cortana skill requires a variety of cloud resources. For example, you need a Microsoft account in order to register your skill and connect it to Cortana. If you don't already have a Microsoft account, go to the [Microsoft Account](https://account.microsoft.com/account) web site to sign up for one.
 
-> [!NOTE]
+>[!NOTE]
 > To develop a Cortana skill, you must use a [Microsoft account](https://account.microsoft.com/account) rather than an Azure Active Directory (Azure AD) organizational account, such as an account associated with Office 365.
 
-![Microsoft account site](./media/images/microsoft-account.png)
+![Microsoft account site](./media/images/microsoft_account.png)
 
 Other resources include:
 
 * **Bot Framework**. To create a Cortana skill, you must first create a bot. Then log in to the [Bot Framework Developer Portal](https://dev.botframework.com/) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
 
-![Bot Framework developer portal](./media/images/bot-framework-dev-portal.png)
+![Bot Framework developer portal](./media/images/bot_framework_dev_portal.png)
 
 * **Cortana Developer Center**. Log in to the [Cortana Developer Center](https://developer.microsoft.com/cortana) using your Microsoft account to open your Cortana Skills Dashboard. The developer center provides a variety of resources for developing a Cortana skill.
 
-![Cortana Dev Center](./media/images/cortana-dev-center.png)
+![Cortana Dev Center](./media/images/cortana_dev_center.png)
 
 * **LUIS (Language Understanding Intelligent Service)**. Log in to [LUIS.ai](https://www.luis.ai) using your Microsoft account to create and manage LUIS applications that let you use language understanding technology in your Cortana skill. 
 
-![LUIS Site](./media/images/mva32-huis-account.png)
+![LUIS Site](./media/images/mva32_luis_account.png)
 
 * **A cloud hosting service**. Optionally, you can use a cloud hosting service such as [Microsoft Azure](https://azure.microsoft.com). This is required if you want to want the skill to be available to Cortana using a web address.
 
-![Azure Site](./media/images/azure-site.png)
+![Azure Site](./media/images/azure_site.png)
 
 ## Step 2 - Set up your PC, Mac, or Cortana device
 
 You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/Microsoft/BotBuilder).
 
-Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2017](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio). 
+Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
 
-> [!NOTE]
+>[!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
 For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/bot-framework/debug-bots-emulator) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
