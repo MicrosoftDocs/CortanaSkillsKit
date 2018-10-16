@@ -1,11 +1,9 @@
 ---
 title: Cortana and structured data markup - Cortana design and development
 description: Structured data markup describes the embedding of structured data in e-mail messages and websites for consumption by Cortana.
-author: kbridge
-label: Conceptual
-ms.assetid: 315a5dd0-b88d-499b-a177-6164daacbe30
 
-ms.date: 02/08/2017
+ms.assetid: 315a5dd0-b88d-499b-a177-6164daacbe30
+ms.date: 10/08/2017
 ms.topic: article
 
 keywords: cortana
@@ -15,15 +13,15 @@ keywords: cortana
 # Cortana and structured data markup
 Structured data markup describes the embedding of structured data in e-mail messages and websites for consumption by Cortana. 
 
-The structured data is in the form of schema.org markup in either [schema.org](https://schema.org/) [Microdata and JSON-LD](https://schema.org/docs/gs.html) formats. Cortana extracts and interprets the structured data and exposes an skill based on that data.
+The structured data is in the form of schema.org markup in either [schema.org](https://schema.org) [Microdata and JSON-LD](https://schema.org/docs/gs.html) formats. Cortana extracts and interprets the structured data and exposes an skill based on that data.
 
 ## <a name="schema.org"></a>Schema.org basics
 Schema.org is a standardized vocabulary and data model for machine-readable semantic annotation that uses a combination of classes and properties to describe things. 
 
 ### Microdata
-Microdata is the preferred option for adding [schema.org](https://schema.org/) annotations in-line with the body of content in your email.
+Microdata is the preferred option for adding [schema.org](https://schema.org) annotations in-line with the body of content in your email.
 
-Microdata is a set of HTML5 attributes and an associated usage model for adding semantic information to HTML documents, including email. In Microdata, you set the value of an itemtype attribute to a Schema.org class, such as [https://schema.org/Thing](https://schema.org/Thing), and then describe one or more properties of that class by using the **itemprop** attribute with its value set to the name of a [schema.org](https://schema.org/) property, such as "description". The **itemscope** attribute associates child elements of an HTML element with a class.  
+Microdata is a set of HTML5 attributes and an associated usage model for adding semantic information to HTML documents, including email. In Microdata, you set the value of an itemtype attribute to a Schema.org class, such as [https://schema.org/Thing](https://schema.org/Thing), and then describe one or more properties of that class by using the **itemprop** attribute with its value set to the name of a [schema.org](https://schema.org) property, such as "description". The **itemscope** attribute associates child elements of an HTML element with a class.  
 
 ### JSON-LD 
 JSON-LD is a JSON-based syntax that describes the semantics of an HTML document within the scope of a `<script>` tag. In JSON-LD, set the `@context` key to “https://schema.org”, set the `@type` key to the name of a Schema.org class, and then use Schema.org property names as the value of keys describing the properties of your typed objects. JSON-LD is a good option for representing semantics in the scope of a well-defined and consolidated JSON object.
@@ -186,10 +184,10 @@ For this example we demonstrate a reservation confirmation email for a one-way, 
 #### Walkthrough of Cortana flight tracking UI
 Here, we illustrate the Cortana flight confirmation experience.
 
-| ![Flight confirmation email](../images/email/email-flightinfo.png) | ![Start menu](../images/email/email-startmenu.png) | ![Cortana tracking confirmation](../images/email/email-cortana-confirm.png) |
+| ![Flight confirmation email](./media/images/email-flightinfo.png) | ![Start menu](./media/images/email-startmenu.png) | ![Cortana tracking confirmation](./media/images/email-cortana-confirm.png) |
 | ----- | ----- | ----- |
 | 1. Estella books a flight through Blue Yonder Airlines and receives a confirmation email. | 2. She goes to her Start menu and taps the Cortana tile. | 3.Cortana offers to track Estella's flight. Estella taps yes. |
-| ![Cortana tracking feedback](../images/email/email-cortana-feedback.png) | ![Cortana live tile](../images/email/email-cortana-livetile.png) | ![Updated flight info on Cortana canvas](../images/email/email-cortana-status.png) |
+| ![Cortana tracking feedback](./media/images/email-cortana-feedback.png) | ![Cortana live tile](./media/images/email-cortana-livetile.png) | ![Updated flight info on Cortana canvas](./media/images/email-cortana-status.png) |
 | 4. Cortana informs Estella that she will start receiving updates 24 hours before departure. | 5. On the day of the flight, the latest flight status is displayed on the Cortana live tile.  | 6. Estella taps the tile and Cortana displays the flight information. |
 
 <br />

@@ -1,10 +1,9 @@
 ---
 title: Activate a foreground app with voice commands through Cortana - Cortana UWP design and development
 description: Use voice commands to activate your app to the foreground and execute an action or command within the app.
-author: kbridge
-label: Conceptual
+
 ms.assetid: e4bf3714-6f62-466f-9e7c-3b03ee86a117
-ms.date: 02/08/2017
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -39,7 +38,7 @@ To create a new **Adventure Works** trip without **Cortana**, a user would launc
 
 Using voice commands through **Cortana**, the user can instead just say, "Adventure Works add a trip" or "Add a trip on Adventure Works" to launch the app and navigate to the **New trip** page. In turn, saying "Adventure Works, show my trip to London" will launch the app and navigate to the **Trip** detail page, shown here.
 
-![cortana launching foreground app](../images/voicecommands/cortana-foreground-with-adventureworks.png)
+![cortana launching foreground app](./media/images/cortana-foreground-with-adventureworks.png)
 
 These are the basic steps to add voice-command functionality and integrate Cortana with your app using speech or keyboard input:
 
@@ -380,7 +379,7 @@ private string SemanticInterpretation(string interpretationKey, SpeechRecognitio
 
 
 **Developers**
-* [Voice commands](vcd.md)
+* [Voice commands](./vcd.md)
 * [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
 
 **Designers**
@@ -390,9 +389,3 @@ private string SemanticInterpretation(string interpretationKey, SpeechRecognitio
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
-
- 
-
-
-
-

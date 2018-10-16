@@ -4,7 +4,7 @@ description: Learn how to add authentication to your bot-based skill.
 label: Conceptual
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 10/03/2018
+ms.date: 10/12/2018
 ms.topic: article
 
 keywords: cortana
@@ -14,7 +14,6 @@ keywords: cortana
 
 >[!WARNING]
 > Cortana Skills handle authentication differently than Microsoft Bot Framework.
-
 
 There are two ways to add authentication to your Cortana Skill.  
 *   Authenticate at Invocation  
@@ -33,7 +32,7 @@ You decide whether Cortana signs in the user when they invoke your skill or only
 *  Refresh token expires  
 *  User changes password  
 
-Cortana Skills supports the Code Grant flow and Implicit Grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/bot-framework/channel-connect-cortana#manage-user-identity) section.  
+Cortana Skills supports the Code Grant flow and Implicit Grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0#manage-user-identity) section.  
 
 The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of the services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.  
 
@@ -68,25 +67,25 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
 > If you have not created a bot and looking for more information on how to get started, then visit the [Create a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-3.0) page.  
 
 1.  Sign into the [Microsoft Azure Portal](https://ms.portal.azure.com).  
-2.  In the **Dashboard**, click the name of your bot. 
-3.  Under **BOT MANAGEMENT**, click on the **Channels**. 
+2.  In the *portal*, click the name of your bot. 
+3.  Under *BOT MANAGEMENT*, click on the **Channels** icon. 
 4.  To create the Cortana channel, click the Cortana icon. 
 
-    ![Cortana channel icon](../images/add_cortana_channel_1.png)  
+    ![Cortana channel icon](./media/images/add_cortana_channel_1.png)  
 
     >[!NOTE]
     > If your bot is already connected to the Cortana channel, then click **Edit** to access the **Default settings**.
     > 
-    > ![Edit Channels](../images/edit_cortana_1.png)  
+    > ![Edit Channels](./media/images/edit_cortana_1.png)  
 
 5.  Scroll down the **Configure Cortana** page, under **Cortana should manage my user's identity**, click on the toggle.  
 
-    ![Manage user identity through connected services](../images/cortana_manage_user_toggle_1.png)  
+    ![Manage user identity through connected services](./media/images/cortana_manage_user_toggle_1.png)  
 
 6.  Fill in the OAuth configuration field values.  
     Prompt user to Sign in.  
 
-    ![](../images/cortana-manage-user-identity.png)  
+    ![](./media/images/cortana-manage-user-identity.png)  
 
     1.  **Account Name**  
         The account name for your Cortana Skill.  
@@ -171,7 +170,7 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
     >     
     >     *   Click **Add Platform**, click **Web**, verify that you registered your redirect URL for Cortana, and then save your changes. You do not need a sign-out URL.  
     >     
-    >         ![Add Platforms](../images/add_platform_1.png)  
+    >         ![Add Platforms](./media/images/add_platform_1.png)  
     >
     > *   For Other service providers: Refer to the documentation from your service provider about allowing the redirect callback.  
 

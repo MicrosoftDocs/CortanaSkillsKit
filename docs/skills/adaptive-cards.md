@@ -4,7 +4,7 @@ description: Learn how to use Adaptive Cards in your bot-based skill.
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 03/14/2018
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -47,7 +47,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 > "size": "medium"
 > ```
 > 
-> ![Sample Card](../images/AC_Visualizer1.png)  
+> ![Sample Card](./media/images/ac_visualizer1.png)  
 > 
 > Change the titles text using the following text to updated the text block.  
 > 
@@ -58,7 +58,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 > "size": "medium"
 > ```  
 >
-> ![Revised Card](../images/AC_Visualizer2.png)  
+> ![Revised Card](./media/images/ac_visualizer2.png)  
 
 ## Create an Adaptive Card using .NET
 
@@ -90,7 +90,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 
 ## More Information  
 
-*   For more information about Adaptive Cards, visit the Adaptive Cards page located at  [adaptivecards.io](https://adaptivecards.io/).  
-*   For more information about Bot Framework cards using .Net, visit the Add rich card attachments to messages for .NET page located at [docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments).
-*   For more information about Bot Framework cards using Node.js, visit the Add rich card attachments to messages for Node.js page located at [docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards).
-*   For an example of creating an Adaptive Card using .NET, visit the Add an Adaptive card to a message section located at [docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card).  
+*   For more information about Adaptive Cards, visit the Adaptive Cards page located at  [adaptivecards.io](https://adaptivecards.io).  
+*   For more information about Bot Framework cards using .Net, visit the Add rich card attachments to messages for .NET page located at [docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0).
+*   For more information about Bot Framework cards using Node.js, visit the Add rich card attachments to messages for Node.js page located at [docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0).
+*   For an example of creating an Adaptive Card using .NET, visit the Add an Adaptive card to a message section located at [docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments#adaptive-card](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0#adaptive-card).  

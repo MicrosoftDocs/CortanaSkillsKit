@@ -1,9 +1,11 @@
 ---
 title: Show the user you're working on their request 
 description: For long running request, show the user that you're still working on their request.
+
 ms.assetid: 23802F09-921E-4475-AD34-3A71C9078290
-ms.date: 04/25/2017
+ms.date: 10/12/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -59,6 +61,8 @@ The following shows an example that uses the `ExecuteWithTimeoutHandler` method 
                 await context.PostAsync(reply);
             });
         }
-```
+```  
 
+<!--
 For an equivalent example in Node.js, see the [ProgressDialog](https://github.com/Microsoft/BotBuilder-Samples/tree/master/Node/core-ProgressDialog) sample.
+-->
