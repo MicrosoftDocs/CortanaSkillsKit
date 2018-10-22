@@ -39,7 +39,7 @@ The following shows an example of the `UserInfo` object.
 ```json
 {                   
     "type": "UserInfo",  
-    "FriendlyName1": {}  
+    "FriendlyName1": {},  
     "FriendlyName2": {}  
 }
 ```
