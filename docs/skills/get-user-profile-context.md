@@ -23,31 +23,6 @@ User contextual information is information that Cortana has discovered about the
 
 To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see [Request user profile data](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0#request-user-profile-data)).
 
-For each piece of user data that you request, you specify a friendly name that identifies that piece of data. Cortana uses the friendly name as the property name in the `UserData` object. For information about the types of profile and contextual information that's available, see [User Profile Reference](user-profile-contextual-info.md).
-
-<!-- This doesn't seem right. The name is entities which is plural so you'd think it's an array of entities, one of which might be UserData. Confirm. -->
-
-Each message contains an `entities` field, which is an array of objects. One of the objects is a `UserData` object with the following properties:
-
-
-| Name | Type | Description 
-|-|-|-
-| friendlyName1..n | object | The user profile or contextual information that you requested. The `friendlyName1..n` name is a placeholder for the names you used when you configured the Cortana channel. For information about the objects associated with the data you requested, see [User Profile Reference](user-profile-contextual-info.md).
-| type | string | The object's type, which is set to UserInfo. 
-
-
-The following shows an example of the `UserInfo` object.
-
-```json
-{                   
-    "type": "UserInfo",  
-    "FriendlyName1": {}  
-    "FriendlyName2": {}  
-}
-```
-
-If you request profile or contextual data that's not available for the user, the property's value is an empty string or null. 
-
 The following example shows accessing the `User.Info.Email` and `User.SemanticLocation.Current` entities using C#. The example assumes "UserName" and "CurrentLocation" were used as the property (friendly) names during the channel configuration.
 
 ```csharp
