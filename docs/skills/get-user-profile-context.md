@@ -17,9 +17,9 @@ keywords: cortana
 > 
 
 
-Cortana can send the user's profile and contextual information as part of the message that it sends your skill. You can use this information to provide a custom experience for the user. User profile information is data that the user provided to Cortana and is found in Cortana's Notebook. This is information is fairly stable and is editable by the user. Cortana passes this information to your skill if it's available, and the user has provided explicit consent to share this information with your skill. 
+Cortana can send the user's profile and contextual information as part of the message that it sends your skill. You can use this information to provide a custom experience for the user. User profile information is data that the user provided to Cortana and is found in Cortana's Notebook. Cortana passes this information to your skill if it's available, and the user has provided explicit consent to share this information with your skill. _The skill must have a valid reason to use profile information to pass certification._ See [the review guidelines](https://docs.microsoft.com/cortana/skills/skill-review-guidelines) for more details.
 
-User contextual information is information that Cortana has discovered about the user and changes more frequently such as their location. The Notebook also contains this information, but the user typically can't edit it.
+User contextual information is information that Cortana has about the user such as their location. The Notebook also contains this information, but the user typically can't edit it.
 
 To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see [Request user profile data](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0#request-user-profile-data)).
 
