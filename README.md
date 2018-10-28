@@ -16,9 +16,9 @@ References covers
 - [Speech Synthesis Markup Language (SSML) reference] (https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language)
 - [Cortana user profile and contextual information reference]  (https://docs.microsoft.com/en-us/cortana/skills/user-profile-contextual-info)
 - [Supported Cortana locales] (https://docs.microsoft.com/en-us/cortana/skills/supported-locales)
-### Resouces
+### Resources
 Quick Link to Cortana Skill Kit [Resources] (https://docs.microsoft.com/en-us/cortana/skills/#pivot=resources)
-Resouces Cover
+Resources Cover
 - Support
 - FAQ
 - Terms of use guidelines
