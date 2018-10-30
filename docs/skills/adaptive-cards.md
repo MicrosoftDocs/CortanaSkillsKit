@@ -36,7 +36,7 @@ A basic Adaptive Card includes the following items.
 The Adaptive Cards Designer provides an interactive card builder where you can see the resulting card JSON.
 
 *   [adaptivecards.io/designer](https://adaptivecards.io/designer)
-*   [adaptivecards.io/visualizer](https://adaptivecards.io/visualizer)
+*   [adaptivecards.io/visualizer](https://adaptivecards.io/visualizer) _(classic tool for proving Adapative Card JSON)_
 
 >[!TIP]
 > 1. The speak object of an Adaptive Card needs to be copied to the Message for Cortana to speak the text; and
