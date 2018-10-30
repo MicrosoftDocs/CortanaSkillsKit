@@ -38,32 +38,32 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
 *   [adaptivecards.io/designer](https://adaptivecards.io/designer)
 *   [adaptivecards.io/visualizer](https://adaptivecards.io/visualizer)
 
->[!NOTE]
+>[!TIP]
 > # The speak object of an Adaptive Card needs to be copied to the Message for Cortana to speak the text.
 > # The speak object > text needs to be wrapped in SSML `speak` tags._
 
->[!TIP]
-> The following text block provides the title text for the sample card in the Adaptive Cards Visualizer.
-> 
-> ```json
-> "type": "TextBlock",
-> "text": "Publish Adaptive Card schema",
-> "weight": "bolder",
-> "size": "medium"
-> ```
-> 
-> ![Sample Card](./media/images/ac_visualizer1.png)  
-> 
-> Change the titles text using the following text to updated the text block.  
-> 
-> ```json
-> "type": "TextBlock",
-> "text": "This is a test",
-> "weight": "bolder",
-> "size": "medium"
-> ```  
->
-> ![Revised Card](./media/images/ac_visualizer2.png)  
+
+ The following text block provides the title text for the sample card in the Adaptive Cards Visualizer.
+ 
+ ```json
+ "type": "TextBlock",
+ "text": "Publish Adaptive Card schema",
+ "weight": "bolder",
+ "size": "medium"
+ ```
+ 
+ ![Sample Card](./media/images/ac_visualizer1.png)  
+ 
+ Change the titles text using the following text to updated the text block.  
+ 
+ ```json
+ "type": "TextBlock",
+ "text": "This is a test",
+ "weight": "bolder",
+ "size": "medium"
+ ```  
+
+ ![Revised Card](./media/images/ac_visualizer2.png)  
 
 ## Create an Adaptive Card using .NET
 
