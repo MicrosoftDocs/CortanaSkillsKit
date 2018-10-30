@@ -16,6 +16,7 @@ Once the authentication takes place, Cortana uses an authentication token to man
 
 For more information about adding authentication to your skill, see [Adding authentication to your skill](./authentication.md).
 
+<!--
 ## Step 1 - Configure your skill to use authentication
 
 As you learned in [Create your first Cortana skill](./mva22-hello-world.md) and [Building conversations](./mva32-building-conversations.md), you register a Cortana skill by connecting your bot to the Cortana channel.
@@ -54,3 +55,4 @@ After you configure authentication for a skill, Cortana prompts for credentials 
 Cortana prompts you to sign in using your Microsoft account credentials.
 
 ![Authorization Sign-in](./media/images/mva61_auth_signin.png)
+-->
