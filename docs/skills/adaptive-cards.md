@@ -31,11 +31,16 @@ A basic Adaptive Card includes the following items.
 *   The Adaptive Card body, which includes the elements of your card.  
 *   Any actions for your Adaptive Card, which are typically displayed in an action bar at the bottom of your card.  
 
-## Adaptive Cards Visualizer  
+## Adaptive Cards Designer  
 
-The Adaptive Cards Visualizer provides an interactive preview environment to view and edit the JSON schema of your Adaptive Card and see the results in a preview pane.  
+The Adaptive Cards Designer provides an interactive card builder where you can see the resulting card JSON.
 
+*   [adaptivecards.io/designer](https://adaptivecards.io/designer)
 *   [adaptivecards.io/visualizer](https://adaptivecards.io/visualizer)
+
+>[!NOTE]
+> # The speak object of an Adaptive Card needs to be copied to the Message for Cortana to speak the text.
+> # The speak object > text needs to be wrapped in SSML `speak` tags._
 
 >[!TIP]
 > The following text block provides the title text for the sample card in the Adaptive Cards Visualizer.
@@ -62,7 +67,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 
 ## Create an Adaptive Card using .NET
 
-1.  Install the `Microsoft.AdaptiveCards` NuGet package.
+1.  Install the `AdaptiveCards` NuGet package.
 2.  Specify the elements of your card in code.
 3.  Add the card to your Cortana skill as an attachment.
 
@@ -74,7 +79,7 @@ The Adaptive Cards Visualizer provides an interactive preview environment to vie
 >
 > AdaptiveCard card = new AdaptiveCard();
 >
-> card.Body.Add(new TextBlock()
+> card.Body.Add(new AdaptiveTextBlock()
 >     {
 >         Text = "This is a test",
 >         Weight = TextWeight.Bolder
