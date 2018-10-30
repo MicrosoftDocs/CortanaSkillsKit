@@ -1,20 +1,16 @@
 ---
-title: Adding visual elements to Cortana skills
-description: Describes how to develop a Cortana skill that uses visual elements.
-label: Conceptual
-ms.date: 01/3/2018
+title: Adding visual elements to Cortana Skills
+description: Describes how to develop a Cortana Skill that uses visual elements.
+
+ms.date: 10/08/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
 # Adding visual elements to Cortana skills
 
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=HE02aQfnE_6911787171) about adding visual elements to Cortana skills. |
-
-
-If you are creating a Cortana skill for a device with a screen, such as a PC or mobile device, you should consider the skill's visual  interface. In [Adding audio to Cortana skills](https://docs.microsoft.com/en-us/cortana/skills/mva41-streaming-audio), you learned how to use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips, and how to use an Audio card to stream audio. In this module you'll see how to extend the **Mixtape** skill to add visual elements.
+If you are creating a Cortana skill for a device with a screen, such as a PC or mobile device, you should consider the skill's visual  interface. In [Adding audio to Cortana skills](./mva41-streaming-audio.md), you learned how to use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips, and how to use an Audio card to stream audio. In this module you'll see how to extend the **Mixtape** skill to add visual elements.
 
 As you consider your Cortana skill's visual interface, keep in mind the following guidelines:
 
@@ -32,7 +28,7 @@ You can add a variety of visual interface elements, or *cards*, to your Cortana 
 * Receipt card - A card that contains an invoice or receipt.
 * SignIn card - A card that lets the user sign-in to a service that the skill uses.
 
-For more information about Bot Framework cards, see [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments) for .NET or [Add rich card attachments to messages](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards) for Node.js. 
+For more information about Bot Framework cards, see [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) for .NET or [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) for Node.js. 
 
 To add a visual interface element that displays a title heading and text to the Mixtape skill, add a Hero card. For example, revise the Mixtape skill's **PlaySongIntent** method as follows:
 
@@ -61,13 +57,13 @@ To add a visual interface element that displays a title heading and text to the 
 
 Because you are displaying text on the Hero card, the initial *response.Text* entry is unnecessary and can be deleted. Instead, the code creates a Hero card that displays a title and text. 
 
-You can then add the Hero card as an attachment to the Cortana response, as you did with the Audio card in [Adding audio to Cortana skills](https://docs.microsoft.com/en-us/cortana/skills/mva41-streaming-audio).
+You can then add the Hero card as an attachment to the Cortana response, as you did with the Audio card in [Adding audio to Cortana skills](./mva41-streaming-audio.md).
 
 ## Step 2 - Test the revised skill
 
-Before you can test the revised skill, you must republish it. If you are working with the Microsoft Azure App Service Editor or in Visual Studio, follow the redeployment steps in [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) or [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations).
+Before you can test the revised skill, you must republish it. If you are working with the Microsoft Azure App Service Editor or in Visual Studio, follow the redeployment steps in [Create your first Cortana skill](./mva22-hello-world.md) or [Building conversations](./mva32-building-conversations.md).
 
 To test your revised skill, direct Cortana to invoke the skill using the invocation name you specified. Cortana responds with the text you specified and displays the Hero card containing the title and text you specified.
 
-![Hero Card](../images/mva42-hero-card.png)
+![Hero Card](./media/images/mva42_hero_card.png)
  
