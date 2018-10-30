@@ -22,11 +22,15 @@ As you learned in [Create your first Cortana skill](./mva22-hello-world.md) and 
 
 To make user profile data available to your Cortana skill, update the skill's channel configuration settings.
 
+<!--
 ![Knowledge Store Publish](./media/images/mva52_ks_publish.png)
+-->
 
 Select **Publish to self**. In the **User data** box, specify the user profile data that you want to make available. For example, to make the user's name available, select **User.Info.Name**.
 
+<!--
 ![User Data](./media/images/mva52_info_name.png)
+-->
 
 ## Step 2 - Revise your skill to use profile data
 
