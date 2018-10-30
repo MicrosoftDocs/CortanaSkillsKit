@@ -40,7 +40,7 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
 
 >[!TIP]
 > # The speak object of an Adaptive Card needs to be copied to the Message for Cortana to speak the text.
-> # The speak object > text needs to be wrapped in SSML `speak` tags._
+> # The speak object text needs to be wrapped in SSML `speak` tags._
 
 
  The following text block provides the title text for the sample card in the Adaptive Cards Visualizer.
@@ -71,27 +71,27 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
 2.  Specify the elements of your card in code.
 3.  Add the card to your Cortana skill as an attachment.
 
->[!TIP]
-> The following code adds an Adaptive Card to a Cortana skill response.
->
-> ```csharp
-> var response = context.MakeMessage();
->
-> AdaptiveCard card = new AdaptiveCard();
->
-> card.Body.Add(new AdaptiveTextBlock()
->     {
->         Text = "This is a test",
->         Weight = TextWeight.Bolder
->         Size = TextSize.Medium,
->     }
-> );
->
-> response.Attachments.Add(card.ToAttachment());
->
-> await context.PostAsync(response);
-> context.Wait(MessageReceived);
-> ```  
+
+ The following code adds an Adaptive Card to a Cortana skill response.
+
+ ```csharp
+ var response = context.MakeMessage();
+
+ AdaptiveCard card = new AdaptiveCard();
+
+ card.Body.Add(new AdaptiveTextBlock()
+     {
+         Text = "This is a test",
+         Weight = TextWeight.Bolder
+         Size = TextSize.Medium,
+     }
+ );
+
+ response.Attachments.Add(card.ToAttachment());
+
+ await context.PostAsync(response);
+ context.Wait(MessageReceived);
+ ```  
 
 ## More Information  
 
