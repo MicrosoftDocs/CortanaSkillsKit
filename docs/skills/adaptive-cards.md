@@ -39,8 +39,8 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
 *   [adaptivecards.io/visualizer](https://adaptivecards.io/visualizer)
 
 >[!TIP]
-> 1. The speak object of an Adaptive Card needs to be copied to the Message for Cortana to speak the text.
-> 1. The speak object text needs to be wrapped in SSML `speak` tags.
+> 1. The speak object of an Adaptive Card needs to be copied to the Message for Cortana to speak the text; and
+> 1. The speak object text needs to be wrapped in SSML `<speak>` tags (if it is not already).
 
 
  The following text block provides the title text for the sample card in the Adaptive Cards Visualizer.
