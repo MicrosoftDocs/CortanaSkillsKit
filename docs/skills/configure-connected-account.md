@@ -29,18 +29,18 @@ Next, you need to update the Cortana channel configuration settings for your ski
 2. Fill in the form.  
   
 	| Item | Description  |
-	|------|--------------|
-    | **Sign in at invocation** | Select this option if you want Cortana to sign in the user at the time they invoke your skill.
-    | **Sign in when required** | Select this option if you use a Bot Framework's SignIn card to sign in the user. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings.
-    | **Account name** | The name of your skill that you want displayed when the user signs in to your skill. |
+ 	|------|--------------|
+	| **Sign in at invocation** | Select this option if you want Cortana to sign in the user at the time they invoke your skill.
+	| **Sign in when required** | Select this option if you use a Bot Framework's SignIn card to sign in the user. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings. |
+	| **Account name** | The name of your skill that you want displayed when the user signs in to your skill. |
 	| **Client ID for third-party services** | Your bot's application ID. You received the ID when you registered your bot. |
 	| **Space-separated list of scopes** | Specify the scopes that the service requires (see the service's documentation). |
 	| **Authorization URL** | Set to `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`. |
-    | **Token options** | Send auth on the GET request or via POST (`POST` recommended). |
-    | **Grant type** | Select **Authorization code** to use code grant flow. Select **Implicit** to use implicit flow. |
-	| **Token URL** | If you select **Authorization code**, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`. |
+	| **Token options** | Send auth on the `GET` request or via `POST` (recommended). |
+	| **Grant type** | Select `Authorization code` to use code grant flow (recommended). Select `Implicit` to use implicit flow. |
+	| **Token URL** | If you select `Authorization code`, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`. |
 	| **Client secret/password for third party services** | The bot's password. You received the password when you registered your bot. |
-    | **Client authentication scheme** | Select `Credentials in request body`. |
+	| **Client authentication scheme** | Select `Credentials in request body`. |
 
   
 3. Save the skill.
