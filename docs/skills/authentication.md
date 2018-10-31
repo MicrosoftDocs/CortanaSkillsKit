@@ -15,10 +15,6 @@ keywords: cortana
 >[!WARNING]
 > Cortana Skills handle authentication differently than Microsoft Bot Framework.
 
-There are two ways to add authentication to your Cortana Skill.  
-*   Authenticate at Invocation  
-*   Authenticate when Required  
-
 ## Link a Connected Account to a Cortana Skill  
 
 If your skill uses a service that requires user authentication using OAuth 2.0, then you may use Connected Account feature in Cortana. The Connected Account feature in Cortana is used to get an access token for use with the service. All you must do is provide Cortana a few OAuth 2.0 settings and Cortana manages the rest for you.  
@@ -86,27 +82,28 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
     Prompt user to Sign in.  
 
     ![](./media/images/cortana-manage-user-identity.png)  
-
-    1.  **Account Name**  
+    1.	**Sign in at invocation** | radiobox  
+        If you select `at invocation` then Cortana manages the log in when the user first invokes the skill. Otherwise you can send an OAuthCard attachment before a resource call.
+    2.  **Account Name**  
         The account name for your Cortana Skill.  
-    2.  **Client ID**  
+    3.  **Client ID** 
         The identifier for your client.  
         
         >[!NOTE]
         > If you use Microsoft services, then your `MicrosoftAppId` when you created your bot.  
         > If you use another OAuth 2.0 service provider, then the client ID provided to you.  
         
-    3.  **Scope**  
+    4.  **Scopes**  
         The resources you are accessing.  
         
         >[!NOTE]
         > Your resource provider informs you about the resources to which you are requesting.  
-        > The resources must be *space delimited*.  
+        > The scopes must be *space delimited*.  
         > Example: Microsoft Graph, you may set `User.Read.All`.  
         > >[!NOTE]
         > > A third-party service, you may set anything.  
 
-    4.  **Authorization URL**  
+    5.  **Authorization URL**  
         Your OAuth Authorization URL.  
         
         ```url
@@ -116,34 +113,20 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
         >[!NOTE]
         > Replace `common` with your Azure AD tenant ID if you are restricting the resources to an organization. 
         
-    5.  **Response method**  
-        The HTTP verb for the response.  
+    6.  **Token options**  
+        Response method. The HTTP verb for the response.  
         
         `POST`
 
-    6.	**Response type**  
-        The flow for the response.  
-        `Code`
+    7.	**Grant type**  
+        Response type. The OAuth flow for the response.  
+        `Authorization code`
         
         >[!NOTE]
         > The code flow is easier than token flow.  
         > For more information, visit the [OAuth 2.0 Authorization Framework](https://tools.ietf.org/html/rfc6749) page.  
 
-    7.  **Client authorization scheme**  
-        
-        `Auth in body`
-        
-        >[!NOTE]
-        > The `Auth in body` scheme is the most common way to send the identity payload.  
-
-    8.	**Client secret**  
-
-        >[!NOTE]
-        > If you use Microsoft services, then your `MicrosoftAppPassword` when you created your bot.  
-        > If you use another OAuth 2.0 service provider, then the client secret provided to you. Your provider may use different terminology.  
-        > Example: *consumer secret*.  
-
-    9.	**Token URL**  
+    8.	**Token URL**  
         
         ```url
         https://login.microsoftonline.com/common/oauth2/v2.0/token
@@ -152,15 +135,22 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
         >[!NOTE]
         > If you are restricting the resources to an organization, then replace `common` with your Azure AD tenant ID.  
 
-    10.	**Use tenant auth** | checkbox  
-        If your Cortana Skill requires access to an intranet, then select this option.  
-    11.	For the **User Agent**  
-        Leave the field blank unless your resource provider needs non-standard headers in the HTTP request.  
-    12. **Authorization header**  
-        Leave the field blank unless your resource provider needs non-standard headers in the HTTP request.  
-    13.	**Sign in on demand** | checkbox  
-        If you are providing your own OAuth card, then select this option.  
-        Example: Only if a user is accessing to a restricted resource, then you request authorization from your user.  
+    9.	**Client secret**  
+
+        >[!NOTE]
+        > If you use Microsoft services, then your `MicrosoftAppPassword` when you created your bot.  
+        > If you use another OAuth 2.0 service provider, then the client secret provided to you. Your provider may use different terminology.  
+        > Example: *consumer secret*.  
+
+    10.  **Client authorization scheme**  
+        
+        `Credentials in request body`
+        
+        >[!NOTE]
+        > The `Credentials in request body` scheme is the most common way to send the identity payload.  
+
+    11.	**Intranet authentication** | checkbox  
+        If your Cortana Skill requires access to or through an intranet, then select this option.  
 
 7.  Click on the `Connect to Cortana` link. 
             
@@ -184,7 +174,7 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
     // Is the user authenticated?
     string authAccessToken = String.Empty;
     
-    Example: Request a sign-in with an OAuthCard for Cortana using C\#.      if (activity.Entities != null) {
+    if (activity.Entities != null) {
         foreach (var entity in activity.Entities) {
             if (entity.Type == "AuthorizationToken") {
                 dynamic authResult = entity.Properties;
