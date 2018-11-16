@@ -11,6 +11,9 @@ keywords: cortana
 
 # Cortana Skills Samples  
 
+For Cortana-specific code examples, please visit [the cortana-skills-samples github repository](https://github.com/Microsoft/cortana-skills-samples).
+
+
 For the current list of Azure Bot Service samples, including those that can be used for Cortana skills, please visit
 [this link](https://github.com/Microsoft/BotBuilder-Samples).
 
