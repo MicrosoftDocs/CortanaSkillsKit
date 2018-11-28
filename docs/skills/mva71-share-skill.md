@@ -57,7 +57,7 @@ Opening the URL in a browser displays a prompt asking if the user wants to join 
 
 ![Join Group](./media/images/mva71_join_group.png)
 
-Click **Accept** to accept the invitation and recieve a confirmation.
+Click **Accept** to accept the invitation and receive a confirmation.
 
 ![Confirm Join](./media/images/mva71_confirm_join.png)
 
