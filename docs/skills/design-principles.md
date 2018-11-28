@@ -244,6 +244,10 @@ User: Help.
 Cortana: Please say a stock's name. For example, say Microsoft.
 ```
 
+   >[!NOTE]
+   > *Headless* devices (like speakers) will reprompt with the last message sent if there is no input. After a reprompt, if there is no input, the conversation is ended. Good interactive dialogs should wait on a prompt.
+   
+   
 ## Confirming a user's answer
 
 A confirmation is an acknowledgement that your skill heard the user's response. For example:
