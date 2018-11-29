@@ -44,7 +44,7 @@ For information about specifying an invocation name, see [Invocation name guidel
 If you see your Cortana Skill in my Bots list filtered for Cortana, then you are able to invoke your skill from Cortana. But before invoking your skill, make sure:
 
 1. You're signed into Cortana using the same Microsoft account that you used to register the skill in Bot Framework. To confirm:  
-  1. Open Cortana by clicking **Type here to search** in the task bar.  
+    1. Open Cortana by clicking **Type here to search** in the task bar.  
      <br />  
      ![Cortana](./media/images/open-cortana.png)  
      <br />  
@@ -52,16 +52,16 @@ If you see your Cortana Skill in my Bots list filtered for Cortana, then you are
      <br />  
      ![Cortana's Notebook](./media/images/notebook.png)  
      <br />  
-  3. Click **About Me**  
-  4. Confirm the account shown is the same one you used to register your skill. If not, sign out and then sign back in with the correct account.  
+    3. Click **About Me**  
+    4. Confirm the account shown is the same one you used to register your skill. If not, sign out and then sign back in with the correct account.  
   
-2. Cortana microphone is enabled.  
-  1. Open Cortana
-  2. Open Cortana settings  
+2. Cortana's microphone is enabled.  
+    1. Open Cortana
+    2. Open Cortana's settings  
      <br />  
      ![Cortana settings](./media/images/cortana-settings.png)  
      <br />  
-  3. Under **Microphone**, click **Get started**
+    3. Under **Microphone**, click **Get started**
 
 When you're all set, click Cortana microphone and invoke your skill. For example, if your  invocation name is `Contoso Photo`, you can invoke your skill by saying, `Ask Contoso Photo to...` or `Tell Contoso Photo that...`. If Cortana recognizes your skill, she launches it and display it on her canvas.
 
