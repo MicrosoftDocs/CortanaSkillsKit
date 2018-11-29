@@ -1,5 +1,5 @@
 # Overview
-It is a repository to hold the documentation content for Cortana Skills Kit. This open repository is designed to provide a formal documentation for Cortana Skills Kit. The repository holds the expert knowledge around the whole kit including the following topics:
+This repository contains the documentation for the Cortana Skills Kit. Helpful topics:
 
 ### Get Started
 #### Build a skill
