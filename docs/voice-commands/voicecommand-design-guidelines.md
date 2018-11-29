@@ -1,11 +1,10 @@
 ---
 title: Cortana design guidelines - Cortana UWP design and development
 description: These guidelines and recommendations describe how your app can use Cortana to interact with the user.
-author: kbridge
-label: Guidelines
+
 ms.assetid: 332ccb95-0e56-410e-ab63-cc028fce4192
 
-ms.date: 02/08/2017
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
@@ -22,7 +21,7 @@ While the user should feel that **Cortana** is helping to make the process as li
 
 We use a trip planning and management app named **Adventure Works** integrated into the **Cortana** UI, shown here, to demonstrate many of the concepts and features we discuss.
 
-![cortana canvas overview](../images/voicecommands/cortana-overview.png)
+![cortana canvas overview](./media/images/cortana-overview.png)
 
 ## <span id="Conversational_writing_"></span><span id="conversational_writing_"></span><span id="CONVERSATIONAL_WRITING_"></span>Conversational writing
 
@@ -146,14 +145,14 @@ Here are the supported templates (with examples):
 
 | Name | Example |
 | --- | --- |
-| Title only  | ![Title only](../images/voicecommands/voicecommandcontenttiletype-titleonly-small.png) |
-| Title with text | ![Title with text](../images/voicecommands/voicecommandcontenttiletype-titlewithtext-small.png) |
+| Title only  | ![Title only](./media/images/voicecommandcontenttiletype-titleonly-small.png) |
+| Title with text | ![Title with text](./media/images/voicecommandcontenttiletype-titlewithtext-small.png) |
 | Title with 68x68 icon | no image |
-| Title with 68x68 icon and text | ![Title with 68x68 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x68iconandtext-small.png) |
+| Title with 68x68 icon and text | ![Title with 68x68 icon and text](./media/images/voicecommandcontenttiletype-titlewith68x68iconandtext-small.png) |
 | Title with 68x92 icon | no image |
-| Title with 68x92 icon and text | ![Title with 68x92 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith68x92iconandtext-small.png) |
+| Title with 68x92 icon and text | ![Title with 68x92 icon and text](./media/images/voicecommandcontenttiletype-titlewith68x92iconandtext-small.png) |
 | Title with 280x140 icon | no image |
-| Title with 280x140 icon and text | ![Title with 280x140 icon and text](../images/voicecommands/voicecommandcontenttiletype-titlewith280x140iconandtext-small.png) |
+| Title with 280x140 icon and text | ![Title with 280x140 icon and text](./media/images/voicecommandcontenttiletype-titlewith280x140iconandtext-small.png) |
 
 <br />
 
@@ -164,7 +163,7 @@ See [VoiceCommandContentTileType](https://msdn.microsoft.com/library/windows/app
 
 This example demonstrates an end-to-end task flow for a background app in **Cortana**. We're using the **Adventure Works** app to cancel a trip to Las Vegas. This example uses the "Title with 68x68 icon and text" template.
 
-![end to end cortana background app flow](../images/voicecommands/e2e-canceltrip.png)
+![end to end cortana background app flow](./media/images/e2e-canceltrip.png)
 
 Here are the steps outlined in this image:
 
@@ -181,11 +180,11 @@ We explore these steps in more detail here.
 
 ### <span id="Handoff"></span><span id="handoff"></span><span id="HANDOFF"></span>Handoff
 
-| ![end to end: find trip no handoff screen ](../images/voicecommands/cortana-backgroundapp-result.png) |
+| ![end to end: find trip no handoff screen ](./media/images/cortana-backgroundapp-result.png) |
 |--- |
 | Find trip no handoff screen |
 
-| ![end to end: cancel trip with handoff screen ](../images/voicecommands/cortana-backgroundapp-progress-result.png) |
+| ![end to end: cancel trip with handoff screen ](./media/images/cortana-backgroundapp-progress-result.png) |
 |--- |
 | Cancel trip with handoff screen | 
 
@@ -218,7 +217,7 @@ The GUI and TTS strings can be the same, but don’t need to be. Try to keep the
 
 ### <span id="Progress"></span><span id="progress"></span><span id="PROGRESS"></span>Progress
 
-| ![end to end: cancel trip with progress screen ](../images/voicecommands/e2e-canceltrip-progress.png) |
+| ![end to end: cancel trip with progress screen ](./media/images/e2e-canceltrip-progress.png) |
 | --- |
 | Cancel trip with progress screen |  
 
@@ -255,7 +254,7 @@ Use an action verb that confirms the task is underway.
 
 ### <span id="Confirmation"></span><span id="confirmation"></span><span id="CONFIRMATION"></span>Confirmation
 
-| ![end to end: cancel trip with confirmation screen ](../images/voicecommands/e2e-canceltrip-confirmation.png) |
+| ![end to end: cancel trip with confirmation screen ](./media/images/e2e-canceltrip-confirmation.png) |
 | --- |
 | Cancel trip with confirmation screen | 
 
@@ -303,7 +302,7 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 
 ### <span id="Disambiguation"></span><span id="disambiguation"></span><span id="DISAMBIGUATION"></span>Disambiguation
 
-| ![end to end: cancel trip with disambiguation screen](../images/voicecommands/cortana-disambiguation-screen.png) |
+| ![end to end: cancel trip with disambiguation screen](./media/images/cortana-disambiguation-screen.png) |
 | --- |
 | Cancel trip with disambiguation screen | 
 
@@ -339,7 +338,7 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 
 ### <span id="Completion"></span><span id="completion"></span><span id="COMPLETION"></span>Completion
 
-| ![end to end: cancel trip with completion screen ](../images/voicecommands/e2e-canceltrip-completion.png) |
+| ![end to end: cancel trip with completion screen ](./media/images/e2e-canceltrip-completion.png) |
 | --- |
 | Cancel trip with completion screen |
 
@@ -367,7 +366,7 @@ If the entity is shown, or it has been referenced on prior turn, only reference 
 
 ### <span id="Error"></span><span id="error"></span><span id="ERROR"></span>Error
 
-| ![end to end: cancel trip with error screen](../images/voicecommands/e2e-canceltrip-error.png) |
+| ![end to end: cancel trip with error screen](./media/images/e2e-canceltrip-error.png) |
 | --- |
 | Cancel trip with error screen |
 
@@ -383,5 +382,5 @@ When one of the following errors occur, **Cortana** displays the same generic er
 
 **Developers**
 
-* [Voice commands](vcd.md)
+* [Voice commands](./vcd.md)
 * [Cortana skills](../skills/get-started.md)

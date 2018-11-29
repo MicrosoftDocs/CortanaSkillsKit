@@ -1,9 +1,11 @@
 ---
 title: Launching apps and websites from Cortana skills
 description: Shows how to launch apps and website from your skill.
+
 ms.assetid: 6B89584E-AE15-4A6E-8104-A77062F2C835
-ms.date: 04/15/2017
+ms.date: 10/08/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -31,7 +33,7 @@ await context.PostAsync(message);
 
 ## Launching and deep linking an app
 
-To launch an app, use the app's protocol activation URL. In Windows 10, the built-in Maps app supports launching and deep linking. For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-maps-app). 
+To launch an app, use the app's protocol activation URL. In Windows 10, the built-in Maps app supports launching and deep linking. For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app). 
 
 The following example shows how to specify the channel data used to launch the Maps app and center the map over Paris.
 
@@ -45,12 +47,12 @@ await context.PostAsync(message);
 
 The following image shows the launched Map app.
 
-![Map App centered over Paris](../images/tutorials/bot-framework/launched-map-app.png)
+![Map App centered over Paris](./media/images/launched-map-app.png)
 
 
 ## Start a Skype call or IM
 
-If the user has Skype installed, they can launch it to to start a call or instant message conversation in [Skype for Business](https://technet.microsoft.com/en-us/library/gg398376(v=ocs.15).aspx) or the home version of [Skype](https://msdn.microsoft.com/en-us/library/office/dn745878.aspx) on Windows, Android, and iOS.
+If the user has Skype installed, they can launch it to to start a call or instant message conversation in [Skype for Business](https://technet.microsoft.com/library/gg398376(v=ocs.15).aspx) or the home version of [Skype](https://msdn.microsoft.com/library/office/dn745878.aspx) on Windows, Android, and iOS.
 
 **Skype for Business**
 
@@ -78,7 +80,7 @@ await context.PostAsync(message);
 
 The following image shows the launched Skype for Business window.
 
-![Making a Skype call](../images/tutorials/bot-framework/make-a-call.png)
+![Making a Skype call](./media/images/make-a-call.png)
 
 
 **Skype**
@@ -96,7 +98,7 @@ await context.PostAsync(message);
 
 ## Create an email
 
-To send an email to a user, use the [mailto URI protocol](https://msdn.microsoft.com/en-us/library/jj710215(v=vs.85).aspx). The following example shows how to create an email in the user's email client that's ready for them to send. The example creates and email addressed to "someone@example.com", with a subject line of "This is the subject", and a body of "This is the body".
+To send an email to a user, use the [mailto URI protocol](https://msdn.microsoft.com/library/jj710215(v=vs.85).aspx). The following example shows how to create an email in the user's email client that's ready for them to send. The example creates and email addressed to "someone@example.com", with a subject line of "This is the subject", and a body of "This is the body".
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -109,7 +111,7 @@ await context.PostAsync(message);
 
 The following image shows the crafted email.
 
-![Created email](../images/tutorials/bot-framework/created-email.png)
+![Created email](./media/images/created-email.png)
 
 
 
@@ -132,5 +134,4 @@ Defines the action to perform.
 | Property | Type | Description 
 |----------|------|-------------|
 | type | string | The type of action to perform. The possible values are:<ul><li>LaunchUri</li></ul>
-| uri | string | The URI of the app or website to launch.
-
+| uri | string | The URI of the app or website to launch.  

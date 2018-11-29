@@ -1,17 +1,14 @@
 ---
-title: Adding audio to Cortana skills
-description: Describes how to develop a Cortana skill that uses SSML and streaming audio.
-ms.date: 12/27/2017
+title: Adding audio to Cortana Skills
+description: Describes how to develop a Cortana Skill that uses SSML and streaming audio.
+
+ms.date: 10/08/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 
 # Adding audio to Cortana skills
-
-|   |   |
-| - | - |
-| ![](../images/video-icon.png) | [Watch a video](https://mva.microsoft.com/en-US/training-courses/getting-started-with-cortana-skills-18241?l=drnIMQfnE_7211787171) about adding audio to Cortana skills. |
-
 
 Whether you are developing a Cortana skill for a device without a screen such as the Invoke speaker (a *headless device*), or a device with a screen such as a PC or mobile device, you can use a variety of audio features to enhance a user's experience. 
 
@@ -20,11 +17,11 @@ In addition to Cortana's built-in text-to-speech technology, you can:
 * Use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips. 
 * Use an audio card to stream audio.
 
-In [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) and [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations) you learned how to use the basic functionality of Cortana's text-to-speech technology. In this module you'll see how to extend the **Mixtape** skill developed in [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations) to include additional audio elements.
+In [Create your first Cortana skill](./mva22-hello-world.md) and [Building conversations](./mva32-building-conversations.md) you learned how to use the basic functionality of Cortana's text-to-speech technology. In this module you'll see how to extend the **Mixtape** skill developed in [Building conversations](./mva32-building-conversations.md) to include additional audio elements.
 
 ## Step 1 - Customize how Cortana speaks
 
-You can use SSML to customize and enhance the **Mixtape** skill created in [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations). You can adjust a variety of speech attributes, including the speed at which Cortana speaks.
+You can use SSML to customize and enhance the **Mixtape** skill created in [Building conversations](./mva32-building-conversations.md). You can adjust a variety of speech attributes, including the speed at which Cortana speaks.
 
 To increase the speed at which Cortana speaks, revise the **MixtapeIntent** method in the **BasicLuisDialog.cs** module of your **Mixtape** skill as follows:
 
@@ -46,7 +43,7 @@ To increase the speed at which Cortana speaks, revise the **MixtapeIntent** meth
             context.Wait(MessageReceived);
         }
 
-SSML enables you to control a variety of speech attributes. You can use the *prosody* element to control pitch, speaking rate, and volume of speech output. For more information about SSML, see [Speech Synthesis Markup Language (SSML) reference](https://docs.microsoft.com/en-us/cortana/skills/speech-synthesis-markup-language).
+SSML enables you to control a variety of speech attributes. You can use the *prosody* element to control pitch, speaking rate, and volume of speech output. For more information about SSML, see [Speech Synthesis Markup Language (SSML) reference](./speech-synthesis-markup-language.md).
 
 ## Step 2 - Play an audio clip when a skill starts
 
@@ -76,15 +73,15 @@ Use the *audio* element to play an audio file. In this case, the skill plays a s
 
 ## Step 3 - Test the revised skill
 
-Before you can test the revised skill, you must republish it. If you are working in the Microsoft Azure App Service Editor or in Visual Studio, follow the redeployment steps in [Create your first Cortana skill](https://docs.microsoft.com/en-us/cortana/skills/mva22-hello-world) or [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations).
+Before you can test the revised skill, you must republish it. If you are working in the Microsoft Azure App Service Editor or in Visual Studio, follow the redeployment steps in [Create your first Cortana skill](./mva22-hello-world.md) or [Building conversations](./mva32-building-conversations.md).
 
 To test your revised skill, direct Cortana to invoke the skill using the invocation name you specified. Cortana responds with the text you specified and plays the *tada.mp3* audio file.
 
-![Play Audio](../images/mva41-tada.png)
+![Play Audio](./media/images/mva41_tada.png)
 
 ## Step 4 - Play an audio track in response to a request
 
-In addition to playing an audio clip when the skill starts, your Mixtape skill can play one or more audio files in response to a request to play a song. As you saw in [Building conversations](https://docs.microsoft.com/en-us/cortana/skills/mva32-building-conversations), you can create a variety of *intents* in the skill's underlying LUIS application. For example, you could add a **PlaySong** intent with utterances such as:
+In addition to playing an audio clip when the skill starts, your Mixtape skill can play one or more audio files in response to a request to play a song. As you saw in [Building conversations](./mva32-building-conversations.md), you can create a variety of *intents* in the skill's underlying LUIS application. For example, you could add a **PlaySong** intent with utterances such as:
 
 * What music do you have?
 * Play me a song.
@@ -113,7 +110,7 @@ You can then add code to the Mixtape skill to play an audio track, or multiple a
 
 The code creates an Audio card that plays the audio file *song.mp3*. To stream additional audio files, create an Audio card for each file, and then add the Audio cards as attachments to the Cortana response.
 
-For more information on adding audio streaming to your skill, see [Add audio streaming to your skill](https://docs.microsoft.com/en-us/cortana/skills/audio-streaming).
+For more information on adding audio streaming to your skill, see [Add audio streaming to your skill](./audio-streaming.md).
 
 ## Step 5 - Test the revised skill
 

@@ -1,9 +1,11 @@
 ---
 title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
+
 ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 10/11/2017
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 --- 
 
@@ -21,25 +23,25 @@ Before configuring your skill for a Connected Account, you need to update your b
 6. click **Save**.
 
 
-Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/en-us/bot-framework/channel-connect-cortana). One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected account.
+Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected account.
 
 1. Under the **Manage user identity through connected services** section press the option to enable it.
 2. Fill in the form.  
   
 	| Item | Description  |
-	|------|--------------|
-    | **Sign in at invocation** | Select this option if you want Cortana to sign in the user at the time they invoke your skill.
-    | **Sign in when required** | Select this option if you use a Bot Framework's SignIn card to sign in the user. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings.
-    | **Connected service icon** | The icon that you want displayed when the user signs in to your skill. |
+ 	|------|--------------|
+	| **Sign in at invocation** | Select this option if you want Cortana to sign in the user at the time they invoke your skill.
+	| **Sign in when required** | Select this option if you use a Bot Framework's SignIn card to sign in the user. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings. |
 	| **Account name** | The name of your skill that you want displayed when the user signs in to your skill. |
 	| **Client ID for third-party services** | Your bot's application ID. You received the ID when you registered your bot. |
 	| **Space-separated list of scopes** | Specify the scopes that the service requires (see the service's documentation). |
 	| **Authorization URL** | Set to `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`. |
-    | **Grant type** | Select **Authorization code** to use code grant flow. Select **Implicit** to use implicit flow. |
-	| **Token URL** | If you select **Authorization code**, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`. |
+	| **Token options** | Send auth on the `GET` request or via `POST` (recommended). |
+	| **Grant type** | Select `Authorization code` to use code grant flow (recommended). Select `Implicit` to use implicit flow. |
+	| **Token URL** | If you select `Authorization code`, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`. |
 	| **Client secret/password for third party services** | The bot's password. You received the password when you registered your bot. |
-    | **Client authentication scheme** | Select HTTP Basic. |
-	| **Token options** | Set to POST. |  
+	| **Client authentication scheme** | Select `Credentials in request body`. |
+
   
 3. Save the skill.
 

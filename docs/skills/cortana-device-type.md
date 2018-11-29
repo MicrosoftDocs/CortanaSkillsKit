@@ -30,3 +30,7 @@ The following shows an example of the `DeviceInfo` object.
 }
 ```
 
+   
+   >[!NOTE]
+   > *Headless* devices (like speakers) will reprompt with the last message sent if there is no input. After a reprompt, if there is no input, the conversation is ended.
+   

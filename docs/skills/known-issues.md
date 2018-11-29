@@ -1,9 +1,11 @@
 ---
 title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
+
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 03/30/2017
+ms.date: 10/12/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -55,15 +57,11 @@ Currently, the user's email address from the user's profile information is not a
 
 Currently, Cortana does not support logging into skills on Windows Phone. Log in using any other supported device first before using the skill on Windows Phone.
 
-**"Coming soon" displayed on the Cortana dashboard**
-
-This occurs when signed in with an organizational account that uses AAD. Sign-out and sign back in using a Microsoft account (MSA).
-
-
-
+<!--
 ## Known Bot Framework issues affecting skills
 
 See the [Bot Build SDK Issues tab on GitHub](https://github.com/Microsoft/BotBuilder/issues).
+-->
 
 <!-- if this isn't getting fixed, this should be in a LUIS how-to topic. -->
 
@@ -120,7 +118,7 @@ Cortana Skills currently does not provide a Smart Home Skill API. However, a cus
 
 The likely causes are as follows:
 
-* Cortana supports [SSML v1.0](https://www.w3.org/TR/speech-synthesis/) while Alexa supports some [SSML v1.1](https://www.w3.org/TR/speech-synthesis11/) tags, primarily the [w](https://www.w3.org/TR/speech-synthesis11/#edef_word) tag.
+* Cortana supports [SSML v1.0](https://www.w3.org/TR/speech-synthesis) while Alexa supports some [SSML v1.1](https://www.w3.org/TR/speech-synthesis11) tags, primarily the [w](https://www.w3.org/TR/speech-synthesis11/#edef_word) tag.
 * Alexa and Cortana support different phonetic alphabets for the phoneme tag:
   * Alexa: 
     * International Phonetic Alphabet (IPA)

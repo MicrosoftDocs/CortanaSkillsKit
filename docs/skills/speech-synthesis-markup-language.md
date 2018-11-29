@@ -1,9 +1,11 @@
 ---
 title: Speech Synthesis Markup Language (SSML) Reference
 description: Overview of the SSML schema used by Cortana.
+
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 04/4/2017
+ms.date: 09/25/2018
 ms.topic: article
+
 keywords: cortana
 ---
 
@@ -12,11 +14,11 @@ keywords: cortana
 
 SSML is an XML-based markup language that skill developers use to specify the speech text that Cortana translates to speech. Using SSML improves the quality of synthesized content over sending Cortana plain text. SSML handles normal punctuation, such as pausing after a period, or speaking a sentence that ends with a question mark as a question. However, in some cases, you may want additional control over various characteristics of synthetic speech or text-to-speech (TTS)output, including pitch, rate, volume, pronunciation, and other characteristics. 
 
-Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech Synthesis Markup Language Version 1.0](https://www.w3.org/TR/speech-synthesis/). 
+Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech Synthesis Markup Language Version 1.0](https://www.w3.org/TR/speech-synthesis). 
 
-For information about using SMML in your skill, see Add speech to messages in [Node.js](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-text-to-speech) and [.NET](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-text-to-speech).
+For information about using SMML in your skill, see Add speech to messages in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-3.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
 
-<!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](https://www.w3.org/TR/emotionml/) and []().-->
+<!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](https://www.w3.org/TR/emotionml) and []().-->
 
 <!--
 ## Using SSML in your Cortana Skill
@@ -456,8 +458,8 @@ The following are the supported content types for the `interpret-as` and `format
 | cardinal, number | | The text is spoken as a cardinal number. The speech synthesis engine pronounces:<br /><br />`There are <say-as interpret-as="cardinal">3</say-as> alternatives`<br /><br />As "There are three alternatives." |
 | characters, spell-out | | The text is spoken as individual letters (spelled out). The speech synthesis engine pronounces:<br /><br />`<say-as interpret-as="characters">test</say-as>`<br /><br />As "T E S T." |
 | date  | dmy, mdy, ymd, ydm, ym, my, md, dm, d, m, y | The text is spoken as a date. The `format` attribute specifies the date's format (*d=day, m=month, and y=year*). The speech synthesis engine pronounces:<br /><br />`Today is <say-as interpret-as="date" format="mdy">10-19-2016</say-as>`<br /><br />As "Today is October nineteenth two thousand sixteen." |
-| digits, number_digit | | The text is spoken as a sequence of indiviual digits. The speech synthesis engine pronounces:<br /><br />`<say-as interpret-as="number_digit">123456789</say-as>`<br /><br />As "1 2 3 4 5 6 7 8 9." |
-| fraction | | The text is spoken as a fractional number. The speech synthesis engine pronounces:<br /><br /> `<say-as interpret-as="fraction">3/8</say-as> of an inch`<br /><br />As "three eigths of an inch." |
+| digits, number_digit | | The text is spoken as a sequence of individual digits. The speech synthesis engine pronounces:<br /><br />`<say-as interpret-as="number_digit">123456789</say-as>`<br /><br />As "1 2 3 4 5 6 7 8 9." |
+| fraction | | The text is spoken as a fractional number. The speech synthesis engine pronounces:<br /><br /> `<say-as interpret-as="fraction">3/8</say-as> of an inch`<br /><br />As "three eighths of an inch." |
 | ordinal  | | The text is spoken as an ordinal number. The speech synthesis engine pronounces:<br /><br />`Select the <say-as interpret-as="ordinal">3rd</say-as> option`<br /><br />As "Select the third option". |
 | telephone  | | The text is spoken as a telephone number. The `format` attribute may contain digits that represent a country code. For example, "1" for the United States or "39" for Italy. The speech synthesis engine may use this information to guide its pronunciation of a phone number. The phone number may also include the country code, and if so, takes precedence over the country code in the `format`. The speech synthesis engine pronounces:<br /><br />`The number is <say-as interpret-as="telephone" format="1">(888) 555-1212</say-as>`<br /><br />As "My number is area code eight eight eight five five five one two one two." |
 | time | hms12, hms24 | The text is spoken as a time. The `format` attribute specifies whether the time is specified using a 12-hour clock (hms12) or a 24-hour clock (hms24). Use a colon to separate numbers representing hours, minutes, and seconds. The following are valid time examples: 12:35, 1:14:32, 08:15, and 02:50:45. The speech synthesis engine pronounces:<br /><br />`The train departs at <say-as interpret-as="time" format="hms12">4:00am</say-as>`<br /><br />As "The train departs at four A M." |
