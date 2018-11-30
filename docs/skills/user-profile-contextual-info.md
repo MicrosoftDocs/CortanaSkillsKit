@@ -20,7 +20,6 @@ The following table identifies the types of user profile data that you can reque
 | Entity Name | Type | Description  
 |--|-|-
 | User.SemanticLocation.Away | [Away](#Away-object) | Indicates whether the user is away from their home or work. 
-| User.Preference.Dining.Cuisine | string[] | A list of dining preferences. For example, Bar & Grill, Barbecue, Diner.
 | User.SemanticLocation.Current | [Visit](#Visit-object) | The user's current location. |
 | User.SemanticLocation.FrequentPlaces | [Hub](#Hub-object)[] | A list of places the user frequents.  
 | User.Info.Name | [Name](#Name-object)| The user's name. |
