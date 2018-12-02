@@ -14,7 +14,7 @@ keywords: cortana
 >[!NOTE]
 > Cortana Skills Kit is currently in public preview.  
 
-Cortana is a digital assistant that keeps users informed and productive, helping them get things done across devices and platforSkills define the tasks that Cortana can accomplish. Cortana invokes the skills based on spoken input from the user. You can extend Cortana by adding your own skills that let your users use Cortana to interact with your service.
+Cortana is a digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. Cortana invokes the skills based on spoken input from the user. You can extend Cortana by adding your own skills that let your users use Cortana to interact with your service.
 
 To extend Cortana, use the Cortana Skills Kit. The kit is a suite of tools that help you build skills that connect users to your custom services and solutions. 
 
