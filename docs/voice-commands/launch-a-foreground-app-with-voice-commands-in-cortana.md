@@ -109,8 +109,8 @@ Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https:/
 
   You can declare multiple [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) elements, each with a different [**xml:lang**](https://msdn.microsoft.com/library/windows/apps/dn722331) attribute so your app to be used in different markets. For example, an app for the United States might have a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) for English and a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) for Spanish.
 
-	> [!CAUTION]
-	> To activate an app and initiate an action using a voice command, the app must register a VCD file that contains a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) with a language that matches the speech language selected by the user for their device. The speech language is located in **Settings > System > Speech > Speech Language**.
+  > [!CAUTION]
+  > To activate an app and initiate an action using a voice command, the app must register a VCD file that contains a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) with a language that matches the speech language selected by the user for their device. The speech language is located in **Settings > System > Speech > Speech Language**.
 
 2. Add a **Command** element for each command you want to support.
 
@@ -120,8 +120,8 @@ Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https:/
   - An **Example** element that contains a phrase describing how a user can invoke the command. **Cortana** shows this example when the user says "What can I say?", "Help", or they tap **See more**.    
   -   A **ListenFor** element that contains the words or phrases that your app recognizes as a command. Each **ListenFor** element can contain references to one or more **PhraseList** elements that contain specific words relevant to the command.
   
-	> [!NOTE] 
-	> **ListenFor** elements cannot be programmatically modified. However, **PhraseList** elements associated with **ListenFor** elements can be programmatically modified. Applications should modify the content of the **PhraseList** at runtime based on the data set generated as the user uses the app. See [Dynamically modify Voice Command Definition (VCD) phrase lists](dynamically-modify-voice-command-definition-vcd-phrase-lists.md).
+  > [!NOTE] 
+  > **ListenFor** elements cannot be programmatically modified. However, **PhraseList** elements associated with **ListenFor** elements can be programmatically modified. Applications should modify the content of the **PhraseList** at runtime based on the data set generated as the user uses the app. See [Dynamically modify Voice Command Definition (VCD) phrase lists](dynamically-modify-voice-command-definition-vcd-phrase-lists.md).
 
   -   A **Feedback** element that contains the text for **Cortana** to display and speak as the application is launched.
 
