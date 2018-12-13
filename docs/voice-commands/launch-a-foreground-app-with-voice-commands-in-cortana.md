@@ -109,8 +109,8 @@ Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https:/
 
   You can declare multiple [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) elements, each with a different [**xml:lang**](https://msdn.microsoft.com/library/windows/apps/dn722331) attribute so your app to be used in different markets. For example, an app for the United States might have a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) for English and a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) for Spanish.
 
-	> [!CAUTION]
-	> To activate an app and initiate an action using a voice command, the app must register a VCD file that contains a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) with a language that matches the speech language selected by the user for their device. The speech language is located in **Settings > System > Speech > Speech Language**.
+> [!CAUTION]
+> To activate an app and initiate an action using a voice command, the app must register a VCD file that contains a [**CommandSet**](https://msdn.microsoft.com/library/windows/apps/dn722331) with a language that matches the speech language selected by the user for their device. The speech language is located in **Settings > System > Speech > Speech Language**.
 
 2. Add a **Command** element for each command you want to support.
 
@@ -120,10 +120,10 @@ Add a **VoiceCommands** element with an **xmlns** attribute pointing to `https:/
   - An **Example** element that contains a phrase describing how a user can invoke the command. **Cortana** shows this example when the user says "What can I say?", "Help", or they tap **See more**.    
   -   A **ListenFor** element that contains the words or phrases that your app recognizes as a command. Each **ListenFor** element can contain references to one or more **PhraseList** elements that contain specific words relevant to the command.
   
-	> [!NOTE] 
-	> **ListenFor** elements cannot be programmatically modified. However, **PhraseList** elements associated with **ListenFor** elements can be programmatically modified. Applications should modify the content of the **PhraseList** at runtime based on the data set generated as the user uses the app. See [Dynamically modify Voice Command Definition (VCD) phrase lists](dynamically-modify-voice-command-definition-vcd-phrase-lists.md).
+> [!NOTE] 
+> **ListenFor** elements cannot be programmatically modified. However, **PhraseList** elements associated with **ListenFor** elements can be programmatically modified. Applications should modify the content of the **PhraseList** at runtime based on the data set generated as the user uses the app. See [Dynamically modify Voice Command Definition (VCD) phrase lists](dynamically-modify-voice-command-definition-vcd-phrase-lists.md).
 
-  -   A **Feedback** element that contains the text for **Cortana** to display and speak as the application is launched.
+A **Feedback** element that contains the text for **Cortana** to display and speak as the application is launched.
 
 A **Navigate** element indicates that the voice command activates the app to the foreground. In this example, the ```showTripToDestination``` command is a foreground task.
 
@@ -175,69 +175,68 @@ Here's a portion of the [**VCD**](https://msdn.microsoft.com/library/windows/app
 
 ## <span id="Install_the_VCD_commands"></span><span id="install_the_vcd_commands"></span><span id="INSTALL_THE_VCD_COMMANDS"></span>Install the VCD commands
 
-
-Your app must run once to install the VCD. 
+Your app must run once to install the VCD.
 
 > [!NOTE]
 > Voice command data is not preserved across app installations. To ensure the voice command data for your app remains intact, consider initializing your VCD file each time your app is launched or activated, or maintain a setting that indicates if the VCD is currently installed.
 
 In the "app.xaml.cs" file:
 
-1. Add the following using directive:  
-	```csharp
-	using Windows.Storage;
-	```
+1. Add the following using directive:
+    ```csharp
+    using Windows.Storage;
+    ```
 2. Mark the "OnLaunched" method with the async modifier.  
-	```csharp
-	protected async override void OnLaunched(LaunchActivatedEventArgs e)
-	```
+    ```csharp
+    protected async override void OnLaunched(LaunchActivatedEventArgs e)
+    ```
 3. Call [**InstallCommandDefinitionsFromStorageFileAsync**](https://msdn.microsoft.com/library/windows/apps/dn708205) in the [**OnLaunched**](https://msdn.microsoft.com/library/windows/apps/br242335) handler to register the voice commands that the system should recognize.
 
   In the Adventure Works sample, we first define a [**StorageFile**](https://msdn.microsoft.com/library/windows/apps/br227171) object. 
 
   We then call [**GetFileAsync**](https://msdn.microsoft.com/library/windows/apps/br227272) to initialize it with our "AdventureWorksCommands.xml" file.
 
-  This [**StorageFile**](https://msdn.microsoft.com/library/windows/apps/br227171) object is then passed to [**InstallCommandDefinitionsFromStorageFileAsync**](https://msdn.microsoft.com/library/windows/apps/dn708205).    
+  This [**StorageFile**](https://msdn.microsoft.com/library/windows/apps/br227171) object is then passed to [**InstallCommandDefinitionsFromStorageFileAsync**](https://msdn.microsoft.com/library/windows/apps/dn708205).
 
-	```csharp
-	try
-	{
-	  // Install the main VCD. 
-	  StorageFile vcdStorageFile = 
-	    await Package.Current.InstalledLocation.GetFileAsync(
-	      @"AdventureWorksCommands.xml");
-	
-	  await Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager.
-	    InstallCommandDefinitionsFromStorageFileAsync(vcdStorageFile);
-	
-	  // Update phrase list.
-	  ViewModel.ViewModelLocator locator = App.Current.Resources["ViewModelLocator"] as ViewModel.ViewModelLocator;
-	  if(locator != null)
-	  {
-	     await locator.TripViewModel.UpdateDestinationPhraseList();
-	  }
-	}
-	catch (Exception ex)
-	{
-	  System.Diagnostics.Debug.WriteLine("Installing Voice Commands Failed: " + ex.ToString());
-	}
-	```
+```csharp
+try
+{
+  // Install the main VCD. 
+  StorageFile vcdStorageFile = 
+  await Package.Current.InstalledLocation.GetFileAsync(
+  @"AdventureWorksCommands.xml");
+
+  await Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager.
+InstallCommandDefinitionsFromStorageFileAsync(vcdStorageFile);
+
+  // Update phrase list.
+  ViewModel.ViewModelLocator locator = App.Current.Resources["ViewModelLocator"] as ViewModel.ViewModelLocator;
+  if(locator != null)
+  {
+     await locator.TripViewModel.UpdateDestinationPhraseList();
+  }
+}
+catch (Exception ex)
+{
+  System.Diagnostics.Debug.WriteLine("Installing Voice Commands Failed: " + ex.ToString());
+}
+```
 
 ## <span id="Handle_activation_and_execute_voice_commands"></span><span id="handle_activation_and_execute_voice_commands"></span><span id="HANDLE_ACTIVATION_AND_EXECUTE_VOICE_COMMANDS"></span>Handle activation and execute voice commands
 
 Specify how your app responds to subsequent voice command activations (after it has been launched at least once and the voice command sets have been installed).
 
-1.  Confirm that your app was activated by a voice command.
+1. Confirm that your app was activated by a voice command.
 
     Override the [**Application.OnActivated**](https://msdn.microsoft.com/library/windows/apps/br242330) event and check whether [**IActivatedEventArgs**](https://msdn.microsoft.com/library/windows/apps/br224727).[**Kind**](https://msdn.microsoft.com/library/windows/apps/br224728) is [**VoiceCommand**](https://msdn.microsoft.com/library/windows/apps/br224693).
 
-2.  Determine the name of the command and what was spoken.
+2. Determine the name of the command and what was spoken.
 
     Get a reference to a [**VoiceCommandActivatedEventArgs**](https://msdn.microsoft.com/library/windows/apps/dn609755) object from the [**IActivatedEventArgs**](https://msdn.microsoft.com/library/windows/apps/br224727) and query the [**Result**](https://msdn.microsoft.com/library/windows/apps/dn609758) property for a [**SpeechRecognitionResult**](https://msdn.microsoft.com/library/windows/apps/dn631432) object.
 
     To determine what the user said, check the value of [**Text**](https://msdn.microsoft.com/library/windows/apps/dn631441) or the semantic properties of the recognized phrase in the [**SpeechRecognitionSemanticInterpretation**](https://msdn.microsoft.com/library/windows/apps/dn631443) dictionary.
 
-3.  Take the appropriate action in your app, such as navigating to the desired page.
+3. Take the appropriate action in your app, such as navigating to the desired page.
 
 For this example, we refer back to the VCD in Step 3: Edit the VCD file.
 
@@ -249,7 +248,7 @@ You can find out whether the voice command that launched your app was actually s
 
 Use the [**SpeechRecognitionSemanticInterpretation.Properties**](https://msdn.microsoft.com/library/windows/apps/dn631445) to find out the content spoken in the **PhraseList** or **PhraseTopic** constraints of a **ListenFor** element. The dictionary key is the value of the **Label** attribute of the **PhraseList** or **PhraseTopic** element. Here, we show how to access the value of **{destination}** phrase.
 
-``` csharp
+```csharp
 /// <summary>
 /// Entry point for an application activated by some means other than normal launching. 
 /// This includes voice commands, URI, share target from another app, and so on. 
@@ -263,103 +262,103 @@ Use the [**SpeechRecognitionSemanticInterpretation.Properties**](https://msdn.mi
 /// <param name="args">Details about the activation method.</param>
 protected override void OnActivated(IActivatedEventArgs args)
 {
-	base.OnActivated(args);
+    base.OnActivated(args);
 
-	Type navigationToPageType;
-	ViewModel.TripVoiceCommand? navigationCommand = null;
+    Type navigationToPageType;
+    ViewModel.TripVoiceCommand? navigationCommand = null;
 
     // Voice command activation.
-	if (args.Kind == ActivationKind.VoiceCommand)
-	{
-		// Event args can represent many different activation types. 
+    if (args.Kind == ActivationKind.VoiceCommand)
+    {
+        // Event args can represent many different activation types. 
         // Cast it so we can get the parameters we care about out.
-		var commandArgs = args as VoiceCommandActivatedEventArgs;
+        var commandArgs = args as VoiceCommandActivatedEventArgs;
 
-		Windows.Media.SpeechRecognition.SpeechRecognitionResult speechRecognitionResult = commandArgs.Result;
+        Windows.Media.SpeechRecognition.SpeechRecognitionResult speechRecognitionResult = commandArgs.Result;
 
-		// Get the name of the voice command and the text spoken. 
+        // Get the name of the voice command and the text spoken. 
         // See VoiceCommands.xml for supported voice commands.
-		string voiceCommandName = speechRecognitionResult.RulePath[0];
-		string textSpoken = speechRecognitionResult.Text;
+        string voiceCommandName = speechRecognitionResult.RulePath[0];
+        string textSpoken = speechRecognitionResult.Text;
 
-		// commandMode indicates whether the command was entered using speech or text.
+        // commandMode indicates whether the command was entered using speech or text.
         // Apps should respect text mode by providing silent (text) feedback.
-		string commandMode = this.SemanticInterpretation("commandMode", speechRecognitionResult);
-		
-		switch (voiceCommandName)
-		{
-			case "showTripToDestination":
-				// Access the value of {destination} in the voice command.
-				string destination = this.SemanticInterpretation("destination", speechRecognitionResult);
+        string commandMode = this.SemanticInterpretation("commandMode", speechRecognitionResult);
+        
+        switch (voiceCommandName)
+        {
+            case "showTripToDestination":
+                // Access the value of {destination} in the voice command.
+                string destination = this.SemanticInterpretation("destination", speechRecognitionResult);
 
-				// Create a navigation command object to pass to the page. 
-				navigationCommand = new ViewModel.TripVoiceCommand(
-					voiceCommandName,
-					commandMode,
-					textSpoken,
-					destination);
+                // Create a navigation command object to pass to the page. 
+                navigationCommand = new ViewModel.TripVoiceCommand(
+                    voiceCommandName,
+                    commandMode,
+                    textSpoken,
+                    destination);
 
-				// Set the page to navigate to for this voice command.
-				navigationToPageType = typeof(View.TripDetails);
-				break;
-			default:
-				// If we can't determine what page to launch, go to the default entry point.
-				navigationToPageType = typeof(View.TripListView);
-				break;
-		}
-	}
-	// Protocol activation occurs when a card is clicked within Cortana (using a background task).
+                // Set the page to navigate to for this voice command.
+                navigationToPageType = typeof(View.TripDetails);
+                break;
+            default:
+                // If we can't determine what page to launch, go to the default entry point.
+                navigationToPageType = typeof(View.TripListView);
+                break;
+        }
+    }
+    // Protocol activation occurs when a card is clicked within Cortana (using a background task).
     else if (args.Kind == ActivationKind.Protocol)
-	{
-		// Extract the launch context. In this case, we're just using the destination from the phrase set (passed
-		// along in the background task inside Cortana), which makes no attempt to be unique. A unique id or 
-		// identifier is ideal for more complex scenarios. We let the destination page check if the 
-		// destination trip still exists, and navigate back to the trip list if it doesn't.
-		var commandArgs = args as ProtocolActivatedEventArgs;
-		Windows.Foundation.WwwFormUrlDecoder decoder = new Windows.Foundation.WwwFormUrlDecoder(commandArgs.Uri.Query);
-		var destination = decoder.GetFirstValueByName("LaunchContext");
+    {
+        // Extract the launch context. In this case, we're just using the destination from the phrase set (passed
+        // along in the background task inside Cortana), which makes no attempt to be unique. A unique id or 
+        // identifier is ideal for more complex scenarios. We let the destination page check if the 
+        // destination trip still exists, and navigate back to the trip list if it doesn't.
+        var commandArgs = args as ProtocolActivatedEventArgs;
+        Windows.Foundation.WwwFormUrlDecoder decoder = new Windows.Foundation.WwwFormUrlDecoder(commandArgs.Uri.Query);
+        var destination = decoder.GetFirstValueByName("LaunchContext");
 
-		navigationCommand = new ViewModel.TripVoiceCommand(
-								"protocolLaunch",
-								"text",
-								"destination",
-								destination);
+        navigationCommand = new ViewModel.TripVoiceCommand(
+                                "protocolLaunch",
+                                "text",
+                                "destination",
+                                destination);
 
-		navigationToPageType = typeof(View.TripDetails);
-	}
-	else
-	{
-		// If we were launched via any other mechanism, fall back to the main page view.
+        navigationToPageType = typeof(View.TripDetails);
+    }
+    else
+    {
+        // If we were launched via any other mechanism, fall back to the main page view.
         // Otherwise, we'll hang at a splash screen.
-		navigationToPageType = typeof(View.TripListView);
-	}
+        navigationToPageType = typeof(View.TripListView);
+    }
 
-	// Repeat the same basic initialization as OnLaunched() above, taking into account whether
-	// or not the app is already active.
-	Frame rootFrame = Window.Current.Content as Frame;
+    // Repeat the same basic initialization as OnLaunched() above, taking into account whether
+    // or not the app is already active.
+    Frame rootFrame = Window.Current.Content as Frame;
 
-	// Do not repeat app initialization when the Window already has content,
-	// just ensure that the window is active.
-	if (rootFrame == null)
-	{
-		// Create a frame to act as the navigation context and navigate to the first page.
-		rootFrame = new Frame();
-		App.NavigationService = new NavigationService(rootFrame);
+    // Do not repeat app initialization when the Window already has content,
+    // just ensure that the window is active.
+    if (rootFrame == null)
+    {
+        // Create a frame to act as the navigation context and navigate to the first page.
+        rootFrame = new Frame();
+        App.NavigationService = new NavigationService(rootFrame);
 
-		rootFrame.NavigationFailed += OnNavigationFailed;
+        rootFrame.NavigationFailed += OnNavigationFailed;
 
-		// Place the frame in the current window.
-		Window.Current.Content = rootFrame;
-	}
+        // Place the frame in the current window.
+        Window.Current.Content = rootFrame;
+    }
 
-	// Since we're expecting to always show a details page, navigate even if 
-	// a content frame is in place (unlike OnLaunched).
-	// Navigate to either the main trip list page, or if a valid voice command
-	// was provided, to the details page for that trip.
-	rootFrame.Navigate(navigationToPageType, navigationCommand);
+    // Since we're expecting to always show a details page, navigate even if 
+    // a content frame is in place (unlike OnLaunched).
+    // Navigate to either the main trip list page, or if a valid voice command
+    // was provided, to the details page for that trip.
+    rootFrame.Navigate(navigationToPageType, navigationCommand);
 
-	// Ensure the current window is active
-	Window.Current.Activate();
+    // Ensure the current window is active
+    Window.Current.Activate();
 }
 
 /// <summary>
@@ -375,7 +374,7 @@ private string SemanticInterpretation(string interpretationKey, SpeechRecognitio
 }
 ```
 
-## <span id="related_topics"></span>Related articles
+## Related articles
 
 
 **Developers**
@@ -388,4 +387,3 @@ private string SemanticInterpretation(string interpretationKey, SpeechRecognitio
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
- 
