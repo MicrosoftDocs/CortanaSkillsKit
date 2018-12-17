@@ -3,7 +3,7 @@ title: Speech Synthesis Markup Language (SSML) Reference
 description: Overview of the SSML schema used by Cortana.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 09/25/2018
+ms.date: 12/17/2018
 ms.topic: article
 
 keywords: cortana
@@ -12,11 +12,16 @@ keywords: cortana
 
 # Speech Synthesis Markup Language (SSML) reference
 
-SSML is an XML-based markup language that skill developers use to specify the speech text that Cortana translates to speech. Using SSML improves the quality of synthesized content over sending Cortana plain text. SSML handles normal punctuation, such as pausing after a period, or speaking a sentence that ends with a question mark as a question. However, in some cases, you may want additional control over various characteristics of synthetic speech or text-to-speech (TTS)output, including pitch, rate, volume, pronunciation, and other characteristics. 
+SSML is an XML-based markup language that skill developers use to specify the speech text that Cortana translates to speech. Using SSML improves the quality of synthesized content over sending Cortana plain text. SSML handles normal punctuation, such as pausing after a period, or speaking a sentence that ends with a question mark as a question. However, in some cases, you may want additional control over various characteristics of synthetic speech or text-to-speech (TTS) output, including pitch, rate, volume, pronunciation, and other characteristics. 
 
 Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech Synthesis Markup Language Version 1.0](https://www.w3.org/TR/speech-synthesis). 
 
-For information about using SMML in your skill, see Add speech to messages in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-3.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
+## Supported SSML elements
+
+For information about using SSML in your skill, see *Add speech to messages* in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-3.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
+
+> [!IMPORTANT]
+> Don't forget to use double quotes around attribute values. Standards for well-formed, valid XML require attribute values to be enclosed in double quotation marks. For example, `<prosody volume="90">` is a well-formed, valid element, but `<prosody volume=90>` is not.
 
 <!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](https://www.w3.org/TR/emotionml) and []().-->
 
@@ -37,16 +42,18 @@ Custom skills imported from Alexa can use SSML in the `outputSpeech` property of
 ```
 -->
 
-The following are the SSML elements that Cortana supports. The **speak** element is **Required.** All other elements are optional.
+These are the SSML elements that Cortana supports. The **speak** element is **required.** All other elements are optional.
 
-* [audio](#audio-Element) - Inserts recorded audio files.
-* [break](#break-Element) - Inserts pauses between words.
-* [p and s](#p-and-s-Elements) - Denotes the paragraph and sentence structure of the document.
-* [phoneme](#phoneme-Element) - Indicates the phonetic pronunciation for the contained text. Overrides the pronunciations in the lexicon, if one is specified.
-* [prosody](#prosody-Element) - Specifies the pitch, contour, range, rate, duration, and volume for speaking the element's text.
-* [say-as](#say-as-Element) - Indicates the type of text contained in the element (such as acronym, number, and date).
-* [speak](#speak-Element) - Required root element for the SSML document.
-* [sub](#sub-Element) - Specifies a string of text to pronounce in place of the text contained in the element.
+|SSML element | Required? | Summary
+|:---|:---:|:---|
+| [speak](#speak-element) | **Yes** | Required root element for the SSML document. |
+| [audio](#audio-element) | No | Inserts recorded audio files. |
+| [break](#break-element) | No | Inserts pauses between words. |
+| [p and s](#p-and-s-elements) | No | Denotes the paragraph and sentence structure of the document. |
+| [phoneme](#phoneme-element) | No | Indicates the phonetic pronunciation for the contained text. Overrides the pronunciations in the lexicon, if one is specified. |
+| [prosody](#prosody-element) | No | Specifies the pitch, contour, range, rate, duration, and volume for speaking the element's text. |
+|[say-as](#say-as-element)  | No | Indicates the type of text contained in the element (such as acronym, number, or date). |
+| [sub](#sub-element) | No | Specifies a string of text to pronounce in place of the text contained in the element. |
 
 <!--* [**emphasis**](#emphasis-Element) - Indicates the level of stress (prominence) with which the contained text is spoken. 
 <!--* [**lexicon**](#lexicon-Element) - Specifies a lexicon document that contains the pronunciations for the content of the document.
@@ -67,8 +74,42 @@ The Microsoft Text-To-Speech
 * spectrum
 * ttsmetadata-->
 
-<a name="audio-Element"></a>
-## **audio** element 
+## speak element  
+
+The root element of the SSML document. 
+
+**Syntax**
+
+```XML
+<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis" xml:lang="string"></speak>
+```
+
+**Attributes**
+
+| Attribute | Description | 
+|-----------|-------------|
+| version | **Required.** Indicates the version of the SSML specification used to interpret the document markup. The current version is 1.0. | 
+| xml:lang | **Required.** Specifies the language of the root document. The value may contain a lowercase, two-letter language code (for example, **en**), or the language code and uppercase country/region (for example, **en-US**).  |
+| xmlns | **Required.** Specifies the URI to the document that defines the markup vocabulary (the element types and attribute names) of the SSML document. The current URI is https://www.w3.org/2001/10/synthesis. |
+
+> [!NOTE]
+> Cortana only supports U.S. English (en-US). Other languages may be added later.
+
+**Usage**
+
+The `speak` element may contain only text and the following elements: `audio`, `break`, `p`, `phoneme`, `prosody`, `say-as`, `sub`, and `s`.
+
+**Example**
+     
+```XML
+<speak version="1.0"
+ xmlns="https://www.w3.org/2001/10/synthesis"
+ xml:lang="en-US">
+    This is the text that is spoken by Cortana.
+</speak>
+```
+
+## audio element 
 
 An optional element that you use to insert a recorded audio file.
 
@@ -87,8 +128,8 @@ An optional element that you use to insert a recorded audio file.
 
 **Remarks**
 
-Use this element to play an audio file. The body of the `audio` element may contain plain text or SSML markup that's spoken if the audio file is unavailable or unplayable. The body may also contain an `audio` element of another audio to play as a backup. 
- 
+Use this element to play an MP3 audio file. The body of the `audio` element may contain plain text or SSML markup that's spoken if the audio file is unavailable or unplayable. The body may also contain an `audio` element of another audio to play as a backup.
+
 The following are the requirements for audio:
 
 * The MP3 must be hosted on an Internet-accessible HTTPS endpoint. HTTPS is required, and the domain hosting the MP3 file must present a valid, trusted SSL certificate. 
@@ -97,31 +138,10 @@ The following are the requirements for audio:
 * The sample rate must be 16000 Hz.
 * The combined total time for all text and audio files in a single response cannot exceed ninety (90) seconds.
 * The MP3 must not contain any customer-specific or other sensitive information.
- 
-<!--
-These settings are from Google Home. May add support for these in the future.
-* Format: MP3 (MPEG v2)
-  * 24K samples per second
-  * 24K ~ 96K bits per second, fixed rate
-* Format: Opus in Ogg
-  * 24K samples per second (super-wideband)
-  * 24K - 96K bits per second, fixed rate
-* Format: WAV (RIFF)
-  * PCM 16-bit signed, little endian
-  * 24K samples per second
-* For all formats:
-  * Single channel is preferred, but stereo is acceptable.
-  * No more than five audio files can be used in a single response.
-  * The combined total time for all audio files in a single response cannot be more than ninety (90) seconds.
-  * 5 megabyte file size limit.
-  * Source URL must use HTTPS protocol.
-  -->
 
 **Usage**
 
 The `audio` element may contain text and the following elements: `audio`, `break`, `p`, `phoneme`, `prosody`, `say-as`, `sub`, and `s`.
-
-<!-- **emphasis**, **mark**, **voice**-->
 
 **Example**
      
@@ -136,14 +156,12 @@ The `audio` element may contain text and the following elements: `audio`, `break
         <audio src="https://example.com/beep.wav"> 
         Could not play the beep, please voice your opinion now. </audio>
     </p>
-</speak> 
+</speak>
 ```
 
+## break element
 
-<a name="break-Element"></a>
-## **break** element  
-
-An optional empty used to insert pauses between words.
+An optional element used to insert pauses between words, or to prevent pauses that the speech synthesizer automatically inserts.
 
 **Syntax**
 
@@ -177,123 +195,7 @@ Use this element to override the default behavior of text-to-speech (TTS) for a 
 </speak>
 ```
 
-<!--
-### emphasis Element  
-
-An optional element that indicates the level of stress (prominence) with which the contained text is spoken. 
-
-**Syntax**
-
-```XML
-<emphasis level="string"></emphasis>
-```
-
-**Attributes**
-
-| Attribute | Description |
-|-----------|-------------|
-| **level** | Indicates the strength of emphasis to be applied, using one of the following enumeration values:<br/><br/> •	*strong*<br/> •	*moderate* (default)<br/> •	*none*<br/> •	*reduced* |
-
-**Usage**
-
-The **emphasis** element can only contain text to be rendered and the following elements: **audio**, **break**, **emphasis**, **mark**, **phoneme**, **prosody**, **say-as**, **sub**, and **voice**.
-
-
-
-<!--
-### lexicon Element  
-
-An optional element that specifies a lexicon document that contains the pronunciations for the content of the document.
-
-**Syntax**
-
-```XML
-<lexicon uri=lexiconUri type=mediaType />
-```
-
-**Attributes**
-
-| Attribute | Description |
-|-----------|_------------|
-| **uri** | **Required.** Specifies the location of the pronunciation lexicon, which is a relative URI or an absolute URI. |
-| **type** | **Optional.** Specifies the media type of the pronunciation lexicon document. System.Speech currently supports two values. The value *application/pls+xml* indicates that the lexicon conforms to the *Pronunciation Lexicon Specification (PLS) Version 1.0 specification*. This is the preferred format to use. The value *application/vdn.ms-sapi-lex* indicates the lexicon format is "Uncompressed Lexicon", which was created by Microsoft. This is a legacy format and we recommend that you use the PLS format. |
-
-**Remarks**
-
-A pronunciation lexicon is a collection of words or phrases together with their pronunciations, which consist of letters and characters from a supported phonetic alphabet. You can use lexicons to create custom pronunciations for specialized vocabulary in your application. Pronunciations specified in an external lexicon file take precedence over the pronunciations of the speech synthesizer's internal lexicon or dictionary. However, pronunciations specified inline in prompts using the **phoneme** element take precedence over pronunciations specified in any lexicon. Inline pronunciations apply only to a single occurrence of a word. 
-
-The **lexicon** element is an immediate child of the **speak** element. Multiple **lexicon** elements can occur in an SSML document. If there are references to multiple lexicons, the order in which they are listed dictates their priority. Speech synthesis (TTS) engines use lexicons of higher priority first when determining which pronunciations to use.
-
-The pronunciation information provided by a lexicon is specific to the single language declared in the **xml:lang** attribute of the **speak** element, and is used only for content defined within the enclosing SSML document.
-
-**Note:** The **lexicon** element must occur before all other elements and text contained within the root **speak** element. There are no other ordering constraints on the elements in this specification.
-
-**Example**
-
-The following example specifies a lexicon that defines a pronunciation for an uncommon word: *whatchamacallit*. Typically, you would use the **phoneme** element to specify a pronunciation for a single occurrence of an uncommon word. However, this example demonstrates how to attach a lexicon to an SSML prompt and how the pronunciation defined in a lexicon may improve the speech synthesizer's pronunciation of an uncommon word. A custom lexicon overrides the pronunciations in the speech synthesizer's internal lexicon and applies to all occurrences of the words it defines.
-
-```XML
-<?xml version="1.0"?>
-<speak version="1.0"
-    xmlns="https://www.w3.org/2001/10/synthesis"
-    xml:lang="en-US"> 
-    <lexicon uri="https://Test/whatchamacallit.pls" type="application/pls+xml"/>  
-    Gimme the whatchamacallit.
-</speak>
-```
-
-The following are the contents of the SSML prompt file, **whatchamacallit.pls**.
-
-```XML
-<?xml version="1.0" encoding="UTF-8"?>
-<lexicon version="1.0" 
-    xmlns="https://www.w3.org/2005/01/pronunciation-lexicon"
-    alphabet="x-microsoft-ups" xml:lang="en-US">
-    <lexeme>
-        <grapheme>whatchamacallit</grapheme>
-        <phoneme>W S1 AX T CH AX M AX K S2 AA L IH T</phoneme>
-    </lexeme>
-</lexicon>
-```
-
-### mark Element  
-
-An optional element that designates a specific reference point in the text sequence. This element can also be used to mark an output audio stream for asynchronous notification.
-
-**Syntax**
-
-```XML
-<mark name="string" />
-```
-
-**Attributes**
-
-Attribute | Description 
---- | ---
-    **name** | **Required.** Identifies the name of the **mark** element. The value is a *string*.
-
-
-**Remarks**
-
-Use the empty **mark** element to insert a marker into an output stream to trigger asynchronous notification.
-
-When the application reaches the **mark** element, the text-to-speech engine raises an event that includes the value for the **name** attribute of the element. In **System.Speech**, the speech synthesizer raises a **BookmarkReached** event when it encounters a **mark** element. 
-
-The **mark** element does not affect the speech output process.
-
-**Example**
-
-```XML
-<speak>
-    <s>We guarantee that your call will be answered in less than three minutes. <mark name="beginWait" /></s>
-</speak>
-```
--->
-
-
-
-<a name="p-and-s-Element"></a>
-## **p** and **s** elements  
+## p and s elements  
 
 Optional elements that denote the paragraph or sentence structure of the document.
 
@@ -314,8 +216,6 @@ The `p` element may contain text and the following elements: `audio`, `break`, `
 
 The `s` element may contain text and the following elements: `audio`, `break`, `phoneme`, `prosody`, `say-as`, and `sub`.
 
-<!-- **emphasis**, **mark**, **voice**-->
-
 **Example**
 
 ```XML
@@ -333,10 +233,7 @@ The `s` element may contain text and the following elements: `audio`, `break`, `
 </speak>
 ```
 
-
-
-<a name="phoneme-Element"></a>
-## **phoneme** Element  
+## phoneme element  
 
 An optional element that specifies the phonetic pronunciation for the specified text using phones from a supported phonetic alphabet.
 
@@ -361,8 +258,6 @@ Phonetic alphabets are composed of phones, which consist of letters, numbers or 
 
 The `phoneme` element may contain only text (no elements). You should always include human-readable text for this element that Cortana displays when she cannot play the SSML as audio.
 
-<!-- what "text element" is it talking about? -->
-
 **Example**
 
 ```XML
@@ -373,9 +268,6 @@ The `phoneme` element may contain only text (no elements). You should always inc
 </speak>
 ```
 
-
-
-<a name="prosody-Element"></a>
 ## prosody element  
 
 An optional element that specifies the pitch, contour, range, rate, duration, and volume for speaking the element's text. 
@@ -396,9 +288,6 @@ An optional element that specifies the pitch, contour, range, rate, duration, an
 | rate  | **Optional.** Indicates the speaking rate of the text. You may express `rate` as:<ul><li>A relative value, expressed as a number that acts as a multiplier of the default. For example, a value of *1* results in no change in the rate. A value of *.5* results in a halving of the rate. A value of *3* results in a tripling of the rate.</li><li>A constant value:<ul><li>x-slow</li><li>slow</li><li>medium</li><li>fast</li><li>x-fast</li><li>default</li></ul></li></ul>
 | duration  | **Optional.** The period of time that should elapse while the speech synthesis (TTS) engine reads the text, in seconds or milliseconds. For example, *2s* or *1800ms*.
 | volume  | **Optional.** Indicates the volume level of the speaking voice. You may express the volume as:<ul><li>An absolute value, expressed as a number in the range of 0.0 to 100.0, from *quietest* to *loudest*. For example, 75. The default is 100.0.</li><li>A relative value, expressed as a number preceded by "+" or "-" that specifies an amount to change the volume. For example +10 or -5.5.</li><li>A constant value:<ul><li>silent</li><li>x-soft</li><li>soft</li><li>medium</li><li>loud</li><li>x-loud</li><li>default</li></ul></li></ul> 
-
-> [!NOTE]
-> Standards for well-formed, valid XML require attribute values to be enclosed in double quotation marks. For example, `<prosody volume="90">` is a well-formed, valid element, but `<prosody volume=90>` is not.
 
 **Remarks**
 
@@ -429,8 +318,7 @@ The `prosody` element may contain text and the following elements: `audio`, `bre
 </speak>
 ```
 
-<a name="say-as-Element"></a>
-## **say-as** element  
+## say-as element  
 
 An optional element that indicates the content type (such as number or date) of the element's text. This provides guidance to the speech synthesis engine about how to pronounce the text. 
 
@@ -483,43 +371,7 @@ The speech synthesis engine speaks the following example as "Your first request 
 </speak>
 ```
 
-<a name="speak-Element"></a>
-## **speak** element  
-
-The root element of the SSML document. 
-
-**Syntax**
-
-```XML
-<speak version="1.0" xmlns="https://www.w3.org/2001/10/synthesis" xml:lang="string"></speak>
-```
-
-**Attributes**
-
-| Attribute | Description | 
-|-----------|-------------|
-| version | **Required.** Indicates the version of the SSML specification used to interpret the document markup. The current version is 1.0. | 
-| xml:lang | **Required.** Specifies the language of the root document. The value may contain a lowercase, two-letter language code (for example, **en**), or the language code and uppercase country/region (for example, **en-US**).  |
-| xmlns | **Required.** Specifies the URI to the document that defines the markup vocabulary (the element types and attribute names) of the SSML document. The current URI is https://www.w3.org/2001/10/synthesis. |
-
-**Usage**
-
-The `speak` element may contain only text and the following elements: `audio`, `break`, `p`, `phoneme`, `prosody`, `say-as`, `sub`, and `s`.
-
-<!-- **emphasis**, **lexicon**, **mark**, **voice**-->
-
-**Example**
-     
-```XML
-<speak version="1.0"
- xmlns="https://www.w3.org/2001/10/synthesis"
- xml:lang="en-US">
-    This is the text that is spoken by Cortana.
-</speak>
-```
-
-<a name="sub-Element"></a>
-## **sub** element  
+## sub element  
 
 An optional element that specifies a string of text that is pronounced in place of the element's text.
 
@@ -537,13 +389,13 @@ An optional element that specifies a string of text that is pronounced in place 
 
 **Remarks**
 
-Before synthesizing a phrase, the text-to-speech (TTS) engine normalizes it. The normalization process converts symbols, numbers, and other non-orthographic entities into text representing the spoken value of these entities. For example, normalization converts "$1.99" into "one dollar and ninety-nine cents." 
+Before synthesizing a phrase, the text-to-speech (TTS) engine normalizes it. The normalization process converts symbols, numbers, and other non-orthographic entities into text representing the spoken value of these entities. For example, normalization converts "$1.99" into "one dollar and ninety nine cents." 
 
 Use a `sub` element to create a custom text value for any text element. Because the TTS engine processes `sub` elements before normalizing the phrase, the substitute text is normalized before being synthesized.
 
 **Usage**
 
-The `sub` element may contain only text (no elements).
+The `sub` element may contain only text. It can't contain other elements.
 
 **Example**
 
