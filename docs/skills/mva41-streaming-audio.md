@@ -10,18 +10,18 @@ keywords: cortana
 
 # Adding audio to Cortana skills
 
-Whether you are developing a Cortana skill for a device without a screen such as the Invoke speaker (a *headless device*), or a device with a screen such as a PC or mobile device, you can use a variety of audio features to enhance a user's experience. 
+Whether you are developing a Cortana skill for a headless device (a device without a screen, such as the Harman Kardon Invoke speaker), or a device with a screen (such as a PC or mobile device), you can use a variety of audio features to enhance a user's experience. 
 
 In addition to Cortana's built-in text-to-speech technology, you can:
 
-* Use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips. 
+* Use [Speech Synthesis Markup Language (SSML)](./speech-synthesis-markup-language.md) to customize speech and embed short audio clips. 
 * Use an audio card to stream audio.
 
 In [Create your first Cortana skill](./mva22-hello-world.md) and [Building conversations](./mva32-building-conversations.md) you learned how to use the basic functionality of Cortana's text-to-speech technology. In this module you'll see how to extend the **Mixtape** skill developed in [Building conversations](./mva32-building-conversations.md) to include additional audio elements.
 
 ## Step 1 - Customize how Cortana speaks
 
-You can use SSML to customize and enhance the **Mixtape** skill created in [Building conversations](./mva32-building-conversations.md). You can adjust a variety of speech attributes, including the speed at which Cortana speaks.
+In this step, you will use SSML to customize and enhance the **Mixtape** skill created in [Building conversations](./mva32-building-conversations.md). You can adjust a variety of speech attributes, including the speed at which Cortana speaks.
 
 To increase the speed at which Cortana speaks, revise the **MixtapeIntent** method in the **BasicLuisDialog.cs** module of your **Mixtape** skill as follows:
 
@@ -43,11 +43,11 @@ To increase the speed at which Cortana speaks, revise the **MixtapeIntent** meth
             context.Wait(MessageReceived);
         }
 
-SSML enables you to control a variety of speech attributes. You can use the *prosody* element to control pitch, speaking rate, and volume of speech output. For more information about SSML, see [Speech Synthesis Markup Language (SSML) reference](./speech-synthesis-markup-language.md).
+SSML enables you to control a variety of speech attributes. You can use the *prosody* element to control pitch, speaking rate, and volume of speech output. For more information, see [Speech Synthesis Markup Language (SSML) reference](./speech-synthesis-markup-language.md).
 
 ## Step 2 - Play an audio clip when a skill starts
 
-You can also use SSML to embed an audio clip in Cortana's response. For example, revise the **MixtapeIntent** method code as follows to play an audio file when the Mixtape skill starts.
+You can also use SSML to embed an MP3 audio clip in Cortana's response. For example, revise the **MixtapeIntent** method code as follows to play an audio file when the Mixtape skill starts.
 
         public async Task MixtapeIntent(IDialogContext context, LuisResult result)
         {
