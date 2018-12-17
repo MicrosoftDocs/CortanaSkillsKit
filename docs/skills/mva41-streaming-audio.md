@@ -114,4 +114,4 @@ For more information on adding audio streaming to your skill, see [Add audio str
 
 ## Step 5 - Test the revised skill
 
-As you did earlier in Step 3, you must redeploy the skill to test it. Then direct Cortana to invoke the skill using an invocation such as, "Ask Mixtape to play me a song." Cortana responds with the text you specified in the **PlaySongIntent** method and streams the *song.mp3* audio file.
+As you did earlier in step 3, you must redeploy the skill to test it. After it's redeployed, direct Cortana to invoke the skill using an invocation such as, "Ask Mixtape to play me a song." Cortana responds with the text you specified in the **PlaySongIntent** method and streams the *song.mp3* audio file.
