@@ -3,7 +3,7 @@ title: Getting started with Cortana skills
 description: Shows how to create a bot-based Skill.
 
 ms.assetid: d9cc74a2-af6d-452f-bd71-42fe27a5c673
-ms.date: 10/12/2018
+ms.date: 12/21/2018
 
 keywords: cortana
 --- 
@@ -35,8 +35,6 @@ These are the Bot Framework topics that contain the information that you need to
 
 
 At this point, if you followed the steps in **Create a bot**, **Deploy a bot**, and **Add speech to your bot**, you successfully ran your skill in Bot Framework emulator. To run your skill locally in Cortana, you need to perform a couple of more steps. First, [register](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration?view=azure-bot-service-3.0) your bot to get your app ID and password. Then, [connect](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0) your skill to Configure Cortana channel. For this exercise, specify only the configuration settings listed under **General bot information**.
-
-<!-- i hate duplicating work, but it may be useful to include a Hello, world example so they don't have to piece the example together from the two topics. -->
 
 Configuring the Cortana channel adds your skill to Cortana on your computer. To ensure the skill has been added, visit the [My Bot List Configured for Cortana](https://dev.botframework.com/bots?c=cortana) page. You must sign into Bot Framework using the same Microsoft account that you used to register your Cortana Skill in Azure.  
 For information about specifying an invocation name, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
