@@ -1,5 +1,5 @@
 ---
-title: Creating a Cortana Skill
+title: Getting started with Cortana skills
 description: Shows how to create a bot-based Skill.
 
 ms.assetid: d9cc74a2-af6d-452f-bd71-42fe27a5c673
@@ -8,7 +8,7 @@ ms.date: 10/12/2018
 keywords: cortana
 --- 
 
-# Create Your First Cortana Skill
+# Create your first Cortana skill
 
 To create a skill, use [Bot Framework](https://docs.microsoft.com/bot-framework) to create a speech bot. The framework provides a .NET SDK and Node.js SDK that you use to build your bot.  
 
@@ -17,14 +17,14 @@ To create a skill, use [Bot Framework](https://docs.microsoft.com/bot-framework)
 
 The following are the Bot Framework topics that contain the information that you need to build and deploy your first skill. 
 
-## Use the Online Editor to Create Your Cortana Skill  
+## Use the online editor to create your Cortana skill  
 
 | Topic | Description |  
 |:--- |:--- |  
-| [Tutorial to Create your Cortana skill](./mva22-hello-world.md) | Tutorial to quickly build a bot for your Cortana Skill. |  
-| [My bots List Configured for Cortana](https://dev.botframework.com/bots?c=cortana) | View or create  bots for your Cortana Skill. |  
+| [Tutorial to create your Cortana skill](./mva22-hello-world.md) | Tutorial to quickly build a bot for your Cortana Skill. |  
+| [My bots List configured for Cortana](https://dev.botframework.com/bots?c=cortana) | View or create  bots for your Cortana Skill. |  
 
-## Use Visual Studio to Create Your Cortana Skill  
+## Use Visual Studio to create your Cortana skill  
 
 | Topic | Description |  
 |:--- |:--- | 
