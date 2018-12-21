@@ -19,7 +19,7 @@ keywords: cortana
 
 Cortana can send the user's profile and contextual information as part of the message that it sends your skill. You can use this information to provide a custom experience for the user.
 
-User profile information is data that the user provided to Cortana that's stored in Cortana's Notebook. Cortana passes this information to your skill if it's available, and if the user has provided explicit consent to share this information with your skill. _The skill must have a valid reason to use profile information in order to pass certification._ See [the review guidelines](https://docs.microsoft.com/cortana/skills/skill-review-guidelines) for more details.
+User profile information is data that the user provided to Cortana that's stored in Cortana's Notebook. Cortana passes this information to your skill if it's available, and if the user has provided explicit consent to share this information with your skill. _Your skill must have a valid reason to use profile information in order to pass certification._ See [the review guidelines](https://docs.microsoft.com/cortana/skills/skill-review-guidelines) for more details.
 
 User contextual information is information that Cortana has about the user, such as their location.
 
@@ -56,10 +56,10 @@ if (activity.Entities != null)
 }
 ```
 
-The following example shows the same implementation using Node.js.
+The following example shows the same implementation using JavaScript.
 
 ```javascript
-if(session.message && session.message.entities){
+if (session.message && session.message.entities){
     var userInfo = session.message.entities.find((e) => {
         return e.type === 'UserInfo';
     });
