@@ -484,7 +484,7 @@ For performance design considerations, including Azure services, see [Performanc
 
 For guidance on creating invocation names, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
 
-When you publish your skill to the world, the Cortana team reviews your skill to make sure it complies with the design principles in addition to a few other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish your skill. See the [Cortana skills certification requirements](./skill-review-guidelines.md)).
+When you publish your skill to the world, the Cortana team reviews your skill to make sure it complies with the design principles, in addition to other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish your skill. See the [Cortana skills certification requirements](./skill-review-guidelines.md)).
 
 <!-- Think about including the bot framework's design principles 
 
