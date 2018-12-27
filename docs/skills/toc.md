@@ -5,6 +5,7 @@
 
 ## Quickstarts  
 ### [Create your first skill](./get-started.md)  
+### [Adding speech](./adding-speech.md)  
 ### [Add MSA authentication](./configure-connected-account.md)  
 
 ## Skills design  
