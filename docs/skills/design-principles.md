@@ -324,7 +324,7 @@ Cortana: Am I right with Seattle?
 Your design should include help prompts, especially for critical areas of your skill. If the user asks for help, you should list the skill's capabilities and options for that specific area.
 
 > **User**: Book me a hotel in Seattle.<br/>
-> **Cortana**: Which date do you want to check-in in Seattle?<br/>
+> **Cortana**: Which date do you want to check in in Seattle?<br/>
 > **User**: April first.<br/>
 > **Cortana**: What amenities would you like?<br/>
 > **User**: Help.<br/>
@@ -337,9 +337,9 @@ Use default values when the user is not specific. For example, if the user says,
 
 ### Identifying the skill when invoked
 
-If the user invokes your skill without including an utterance, you should identify your skill and display your help content or ask them what they want to do with leading questions.
+If the user invokes your skill without including an utterance, you should identify your skill and display your help content, or ask them what they want to do with leading questions.
 
-> **Good**: Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles- or *Used miles*.<br/>
+> **Good**: Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles* or *Used miles*.<br/>
 > **Bad**: What can I do for you?
 
 ### Break lists into manageable pieces
@@ -368,12 +368,12 @@ If you're porting a text-based app to voice, you likely need to change the desig
 
 Although the goal is to design your skill for voice only, for some skills that's not practical. There are times when displaying visual elements to support the information that your skill speaks is required. For example, if the user asks for recipes, displaying pictures of the prepared food with links to the recipe can be a better experience than trying to describe each recipe with voice only. Visual elements should not be required to communicate the intent, they should only support the intent.
 
-Things to consider when designing the visual elements: 
+Things to consider when designing visual elements:
 
 - How can the visual elements enhance the voice experience and assist the user?  
-- Don’t overload the card experience with unnecessary information. For example, avoid using too many images, unnecessary text, or too many cards.  
+- Don’t overload the visual experience with unnecessary information. For example, avoid using too many images, unnecessary text, or too many cards.
 
-- Keep tasks glanceable. The skill must allow users to multi-task with minimal visual attention. Consider every piece of information on the canvas and eliminate anything that is not required.
+- Keep tasks glanceable. The skill must allow users to multitask with minimal visual attention. Consider every piece of information on the card canvas and eliminate anything that is not required.
 
 ### Adding visual elements to your skill
 
@@ -416,7 +416,7 @@ Limiting the title to 84 characters keeps the title to two lines or less. Having
 
 **Create brief but meaningful responses**
 
-When possible, create brief but meaningful responses with a bias towards text-based answers that are glanceable. Make cards crisp, clear, and actionable.
+When possible, create brief but meaningful responses with a bias toward text-based answers that are glanceable. Make cards crisp, clear, and actionable.
 
 **Try to fit your content within the height of Cortana's canvas**
 
@@ -434,11 +434,11 @@ Cards are meant to provide additional information beyond what the skill speaks. 
 
 **Direct users to a screen only when needed**
 
-Some users use Cortana on speaker-only devices and can't see a card. If the user needs to see a card, direct them to Cortana's companion app. However, try to do this sparingly. Ideally, a user should be able to use your skill on any supported device regardless of whether it has a screen, without having to use a secondary device. An exception is when the user has to sign in to your skill or provide private information. Other than the sign-in card, cards are read-only on speaker devices.
+Some users use Cortana on speaker-only devices and can't see a card. If the user needs to see a card, direct them to Cortana's companion app. Try to do this sparingly. Ideally, a user should be able to use your skill on any supported device, regardless of whether it has a screen, without having to use a secondary device. An exception is when the user has to sign in to your skill or provide private information. Other than the sign-in card, cards are read-only on speaker devices.
 
 The following scenario shows a cooking skill that provides a list of ingredients.
 
-> **Good**: This recipe has five ingredients. Here are the first three. Two eggs, a cup of flour, and a half a cup of water. Say *next- for the rest of the ingredients.<br/>
+> **Good**: This recipe has five ingredients. Here are the first three. Two eggs, a cup of flour, and a half a cup of water. Say *next* for the rest of the ingredients.<br/>
 > **Bad**: Open the companion app to see the list of ingredients.
 
 Note that the time between user utterances is limited. On a speaker-only device,if a timeout occurs, the skill ends. On a Windows device, the skill is still active, but the microphone turns off. <!-- For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.-->
@@ -447,11 +447,11 @@ Note that the time between user utterances is limited. On a speaker-only device,
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
-#### Speaker-only device:  
-  - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors; red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.  
+#### Speaker-only device:
+  - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
 
 #### Device with screen: 
-  - **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty.
+  - **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
   - **Card**: Show an image and additional details such as sizes/dimensions and color options.
 
 The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
