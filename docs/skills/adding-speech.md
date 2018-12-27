@@ -56,6 +56,7 @@ You can find how-to documentation [on adding speech here](https://docs.microsoft
 
 ## Input Hints ##
 Cortana requires a hint as to whether or not to open the mic to have a conversation. The resulting behavior depends on the type of device (for example, a device with a screen like a Windows 10 device or a headless device like an Invoke speaker.)
+
 | Hint | Has Display | No Display |
 | --- | --- | --- |
 | `acceptingInput` (default)| Passively waits for input on the conversation. | Closes the conversation. |
