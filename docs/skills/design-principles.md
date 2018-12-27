@@ -15,23 +15,23 @@ The Cortana Skills Kit enables developers to create compelling experiences that 
 
 These are some cases when it makes sense to create a skill.
 
-- **When using voice is an easier and more natural way to interact**
+- **When using voice is an easier and more natural way to interact**<br/>
   If the user has a disability that makes it difficult to type, or to read.
   
   If the user is on a device that's hard to type on, such as a phone, tablet, or Xbox.
 
-  If the user needs to share content or set a reminder, it's easier to say, "Share that with John" or "Remind me to pick up Jessie".  
+  When the user needs to share content or set a reminder, it's easier to say, "Share that with John" or "Remind me to pick up Jessie".  
 
-- **When the user's hands are busy**
+- **When the user's hands are busy**<br/>
   If the user is cooking, they can ask, "Was that one tablespoon or one teaspoon of salt?"
 
-- **When using voice is a more efficient experience**
+- **When using voice is a more efficient experience**<br/>
   If using voice reduces the number of steps required to do something. For example, saying "Play the latest House of Cards" is much easier than opening up an app, searching for "House of Cards", finding the latest episode, and pressing play.  
   
-- **When using voice assists with multitasking**
+- **When using voice assists with multitasking**<br/>
   If you can use your voice to do things like read and reply to incoming messages or control music while you're writing a document.  
 
-- **When the user is driving, walking, or is otherwise distracted**
+- **When the user is driving, walking, or is otherwise distracted**<br/>
   If the user is driving or walking, it is easier and safer to use voice than to navigate while using a device.
 
 <!--
@@ -73,11 +73,11 @@ If you decide that building a skill makes sense, here are some questions to keep
 - Will the design solve the user’s problem better, faster, or more easily than any of the alternative experiences?
 - Is the design intuitive? Will users naturally know what to say when using it?
 - Does the design avoid complexity?
-- Does the design use default values when the user is not specific?
+- Can the design use default values when the user is not specific?
 
-A great user experience does not require users to talk too much, repeat themselves, or explain things that the skill should automatically know.
+A great user experience doesn't require users to talk too much, repeat themselves, or explain things that the skill should automatically know.
 
-## Design for the most common scenario
+## Design for the right scenario
 
 Define the key scenarios you want your skill to target.
 - What are the high value scenarios? <!-- This used to include "and metrics" for some reason. (dt) -->
@@ -98,7 +98,7 @@ Next, design a conversation that sounds natural and is intuitive. Think about:
 - What questions will the user likely ask?
 - How will the skill reply to the user's questions?
 - What information is absolutely required? What's optional?
-- Is there anything Cortana can infer or remember from prior interactions in this session?
+- Is there anything Cortana can infer or remember from prior interactions in this session to use as defaults?
 - Which answers should you confirm before taking any action? What kind of confirmation should you use?
 - What actions might the conversation trigger on your backend service?
 - Will the skill need a directed dialogue?
@@ -110,7 +110,13 @@ Role play conversations to make sure they're natural and intuitive. Just like in
 
 ## Identify the intents, entities, and utterances  
 
-The conversational design process should identify utterances, intents, and entities. Utterances are input from the user that your app needs to interpret. Intents are the actions that the user wants to perform. Entities are the data required to perform the action. For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM on Friday," Cortana understands that the user wants to use a skill called *My Travel Agent*. She passes the utterance to the app, which needs to figure out that the intent is to book a flight, and that *New York*, *6:00 PM*, and *Friday* are entities.  
+The conversational design process should identify utterances, intents, and entities.
+
+- **Utterances** are input from the user that your app needs to interpret (whether voiced or typed).
+- **Intents** are the actions that the user wants to perform.
+- **Entities** are the data required to perform the action.
+
+For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM on Friday," Cortana understands that the user wants to use a skill called *My Travel Agent*. She passes the utterance to the app, which needs to figure out that the intent is to book a flight, and that *New York*, *6:00 PM*, and *Friday* are entities.  
 
 Intents fall into the following categories.  
 - [Full intent](#full-intent)  
@@ -125,7 +131,7 @@ For example:
 
 > **User**: Hey Cortana, ask Mileage Wizard if I have enough miles to travel.<br/>
 > **Mileage Wizard**: You currently have 30,000 miles. This is enough to travel
-domestically but not internationally. Would you like to purchase
+domestically, but not internationally. Would you like to purchase
 additional miles, or book a domestic trip?
 
 Because there are many ways to express the same intent, you need to develop as many variations of the intent as possible when you model your intents.
@@ -168,17 +174,17 @@ Because entities describe information that's relevant to the intent, it's import
 
 ## Asking users questions
 
-All interactions with the user should use a conversational tone whether spoken or written.
+All interactions with the user should use a conversational tone, whether spoken or written.
 
 - **Be conversational.** Interact in the same way that people speak. Don’t emphasize grammatical accuracy over sounding natural. For example, ear-friendly verbal shortcuts like "wanna" or "gotta" are fine for text-to-speech (TTS).  
   
-  - Use the implied first-person tense where possible and natural. For example, "Looking for your next Adventure Works trip" implies that someone is doing the looking, but does not use the word "I" to specify.   
-    
+  - Use the implied first-person tense where possible and natural. For example, "Looking for your next Adventure Works trip" implies that someone is doing the looking, but does not use the word "I" to specify.
+
   - Use contractions for more natural interactions and to save space on Cortana's canvas. For example, "I can’t find that movie" instead of "I was unable to find that movie." Write for the ear, not the eye.  
 
-- **Use variations.** Use variation to help make the app sound more natural. When repeating a question, ask it differently the second time. For example, a variation of "What movie do you wanna see?" might be "What movie would you like to watch?"
+- **Use variations.** Vary your responses to help make the app sound more natural. For example, when repeating a question, ask it differently the second time. A variation of "What movie do you wanna see?" might be "What movie would you like to watch?"
 
-- **Use phrases like "OK" and "All right" in responses with restraint.** While they provide acknowledgment and a sense of progress, they can also get repetitive if used too often and without variation. Use acknowledgment phrases in TTS only. Given the limited space on Cortana's canvas, don't write acknowledgments to the canvas.
+- **Use phrases like "OK" and "All right" in responses with restraint.** While they provide acknowledgment and a sense of progress, they can also get repetitive if used too often and without variation. Use acknowledgment phrases in TTS only. Given the limited space on Cortana's canvas, it's best not to write acknowledgments to the canvas.
 
 <!--
 If you add this one, you need the list of what she understands.
@@ -190,10 +196,10 @@ Your interactions should be efficient, relevant, clear, and trustworthy.
 
 | Principle | Good example | Bad example |
 |-|-|-
-| **Efficient** <br/> Use as few words as possible, and put the most important information up front. | Sure, what movie do you want to watch? | Sure, can do, we have a large collection. What movie would you like to search for today? |
-| **Relevant** <br/> Provide information pertinent to the task, content, and context. | I’ve added it to your playlist. | I’ve added it to your playlist. Just so you know, your battery is getting low. |
-| **Clear** <br/> Avoid ambiguity. Use everyday language instead of technical jargon. | I couldn’t find any trips to Las Vegas. | No results for query 'trips to Las Vegas'. |
-| **Trustworthy** <br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalogue. | I couldn’t find that movie, it must not have been released yet. |
+| **Efficient**<br/> Use as few words as possible, and put the most important information up front. | Sure, what movie do you want to watch? | Sure, can do, we have a large collection. What movie would you like to search for today? |
+| **Relevant**<br/> Provide information pertinent to the task, content, and context. | I’ve added it to your playlist. | I’ve added it to your playlist. Just so you know, your battery is getting low. |
+| **Clear**<br/> Avoid ambiguity. Use everyday language instead of technical jargon. | I couldn’t find any trips to Las Vegas. | No results for query 'trips to Las Vegas'. |
+| **Trustworthy**<br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalogue. | I couldn’t find that movie, it must not have been released yet. |
 
 ### Presenting options
 
@@ -205,11 +211,11 @@ When presenting options to the user, ask in a way that makes it clear to the use
 
 > **Cortana**: What type of directions would you like, walking or driving?
 
-Because users can't quickly scan and skip voice content like they can in a visual interface, it is important to keep your questions simple and concise.
+Because users can't quickly scan and skip voice content like they can in a visual interface, it's important to keep your questions simple and concise.
 
 ### Asking questions with directed or open prompts
 
-You can ask users questions using either a directed prompt or an open prompt. A **directed prompt** lists specific choices for the user. For example, "Please select cheese, pepperoni, or sausage." Directed prompts often minimize user confusion. An **open prompt** lets the user provide their own choice. For example, "Which movie would you like?" Open prompts are best used if users are familiar with the choices.
+You can ask users questions using either a directed prompt or an open prompt. A **directed prompt** lists specific choices for the user. For example, "Please select cheese, pepperoni, or sausage." Directed prompts often minimize user confusion. An **open prompt** lets the user provide their own choice. For example, "Which movie would you like?" Open prompts are best used if users are familiar with the choices, either because they're obvious, or because you've just provided a list.
 
 When choosing between directed and open prompts, also consider the number of options that you present to the user and how likely it is that the options will change.
 
@@ -228,21 +234,21 @@ If the list of options is long (for example, a list of stock investments) or var
 > **Cortana**: Please say a stock name. For example, say Microsoft.
 
    >[!NOTE]
-   > *Headless- devices (like speakers) will re-prompt with the last message sent if there is no input. After a re-prompt, if there is no input, the conversation is ended. Good interactive dialogues should wait on a prompt.
+   > Headless devices (devices with no display, like speakers) should re-prompt with the last message sent if there is no input. After a re-prompt, if there is no input, the conversation is ended. Good interactive dialogues should wait on a prompt.
 
 ## Confirming a user's answer
 
 A confirmation is an acknowledgement that your skill heard the user's response. For example:
 
-> **Cortana:** Where do you want to fly to?<br/>
-> **User:** Paris<br/>
+> **Cortana:** Where do you want to fly?<br/>
+> **User:** Paris.<br/>
 > **Cortana:** Which date do you want to leave for Paris?
 
 Think about where in the conversation flow the users need confirmations. Recognizing speech from a telephone is not perfect, particularly under noisy conditions. In addition, when skills are used in a standalone speaker, you only have one channel of communication with the user. An effective confirmation and correction strategy helps with these issues.
 
 A good voice-based skill uses a variety of techniques for confirmation and correction. The techniques depend on the style of the skill, the importance of the action being performed, the cost of misunderstanding, and the need for a natural dialog.
 
-For example, a dialogue that follows each question with a confirmation, such as "Did you say X?", is slow and potentially frustrating. Conversely, a dialogue that employs no confirmation and, based on a mis-recognized command, deletes data without first checking with the user, is equally frustrating. You need to strike a balance between efficient interaction with the skill, and protection from lost data or wasted time.
+For example, a dialogue that follows each question with a confirmation, such as "Did you say X?", is slow and potentially frustrating. Conversely, a dialogue that employs no confirmation and, based on a mis-recognized command, deletes data without confirmation from the user, is equally frustrating. You need to strike a balance between efficient interaction with the skill, and protection from lost data or wasted time.
 
 In many cases, the cost of mis-recognition is so low that confirmation is not warranted. In other cases, explicit confirmation is always required, regardless of the skill's confidence in the user's utterance.
 
@@ -253,13 +259,13 @@ There are different confirmation strategies you can use.
 
 ### Explicit confirmation
 
-Explicit confirmation is the most basic form of confirmation. It also slows the conversation flow because it introduces an extra prompt to explicitly confirm information that the user provided. Use explicit confirmation for situations where the cost of a misunderstanding is high. For example, in a flight booking application, the application must understand the cities that the user wishes to fly between. The following shows an explicit confirmation interaction.
+Explicit confirmation is the most basic form of confirmation. It slows the conversation flow because it introduces an extra prompt to explicitly confirm information that the user provided. Use explicit confirmation for situations where the cost of a misunderstanding is high. For example, a banking skill must understand dollar amounts that the user speaks. The following shows an explicit confirmation interaction.
 
-> **Cortana**: Where are you flying from?<br/>
-> **User**: Seattle.<br/>
-> **Cortana**: Did you say Seattle?<br/>
+> **Cortana**: How much did you want to transfer?<br/>
+> **User**: A thousand dollars.<br/>
+> **Cortana**: Did you say one thousand dollars?<br/>
 > **User**: Yes.<br/>
-> **Cortana**: Which date do you want to leave?<br/>
+> **Cortana**: OK. I've started the transfer.<br/>
 
 ### Implicit confirmation
 
@@ -279,7 +285,7 @@ If the user answers this question with a date, then the answer implies that Seat
 > **User**: No, Vancouver.<br/>
 > **Cortana**: Flying from Vancouver. Which date?<br/>
 
-Answering with a simple yes does not answer this kind of question. 
+Answering with a simple yes or no does not answer this kind of question. 
 
 <!--
 Removed per Dorrene
