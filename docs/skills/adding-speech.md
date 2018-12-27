@@ -55,10 +55,15 @@ or [javascript](https://docs.botframework.com/node/builder/chat-reference/module
 You can find how-to documentation [on adding speech here](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
 
 ## Input Hints ##
+Cortana requires a hint as to whether or not to open the mic to have a conversation. The resulting behavior depends on the type of device (for example, a device with a screen like a Windows 10 device or a headless device like an Invoke speaker.)
 | Hint | Has Display | No Display |
 | --- | --- | --- |
 | `acceptingInput` (default)| Passively waits for input on the conversation. | Closes the conversation. |
 | `expectingDefault` | Opens the mic and actively waits for input. Timeout closes mic and Cortana passively waits for input. | Reprompts once before closing the conversation |
 | `ignoringInput`| Proceeds to the next step (until a turn uses expecting or accepting input). | Closes the conversation. |
+
+> [!NOTE]
+> You can modify your skills behavior based on device type by looking at `deviceInfo` documented [here](https://docs.microsoft.com/cortana/skills/cortana-device-type).
+> 
 
 You can find how-to documentation [on specifying input hints here](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-3.0).
