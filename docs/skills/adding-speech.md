@@ -17,7 +17,7 @@ Bot Service bots do not speak by default, so you need to make minor modification
 ## Add Speech to Bot Service (V4) bots ##
 
 On a `turn` you have two forms of `sendActivityAsync`: the first method takes an activity (message), and the second takes optional named
-arguments 'speak' and 'inputHint'.
+arguments `speak` and `inputHint`.
 
 ```csharp
    var message = turnContext.Activity.CreateReply();
