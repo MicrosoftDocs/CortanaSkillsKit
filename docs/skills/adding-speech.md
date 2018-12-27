@@ -31,8 +31,8 @@ OR
    await turnContext.SendActivityAsync( "This is displayed", speak: "This is spoken", inputHint: "expectingInput" );
 ```
 
-Find the Bot Service V4 reference documentation here: [C#](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
-or [javascript](https://docs.microsoft.com/en-us/javascript/api/botbuilder-core/turncontext#sendactivity).
+Find the Bot Service V4 reference documentation here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
+or [javascript](https://docs.microsoft.com/javascript/api/botbuilder-core/turncontext#sendactivity).
 
 ## Add Speech to Bot Framework (V3) bots ##
 
@@ -50,5 +50,15 @@ OR
 > `SayAsync` has been deprecated in V4 of Bot Service: use the optional, named arguments for `SendActivityAsync`.
 > 
 
-Find the Botframework V3 reference documentation here: [C#](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.conversationsextensions.sendtoconversationasync?view=botbuilder-dotnet-3.0)
-or [javascript](https://docs.botframework.com/en-us/node/builder/chat-reference/modules/_botbuilder_d_.html).
+Find the Botframework V3 reference documentation here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.conversationsextensions.sendtoconversationasync?view=botbuilder-dotnet-3.0)
+or [javascript](https://docs.botframework.com/node/builder/chat-reference/modules/_botbuilder_d_.html).
+You can find how-to documentation [on adding speech here](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
+
+## Input Hints ##
+| Hint | Has Display | No Display |
+| --- | --- | --- |
+| `acceptingInput` (default)| Passively waits for input on the conversation. | Closes the conversation. |
+| `expectingDefault` | Opens the mic and actively waits for input. Timeout closes mic and Cortana passively waits for input. | Reprompts once before closing the conversation |
+| `ignoringInput`| Proceeds to the next step (until a turn uses expecting or accepting input). | Closes the conversation. |
+
+You can find how-to documentation [on specifying input hints here](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-3.0).
