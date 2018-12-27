@@ -3,7 +3,7 @@ title: Add speech
 description: Learn how to add speech to your bot-based skill.
 label: Conceptual
 ms.assetid: 
-ms.date: 12/273/2018
+ms.date: 12/27/2018
 ms.topic: article
 
 keywords: cortana
@@ -44,10 +44,10 @@ or [javascript](https://docs.microsoft.com/en-us/javascript/api/botbuilder-core/
 ```
 OR
 ```csharp
-   await context.SayAsync(text: "This is displayed!", "This is spoken");
+   await context.SayAsync(text: "This is displayed", "This is spoken");
 ```
 > [!NOTE]
-> SayAsync has been deprecated in V4 of Bot Service.
+> `SayAsync` has been deprecated in V4 of Bot Service: use the optional, named arguments for `SendActivityAsync`.
 > 
 
 Find the Botframework V3 reference documentation here: [C#](https://docs.microsoft.com/en-us/dotnet/api/microsoft.bot.connector.conversationsextensions.sendtoconversationasync?view=botbuilder-dotnet-3.0)
