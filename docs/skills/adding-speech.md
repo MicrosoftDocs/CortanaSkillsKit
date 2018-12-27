@@ -1,4 +1,4 @@
-﻿---
+---
 title: Add speech
 description: Learn how to add speech to your bot-based skill.
 label: Conceptual
@@ -9,10 +9,8 @@ ms.topic: article
 keywords: cortana
 ---
 # Add speech to your Cortana skill #
-The Cortana channel will speak the message or response sent from the skill to the channel if the _speak_ property is set on the message.
-Bot Service bots do not speak by default, so you need to make minor modifications to get Cortana to speak!
-
-
+The Cortana channel will speak the message or response sent from the skill to the channel if the `speak` property is set on the message.
+Bot Service bots do not speak by default, so you need to make minor modifications to get Cortana to speak.
 
 ## Add Speech to Bot Service (V4) bots ##
 
@@ -32,7 +30,7 @@ OR
 ```
 
 Find the Bot Service V4 reference documentation here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
-or [javascript](https://docs.microsoft.com/javascript/api/botbuilder-core/turncontext#sendactivity).
+or [JavaScript](https://docs.microsoft.com/JavaScript/api/botbuilder-core/turncontext#sendactivity).
 
 ## Add Speech to Bot Framework (V3) bots ##
 
@@ -47,15 +45,15 @@ OR
    await context.SayAsync(text: "This is displayed", "This is spoken");
 ```
 > [!NOTE]
-> `SayAsync` has been deprecated in V4 of Bot Service: use the optional, named arguments for `SendActivityAsync`.
+> `SayAsync` has been deprecated in V4 of Bot Service: use the optional named arguments for `SendActivityAsync`.
 > 
 
 Find the Botframework V3 reference documentation here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.connector.conversationsextensions.sendtoconversationasync?view=botbuilder-dotnet-3.0)
-or [javascript](https://docs.botframework.com/node/builder/chat-reference/modules/_botbuilder_d_.html).
-You can find how-to documentation [on adding speech here](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
+or [JavaScript](https://docs.botframework.com/node/builder/chat-reference/modules/_botbuilder_d_.html).
+You can find how-to documentation on adding speech in the [Add speech to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0) page.
 
 ## Input Hints ##
-Cortana requires a hint as to whether or not to open the mic to have a conversation. The resulting behavior depends on the type of device (for example, a device with a screen like a Windows 10 device or a headless device like an Invoke speaker.)
+Cortana requires a hint as to whether or not to open the microphone to have a conversation. The resulting behavior depends on the type of device. A device with a screen (like a Windows 10 device) will behave differently than a headless device (like an Invoke speaker).
 
 | Hint | Has Display | No Display |
 | --- | --- | --- |
@@ -63,8 +61,6 @@ Cortana requires a hint as to whether or not to open the mic to have a conversat
 | `expectingDefault` | Opens the mic and actively waits for input. Timeout closes mic and Cortana passively waits for input. | Reprompts once before closing the conversation |
 | `ignoringInput`| Proceeds to the next step (until a turn specifies expecting or accepting input). | Closes the conversation. |
 
-> [!NOTE]
-> You can modify your skills behavior based on device type by looking at `deviceInfo` documented [here](https://docs.microsoft.com/cortana/skills/cortana-device-type).
-> 
+Use `deviceInfo` to modify your skill's behavior based on device type, documented in the [Determine Cortana's device type](https://docs.microsoft.com/cortana/skills/cortana-device-type) section.
 
-You can find how-to documentation [on specifying input hints here](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-3.0).
+You can find how-to documentation on specifying input hints in the [Add input hints to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-3.0) page.
