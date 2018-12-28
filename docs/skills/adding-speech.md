@@ -42,7 +42,7 @@ or [JavaScript](https://docs.microsoft.com/JavaScript/api/botbuilder-core/turnco
 ```
 OR
 ```csharp
-   await context.SayAsync(text: "This is displayed", "This is spoken");
+   await context.SayAsync( "This is displayed", "This is spoken" );
 ```
 > [!NOTE]
 > `SayAsync` has been deprecated in V4 of Bot Service: use the optional named arguments for `SendActivityAsync`.
@@ -53,7 +53,7 @@ or [JavaScript](https://docs.botframework.com/node/builder/chat-reference/module
 You can find how-to documentation on adding speech in the [Add speech to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0) page.
 
 ## Input Hints ##
-Cortana requires a hint as to whether or not to open the microphone to have a conversation. The resulting behavior depends on the type of device. A device with a screen (like a Windows 10 device) will behave differently than a headless device (like an Invoke speaker).
+Cortana requires a hint as to whether or not to open the microphone to have a conversation. The resulting behavior depends on the type of device. A device with a screen (like a Windows 10 device) behaves differently from a headless device (like an Invoke speaker).
 
 | Hint | Has Display | No Display |
 | --- | --- | --- |
