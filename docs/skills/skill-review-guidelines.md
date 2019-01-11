@@ -92,10 +92,6 @@ Invocation names and skill names (titles) should not consist of proper nouns, na
 
 Your skill must not jeopardize or compromise user security, or the security or functionality of Cortana services, the device the Cortana services are offered on, system, or related systems.
 
-### Secular
-
-Your skill must not jeopardize or compromise user security, or the security or functionality of Cortana services, the device the Cortana services are offered on, system, or related systems.
-
 #### 2.2.1 
 
 Your skill must not attempt to change or extend the described functionality through any form of dynamic inclusion of code that is in violation of Cortana Skills Kit Review Guidelines. For example, your skill’s associated service should not prompt a user to download a remote executable and subsequently execute that executable in a manner that is not consistent with the described functionality of your skill.
