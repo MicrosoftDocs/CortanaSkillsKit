@@ -203,7 +203,7 @@ Your skill must not share or sell user data collected through skills unless the 
 
 All Cortana Skills require a privacy policy and defined terms of service. Microsoft has provided guidelines that may help you comply with these requirements ([Privacy policy](privacy-policy-guidelines.md) and [Terms of Use](terms-of-use.md)). You agree to assume all risk and liability arising from your use of these resources, and that Microsoft is not responsible for any issues arising out of your use of them.
 
-The privacy policy and terms of service must be publicly available, and accessible to any user. Web pages are the preferred method of delivery. Users should not be required to download documents containing the policy or terms, as this could violate the security guidelines described in section [2.2 Security](#2.2-Security) of this document. Or [Test link](#Test-link) or try (Other test link)[#Other-test-link], and then (9.8 Numbered test link)[#9.8-Numbered-test-link]
+The privacy policy and terms of service must be publicly available, and accessible to any user. Web pages are the preferred method of delivery. Users should not be required to download documents containing the policy or terms, as this could violate the security guidelines described in section [2.2 Security](#2.2-Security) of this document. Or [Test link](#Test-link) or try [Other test link](#Other-test-link), and then [9.8 Numbered test link](#9.8-Numbered-test-link).
 
 ### 2.6 Localization
 
