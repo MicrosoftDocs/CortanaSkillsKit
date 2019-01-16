@@ -147,38 +147,38 @@ For this example we demonstrate a reservation confirmation email for a one-way, 
 
 #### JSON
 ```json
-<script type="application/ld+json"> 
-{ 
-  "@context": "https://schema.org/", 
-  "@type": "FlightReservation", 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "FlightReservation",
   "reservationNumber": "QWERT0123456789",
-  "reservationStatus": "https://schema.org/Confirmed", 
-  "underName":{ 
+  "reservationStatus": "https://schema.org/Confirmed",
+  "underName":{
     "@type": "Person", 
     "name": "Estella Gallagher"
   }, 
   "reservationFor": { 
-    "@type": "Flight", 
+    "@type": "Flight",
     "flightNumber": "123",
     "departureAirport": {
-      "@type": "Airport", 
+      "@type": "Airport",
       "name": " Seattle-Tacoma International Airport", 
-      "iataCode": "SEA" 
+      "iataCode": "SEA"
     }, 
     "arrivalAirport": {
-      "@type": "Airport", 
+      "@type": "Airport",
       "name": " John F Kennedy International Airport", 
-      "iataCode": "JFK" 
+      "iataCode": "JFK"
     }, 
     "departureTime": "2014-04-02T10:32:00Z",
-    "arrivalTime": "2014-04-02T11:45:00Z", 
+    "arrivalTime": "2014-04-02T11:45:00Z",
     "airline": {
-      "@type": "Airline", 
+      "@type": "Airline",
       "name": "Blue Yonder Airlines",
-      "iataCode": "BY" 
-    } 
-  } 
-} 
+      "iataCode": "BY"
+    }
+  }
+}
 </script>
 ```
 #### Walkthrough of Cortana flight tracking UI
