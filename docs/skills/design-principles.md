@@ -429,7 +429,7 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 <!-- //TODO: AITSkills that have been imported from Alexa are limited an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
 
-![Cortana's Canvas](./media/images/cortana-canvas.png)
+![Cortana's Canvas](../media/images/cortana-canvas.png)
 
 To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0).  
 

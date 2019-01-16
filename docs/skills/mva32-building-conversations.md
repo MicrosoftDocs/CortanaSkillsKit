@@ -20,7 +20,7 @@ Creating a Cortana skill that uses LUIS is similar to creating a basic Cortana s
 
 When you create a LUIS bot, Microsoft Azure automatically creates a corresponding LUIS application where you can specify language understanding criteria. Before creating the bot, open the [LUIS.ai](https://www.luis.ai) site to create a LUIS account.
 
-![LUIS account](./media/images/mva32_luis_account.png)
+![LUIS account](../media/images/mva32_luis_account.png)
 
 You can then follow the initial steps in [Create your first Cortana skill](./mva22-hello-world.md) to create the bot:
 
@@ -29,11 +29,11 @@ You can then follow the initial steps in [Create your first Cortana skill](./mva
 * In the **Azure Marketplace** pane, click **AI + Cognitive Services**, and then **Web App Bot**.
 * In the **Bot Service** pane, enter a name for your bot, the location and app service plan, and the bot template you want to use. To create a LUIS bot, select the **Language understanding** template. Then click **Create**.
 
-![LUIS Template](./media/images/mva32_choose_template.png)
+![LUIS Template](../media/images/mva32_choose_template.png)
 
 The language understanding service automatically creates a LUIS application for your bot. Log in to your LUIS account or refresh the MyApps page on [LUIS.ai](https://www.luis.ai) to see the LUIS application.
 
-![LUIS MyApps](./media/images/mva32_luis_myapps.png)
+![LUIS MyApps](../media/images/mva32_luis_myapps.png)
 
 For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/azure/bot-service/bot-service-concept-templates?view=azure-bot-service-3.0#language-understanding-bot).
 
@@ -43,19 +43,19 @@ For more information about creating a LUIS bot, see [Create a bot using the Lang
 
  To add an intent to your LUIS application, click the application name on the MyApps page on [LUIS.ai](https://www.luis.ai) to open the application's dashboard, and then click **Intents** to open the **Intents** page.
 
-![Intents Page](./media/images/mva32_luis_addintent.png)
+![Intents Page](../media/images/mva32_luis_addintent.png)
 
 Click **Create new intent** to open the **Create new intent** dialog box, and then specify a name for the intent. 
 
-![Create Intent](./media/images/mva32_luis_create_intent.png)
+![Create Intent](../media/images/mva32_luis_create_intent.png)
 
 Optionally, you can specify *utterances* associated with the intent. An utterance is a possible input from a user that is associated with the intent. LUIS starts with the utterances you specify. When your Cortana skill is published and users enter their own utterances, LUIS uses *active learning* to help Cortana better understand how to respond.
 
-![LUIS Utterances](./media/images/mva32_luis_utterances.png)
+![LUIS Utterances](../media/images/mva32_luis_utterances.png)
 
 You can add additional intents and utterances to your LUIS application.
 
-![LUIS Intents](./media/images/mva32_luis_intents.png)
+![LUIS Intents](../media/images/mva32_luis_intents.png)
 
 After you have created intents in your LUIS application, you can add code to your LUIS bot that specifies how Cortana responds to an intent.
 
@@ -65,15 +65,15 @@ To add code to your LUIS bot, return to the Azure portal, open the bot's managem
 
 You can add code to the bot using the online code editor on the Azure portal, or you can download the source code and edit it in your choice of development environment. To download the source code, click **Download zip file** under **Download source code**. 
 
-![Download Code](./media/images/mva32_download_zip.png)
+![Download Code](../media/images/mva32_download_zip.png)
 
 Save the zip file to your machine and extract the project files. To edit the code in Visual Studio, open the Visual Studio Solution file in the project's root directory.
 
-![Edit Code](./media/images/mva32_open_solution.png)
+![Edit Code](../media/images/mva32_open_solution.png)
 
 Then open the BasicLuisDialog module.
 
-![LUIS Dialog](./media/images/mva32_luis_dialog.png)
+![LUIS Dialog](../media/images/mva32_luis_dialog.png)
 
 Add a reference to the **Microsoft.Bot.Connector** namespace to allow your LUIS bot to send and receive messages to the Cortana channel.
 
@@ -133,36 +133,36 @@ Then replace the **LuisIntent** blocks in the **Microsoft.Bot.Sample.LuisBot** n
 
  You can deploy your LUIS bot to whatever cloud service you choose. To deploy your LUIS bot from Visual Studio to Microsoft Azure, first right-click the project name in **Solution Explorer**, and then select **Publish**.
 
-![Publish Bot](./media/images/mva32_publish_bot.png)
+![Publish Bot](../media/images/mva32_publish_bot.png)
 
 On the **Publish** page, click **Create new profile**.
 
-![Click Publish](./media/images/mva32_click_publish.png)
+![Click Publish](../media/images/mva32_click_publish.png)
 
 > [!NOTE]
 > If you receive an error message that the specified path or file name is too long, delete the ...\obj\Release\Package\PackageTmp folder from your project.
 
 On the **Pick a publish target** page, select **Microsoft Azure App Service** and **Select Existing**, and then click **Publish**. 
 
-![Pick Target](./media/images/mva32_pick_target.png)
+![Pick Target](../media/images/mva32_pick_target.png)
 
 On the **App Service** page, select the Azure app service associated with your bot.
 
-![App Service](./media/images/mva32_app_service.png)
+![App Service](../media/images/mva32_app_service.png)
 
 Visual Studio returns to the **Publish** page. Click **Publish** to deploy the revised bot to your Azure portal.
 
 To view the updated code on the Azure portal, open the bot, click **Build** and then **Open online code editor**.
 
-![Open Online](./media/images/mva32_open_online.png)
+![Open Online](../media/images/mva32_open_online.png)
 
 Then open the *BasicLuisDialog.cs* module.
 
-![Open Module](./media/images/mva32_open_module.png)
+![Open Module](../media/images/mva32_open_module.png)
 
 To test the revised bot, click **Test in Web Chat**, and then type a message in the prompt.
 
-![Test Bot](./media/images/mva32_test_bot.png)
+![Test Bot](../media/images/mva32_test_bot.png)
 
 ## Step 5 - Connect your LUIS bot to the Cortana Channel
 

@@ -46,11 +46,11 @@ If you see your Cortana Skill in my Bots list filtered for Cortana, then you are
 1. You're signed into Cortana using the same Microsoft account that you used to register the skill in Bot Framework. To confirm:  
     1. Open Cortana by clicking **Type here to search** in the task bar.  
      <br />  
-     ![Cortana](./media/images/open-cortana.png)  
+     ![Cortana](../media/images/open-cortana.png)  
      <br />  
   2. Open Cortana Notebook by clicking the notebook icon.  
      <br />  
-     ![Cortana's Notebook](./media/images/notebook.png)  
+     ![Cortana's Notebook](../media/images/notebook.png)  
      <br />  
     3. Click **About Me**  
     4. Confirm the account shown is the same one you used to register your skill. If not, sign out and then sign back in with the correct account.  
@@ -59,7 +59,7 @@ If you see your Cortana Skill in my Bots list filtered for Cortana, then you are
     1. Open Cortana
     2. Open Cortana's settings  
      <br />  
-     ![Cortana settings](./media/images/cortana-settings.png)  
+     ![Cortana settings](../media/images/cortana-settings.png)  
      <br />  
     3. Under **Microphone**, click **Get started**
 

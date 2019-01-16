@@ -35,7 +35,7 @@ Because Cortana is available on many different devices, some may have a screen w
 
 The following image shows how users interact with Cortana and your skill.  
 
-![Cortana Skills workflow](./media/images/workflow.png)  
+![Cortana Skills workflow](../media/images/workflow.png)  
 
 ## How do users invoke skills?  
 
@@ -77,7 +77,7 @@ When a user invokes your Cortana skill, Cortana sends a structured request to th
 ### EXAMPLE 2
 > If the user invokes a Cortana skill on a device with a screen, then a card with additional information will be displayed on the Cortana Canvas. For example, this card might be displayed when Cortana answers the previous weather question:
 >
-> ![Weather Card](./media/images/weather-card.png)  
+> ![Weather Card](../media/images/weather-card.png)  
 
 ### EXAMPLE 3
 > If a user is trying to invoke your Cortana skill by voice input, they speak an invocation phrase using the invocation name. For example, if a user invokes the Cortana skill `Contoso Photo` to check on the status of an order and make a change, then the conversation that follows might go like this sample.  
