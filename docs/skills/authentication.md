@@ -19,7 +19,7 @@ keywords: cortana
 
 If your skill uses a service that requires user authentication using OAuth 2.0, then you may use Connected Account feature in Cortana. The Connected Account feature in Cortana is used to get an access token for use with the service. All you must do is provide Cortana a few OAuth 2.0 settings and Cortana manages the rest for you.  
 
-You decide whether Cortana signs in the user when they invoke your skill or only when they activate a feature of your skill that requires authentication. Cortana initiates the sign-in process on your identity server. The user is prompted to sign in. If you use the code grant flow, then Cortana automatically reauthenticates your user using a refresh token. Your user is reauthenticated until one of the following situations occurs.  
+You decide whether Cortana signs in the user when they invoke your skill or only when they activate a feature of your skill that requires authentication. Cortana initiates the sign-in process on your identity server. The user is prompted to sign in. If you use the code grant flow and have set a scope of `offline_access`, then Cortana automatically reauthenticates your user using a refresh token. Your user is reauthenticated until one of the following situations occurs.  
 *  User disconnects the skill in Cortana Notebook  
    
    >[!NOTE]
