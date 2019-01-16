@@ -33,7 +33,7 @@ To demonstrate background app features, use a trip planning and management app n
 
 Example: An overview of the **Adventure Works** app integrated with the **Cortana** canvas.  
 
-![cortana canvas overview ](./media/images/cortana-overview.png)  
+![cortana canvas overview ](../media/images/cortana-overview.png)  
 
 To view an **Adventure Works** trip without **Cortana**, a user would launch the app and navigate to the **Upcoming trips** page.  
 
@@ -41,7 +41,7 @@ Using voice commands through **Cortana** to launch your app in the background, t
 
 Example: A basic trip query and **Cortana** result screen that displays the text and speaks `Your next trip to Las Vegas is on Friday July 31st, 2015`.  
 
-![a basic query and result screen using the adventure works app in the background](./media/images/cortana-backgroundapp-result.png)  
+![a basic query and result screen using the adventure works app in the background](../media/images/cortana-backgroundapp-result.png)  
 
 The following basic steps add voice-command functionality and extend **Cortana** with background functionality from your app using speech or keyboard input.  
 1.   Create an app service (see [**Windows.ApplicationModel.AppService**](https://msdn.microsoft.com/library/windows/apps/dn921731)) that **Cortana** invokes in the background.  
@@ -676,7 +676,7 @@ Once activated, the app service has 0.5 second to call [**ReportSuccessAsync**](
 
 If the app takes longer than 0.5 second to make the call, **Cortana** inserts a hand-off screen, as shown here. **Cortana** displays the hand-off screen until the application calls **ReportSuccessAsync**, or for up to 5 seconds. If the app service does not call **ReportSuccessAsync**, or any of the [`VoiceCommandServiceConnection`](https://msdn.microsoft.com/library/windows/apps/dn974204) methods that provide **Cortana** with information, the user receives an error message and the app service is canceled.  
 
-![a basic query with progress and result screens using the adventure works app in the background](./media/images/cortana-backgroundapp-progress-result.png)  
+![a basic query with progress and result screens using the adventure works app in the background](../media/images/cortana-backgroundapp-progress-result.png)  
 
 <!-- ## <span id="related_topics"></span>Related Articles  -->
 

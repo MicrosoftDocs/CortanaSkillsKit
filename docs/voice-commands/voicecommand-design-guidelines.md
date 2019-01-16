@@ -254,7 +254,7 @@ Use an action verb that confirms the task is underway.
 
 ### <span id="Confirmation"></span><span id="confirmation"></span><span id="CONFIRMATION"></span>Confirmation
 
-| ![end to end: cancel trip with confirmation screen ](./media/images/e2e-canceltrip-confirmation.png) |
+| ![end to end: cancel trip with confirmation screen ](../media/images/e2e-canceltrip-confirmation.png) |
 | --- |
 | Cancel trip with confirmation screen | 
 
