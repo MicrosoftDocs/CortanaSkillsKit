@@ -24,12 +24,12 @@ As you learned in [Create your first Cortana skill](./mva22-hello-world.md) and 
 
 To enable authentication for your Cortana skill, update the skill's authentication settings by clicking the **Authentication** menu tab.
 
-![Enable Authentication](./media/images/mva61_enable_auth.png)
+![Enable Authentication](../media/images/mva61_enable_auth.png)
 
 To use OAuth2 authentication, select **OAuth2** from the **Configs in Vault** list and click **Add**, or click the **Add OAuth 2** button.
 
 
-![OAuth2 Configuration](./media/images/mva61_oauth2_config.png)
+![OAuth2 Configuration](../media/images/mva61_oauth2_config.png)
 
 Some settings are required and others are optional, although it is recommended that you specify the optional **Scope** entry. Here are the key settings:
 
@@ -54,5 +54,5 @@ After you configure authentication for a skill, Cortana prompts for credentials 
 
 Cortana prompts you to sign in using your Microsoft account credentials.
 
-![Authorization Sign-in](./media/images/mva61_auth_signin.png)
+![Authorization Sign-in](../media/images/mva61_auth_signin.png)
 -->

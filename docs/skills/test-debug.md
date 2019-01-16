@@ -69,7 +69,7 @@ If Cortana reports an error when running your skill, then follow the steps to tu
     4. The canvas displays a **debug** button.  
        1.  Click to see the message exchange details.  
        
-       ![Debugging Information](./media/images/debugging-info.png)
+       ![Debugging Information](../media/images/debugging-info.png)
        
 ## Troubleshooting tips
 
@@ -187,7 +187,7 @@ Cortana tried to connect to your service, but received an https status code of 4
 *   [Troubleshooting Bot Framework authentication](https://aka.ms/aei8qy)  
 
 <!--
-![Debugging using Bot Framework Channel Emulator](./media/images/bot-emulator-debugging.png)
+![Debugging using Bot Framework Channel Emulator](../media/images/bot-emulator-debugging.png)
 
 **Not all Bot Framework Cards are supported in Cortana**
 

@@ -67,21 +67,21 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
 3.  Under *BOT MANAGEMENT*, click on the **Channels** icon. 
 4.  To create the Cortana channel, click the Cortana icon. 
 
-    ![Cortana channel icon](./media/images/add_cortana_channel_1.png)  
+    ![Cortana channel icon](../media/images/add_cortana_channel_1.png)  
 
     >[!NOTE]
     > If your bot is already connected to the Cortana channel, then click **Edit** to access the **Default settings**.
     > 
-    > ![Edit Channels](./media/images/edit_cortana_1.png)  
+    > ![Edit Channels](../media/images/edit_cortana_1.png)  
 
 5.  Scroll down the **Configure Cortana** page, under **Cortana should manage my user's identity**, click on the toggle.  
 
-    ![Manage user identity through connected services](./media/images/cortana_manage_user_toggle_1.png)  
+    ![Manage user identity through connected services](../media/images/cortana_manage_user_toggle_1.png)  
 
 6.  Fill in the OAuth configuration field values.  
     Prompt user to Sign in.  
 
-    ![](./media/images/cortana-manage-user-identity.png)  
+    ![](../media/images/cortana-manage-user-identity.png)  
     1.	**Sign in at invocation** | radiobox  
         If you select `at invocation` then Cortana manages the log in when the user first invokes the skill. Otherwise you can send an OAuthCard attachment before a resource call.
     2.  **Account Name**  
@@ -160,7 +160,7 @@ Example: Creates a bot in Azure Bot Service using the Basic C# bot template.
     >     
     >     *   Click **Add Platform**, click **Web**, verify that you registered your redirect URL for Cortana, and then save your changes. You do not need a sign-out URL.  
     >     
-    >         ![Add Platforms](./media/images/add_platform_1.png)  
+    >         ![Add Platforms](../media/images/add_platform_1.png)  
     >
     > *   For Other service providers: Refer to the documentation from your service provider about allowing the redirect callback.  
 

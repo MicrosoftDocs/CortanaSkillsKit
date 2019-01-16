@@ -44,11 +44,11 @@ Like the **Default settings** and **Test Group settings** channel configurations
 
 1.  On the *Configure Cortana* page, under the *World Settings* section, enter the following information.  
     
-    ![World Settings - not configured](./media/images/world_settings-not_configured.png)  
+    ![World Settings - not configured](../media/images/world_settings-not_configured.png)  
     
     1.  Skill information section  
         
-        ![Skills information](./media/images/world_settings-skill_information.png)  
+        ![Skills information](../media/images/world_settings-skill_information.png)  
         
         *   `Skill icon`  
         *   `Display name`  
@@ -63,26 +63,26 @@ Like the **Default settings** and **Test Group settings** channel configurations
 
     2.  `Does this Cortana skill collect users' personal information?`  
          
-        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-off.png)  
+        ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-off.png)  
         
         *   Request user profile data
             
-            ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)  
+            ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on.png)  
             
             *   `User data`  
-                *   ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)  
+                *   ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on-user_data.png)  
                     
             *   `Additional User Data`  
 
     3.  Developer Account section  
         
-        ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)  
+        ![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](../media/images/world_settings-developer_account-company.png)  
         
         *   `Developer Account Type`  
                   
     4.  Developer Information section  
         
-        ![Developer Information](./media/images/world_settings-developer_information.png)
+        ![Developer Information](../media/images/world_settings-developer_information.png)
         
         *   `First name`              
         *   `Last name`              
@@ -98,31 +98,31 @@ Like the **Default settings** and **Test Group settings** channel configurations
         *   `Developer or Company Website URL`  
     5.  Support Contact section  
         
-        ![Support Contact](./media/images/world_settings-support_contact.png)
+        ![Support Contact](../media/images/world_settings-support_contact.png)
         
         *   `Email`  
         *   `Website URL`  
     6.  Publisher Information section  
         
-        ![Publisher Information](./media/images/world_settings-publisher_information.png)
+        ![Publisher Information](../media/images/world_settings-publisher_information.png)
         
         *   `Name`  
         *   `Email`  
         *   `Phone number`  
     7.  Privacy policy and terms of use section  
         
-        ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
+        ![Privacy policy and terms of use](../media/images/world_settings-privacy_policy_terms_of_use.png)
           
         *   `Privacy policy (URL)`  
         *   `Terms of Use (URL)`  
         *   `Notices`  
     8.  Validation and testing instructions section  
         
-        ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)  
+        ![Validation and testing instructions](../media/images/world_settings-validation_testing_instructions.png)  
         
 2.  Click **Submit for review**.  
     
-    ![Submit for Review - enabled](./media/images/world_settings-back-save-submit-active.png)
+    ![Submit for Review - enabled](../media/images/world_settings-back-save-submit-active.png)
 
 The Cortana team informs you when your Cortana Skill passes certification and is published.  
 The Cortana team contacts you if additional information for certification is needed.  

@@ -52,7 +52,7 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
  "size": "medium"
  ```
  
- ![Sample Card](./media/images/ac_visualizer1.png)  
+ ![Sample Card](../media/images/ac_visualizer1.png)  
  
  Change the titles text using the following text to updated the text block.  
  
@@ -63,7 +63,7 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
  "size": "medium"
  ```  
 
- ![Revised Card](./media/images/ac_visualizer2.png)  
+ ![Revised Card](../media/images/ac_visualizer2.png)  
 
 ## Create an Adaptive Card using .NET
 
