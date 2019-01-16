@@ -182,15 +182,13 @@ For this example we demonstrate a reservation confirmation email for a one-way, 
 </script>
 ```
 #### Walkthrough of Cortana flight tracking UI
-Here, we illustrate the Cortana flight confirmation experience.
+This example shows one potential path for using Cortana to confirm a flight.
 
-| ![Flight confirmation email](../media/images/email-flightinfo.png) | ![Start menu](../media/images/email-startmenu.png) | ![Cortana tracking confirmation](../media/images/email-cortana-confirm.png) |
-| ----- | ----- | ----- |
-| 1. Estella books a flight through Blue Yonder Airlines and receives a confirmation email. | 2. She goes to her Start menu and taps the Cortana tile. | 3.Cortana offers to track Estella's flight. Estella taps yes. |
-| ![Cortana tracking feedback](../media/images/email-cortana-feedback.png) | ![Cortana live tile](../media/images/email-cortana-livetile.png) | ![Updated flight info on Cortana canvas](../media/images/email-cortana-status.png) |
-| 4. Cortana informs Estella that she will start receiving updates 24 hours before departure. | 5. On the day of the flight, the latest flight status is displayed on the Cortana live tile.  | 6. Estella taps the tile and Cortana displays the flight information. |
-
-<br />
+|  |  |
+|:---:|:---:|
+| ![Flight confirmation email](../media/images/email-flightinfo.png) <br />1. Estella books a flight through Blue Yonder Airlines and receives a confirmation email. | ![Start menu](../media/images/email-startmenu.png) <br />2. She goes to her Start menu and taps the Cortana tile. |
+| ![Cortana tracking confirmation](../media/images/email-cortana-confirm.png) <br />3.Cortana offers to track Estella's flight. Estella taps yes. | ![Cortana tracking feedback](../media/images/email-cortana-feedback.png) <br />4. Cortana informs Estella that she will start receiving updates 24 hours before departure. |
+| ![Cortana live tile](../media/images/email-cortana-livetile.png) <br />5. On the day of the flight, the latest flight status is displayed on the Cortana live tile. | ![Updated flight info on Cortana canvas](../media/images/email-cortana-status.png) <br />6. Estella taps the tile and Cortana displays the flight information. |
 
 ### Complex flight confirmation
 Complex flights include multiple segments and/or multiple passengers.
