@@ -38,7 +38,7 @@ To create a new **Adventure Works** trip without **Cortana**, a user would launc
 
 Using voice commands through **Cortana**, the user can instead just say, "Adventure Works add a trip" or "Add a trip on Adventure Works" to launch the app and navigate to the **New trip** page. In turn, saying "Adventure Works, show my trip to London" will launch the app and navigate to the **Trip** detail page, shown here.
 
-![cortana launching foreground app](./media/images/cortana-foreground-with-adventureworks.png)
+![cortana launching foreground app](../media/images/cortana-foreground-with-adventureworks.png)
 
 These are the basic steps to add voice-command functionality and integrate Cortana with your app using speech or keyboard input:
 
