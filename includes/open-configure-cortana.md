@@ -1,6 +1,6 @@
 Follow these instructions to access the Cortana Configuration page and update each of the parameters for your Cortana Skill.
 
-1. Sign into the [BotFramework](https://dev.botframework.com) portal and click on the **My bots** link.  
+1. Sign into the [BotFramework](https://dev.botframework.com) portal and click on the `My bots` link.  
 
 1. On the *My bots* page, click the name of your bot.  
 
