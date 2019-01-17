@@ -3,7 +3,7 @@ title: Cortana Skills Publishing Process
 description: Describes the publishing process for Cortana Skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 10/08/2018
+ms. date: 01/17/2019
 ms. topic: article
 
 keywords: cortana
@@ -27,12 +27,29 @@ Two identifiers are assigned to your Cortana Skill.
 *   `skillProductId`  
     *   The product ID of your Cortana Skill is unique across deployment groups.  
 
-Cortana passes the IDs in the channel information of the message. 
-
+Cortana passes the IDs in the channel information of the message.
 
 ## Cortana Configuration Fields  
 
-[!INCLUDE [open-configure-cortana](../../includes/open-configure-cortana.md)]  
+<!-- The following INCLUDE statements was causing trouble with builds, so I just copied the code from the
+include file into this file. (DT)
+[!INCLUDE [open-configure-cortana](../../includes/open-configure-cortana.md)]
+ -->
+Follow these instructions to access the Cortana Configuration page and update each of the parameters for your Cortana Skill.
+
+1. Sign into the [BotFramework](https://dev.botframework.com) portal and click on the `My bots` link.  
+
+1. On the *My bots* page, click the name of your bot.  
+
+    ![your Web App Bot blade menu](../media/images/web_app_bot_blade-menu.png)  
+
+1. On the *Microsoft Azure* portal, in your Web App Bot blade, under the *Bot Management* section, click on the **Channels** icon.  
+
+    ![Bot management - Channels](../media/images/bot_management-channels.png)  
+
+1. On the *Connect to channels* page, under the *Add a featured channel* section, click on the **Configure Cortana Channel** icon.  
+
+    ![Configure Cortana](../media/images/configure_cortana.png)
 
 :::row:::
     :::column span="1":::
@@ -504,7 +521,7 @@ There are some common reasons why a Cortana Skill fails the review.
     > `Do you want available miles, used miles, or discounts?` or `Please say a stock's name. For example, say Microsoft.` 
     
 *   Your skill infringes on the intellectual property (IP) of another company.  
-    The name and invocation name of your Cortana Skill should not consist of any trademarked or copyrighted words unless you have permission to do so from the owner. 
+    The name and invocation name of your Cortana Skill should not consist of any trademarked or copyrighted words unless you have permission to do so from the owner.
     Ensure that you have the right to share the content that your skill provides. 
     >[!TIP]
     > Your skill should not make use of any unlicensed or pirated audio content.  
