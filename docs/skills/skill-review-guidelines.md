@@ -62,12 +62,12 @@ Invocation names must be unique, readily identifiable words. Invocation names ma
 
 The skill profile image, name, keywords, and description must NOT:
 
-1. Be offensive or explicit.
-1. Include third party trademarks, service marks, or logos that you do not have the rights to use.
-1. Impersonate or imply endorsement by a third party that has not endorsed your skill.
-1. Use names unrelated to the skill.
-1. Use Microsoft logos, trademarks, or service marks unless you have permission from Microsoft.
-1. Be too long or verbose. The description should be 8-10 words.
+- Be offensive or explicit.
+- Include third party trademarks, service marks, or logos that you do not have the rights to use.
+- Impersonate or imply endorsement by a third party that has not endorsed your skill.
+- Use names unrelated to the skill.
+- Use Microsoft logos, trademarks, or service marks unless you have permission from Microsoft.
+- Be too long or verbose. The description should be 8-10 words.
 
 #### 2.1.8
 
