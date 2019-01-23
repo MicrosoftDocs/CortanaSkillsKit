@@ -3,7 +3,7 @@ title: Cortana Skills Publishing Process
 description: Describes the publishing process for Cortana Skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 01/17/2019
+ms. date: 01/22/2019
 ms. topic: article
 
 keywords: cortana
@@ -49,47 +49,6 @@ Follow these instructions to access the Cortana Configuration page and update ea
 
     ![Configure Cortana](../media/images/configure_cortana.png)
 
-<!-- :::row:::
-    :::column span="1":::
-        You should see this heading while and after you configure your Cortana Skill for individual testing.  
-    :::column-end:::
-    :::column span="1":::
-        ![Default settings](../media/images/default_settings.png)  
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading while you configure your Cortana Skill for group testing.  
-    :::column-end:::
-    :::column span="1":::
-        ![Test Group settings](../media/images/test_group_settings-not_configured.png)  
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading after you configure your Cortana Skill for group testing.  
-    :::column-end:::
-    :::column span="1":::
-        ![Test Group settings - Configured](../media/images/test_group_settings-configured.png)  
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading while you configure your Cortana Skill for deployment.  
-    :::column-end:::
-    :::column span="1":::
-        ![World settings](../media/images/world_settings-not_configured.png)  
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading after you deploy your Cortana Skill.  
-    :::column-end:::
-    :::column span="1":::
-        ![World settings - Configured](../media/images/world_settings-configured.png)  
-    :::column-end:::
-:::row-end:::
- -->
 ## Default Settings  
 
 After configuring the Cortana channel for your skill, it's automatically deployed to **Default Settings**. Deploying to **Default Settings** makes the skill available to you only, so you can thoroughly test it before deploying it to one of the other environments.  
