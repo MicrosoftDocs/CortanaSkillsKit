@@ -3,7 +3,7 @@ title: Cortana Skills Publishing Process
 description: Describes the publishing process for Cortana Skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 01/22/2019
+ms. date: 01/24/2019
 ms. topic: article
 
 keywords: cortana
@@ -16,9 +16,9 @@ keywords: cortana
 > *   If you have never created a Cortana Skill and need to get started, visit the [Create your first skill](./get-started.md) page.  
 
 Deploy your Cortana Skill to each of the three deployment groups.  
-*   [Default Settings](#default-settings)  
-*   [Test Group Settings](#test-group-settings)  
-*   [World Settings](#world-settings)  
+* [Default Settings](#default-settings)
+* [Test Group Settings](#test-group-settings)
+* [World Settings](#world-settings)
 
 All deployment groups contain the same instance of your Cortana Skill.  
 Two identifiers are assigned to your Cortana Skill.  
@@ -39,23 +39,64 @@ Follow these instructions to access the Cortana Configuration page and update ea
 
 1. On the *My bots* page, click the name of your bot.  
 
-    ![your Web App Bot blade menu](../media/images/web_app_bot_blade-menu.png)  
+    ![your Web App Bot blade menu](./media/images/web_app_bot_blade-menu.png)  
 
 1. On the *Microsoft Azure* portal, in your Web App Bot blade, under the *Bot Management* section, click on the **Channels** icon.  
 
-    ![Bot management - Channels](../media/images/bot_management-channels.png)  
+    ![Bot management - Channels](./media/images/bot_management-channels.png)  
 
 1. On the *Connect to channels* page, under the *Add a featured channel* section, click on the **Configure Cortana Channel** icon.  
 
-    ![Configure Cortana](../media/images/configure_cortana.png)
+    ![Configure Cortana](./media/images/configure_cortana.png)
 
+<!-- :::row:::
+    :::column span="1":::
+        You should see this heading while and after you configure your Cortana Skill for individual testing.  
+    :::column-end:::
+    :::column span="1":::
+        ![Default settings](./media/images/default_settings.png)  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        You should see this heading while you configure your Cortana Skill for group testing.  
+    :::column-end:::
+    :::column span="1":::
+        ![Test Group settings](./media/images/test_group_settings-not_configured.png)  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        You should see this heading after you configure your Cortana Skill for group testing.  
+    :::column-end:::
+    :::column span="1":::
+        ![Test Group settings - Configured](./media/images/test_group_settings-configured.png)  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        You should see this heading while you configure your Cortana Skill for deployment.  
+    :::column-end:::
+    :::column span="1":::
+        ![World settings](./media/images/world_settings-not_configured.png)  
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        You should see this heading after you deploy your Cortana Skill.  
+    :::column-end:::
+    :::column span="1":::
+        ![World settings - Configured](./media/images/world_settings-configured.png)  
+    :::column-end:::
+:::row-end:::
+ -->
 ## Default Settings  
 
 After configuring the Cortana channel for your skill, it's automatically deployed to **Default Settings**. Deploying to **Default Settings** makes the skill available to you only, so you can thoroughly test it before deploying it to one of the other environments.  
 
 For more information about configuring the Cortana channel, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0) page.
 
-![Default settings](../media/images/default_settings.png)
+![Default settings](./media/images/default_settings.png)
 
 1. On the *Configure Cortana* page, under the *Default Settings* section, enter the following information.
 
@@ -65,7 +106,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     1. Skill information section
 
-    ![Skill information](../media/images/default_settings-skill_information.png)
+    ![Skill information](./media/images/default_settings-skill_information.png)
 
     * `Skill icon`: Click on the **Upload icon** button and select an icon for your Cortana Skill.  
     * `Display name`: The value is limited to 30 characters.  
@@ -74,11 +115,11 @@ For more information about configuring the Cortana channel, visit the [Connect a
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.  
 
     1. Manage user identity through Connected Services  
-    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-off.png)
+    ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-off.png)
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.  
 
-    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)  
+    ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-on.png)  
 
     * `When should Cortana prompt for a user to sign in?`  
         * `Sign in at invocation`: The user signs in once, and the authorization token will be passed as needed.
@@ -88,7 +129,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
   
     * `Client ID for third-party services`: The application ID of your bot.  
 
-        If you use a Microsoft service, the you get your application ID on the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/#/appList) page. Click the name of your BotFramework bot listed under the My Applications section.
+        If you use a Microsoft service, the you get your application ID on the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/#/appList) page. Click the name of your BotFramework bot, listed under the My Applications section.
 
     * `Space-separated list of scopes`: The list of scopes, separated by spaces.  
     * `Authorization URL`: The authorization URL of your OAuth 2.0 provider.  
@@ -111,40 +152,26 @@ For more information about configuring the Cortana channel, visit the [Connect a
         https://login.microsoftonline.com/common/oauth2/v2.0/token
         ```  
 
-    * `Client secret/password for third party services`  
-        * The password of your bot.  
+    * `Client secret/password for third party services`: Your bot's password.  If you're using a Microsoft Identity Service, then the password is generated when you registered your bot in the *Microsoft Application Registration* portal.
 
-            >[!TIP]
-            > If you are using a Microsoft Identity Service, then the password is generated when you registered your bot in the *Microsoft Application Registration* portal.  
-            >
             > >[!NOTE]
             > > The Client Secret is displayed only once under the *Application Secrets* section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal. 
             > > To recreate or reveal the secret password of your application, click on the **Generate New password** button.  
 
-    * `Client authorization scheme`  
-        * The client authorization scheme.  
-            Possible values are `HTTP Basic (Recommended)` or `Credentials in request body`  
+    * `Client authorization scheme`: If you don't know your client authorization scheme, use  the default option (`HTTP Basic (Recommended)`).  
 
-            >[!TIP]
-            > If you do not know your client authorization scheme, then set `HTTP Basic (Recommended)` as the default option.  
-
-    * `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).`  
-        * Your app requires access to an intranet.  
+    * `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).`: Check this only if your app requires access to an intranet. 
+ 
     1. Request user profile data  
 
-        ![Request user profile](../media/images/default_settings-request_user_profile_data-empty.png)
+        ![Request user profile](./media/images/default_settings-request_user_profile_data-empty.png)
 
-        * `Data`  
-            * Click on the **Add a user profile request** link and select the user profile information from the drop-down menu.  
-                Possible values are `user.info.email`  
-
-                >[!TIP]
-                > Repeat this step to select additional user profile data.  
+        * `Data`: Click on the **Add a user profile request** link and select the user profile information from the drop-down menu. Repeat to select additional user profile data.  
 
                 >[!IMPORTANT]
-                > You are allowed to collect user profile data only to add to your Cortana Skill functionality.  
+                > You are allowed to collect user profile data only to add to your Cortana Skill functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
 
-                ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
+                ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
 
     >[!TIP]
     > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
@@ -154,9 +181,9 @@ For more information about configuring the Cortana channel, visit the [Connect a
     >[!IMPORTANT]
     > The **Deploy on Cortana** button is enabled only after all of the required fields are completed.  
     > 
-    > ![Back to Channels, Deploy on Cortana, Manage](../media/images/default_settings-back-deploy-manage.png) 
+    > ![Back to Channels, Deploy on Cortana, Manage](./media/images/default_settings-back-deploy-manage.png) 
 
-    ![Deploy on Cortana - enabled](../media/images/default_settings-back-deploy-manage-active.png)  
+    ![Deploy on Cortana - enabled](./media/images/default_settings-back-deploy-manage-active.png)  
 
 >[!NOTE]
 > You may confirm your Cortana Skill is deployed on Bot Framework portal or Azure portal page using the same Microsoft account (MSA) that you registered in *Bot Framework* portal.
@@ -170,7 +197,7 @@ Deploying to **Test Group** makes your Cortana Skill available to a group of use
 
 1. On the *Configure Cortana* page, under the *Test Group Settings* section, enter the following information.  
 
-    ![Test Group Settings - not configured](../media/images/test_group_settings-not_configured.png)  
+    ![Test Group Settings - not configured](./media/images/test_group_settings-not_configured.png)  
 
     Complete the required fields that are marked with an asterisk (`*`).
 
@@ -179,7 +206,7 @@ Deploying to **Test Group** makes your Cortana Skill available to a group of use
 
     1. Skill information section  
 
-        ![Skill information](../media/images/test_group_settings-skill_information.png)  
+        ![Skill information](./media/images/test_group_settings-skill_information.png)  
 
         * `Skill icon`  
             * Click on the **Upload icon** button and select an icon for your Cortana Skill.  
@@ -192,7 +219,7 @@ Deploying to **Test Group** makes your Cortana Skill available to a group of use
 
     2. Request user profile data  
 
-        ![Request user profile](../media/images/test_group_settings-request_user_profile_data-empty.png)
+        ![Request user profile](./media/images/test_group_settings-request_user_profile_data-empty.png)
 
         * `Data`  
             * Click on the **Add a user profile request** link and select the user profile information from the drop-down menu.  
@@ -204,32 +231,32 @@ Deploying to **Test Group** makes your Cortana Skill available to a group of use
                 >[!IMPORTANT]
                 > You are allowed to collect user profile data only to add to your Cortana Skill functionality.  
 
-                ![Request user profile - all](../media/images/test_group_settings-request_user_profile_data-all.png)
+                ![Request user profile - all](./media/images/test_group_settings-request_user_profile_data-all.png)
 
     3. Group  
-        ![MSA email addresses - empty](../media/images/test_group_settings-group-empty.png)  
+        ![MSA email addresses - empty](./media/images/test_group_settings-group-empty.png)  
         * `Member email`
             * Enter an MSA e-mail address, and then click Add.  
 
                 >[!NOTE]
                 > Use semicolons to separate multiple MSA e-mail addresses.  
 
-                ![MSA email addresses](../media/images/test_group_settings-group-contoso_hotmail.png)
+                ![MSA email addresses](./media/images/test_group_settings-group-contoso_hotmail.png)
 
 2. Click on the **Create Group** button.  
 
     >[!IMPORTANT]
     > The **Create Group** button is enabled only after all of the required fields are completed.  
     >
-    > ![Back to Channels, Create Group](../media/images/test_group_settings-back-create.png)  
+    > ![Back to Channels, Create Group](./media/images/test_group_settings-back-create.png)  
 
-    ![Create Group - enabled](../media/images/test_group_settings-back-create-active.png)
+    ![Create Group - enabled](./media/images/test_group_settings-back-create-active.png)
 
 3. After your test group is created, the *Test Group Settings* section displays the following changes.  
 
     * Group  
 
-        ![Group - created](../media/images/test_group_settings-group-contoso_hotmail-group_access_url.png)  
+        ![Group - created](./media/images/test_group_settings-group-contoso_hotmail-group_access_url.png)  
 
         * `Member email`
 
@@ -241,11 +268,11 @@ Deploying to **Test Group** makes your Cortana Skill available to a group of use
 
     * The **Reset Group** Button is added and the **Create Group** button is replaced by the **Save changes** button.  
 
-        ![Reset Group, Back to Channels, Save changes](../media/images/test_group_settings-reset-back-save.png)
+        ![Reset Group, Back to Channels, Save changes](./media/images/test_group_settings-reset-back-save.png)
 
     * The **Test Group Setting** link is updated.  
 
-        ![Test Group Settings - configured](../media/images/test_group_settings-configured.png)  
+        ![Test Group Settings - configured](./media/images/test_group_settings-configured.png)  
 
         >[!WARNING]
         > The **Reset Group** button removes all members of the group.  
@@ -271,7 +298,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
 
 1. On the *Configure Cortana* page, under the *World Settings* section, enter the following information.  
 
-    ![World Settings - not configured](../media/images/world_settings-not_configured.png)  
+    ![World Settings - not configured](./media/images/world_settings-not_configured.png)  
     Complete the required fields that are marked with an asterisk (`*`).
 
     >[!NOTE]
@@ -279,7 +306,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
 
     1. Skill information section  
 
-        ![Skills information](../media/images/world_settings-skill_information.png)  
+        ![Skills information](./media/images/world_settings-skill_information.png)  
 
         * `Skill icon`  
             * Click on the **Upload icon** button and select an icon for your Cortana Skill.  
@@ -310,20 +337,20 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
 
     2. `Does this Cortana skill collect users' personal information?`  
 
-        ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-off.png)  
+        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-off.png)  
 
         * Request user profile data
 
-            ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on.png)  
+            ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)  
 
             * `User data`  
-                * ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on-user_data.png)  
+                * ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)  
 
             * `Additional User Data`  
 
     3. Developer Account section  
 
-        ![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](../media/images/world_settings-developer_account-company.png)  
+        ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)  
 
         * `Developer Account Type`  
             * Click on the radio button matching your type.  
@@ -336,7 +363,7 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
 
     4. Developer Information section  
 
-        ![Developer Information](../media/images/world_settings-developer_information.png)
+        ![Developer Information](./media/images/world_settings-developer_information.png)
 
         * `First name`              
         * `Last name`              
@@ -352,43 +379,43 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
         * `Developer or Company Website URL`  
     5. Support Contact section  
 
-        ![Support Contact](../media/images/world_settings-support_contact.png)
+        ![Support Contact](./media/images/world_settings-support_contact.png)
 
         * `Email`  
         * `Website URL`  
     6. Publisher Information section  
 
-        ![Publisher Information](../media/images/world_settings-publisher_information.png)
+        ![Publisher Information](./media/images/world_settings-publisher_information.png)
 
         * `Name`  
         * `Email`  
         * `Phone number`  
     7. Privacy policy and terms of use section  
 
-        ![Privacy policy and terms of use](../media/images/world_settings-privacy_policy_terms_of_use.png)
+        ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
 
         * `Privacy policy (URL)`  
         * `Terms of Use (URL)`  
         * `Notices`  
     8. Validation and testing instructions section  
 
-        ![Validation and testing instructions](../media/images/world_settings-validation_testing_instructions.png)  
+        ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)  
 
 2. Click on the **Save** button.  
 
     >[!IMPORTANT]
     > The **Save** button is enabled only after all of the required fields are completed.  
     >
-    > ![Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)  
+    > ![Back to Channels, Save, Submit for Review](./media/images/world_settings-back-save-submit.png)  
 
 3. Click **Submit for review**.  
 
     >[!IMPORTANT]
     > The **Submit for review** button is enabled only after all of the required fields are completed.  
     >
-    > ![Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
+    > ![Back to Channels, Save, Submit for Review](./media/images/world_settings-back-save-submit.png)
 
-    ![Submit for Review - enabled](../media/images/world_settings-back-save-submit-active.png)
+    ![Submit for Review - enabled](./media/images/world_settings-back-save-submit-active.png)
 
     >[!IMPORTANT]
     > After submission for review, you are not be able to edit the properties or delete your Cortana Skill.  
@@ -397,11 +424,11 @@ Deploying your Cortana Skill to **World** published your Cortana Skill in all ma
 
     * The **Save** button and **Submit for Review** button are removed.  
 
-        ![Reset Group, Back to Channels, Save changes](../media/images/world_settings-back-submitted-approved.png)
+        ![Reset Group, Back to Channels, Save changes](./media/images/world_settings-back-submitted-approved.png)
 
     * The **World Setting** link is updated.  
 
-        ![World Settings - configured](../media/images/world_settings-configured.png)
+        ![World Settings - configured](./media/images/world_settings-configured.png)
 
     >[!IMPORTANT]
     > A review status message that indicates the review status for your Cortana Skill by the Cortana Certification team. If the Cortana Certification team has any concerns or questions during the review process, then you receive an email message. You may refer to the *World Settings* section to verify acceptance state of your Cortana Skill. If rejected, then the details and reasons for rejection are provided. If all requirements are met, then your Cortana Skill is approved and deployed. In the *World Settings* section, the word `Approved` following by the approval date is displayed.
@@ -466,4 +493,4 @@ If you need to delete a Cortana Skill that is published to **World**, then you m
 
 1. On the *Configure Cortana* page, at the bottom of all sections, click **Delete Channel** button.  
 
-    ![Delete Channel](../media/images/delete_channel.png)  
+    ![Delete Channel](./media/images/delete_channel.png)  
