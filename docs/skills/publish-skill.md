@@ -140,10 +140,8 @@ For more information about configuring the Cortana channel, visit the [Connect a
         https://login.microsoftonline.com/common/oauth2/v2.0/authorize
         ```  
 
-    * `Token options`  
-        * Possible values are `GET` or `POST`.  
-    * `Grant type`  
-        * Possible values are `Authorization code` or `Implicit`.  
+    * `Token options`: Possible values are `GET` or `POST`. Unless you have specific reasons to use GET, you should use POST.
+    * `Grant type`: Possible values are `Authorization code` or `Implicit`.  
     * `Token URL`: The token URL of your OAuth 2.0 provider.
 
         If you are using a Microsoft service, then set to the following value.  
@@ -168,13 +166,13 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         * `Data`: Click on the **Add a user profile request** link and select the user profile information from the drop-down menu. Repeat to select additional user profile data.  
 
-                >[!IMPORTANT]
-                > You are allowed to collect user profile data only to add to your Cortana Skill functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
+        >[!IMPORTANT]
+        > You are allowed to collect user profile data only to add to your Cortana Skill functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
 
                 ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
 
-    >[!TIP]
-    > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
+        >[!TIP]
+        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
 
 1. Click on the **Deploy on Cortana** button.  
 
