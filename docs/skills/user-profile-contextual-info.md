@@ -3,7 +3,7 @@ title: Cortana User Profile & Contextual Information Reference
 description: Defines the user profile and contextual information objects.
 label: Conceptual
 ms.assetid: 41f911c9-b5eb-4cd3-b4d9-2dc7453e3f51
-ms.date: 04/25/2017
+ms.date: 01/24/2019
 ms.topic: article
 keywords: cortana
 ---
@@ -19,10 +19,10 @@ The following table identifies the types of user profile data that you can reque
 
 | Entity Name | Type | Description  
 |--|-|-
-| User.SemanticLocation.Away | [Away](#Away-object) | Indicates whether the user is away from their home or work. 
-| User.SemanticLocation.Current | [Visit](#Visit-object) | The user's current location. |
-| User.SemanticLocation.FrequentPlaces | [Hub](#Hub-object)[] | A list of places the user frequents.  
-| User.Info.Name | [Name](#Name-object)| The user's name. |
+| User.SemanticLocation.Away | [Away](#away-object) | Indicates whether the user is away from their home or work. 
+| User.SemanticLocation.Current | [Visit](#visit-object) | The user's current location. |
+| User.SemanticLocation.FrequentPlaces | [Hub](#hub-object)[] | A list of places the user frequents.  
+| User.Info.Name | [Name](#name-object)| The user's name. |
 | User.Info.Email | string | The user's email address. For example, user@example.com. |
 
 
@@ -110,9 +110,9 @@ Defines the user's current location.
 |-|-|-|-
 | StartTime | DateTime | Yes | The date and time the user arrived at the location, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format. 
 | EndTime | DateTime | No | The date and time the user left the location, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format. 
-| Hub | [Hub](#Hub-object) | Yes | The user's location. 
+| Hub | [Hub](#hub-object) | Yes | The user's location. 
 | VenueName | string | No | The name of the location if the location is a point of interest.
-| Away | [Away](#Away-object) | No | Indicates whether the user is away from home or work. |
+| Away | [Away](#away-object) | No | Indicates whether the user is away from home or work. |
 
 **Example**
 
