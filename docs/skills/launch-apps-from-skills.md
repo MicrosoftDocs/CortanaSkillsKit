@@ -3,7 +3,7 @@ title: Launching apps and websites from Cortana skills
 description: Shows how to launch apps and website from your skill.
 
 ms.assetid: 6B89584E-AE15-4A6E-8104-A77062F2C835
-ms.date: 10/08/2018
+ms.date: 01/24/2019
 ms.topic: article
 
 keywords: cortana
@@ -13,10 +13,10 @@ keywords: cortana
 
 With Cortana, it is possible for your skill to launch an app or website. To launch an app or website, include the `channelData` property in the message that you send Cortana. Set the `channelData` property to an [Action](#Action-object) object that defines the action that you want Cortana to perform. For examples that show how to launch apps and websites, see:
 
-- [Launch a website](#Launch-a-website)
+- [Launch a website](#launch-a-website)
 - [Launching and deep linking an app](#launching-and-deep-linking-an-app)
-- [Start a Skype call or IM](#Start-a-Skype-call-or-IM)
-- [Create an email](#Create-an-email)
+- [Start a Skype call or IM](#start-a-skype-call-or-im)
+- [Create an email](#create-an-email)
 
 
 ## Launch a website
@@ -47,7 +47,7 @@ await context.PostAsync(message);
 
 The following image shows the launched Map app.
 
-![Map App centered over Paris](./media/images/launched-map-app.png)
+![Map App centered over Paris](../media/images/launched-map-app.png)
 
 
 ## Start a Skype call or IM
@@ -80,7 +80,7 @@ await context.PostAsync(message);
 
 The following image shows the launched Skype for Business window.
 
-![Making a Skype call](./media/images/make-a-call.png)
+![Making a Skype call](../media/images/make-a-call.png)
 
 
 **Skype**
@@ -111,7 +111,7 @@ await context.PostAsync(message);
 
 The following image shows the crafted email.
 
-![Created email](./media/images/created-email.png)
+![Created email](../media/images/created-email.png)
 
 
 
@@ -125,7 +125,7 @@ Defines a Cortana action.
 
 | Property | Type | Description 
 |-|-|-
-| action | [CortanaAction](#CortanaAction-object) | The action to perform. 
+| action | [CortanaAction](#cortanaaction-object) | The action to perform. 
 
 ### CortanaAction object
 
