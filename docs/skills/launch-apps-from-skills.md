@@ -47,7 +47,7 @@ await context.PostAsync(message);
 
 The following image shows the launched Map app.
 
-![Map App centered over Paris](../media/images/launched-map-app.png)
+![Map App centered over Paris](./media/images/launched-map-app.png)
 
 
 ## Start a Skype call or IM
@@ -80,7 +80,7 @@ await context.PostAsync(message);
 
 The following image shows the launched Skype for Business window.
 
-![Making a Skype call](../media/images/make-a-call.png)
+![Making a Skype call](./media/images/make-a-call.png)
 
 
 **Skype**
@@ -111,7 +111,7 @@ await context.PostAsync(message);
 
 The following image shows the crafted email.
 
-![Created email](../media/images/created-email.png)
+![Created email](./media/images/created-email.png)
 
 
 
