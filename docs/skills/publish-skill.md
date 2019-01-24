@@ -166,32 +166,25 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         * `Data`: Click on the **Add a user profile request** link and select the user profile information from the drop-down menu. Repeat to select additional user profile data.  
 
-        >[!IMPORTANT]
-        > You are allowed to collect user profile data only to add to your Cortana Skill functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
+            >[!IMPORTANT]
+            > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
 
-                ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
+            ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
 
-        >[!TIP]
-        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
+            >[!TIP]
+            > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.  
 
-1. Click on the **Deploy on Cortana** button.  
+1. After all of the required fields are completed, you can click on the **Deploy on Cortana** button.
 
-    >[!IMPORTANT]
-    > The **Deploy on Cortana** button is enabled only after all of the required fields are completed.  
-    > 
-    > ![Back to Channels, Deploy on Cortana, Manage](./media/images/default_settings-back-deploy-manage.png) 
+    ![Back to Channels, Deploy on Cortana, Manage](./media/images/default_settings-back-deploy-manage.png)
 
-    ![Deploy on Cortana - enabled](./media/images/default_settings-back-deploy-manage-active.png)  
+    ![Deploy on Cortana - enabled](./media/images/default_settings-back-deploy-manage-active.png)
 
->[!NOTE]
-> You may confirm your Cortana Skill is deployed on Bot Framework portal or Azure portal page using the same Microsoft account (MSA) that you registered in *Bot Framework* portal.
+You can confirm that your Cortana Skill is deployed on the Bot Framework portal or Azure portal page by logging in with the same Microsoft account (MSA) that you registered in the *Bot Framework* portal.
 
->[!TIP]
-> For more information about testing your skill, visit the [Testing and Debugging Cortana Skills](./test-debug.md) page.  
+## Test Group Settings
 
-## Test Group Settings  
-
-Deploying to **Test Group** makes your Cortana Skill available to a group of users that you specify using individual MSA email addresses. Typically, you create a test group to have others test your Cortana Skill and provide feedback. Update your Cortana Skill before making generally available.  
+Deploying to **Test Group** makes your Cortana Skill available to a group of users that you specify, using individual MSA email addresses. Typically, you create a test group to have others test your Cortana Skill and provide feedback. It's a really good idea to test and update your skill before making it generally available.  
 
 1. On the *Configure Cortana* page, under the *Test Group Settings* section, enter the following information.  
 
