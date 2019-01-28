@@ -3,7 +3,7 @@ title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 01/24/2019
+ms. date: 01/28/2019
 ms. topic: article
 
 keywords: cortana
@@ -383,12 +383,11 @@ For more information about the requirements for publishing to **World**, visit t
 
         ![Reset Group, Back to Channels, Save changes](./media/images/world_settings-back-submitted-approved.png)
 
-    * The **World Setting** link is updated.  
+    * The **World Setting** link is updated.
 
-        ![World Settings - configured](./media/images/world_settings-configured.png)
+        ![World Settings - submitted](./media/images/world_settings-submitted.png)
 
-    >[!IMPORTANT]
-    > This message shows the review status for your Cortana skill. The Cortana Certification Team reviews all third-party skills before they can be released. If the team has any concerns or questions during the review process, you will receive an email message. Refer to the *World Settings* section to verify the acceptance state of your skill. If it's rejected, then the details and reasons for rejection are provided. If all requirements are met, then your Cortana skill is approved and deployed.
+        This message under the `World Setting` link shows the review status for your Cortana skill (`Submitted`, `Not accepted`, or `Accepted`). The Cortana Certification Team reviews all third-party skills before they can be released. If the team has any concerns or questions during the review process, you will receive an email message at the address you specified. If it's rejected, then the details and reasons for rejection are provided. If all requirements are met, then your Cortana skill is accepted and deployed.
 
     >[!TIP]
     > If you encounter any technical issues and you require assistance, then please send an email message to [Cortana skills Kit Support@microsoft.com](mailto:skillsup@microsoft.com).
@@ -410,30 +409,29 @@ If you read and adhere to the [review requirements](./skill-review-guidelines.md
 
 Some common reasons why a Cortana skill fails the review are:
 
-* The invocation name does not meet policy requirements.
-* Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill.
+- The invocation name does not meet policy requirements.
+- Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill.
 
     Ensure that the invocation phrases actually work.
   
-    Provide enough samples that demonstrate all key features.
+    Provide enough samples to demonstrate all key features.
 
-* You provide sample phrases with one or more of the following issues.
- 
-    * The phrase doesn't include a launch word (ask, tell, and so on) or an invocation name.
-    
-    **Faulty sample phrases:**
+- You provide sample phrases with one or more of the following issues.
 
-    For a skill called **My Events**
-    - `My Events update` : Missing the launch word.
-    - `Ask for an update` : Missing the invocation name.
+    + The phrase doesn't include a launch word (ask, tell, and so on) or an invocation name. For example, for a skill called **MyEvents**, these would be incorrect:
 
-* The samples do not work as expected or described.
+    + `MyEvents update` : Missing the launch word.
+    + `Ask for an update` : Missing the invocation name.
 
-* The skill does not provide support for help. Most first-time users will ask the skill for help (usually by saying "Help"). If a user asks for help, then your skill must tell the user how to use the skill.
+- The samples do not work as expected or described.
 
-    Example: If your skill involved checking stock prices, your help could be "Please say the name of a stock. For example, say Microsoft."
+- The skill does not provide support for help. Most first-time users will ask the skill for help (usually by saying "Help"). If a user asks for help, then your skill must tell the user how to use the skill.
 
-* Your skill infringes on the intellectual property (IP) of another company.
+    Your skill should also prompt the user for correct input if it cannot respond to what the user just entered.
+
+    Example: If your skill involved checking stock prices, and the user failed to provide a stock name, your help could be "Please say the name of a stock. For example, say Microsoft."
+
+- Your skill infringes on the intellectual property (IP) of another company.
 
     The name and invocation name of your Cortana skill should not consist of any trademarked or copyrighted words unless you have permission from the owner. You must ensure that you have the right to share the content that your skill provides, and you must ensure that your skill doesn't make use of any unlicensed or pirated audio or visual content.
 
@@ -443,6 +441,6 @@ Deleting a Cortana skill involves deleting the channel inside the BotFramework p
 
 If you need to delete a Cortana skill that is published to **World**, then you must contact the Cortana Certification Team. If a skill is under review by the team, then you must first withdraw your submission before deleting the Cortana channel.
 
-This can be done on the *Configure Cortana* page. At the bottom of all sections, click the **Delete Channel** button.
+If your skill has not been published to **World**, you can delete the channel on the *Configure Cortana* page. At the bottom of all sections, click the **Delete Channel** button.
 
     ![Delete Channel](./media/images/delete_channel.png)
