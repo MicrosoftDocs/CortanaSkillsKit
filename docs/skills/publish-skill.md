@@ -298,14 +298,9 @@ For more information about the requirements for publishing to **World**, visit t
 
     2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the *Request user profile data* section.
 
-    * Request user profile data
+        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)
 
-    ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)
-
-    * `User data`
         ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)
-
-    * `Additional User Data`
 
     3. Developer Account section
     
@@ -321,39 +316,19 @@ For more information about the requirements for publishing to **World**, visit t
     
         ![Developer Information](./media/images/world_settings-developer_information.png)
     
-    <!--         * `First name`
-        * `Last name`
-        * `Email`
-        * `Phone number`
-        * `Address 1` and `Address 2`
-        * `City/District`
-        * `State`
-        * `Zip code`
-        * `Country`
-        * `Developed by (for ISVs)`
-        * `Published by`
-        * `Developer or Company Website URL` -->
     5. Support Contact section
-        This is where you provided contact information for the Cortana team to reach you.
+        This is where you provide contact information for the Cortana team to reach you.
     
         ![Support Contact](./media/images/world_settings-support_contact.png)
     
-        * `Email`
-        * `Website URL`
     6. Publisher Information section
     
         ![Publisher Information](./media/images/world_settings-publisher_information.png)
     
-        * `Name`
-        * `Email`
-        * `Phone number`
     7. Privacy policy and terms of use section
     
         ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
     
-        * `Privacy policy (URL)`
-        * `Terms of Use (URL)`
-        * `Notices`
     8. Validation and testing instructions section
     
         ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)
@@ -373,7 +348,7 @@ For more information about the requirements for publishing to **World**, visit t
     ![Submit for Review - enabled](./media/images/world_settings-back-save-submit-active.png)
 
     >[!IMPORTANT]
-    > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdraw Your Submission](#withdraw-your-submission) below.
+    > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdraw Your Submission](#withdraw-your-submission) section.
 
 1. After you submit the skill for review, the *World Settings* section displays the following changes.
 
