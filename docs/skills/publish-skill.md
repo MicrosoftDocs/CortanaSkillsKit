@@ -105,6 +105,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
+
     1. Skill information section
 
     ![Skill information](./media/images/default_settings-skill_information.png)
@@ -166,15 +167,15 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         ![Request user profile](./media/images/default_settings-request_user_profile_data-empty.png)
 
-        * `Data`: Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
+        Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
 
-            >[!IMPORTANT]
-            > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
+        >[!IMPORTANT]
+        > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
 
-            ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
+        ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
 
-            >[!TIP]
-            > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+        >[!TIP]
+        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
 1. After all of the required fields are completed, you can click on the **Deploy on Cortana** button.
 
@@ -211,15 +212,15 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
 
         ![Request user profile](./media/images/test_group_settings-request_user_profile_data-empty.png)
 
-        * `Data`: Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
+        Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
 
-            >[!IMPORTANT]
-            > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
+        >[!IMPORTANT]
+        > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
 
-            ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
+        ![Request user profile - all](./media/images/default_settings-request_user_profile_data-all.png)
 
-            >[!TIP]
-            > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+        >[!TIP]
+        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
     3. Group
         ![MSA email addresses - empty](./media/images/test_group_settings-group-empty.png)
@@ -259,7 +260,7 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
 > You must complete the required fields before submitting your Cortana skill for review.
 >  -->
 >[!TIP]
-> If you complete some of the required fields but need to continue later, click on the **Save and Close** button at the bottom of the page. This will save the data you've already entered, and allow you to resume later.
+> If you complete some of the required fields but need to continue later, click on the `Save and Close` button at the bottom of the page. This will save the data you've already entered, and allow you to resume later.
 
 Deploying your Cortana skill to **World** will submit your skill for review. Once it has passed review, your skill will be published in all markets that you specified when you registered your bot.
 
@@ -277,7 +278,7 @@ For more information about the requirements for publishing to **World**, visit t
         ![Skills information](./media/images/world_settings-skill_information.png)
 
         * `Skill icon`: Click on the **Upload icon** button and select an icon for your Cortana skill.
-        * `Display name`: The value is limited to 30 characters.
+        * `Display name`: This name is limited to 30 characters.
         * `Invocation name`:  This field displays the name that the user speaks (or types) to invoke your skill.
             >[!NOTE]
              > The name shown was previously defined in the setup process, and can't be changed here.
