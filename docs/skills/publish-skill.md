@@ -256,9 +256,9 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
 
 <!-- >[!IMPORTANT]
 > You must complete the required fields before submitting your Cortana skill for review.
->
-> >[!TIP]
-> > If you complete some of the required fields and need to continue later, then click on the **Save and Close** button at the bottom. This enables you to preserve the fields you populated. You are able to resume the rest at a later time.  -->
+>  -->
+>[!TIP]
+> If you complete some of the required fields but need to continue later, click on the **Save and Close** button at the bottom of the page. This will save the data you've already entered, and allow you to resume later.
 
 Deploying your Cortana skill to **World** will submit your skill for review. Once it has passed review, your skill will be published in all markets that you specified when you registered your bot.
 
@@ -271,7 +271,7 @@ For more information about the requirements for publishing to **World**, visit t
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
-    1. Skill information section
+    2. Skill information section
 
         ![Skills information](./media/images/world_settings-skill_information.png)
 
@@ -296,66 +296,65 @@ For more information about the requirements for publishing to **World**, visit t
         * `Supported platforms`: Select the platform(s) your skill supports.
 
     2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the Request user profile data section.
-<!--         ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-off.png) -->
 
-        * Request user profile data
-    
-        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)
-    
-            * `User data`
-                ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)
-    
-            * `Additional User Data`
-    
-    3. Developer Account section
+    * Request user profile data
 
-        ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)
+    ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)
 
-        * `Developer Account Type`: Click on the radio button matching your type.
+    * `User data`
+        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)
 
-            If you are an individual or student developer, then select `Developer`.
+    * `Additional User Data`
 
-            If you are part of a company, then select `Company`.
+3. Developer Account section
 
-    4. Developer Information section: Note that all of the fields on this form are required.
+    ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)
 
-        ![Developer Information](./media/images/world_settings-developer_information.png)
+    * `Developer Account Type`: Click on the radio button matching your type.
+
+        If you are an individual or student developer, then select `Developer`.
+
+        If you are part of a company, then select `Company`.
+
+4. Developer Information section: Note that all of the fields on this form are required.
+
+    ![Developer Information](./media/images/world_settings-developer_information.png)
 
 <!--         * `First name`
-        * `Last name`
-        * `Email`
-        * `Phone number`
-        * `Address 1` and `Address 2`
-        * `City/District`
-        * `State`
-        * `Zip code`
-        * `Country`
-        * `Developed by (for ISVs)`
-        * `Published by`
-        * `Developer or Company Website URL` -->
-    5. Support Contact section
+    * `Last name`
+    * `Email`
+    * `Phone number`
+    * `Address 1` and `Address 2`
+    * `City/District`
+    * `State`
+    * `Zip code`
+    * `Country`
+    * `Developed by (for ISVs)`
+    * `Published by`
+    * `Developer or Company Website URL` -->
+5. Support Contact section
 
-        ![Support Contact](./media/images/world_settings-support_contact.png)
+    ![Support Contact](./media/images/world_settings-support_contact.png)
 
-        * `Email`
-        * `Website URL`
-    6. Publisher Information section
+    * `Email`
+    * `Website URL`
+6. Publisher Information section
 
-        ![Publisher Information](./media/images/world_settings-publisher_information.png)
+    ![Publisher Information](./media/images/world_settings-publisher_information.png)
 
-        * `Name`
-        * `Email`
-        * `Phone number`
-    7. Privacy policy and terms of use section
+    * `Name`
+    * `Email`
+    * `Phone number`
+7. Privacy policy and terms of use section
 
-        ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
+    ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
 
-        * `Privacy policy (URL)`
-        * `Terms of Use (URL)`
-        * `Notices`
-    8. Validation and testing instructions section
+    * `Privacy policy (URL)`
+    * `Terms of Use (URL)`
+    * `Notices`
+8. Validation and testing instructions section
 
-        ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)
+    ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)
 
 2. Click on the **Save** button.
 
@@ -407,11 +406,8 @@ If you read and adhere to the [review requirements](./skill-review-guidelines.md
 Some common reasons why a Cortana skill fails the review are:
 
 - The invocation name does not meet policy requirements.
-- Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill.
 
-    Ensure that the invocation phrases actually work.
-
-    Provide enough samples to demonstrate all key features.
+- Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, such as `ask`, `open`, `tell`, etc.
 
 - You provide sample phrases with one or more of the following issues.
 
@@ -420,13 +416,13 @@ Some common reasons why a Cortana skill fails the review are:
     + `MyEvents update` : Missing the launch word.
     + `Ask for an update` : Missing the invocation name.
 
-- The samples do not work as expected or described.
+- The samples do not work as expected or described. Before submitting your skill, you should ensure that the invocation phrases work as expected. Ideally, you should provide enough samples to demonstrate all key features.
 
 - The skill does not provide support for help. Most first-time users will ask the skill for help (usually by saying "Help"). If a user asks for help, then your skill must tell the user how to use the skill.
 
     Your skill should also prompt the user for correct input if it cannot respond to what the user just entered.
 
-    Example: If your skill involved checking stock prices, and the user failed to provide a stock name, your help could be "Please say the name of a stock. For example, say Microsoft."
+    Example: If your skill involved checking stock prices, and the user failed to provide a stock name, your help could be "Please say the name of a stock. For example, say Contoso."
 
 - Your skill infringes on the intellectual property (IP) of another company.
 
@@ -440,4 +436,4 @@ If you need to delete a Cortana skill that is published to **World**, then you m
 
 If your skill has not been published to **World**, you can delete the channel on the *Configure Cortana* page. At the bottom of all sections, click the **Delete Channel** button.
 
-    ![Delete Channel](./media/images/delete_channel.png)
+![Delete Channel](./media/images/delete_channel.png)
