@@ -387,7 +387,7 @@ For more information about the requirements for publishing to **World**, visit t
         This message under the `World Setting` link shows the review status for your Cortana skill (`Submitted`, `Not accepted`, or `Accepted`). The Cortana Certification Team reviews all third-party skills before they can be released. If the team has any concerns or questions during the review process, you will receive an email message at the address you specified. If it's rejected, then the details and reasons for rejection are provided. If all requirements are met, then your Cortana skill is accepted and deployed.
 
     >[!TIP]
-    > If you encounter any technical issues and you require assistance, then please send an email message to [Cortana skills Kit Support@microsoft.com](mailto:skillsup@microsoft.com).
+    > If you run into any technical issues, or otherwise need help, please email **Cortana Skills Kit Support** at [skillsup@microsoft.com](mailto:skillsup@microsoft.com).
 
 ### Withdrawing Your Submission
 
