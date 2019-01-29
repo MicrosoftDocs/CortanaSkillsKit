@@ -13,7 +13,7 @@ keywords: cortana
 
 >[!NOTE]
 > This article describes the three deployment groups in Cortana and how to publish a Cortana skill. You should create a Cortana skill before proceeding.
-
+>
 > If you have never created a Cortana skill and need to get started, visit the [Create your first skill](./get-started.md) page.
 
 Deploy your Cortana skill to each of the three deployment groups.
@@ -115,7 +115,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.
 
-    1. Manage user identity through Connected Services
+    2. Manage user identity through Connected Services
     ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-off.png)
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
@@ -155,14 +155,14 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         >[!IMPORTANT]
         > The password (client secret) is displayed only once. When you create your bot, it's shown under the *Application Secrets* section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal.
-
+        >
         > If you don't know the password, you'll need to create a new one by clicking on the **Generate New password** button.
 
     * `Client authorization scheme`: If you don't know your client authorization scheme, use  the default option (`HTTP Basic (Recommended)`).
 
     * `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).` Check this only if your app requires access to an intranet.
 
-    1. Request user profile data
+    3. Request user profile data
 
         ![Request user profile](./media/images/default_settings-request_user_profile_data-empty.png)
 
@@ -235,15 +235,15 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
 
 3. After your test group is created, the *Test Group Settings* section displays the group information.
 
-        ![Group - created](./media/images/test_group_settings-group-contoso_hotmail-group_access_url.png)
+    ![Group - created](./media/images/test_group_settings-group-contoso_hotmail-group_access_url.png)
 
-        * `Member email`: Shows the list of member email addresses.
+    * `Member email`: Shows the list of member email addresses.
 
-        * `Group Access URL`: The URL that your group members will use to access your skill.
-            * >[!IMPORTANT]
-                > You must manually send an email message to the designated MSA users listed in the `Member email` field. This email will be your user's only invitation to join the skill test group. The message must include the URL from the `Group Access URL` field.
-                >
-                > When an MSA user clicks on the **Group Access URL** in the message, they have the option to accept or decline joining the skill test group. If the user accepts, then access is granted to test your Cortana skill. If the user declines to join, then access is denied.
+    * `Group Access URL`: The URL that your group members will use to access your skill.
+        * >[!IMPORTANT]
+            > You must manually send an email message to the designated MSA users listed in the `Member email` field. This email will be your user's only invitation to join the skill test group. The message must include the URL from the `Group Access URL` field.
+            >
+            > When an MSA user clicks on the **Group Access URL** in the message, they have the option to accept or decline joining the skill test group. If the user accepts, then access is granted to test your Cortana skill. If the user declines to join, then access is denied.
 
     * The **Reset Group** Button is added and the **Create Group** button is replaced by the **Save changes** button.
 
