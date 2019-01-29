@@ -3,7 +3,7 @@ title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 01/28/2019
+ms. date: 01/29/2019
 ms. topic: article
 
 keywords: cortana
@@ -12,8 +12,9 @@ keywords: cortana
 # Publishing Cortana skills
 
 >[!NOTE]
-> This article describes the three deployment groups in Cortana and how to publish a Cortana skill. You should create a Cortana skill before proceeding. 
-> *   If you have never created a Cortana skill and need to get started, visit the [Create your first skill](./get-started.md) page.
+> This article describes the three deployment groups in Cortana and how to publish a Cortana skill. You should create a Cortana skill before proceeding.
+
+> If you have never created a Cortana skill and need to get started, visit the [Create your first skill](./get-started.md) page.
 
 Deploy your Cortana skill to each of the three deployment groups.
 * [Default Settings](#default-settings)
@@ -104,7 +105,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
-    2. Skill information section
+    1. Skill information section
 
     ![Skill information](./media/images/default_settings-skill_information.png)
 
@@ -114,7 +115,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.
 
-    2. Manage user identity through Connected Services
+    1. Manage user identity through Connected Services
     ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-off.png)
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
@@ -154,14 +155,14 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         >[!IMPORTANT]
         > The password (client secret) is displayed only once. When you create your bot, it's shown under the *Application Secrets* section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal.
-        <br /><br />
-        > If you don't know the password, you'll need to create a new one by clicking on the **Generate New password** button. 
+
+        > If you don't know the password, you'll need to create a new one by clicking on the **Generate New password** button.
 
     * `Client authorization scheme`: If you don't know your client authorization scheme, use  the default option (`HTTP Basic (Recommended)`).
 
     * `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).` Check this only if your app requires access to an intranet.
 
-    2. Request user profile data
+    1. Request user profile data
 
         ![Request user profile](./media/images/default_settings-request_user_profile_data-empty.png)
 
