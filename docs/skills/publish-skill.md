@@ -104,7 +104,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
-    1. Skill information section
+    2. Skill information section
 
     ![Skill information](./media/images/default_settings-skill_information.png)
 
@@ -114,12 +114,12 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.
 
-    1. Manage user identity through Connected Services
+    2. Manage user identity through Connected Services
     ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-off.png)
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
 
-    ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-on.png)
+        ![Manage user identity through Connected Services](./media/images/default_settings-manage_user_identity_connected_services-on.png)
 
     * `When should Cortana prompt for a user to sign in?`
         * `Sign in at invocation`: The user signs in once, and the authorization token will be passed as needed.
@@ -161,7 +161,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     * `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).` Check this only if your app requires access to an intranet.
 
-    1. Request user profile data
+    2. Request user profile data
 
         ![Request user profile](./media/images/default_settings-request_user_profile_data-empty.png)
 
@@ -296,18 +296,17 @@ For more information about the requirements for publishing to **World**, visit t
         * `Supported platforms`: Select the platform(s) your skill supports.
 
     2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the Request user profile data section.
+<!--         ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-off.png) -->
 
-<!--         ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-off.png)
-
- -->        * Request user profile data
-
-            ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)
-
+        * Request user profile data
+    
+        ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)
+    
             * `User data`
                 ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)
-
+    
             * `Additional User Data`
-
+    
     3. Developer Account section
 
         ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)
