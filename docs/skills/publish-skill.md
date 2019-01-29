@@ -272,7 +272,7 @@ For more information about the requirements for publishing to **World**, visit t
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
-    2. Skill information section
+    1. Skill information section
 
         ![Skills information](./media/images/world_settings-skill_information.png)
 
@@ -296,7 +296,7 @@ For more information about the requirements for publishing to **World**, visit t
  
         * `Supported platforms`: Select the platform(s) your skill supports.
 
-    2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the Request user profile data section.
+    2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the *Request user profile data* section.
 
     * Request user profile data
 
@@ -307,63 +307,64 @@ For more information about the requirements for publishing to **World**, visit t
 
     * `Additional User Data`
 
-3. Developer Account section
-
-    ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)
-
-    * `Developer Account Type`: Click on the radio button matching your type.
-
-        If you are an individual or student developer, then select `Developer`.
-
-        If you are part of a company, then select `Company`.
-
-4. Developer Information section: Note that all of the fields on this form are required.
-
-    ![Developer Information](./media/images/world_settings-developer_information.png)
-
-<!--         * `First name`
-    * `Last name`
-    * `Email`
-    * `Phone number`
-    * `Address 1` and `Address 2`
-    * `City/District`
-    * `State`
-    * `Zip code`
-    * `Country`
-    * `Developed by (for ISVs)`
-    * `Published by`
-    * `Developer or Company Website URL` -->
-5. Support Contact section
-
-    ![Support Contact](./media/images/world_settings-support_contact.png)
-
-    * `Email`
-    * `Website URL`
-6. Publisher Information section
-
-    ![Publisher Information](./media/images/world_settings-publisher_information.png)
-
-    * `Name`
-    * `Email`
-    * `Phone number`
-7. Privacy policy and terms of use section
-
-    ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
-
-    * `Privacy policy (URL)`
-    * `Terms of Use (URL)`
-    * `Notices`
-8. Validation and testing instructions section
-
-    ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)
-
-2. Click on the **Save** button.
+    3. Developer Account section
+    
+        ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)
+    
+        * `Developer Account Type`: Click on the radio button matching your type.
+    
+            If you are an individual or student developer, then select `Developer`.
+    
+            If you are part of a company, then select `Company`.
+    
+    4. Developer Information section: Note that all of the fields on this form are required.
+    
+        ![Developer Information](./media/images/world_settings-developer_information.png)
+    
+    <!--         * `First name`
+        * `Last name`
+        * `Email`
+        * `Phone number`
+        * `Address 1` and `Address 2`
+        * `City/District`
+        * `State`
+        * `Zip code`
+        * `Country`
+        * `Developed by (for ISVs)`
+        * `Published by`
+        * `Developer or Company Website URL` -->
+    5. Support Contact section
+        This is where you provided contact information for the Cortana team to reach you.
+    
+        ![Support Contact](./media/images/world_settings-support_contact.png)
+    
+        * `Email`
+        * `Website URL`
+    6. Publisher Information section
+    
+        ![Publisher Information](./media/images/world_settings-publisher_information.png)
+    
+        * `Name`
+        * `Email`
+        * `Phone number`
+    7. Privacy policy and terms of use section
+    
+        ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
+    
+        * `Privacy policy (URL)`
+        * `Terms of Use (URL)`
+        * `Notices`
+    8. Validation and testing instructions section
+    
+        ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)
+    
+1. Click on the **Save** button.
 
      The **Save** button is enabled only after all of the required fields are completed.
 
     ![Back to Channels, Save, Submit for Review](./media/images/world_settings-back-save-submit.png)
 
-2. Click **Submit for review**.
+1. Click **Submit for review**.
 
     The **Submit for review** button is enabled only after all of the required fields are completed.
 
@@ -374,7 +375,7 @@ For more information about the requirements for publishing to **World**, visit t
     >[!IMPORTANT]
     > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdraw Your Submission](#withdraw-your-submission) below.
 
-2. After submitting for review, the *World Settings* section displays the following changes.
+1. After you submit the skill for review, the *World Settings* section displays the following changes.
 
     * The **Save** button and **Submit for Review** button are removed.
 
