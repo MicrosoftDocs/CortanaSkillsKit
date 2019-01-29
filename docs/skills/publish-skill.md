@@ -278,24 +278,22 @@ For more information about the requirements for publishing to **World**, visit t
         * `Skill icon`: Click on the **Upload icon** button and select an icon for your Cortana skill.  
         * `Display name`: The value is limited to 30 characters.  
         * `Invocation name`:  This field displays the name that the user speaks (or types) to invoke your skill.
-            * >[!WARNING]
-                > The name shown was previously defined in the setup process, and can't be changed here.
+            >[!NOTE]
+             > The name shown was previously defined in the setup process, and can't be changed here.
         * `Short description`  
         * `Long description`  
         * `Sample Invocation Phrase`: Enter an invocation phrase and click on the **Add sample invocation phrase** button.  
         * `Primary category`: Click the drop-down menu to select a category that matches your Cortana skill.
-        * `Secondary category (Optional)`  
-            * Click the drop-down menu to select a secondary category.
+        * `Secondary category (Optional)`: Click the drop-down menu to select a secondary category.
 
-                >[!NOTE]
-                > Categories can be used in searching, so select categories that will help users find your skill.
+            > [!NOTE]
+            > Categories can be used in searching, so select categories that will help users find your skill.
 
-        * `Tags`  
-            * Enter a unique word and click on the Add button.
-            
-                You can create more tags by repeating this step. Tags are similar to categories in that they can be used in searches to help users discover your skill.
+        * `Tags`: Enter a unique word and click on the Add button.
+
+            You can create more tags by repeating this step. Tags are similar to categories in that they can be used in searches to help users discover your skill.
  
-        * `Supported platforms`  
+        * `Supported platforms`: Select the platform(s) your skill supports.
 
     2. `Does this Cortana skill collect users' personal information?`  
 
@@ -306,7 +304,7 @@ For more information about the requirements for publishing to **World**, visit t
             ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on.png)  
 
             * `User data`  
-                * ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)  
+                ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)  
 
             * `Additional User Data`  
 
@@ -418,7 +416,7 @@ Some common reasons why a Cortana skill fails the review are:
 
 - You provide sample phrases with one or more of the following issues.
 
-    + The phrase doesn't include a launch word (ask, tell, and so on) or an invocation name. For example, for a skill called **MyEvents**, these would be incorrect:
+    The phrase doesn't include a launch word (ask, tell, and so on) or an invocation name. For example, for a skill called **MyEvents**, these would be incorrect:
 
     + `MyEvents update` : Missing the launch word.
     + `Ask for an update` : Missing the invocation name.
