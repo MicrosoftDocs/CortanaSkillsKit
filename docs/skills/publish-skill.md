@@ -3,7 +3,7 @@ title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 01/29/2019
+ms. date: 01/30/2019
 ms. topic: article
 
 keywords: cortana
@@ -12,9 +12,9 @@ keywords: cortana
 # Publishing Cortana skills
 
 >[!NOTE]
-> This article describes the three deployment groups in Cortana and how to publish a Cortana skill. You should create a Cortana skill before proceeding.
+> This article describes how to publish a Cortana skill. You should already have created a skill before proceeding.
 >
-> If you have never created a Cortana skill and need to get started, visit the [Create your first skill](./get-started.md) page.
+> If you haven't created one yet, visit the [Create your first skill](./get-started.md) page.
 
 Deploy your Cortana skill to each of the three deployment groups.
 * [Default Settings](#default-settings)
