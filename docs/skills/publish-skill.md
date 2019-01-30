@@ -128,7 +128,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
         Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
 
         >[!IMPORTANT]
-        > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
+        > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines.md#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines.md).
 
         ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
 
@@ -173,7 +173,7 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
         Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
 
         >[!IMPORTANT]
-        > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines).
+        > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines.md#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines.md).
 
         ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
 
