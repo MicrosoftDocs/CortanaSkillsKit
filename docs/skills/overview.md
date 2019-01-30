@@ -11,9 +11,6 @@ keywords: cortana
 
 # Cortana Skills Kit
 
->[!IMPORTANT]
-> Cortana Skills Kit is currently in public preview.  
-
 Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.
 
 The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Create Your First Cortana Skill](https://docs.microsoft.com/en-us/cortana/skills/get-started)  
@@ -114,7 +111,7 @@ Interactions between a user and your Cortana skill are mostly free-form, so Cort
 
 You could use a simple method such as using regular expressions to inspect the content of a message and determine intent, but we encourage you to use [Language Understanding Intelligent Service (LUIS)](https://www.luis.ai). LUIS is a powerful natural language processing tool that uses pre-built or custom-trained language models to evaluate user input. LUIS can determine what users want (intent) and identify concepts and entities in a given sentence. Ultimately, this allows your Cortana skill to respond with the appropriate action.
 
-> For information about recognizing intents and entities with LUIS, visit the  [Using LUIS with the Node.js SDK](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-3.0) page, depending on the Bot Framework SDK that you use.
+For information about recognizing intents and entities with LUIS, visit the  [Using LUIS with the Node.js SDK](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-3.0) page, depending on the Bot Framework SDK that you use.
 
 ## Next steps  
 
