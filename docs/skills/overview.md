@@ -51,12 +51,24 @@ If an invocation name is not provided, then Cortana may suggest a skill that she
 When a user invokes your Cortana skill, Cortana sends a structured request to the service that powers your Cortana skill, and waits for a response. There are two ways that Cortana listens for voice requests. The first is when the user presses the microphone button in the Cortana app or in the `Ask me anything` search box in Windows. The second is when the user enables Cortana to respond to `Hey Cortana`. The following are examples of how users might interact with Cortana.  
 
 ### EXAMPLE 1
-> If a user asks Cortana about the weather, then Cortana triggers the built-in weather skill. 
+> If a user asks Cortana about the weather, then Cortana triggers the built-in weather skill.
+>
 > Sample dialogue:
->```
+>
 >User: "What's the weather like?"
+>
 >Cortana: "It's currently 58 degrees and mostly cloudy."
->```  
+
+:::row:::
+    :::column span="1":::
+        User: "What's the weather like?"
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column span="1":::
+        Cortana: "It's currently 58 degrees and mostly cloudy."
+    :::column-end:::
+:::row-end:::
 
 ### EXAMPLE 2
 > If the user invokes a Cortana skill on a device with a screen, then a card with additional information will be displayed onscreen. For example, this card might be displayed when Cortana answers the previous weather question:
@@ -66,7 +78,6 @@ When a user invokes your Cortana skill, Cortana sends a structured request to th
 ### EXAMPLE 3
 > If a user is trying to invoke your Cortana skill by voice input, they speak an invocation phrase using the invocation name. For example, if a user invokes the Cortana skill `Contoso Photo` to check on the status of an order and make a change, then the conversation that follows might go like this.  
 >
-> ```
 > User: "Ask Contoso Photo what the status of my order of cat photos is."
 > Cortana: "Your order of cat photos will be ready in an hour."  
 > Cortana: "Can I help you with anything else?"
@@ -76,7 +87,6 @@ When a user invokes your Cortana skill, Cortana sends a structured request to th
 > Cortana: "You would like to change the paper to matte. Is this correct?"
 > User: "Yes."
 > Cortana: "Your order has been updated."
-> ```  
 
 There are design guides available to help you create an engaging user experience.
 
@@ -85,6 +95,7 @@ There are design guides available to help you create an engaging user experience
 * [Performance guidelines](./performance-guidelines.md)  
 * [Publishing review guidelines](./skill-review-guidelines.md)  
 * [Maintaining Your Cortana persona](./cortanas-persona.md) 
+>
 
 ## Personalize the user experience with user insights  
 
