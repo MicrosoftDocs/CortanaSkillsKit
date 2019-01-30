@@ -60,14 +60,10 @@ When a user invokes your Cortana skill, Cortana sends a structured request to th
 >Cortana: "It's currently 58 degrees and mostly cloudy."
 
 :::row:::
-    :::column span="1":::
-        User: "What's the weather like?"
-    :::column-end:::
+    User: "What's the weather like?"
 :::row-end:::
 :::row:::
-    :::column span="1":::
         Cortana: "It's currently 58 degrees and mostly cloudy."
-    :::column-end:::
 :::row-end:::
 
 ### EXAMPLE 2
