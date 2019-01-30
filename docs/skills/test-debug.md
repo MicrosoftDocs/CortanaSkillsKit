@@ -3,7 +3,7 @@ title: Testing and debugging Cortana Skills
 description: Tips on testing and debugging Cortana Skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 10/12/2018
+ms.date: 01/24/2019
 ms.topic: article
 
 keywords: cortana
@@ -35,7 +35,7 @@ The following options are available to test and debug your Cortana Skill.
 >[!TIP]
 >For details about debugging your Cortana Skill in Azure [continuous publishing](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-3.0#set-up-continuous-deployment) environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-3.0) page.  
 
-Before you start debugging your Cortana Skill, visit the [Troubleshooting tips](#Troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
+Before you start debugging your Cortana Skill, visit the [Troubleshooting tips](#troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
 
 > [!NOTE]
 > If you found an error in another developer's Cortana Skill, ]then click on the **feedback** button in Cortana and report it.  
@@ -77,8 +77,8 @@ The following provides suggestions for solving common problems.
 
 | Issue                                                                                                                                   |  
 |:---                                                                                                                                     |  
-| [I am not able to invoke my Cortana Skill](#i-am-not-able-to-invoke-my-skill])                                                                                    |  
-| [Cortana is spelling my invocation name incorrectly when I say it](#cortana-isn-t-spelling-my-invocation-name-correctly-when-I-say-it) | 
+| [I am not able to invoke my Cortana Skill](#i-am-not-able-to-invoke-my-cortana-skill)                                                                                    |  
+| [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) | 
 | [I am not able to create more than 20 Cortana Skills](#i-am-not-able-to-create-more-than-20-cortana-skills)                                                               |  
 | [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error)                                                 |  
 | [I am able to invoke my Cortana-Skill, but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able)                                                |  

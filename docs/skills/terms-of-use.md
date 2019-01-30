@@ -3,7 +3,7 @@ title: Example Terms of Use for Cortana Skills
 description: Provides an example Terms of Use that you can use with your Cortana skill.
 
 ms.assetid: 4A17CB6A-A863-415C-9148-61B7022B2854
-ms.date: 10/03/2018
+ms.date: 01/24/2019
 ms.topic: article
 
 keywords: cortana
@@ -13,14 +13,14 @@ keywords: cortana
 
 Microsoft take user disclosures very seriously. Cortana Skills require you to provide your skill's users with the terms of use related to your service. Below are some guidelines and third-party resources to help you fulfill these requirements. Please be advised that these resources are provided for your convenience. ***You agree to assume all risk and liability arising from your use of these resources and that Microsoft is not responsible for any issues arising out of your use of them.***
 
-For a sample terms of use for your skill, see [Sample Terms for Cortana Skills](#SAMPLE-TERMS-FOR-CORTANA-SKILLS). These Sample Terms for Cortana Skills are for your convenience to use with your skill if you do not already have your own terms of use. These Sample Terms for Cortana Skills are used at your own risk and come with important conditions, which you should understand before you decide to use them. Only use the Sample Terms for Cortana Skills if you understand and agree with the following conditions:
+For a sample terms of use for your skill, see [Sample Terms for Cortana Skills](#sample-terms-for-cortana-skills). These Sample Terms for Cortana Skills are for your convenience to use with your skill if you do not already have your own terms of use. These Sample Terms for Cortana Skills are used at your own risk and come with important conditions, which you should understand before you decide to use them. Only use the Sample Terms for Cortana Skills if you understand and agree with the following conditions:
 
 1.  These Sample Terms for Cortana Skills do not purport to accurately describe the relationship you want to have with End Users or the manner in which they will interact with your skill. You should edit or revise these Sample Terms for Cortana Skills as needed.
 2.  These Sample Terms for Cortana Skills are not localized to every jurisdiction in which your skill might be available. You are responsible for ensuring that your skill complies with local laws, including that any terms you use for your skill to comply with local laws.
 3.  Microsoft makes no representations, guarantees, or warranties about the Sample Terms for Cortana Skills. For example, Microsoft does not guarantee that the Sample Terms for skills are legally enforceable or comply with local laws. Microsoft also does not guarantee the Sample Terms for Cortana Skills anticipate every legal scenario.
 4.  Your use of these the Sample Terms for Cortana Skills is your agreement with your end users and Microsoft is not liable for any and all liability, claims, damages, or losses which may be sustained in connection with use of the Sample Terms for Cortana Skills (such as a court concluding that they are unenforceable or a regulator deciding that they are illegal under local law).
 
-## SAMPLE TERMS FOR CORTANA SKILLS
+## Sample terms for Cortana skills
 
 These terms are an agreement between you and skill publisher for the use of the skill available through Cortana and Cortana enable devices (“Cortana Services”). Please read them. They apply to your use of the Company Skill, including any updates to the skill, unless skill publisher provides you with separate terms, in which case those terms apply. Skill publisher means the entity making the skill available to you, as identified in the Cortana Skill description.
 

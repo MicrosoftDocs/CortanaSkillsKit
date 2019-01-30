@@ -1,9 +1,9 @@
-﻿---
+---
 title: Add audio streaming to your skill
 description: Learn how to add audio streaming to your bot-based skill.
 label: Conceptual
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 05/03/2018
+ms.date: 01/23/2019
 ms.topic: article
 
 keywords: cortana
@@ -12,7 +12,7 @@ keywords: cortana
 # Add audio streaming to your skill
 
 > [!NOTE]
-> This documentation provides details around streaming audio in skills built using the Microsoft Bot Framework.
+> This documentation provides details around streaming audio in Cortana skills built using the Microsoft Bot Framework.
 > 
 
 
@@ -54,12 +54,12 @@ The following example shows how to add a single track for Cortana to play.
     Attachment audioCardAttach = audioCard.ToAttachment();
     reply.Attachments.Add(audioCardAttach);
 
-    reply.InputHint = InputHints.AcceptingInput;
+    reply.InputHint = InputHints.ExpectingInput;
 
     await connector.Conversations.ReplyToActivityAsync(reply);
 ```
 
-Be sure to use `AcceptingInput` as the input hint in your message. You should not use `IgnoringInput` or `ExpectingInput` as the input hint. If you set the hint to `IgnoringInput` without sending a follow-up `AcceptingInput` hint, the conversation will eventually error out because the system is expecting your skill to send another message.
+Be sure to use `ExpectingInput` as the input hint in your message. You should not use `IgnoringInput` as the input hint. If you set the hint to `IgnoringInput` without sending a follow-up `ExpectingInput` hint, the conversation will eventually error out because the system is expecting your skill to send another message.
 
 Cortana does not notify the skill when the audio stream or playlist completes.
 
@@ -88,7 +88,7 @@ The following example shows how to send a Stop event. The message type must be `
 Activity reply = activity.CreateReply();
                     reply.Type = ActivityTypes.Event;
                     reply.Name = "media/stop";
-                    reply.InputHint = InputHints.AcceptingInput;
+                    reply.InputHint = InputHints.ExpectingInput;
 
                     await connector.Conversations.ReplyToActivityAsync(reply);
 ```

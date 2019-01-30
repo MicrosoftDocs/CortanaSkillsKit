@@ -3,7 +3,7 @@ title: Cortana Skills Kit FAQ
 description: Tips on Testing & Debugging Cortana Skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 01/09/2019
+ms.date: 01/23/2019
 ms.topic: article
 
 keywords: cortana
@@ -74,8 +74,6 @@ Your response may contain a maximum of 90 seconds of speech.
 
 ### How many intents and entities can a skill have?
 
-<!-- This doesn't sound right. Doesn't the language model/service they choose to use decide the limits? Shouldn't this read: That's up to the language understanding service you use. If you use [LUIS](https://luis.ai) (recommended), it supports 80 intents, 30 custom entities and 10 built-in entities in a single language model. -->
-
 That's up to the language understanding service you use. If you use [LUIS](https://luis.ai) (recommended), it currently supports 80 intents, 30 custom entities, and 10 built-in entities per single language model. 
 
 ### How many users can access my skill?
@@ -92,7 +90,7 @@ Cortana Skills currently do not support two-factor authentication. However, it's
 
 ### I've already built a voice command definition, will that just work with the Skills Kit?
 
-Yes, your voice command definition (VCD) will continue to work. 
+Yes, your voice command definition (VCD) will continue to work.
 
 ### I've built a bot for Facebook. What do I do next?
 
@@ -102,7 +100,11 @@ You can convert your Facebook bot to a Cortana skill in the following ways:
 
 ### Will my skill work with voice and text?
 
-Beginning with the Windows 10 Fall Creators Update, or the latest version of Cortana for iOS or Android, users can use voice or text to interact with your skill. Previously, users could only interact with your skill using voice.
+Beginning with the Windows 10 Fall Creators Update (September 2017, version 1709), or the latest version of Cortana for iOS or Android, users can use voice or text to interact with your skill.
+
+### Does Cortana work differently on devices that don't have a display, like the Invoke speaker)?
+
+Yes. By design, the microphone is closed on headless devices (devices without a display) after Cortana receives user input. This closes the conversation and loses any context. Because of this, you must use `ExpectingInput` in these devices, and not `AcceptingInput`.
 
 ### What is the difference between the language support capabilities in VCD versus what is offered with Cortana Skills Kit?
 

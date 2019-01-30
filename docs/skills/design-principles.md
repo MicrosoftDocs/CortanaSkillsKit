@@ -254,8 +254,8 @@ In many cases, the cost of mis-recognition is so low that confirmation is not wa
 
 There are different confirmation strategies you can use.
 
-- [Explicit confirmation](#Explicit-Confirmation)
-- [Implicit confirmation](#Implicit-Confirmation)
+- [Explicit confirmation](#explicit-confirmation)
+- [Implicit confirmation](#implicit-confirmation)
 
 ### Explicit confirmation
 
