@@ -50,47 +50,6 @@ Follow these instructions to access the Cortana Configuration page and update ea
 
     ![Configure Cortana](./media/images/configure_cortana.png)
 
-<!-- :::row:::
-    :::column span="1":::
-        You should see this heading while and after you configure your Cortana skill for individual testing.
-    :::column-end:::
-    :::column span="1":::
-        ![Default settings](./media/images/default_settings.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading while you configure your Cortana skill for group testing.
-    :::column-end:::
-    :::column span="1":::
-        ![Test Group settings](./media/images/test_group_settings-not_configured.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading after you configure your Cortana skill for group testing.
-    :::column-end:::
-    :::column span="1":::
-        ![Test Group settings - Configured](./media/images/test_group_settings-configured.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading while you configure your Cortana skill for deployment.
-    :::column-end:::
-    :::column span="1":::
-        ![World settings](./media/images/world_settings-not_configured.png)
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column span="1":::
-        You should see this heading after you deploy your Cortana skill.
-    :::column-end:::
-    :::column span="1":::
-        ![World settings - Configured](./media/images/world_settings-configured.png)
-    :::column-end:::
-:::row-end:::
- -->
 ## Default Settings
 
 After configuring the Cortana channel for your skill, it's automatically deployed to **Default Settings**. Deploying to **Default Settings** makes the skill available to you only, so you can thoroughly test it before deploying it to one of the other environments.
@@ -104,7 +63,6 @@ For more information about configuring the Cortana channel, visit the [Connect a
     Complete the required fields (marked with an asterisk).
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
-
 
     1. Skill information section
 
@@ -294,7 +252,7 @@ For more information about the requirements for publishing to **World**, visit t
         * `Tags`: Enter a unique word and click on the Add button.
 
             You can create more tags by repeating this step. Tags are similar to categories in that they can be used in searches to help users discover your skill.
- 
+
         * `Supported platforms`: Select the platform(s) your skill supports.
 
     2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the *Request user profile data* section.
@@ -304,36 +262,36 @@ For more information about the requirements for publishing to **World**, visit t
         ![Does this Cortana skill collect users' personal information?](./media/images/world_settings-collect_users_information-on-user_data.png)
 
     3. Developer Account section
-    
+
         ![Developer Account Type - Developer](./media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](./media/images/world_settings-developer_account-company.png)
-    
-        * `Developer Account Type`: Click on the radio button matching your type.
-    
-            If you are an individual or student developer, then select `Developer`.
-    
-            If you are part of a company, then select `Company`.
-    
+
+        `Developer Account Type`: Click on the radio button matching your type.
+
+        - If you are an individual or student developer, then select `Developer`.
+
+        - If you are part of a company, then select `Company`.
+
     4. Developer Information section: Note that all of the fields on this form are required.
-    
+
         ![Developer Information](./media/images/world_settings-developer_information.png)
-    
+
     5. Support Contact section
         This is where you provide contact information for the Cortana team to reach you.
-    
+
         ![Support Contact](./media/images/world_settings-support_contact.png)
-    
+
     6. Publisher Information section
-    
+
         ![Publisher Information](./media/images/world_settings-publisher_information.png)
-    
+
     7. Privacy policy and terms of use section
-    
+
         ![Privacy policy and terms of use](./media/images/world_settings-privacy_policy_terms_of_use.png)
-    
+
     8. Validation and testing instructions section
-    
+
         ![Validation and testing instructions](./media/images/world_settings-validation_testing_instructions.png)
-    
+
 1. Click on the **Save** button.
 
      The **Save** button is enabled only after all of the required fields are completed.
