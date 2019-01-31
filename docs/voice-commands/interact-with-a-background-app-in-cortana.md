@@ -75,7 +75,7 @@ Tasks that take less than 500 milliseconds for your app to respond, and require 
 
 Here, we use the **Adventure Works** app to show the completion screen for a voice command request to display upcoming trips to London. 
 
-![cortana background app completion screen](./media/images/cortana-completion-screen-upcomingtrip-small.png)
+![cortana background app completion screen](../media/images/cortana-completion-screen-upcomingtrip-small.png)
 
 The voice command is defined in AdventureWorksCommands.xml:
 ```
@@ -185,7 +185,7 @@ Here's an example of a hand-off screen for the **Adventure Works** app. In this 
 
 [!NOTE] You can declare a **Feedback** string in the VCD file. This string does not affect the UI text displayed on the Cortana canvas, it only affects the text spoken by **Cortana**.
 
-![cortana background app hand-off screen](./media/images/cortana-backgroundapp-progress-result.png)
+![cortana background app hand-off screen](../media/images/cortana-backgroundapp-progress-result.png)
 
 
 ## <span id="Progress_screen"></span><span id="progress_screen"></span><span id="PROGRESS_SCREEN"></span>Progress screen
@@ -197,7 +197,7 @@ If the app service takes more than 500ms to call ReportSuccessAsync, **Cortana**
 
 Here's an example of a progress screen for the **Adventure Works** app. In this example, a user has canceled a trip to Las Vegas. The progress screen includes a message customized for the action, an icon, and a content tile with information about the trip being canceled.
 
-![cortana background app progress screen ](./media/images/cortana-progress-screen.png)
+![cortana background app progress screen ](../media/images/cortana-progress-screen.png)
 
 AdventureWorksVoiceCommandService.cs contains the following progress message method, which calls [**ReportProgressAsync**](https://msdn.microsoft.com/library/windows/apps/dn706579) to show the progress screen in **Cortana**.
 
@@ -232,7 +232,7 @@ On the second prompt, if the user still doesn’t say "Yes" or "No", **Cortana**
 
 The confirmation screen includes a message customized for the action, an icon, and a content tile with information about the trip being canceled.
 
-![cortana background app confirmation screen](./media/images/cortana-confirmation-screen.png)
+![cortana background app confirmation screen](../media/images/cortana-confirmation-screen.png)
 
 AdventureWorksVoiceCommandService.cs contains the following trip cancellation method, which calls [**RequestConfirmationAsync**](https://msdn.microsoft.com/library/windows/apps/dn706582) to show a confirmation screen in **Cortana**.
 
@@ -361,7 +361,7 @@ On the second prompt, if the user still doesn’t say something that can be used
 
 The disambiguation screen includes a message customized for the action, an icon, and a content tile with information about the trip being canceled.
 
-![cortana background app disambiguation screen ](./media/images/cortana-disambiguation-screen.png)
+![cortana background app disambiguation screen ](../media/images/cortana-disambiguation-screen.png)
 
 AdventureWorksVoiceCommandService.cs contains the following trip cancellation method, which calls [**RequestDisambiguationAsync**](https://msdn.microsoft.com/library/windows/apps/dn706583) to show the disambiguation screen in **Cortana**.
 

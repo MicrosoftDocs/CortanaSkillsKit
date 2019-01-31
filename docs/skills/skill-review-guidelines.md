@@ -62,12 +62,12 @@ Invocation names must be unique, readily identifiable words. Invocation names ma
 
 The skill profile image, name, keywords, and description must NOT:
 
-1. Be offensive or explicit.
-1. Include third party trademarks, service marks, or logos that you do not have the rights to use.
-1. Impersonate or imply endorsement by a third party that has not endorsed your skill.
-1. Use names unrelated to the skill.
-1. Use Microsoft logos, trademarks, or service marks unless you have permission from Microsoft.
-1. Be too long or verbose. The description should be 8-10 words.
+- Be offensive or explicit.
+- Include third party trademarks, service marks, or logos that you do not have the rights to use.
+- Impersonate or imply endorsement by a third party that has not endorsed your skill.
+- Use names unrelated to the skill.
+- Use Microsoft logos, trademarks, or service marks unless you have permission from Microsoft.
+- Be too long or verbose. The description should be 8-10 words.
 
 #### 2.1.8
 
@@ -201,7 +201,9 @@ Your skill must not share or sell user data collected through skills unless the 
 
 #### 2.5.12
 
-All Cortana Skills require a privacy policy and a terms of service. Microsoft has provided [Privacy policy](privacy-policy-guidelines.md) and [Terms of Use](terms-of-use.md) guidelines that may help you comply with these requirements. You agree to assume all risk and liability arising from your use of these resources, and that Microsoft is not responsible for any issues arising out of your use of them.
+All Cortana Skills require a privacy policy and defined terms of service. Microsoft has provided guidelines that may help you comply with these requirements ([Privacy policy](privacy-policy-guidelines.md) and [Terms of Use](terms-of-use.md)). You agree to assume all risk and liability arising from your use of these resources, and that Microsoft is not responsible for any issues arising out of your use of them.
+
+The privacy policy and terms of service must be publicly available, and accessible to any user. Web pages are the preferred method of delivery. Users should not be required to download documents containing the policy or terms, as this could violate the security guidelines described in section [2.2 Security](#22-security) of this document.
 
 ### 2.6 Localization
 

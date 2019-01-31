@@ -28,9 +28,9 @@ For more information on Cortana publishing options, [Publishing Cortana Skills](
 To create a group of users who can use and test your Cortana skill, update the Group Settings channel configuration settings.  
 
 <!-- new -->
-![Publish to Group](./media/images/settings-group_setting-configured.png)  
+![Publish to Group](../media/images/settings-group_setting-configured.png)  
 
-![Publish to Group](./media/images/group_settings_configured-request_user_profile_data-data.png)  
+![Publish to Group](../media/images/group_settings_configured-request_user_profile_data-data.png)  
 
 Under the Group section, under the Member email list, click on the Add team member link to add the member emails to the group.  
 The Member email list displays the email address associated with a Microsoft account for each user.  
@@ -38,11 +38,11 @@ The Member email list displays the email address associated with a Microsoft acc
 >[!NOTE]
 > The email account does not have to be a Microsoft account, but must be associated with a registered Microsoft account.  
 
-![Publish to Group](./media/images/group_settings_configured-group-member_email.png)  
+![Publish to Group](../media/images/group_settings_configured-group-member_email.png)  
 
 Each Member email may be deleted by clicking on the trash button.  
 
-![Publish to Group](./media/images/group_settings_configured-group-group_access_url.png) 
+![Publish to Group](../media/images/group_settings_configured-group-group_access_url.png) 
 
 To create the group, click on the Save changes button.  
 <!-- new -->
@@ -51,19 +51,19 @@ To create the group, click on the Save changes button.
 
 Users in the group can access the skill using the group access URL. Invite them to join the group by send them the URL.
 
-![Send URL](./media/images/mva71_send_url.png)
+![Send URL](../media/images/mva71_send_url.png)
 
 Opening the URL in a browser displays a prompt asking if the user wants to join the group.
 
-![Join Group](./media/images/mva71_join_group.png)
+![Join Group](../media/images/mva71_join_group.png)
 
 Click **Accept** to accept the invitation and receive a confirmation.
 
-![Confirm Join](./media/images/mva71_confirm_join.png)
+![Confirm Join](../media/images/mva71_confirm_join.png)
 
 Each user in the group who has accepted the invitation should now have access to the skill in Cortana.
 
-![Skill Access](./media/images/mva41_tada.png)
+![Skill Access](../media/images/mva41_tada.png)
 
 To leave the group, a user can open the group access URL and click **Leave**.
 
@@ -75,4 +75,4 @@ Once you have published your skill to the group, any group member can invoke the
 
 Cortana prompts for credentials, if necessary, and launches the Mixtape skill:
 
-![Launch Skill](./media/images/mva41_tada.png)
+![Launch Skill](../media/images/mva41_tada.png)

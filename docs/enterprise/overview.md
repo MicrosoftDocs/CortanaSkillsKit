@@ -18,17 +18,17 @@ Cortana is a digital assistant that keeps users informed and productive, helping
 
 :::row:::
     :::column:::
-        ![globe](./media/images/blue-globe-20x20.png)  To make information retrieval an easy task  
+        ![globe](../media/images/blue-globe-20x20.png)  To make information retrieval an easy task  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        ![screwdriver and wrench](./media/images/blue-screwdriver_and_wrench-20x20.png)  To complete company specific tasks and different workflows more easily with voice  
+        ![screwdriver and wrench](../media/images/blue-screwdriver_and_wrench-20x20.png)  To complete company specific tasks and different workflows more easily with voice  
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        ![clock](./media/images/blue-clock-20x20.png)  Help employees save more time and focus on things that matter most  
+        ![clock](../media/images/blue-clock-20x20.png)  Help employees save more time and focus on things that matter most  
     :::column-end:::
 :::row-end:::
 

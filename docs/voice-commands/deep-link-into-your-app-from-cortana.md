@@ -25,7 +25,7 @@ Provide deep links from a background app in **Cortana** that launch the app to t
 
 A deep link is displayed by default on the **Cortana** completion screen as shown here ("Go to AdventureWorks"), but you can display deep links on various other screens. 
 
-![cortana background app completion screen](./media/images/cortana-completion-screen-upcomingtrip-small.png)
+![cortana background app completion screen](../media/images/cortana-completion-screen-upcomingtrip-small.png)
 
 **Prerequisites**
 
@@ -64,7 +64,7 @@ There are three ways to provide deep links:
 
 **Cortana** displays a "Go to &lt;app&gt;" deep link below the content card on most screens.
 
-![cortana background app completion screen](./media/images/cortana-completion-screen.png)
+![cortana background app completion screen](../media/images/cortana-completion-screen.png)
 
 You can provide a launch argument for this link that opens your app in similar context as the app service. If you don't provide a launch argument, the app is launched to the main screen.
 
@@ -107,7 +107,7 @@ private async Task SendCompletionMessageForDestination(string destination)
 
 You can add deep links to content cards on various **Cortana** screens.
 
-![cortana background app hand-off screen ](./media/images/cortana-backgroundapp-progress-result.png)
+![cortana background app hand-off screen ](../media/images/cortana-backgroundapp-progress-result.png)
 
 Like the "Go to &lt;app&gt;" links, you can provide a launch argument to open your app with similar context as the app service. If you don't provide a launch argument, the content tile does not link to your app.
 
