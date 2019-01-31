@@ -56,6 +56,10 @@ Currently, the user's email address from the user's profile information is not a
 <!-- Bug 750050 -->
 
 Currently, Cortana does not support logging into skills on Windows Phone. Log in using any other supported device first before using the skill on Windows Phone.
+ 
+**Unique invocation names fail to be recognized in default settings / self publish on Windows**
+
+Some identity information is cached by Cortana's agent that does not get cleared when you switch between MSA and AAD accounts. Invocation grammars are tied to this identity. This information does not get cleared by rebooting if _fast start_ is enabled. The work around is to open `taskmgr`, find `SearchUI.exe` in `Details`, and kill the process.  The next invocation to Cortana will restart the agent with a clear identity cache and load the correct grammars to recognize unique invocation names.
 
 <!--
 ## Known Bot Framework issues affecting skills
@@ -70,13 +74,7 @@ See the [Bot Build SDK Issues tab on GitHub](https://github.com/Microsoft/BotBui
 When Cortana launches skill without an utterance (for example, "Open \<invocation name\>", "Ask \<invocation name\>"), the `activity.Text` value is null. Passing the null text to LuisDialog throws an error. To work around this issue, override the `MessageReceived` method and add a null check as shown in the following example:
 
 ```csharp
-/// <summary>
-/// Need to override the LuisDialog.MessageReceived method so it detects when the user invokes the skill without
-/// specifying a phrase. For example, "Open Hotel Finder", or "Ask Hotel Finder". In these cases, the message receives an empty string.
-/// </summary>
-/// <param name="context"></param>
-/// <param name="item"></param>
-/// <returns></returns>
+// V3
 protected override async Task MessageReceived(IDialogContext context, IAwaitable<IMessageActivity> item)
 {
     // Check for empty query
@@ -92,6 +90,8 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
     }
 }
 ```
+
+For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-3.0) that maps an empty string to a help intent.
 
 <!-- //TODO: AIT
 ## Known Issues for Skills Imported from Alexa
