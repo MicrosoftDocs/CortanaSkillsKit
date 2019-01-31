@@ -26,6 +26,7 @@
 ### [Create your first Cortana skill](./skills/mva22-hello-world.md)  
 ### [Understanding types of conversations](./skills/mva31-understanding-conversations.md)  
 ### [Building conversations](./skills/mva32-building-conversations.md)  
+### [Showing progress to the user](./skills/show-progress.md)  
 ### [Adding audio to Cortana Skills](./skills/mva41-streaming-audio.md)  
 ### [Adding visual elements to Cortana Skills](./skills/mva42-visual-ux.md)  
 ### [Using client code with Cortana Skills](./skills/mva43-client-code.md)  
