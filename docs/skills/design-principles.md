@@ -15,23 +15,23 @@ The Cortana Skills Kit enables developers to create compelling experiences that 
 
 These are some cases when it makes sense to create a skill.
 
-- **When using voice is an easier and more natural way to interact**<br/>
+- **When using voice is an easier and more natural way to interact**  
   If the user has a disability that makes it difficult to type, or to read.
   
   If the user is on a device that's hard to type on, such as a phone, tablet, or Xbox.
 
   When the user needs to share content or set a reminder, it's easier to say, "Share that with John" or "Remind me to pick up Jessie".  
 
-- **When the user's hands are busy**<br/>
+- **When the user's hands are busy**  
   If the user is cooking, they can ask, "Was that one tablespoon or one teaspoon of salt?"
 
-- **When using voice is a more efficient experience**<br/>
+- **When using voice is a more efficient experience**  
   If using voice reduces the number of steps required to do something. For example, saying "Play the latest House of Cards" is much easier than opening up an app, searching for "House of Cards", finding the latest episode, and pressing play.  
   
-- **When using voice assists with multitasking**<br/>
+- **When using voice assists with multitasking**  
   If you can use your voice to do things like read and reply to incoming messages or control music while you're writing a document.  
 
-- **When the user is driving, walking, or is otherwise distracted**<br/>
+- **When the user is driving, walking, or is otherwise distracted**  
   If the user is driving or walking, it is easier and safer to use voice than to navigate while using a device.
 
 <!--
@@ -129,7 +129,7 @@ Intents fall into the following categories.
 
 For example:
 
-> **User**: Hey Cortana, ask Mileage Wizard if I have enough miles to travel.<br/>
+> **User**: Hey Cortana, ask Mileage Wizard if I have enough miles to travel.  
 > **Mileage Wizard**: You currently have 30,000 miles. This is enough to travel
 domestically, but not internationally. Would you like to purchase
 additional miles, or book a domestic trip?
@@ -144,7 +144,7 @@ If you display interaction examples in a card on Cortana's canvas (for example, 
 
 For example:
 
-> **User**: Hey Cortana, ask Mileage Wizard if I have miles.<br/>
+> **User**: Hey Cortana, ask Mileage Wizard if I have miles.  
 > **Mileage Wizard**: Do you mean miles you can use to travel?
 
 ### No intent
@@ -155,7 +155,7 @@ It's critical that the skill consider the first-time user and help them to get s
 
 For example:
 
-> **User**: Hey Cortana, ask Mileage Wizard.<br/>
+> **User**: Hey Cortana, ask Mileage Wizard.  
 > **Mileage Wizard**: Do you want available miles, used miles, or discounts?
 
 <!--
@@ -172,7 +172,7 @@ Because entities describe information that's relevant to the intent, it's import
 
 -->
 
-## Asking users questions
+## Ask the user questions
 
 All interactions with the user should use a conversational tone, whether spoken or written.
 
@@ -201,7 +201,7 @@ Your interactions should be efficient, relevant, clear, and trustworthy.
 | **Clear**<br/> Avoid ambiguity. Use everyday language instead of technical jargon. | I couldn’t find any trips to Las Vegas. | No results for query 'trips to Las Vegas'. |
 | **Trustworthy**<br/> Be as accurate as possible. Be transparent about what’s going on in the background. If a task hasn’t finished yet, don’t say that it has. Respect privacy, don’t read private information aloud. | I couldn’t find that movie in our catalogue. | I couldn’t find that movie, it must not have been released yet. |
 
-### Presenting options
+### Present options
 
 Your design needs to make sure that the user clearly understands what you are asking, and that a response is expected. Just presenting the options is not sufficient. Follow a list of options with a question so the user knows that they are expected to say something.
 
@@ -213,7 +213,7 @@ When presenting options to the user, ask in a way that makes it clear to the use
 
 Because users can't quickly scan and skip voice content like they can in a visual interface, it's important to keep your questions simple and concise.
 
-### Asking questions with directed or open prompts
+### Ask questions with directed or open prompts
 
 You can ask users questions using either a directed prompt or an open prompt. A **directed prompt** lists specific choices for the user. For example, "Please select cheese, pepperoni, or sausage." Directed prompts often minimize user confusion. An **open prompt** lets the user provide their own choice. For example, "Which movie would you like?" Open prompts are best used if users are familiar with the choices, either because they're obvious, or because you've just provided a list.
 
@@ -229,19 +229,19 @@ For directed prompts, use the form, "Please select X, Y, or Z." Don't use the fo
 
 If the list of options is long (for example, a list of stock investments) or variable (for example, movie titles), using a directed prompt is impractical. In this case, use an open prompt. For example:
 
-> **Cortana**: Please say a stock name.<br/>
-> **User**: Help.<br/>
+> **Cortana**: Please say a stock name.  
+> **User**: Help.  
 > **Cortana**: Please say a stock name. For example, say Microsoft.
 
    >[!NOTE]
    > Headless devices (devices with no display, like speakers) should re-prompt with the last message sent if there is no input. After a re-prompt, if there is no input, the conversation is ended. Good interactive dialogues should wait on a prompt.
 
-## Confirming a user's answer
+## Confirm the user's answer
 
 A confirmation is an acknowledgement that your skill heard the user's response. For example:
 
-> **Cortana:** Where do you want to fly?<br/>
-> **User:** Paris.<br/>
+> **Cortana:** Where do you want to fly?  
+> **User:** Paris.  
 > **Cortana:** Which date do you want to leave for Paris?
 
 Think about where in the conversation flow the users need confirmations. Recognizing speech from a telephone is not perfect, particularly under noisy conditions. In addition, when skills are used in a standalone speaker, you only have one channel of communication with the user. An effective confirmation and correction strategy helps with these issues.
@@ -261,31 +261,31 @@ There are different confirmation strategies you can use.
 
 Explicit confirmation is the most basic form of confirmation. It slows the conversation flow because it introduces an extra prompt to explicitly confirm information that the user provided. Use explicit confirmation for situations where the cost of a misunderstanding is high. For example, a banking skill must understand dollar amounts that the user speaks. The following shows an explicit confirmation interaction.
 
-> **Cortana**: How much did you want to transfer?<br/>
-> **User**: A thousand dollars.<br/>
-> **Cortana**: Did you say one thousand dollars?<br/>
-> **User**: Yes.<br/>
-> **Cortana**: OK. I've started the transfer.<br/>
+> **Cortana**: How much did you want to transfer?  
+> **User**: A thousand dollars.  
+> **Cortana**: Did you say one thousand dollars?  
+> **User**: Yes.  
+> **Cortana**: OK. I've started the transfer.  
 
 ### Implicit confirmation
 
 Implicit confirmation combines the confirmation with your next question. This method uses fewer prompts than explicit confirmation. Consider a flight booking scenario where the skill obtains the city that the user is flying from, followed by the date. The following shows an implicit confirmation interaction.
 
-> **Cortana**: Where are you flying from?<br/>
-> **User**: Seattle.<br/>
-> **Cortana**: Flying from Seattle. Which date?<br/>
+> **Cortana**: Where are you flying from?  
+> **User**: Seattle.  
+> **Cortana**: Flying from Seattle. Which date?  
 
 If the user answers this question with a date, then the answer implies that Seattle is correct, thereby confirming Seattle as the departure city. The grammar for implicit confirmation interaction is subtly different from the grammar for explicit confirmation. The grammar for implicit confirmation combines acceptance or denial of the previous prompt (in this case, the city) with supplying information for the next prompt.
 
-> **Cortana**: Flying from Seattle. Which date?<br/>
-> **User**: No.<br/>
-> **Cortana**: Where are you flying from?<br/>
-> **User**: Vancouver.<br/>
-> **Cortana**: Flying from Boston. Which date?<br/>
-> **User**: No, Vancouver.<br/>
-> **Cortana**: Flying from Vancouver. Which date?<br/>
+> **Cortana**: Flying from Seattle. Which date?  
+> **User**: No.  
+> **Cortana**: Where are you flying from?  
+> **User**: Vancouver.  
+> **Cortana**: Flying from Boston. Which date?  
+> **User**: No, Vancouver.  
+> **Cortana**: Flying from Vancouver. Which date?  
 
-Answering with a simple yes or no does not answer this kind of question. 
+Answering with a simple yes or no does not answer this kind of question.
 
 <!--
 Removed per Dorrene
@@ -319,37 +319,48 @@ Cortana: Am I right with Seattle?
 
 ## Other design considerations
 
-### Presenting help
+### Present help
 
 Your design should include help prompts, especially for critical areas of your skill. If the user asks for help, you should list the skill's capabilities and options for that specific area.
 
-> **User**: Book me a hotel in Seattle.<br/>
-> **Cortana**: Which date do you want to check in in Seattle?<br/>
-> **User**: April first.<br/>
-> **Cortana**: What amenities would you like?<br/>
-> **User**: Help.<br/>
-> **Cortana**: You can say things like *pool*, *parking*, or *breakfast*.<br/>
-> **User**: Pool and parking.<br/>
+> **User**: Book me a hotel in Seattle.  
+> **Cortana**: Which date do you want to check in in Seattle?  
+> **User**: April first.  
+> **Cortana**: What amenities would you like?  
+> **User**: Help.  
+> **Cortana**: You can say things like *pool*, *parking*, or *breakfast*.  
+> **User**: Pool and parking.  
 
-### Using default values
+### Show progress
+
+It's important to keep the user informed while you're working on their request. If it takes longer than three seconds to fulfill the request, you should send a message letting them know that you're still processing.
+
+> **User**: Book me a hotel in New Orleans.  
+> **Cortana**: Which hotel would you like me to book?
+> **User**: I don't care.  
+> **Cortana**: OK. Searching for hotels.  
+> *After three seconds...*  
+> **Cortana**: Still searching hotels...
+
+### Use default values
 
 Use default values when the user is not specific. For example, if the user says,"Make my room warmer," Cortana should say, "I’ve raised your room temperature to seventy two degrees" instead of "Sure, what temperature?"
 
-### Identifying the skill when invoked
+### Identify the skill when invoked
 
 If the user invokes your skill without including an utterance, you should identify your skill and display your help content, or ask them what they want to do with leading questions.
 
-> **Good**: Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles* or *Used miles*.<br/>
+> **Good**: Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles* or *Used miles*.  
 > **Bad**: What can I do for you?
 
 ### Break lists into manageable pieces
 
 Generally, the human brain can only remember a limited amount of information when listening to instructions. Limit voice interactions to only what is absolutely required. For example, present only three items of a list at a time. 
 
-> **Good**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Would you like to hear more?<br/>
+> **Good**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Would you like to hear more?  
 > **Bad**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Number four,  Me and Julio. Number five, Millenial Keyboards....
 
-### Abbreviations and symbols
+### Understand abbreviations and symbols
 
 Cortana's text-to-speech translator handles most text such as abbreviations and special characters automatically. 
 
@@ -375,7 +386,7 @@ Things to consider when designing visual elements:
 
 - Keep tasks glanceable. The skill must allow users to multitask with minimal visual attention. Consider every piece of information on the card canvas and eliminate anything that is not required.
 
-### Adding visual elements to your skill
+### Add visual elements to your skill
 
 Cortana supports Bot Framework cards, which are rich graphical controls that can contain text, images, and interactive buttons. Skills may include the following cards:
 
@@ -438,7 +449,7 @@ Some users use Cortana on speaker-only devices and can't see a card. If the user
 
 The following scenario shows a cooking skill that provides a list of ingredients.
 
-> **Good**: This recipe has five ingredients. Here are the first three. Two eggs, a cup of flour, and a half a cup of water. Say *next* for the rest of the ingredients.<br/>
+> **Good**: This recipe has five ingredients. Here are the first three. Two eggs, a cup of flour, and a half a cup of water. Say *next* for the rest of the ingredients.  
 > **Bad**: Open the companion app to see the list of ingredients.
 
 Note that the time between user utterances is limited. On a speaker-only device,if a timeout occurs, the skill ends. On a Windows device, the skill is still active, but the microphone turns off. <!-- For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.-->
