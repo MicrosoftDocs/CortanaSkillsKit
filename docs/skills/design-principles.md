@@ -336,7 +336,7 @@ Your design should include help prompts, especially for critical areas of your s
 It's important to keep the user informed while you're working on their request. If it takes longer than three seconds to fulfill the request, you should send a message letting them know that you're still processing.
 
 > **User**: Book me a hotel in New Orleans.  
-> **Cortana**: Which hotel would you like me to book?
+> **Cortana**: Which hotel would you like me to book?  
 > **User**: I don't care.  
 > **Cortana**: OK. Searching for hotels.  
 > *After three seconds...*  
