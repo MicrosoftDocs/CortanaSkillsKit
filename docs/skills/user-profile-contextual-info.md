@@ -3,19 +3,20 @@ title: Cortana User Profile & Contextual Information Reference
 description: Defines the user profile and contextual information objects.
 label: Conceptual
 ms.assetid: 41f911c9-b5eb-4cd3-b4d9-2dc7453e3f51
-ms.date: 01/24/2019
+ms.date: 02/01/2019
 ms.topic: article
 keywords: cortana
 ---
 
 # Cortana user profile and contextual information reference
 
-Cortana sends the user's profile and contextual information as part of the message that it sends your skill. You can use this information to provide a custom experience for the user. User profile information is data that the user has provided about themselves to Cortana. User contextual information is information that Cortana has discovered about the user such as their location. For information about how you use the objects in this reference, see [Get the user's profile and contextual information](get-user-profile-context.md).
+Cortana sends the user's profile and contextual information as part of the message that it sends your skill. You can use this information to provide a custom experience for the user. User profile information is data that the user has provided about themselves to Cortana. User contextual information is information that Cortana has discovered about the user, such as their current location.  
 
+For information about how you use the objects listed in this reference, see [Get the user's profile and contextual information](get-user-profile-context.md).
 
 ## User Profile Entities
 
-The following table identifies the types of user profile data that you can request when you configure the Cortana channel. 
+These are the types of user profile data that you can request when you configure the Cortana channel.
 
 | Entity Name | Type | Description  
 |--|-|-
@@ -23,7 +24,7 @@ The following table identifies the types of user profile data that you can reque
 | User.SemanticLocation.Current | [Visit](#visit-object) | The user's current location. |
 | User.SemanticLocation.FrequentPlaces | [Hub](#hub-object)[] | A list of places the user frequents.  
 | User.Info.Name | [Name](#name-object)| The user's name. |
-| User.Info.Email | string | The user's email address. For example, user@example.com. |
+| User.Info.Email | string | The user's email address. |
 
 
 ## Away object
