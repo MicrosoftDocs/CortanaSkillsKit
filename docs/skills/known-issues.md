@@ -21,24 +21,21 @@ The public preview for Cortana is available for the en-US market only.
 
 **Cortana stops talking after 15 seconds or displays the message, "Unfortunately this skill won't work on this version of Windows"**
 
-Cortana in the Windows 10 Anniversary update (version 1607) limits speech to 15 seconds. This has been resolved in the Windows 10 Creators update (version 1703). A workaround is to break your speech text into multiple responses. You can send multiple replies to a single user invocation, as long as the input hint of the first N-1 replies is IgnoringInput. The last reply must set the input hint to ExpectingInput (which automatically turns the microphone on), or AcceptingInput (which doesn't).
+Cortana in the Windows 10 Anniversary update (version 1607) limits speech to 15 seconds. This limit has been removed in the Windows 10 Creators update (version 1703). A workaround is to break your speech text into multiple responses. You can send multiple replies to a single user invocation, as long as the input hint of the first N-1 replies is `IgnoringInput`. The last reply must set the input hint to `ExpectingInput` (which automatically turns the microphone on), or `AcceptingInput` (which doesn't).
 
-**Long repetitive sentences without appropriate punctuation become garbled when spoken in the Windows 10 Creators Update**
+**Long repetitive sentences without appropriate punctuation become garbled when spoken in the Windows 10 Creators Update (version 1703)**
 
 If you have long text that is repetitive, the speech output from Cortana may be garbled. For example:
 
-> This is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence 
+> This is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence this is a very long sentence. 
 
-<!-- By "next update of Windows," do you mean patch (Windows Update) or Release? -->
-The next update of Windows resolves this issue. To work around this issue, ensure your SSML contains proper punctuations such as commas and periods.
+Windows 10 Fall Creators Update (Version 1709) resolves this issue. To work around it, ensure your SSML contains proper punctuation, such as commas and periods.
 
 **Privacy policy and terms of use links don't work in permission card when deployed to self or group**
 
 When a skill is deployed to self or group, the privacy and terms of use links in the permission card don't work. The reason for this is that you are not required to specify these links until you publish your skill to world.
 
 **Spoken utterances sometimes have punctuations appended**
-
-<!-- Added "user's" to utterance. Confirm. -->
 
 Cortana will sometimes append punctuation, such as a period, to the end of a user's utterance. The speech recognition engine is capable of understanding multiple sentences in a single speech request. The engine may add a period to an utterance depending on how the utterance is spoken. Make sure that your language model is designed to handle this.
 
@@ -59,7 +56,7 @@ Currently, Cortana does not support logging into skills on Windows Phone. Log in
  
 **Unique invocation names fail to be recognized in default settings / self publish on Windows**
 
-Some identity information is cached by Cortana's agent that does not get cleared when you switch between MSA and AAD accounts. Invocation grammars are tied to this identity. This information does not get cleared by rebooting if _fast start_ is enabled. The work around is to open `taskmgr`, find `SearchUI.exe` in `Details`, and kill the process.  The next invocation to Cortana will restart the agent with a clear identity cache and load the correct grammars to recognize unique invocation names.
+Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled. The workaround is to open `taskmgr`, find `SearchUI.exe` in `Details`, and kill the process.  The next invocation to Cortana will restart the agent with a clear identity cache, and load the correct grammars to recognize unique invocation names.
 
 <!--
 ## Known Bot Framework issues affecting skills
@@ -71,7 +68,7 @@ See the [Bot Build SDK Issues tab on GitHub](https://github.com/Microsoft/BotBui
 
 **LuisDialog fails on skill launch**
 
-When Cortana launches skill without an utterance (for example, "Open \<invocation name\>", "Ask \<invocation name\>"), the `activity.Text` value is null. Passing the null text to LuisDialog throws an error. To work around this issue, override the `MessageReceived` method and add a null check as shown in the following example:
+When Cortana launches a skill without an utterance (for example, "Open \<invocation name\>" or "Ask \<invocation name\>"), the `activity.Text` value is null. Passing the null text to LuisDialog throws an error. To work around this issue, override the `MessageReceived` method and add a null check as shown in the following example:
 
 ```csharp
 // V3
@@ -139,7 +136,7 @@ See the [Built-in Intent and Entity Support](../tutorials/alexa-skill-import.md#
 
 **Not all audio streaming features are supported**
 
-Cortana does support audio streaming via the AudioPlayer and embedded MP3s in the SSML audio tag, however not all Alexa features are supported. See the [Audio Support](../tutorials/alexa-skill-import.md#audio-support) section of the Alexa import guide for more information.
+Cortana does support audio streaming via the AudioPlayer and embedded MP3s in the SSML audio tag. However, not all Alexa features are supported. See the [Audio Support](../tutorials/alexa-skill-import.md#audio-support) section of the Alexa import guide for more information.
 
 **No SessionEndedRequest sent when user closes Cortana in Windows**
 <!-- //TODO: should be fixed in RS3 Bug# 697923 -->
