@@ -14,7 +14,7 @@ In previous modules, you learned how to build conversation into your Cortana ski
 
 Your user profile information can be found in the Cortana Notebook, which you can view by clicking the Notebook icon in the Cortana canvas.
 
-![Cortana Notebook](../media/images/cortana_notebook.png)
+![Cortana Notebook](../media/images/cortana-notebook.png)
 
 You can view a variety of information in the Cortana Notebook. For example, you can see a list of your Cortana skills, or your preferences for how Cortana manages commute and traffic information.
 
