@@ -3,7 +3,7 @@ title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
 
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 01/30/2019
+ms. date: 02/06/2019
 ms. topic: article
 
 keywords: cortana
@@ -329,11 +329,13 @@ For more information about the requirements for publishing to **World**, visit t
 Your Cortana skill is locked while the Certification Team is reviewing it. If you want to make changes to your skill, click on the `Withdraw your submission` button.
 
 You may withdraw your Cortana skill only during the following stages.
+
 - Prior to start of review
 - During review
-- After approval, but prior to publishing to the **World**
 
-All the properties entered in **World Settings** are saved. You may update the publishing properties of your Cortana skill and resubmit for review and certification.
+Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, you must either delete the Cortana channel OR write to us (skillsup@microsoft.com) asking us to take the skill down.
+
+All the properties entered in **World Settings** are saved. You may update the publishing properties of your Cortana skill and submit it again for review and certification.
 
 ### Common Reasons for Review Failure
 
@@ -341,16 +343,16 @@ If you read and adhere to the [review requirements](./skill-review-guidelines.md
 
 Some common reasons why a Cortana skill fails the review are:
 
-- The invocation name does not meet policy requirements.
+- The invocation name does not meet policy requirements. See [Invocation name guidelines](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines) for help.
 
-- Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, such as `ask`, `open`, `tell`, etc.
+- Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, such as `ask`, `open`, `tell`, etc. See [Invocation phrases](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines#invocation-phrases) for a list.
 
 - You provide sample phrases with one or more of the following issues.
 
     The phrase doesn't include a launch word (ask, tell, and so on) or an invocation name. For example, for a skill called **MyEvents**, these would be incorrect:
 
-    + `MyEvents update` : Missing the launch word.
-    + `Ask for an update` : Missing the invocation name.
+  + `MyEvents update` : Missing the launch word.
+  + `Ask for an update` : Missing the invocation name.
 
 - The samples do not work as expected or described. Before submitting your skill, you should ensure that the invocation phrases work as expected. Ideally, you should provide enough samples to demonstrate all key features.
 
