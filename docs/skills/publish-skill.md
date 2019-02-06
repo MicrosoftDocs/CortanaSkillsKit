@@ -204,7 +204,7 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
             >
             > When an MSA user clicks on the **Group Access URL** in the message, they have the option to accept or decline joining the skill test group. If the user accepts, then access is granted to test your Cortana skill. If the user declines to join, then access is denied.
 
-    * The `Reset Group` Button is added and the `Create Group` button is replaced by the `Save changes` button.
+    * The `Reset Group` button is added and the `Create Group` button is replaced by the `Save changes` button.
 
         ![Reset Group, Back to Channels, Save changes](../media/images/test_group_settings-reset-back-save.png)
 
@@ -367,7 +367,7 @@ Some common reasons why a Cortana skill fails the review are:
 
 Deleting a Cortana skill involves deleting the channel inside the BotFramework portal.  To be able to delete the Cortana channel on a bot, the skill must not be currently published to **World**.
 
-If you need to delete a Cortana skill that is published to **World**, then you must contact the Cortana Certification Team. If a skill is under review by the team, then you must first withdraw your submission before deleting the Cortana channel.
+If you need to delete a Cortana skill that is published to **World**, then you must contact the Cortana Certification Team. If a skill is under review by the team, then you must first withdraw your submission before deleting the Cortana channel. See the [Withdraw Your Submission](#withdraw-your-submission) section.
 
 If your skill has not been published to **World**, you can delete the channel on the *Configure Cortana* page. At the bottom of all sections, click the `Delete Channel` button.
 
