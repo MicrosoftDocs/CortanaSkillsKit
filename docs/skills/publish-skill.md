@@ -304,7 +304,7 @@ For more information about the requirements for publishing to **World**, visit t
     ![Submit for Review - enabled](../media/images/world_settings-back-save-submit-active.png)
 
     >[!IMPORTANT]
-    > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdraw Your Submission](#withdraw-your-submission) section.
+    > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdrawing Your Submission](#withdrawing-your-submission) section.
 
 1. After you submit the skill for review, the **World Settings** section displays the following changes.
 
@@ -367,7 +367,7 @@ Some common reasons why a Cortana skill fails the review are:
 
 Deleting a Cortana skill involves deleting the channel inside the BotFramework portal.  To be able to delete the Cortana channel on a bot, the skill must not be currently published to **World**.
 
-If you need to delete a Cortana skill that is published to **World**, then you must contact the Cortana Certification Team. If a skill is under review by the team, then you must first withdraw your submission before deleting the Cortana channel. See the [Withdraw Your Submission](#withdraw-your-submission) section.
+If you need to delete a Cortana skill that is published to **World**, then you must contact the Cortana Certification Team. If a skill is under review by the team, then you must first withdraw your submission before deleting the Cortana channel. See the [Withdrawing Your Submission](#withdrawing-your-submission) section.
 
 If your skill has not been published to **World**, you can delete the channel on the *Configure Cortana* page. At the bottom of all sections, click the `Delete Channel` button.
 
