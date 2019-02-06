@@ -59,7 +59,7 @@ Cortana requires a hint as to whether or not to open the microphone to have a co
 | --- | --- | --- |
 | `acceptingInput` (default)| Passively waits for input on the conversation by Search Box or mic button click. | Closes the conversation. |
 | `expectingInput` | Opens the mic and actively waits for input. Timeout closes mic and Cortana passively waits for input. | Reprompts once before closing the conversation |
-| `ignoringInput`| Proceeds to the next step (until a turn specifies expecting or accepting input). | Closes the conversation. |
+| `ignoringInput`| Proceeds to the next turn (until reaching a turn specifies expecting or accepting input). | Proceeds to the next turn. |
 
 Use `deviceInfo` to modify your skill's behavior based on device type, documented in the [Determine Cortana's device type](https://docs.microsoft.com/cortana/skills/cortana-device-type) section.
 
