@@ -12,7 +12,7 @@ keywords: cortana
 
 # Use adaptive cards in Your Cortana Skill
 
-Cards are interface elements that you can use to enhance the user experience in your Cortana skill. As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](/cortana-device-type) to get device information.
+Cards are interface elements that you can use to enhance the user experience in your Cortana skill. As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](../cortana-device-type) to get device information.
   
 An adaptive card is the most versatile display card. It's customizable, and can include any combination of text, speech, images, buttons, and input fields.  
 
@@ -100,6 +100,6 @@ The following code adds an adaptive card to a Cortana skill response.
 ## More Information  
 
 * For more information about adaptive cards, visit the  [adaptivecards.io](https://adaptivecards.io) page.  
-* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages for .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) page.
-* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages for Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) page.
+* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) for .NET page.
+* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) for Node.js page.
 * For an example of creating an adaptive card using .NET, visit the [Add an adaptive card to a message](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0#adaptive-card) section of the [Add rich card attachments to messages](https://docs.microsoft.com/en-us/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0#adaptive-card) page.  
