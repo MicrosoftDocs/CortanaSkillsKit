@@ -2,20 +2,20 @@
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
 
-ms.date: 10/12/2018
+ms.date: 02/13/2019
 ms.topic: article
 
 keywords: cortana
---- 
+---
 
 # Set up your development environment
 
 Before you can build your first skill, you need to set up your development environment. Here are a few things you may need to do:
 
-* Set up cloud resources such as a Microsoft account, the Cortana developer center, Bot Framework, LUIS (Language Understanding Intelligent Service), and a cloud hosting account on Microsoft Azure or another hosting service.
-* Make sure your PC or Mac has the necessary development tools and operating system version. 
-* Set up your Android or iOS mobile device, or Harman Kardon Invoke speaker, to work with Cortana.
+* Set up access to cloud resources, as listed below.
+* Make sure your PC or Mac has the necessary development tools and operating system version.
 * Set up Cortana.
+* Optionally, set up your Android or iOS mobile device, or Harman Kardon Invoke speaker, to work with Cortana.
 
 ## Step 1 - Set up cloud resources
 
@@ -32,7 +32,7 @@ Other resources include:
 
 ![Bot Framework developer portal](../media/images/bot_framework_dev_portal.png)
 
-* **LUIS (Language Understanding Intelligent Service)**. Sign into [LUIS.ai](https://www.luis.ai) using your Microsoft account to create and manage LUIS applications that let you use language understanding technology in your Cortana skill. 
+* **LUIS (Language Understanding Intelligent Service)**. Sign into [LUIS.ai](https://www.luis.ai) using your Microsoft account. This will allow you to create and manage LUIS applications that let you use language understanding technology in your Cortana skill.
 
 ![LUIS Site](../media/images/mva32_luis_account.png)
 
@@ -42,7 +42,7 @@ Other resources include:
 
 ## Step 2 - Set up your PC, Mac, or Cortana device
 
-You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update, using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/microsoft/botbuilder-v3).
+You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update (build 1607), using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/microsoft/botbuilder-v3).
 
 Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
 
@@ -53,14 +53,16 @@ For either a Mac or PC environment, install the [Bot Framework Emulator](https:/
 
 If you are developing your skill on a Mac, or developing for an iOS, Android, or Harman Kardon Invoke device, you also need to set up the device where Cortana invokes the skill. Since Cortana is not available in a Mac environment, skills developed in a Mac environment must be invoked on a mobile device or in a virtual machine environment running Windows.
 
-## Step 3 - Set up your Cortana device
+## Step 3 - Set up Cortana
 
-To set up your iOS or Android device to invoke a Cortana skill, download the Cortana app from the device's app store, and then sign into Cortana using the same Microsoft account that you used to register the skill. Since Cortana is built-into the Harman Kardon Invoke device, you only need to sign into Cortana using the Microsoft account used to register the skill.
+Make sure Cortana is set up to work with your skill:
 
-## Step 4 - Set up Cortana
+* You must be signed into Cortana on your computer or device with your Microsoft account.
+* Make sure the microphone on your computer or device is working and turned on so that you can speak to Cortana.
+* Optionally, set debug mode in the [Cortana Developer Center](https://developer.microsoft.com/cortana). When you invoke a Cortana skill in debug mode, Cortana gives you additional information that you can use fine-tune the skill.
 
-Finally, make sure Cortana is set up to work with your skill:
+## Step 4 - Set up your Cortana device (optional)
 
-* Make sure you are signed into Cortana on your computer or device with your Microsoft account.
-* Make sure the microphone on your computer or device is set up and working so that you can speak to Cortana.
-* Optionally, set debug mode in the [Cortana Developer Center](https://developer.microsoft.com/cortana). When you invoke a Cortana skill in debug mode, Cortana gives you additional information that you can use fine-tune how the skill works.
+Cortana is installed automatically on Windows devices. If you want to use your skill on iOS or Android devices, you'll need to download the Cortana app from the device's app store. Sign into Cortana using the same Microsoft account that you used to register the skill.  
+
+Since Cortana is built into the Harman Kardon Invoke, you only need to sign into Cortana using the Microsoft account used to register the skill.
