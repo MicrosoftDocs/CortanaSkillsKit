@@ -63,6 +63,6 @@ Make sure Cortana is set up to work with your skill:
 
 ## Step 4 - Set up your Cortana device (optional)
 
-Cortana is installed automatically on Windows devices. If you want to use your skill on iOS or Android devices, you'll need to download the Cortana app from the device's app store. Sign into Cortana using the same Microsoft account that you used to register the skill.  
+Cortana is installed automatically on Windows devices, but if you want to use your skill on iOS or Android devices, you'll need to download the Cortana app from the device's app store. Sign into Cortana using the same Microsoft account that you used to register the skill.  
 
 Since Cortana is built into the Harman Kardon Invoke, you only need to sign into Cortana using the Microsoft account used to register the skill.
