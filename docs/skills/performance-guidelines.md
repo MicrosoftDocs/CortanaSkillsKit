@@ -13,7 +13,7 @@ keywords: cortana
 
 **Load resources at start up**
 
-If you need to retrieve data that the user may ask for (for example, a list of songs, images, locations), load it at startup, not after the user requests the information.
+If you need to retrieve data that the user may request (for example, a list of songs, images, locations), load it at startup, not after the user requests the information.
   
 **Avoid large images**
 
@@ -27,7 +27,7 @@ Keep speech text short. As you would expect, it takes longer to process long str
 
 Identify the parts of your skill that require the most processing time, and investigate how you can make these parts faster. 
 
-* If your skill repeatedly loads the same data to perform look ups, consider caching the data. Is there any other data that you can also cache in memory?
+* If your skill repeatedly loads the same data to perform lookups, consider caching the data. Is there any other data that you can also cache in memory?
   
 * If your skill calls an external service, determine whether there's a latency issue. Can you accomplish the same task using local code in your skill? Can your skill work without this service?
 
