@@ -176,4 +176,4 @@ In the Azure Portal, click the Channels tab to view the available channels, and 
 
 On the Configure Cortana page, scroll down to the **Discovery and Management** section and click `Manage`. Click the **Publish** menu tab and then `Publish to self` to open the channel configuration settings. This is where you specify both the display name and invocation name, and (optionally) an icon for the skill. Cortana uses the invocation name you specify to invoke the skill.
 
-To test your new skill, direct Cortana to invoke the skill using the invocation name you specified.
+To test your new skill, tell Cortana to invoke the skill using the invocation name you specified.
