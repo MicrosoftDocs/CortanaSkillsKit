@@ -18,7 +18,7 @@ Cortana and skills use the message's `channelData` property to pass Cortana-spec
 |-|-|-|
 | skillId | string  | An ID that uniquely identifies the skill per deployment. For example, the ID may be 123 when the skill is deployed to self, and 456 when it's deployed to group. |
 | skillProductId | string  | An ID that uniquely identifies the skill.  |
-| isDebug | Boolean  | Specifies whether Cortana is in debug mode. If **true**, debugging is enabled and messages are written to her canvas. Otherwise, **false**. For more information, see [Enable Debugging of Cortana Skills](test-debug.md#enable-debugging-in-cortana). |
+| isDebug | Boolean  | Specifies whether Cortana is in debug mode. If **true**, debugging is enabled and messages are written to her canvas. Otherwise, **false**. For more information, see [Enable debugging in Cortana](test-debug.md#enable-debugging-in-cortana). |
 | currentAudioInfo | CurrentAudioInfo | A `CurrentAudioInfo` object that contains information about the audio stream that's playing. The channel data includes this property only if your skill is playing audio on a speaker-only device. For more information, see [Getting the playback state](audio-streaming.md#getting-the-playback-state).
 
 The following shows an example of the `channelData` object that Cortana sends.
@@ -41,6 +41,6 @@ For additional types of data that Cortana sends your skill, see **Next steps**.
 
 To determine the type of device that Cortana is running on, access the `DeviceInfo` entities data in Cortana's message. For information see, [Determine Cortana's device type](cortana-device-type.md).
 
-If you secure your skill, access the `AuthorizationToken` entities data in Cortana's message to get the access token. For information, see [Get cached authentication token](authentication.md).
+If you secure your skill, access the `AuthorizationToken` entities data in Cortana's message to get the access token. For information, see the [Get Your Cached Access Token](authentication.md#get-your-cached-access-token) section of the [Adding Authentication to Your Cortana Skill](authentication.md).
 
 Cortana messages can also include user profile information. For information, see [Get the user's profile and contextual information](get-user-profile-context.md).
