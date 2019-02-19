@@ -15,6 +15,15 @@ keywords: cortana
 
 <!-- Need to confirm that these answers are still accurate. **Can Cortana provide the user's IP Address?**-->
 
+### Why do I get redirected to Bing when I invoke my skill?
+
+By default when Cortana does not recognize an invocation name it will redirect to Bing search. There are a few reasons this might occur.
+1. If the skill is in development, the account logged in with Cortana is not the same as the account that self-published the skill. Check the account logged in to Cortana via settings, and the account that published the skill on Azure portal.
+1. The device's region is not US and language is not en-US. Check the device's region and language settings.
+1. Cortana is disabled by policy on the device in use.
+
+If these scenarios do not apply, check the [known issues](./known-issues.md).
+
 ### Why does my skill time out on the first invocation?
 
 If you use an Azure free tier service plan or the default standard tier plan for your App Service, the App Service will be _unloaded_ after a 20 minute idle period when not in use. This prevents unnecessary resource usage. It may take some time for the service to load when you invoke your skill after it's been unloaded, which results in a "Sorry, but [your skill] isn't responding right now" error. If you use a standard service plan, you can prevent this by changing the App Service state (under Application Settings / General Settings ) to `Always On`. This will keep your app loaded, but will also increase your resource usage.
