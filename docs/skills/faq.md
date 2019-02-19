@@ -29,6 +29,10 @@ If you use the free tier plan, you can't change this setting.
 
  Find more performance guidance in the [Azure FAQ](https://docs.microsoft.com/en-us/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time).
 
+### Can I get access to the raw voice data?
+
+No. Voice data is processed by _the agent_ and is transient for privacy reasons.
+
 ### Can Cortana provide the user's IP Address?
 
 Currently, the Cortana skills kit does not provide access to the user's IP Address.
