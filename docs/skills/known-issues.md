@@ -90,6 +90,10 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 
 For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-3.0) that maps an empty string to a help intent.
 
+**Skill invocation name not recognized when changing between accounts**
+
+There is a bug in switching between Microsoft (personal) Accounts (MSAs) and AAD Accounts due to cached credentials. The present work around is to pull up the task manager, click details tab, find the `SearchUI.exe process` (that is the Cortana agent), and kill the process.  A subsequent invocation to Cortana should work.
+
 <!-- //TODO: AIT
 ## Known Issues for Skills Imported from Alexa
 
