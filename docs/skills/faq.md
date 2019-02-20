@@ -11,9 +11,16 @@ keywords: cortana
 
 # Cortana Skills Kit FAQ
 
-<!-- Need to go through comments on docs.ms.com and see if we should add any of them -->
-
 <!-- Need to confirm that these answers are still accurate. **Can Cortana provide the user's IP Address?**-->
+
+### Why do I get redirected to Bing when I invoke my skill?
+
+By default, when Cortana does not recognize an invocation name it will redirect to Bing search. There are a few reasons this might happen.
+1. If the skill is in development, the account logged in with Cortana is not the same as the account that self-published the skill. You must be logged in on the account that published the skill. Check that the account logged in to Cortana (type "settings" into the address bar, or click on the `Settings` button, and then click on `Your account info`), is the same as the account that published the skill on the Azure portal.
+1. The device's region is not U.S., or the language is not English. Check the device's region and language settings; they must be en-US.
+1. Cortana is disabled by policy on the device in use.
+
+If these scenarios do not apply, please check the [Known Issues](./known-issues.md) page.
 
 ### Why does my skill time out on the first invocation?
 
@@ -21,6 +28,10 @@ If you use an Azure free tier service plan or the default standard tier plan for
 If you use the free tier plan, you can't change this setting.
 
  Find more performance guidance in the [Azure FAQ](https://docs.microsoft.com/en-us/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time).
+
+### Can I get access to the raw voice data?
+
+No. Voice data is processed by _the agent_ and is transient for privacy reasons.
 
 ### Can Cortana provide the user's IP Address?
 
