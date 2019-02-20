@@ -3,7 +3,7 @@ title: Cortana Skills samples
 description: A list of samples that show how to exercise different skill features.  
 
 ms.assetid: 9632367B-E7C6-470A-A0A9-2BA9AE4B8EBD
-ms.date: 10/12/2018
+ms.date: 02/15/2019
 ms.topic: article
 
 keywords: cortana
@@ -11,11 +11,11 @@ keywords: cortana
 
 # Cortana Skills Samples  
 
-For Cortana-specific code examples, please visit [the cortana-skills-samples github repository](https://github.com/Microsoft/cortana-skills-samples).
+For Cortana-specific code examples, please visit [the cortana-skills-samples GitHub repository](https://github.com/Microsoft/cortana-skills-samples).
 
 
 For the current list of Azure Bot Service samples, including those that can be used for Cortana skills, please visit
-[this link](https://github.com/Microsoft/BotBuilder-Samples).
+[the BotBuilder-Samples GitHub repository](https://github.com/Microsoft/BotBuilder-Samples).
 
 <!--
 For samples that show how to exercise different skill features, see:

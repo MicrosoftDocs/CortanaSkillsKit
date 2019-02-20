@@ -1,16 +1,16 @@
-﻿---
+---
 title: Cortana User Profile & Contextual Information Reference
 description: Defines the user profile and contextual information objects.
 label: Conceptual
 ms.assetid: 41f911c9-b5eb-4cd3-b4d9-2dc7453e3f51
-ms.date: 02/01/2019
+ms.date: 02/20/2019
 ms.topic: article
 keywords: cortana
 ---
 
 # Cortana user profile and contextual information reference
 
-Cortana sends the user's profile and contextual information as part of the message that it sends your skill. You can use this information to provide a custom experience for the user. User profile information is data that the user has provided about themselves to Cortana. User contextual information is information that Cortana has discovered about the user, such as their current location.  
+Cortana sends the user's profile and contextual information as part of the message that it sends to your skill. You can use this information to provide a custom experience for the user. User profile information is data that the user has provided about themselves to Cortana. User contextual information is information that Cortana has discovered about the user, such as the user's name.
 
 For information about how you use the objects listed in this reference, see [Get the user's profile and contextual information](get-user-profile-context.md).
 
@@ -20,12 +20,10 @@ These are the types of user profile data that you can request when you configure
 
 | Entity Name | Type | Description  
 |--|-|-
-| User.SemanticLocation.Away | [Away](#away-object) | Indicates whether the user is away from their home or work. 
+| User.SemanticLocation.Away | [Away](#away-object) | Indicates whether the user is away from their home or work.
 | User.SemanticLocation.Current | [Visit](#visit-object) | The user's current location. |
-| User.SemanticLocation.FrequentPlaces | [Hub](#hub-object)[] | A list of places the user frequents.  
 | User.Info.Name | [Name](#name-object)| The user's name. |
 | User.Info.Email | string | The user's email address. |
-
 
 ## Away object
 
@@ -36,7 +34,7 @@ Defines whether the user is away from home or work.
 | Away | Boolean | Yes | A Boolean value that determines whether the user is away from home or work. If **true**, the user is away from home or work. Otherwise, **false**.
 | Since | DateTime | No | The date and time that the user left home or work, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format.
 
-**Example**
+### Example
 
 User is not away:
 
@@ -55,9 +53,11 @@ User is away since April 25th, ‎2017‎ ‎6:‎02‎PM UTC:
 }
 ```
 
-
-## Hub object 
-
+<!-- Commented out 02/20/2019 by D. Turcaso
+     removed reference to FrequentPlaces, which is no longer supported
+     commented out Hub object, which appears to only be used for FrequentPlaces
+     Also commented out lines below that reference 'hub'.
+## Hub object
 
 Defines a place that the user frequents.
 
@@ -82,7 +82,7 @@ Defines a place that the user frequents.
     "Address": "500 108th Ave NE, Redmond, WA 98004, USA"
 }
 ```
-
+ -->
 
 ## Name object
 
@@ -93,7 +93,7 @@ Defines the user's name.
 | GivenName | string | No | The user's first name. 
 | FamilyName | string | No | The user's last name. 
 
-**Example**
+### Example
 
 ```json
 {
@@ -102,33 +102,24 @@ Defines the user's name.
 }
 ```
 
-
 ## Visit object
 
 Defines the user's current location.
 
-| Property | Type | Always included | Description 
+| Property | Type | Always included | Description
 |-|-|-|-
-| StartTime | DateTime | Yes | The date and time the user arrived at the location, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format. 
-| EndTime | DateTime | No | The date and time the user left the location, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format. 
-| Hub | [Hub](#hub-object) | Yes | The user's location. 
+| StartTime | DateTime | Yes | The date and time the user arrived at the location, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format.
+| EndTime | DateTime | No | The date and time the user left the location, in [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) format.
 | VenueName | string | No | The name of the location if the location is a point of interest.
 | Away | [Away](#away-object) | No | Indicates whether the user is away from home or work. |
+<!-- | Hub | [Hub](#hub-object) | Yes | The user's location.  -->
 
-**Example**
+### Example
 
 ```json
 {
     "StartTime": 2017-04-25T18:02:30+00:00,
     "EndTime": 2017-04-27T7:35:00+00:00,
-    "Hub": {
-        "Id":"11111111-1111-1111-1111-11111111111",
-        "Type": "Work",
-        "Name": "My office",
-        "Latitude": 47.61512,
-        "Longitude": -122.1957,
-        "Address": "500 108th Ave NE, Bellevue, WA 98004, USA"
-    }
     "VenueName": null,
     "Away": {
         "Away": true,
@@ -136,3 +127,13 @@ Defines the user's current location.
     }
 }
 ```
+
+<!--     "Hub": {
+        "Id":"11111111-1111-1111-1111-11111111111",
+        "Type": "Work",
+        "Name": "My office",
+        "Latitude": 47.61512,
+        "Longitude": -122.1957,
+        "Address": "500 108th Ave NE, Bellevue, WA 98004, USA"
+    }
+ -->
