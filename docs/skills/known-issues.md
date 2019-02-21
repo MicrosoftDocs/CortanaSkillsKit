@@ -15,7 +15,7 @@ Cortana Skills Kit is currently in preview. This document lists known issues, an
 
 ### Cortana skills only work when language is set to English (United States)
 
-The public preview for Cortana is available for U.S. English (en-US) market only.
+The public preview for Cortana is available for the U.S. English (en-US) market only.
 
 ### Cortana stops talking after 15 seconds, or displays the message, "Unfortunately this skill won't work on this version of Windows"
 
