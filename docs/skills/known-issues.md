@@ -3,27 +3,25 @@ title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 02/20/2019
+ms.date: 02/21/2019
 ms.topic: article
 
 keywords: cortana
 ---
 
-<!-- Need to confirm if these are still issue. -->
-
 # Known Issues
 
-Cortana Skills Kit is currently in preview. This document lists known issues, and if available, alternative solutions.
+Cortana Skills Kit is currently in preview. This document lists known issues, and if available, workarounds and solutions.
 
-#### Cortana Skills only works when language is set to English (United States)
+### Cortana Skills only works when language is set to English (United States)
 
 The public preview for Cortana is available for U.S. English (en-US) market only.
 
-#### Cortana stops talking after 15 seconds or displays the message, "Unfortunately this skill won't work on this version of Windows"
+### Cortana stops talking after 15 seconds or displays the message, "Unfortunately this skill won't work on this version of Windows"
 
 Cortana in the Windows 10 Anniversary update (version 1607) limits speech to 15 seconds. This limit has been removed in the Windows 10 Creators update (version 1703). A workaround is to break your speech text into multiple responses. You can send multiple replies to a single user invocation, as long as the input hint of the first N-1 replies is `IgnoringInput`. The last reply must set the input hint to `ExpectingInput` (which automatically turns the microphone on), or `AcceptingInput` (which doesn't).
 
-#### Long repetitive sentences without appropriate punctuation become garbled when spoken in the Windows 10 Creators Update (version 1703)
+### Long repetitive sentences without appropriate punctuation become garbled when spoken in the Windows 10 Creators Update (version 1703)
 
 If you have long text that is repetitive, the speech output from Cortana may be garbled. For example:
 
@@ -89,11 +87,11 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 
 For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-3.0) that maps an empty string to a help intent.
 
-### Skill invocation name not recognized when changing between accounts
+### Skill invocation name is not recognized when changing between accounts
 
-There is a bug in switching between Microsoft (personal) Accounts (MSAs) and AAD Accounts due to cached credentials. Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled. 
+There's a bug in switching between Microsoft (personal) Accounts (MSAs) and Azure Active Directory (AAD) Accounts due to cached credentials. Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled.
 
-There is a work around.
+Until this is fixed, there is a workaround.
 
 1. Start Microsoft Task Manager.
 1. Click on `More details`.  
@@ -101,13 +99,9 @@ There is a work around.
 
 1. Click the details tab.  
      ![Task Manager default](../media/images/known-issues-task-mgr-02.png)
-1. Find the `SearchUI.exe` process (which is the Cortana agent), and kill the process with the `End task` button.
+1. Find the `SearchUI.exe` process (which is the Cortana agent), click on it, and kill the process with the `End task` button.
 
-Subsequent invocations to Cortana should work as expected.
-
-
-
-The next invocation to Cortana will restart the agent with a clear identity cache, and load the correct grammars to recognize unique invocation names.
+The next invocation to Cortana will restart the agent with a clear identity cache, and load the correct grammars to recognize unique invocation names. Subsequent invocations to Cortana should work as expected.
 
 <!-- //TODO: AIT
 ### Known Issues for Skills Imported from Alexa
@@ -130,6 +124,7 @@ Implicit Auth is not currently supported, but is a planned feature.
 Cortana Skills currently does not provide a Smart Home Skill API. However, a custom Cortana skill can be created that connects to a home automation service. Here is an [example](https://www.codeproject.com/Articles/1117146/Creating-a-Smart-Home-Chat-Bot).
 
 <a name="SSML-Alexa-Cortana-differences"></a>
+
 ### Not all SSML that works in Alexa works in Cortana
 
 The likely causes are as follows:
