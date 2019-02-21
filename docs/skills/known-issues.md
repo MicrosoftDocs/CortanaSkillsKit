@@ -91,7 +91,9 @@ For `javascript`, you can create a [customer recognizer](https://docs.microsoft.
 
 ### Skill invocation name not recognized when changing between accounts
 
-There is a bug in switching between Microsoft (personal) Accounts (MSAs) and AAD Accounts due to cached credentials. There is a work around.
+There is a bug in switching between Microsoft (personal) Accounts (MSAs) and AAD Accounts due to cached credentials. Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled. 
+
+There is a work around.
 
 1. Start Microsoft Task Manager.
 1. Click on `More details`.  
@@ -103,9 +105,7 @@ There is a bug in switching between Microsoft (personal) Accounts (MSAs) and AAD
 
 Subsequent invocations to Cortana should work as expected.
 
-### Unique invocation names fail to be recognized in default settings / self publish on Windows
 
-Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled. The workaround is to use Microsoft Task Manager to kill the `SearchUI.exe` process. (See [Skill invocation name not recognized when changing between accounts](#skill-invocation-name-not-recognized-when-changing-between-accounts) for details.)
 
 The next invocation to Cortana will restart the agent with a clear identity cache, and load the correct grammars to recognize unique invocation names.
 
