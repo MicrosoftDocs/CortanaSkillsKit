@@ -13,11 +13,11 @@ keywords: cortana
 
 Cortana Skills Kit is currently in preview. This document lists known issues, and if available, workarounds and solutions.
 
-### Cortana Skills only works when language is set to English (United States)
+### Cortana skills only work when language is set to English (United States)
 
 The public preview for Cortana is available for U.S. English (en-US) market only.
 
-### Cortana stops talking after 15 seconds or displays the message, "Unfortunately this skill won't work on this version of Windows"
+### Cortana stops talking after 15 seconds, or displays the message, "Unfortunately this skill won't work on this version of Windows"
 
 Cortana in the Windows 10 Anniversary update (version 1607) limits speech to 15 seconds. This limit has been removed in the Windows 10 Creators update (version 1703). A workaround is to break your speech text into multiple responses. You can send multiple replies to a single user invocation, as long as the input hint of the first N-1 replies is `IgnoringInput`. The last reply must set the input hint to `ExpectingInput` (which automatically turns the microphone on), or `AcceptingInput` (which doesn't).
 
