@@ -34,15 +34,11 @@ In addition to using `channelData` to receive Cortana-specific information, you 
 
 ## Next steps
 
-These are some additional types of data that Cortana sends your skill.
+These are some additional types of data that Cortana can send to your skill.
 
 |Entity | Purpose | Refer to |
 |-|-|-|
-| `DeviceInfo` | determine the type of device that Cortana is running on | [Determine Cortana's device type](cortana-device-type.md) |
-| `AuthorizationToken` | get the access token for secured skills | [Adding Authentication to Your Cortana Skill](authentication.md) |
+| `DeviceInfo` | Determine the type of device that Cortana is running on. | [Determine Cortana's device type](cortana-device-type.md) |
+| `AuthorizationToken` | Get the access token for secured skills. | [Adding Authentication to Your Cortana Skill](authentication.md) |
 
 Cortana messages can also include user profile information. For information, see [Get the user's profile and contextual information](get-user-profile-context.md).
-
-<!-- To determine the type of device that Cortana is running on, access the `DeviceInfo` entities data in Cortana's message. For information see, [Determine Cortana's device type](cortana-device-type.md).
-
-If you secure your skill, access the `AuthorizationToken` entities data in Cortana's message to get the access token. For information, see the [Get Your Cached Access Token](authentication.md#get-your-cached-access-token) section of the [Adding Authentication to Your Cortana Skill](authentication.md). -->
