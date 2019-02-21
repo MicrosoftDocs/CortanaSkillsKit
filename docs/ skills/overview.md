@@ -81,7 +81,7 @@ If a user is trying to invoke your Cortana skill by voice input, they speak an i
 >
 > Cortana: "Your order has been updated."
 
-There are design guides available to help you create an engaging user experience.
+There are design guides available to help you create an engaging user experience.hay ciertas guias de diseño 
 
 * [Skill design principles](./design-principles.md)  
 * [Invocation name guidelines](./cortana-invocation-guidelines.md)  
