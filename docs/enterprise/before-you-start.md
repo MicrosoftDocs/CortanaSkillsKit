@@ -18,4 +18,4 @@ As an example, instead of trying to provide a list of a dozen choices on the scr
 
 You're free to use whatever workflow suits you best, but we've found that this one works well for creating Cortana skills.
 
-     ![Cortana's Notebook](../media/images/development-lifecycle.png)
+   ![Cortana's Notebook](../media/images/development-lifecycle.png)
