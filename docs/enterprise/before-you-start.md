@@ -25,21 +25,21 @@ You're free to use whatever workflow suits you best, but we've found that this o
 [Principles of Cortana skills design](../skills/design-principles.md)
 
 
-[Cortana design guidelines](../skills/voicecommand-design-guidelines)
+[Cortana design guidelines](../skills/voicecommand-design-guidelines.md)
 
 ## Pick a bot template
 
-[Create your first Cortana skill](../skills/mva22-hello-world)
+[Create your first Cortana skill](../skills/mva22-hello-world.md)
 
 ## Enable speech
 
-[Add speech to your Cortana skill](../skills/adding-speech)
+[Add speech to your Cortana skill](../skills/adding-speech.md)
 
-[Speech Synthesis Markup Language (SSML) reference](../skills/speech-synthesis-markup-language)
+[Speech Synthesis Markup Language (SSML) reference](../skills/speech-synthesis-markup-language.md)
 
 ## Test
 
-[Testing and debugging Cortana Skills](../skills/test-debug)
+[Testing and debugging Cortana Skills](../skills/test-debug.md)
 
 ## Publish to Azure
 
