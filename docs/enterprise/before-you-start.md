@@ -19,3 +19,29 @@ As an example, instead of trying to provide a list of a dozen choices on the scr
 You're free to use whatever workflow suits you best, but we've found that this one works well for creating Cortana skills.
 
    ![Cortana's Notebook](../media/images/development-lifecycle.png)
+
+## Design your skill
+
+[Principles of Cortana skills design](design-principles.md)
+
+
+[Cortana design guidelines](voicecommand-design-guidelines)
+
+## Pick a bot template
+
+[Create your first Cortana skill](mva22-hello-world)
+
+## Enable speech
+
+[Add speech to your Cortana skill](adding-speech)
+
+[Speech Synthesis Markup Language (SSML) reference](speech-synthesis-markup-language)
+
+## Test
+
+[Testing and debugging Cortana Skills](test-debug)
+
+## Publish to Azure
+
+## Continue local testing
+
