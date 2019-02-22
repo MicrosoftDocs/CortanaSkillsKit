@@ -3,7 +3,7 @@ title: Cortana Skills Kit FAQ
 description: Tips on Testing & Debugging Cortana Skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 
 keywords: cortana
