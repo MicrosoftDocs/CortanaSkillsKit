@@ -1,8 +1,8 @@
 
 # Cortana Skills Kit for Enterprise  
 
-## [Overview](./overview.md)  
+## [Overview](./overview.md)
 
-# Before you start
+## [Onboarding](./onboarding.md)
 
 ## [Before you start](./before-you-start.md)
