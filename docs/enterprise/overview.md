@@ -2,7 +2,7 @@
 title: Overview of Cortana Skills Kit for Enterprise | Cortana Skills Kit for Enterprise
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
-ms.date: 10/08/2018
+ms.date: 02/25/2019
 ms.topic: article
 ms.prod: cortana
 
@@ -33,11 +33,11 @@ Cortana is a digital assistant that keeps users informed and productive, helping
 :::row-end:::
 
 Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and leverages Azure Active Directory to manage building, testing and deployment of the custom skills within the tenant.  
-*   [Azure Bot Service](https://azure.microsoft.com/services/bot-service)  
+* [Azure Bot Service](https://azure.microsoft.com/services/bot-service)  
     A skill is a speech bot. Use the Bot Framework to build your speech bot, register it, and define your Cortana channel. The framework provides a .NET SDK and Node.js SDK that you use to build your bot. The Bot Framework SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler.  
 
-*   [Azure Active Directory](https://azure.microsoft.com/services/active-directory)  
+* [Azure Active Directory](https://azure.microsoft.com/services/active-directory)  
     Azure Active Directory (Azure AD) helps enterprises manage user identities and create intelligence-driven access policies to secure your resources. The Skills Kit leverages the same technology to deploy custom skills to a group of Azure AD users for testing and to manage deployment to the entire tenant.  
 
-*   IT Admin Portal for managing skill deployment to tenant  
-    Dedicated portal for IT Administrators and delegated reviewers to review the skills submitted by enterprise developers for deployment to tenant. Reviewers should ensure that custom skills follow company’s guidelines on privacy, security and other practices before approving a skill for tenant deployment.  
+* IT Admin Portal for managing skill deployment to tenant  
+    Dedicated portal for IT Administrators and delegated reviewers to review the skills submitted by enterprise developers for deployment to tenant. Reviewers should ensure that custom skills follow company’s guidelines on privacy, security and other practices before approving a skill for tenant deployment.
