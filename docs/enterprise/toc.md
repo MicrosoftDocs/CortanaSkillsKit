@@ -5,4 +5,4 @@
 
 # Before you start
 
-## [Before you start](./before-you-start)
+## [Before you start](./before-you-start.md)
