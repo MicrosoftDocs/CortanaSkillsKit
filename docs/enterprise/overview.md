@@ -12,7 +12,7 @@ keywords: cortana
 # Cortana Skills Kit for Enterprise  
 
 >[!NOTE]
-> Cortana Skills Kit for Enterprise is currently available through Technology Adoption Program. Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.  
+> Cortana Skills Kit for Enterprise is currently available through the Technology Adoption Program. Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.  
 
 Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capability by building their own custom skills for domains ranging from HR, IT, Helpdesk, Sales to areas like Smart Building:  
 
@@ -41,3 +41,7 @@ Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and lever
 
 * IT Admin Portal for managing skill deployment to tenant  
     Dedicated portal for IT Administrators and delegated reviewers to review the skills submitted by enterprise developers for deployment to tenant. Reviewers should ensure that custom skills follow company’s guidelines on privacy, security and other practices before approving a skill for tenant deployment.
+
+## Next steps
+
+Check out the [Onboarding](./onboarding.md) page.
