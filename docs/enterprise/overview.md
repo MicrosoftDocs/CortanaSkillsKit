@@ -32,6 +32,9 @@ Cortana is a digital assistant that keeps users informed and productive, helping
     :::column-end:::
 :::row-end:::
 
+>[!TIP]
+>In Azure Active Directory (Azure AD), a *tenant* is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure.
+
 Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and leverages Azure Active Directory to manage building, testing and deployment of the custom skills within the tenant.  
 * [Azure Bot Service](https://azure.microsoft.com/services/bot-service)  
     A skill is a speech bot. Use the Bot Framework to build your speech bot, register it, and define your Cortana channel. The framework provides a .NET SDK and Node.js SDK that you use to build your bot. The Bot Framework SDKs provide features such as dialogs and built-in prompts that make interacting with users much simpler.  
@@ -39,7 +42,7 @@ Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and lever
 * [Azure Active Directory](https://azure.microsoft.com/services/active-directory)  
     Azure Active Directory (Azure AD) helps enterprises manage user identities and create intelligence-driven access policies to secure your resources. The Skills Kit leverages the same technology to deploy custom skills to a group of Azure AD users for testing and to manage deployment to the entire tenant.  
 
-* IT Admin Portal for managing skill deployment to tenant  
+* [IT Admin Portal for managing skill deployment to tenant](https://it-admin-portal-prod.azurewebsites.net/)
     Dedicated portal for IT Administrators and delegated reviewers to review the skills submitted by enterprise developers for deployment to tenant. Reviewers should ensure that custom skills follow company’s guidelines on privacy, security and other practices before approving a skill for tenant deployment.
 
 ## Next steps
