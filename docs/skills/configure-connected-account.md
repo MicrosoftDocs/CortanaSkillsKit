@@ -3,7 +3,7 @@ title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
 
 ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 09/25/2018
+ms.date: 02/26/2019
 ms.topic: article
 
 keywords: cortana
@@ -11,7 +11,7 @@ keywords: cortana
 
 # Configure authentication for Microsoft's identity server
 
-If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Account feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
+If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Account feature. With the Connected Account feature, you specify the necessary OAuth settings, and then Cortana handles all the work to get the token.
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
@@ -23,16 +23,16 @@ Before configuring your skill for a Connected Account, you need to update your b
 6. click **Save**.
 
 
-Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected account.
+Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account. The following steps walk you through the process of adding a connected account.
 
-1. Under the **Manage user identity through connected services** section press the option to enable it.
+1. Under the **Manage user identity through connected services** section, set the 'Cortana should manage my user's identity` option to on.
 2. Fill in the form.  
   
 	| Item | Description  |
  	|------|--------------|
 	| **Sign in at invocation** | Select this option if you want Cortana to sign in the user at the time they invoke your skill.
-	| **Sign in when required** | Select this option if you use a Bot Framework's SignIn card to sign in the user. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings. |
-	| **Account name** | The name of your skill that you want displayed when the user signs in to your skill. |
+	| **Sign in when required** | Select this option if you want to use a Bot Framework SignIn card. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings. |
+	| **Account name** | The name of your skill that you want displayed when the user signs in to it. |
 	| **Client ID for third-party services** | Your bot's application ID. You received the ID when you registered your bot. |
 	| **Space-separated list of scopes** | Specify the scopes that the service requires (see the service's documentation). |
 	| **Authorization URL** | Set to `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`. |
@@ -41,7 +41,6 @@ Next, you need to update the Cortana channel configuration settings for your ski
 	| **Token URL** | If you select `Authorization code`, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`. |
 	| **Client secret/password for third party services** | The bot's password. You received the password when you registered your bot. |
 	| **Client authentication scheme** | Select `Credentials in request body`. |
-
   
 3. Save the skill.
 
@@ -50,8 +49,6 @@ If you previously configured the channel and want to update it to include a conn
 1. Navigate to the [Bot Framework portal](https://dev.botframework.com/bots) and select your bot.
 2. Press the **Edit** button next to the Cortana channel.
 3. Specify the steps above to configure the connected account.
-
-
 
 <!--
 
@@ -84,8 +81,6 @@ If you already registered your bot, you need to edit the registration to add the
 6. The password used for authentication is your bot's password. 
 
 -->
-
-
 
 ## Next steps
 

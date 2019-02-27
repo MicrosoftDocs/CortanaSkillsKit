@@ -3,7 +3,7 @@ title: Cortana Skills Kit FAQ
 description: Tips on Testing & Debugging Cortana Skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 02/21/2019
+ms.date: 02/26/2019
 ms.topic: article
 
 keywords: cortana
@@ -12,6 +12,14 @@ keywords: cortana
 # Cortana Skills Kit FAQ
 
 <!-- Need to confirm that these answers are still accurate. **Can Cortana provide the user's IP Address?**-->
+
+### What markets (locales) are supported?
+
+Currently, Cortana Skills supports the U.S. market only (en-US locale). 
+
+### Is there a timeline for adding more locales?
+
+LUIS supports a wider range of locales, and the Cortana skills team is planning to add support for more locales as soon as possible.
 
 ### Why do I get redirected to Bing when I invoke my skill?
 
@@ -130,10 +138,6 @@ Currently, Cortana Skills Kit enables skills in the U.S. only (en-US locale) whe
 ### When I convert my bot into a Cortana Skill, will Cortana speak the bot's responses in Cortana's voice?
 
 Yes.  You may use SSML to change Cortana's speech patterns, but not her voice. For more information, see [Speech Synthesis Markup Language (SSML) reference](speech-synthesis-markup-language.md).
-
-### What markets are supported, and what is the timeline for adding more?
-
-Currently, Cortana Skills supports the U.S. market only (en-US locale). LUIS supports a wider range of locales, and the Cortana skills team is planning to add support for more locales as soon as possible.
 
 ### Why is the Cortana Skills Kit only available in limited markets?
 

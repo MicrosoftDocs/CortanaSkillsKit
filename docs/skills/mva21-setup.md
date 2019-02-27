@@ -13,7 +13,7 @@ keywords: cortana
 Before you can build your first skill, you need to set up your development environment. Here are a few things you may need to do:
 
 * Set up access to cloud resources, as listed below.
-* Make sure your PC or Mac has the necessary development tools and operating system version.
+* Make sure your PC or Mac has the necessary development tools and operating system version. **Note:** Cortana currently supports only one locale: English-U.S. (en-US).
 * Set up Cortana.
 * Optionally, set up your Android or iOS mobile device, or Harman Kardon Invoke speaker, to work with Cortana.
 

@@ -25,6 +25,9 @@ This image shows how users interact with Cortana and your skill. No matter which
 
 Users invoke skills simply by speaking to Cortana. Users don't install or activate skills. New skills that the user may be interested in using can be found on the [Cortana Skills page](https://www.microsoft.com/en-us/windows/cortana/cortana-skills/). They can also manage and control skills that they've already connected to in the Cortana Notebook.
 
+>[!NOTE]
+> Cortana will respond with speech when queried with speech. Queries by text will have a text-only response.
+
 Users can invoke skills on any platform that includes Cortana.
 
 | Platform | Requirements |  
@@ -34,7 +37,7 @@ Users can invoke skills on any platform that includes Cortana.
 | iOS | iPhone, iPad, or iPod Touch running iOS 9.0 or newer, with app version 1.9.15 or newer. |  
 
 >[!IMPORTANT]
-> Cortana supports skills in the **en-US** locale only.
+> Cortana supports skills in the **US** region and with the **en-US** language locale only.
 
 When invoking skills by speaking (or typing) to Cortana, the user can optionally provide an **invocation phrase**. The invocation phrase includes an **invocation name**, which uniquely identifies the skill to invoke. For example, if an invocation name is `Contoso Photo`, the user might say `Ask Contoso Photo to...` or `Tell Contoso Photo that...`. You specify the name when you configure the Cortana channel for your skill.  
 
