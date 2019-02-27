@@ -26,7 +26,7 @@ This image shows how users interact with Cortana and your skill. No matter which
 Users invoke skills simply by speaking to Cortana. Users don't install or activate skills. New skills that the user may be interested in using can be found on the [Cortana Skills page](https://www.microsoft.com/en-us/windows/cortana/cortana-skills/). They can also manage and control skills that they've already connected to in the Cortana Notebook.
 
 >[!NOTE]
-> Cortana will respond with speech when queried with speech. Queries by text will have a text only response.
+> Cortana will respond with speech when queried with speech. Queries by text will have a text-only response.
 
 Users can invoke skills on any platform that includes Cortana.
 
