@@ -11,10 +11,7 @@ keywords: cortana
 
 # Cortana Skills Kit
 
-Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.>
-
->[!NOTE]
-> Cortana will respond with speech when queried with speech.
+Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.
 
 The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Create Your First Cortana Skill](https://docs.microsoft.com/en-us/cortana/skills/get-started).
 
@@ -27,6 +24,9 @@ This image shows how users interact with Cortana and your skill. No matter which
 ## How do users invoke skills?  
 
 Users invoke skills simply by speaking to Cortana. Users don't install or activate skills. New skills that the user may be interested in using can be found on the [Cortana Skills page](https://www.microsoft.com/en-us/windows/cortana/cortana-skills/). They can also manage and control skills that they've already connected to in the Cortana Notebook.
+
+>[!NOTE]
+> Cortana will respond with speech when queried with speech. Queries by text will have a text only response.
 
 Users can invoke skills on any platform that includes Cortana.
 
