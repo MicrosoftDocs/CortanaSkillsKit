@@ -9,9 +9,6 @@ ms.topic: article
 keywords: cortana
 ---
 
->[!WARNING]
->Do not use. The Voice Command API for Cortana has been deprecated.
-
 # Activate a background app in Cortana using voice commands  
 
 In addition to using voice commands within **Cortana** to access system features, you may also extend **Cortana** with features and functionality from your app (as a background task) using voice commands that specify an action or command to run. When an app handles a voice command in the background, it does not take focus. Instead, it returns all feedback and results through the **Cortana** canvas and the **Cortana** voice.  

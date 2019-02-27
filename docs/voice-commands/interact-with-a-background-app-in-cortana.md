@@ -9,9 +9,6 @@ ms.topic: article
 keywords: cortana
 ---
 
->[!WARNING]
->Do not use. The Voice Command API for Cortana has been deprecated.
-
 # Interact with a background app in Cortana
 
 Enable user interaction with a background app, through speech and text input in the **Cortana** canvas, while executing a voice command.

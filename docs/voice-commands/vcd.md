@@ -11,9 +11,6 @@ ms.topic: article
 keywords: cortana
 ---
 
->[!WARNING]
->Do not use. The Voice Command API for Cortana has been deprecated.
-
 # Cortana voice commands
 
 Extend the basic functionality of **Cortana** with voice commands that launch and execute a single action in an external application.
@@ -33,7 +30,7 @@ By integrating the basic functionality of your app, and providing a central entr
 
 | Article | Description |
 |---|---|
-| [Voice command design guidelines](../skills/voicecommand-design-guidelines.md) | These guidelines and recommendations describe how your app can best use **Cortana** voice commands to interact with the user, help them accomplish a task, and communicate clearly how it's all happening. |
+| [Voice command design guidelines](voicecommand-design-guidelines.md) | These guidelines and recommendations describe how your app can best use **Cortana** voice commands to interact with the user, help them accomplish a task, and communicate clearly how it's all happening. |
 | [Activate a foreground app with voice commands](launch-a-foreground-app-with-voice-commands-in-cortana.md) | In addition to using voice commands within **Cortana** to access system features, you can also use voice commands through **Cortana** to launch a foreground app and specify an action or command to execute within the app. |
 | [Dynamically modify VCD phrase lists](dynamically-modify-voice-command-definition-vcd-phrase-lists.md) | Learn how to access and update the list of supported phrases (**PhraseList** elements) in a VCD file using the speech recognition result at run time. |
 | [Activate a background app with voice commands](launch-a-background-app-with-voice-commands-in-cortana.md) | In addition to using voice commands within **Cortana** to access system features, you can also extend **Cortana** with features and functionality from a background app, using voice commands that specify an action or command to execute within the app. |

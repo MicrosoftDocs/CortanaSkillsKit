@@ -11,7 +11,7 @@
 
 ## Voice Commands  
 ### [Overview](./vcd.md)  
-### [Cortana voice command design guidelines](../skills/voicecommand-design-guidelines.md)  
+### [Cortana voice command design guidelines](./voicecommand-design-guidelines.md)  
 ### [Activate a foreground app with voice commands through Cortana](./launch-a-foreground-app-with-voice-commands-in-cortana.md)  
 ### [Dynamically modify VCD phrase lists](./dynamically-modify-voice-command-definition-vcd-phrase-lists.md)  
 ### [Activate a background app with voice commands through Cortana](./launch-a-background-app-with-voice-commands-in-cortana.md)  

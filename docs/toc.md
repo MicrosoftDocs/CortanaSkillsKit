@@ -11,7 +11,6 @@
 ### [Design principles](./skills/design-principles.md)  
 ### [Invocation name guidelines](./skills/cortana-invocation-guidelines.md)  
 ### [Performance guidelines](./skills/performance-guidelines.md)  
-### [Cortana voice command design guidelines](./skills/voicecommand-design-guidelines.md)  
 
 ## How-to guides  
 ### [Determine device type](./skills/cortana-device-type.md)  
@@ -63,11 +62,11 @@
 
 ## [Overview](./enterprise/overview.md)  
 
-<!-- removed 02/27/2019 by v-daturc
 # Additional Cortana APIs  
 
 ## Voice Commands  
 ### [Overview](./voice-commands/vcd.md)  
+### [Cortana voice command design guidelines](./voice-commands/voicecommand-design-guidelines.md)  
 ### [Activate a foreground app with voice commands through Cortana](./voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana.md)  
 ### [Dynamically modify VCD phrase lists](./voice-commands/dynamically-modify-voice-command-definition-vcd-phrase-lists.md)  
 ### [Activate a background app with voice commands through Cortana](./voice-commands/launch-a-background-app-with-voice-commands-in-cortana.md)  
@@ -76,4 +75,4 @@
 ### [Support more natural voice commands in Cortana](./voice-commands/support-natural-language-voice-commands-in-cortana.md)  
 
 ## Structured Data Markup  
-### [Overview](./data-markup/structured-data-markup.md)   -->
+### [Overview](./data-markup/structured-data-markup.md)  
