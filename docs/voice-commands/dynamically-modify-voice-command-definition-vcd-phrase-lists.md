@@ -7,6 +7,9 @@ ms.topic: article
 keywords: cortana
 ---
 
+>[!WARNING]
+>Do not use. The Voice Command API for Cortana has been deprecated.
+
 # Dynamically modify Cortana VCD phrase lists
 
 **Important APIs**

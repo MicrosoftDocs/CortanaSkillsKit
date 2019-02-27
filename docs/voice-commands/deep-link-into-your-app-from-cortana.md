@@ -10,13 +10,15 @@ ms.topic: article
 keywords: cortana
 ---
 
-# Deep link from a background app in Cortana to a foreground app
+>[!WARNING]
+>Do not use. The Voice Command API for Cortana has been deprecated.
 
+# Deep link from a background app in Cortana to a foreground app
 
 **Important APIs**
 
--   [**Windows.ApplicationModel.VoiceCommands**](https://msdn.microsoft.com/library/windows/apps/dn706594)
--   [**Voice Command Definition (VCD) elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+- [**Windows.ApplicationModel.VoiceCommands**](https://msdn.microsoft.com/library/windows/apps/dn706594)
+- [**Voice Command Definition (VCD) elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
 
 Provide deep links from a background app in **Cortana** that launch the app to the foreground in a specific state or context.
 

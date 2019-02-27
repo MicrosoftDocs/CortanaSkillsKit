@@ -11,6 +11,9 @@ ms.topic: article
 keywords: cortana
 ---
 
+>[!WARNING]
+>Do not use. The Voice Command API for Cortana has been deprecated.
+
 # Support natural language voice commands in Cortana
 
 Extend **Cortana** with more flexible and natural voice commands that let a user say your app's name anywhere in the command.
