@@ -5,11 +5,14 @@ author: kbridge
 label: Conceptual
 ms.assetid: c2959c1b-c2f2-4a8d-8f3e-79585f69afcf
 
-ms.date: 02/08/2017
+ms.date: 02/27/2019
 ms.topic: article
 
 keywords: cortana
 ---
+
+>[!WARNING]
+>Do not use. The Voice Command API for Cortana has been deprecated.
 
 # Support natural language voice commands in Cortana
 

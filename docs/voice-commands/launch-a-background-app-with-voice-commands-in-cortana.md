@@ -3,11 +3,14 @@ title: Activate a background app in Cortana using voice commands | Cortana UWP d
 description: Extend Cortana with features from your app (as a background task) using voice commands.
 
 ms.assetid: e2c7eae3-6beb-4156-92a5-474bba53451e
-ms.date: 10/08/2018
+ms.date: 02/27/2019
 ms.topic: article
 
 keywords: cortana
 ---
+
+>[!WARNING]
+>Do not use. The Voice Command API for Cortana has been deprecated.
 
 # Activate a background app in Cortana using voice commands  
 

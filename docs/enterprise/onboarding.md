@@ -25,4 +25,4 @@ Once the tenant is onboarded, developers can begin to build Cortana Enterprise S
 
 ## Next steps
 
-Start with the Build This Puppy page.
+Go on to the [Before you start](./before-you-start.md) page.

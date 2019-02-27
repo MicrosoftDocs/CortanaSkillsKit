@@ -19,5 +19,6 @@
 ### [Deep link from a background app in Cortana to a foreground app](./deep-link-into-your-app-from-cortana.md)  
 ### [Support more natural voice commands in Cortana](./support-natural-language-voice-commands-in-cortana.md)  
 
+<!--  removed 02/27/2019 by v-daturc
 ## Structured Data Markup  
-### [Overview](../data-markup/structured-data-markup.md)  
+### [Overview](../data-markup/structured-data-markup.md)   -->

@@ -7,10 +7,11 @@
 
 ## [Overview](./overview.md)  
 
+<!--  removed 02/27/2019 by v-daturc because these APIs are deprecated
 # Additional Cortana APIs  
 
 ## Voice Commands  
 ### [Overview](../voice-commands/vcd.md)  
 
 ## Structured Data Markup  
-### [Overview](../data-markup/structured-data-markup.md)  
+### [Overview](../data-markup/structured-data-markup.md)   -->

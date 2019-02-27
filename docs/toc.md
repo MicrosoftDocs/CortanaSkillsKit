@@ -64,6 +64,7 @@
 
 # Additional Cortana APIs  
 
+<!--  removed 02/27/2019 by v-daturc because these APIs are deprecated
 ## Voice Commands  
 ### [Overview](./voice-commands/vcd.md)  
 ### [Cortana voice command design guidelines](./voice-commands/voicecommand-design-guidelines.md)  
@@ -75,4 +76,4 @@
 ### [Support more natural voice commands in Cortana](./voice-commands/support-natural-language-voice-commands-in-cortana.md)  
 
 ## Structured Data Markup  
-### [Overview](./data-markup/structured-data-markup.md)  
+### [Overview](./data-markup/structured-data-markup.md)   -->
