@@ -11,7 +11,10 @@ keywords: cortana
 
 # Cortana Skills Kit
 
-Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.
+Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.>
+
+[!NOTE]
+> Cortana will respond with speech when queried with speech.
 
 The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Create Your First Cortana Skill](https://docs.microsoft.com/en-us/cortana/skills/get-started).
 
@@ -34,7 +37,7 @@ Users can invoke skills on any platform that includes Cortana.
 | iOS | iPhone, iPad, or iPod Touch running iOS 9.0 or newer, with app version 1.9.15 or newer. |  
 
 >[!IMPORTANT]
-> Cortana supports skills in the **en-US** locale only.
+> Cortana supports skills in the **US** region and with the **en-US** language locale only.
 
 When invoking skills by speaking (or typing) to Cortana, the user can optionally provide an **invocation phrase**. The invocation phrase includes an **invocation name**, which uniquely identifies the skill to invoke. For example, if an invocation name is `Contoso Photo`, the user might say `Ask Contoso Photo to...` or `Tell Contoso Photo that...`. You specify the name when you configure the Cortana channel for your skill.  
 
