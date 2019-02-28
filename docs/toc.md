@@ -62,9 +62,9 @@
 
 ## [Overview](./enterprise/overview.md)  
 
+<!--  removed 02/27/2019 by v-daturc because these APIs are deprecated
 # Additional Cortana APIs  
 
-<!--  removed 02/27/2019 by v-daturc because these APIs are deprecated
 ## Voice Commands  
 ### [Overview](./voice-commands/vcd.md)  
 ### [Cortana voice command design guidelines](./voice-commands/voicecommand-design-guidelines.md)  
