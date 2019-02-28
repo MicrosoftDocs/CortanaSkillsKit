@@ -51,7 +51,7 @@ Use language that the system understands. Users tend to repeat the terms they ar
 ## Localization
 
 >[!NOTE]
->Cortana skills current support only U.S. English (en-US locale).
+>Cortana skills currently support only U.S. English (en-US locale).
 
 To initiate an action using a voice command, your app must register voice commands in the language the user has selected on their device.
 
