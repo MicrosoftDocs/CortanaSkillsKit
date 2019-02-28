@@ -2,7 +2,7 @@
 title: Enterprise onboarding
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
-ms.date: 02/25/2019
+ms.date: 02/27/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc
@@ -25,4 +25,4 @@ Once the tenant is onboarded, developers can begin to build Cortana Enterprise S
 
 ## Next steps
 
-Go on to the [Before you start](./before-you-start.md) page.
+Go on to the [Before you start](./getting-started.md) page.
