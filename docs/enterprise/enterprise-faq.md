@@ -37,7 +37,7 @@ Using the Azure portal:
 
 ### My skill name isn’t being recognized by Cortana.
 
-There is a bug in switching between Microsoft (personal) Accounts (MSAs)and AAD Accounts due to cached credentials. See the [Known Issues](./known-issues.md#skill-invocation-name-is-not-recognized-when-changing between-accounts) page for more details.
+There is a bug in switching between Microsoft (personal) Accounts (MSAs)and AAD Accounts due to cached credentials. See the [Known Issues](./known-issues.md) page for more details.
 
 ### I can’t see my Calendar or discover skills.
 
