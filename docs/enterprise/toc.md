@@ -13,4 +13,4 @@
 
 ### [Cortana design guidelines](../skills/cortana-design-guidelines.md)
 
-## Enterprise FAQ
+## [Enterprise FAQ](../enterprise-faq.md)
