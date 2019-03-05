@@ -28,7 +28,7 @@ You're free to use whatever workflow suits you best, but we've found that this o
 
 [Principles of Cortana skills design](../skills/design-principles.md)
 
-[Cortana design guidelines](../skills/voicecommand-design-guidelines.md)
+[Cortana design guidelines](../skills/cortana-design-guidelines.md)
 
 ## Pick a bot template
 
