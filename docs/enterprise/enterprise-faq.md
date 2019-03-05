@@ -3,7 +3,7 @@ title: Enterprise FAQ
 description: Frequently asked questions about authoring enterprise skills for Cortana.
 
 label: Conceptual
-ms.date: 03/04/2019
+ms.date: 
 ms.topic: article
 ms.author: v-daturc
 
@@ -37,7 +37,7 @@ Using the Azure portal:
 
 ### My skill name isn’t being recognized by Cortana.
 
-There is a bug in switching between Microsoft (personal) Accounts (MSAs)and AAD Accounts due to cached credentials. See the [Known Issues](./known-issues.md#skill-invocation-name-is-not-recognized) page for more details.
+There is a bug in switching between Microsoft (personal) Accounts (MSAs)and AAD Accounts due to cached credentials. See the [Known Issues](./skills/known-issues.md#skill-invocation-name-is-not-recognized) page for more details.
 
 ### I can’t see my Calendar or discover skills.
 

@@ -91,7 +91,7 @@ For `javascript`, you can create a [customer recognizer](https://docs.microsoft.
 
 Due to cached credentials, there's a bug that may cause your skill's invocation name not to be recognized.
 
-This show ups when switching between Microsoft Accounts (MSAs, usually personal) and Azure Active Directory (AAD) Accounts, because invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled.
+This shows up when switching between Microsoft Accounts (MSAs, usually personal) and Azure Active Directory (AAD) Accounts, because invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled.
 
 Until this is fixed, there is a workaround.
 
