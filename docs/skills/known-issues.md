@@ -87,9 +87,11 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 
 For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-3.0) that maps an empty string to a help intent.
 
-### Skill invocation name is not recognized when changing between accounts
+### Skill invocation name is not recognized
 
-There's a bug in switching between Microsoft (personal) Accounts (MSAs) and Azure Active Directory (AAD) Accounts due to cached credentials. Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled.
+Due to cached credentials, there's a bug that may cause your skill's invocation name not to be recognized.
+
+This show ups when switching between Microsoft Accounts (MSAs, usually personal) and Azure Active Directory (AAD) Accounts, because invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled.
 
 Until this is fixed, there is a workaround.
 
