@@ -11,4 +11,6 @@
 
 ### [Design principles](../skills/design-principles.md)
 
-### [Cortana design guidelines](../voice-commands/voicecommand-design-guidelines.md)
+### [Cortana design guidelines](../skills/cortana-design-guidelines.md)
+
+## Enterprise FAQ
