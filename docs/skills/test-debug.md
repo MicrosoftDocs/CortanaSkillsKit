@@ -1,6 +1,6 @@
 ---
-title: Testing and debugging Cortana Skills
-description: Tips on testing and debugging Cortana Skills.
+title: Testing and debugging Cortana skills
+description: Tips on testing and debugging Cortana skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
 ms.date: 03/04/2019
@@ -9,13 +9,13 @@ ms.topic: article
 keywords: cortana
 ---
 
-# Testing and debugging Cortana Skills
+# Testing and debugging Cortana skills
 
-The following options are available to test and debug your Cortana Skill.
+The following options are available to test and debug your Cortana skill.
 
 * Use the Bot Framework emulator to test and debug your skill while you are developing it. The emulator interacts with your bot, and displays the messages exchanged.  
 
-Currently, the emulator does not support passing user profile and contextual information to you Cortana Skill. For more information about using the emulator, visit the [Debug with the emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-3.0) page.  
+    Currently, the emulator does not support passing user profile and contextual information to your Cortana skill. For more information about using the emulator, visit the [Debug with the emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-3.0) page.  
 
 * Use the debugger in Visual Studio Code to walk through your code as it runs in the console window.  
 
@@ -23,34 +23,34 @@ Currently, the emulator does not support passing user profile and contextual inf
 
 * Use the Chat window in the Bot Framework portal. Typically, you test after configuring your Cortana channel and deploying your service in order to confirm that your bot is running.
 
-* Enable debug in Cortana to see the message exchange between Cortana and your Cortana Skill.
+* Enable debug in Cortana to see the message exchange between Cortana and your Cortana skill.
 
    For information about enabling debugging, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.
 
-   For details about debugging your Cortana Skill in Azure [continuous publishing](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-3.0#set-up-continuous-deployment) environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-3.0) page.
+   For details about debugging your Cortana skill in Azure [continuous publishing](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-3.0#set-up-continuous-deployment) environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-3.0) page.
 
    >[!TIP]
-   >Before you start debugging your Cortana Skill, visit the [Troubleshooting tips](#troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
+   >Before you start debugging your Cortana skill, visit the [Troubleshooting tips](#troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
 
 ## Enable debugging in Cortana
 
 If Cortana reports an error when running your skill, then follow the steps below to turn on debugging for Cortana. After you enable debugging, the Cortana Canvas displays all errors and message exchanges.  
 
-1. Go to the Configure Cortana page for your Cortana Skill. Under the *Enable Cortana debug mode across all devices* section, click `Run Cortana in debug mode`  to enable.
+1. Go to the Configure Cortana page for your Cortana skill. Under the *Enable Cortana debug mode across all devices* section, click `Run Cortana in debug mode`  to enable.
 
-1. Invoke Cortana to test your Cortana Skill. Make sure you're signed in using the same MSA that you used for the Bot Framework.
+1. Invoke Cortana to test your Cortana skill. Make sure you're signed in using the same MSA that you used for the Bot Framework.
 
     For more information, visit the [Get started](get-started.md) page.
 
     a.  On the top-left menu, click on the `Home` icon. (This will update the Cortana skills information.)
 
-    a.  On the bottom-right corner, click on the microphone icon.
+    b.  On the bottom-right corner, click on the microphone icon.
 
-    a.  Invoke your Cortana Skill by speaking. 
+    c.  Invoke your Cortana skill by speaking. 
 
-    a. The canvas displays a `debug` button.
+    d. The canvas displays a `debug` button.
 
-    a.  Click to see the message exchange details.  
+    e.  Click to see the message exchange details.  
 
     ![Debugging Information](../media/images/debugging-info.png)
 
@@ -60,20 +60,20 @@ The following provides suggestions for solving common problems.
 
 | Issue                                                                                                                                |  
 |:---                                                                                                                                     |  
-| [I am not able to invoke my Cortana Skill](#i-am-not-able-to-invoke-my-cortana-skill)                                                                                    |  
+| [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill)                                                                                    |  
 | [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) | 
-| [I am not able to create more than 20 Cortana Skills](#i-am-not-able-to-create-more-than-20-cortana-skills)                                                               |  
+| [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills)                                                               |  
 | [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error)                                                 |  
-| [I am able to invoke my Cortana-Skill, but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able)                                                |  
-| [I signed into Bot Framework but do not see my Cortana Skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills)       |  
+| [I am able to invoke my Cortana skill, but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able)                                                |  
+| [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills)       |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud)                                                                     |  
 | [Cortana returns Forbidden error](#cortana-returns-forbidden-error)                                                                     |  
 
-### I am not able to invoke my Cortana Skill  
+### I am not able to invoke my Cortana skill  
 
 Check the following
 
-* If you just saved, then click on the **Home** icon on top-left menu to refresh the Cortana Skills information.  
+* If you just saved, then click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
 * Verify that you enabled debugging.  
 
     >[!TIP]
@@ -94,48 +94,48 @@ Check the following
 
 ### Cortana is spelling my invocation name incorrectly when I say it  
 
-Check the following  
-* If you just saved for the first time, then updates to Cortana may be delayed up to 10 minutes before recognizing the invocation name of your Cortana Skill.  
-* If you just saved, then click on the **Home** icon on top-left menu to refresh the Cortana Skills information.  
-* Your invocation name may be poorly designed, which makes it difficult for Cortana to recognize it.  
+Check the following
 
-    >[!TIP]
-    > For more information about well-designed invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
+* If you just saved for the first time, then updates to Cortana may be delayed up to 10 minutes before recognizing the invocation name of your Cortana skill.  
+* If you just saved, then click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
+* Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
 
-### I am not able to create more than 20 Cortana Skills  
+### I am not able to create more than 20 Cortana skills  
 
 You may associate a maximum of 20 skills to a Microsoft accounts (MSA). If you create more than 20 skills, then use an additional MSA.  
 <!-- confirm this limit still exists -->  
 
 ### I get a `DownstreamDependencyFailed` error  
 
-Get the error when the service endpoint you created fails to respond.
+You will get this error when the service endpoint you created fails to respond. Some common reasons:
 
->[!TIP]
-> * If your service takes too long to respond, Cortana cancels the request with a time-out.  
-> * If the response message is not formatted correctly based on the Bot Framework schema.  
-> * If your service returns an http status code other than 200.  
+* If your service takes too long to respond, Cortana cancels the request with a time-out.  
+* If the response message is not formatted correctly based on the Bot Framework schema.  
+* If your service returns an http status code other than 200.  
 
-### I am able to invoke my Cortana Skill, but no one else is able  
+### I am able to invoke my Cortana skill, but no one else can  
 
-Ensure that you deployed your skill.  
+Ensure that you have deployed your skill.
+
 * If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
-* If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option.  
+* If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
 
->[!NOTE]
-> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana Skill.  
+See [Publishing Cortana skills](./publish-skill) for details on the publishing process.
 
-### I signed into Bot Framework but do not see my Cortana Skills  
+>[!IMPORTANT]
+> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
+
+### I signed into Bot Framework but do not see my Cortana skills  
 
 Ensure that you signed into Bot Framework with the same MSA that you used to configure the Cortana channel within the Azure portal.  
 
-### SSML reads XML characters aloud   
+### SSML reads XML characters aloud
 
 If Cortana reads out the XML characters of your invocation, then the XML is likely not valid. Verify that all opening tags have closing tags and vice-versa. Consider using an XML library to verify that your XML is properly formatted.  
 
-### Cortana returns Forbidden error  
+### Cortana returns a 403 Forbidden error  
 
-Cortana tried to connect to your service, but received an https status code of 403 Forbidden. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.  
+Cortana tried to connect to your service, but received an https status code of `403 Forbidden`. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.
 
 ## Additional resources
 
@@ -151,7 +151,7 @@ Cortana tried to connect to your service, but received an https status code of 4
 #### Azure Web Apps
 
 * [Remote debugging Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/web-sites-dotnet-troubleshoot-visual-studio#a-nameremotedebugaremote-debugging-web-apps)  
-  * After enabling remote debugging, simply invoke your Cortana Skill and Cortana stops at your breakpoint as you walk through your code. Cortana is likely to timeout on your request, but you are still able to step through your code and look for issues.  
+  * After enabling remote debugging, simply invoke your Cortana skill and Cortana stops at your breakpoint as you walk through your code. Cortana is likely to timeout on your request, but you are still able to step through your code and look for issues.  
 
 * [Best practices and troubleshooting guide for node applications on Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-nodejs-best-practices-and-troubleshoot-guide)  
 * [Troubleshoot slow web app performance issues in Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)  
@@ -177,7 +177,7 @@ Currently Cortana supports the following Bot Framework cards: Hero Card, Thumbna
 -->
 
 <!-- //TODO: AIT
-## Custom Skills imported from Alexa
+## Custom skills imported from Alexa
 
 *Third-party trademarks used herein are the property of their respective owners.  Use of such marks does not imply any affiliation, sponsorship, or endorsement.*
 
