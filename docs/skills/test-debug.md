@@ -67,7 +67,7 @@ The following provides suggestions for solving common problems.
 | [I am able to invoke my Cortana skill, but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able)                                                |  
 | [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills)       |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud)                                                                     |  
-| [Cortana returns 403 Forbidden error](#cortana-returns-403-forbidden-error)                                                                     |  
+| [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error)                                                                     |  
 
 ### I am not able to invoke my Cortana skill  
 
