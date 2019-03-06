@@ -1,4 +1,4 @@
----  
+---
 title: Overview of Cortana Skills Kit for Enterprise | Cortana Skills Kit for Enterprise
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
@@ -47,4 +47,6 @@ Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and lever
 
 ## Next steps
 
-Check out the [Onboarding](./onboarding.md) page.
+For developers: Check out the [Onboarding](./onboarding.md) page.
+
+For admins: Go to the [IT Admin](./admin-overview.md) page.
