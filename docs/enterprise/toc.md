@@ -3,7 +3,7 @@
 
 ## [Overview](./overview.md)
 
-## [Onboarding](./onboarding.md)
+## [Skills for enterprise onboarding](./onboarding.md)
 
 # Getting started
 
@@ -15,7 +15,7 @@
 
 # Build a skill
 
-## Differences between Cortana Skills kit for enterprise versus consumer
+## [Differences between Cortana Skills kit for enterprise versus consumer](enterprise-differences.md)
 
 # Test and debug
 
@@ -25,13 +25,13 @@
 
 # Operate
 
-## [Monitoring after deployment](./enterprise-monitor-after-deployment.md)
+## [Monitoring your skill after deployment](./enterprise-monitor-after-deployment.md)
 
-## [Enterprise FAQ](./enterprise-faq.md)
+## [Enterprise skills FAQ](./enterprise-faq.md)
 
 # Enabling Cortana in the enterprise
 
-## [IT Admin Overview](./admin-overview.md)
+## [IT Admin Cortana Overview](./admin-overview.md)
 
 ## [Automatically deploying group policy](enterprise-deploying-group-policy.md)
 

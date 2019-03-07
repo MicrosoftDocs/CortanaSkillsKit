@@ -1,5 +1,5 @@
 ---  
-title: Enterprise onboarding
+title: Skills for enterprise onboarding
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
 ms.date: 02/25/2019
@@ -10,7 +10,7 @@ ms.author: v-daturc
 keywords: cortana
 ---  
 
-# Enterprise onboarding
+# Skills for enterprise onboarding
 
 >[!IMPORTANT]
 >Enterprise skills require that your enterprise and developers be enrolled with Azure Active Directory (AAD) accounts. Please see the [Cortana integration in your business or enterprise](https://docs.microsoft.com/en-us/windows/configuration/cortana-at-work/cortana-at-work-overview) page for details.
