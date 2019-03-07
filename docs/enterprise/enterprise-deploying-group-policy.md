@@ -12,7 +12,7 @@ keywords: cortana enterprise
 
 # Automatically deploying group policy
 
-You can automate the process of pushing policy updates by using Windows Update for Business (WUFP). For more information , see [Walkthrough: use Group Policy to configure Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-wufb-group-policy).
+You can automate the process of pushing policy updates by using Windows Update for Business (WUFB). For more information , see [Walkthrough: use Group Policy to configure Windows Update for Business](https://docs.microsoft.com/en-us/windows/deployment/update/waas-wufb-group-policy).
 
 To immediately push the change to all computers:
 
