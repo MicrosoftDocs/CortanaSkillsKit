@@ -13,4 +13,26 @@
 
 ### [Cortana design guidelines](../skills/cortana-design-guidelines.md)
 
+# Build a skill
+
+## Differences between Cortana Skills kit for enterprise versus consumer
+
+# Test and debug
+
+# Requesting Tenant Deployment
+
+# Tenant IT Admin Controls
+
+# Operate
+
+## [Monitoring after deployment](./enterprise-monitor-after-deployment.md)
+
 ## [Enterprise FAQ](./enterprise-faq.md)
+
+# Enabling Cortana in the enterprise
+
+## [IT Admin Overview](./admin-overview.md)
+
+## [Automatically deploying group policy](enterprise-deploying-group-policy.md)
+
+## [Adding Cortana as a service principal](enterprise-cortana-service-principal.md)
