@@ -19,5 +19,12 @@ Cortana allows you to `Authenticate on Invocation`, which means Cortana automati
 
 Each app registration can have one redirect URL, and they should be on the same domain. For example, bot service and Cortana have different redirect URLs.
 
-- https://token.botframework.com/.auth/web/redirect is the redirect URL for bot service OAuth
-- https://www.bing.com/agents/oauth is the redirect URL for Cortana OAuth
+The redirect URL for bot service OAuth:
+```HTML
+https://token.botframework.com/.auth/web/redirect
+```
+
+The redirect URL for Cortana OAuth:
+``` HTML
+https://www.bing.com/agents/oauth
+```
