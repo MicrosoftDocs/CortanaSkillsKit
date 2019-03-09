@@ -33,6 +33,18 @@
 
 ## [IT Admin Cortana Overview](./admin-overview.md)
 
+## [Modify the Default Domain Policy](modify-default-domain-policy.md)
+
+## [Create a new Group Policy Object](new-group-policy.md)
+
+## [Create a User Security Group][create-user-security-group.md]
+
+## [Deploy the Policy Object](deploy-policy-object.md)
+
 ## [Automatically deploying group policy](enterprise-deploying-group-policy.md)
 
 ## [Adding Cortana as a service principal](enterprise-cortana-service-principal.md)
+
+# Appendix
+
+## [Supporting Multiple Channel OAuth](supporting-multiple-channel-oauth.md)
