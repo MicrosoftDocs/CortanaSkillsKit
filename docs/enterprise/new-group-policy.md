@@ -22,11 +22,11 @@ To use this method, create a Cortana OU under your default and move the computer
 
 An alternative method is to clone a GPO.
 
-1. Launch the Group Policy Management tool (GPMC). <**Why is it GPMC?**>
+1. Launch the Group Policy Management Console (GPMC).
 1. Open your forest and domain.
 1. Open your Group Policy Objects.
 1. Copy the Default Domain Policy.
-1. Paste the copy, and rename it to Cortana Ring Policy. <**Why this particular name? Can't they use anything (though of course they should put Cortana in it somewhere.**>
-1. Follow the steps in the first section to Enable Cortana. <**First section of what? This doc, or the page they're on?**>
+1. Paste the copy, and rename it to something including "Cortana", for example "Cortana Ring Policy".
+1. Follow the steps in the [Modify the Default Domain Policy](enterprise-monitor-after-deployment.md) section to enable Cortana.
 
- For managed computers (and users) under an Active Directory Domain Controller, efer to [Administer Group Policy on an Azure AD Domain Services managed domain](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/active-directory-ds-admin-guide-administer-group-policy).
+ For managed computers (and users) under an Active Directory Domain Controller, refer to [Administer Group Policy on an Azure AD Domain Services managed domain](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/active-directory-ds-admin-guide-administer-group-policy).
