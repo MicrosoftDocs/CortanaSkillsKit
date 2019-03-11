@@ -33,29 +33,29 @@ Your skill must not clone or duplicate another skill. The name is verified when 
 **Avoid the use of common proper nouns.**
 Invocation names and titles should not consist of proper nouns, names, or places unless you have exclusive rights to use that name in a commercial application.
 
-## Invocation name recommendations.
+## Invocation name recommendations
 The following recommendations can improve recognition significantly.
 
-**Specify a clear and easily recognized invocation name.​**
+**Specify a clear and easily recognized invocation name.**
 When creating a language model, it is important that you define a "high quality" invocation name. If your invocation name is hard to pronounce or sounds similar to other words, Cortana might have difficulty recognizing it without introducing a disambiguation step. ​
 
-**Avoid words that are homophones.​**
-Try not to include words that sound the same as another word but have different meanings like "peak/peek" or "wait/weight".  Also try to avoid overly clever word plays that will cause collisions with common English words or phrases.​
+**Avoid words that are homophones.**
+Try not to include words that sound the same as another word but have different meanings like "peak/peek" or "wait/weight".  Also try to avoid overly clever word plays that will cause collisions with common English words or phrases.
 
-**Use words with multiple syllables and invocation names with multiple words.​**
-Using invocation names with multiple syllables or words are easier to recognize.  ​
+**Use words with multiple syllables and invocation names with multiple words.**
+Using invocation names with multiple syllables or words are easier to recognize.
 
 **Avoid compound words unless required for branding.**
 Compound words can be difficult to recognize.  
 
-**Avoid hard to pronounce word​s.**
-An invocation name that contains difficult words to pronounce, such as Quinoa, makes it harder for your users to pronounce correctly, and for Cortana to understand.​
+**Avoid hard to pronounce words.**
+An invocation name that contains difficult words to pronounce, such as Quinoa, makes it harder for your users to pronounce correctly, and for Cortana to understand.
 
 **Avoid names that combine multiple words into one.**
 An invocation name that combines multiple words into one increases the chance that Cortana will not recognize it. For example, instead of "sixSigma5," consider "six sigma 5" or "six sigma five".
 
 **Prime speech recognition for your skill.**
-If your skill uses a Language Understanding Intelligence Service (LUIS) app from luis.ai, you can use it to achieve optimal speech recognition performance when users invoke your skill. Although the system learns over time, seeding it with the highest probability intents leads to a better first experience. This in turn leads to greater usage and faster improvement of the system. ​For example, the user could ask your skill to play classical music in different ways with all of them returning the correct intent.
+If your skill uses a Language Understanding Intelligence Service (LUIS) app from luis.ai, you can use it to achieve optimal speech recognition performance when users invoke your skill. Although the system learns over time, seeding it with the highest probability intents leads to a better first experience. This in turn leads to greater usage and faster improvement of the system. For example, the user could ask your skill to play classical music in different ways with all of them returning the correct intent.
 
 * Ask My Radio to play classical
 * Ask My Radio to play classical music
