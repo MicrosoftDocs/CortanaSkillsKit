@@ -9,6 +9,7 @@
 
 ## Skills design  
 ### [Design principles](./skills/design-principles.md)  
+### [Cortana design guidelines](./skills/voicecommand-design-guidelines.md)
 ### [Invocation name guidelines](./skills/cortana-invocation-guidelines.md)  
 ### [Performance guidelines](./skills/performance-guidelines.md)  
 

@@ -3,12 +3,14 @@ title: Cortana and structured data markup - Cortana design and development
 description: Structured data markup describes the embedding of structured data in e-mail messages and websites for consumption by Cortana.
 
 ms.assetid: 315a5dd0-b88d-499b-a177-6164daacbe30
-ms.date: 10/08/2017
+ms.date: 02/27/2019
 ms.topic: article
 
 keywords: cortana
 ---
 
+>[!WARNING]
+>Do not use. The Data Markup API for Cortana has been deprecated.
 
 # Cortana and structured data markup
 Structured data markup describes the embedding of structured data in e-mail messages and websites for consumption by Cortana. 
