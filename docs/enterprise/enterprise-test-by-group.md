@@ -27,7 +27,7 @@ You can invite others to test your skill under `Test Group Settings` on the Cort
 
     Here's a suggested format:
 
-    *Dear [user]: I’d like you to test my Cortana skill, [name], and have granted you access. You may invoke the skill on Windows 10 by saying “Hey Cortana, ask [invocation phrase].” (Note that enterprise skills run on Windows 10 devices only. Cortana on a mobile device won't work.)*
+    *Dear [user]: I’d like you to test my Cortana skill, [name], and have granted you access. You can invoke the skill on Windows 10 by saying “Hey Cortana, ask [invocation phrase].” (Note that enterprise skills run on Windows 10 devices only. Cortana on a mobile device won't work.)*
 
     *Please try these phrases:*
 
