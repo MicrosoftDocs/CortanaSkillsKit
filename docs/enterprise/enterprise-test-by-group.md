@@ -15,7 +15,7 @@ Once your skill is ready for testing, you can opt to have a group of people in t
 
 You can invite others to test your skill under `Test Group Settings` on the Cortana channel configuration page.
 
-![Test Group Settings](../media/images/group-test-01.png)
+    ![Test Group Settings](../media/images/group-test-01.png)
 
 - Add the user accounts by clicking `+ Add Team Member` and `Create Group` (or `Save changes` if you're editing). The team members and your new enterprise skill must both be on the same Azure AD (AAD) tenant. Typing a name in the box will auto-complete the contact’s email address from your corporate directory.
 
