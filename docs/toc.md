@@ -62,3 +62,6 @@
 # Cortana Skills Kit for Enterprise  
 
 ## [Overview](./enterprise/overview.md)  
+
+# Cortana SDK
+## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)
