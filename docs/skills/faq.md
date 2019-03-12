@@ -27,6 +27,8 @@ By default, when Cortana does not recognize an invocation name it will redirect 
 1. If the skill is in development, the account logged in with Cortana is not the same as the account that self-published the skill. You must be logged in on the account that published the skill. Check that the account logged in to Cortana (type "settings" into the address bar, or click on the `Settings` button, and then click on `Your account info`), is the same as the account that published the skill on the Azure portal.
 1. The device's region is not U.S., or the language is not English. Check the device's region and language settings; they must be en-US.
 1. Cortana is disabled by policy on the device in use.
+1. You're logged in with an Azure Active Directory (AAD) account. Third party skills are not supported for enterprise accounts.
+1. You've found a bug! If you think you've found one, write to the support team at skillsup@microsoft.com.
 
 If these scenarios do not apply, please check the [Known Issues](./known-issues.md) page.
 

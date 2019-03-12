@@ -87,6 +87,12 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 
 For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-3.0) that maps an empty string to a help intent.
 
+### Bot created from the QnA (V3) template fails when invoked without an intent
+
+When you create a QnA V3 bot from the template, an invocation without intent (for example, "Open MySkill") will cause the default BasicQnA dialog to do nothing. This results in Cortana timing out. This issue can be fixed using the code from [LuisDialog fails on skill launch](#luisdialog-fails-on-skill-launch).
+
+Also, the default behavior is not just single turn but single shot, which means the conversation is closed after the bot returns a result.
+
 ### Skill invocation name is not recognized when changing between accounts
 
 There's a bug in switching between Microsoft (personal) Accounts (MSAs) and Azure Active Directory (AAD) Accounts due to cached credentials. Invocation grammars are tied to the user identity. Some identity information is cached by Cortana's agent and doesn't get cleared when you switch between MSA and AAD accounts. This information is *not* cleared by rebooting if `fast start` is enabled.

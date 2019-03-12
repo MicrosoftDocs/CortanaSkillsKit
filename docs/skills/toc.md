@@ -61,13 +61,7 @@
 ### [Privacy policy guidelines](./privacy-policy-guidelines.md)  
 
 # Cortana Skills Kit for Enterprise  
-
 ## [Overview](../enterprise/overview.md)  
 
-# Additional Cortana APIs  
-
-## Voice Commands  
-### [Overview](../voice-commands/vcd.md)  
-
-## Structured Data Markup  
-### [Overview](../data-markup/structured-data-markup.md)  
+# Cortana SDK
+## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)
