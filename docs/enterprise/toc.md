@@ -17,7 +17,11 @@
 
 ## [Differences between Cortana Skills kit for enterprise versus consumer](enterprise-differences.md)
 
-# Test and debug
+# [Test and debug](enterprise-test-and-debug.md)
+
+## [Self test and debug](enterprise-self-test-and-debug.md)
+
+## [Test by group](enterprise-test-by-group.md)
 
 # Requesting Tenant Deployment
 
