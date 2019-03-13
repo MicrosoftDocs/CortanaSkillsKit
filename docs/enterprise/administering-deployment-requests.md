@@ -35,5 +35,5 @@ The IT Administrator is responsible for sending notification to the skill owners
 
 >[!IMPORTANT]
 >Currently the IT Administration tool and the skill deployment process do not support versioning. To deploy a new version of a skill,you will need to create a new version of the skill, with a different name and invocation phrase, that you'll use during development and testing. When it's ready to be deployed, you'll need to
->1.  remove the existing skill, and 
->1. rename and change the invocation phrase for the new skill so it's the same as the skill you just removed.
+>1. remove the existing skill, and 
+>1. change the name and invocation phrase for the new skill so it's the same as the skill you just removed.
