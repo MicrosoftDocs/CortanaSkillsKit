@@ -3,52 +3,56 @@
 
 ## [Overview](./overview.md)
 
-## [Skills for enterprise onboarding](./onboarding.md)
+## Developers
 
-# Getting started
+## Getting started
 
-## [Before you start](./before-you-start.md)
+### [Before you start](./before-you-start.md)
 
 ### [Design principles](../skills/design-principles.md)
 
 ### [Cortana design guidelines](../skills/cortana-design-guidelines.md)
 
-# Build a skill
+### [Differences between Cortana Skills kit for enterprise versus consumer](enterprise-differences.md)
 
-## [Differences between Cortana Skills kit for enterprise versus consumer](enterprise-differences.md)
+### Build a skill
 
-# [Test and debug](enterprise-test-and-debug.md)
+### [Test and debug](enterprise-test-and-debug.md)
 
-## [Self test and debug](enterprise-self-test-and-debug.md)
+#### [Self test and debug](enterprise-self-test-and-debug.md)
 
-## [Test by group](enterprise-test-by-group.md)
+#### [Test by group](enterprise-test-by-group.md)
 
-# Requesting Tenant Deployment
+## IT Administrators
 
-# Tenant IT Admin Controls
+### [Skills for enterprise onboarding](./onboarding.md)
 
-# Operate
+### Requesting Tenant Deployment
 
-## [Monitoring your skill after deployment](./enterprise-monitor-after-deployment.md)
+### Tenant IT Admin Controls
 
-## [Enterprise skills FAQ](./enterprise-faq.md)
+## Operate
 
-# Enabling Cortana in the enterprise
+### [Monitoring your skill after deployment](./enterprise-monitor-after-deployment.md)
 
-## [IT Admin Cortana Overview](./admin-overview.md)
+### [Enterprise skills FAQ](./enterprise-faq.md)
 
-## [Modify the Default Domain Policy](modify-default-domain-policy.md)
+## Enabling Cortana in the enterprise
 
-## [Create a new Group Policy Object](new-group-policy.md)
+### [IT Admin Cortana Overview](./admin-overview.md)
 
-## [Create a User Security Group][create-user-security-group.md]
+### [Modify the Default Domain Policy](modify-default-domain-policy.md)
 
-## [Deploy the Policy Object](deploy-policy-object.md)
+### [Create a new Group Policy Object](new-group-policy.md)
 
-## [Automatically deploying group policy](enterprise-deploying-group-policy.md)
+### [Create a User Security Group][create-user-security-group.md]
 
-## [Adding Cortana as a service principal](enterprise-cortana-service-principal.md)
+### [Deploy the Policy Object](deploy-policy-object.md)
 
-# Appendix
+### [Automatically deploying group policy](enterprise-deploying-group-policy.md)
 
-## [Supporting Multiple Channel OAuth](supporting-multiple-channel-oauth.md)
+### [Adding Cortana as a service principal](enterprise-cortana-service-principal.md)
+
+## Appendix
+
+### [Supporting Multiple Channel OAuth](supporting-multiple-channel-oauth.md)

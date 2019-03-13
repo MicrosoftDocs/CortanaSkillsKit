@@ -34,7 +34,7 @@ Cortana is a digital assistant that keeps users informed and productive, helping
 :::row-end:::
 
 >[!TIP]
->In Azure Active Directory (Azure AD), a *tenant* is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure.
+>In Azure Active Directory (Azure AD), a *tenant* is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for Microsoft Azure. See [What is an Azure AD tenant?](https://docs.microsoft.com/en-us/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant) for more details.
 
 Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and leverages Azure Active Directory to manage building, testing and deployment of the custom skills within the tenant.  
 * [Azure Bot Service](https://azure.microsoft.com/services/bot-service)  
