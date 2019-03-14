@@ -41,3 +41,78 @@ You can build whatever you want, because bots allow you to integrate with any op
         - sechs
     :::column-end:::
 :::row-end:::
+:::row:::
+    :::column:::
+        - FIVE
+    :::column-end:::
+    :::column:::
+        - sechs
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - FIVE
+    :::column-end:::
+    :::column:::
+        - sechs
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - FIVE
+    :::column-end:::
+    :::column:::
+        - sechs
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - FIVE
+    :::column-end:::
+    :::column:::
+        - sechs
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - FIVE
+    :::column-end:::
+    :::column:::
+        - sechs
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Holiday tracker
+    :::column-end:::
+    :::column:::
+        - Shipping manifest checklist
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Library catalog (for manuals?)
+    :::column-end:::
+    :::column:::
+        - Things I should know (by business function)
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Meeting manager
+    :::column-end:::
+    :::column:::
+        - Vacation scheduling helper
+    :::column-end:::
+:::row-end:::
+
+And here are some possible systems you can integrate to:
+
+:::row:::
+    :::column:::
+        - Asset management
+    :::column-end:::
+    :::column:::
+        - Legal/compliance
+    :::column-end:::
+:::row-end:::
