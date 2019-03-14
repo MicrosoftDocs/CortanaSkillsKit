@@ -19,66 +19,66 @@ You can build whatever you want, because bots allow you to integrate with any op
 
 :::row:::
     :::column:::
-        - one
+        - Acronym finder
     :::column-end:::
     :::column:::
-        - two
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        - three
-    :::column-end:::
-    :::column:::
-        - four
+        - New-hire onboarding
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        - FIVE
+        - Autoresponder set/clear
     :::column-end:::
     :::column:::
-        - sechs
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        - FIVE
-    :::column-end:::
-    :::column:::
-        - sechs
+        - Outage monitor
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        - FIVE
+        - Benefits helper
     :::column-end:::
     :::column:::
-        - sechs
-    :::column-end:::
-:::row-end:::
-:::row:::
-    :::column:::
-        - FIVE
-    :::column-end:::
-    :::column:::
-        - sechs
+        - Person/office/room finder
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        - FIVE
+        - Change management helper
     :::column-end:::
     :::column:::
-        - sechs
+        - Policy finder
     :::column-end:::
 :::row-end:::
 :::row:::
     :::column:::
-        - FIVE
+        - Do not disturb set/clear
     :::column-end:::
     :::column:::
-        - sechs
+        - Paid time off (PTO) helper
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Find a volunteer
+    :::column-end:::
+    :::column:::
+        - Regulation finder
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Find an expert
+    :::column-end:::
+    :::column:::
+        - Risk assessment checklist
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - How do I (by business function)
+    :::column-end:::
+    :::column:::
+        - Sales/lead finder
     :::column-end:::
 :::row-end:::
 :::row:::
@@ -105,8 +105,13 @@ You can build whatever you want, because bots allow you to integrate with any op
         - Vacation scheduling helper
     :::column-end:::
 :::row-end:::
+:::row:::
+    :::column:::
+        - Checklist step-through
+    :::column-end:::
+ ::row-end:::
 
-And here are some possible systems you can integrate to:
+And here are some possible systems you can integrate with:
 
 :::row:::
     :::column:::
@@ -114,5 +119,69 @@ And here are some possible systems you can integrate to:
     :::column-end:::
     :::column:::
         - Legal/compliance
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - BI/dashboard
+    :::column-end:::
+    :::column:::
+        - Meetings/scheduling
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - CRM
+    :::column-end:::
+    :::column:::
+        - Office admin/operations/facilities
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Decision support/workflow/MIS
+    :::column-end:::
+    :::column:::
+        - Risk/Safety management
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Expenses
+    :::column-end:::
+    :::column:::
+        - Search
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Help desk
+    :::column-end:::
+    :::column:::
+        - Survey
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - HRIS
+    :::column-end:::
+    :::column:::
+        - Task
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Incident management
+    :::column-end:::
+    :::column:::
+        - Training
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::
+        - Knowledgebase
+    :::column-end:::
+    :::column:::
+        - Logistics/travel
     :::column-end:::
 :::row-end:::
