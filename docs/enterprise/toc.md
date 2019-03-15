@@ -43,8 +43,6 @@
 
 ### [Create a new Group Policy Object](new-group-policy.md)
 
-### [Create a User Security Group](create-user-security-group.md)
-
 ### [Deploy the Policy Object](deploy-policy-object.md)
 
 ### [Automatically deploying group policy](enterprise-deploying-group-policy.md)
