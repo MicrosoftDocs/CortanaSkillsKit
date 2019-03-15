@@ -13,7 +13,7 @@
 
 ### [Differences between Cortana Skills kit for enterprise versus consumer](enterprise-differences.md)
 
-### Build a skill
+### [Build a skill](build-a-skill.md)
 
 ### [Test and debug](enterprise-test-and-debug.md)
 
@@ -43,7 +43,7 @@
 
 ### [Create a new Group Policy Object](new-group-policy.md)
 
-### [Create a User Security Group][create-user-security-group.md]
+### [Create a User Security Group](create-user-security-group.md)
 
 ### [Deploy the Policy Object](deploy-policy-object.md)
 
