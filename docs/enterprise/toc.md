@@ -21,33 +21,35 @@
 
 #### [Test by group](enterprise-test-by-group.md)
 
+### Requesting Tenant Deployment
+
+#### [Administer Deployment Requests](administering-deployment-requests.md)
+
 ## IT Administrators
 
 ### [Onboarding your enterprise](./onboarding.md)
 
-### Requesting Tenant Deployment
-
 ### Tenant IT Admin Controls
 
-## Operate
+### Enabling Cortana in the enterprise
 
-### [Monitoring your skill after deployment](./enterprise-monitor-after-deployment.md)
+#### [IT Admin Cortana Overview](./admin-overview.md)
 
-### [Enterprise skills FAQ](./enterprise-faq.md)
+#### [Modify the Default Domain Policy](modify-default-domain-policy.md)
 
-## Enabling Cortana in the enterprise
+#### [Create a new Group Policy Object](new-group-policy.md)
 
-### [IT Admin Cortana Overview](./admin-overview.md)
+#### [Deploy the Policy Object](deploy-policy-object.md)
 
-### [Modify the Default Domain Policy](modify-default-domain-policy.md)
+#### [Automatically deploying group policy](enterprise-deploying-group-policy.md)
 
-### [Create a new Group Policy Object](new-group-policy.md)
+#### [Adding Cortana as a service principal](enterprise-cortana-service-principal.md)
 
-### [Deploy the Policy Object](deploy-policy-object.md)
+### Operations support
 
-### [Automatically deploying group policy](enterprise-deploying-group-policy.md)
+#### [Monitoring your skill after deployment](./enterprise-monitor-after-deployment.md)
 
-### [Adding Cortana as a service principal](enterprise-cortana-service-principal.md)
+#### [Enterprise skills FAQ](./enterprise-faq.md)
 
 ## Appendix
 
