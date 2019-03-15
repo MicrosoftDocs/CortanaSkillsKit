@@ -1,8 +1,8 @@
 ---  
-title: Enterprise onboarding
-description: Extend your Cortana capabilities to help your employees be more productive.
+title:  Onboarding your enterprise
+description: Get your tenant and developers onboarded with Microsoft.
 
-ms.date: 03/13/2019
+ms.date: 03/15/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc

@@ -23,7 +23,7 @@
 
 ## IT Administrators
 
-### [Skills for enterprise onboarding](./onboarding.md)
+### [Onboarding your enterprise](./onboarding.md)
 
 ### Requesting Tenant Deployment
 
@@ -54,3 +54,5 @@
 ## Appendix
 
 ### [Supporting Multiple Channel OAuth](supporting-multiple-channel-oauth.md)
+
+### [IT Admin-managed "default" scopes](admin-managed-default-scopes.md)
