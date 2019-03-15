@@ -5,8 +5,6 @@
 
 ## Developers
 
-## Getting started
-
 ### [Before you start](./before-you-start.md)
 
 ### [Design principles](../skills/design-principles.md)
