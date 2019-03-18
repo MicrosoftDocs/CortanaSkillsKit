@@ -3,7 +3,7 @@ title: Configure tenant publishing
 description: Configuring the publishing process for enterprise skills.
 
 ms.author: v-daturc
-ms.date: 03/13/2019
+ms.date: 03/18/2019
 ms.topic: article
 
 keywords: cortana, enterprise, skills
@@ -45,7 +45,11 @@ Though there will be descriptions here.
 
 ![Tenant publishing screenshot](../media/images/TenantPub-03.png)
 
-You can save your current progress at any point and come back to it. When you're done, the `Submit for Review` button will be active. Press that to send the request to your IT admins.
+- Deploy to entire tenant – publishes the enterprise skill to everyone
+- Deploy to security groups – publishes the enterprise skill only to members of the associated security groups
+
+>[!NOTE] In order for security groups to work, Cortana must be added as a service principal in your tenant by an IT administrator. See [Adding Cortana as a service principal](enterprise-cortana-service-principal.md) in the Appendix.
+
+Once you've filled in all the required fields on the page, click `Submit for Review` to send the skill off to your administrators for certification. Alternatively, you can save this information at any point by pressing the `Save` button. Then you can return to the page and edit it at any time before you submit it for certification and publishing. Keep in mind that once it's submitted, the skill configuration cannot be changed.
 
 ![Tenant publishing screenshot](../media/images/TenantPub-02.png)
-
