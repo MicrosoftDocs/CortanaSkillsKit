@@ -23,6 +23,8 @@
 
 ### Requesting Tenant Deployment
 
+#### [Configure tenant publishing](configure-tenant-publishing.md)
+
 #### [Administer Deployment Requests](administering-deployment-requests.md)
 
 ## IT Administrators
@@ -56,3 +58,7 @@
 ### [Supporting Multiple Channel OAuth](supporting-multiple-channel-oauth.md)
 
 ### [IT Admin-managed "default" scopes](admin-managed-default-scopes.md)
+
+### [Configuring authentication with connected services](configuring-authentication-connected-services.md)
+
+## [Ideas](enterprise-ideas.md)
