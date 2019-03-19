@@ -39,8 +39,7 @@ You should always select `Company` for enterprise skills.
 
 ![Tenant publishing screenshot](../media/images/TenantPub-07.png)
 
-- Developer Account (required) - Developer  OR  Company
-- First name (required)  - First Name of Microsoft Account owner **[Shouldnt' this be AAD acct]**
+- First name (required)  - First Name of Microsoft Account owner **[Shouldnt' this be AAD acct?]**
 - Last name (required)  - Last Name of Microsoft Account owner
 - Country (required) - 2 character country code. (US; UK; CA; CN)
 - Developed by (for ISVs) - Name of the person who developed the skill (if different from above)
@@ -59,9 +58,19 @@ You should always select `Company` for enterprise skills.
 
 ![Tenant publishing screenshot](../media/images/TenantPub-05.png)
 
+**[What's the context for this w/enterprise skills?]**
+
+**[This is the text from the playbook]**
+- Optional (if different from the developer account information) **[marked as required]**
+- Name - E.g. Microsoft
+- Email - E.g. contact@example.com
+- Phone number - Full Phone Number with country code, area code, prefix and line number.  E.g.  +1 (800) 642-7676
+
 ## Privacy policy and terms of use
 
 ![Tenant publishing screenshot](../media/images/TenantPub-04.png)
+
+You must have both a Privacy Policy and Terms of Use, and they must be available online.
 
 ## Validation and testing instructions
 
@@ -71,12 +80,12 @@ You should always select `Company` for enterprise skills.
 
 ![Tenant publishing screenshot](../media/images/TenantPub-03.png)
 
-- Deploy to entire tenant – publishes the enterprise skill to everyone
+- Deploy to entire tenant – publishes the skill to everyone in the enterprise.
 - Deploy to security groups – publishes the enterprise skill only to members of the associated security groups
 
 >[!NOTE]
 >In order for security groups to work, Cortana must be added as a service principal in your tenant by an IT administrator. See [Adding Cortana as a service principal](enterprise-cortana-service-principal.md) in the Appendix.
 
-Once you've filled in all the required fields on the page, click `Submit for Review` to send the skill off to your administrators for certification. Alternatively, you can save this information at any point by pressing the `Save` button. Then you can return to the page and edit it at any time before you submit it for certification and publishing. Keep in mind that once it's submitted, the skill configuration cannot be changed.
-
 ![Tenant publishing screenshot](../media/images/TenantPub-02.png)
+
+Once you've filled in all the required fields on the page, click `Submit for Review` to send the skill off to your administrators for certification. Alternatively, you can save this information at any point by pressing the `Save` button. Then you can return to the page and edit it at any time before you submit it for certification and publishing. Keep in mind that once it's submitted, the skill configuration cannot be changed.
