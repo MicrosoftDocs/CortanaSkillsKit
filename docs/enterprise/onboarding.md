@@ -2,7 +2,7 @@
 title:  Onboarding your enterprise
 description: Get your tenant and developers onboarded with Microsoft.
 
-ms.date: 03/15/2019
+ms.date: 03/19/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc
@@ -18,10 +18,6 @@ Once the AAD accounts have been created, Microsoft must onboard both your enterp
 
 * AAD Tenant Name
 * AAD Tenant ID
-* IT Admin Name, email address, and AAD Object ID **[We say above that we're onboarding developers. Do they include this line per developer? Or are the devs onboarded later somehow?]**
+* IT Admin Name, email address, and AAD Object ID
 
-Once the tenant is onboarded, developers can begin to build Cortana Enterprise Skills for your organization.
-
-## Next steps
-
-Go on to the [Before you start](./before-you-start.md) page.
+Once the tenant is onboarded, developers can begin to build Cortana Enterprise Skills for your organization.  **[We say above that we're onboarding developers, but here we're implying that we're only onboarding the enterprise by onboarding the tenant. Is there an onboarding process for individual developers?]**
