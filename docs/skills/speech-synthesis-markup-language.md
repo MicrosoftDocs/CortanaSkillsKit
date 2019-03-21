@@ -21,7 +21,7 @@ Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech
 For information about using SSML in your skill, see *Add speech to messages* in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-3.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
 
 > [!IMPORTANT]
-> Don't forget to use double quotes around attribute values. Standards for well-formed, valid XML require attribute values to be enclosed in double quotation marks. For example, `<prosody volume="90">` is a well-formed, valid element, but `<prosody volume=90>` is not.
+> Don't forget to use double quotes around attribute values. Standards for well-formed, valid XML require attribute values to be enclosed in double quotation marks. For example, `<prosody volume="90">` is a well-formed, valid element, but `<prosody volume=90>` is not. SSML may not recognize attribute values that are not in quotes.
 
 <!--In addition to this Cortana also supports a subset of the [Emotion Markup Language (EmotionML)  Version 1.0](https://www.w3.org/TR/emotionml) and []().-->
 
