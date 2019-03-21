@@ -11,7 +11,7 @@ keywords: cortana
 
 # Testing and debugging enterprise skills
 
-The early stages of testing and debugging enterprise Cortana skills are the same as for consumer skills. Visit [Debugging Cortana Skills Documentation](../skills/test-debug.md) to get started.
+The early stages of testing and debugging enterprise Cortana skills are the same as for consumer skills. Visit [Testing and debugging Cortana Skills](../skills/test-debug.md) to get started.
 
 After you've finished with that page, go to for enterprise-specific testing information:
 
