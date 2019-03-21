@@ -3,7 +3,7 @@ title: Administering deployment requests
 description: Deploying your enterprise skill in the tenant.
 
 ms.author: v-daturc
-ms.date: 03/12/2019
+ms.date: 03/21/2019
 ms.topic: article
 
 keywords: cortana
@@ -11,13 +11,13 @@ keywords: cortana
 
 # Administering deployment requests
 
-IT admins can manage Cortana skills for their company through the IT Admin Portal (https://it-admin-portal-prod.azurewebsites.net). IT admins have control to approve (enable) or reject (withdraw) skills for their company.
+IT admins can manage Cortana skills for their company through the [IT Admin Portal](https://it-admin-portal-prod.azurewebsites.net). IT admins can approve (enable) or reject (withdraw) skills for their company.
 
 1. Launch the IT portal.
 
     ![IT portal](../media/images/administering-deployment-requests-01.png)
 
-1. Double click on the skill to manage.
+1. Double click on the skill you want to manage.
 
     ![IT portal](../media/images/administering-deployment-requests-02.png)
 
@@ -29,7 +29,7 @@ IT admins can manage Cortana skills for their company through the IT Admin Porta
 
     ![IT portal](../media/images/administering-deployment-requests-04.png)
 
-1. If the skill was previously approved, you may `Withdraw` it.
+1. If the skill was previously approved, you may take it down by clicking `Withdraw`.
 
 The IT Administrator is responsible for sending notification to the skill owners on the skill information page.
 
