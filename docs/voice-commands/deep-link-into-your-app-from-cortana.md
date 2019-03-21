@@ -4,16 +4,14 @@ description: Provide deep links from a background app in **Cortana** that launch
 
 
 ms.assetid: 6fe5fcc5-9ee4-4c04-92f4-7b1bf7ef5651
-ms.date: 02/27/2019
+ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
 ---
 
->[!WARNING]
->Do not use. The Voice Command API for Cortana has been deprecated.
-
 # Deep link from a background app in Cortana to a foreground app
+
 
 **Important APIs**
 
