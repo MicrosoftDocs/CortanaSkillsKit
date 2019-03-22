@@ -34,8 +34,6 @@ You're free to use whatever workflow suits you best, but we've found that this o
 
 [Add speech to your Cortana skill](../skills/adding-speech.md)
 
-[Speech Synthesis Markup Language (SSML) reference](../skills/speech-synthesis-markup-language.md)
-
 ## Test
 
 [Testing and debugging Cortana Skills](../skills/test-debug.md)
