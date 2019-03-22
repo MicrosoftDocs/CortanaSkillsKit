@@ -3,7 +3,7 @@ title: Build a skill
 description: How to create your first skills.
 
 ms.author: v-daturc
-ms.date: 03/14/2019
+ms.date: 03/22/2019
 ms.topic: article
 
 keywords: cortana, enterprise
@@ -11,6 +11,6 @@ keywords: cortana, enterprise
 
 # Build an enterprise skill
 
-There is very little difference in the way that consumer and enterprise skills are built. Go on off to [Getting started with Cortana skills](../skills/get-started.md) and build the heck out of one.
+There's very little difference in the way that consumer and enterprise skills are built. Testing and debugging are different,though, so begin with [Getting started with Cortana skills](../skills/get-started.md) to build one.
 
-After you're done, come back to [Test and debug](enterprise-test-and-debug.md).
+When you're done with that, come back to [Test and debug](enterprise-test-and-debug.md).
