@@ -11,6 +11,6 @@ keywords: cortana, enterprise
 
 # Build an enterprise skill
 
-There's very little difference in the way that consumer and enterprise skills are built. Testing and debugging are different,though, so begin with [Getting started with Cortana skills](../skills/get-started.md) to build one.
+There's very little difference in the way that consumer and enterprise skills are built. Testing and debugging are different, though, so begin with [Getting started with Cortana skills](../skills/get-started.md) to build one.
 
-When you're done with that, come back to [Test and debug](enterprise-test-and-debug.md).
+When you've built a skill, come back to [Test and debug](enterprise-test-and-debug.md) for information on testing that's specific to enterprise skills.
