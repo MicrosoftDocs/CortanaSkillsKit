@@ -43,4 +43,6 @@ You're free to use whatever workflow suits you best, but we've found that this o
 ## Continue local testing
 
 ## Next steps
-There are no next steps. You're done.
+Look at this diagram:
+
+![Test diagram](../media/images/developer-vetting-flow.png)
