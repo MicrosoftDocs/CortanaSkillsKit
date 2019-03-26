@@ -46,3 +46,7 @@ You're free to use whatever workflow suits you best, but we've found that this o
 Look at this diagram:
 
 ![Test diagram](../media/images/developer-vetting-flow.png)
+
+Or this one. Whatever.
+
+![Test diagram](../media/images/developer-vetting-flow-02.png)
