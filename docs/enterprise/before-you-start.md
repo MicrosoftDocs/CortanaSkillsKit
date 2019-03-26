@@ -3,7 +3,7 @@ title: Before you start
 description: Advice on getting started developing Cortana skills.
 label: Conceptual
 ms.author: v-daturc
-ms.date: 02/21/2019
+ms.date: 03/26/2019
 ms.topic: article
 keywords: cortana
 ---
@@ -43,10 +43,3 @@ You're free to use whatever workflow suits you best, but we've found that this o
 ## Continue local testing
 
 ## Next steps
-Look at this diagram:
-
-![Test diagram](../media/images/developer-vetting-flow.png)
-
-Or this one. Whatever.
-
-![Test diagram](../media/images/developer-vetting-flow-02.png)
