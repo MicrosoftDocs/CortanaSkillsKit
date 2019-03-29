@@ -3,7 +3,7 @@ title: Principles of Cortana skill design
 description: Overview of best practices Cortana skill design.
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 12/26/2018
+ms.date: 03/28/2019
 ms.topic: article
 
 keywords: cortana
@@ -80,11 +80,13 @@ A great user experience doesn't require users to talk too much, repeat themselve
 ## Design for the right scenario
 
 Define the key scenarios you want your skill to target.
+
 - What are the high value scenarios? <!-- This used to include "and metrics" for some reason. (dt) -->
 - Do these scenarios have clearly defined goals?
 - Are the scenarios relatively simple?
 
 Of these key scenarios, which work well with voice?
+
 - Which scenarios don't rely on visual elements?
 - Which scenarios are relatively quick to get through, with minimal steps?
 
@@ -118,7 +120,8 @@ The conversational design process should identify utterances, intents, and entit
 
 For example, if the user says, "Hey Cortana, tell My Travel Agent I want to fly to New York at 6:00 PM on Friday," Cortana understands that the user wants to use a skill called *My Travel Agent*. She passes the utterance to the app, which needs to figure out that the intent is to book a flight, and that *New York*, *6:00 PM*, and *Friday* are entities.  
 
-Intents fall into the following categories.  
+Intents fall into the following categories.
+  
 - [Full intent](#full-intent)  
 - [Partial intent](#partial-intent)  
 - [No intent](#no-intent)  
@@ -366,10 +369,10 @@ Cortana's text-to-speech translator handles most text such as abbreviations and 
 
 For example:
 
-  - "Dr. Smith" is spoken as "Doctor Smith"
-  - "Microsoft.com" is spoken as "microsoft dot com"
-  - "Shopping Ctr." is spoken as "shopping center"
-  - "Lake Shore Dr." is spoken as "Lake Shore Drive"
+- "Dr. Smith" is spoken as "Doctor Smith"
+- "Microsoft.com" is spoken as "microsoft dot com"
+- "Shopping Ctr." is spoken as "shopping center"
+- "Lake Shore Dr." is spoken as "Lake Shore Drive"
 
 <!--
 If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principles since the purpose of using voice is to get to a result faster.
@@ -459,11 +462,13 @@ Note that the time between user utterances is limited. On a speaker-only device,
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
 #### Speaker-only device:
-  - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
 
-#### Device with screen: 
-  - **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
-  - **Card**: Show an image and additional details such as sizes/dimensions and color options.
+- **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
+
+#### Device with screen:
+
+- **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
+- **Card**: Show an image and additional details such as sizes/dimensions and color options.
 
 The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
 
@@ -489,11 +494,15 @@ What design rules apply to .NET FormFlows?
 
 ## Next steps
 
+### All developers
+
 Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md).
 
 For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
 
 For guidance on creating invocation names, including a list of invocation phrases that users may say to invoke your skill, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
+
+### Non-enterprise developers
 
 When you publish your skill to the world, the Cortana team reviews your skill to make sure it complies with the design principles, in addition to other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish your skill. See the [Cortana skills certification requirements](./skill-review-guidelines.md)).
 
