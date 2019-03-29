@@ -3,7 +3,7 @@ title: Configure tenant publishing
 description: Configuring the publishing process for enterprise skills.
 
 ms.author: v-daturc
-ms.date: 03/19/2019
+ms.date: 03/29/2019
 ms.topic: article
 
 keywords: cortana, enterprise, skills
@@ -24,7 +24,7 @@ The fields in the form that are marked with asterisks are required. Many fields 
 - Short description (required) - This description will show up in Cortana's Notebook.
 - Long description (required) - This will be used as part of the certification process.
 - Sample Invocation Phrase (required) - At least 3 examples, for example, "Ask Outlook to show my urgent messages".
-- Primary category (required) - For example, `Tools and Utilities`, `Books and Reference`, `Developer Tools`, etc. **[Is there a place where they can see the full list?]**
+- Primary category (required) - For example, `Utilities and tools`, `Productivity`, `Developer Tools`, etc. (The full list is on the [List of Cortana categories for publishing](./cortana-categories-for-publishing.md) page.)
 - Secondary category (optional)
 - Tags (optional) - You can ignore this field. Tags are used for consumer skills, not enterprise skills.
 - Supported platforms (required) - For enterprise skills, choose Windows 10.

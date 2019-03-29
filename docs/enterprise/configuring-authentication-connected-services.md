@@ -11,15 +11,15 @@ keywords: cortana, enterprise, skills
 
 # Configuring authentication with connected services
 
-The most exciting thing about building enterprise skills is accessing Microsoft services (like Office 365, Outlook, and more) through [Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/overview)! When you set up a bot from the template and auto-assign the Microsoft App Id and Password, your bot is registered with the Azure A Directory (AAD) converged endpoint. Visit the Application Registration Portal **[link?]** and you will see that Converged Applications knows about your bot.
+The most exciting thing about building enterprise skills is accessing Microsoft services (like Office 365, Outlook, and more) through [Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/concepts/overview)! When you set up a bot from the template and auto-assign the Microsoft App ID and Password, your bot is registered with the Azure Active Directory (AAD) converged endpoint. Visit the Application Registration Portal and you will see that `Converged Applications` knows about your bot.
 
-With Cortana, you need two app registrations when building an AAD connected app. The first registration occurs when you, or your administrator (see Enterprise Applications), creates a Microsoft App ID and Secret. This allows Cortana to talk to the bot. You need a second registration to allow your bot to talk to the resource provider.
+With Cortana, you need two app registrations when building an AAD connected app. The first registration occurs when you, or your administrator (see `Enterprise Applications`), creates a Microsoft App ID and Secret. This allows Cortana to talk to the bot. You need a second registration to allow your bot to talk to the resource provider.
 
 ![Overview](../media/images/configuring-authentication-connected-services-01.png)
 
 The settings from `App Reg #2` are what would be entered in the Cortana Channel Configuration under `Cortana will manage my identity`.
 
-You need to register your skill with Active Directory **[not AAD?]** and grant permissions that you can delegate. (Your enterprise may require you to work with your Azure AD administrator to grant the permissions you need.) You will have *two* app registrations: one for your bot, and one for Cortana to talk to the identity platform.
+You need to register your skill with Azure Active Directory and grant permissions that you're allowed to delegate. (Your enterprise may require you to work with your Azure AD administrator to grant the permissions you need.) You will have *two* app registrations: one for your bot, and one for Cortana to talk to the identity platform.
 
 1. Directly log into the Azure portal via https://ms.portal.azure.com with your enterprise account and click the “Azure Active Directory” blade
 1. Using the Azure Active Directory -> Properties blade, click the copy button beside the directory Id and save it as this will be your tenant_id used later

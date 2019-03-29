@@ -20,26 +20,6 @@ You're free to use whatever workflow suits you best, but we've found that this o
 
    ![Cortana's Notebook](../media/images/development-lifecycle.png)
 
-## Design your skill
+## Next steps
 
 [Principles of Cortana skills design](../skills/design-principles.md)
-
-[Cortana design guidelines](../voice-commands/voicecommand-design-guidelines.md)
-
-## Pick a bot template
-
-[Create your first Cortana skill](../skills/mva22-hello-world.md)
-
-## Enable speech
-
-[Add speech to your Cortana skill](../skills/adding-speech.md)
-
-## Test
-
-[Testing and debugging Cortana Skills](../skills/test-debug.md)
-
-## Publish to Azure
-
-## Continue local testing
-
-## Next steps
