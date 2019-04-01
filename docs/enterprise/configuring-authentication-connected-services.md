@@ -34,10 +34,10 @@ You need to register your skill with Azure Active Directory and grant permission
 1. Click on the Reply URLs blade and enter the Cortana redirect URL for login confirmation https://www.bing.com/agents/oauth
 1. Click the `Owners` blade and add your domain account and any additional owners you want to change the app registration
 1. Click on the `Required permissions` blade and grant any common permissions for selected services. Remember these. At a minimum, add `offline_access` and `openid` scopes.
-   Many enterprise resources will require an administrator to grant permissions so coordinate with your AAD administrator. As an example, you can add `Windows Azure Active Directory` as the service and delegate `Sign in and read user profile` (Read.All) to test your own login. If you want to share your Exchange profile, select `Office 365 Exchange Online` and grant `Read all users basic profiles` (User.Read Basic.All). Remember to click the `Grant permissions` button.
+   Many enterprise resources will require an administrator to grant permissions, so coordinate with your AAD administrator. As an example, you can add `Windows Azure Active Directory` as the service and delegate `Sign in and read user profile` (Read.All) to test your own login. If you want to share your Exchange profile, select `Office 365 Exchange Online` and grant `Read all users basic profiles` (User.Read Basic.All). Remember to click the `Grant permissions` button.
 1. Click on the Keys blade and create a new Client Secret. Use `BotLogin` as the description and copy down the secret immediately (as you will not be able to recover it.) Anything in the value field is ignored on entry.
 
-Return to the Cortana channel configuration and turn on Cortana should manage my user’s identity. Fill in the form and click Deploy on Cortana.
+Return to the Cortana channel configuration and turn on `Cortana should manage my user’s identity`. Fill in the form and click Deploy on Cortana.
 
 - Select `Sign in at invocation` if you want OAuth to get an Authorization key the first time the user uses your skill. Select `Sign in when required` if you plan to send an OAuthCard before each resource access. Note: if you have an Authorization key, Cortana will ignore the OAuthCard attachment.
 - Account name (required) can be the name of your organization or organizational unit
@@ -48,8 +48,11 @@ Return to the Cortana channel configuration and turn on Cortana should manage my
 - Grant Type (required) should be Authorization Code unless you intent to use the more sophisticated implicit flow (https://oauth.net/2 )
 - Token URL (required) is https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token
 - Client secret (required) is the secret generated from the previous AD configuration
-- *Client authorization scheme should be Credentials in request body because we selected POST above
-- If you require authentication to use your intranet, check This skill's Connected Service requires intranet access to authenticate users. Note: If your skill fails in the OAuth flow with a 401 error, try change this setting.
+- Client authorization scheme should be `Credentials in request body` because we selected POST above
+- If you require authentication to use your intranet, check `This skill's Connected Service requires intranet access` to authenticate users.
+
+>[!Note]
+>If your skill fails in the OAuth flow with a 401 error, try changing this setting.
 
 Your bot and Active Directory should now be configured to make calls to secured resources!
 

@@ -2,12 +2,12 @@
 title: Cortana's persona
 description: Defines Cortana's persona and guidelines for maintaining it in your skill.
 ms.assetid: 3A6C5D06-2573-47A9-8AF7-8FD7E9321924
-ms.date: 02/15/2019
+ms.date: 04/01/2019
 ms.topic: article
 keywords: cortana
 ---
 
-# Writing for Cortana Skills
+# Cortana's persona
 
 Cortana is Microsoft’s digital assistant, whose mission it is to help users be more productive and creative. Cortana's persona has been carefully crafted over the years, so it's very important that you maintain her character in all interactions with users. She is a loyal, seasoned, personal assistant who is eager to help you get things done. Her personality is designed to engender trust, and her behavior must always honor that trust. 
 
