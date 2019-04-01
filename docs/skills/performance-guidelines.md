@@ -11,19 +11,19 @@ keywords: cortana
 
 ## General performance tips
 
-**Load resources at start up**
+### Load resources at start up
 
 If you need to retrieve data that the user may request (for example, a list of songs, images, locations), load it at startup, not after the user requests the information.
   
-**Avoid large images**
+### Avoid large images
 
 Use images that are 720 pixels wide or less. Also consider compressing images to reduce their file size.  
   
-**Avoid long texts**
+### Avoid long texts
 
 Keep speech text short. As you would expect, it takes longer to process long strings. It's better to split long messages into several shorter ones if possible. Also, the amount of time it takes to process speech depends on whether you use text strings, SSML, MP3 playback, etc. You may want to experiment with different methods.
   
-**Avoid long running processes**
+### Avoid long running processes
 
 Identify the parts of your skill that require the most processing time, and investigate how you can make these parts faster. 
 
@@ -33,11 +33,11 @@ Identify the parts of your skill that require the most processing time, and inve
 
 ## Azure performance guidelines
 
-**Same region deployment**
+### Same region deployment
 
 Deploy all your services in the same Azure region. This includes your bot, LUIS, and any external services that your bot uses.
 
-**LUIS deployment**
+### LUIS deployment
 
 If you are using LUIS for language understanding, create a key in the same Azure region that your bot runs in. If you created your LUIS service in a different region, you should move it to the same region as your bot.
 
@@ -48,13 +48,13 @@ The previous comment refers to this link: see [LUIS Cognitive Service Create](ht
 
 I took it out because it's useless. It just takes you to the Create page.-->
 
-**Avoid cold starts in Azure**
+### Avoid cold starts in Azure
 
 If an Azure function or Web app is not used for a period of time (typically about 20 minutes), Azure recycles it. Recycled functions and apps can take up to 10 seconds to restart. This is known as a cold start. You can prevent cold starts by enabling the [Always On](https://docs.microsoft.com/azure/azure-functions/functions-scale#always-on) option in the application settings of your Azure [Function](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings) or [Web app](https://docs.microsoft.com/azure/app-service-web/web-sites-configure).
 
 Azure functions and Web apps that are on Free or Shared App service plans do not have the option to be always on.
 
-**Disable ARR affinity cache**
+### Disable ARR affinity cache
 
 If you are not using Azure's automatic scaling feature, you should disable application request routing (ARR). For more information, see [Disabling ARR’s Instance Affinity in Windows Azure Web Sites](https://azure.microsoft.com/en-us/blog/disabling-arrs-instance-affinity-in-windows-azure-web-sites)
 

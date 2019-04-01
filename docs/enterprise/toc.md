@@ -7,13 +7,11 @@
 
 ### [Before you start](./before-you-start.md)
 
-### [Differences between enterprise skills and the Cortana Skills Kit](enterprise-differences.md)
+### Differences between enterprise skills development and the Cortana Skills Kit](enterprise-differences.md)
 
 ### [Principles of Cortana skills design](../skills/design-principles.md)
 
 ### [Cortana's persona](../skills/cortanas-persona.md)
-
-### [Skills performance guidelines](../skills/performance-guidelines.md)
 
 ### [Invocation name guidelines](../skills/cortana-invocation-guidelines.md)
 
@@ -22,6 +20,8 @@
 ### [Build a skill](build-a-skill.md)
 
 ### [Test and debug](enterprise-test-and-debug.md)
+
+#### [Skills performance guidelines](../skills/performance-guidelines.md)
 
 #### [Self test and debug](enterprise-self-test-and-debug.md)
 

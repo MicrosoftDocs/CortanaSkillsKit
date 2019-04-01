@@ -1,8 +1,8 @@
 ---
-title: Differences between Cortana Skills Kit for Enterprise versus Consumer
+title: Differences between enterprise skills development and the Cortana Skills Kit
 description: Describes differences between two types of skills
 
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc
@@ -10,7 +10,7 @@ ms.author: v-daturc
 keywords: cortana enterprise
 ---  
 
-# Differences between Cortana Skills Kit for enterprise versus consumer
+# Differences between enterprise skills development and the Cortana Skills Kit
 
 The Cortana Skills Kit targets consumer skills only. While most of the steps you will take to develop your enterprise skills are the same as those used to develop consumer skills, there are some key differences.
 
