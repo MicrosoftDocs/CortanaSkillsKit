@@ -7,7 +7,7 @@
 
 ### [Before you start](./before-you-start.md)
 
-### Differences between enterprise skills development and the Cortana Skills Kit](enterprise-differences.md)
+### [Differences between enterprise skills development and the Cortana Skills Kit](enterprise-differences.md)
 
 ### [Principles of Cortana skills design](../skills/design-principles.md)
 
