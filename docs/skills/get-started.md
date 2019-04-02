@@ -1,7 +1,7 @@
 ---
 title: Getting started with Cortana skills
 description: Shows how to create a bot-based Skill.
-
+ms.topic: article
 ms.assetid: d9cc74a2-af6d-452f-bd71-42fe27a5c673
 ms.date: 01/29/2019
 
