@@ -338,7 +338,8 @@ Things to consider when designing visual elements:
 
 ### Add visual elements to your skill
 
->[!NOTE] Keep in mind that Cortana is primarily voice-driven, and that not all Cortana-compatible devices have screens.
+>[!NOTE]
+>Keep in mind that Cortana is primarily voice-driven, and that not all Cortana-compatible devices have screens.
 
 Cortana supports Bot Framework cards, which are rich graphical controls that can contain text, images, and interactive buttons. Skills may include the following cards:
 
