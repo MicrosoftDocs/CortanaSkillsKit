@@ -444,7 +444,7 @@ What design rules apply to .NET FormFlows?
 
 ## Next steps
 
-### All developers
+### All skills developers
 
 These apply to developers of both enterprise and consumer skills.
 
@@ -454,7 +454,7 @@ For performance design considerations, including Azure services, see [Performanc
 
 For guidance on creating invocation names, including a list of invocation phrases that users may say to invoke your skill, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
 
-### Consumer developers
+### Consumer skills developers
 
 When you publish your skill to the world, the Cortana team reviews your skill to make sure it complies with the design principles, in addition to other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish your skill. See the [Cortana skills certification requirements](./skill-review-guidelines.md)).
 
