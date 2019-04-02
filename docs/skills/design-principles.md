@@ -54,19 +54,6 @@ These are some cases when it makes sense to create a skill.
   - There are cases where using voice is not any easier than using a keyboard or mouse. For example, there's not much value using voice to perform simple tasks like scrolling a browser, when a mouse our touch can be used just as quickly and easily. 
 -->
 
-<!-- this belongs with voice guidelines -->
-
-<!-- 
-**When the skill forces the user to speak unnaturally or with great effort**
-  - Requiring the user to say phrases that are unnatural, such as "play genre jazz", are not well designed. Consider more natural alternatives, such as "play some jazz".
-  - Requiring the user to memorize a lot of things so they can complete a task can be difficult.
-  - Ensure that your Cortana skill isn't too brittle. Consider the different ways a user may say something and handle them in your language model. For instance, saying "play jazz" and "play some jazz" should trigger the same task in your skill.
-
-**Challenging speech tasks**
-  - Certain words or phrases are challenging to say such as a gamer tag, while others may be difficult for the speech engine to get correctly such as homophones (words that sound the same but have different spelling). For example, weight and wait, or light and lite. These words sound the same, but have completely different meanings. Be sure that if your Cortana skill does require users to use these types of words that your skill is able to handle homophones. 
-
--->
-
 If you decide that building a skill makes sense, here are some questions to keep in mind during the design process.
 
 - Will the design solve the user’s problem with the minimum number of steps?
@@ -152,7 +139,7 @@ For example:
 
 ### No intent
 
-**No intent** is when a user uses a skill for the first time and they only give minimum information, which is not sufficient to engage in a conversation. When this happens, you need to tell the user how to interact with your skill.
+**No intent** is when a user uses a skill for the first time and they only give a minimum of information, which is not sufficient to engage in a conversation. When this happens, you need to tell the user how to interact with your skill.
 
 It's critical that the skill consider the first-time user and help them to get started. You should present a list of no more than three options to choose from. If you present more than three options, the user may be overwhelmed and frustrated.
 
@@ -188,12 +175,6 @@ All interactions with the user should use a conversational tone, whether spoken 
 - **Use variations.** Vary your responses to help make the app sound more natural. For example, when repeating a question, ask it differently the second time. A variation of "What movie do you wanna see?" might be "What movie would you like to watch?"
 
 - **Use phrases like "OK" and "All right" in responses with restraint.** While they provide acknowledgment and a sense of progress, they can also get repetitive if used too often and without variation. Use acknowledgment phrases in TTS only. Given the limited space on Cortana's canvas, it's best not to write acknowledgments to the canvas.
-
-<!--
-If you add this one, you need the list of what she understands.
-
-- **Use language that Cortana understands.** 
--->
 
 Your interactions should be efficient, relevant, clear, and trustworthy.
 
@@ -290,36 +271,6 @@ If the user answers this question with a date, then the answer implies that Seat
 
 Answering with a simple yes or no does not answer this kind of question.
 
-<!--
-Removed per Dorrene
-
-- [Short time-out confirmation](#Short-Time-out-Confirmation)
-
-### Short time-out confirmation
-
-Short time-out confirmations echo the user's answer and waits a short period of time for a user's utterance. The lack of an utterance by the user within the time-out period implies acceptance. The skill does not expect a response. Instead, the skill makes a statement of its understanding to the user and invites a correction. Assuming that the skill is correct most of the time, the conversation flows quickly and smoothly.
-
-```
-Cortana: Which city do you want to fly to?
-User: Seattle.
-Cortana: Seattle.
-User: "" 
-Cortana: "What time do you want to fly?
-```
-
-Because the user did not correct the skill when it repeated the value, the skill accepts the value, *Seattle*. 
-
-If the user utters anything during the time-out period (for example, mumbling, asking for Help, or saying Repeat), it's a good idea to revert to an explicit confirmation state.
-
-```
-Cortana: Which city do you want to fly to?
-User: Seattle.
-Cortana: Seattle.
-User: ~Mumble~
-Cortana: Am I right with Seattle?
-```
--->
-
 ## Other design considerations
 
 ### Present help
@@ -358,10 +309,10 @@ If the user invokes your skill without including an utterance, you should identi
 
 ### Break lists into manageable pieces
 
-Generally, the human brain can only remember a limited amount of information when listening to instructions. Limit voice interactions to only what is absolutely required. For example, present only three items of a list at a time. 
+Generally, the human brain can only remember a limited amount of information when listening to instructions. Limit voice interactions to only what is absolutely required. For example,present only three items of a list at a time.
 
 > **Good**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Would you like to hear more?  
-> **Bad**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Number four,  Me and Julio. Number five, Millenial Keyboards....
+> **Bad**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Number four,  Me and Julio. Number five, Millennial Keyboards....
 
 ### Understand abbreviations and symbols
 
@@ -373,10 +324,6 @@ For example:
 - "Microsoft.com" is spoken as "microsoft dot com"
 - "Shopping Ctr." is spoken as "shopping center"
 - "Lake Shore Dr." is spoken as "Lake Shore Drive"
-
-<!--
-If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principles since the purpose of using voice is to get to a result faster.
--->
 
 ## Design your skill's visual elements 
 
@@ -390,6 +337,8 @@ Things to consider when designing visual elements:
 - Keep tasks glanceable. The skill must allow users to multitask with minimal visual attention. Consider every piece of information on the card canvas and eliminate anything that is not required.
 
 ### Add visual elements to your skill
+
+>[!NOTE] Keep in mind that Cortana is primarily voice-driven, and that not all Cortana-compatible devices have screens.
 
 Cortana supports Bot Framework cards, which are rich graphical controls that can contain text, images, and interactive buttons. Skills may include the following cards:
 
@@ -424,15 +373,15 @@ In addition to cards, Node.js users can use a set of [built-in prompts](https://
 
 ### Card design tips
 
-**Limit the card's title to 84 characters or less**
+#### Limit the card's title to 84 characters or less
 
 Limiting the title to 84 characters keeps the title to two lines or less. Having longer titles doesn't look good and pushes the rest of the content down in the card.  
 
-**Create brief but meaningful responses**
+#### Create brief but meaningful responses
 
 When possible, create brief but meaningful responses with a bias toward text-based answers that are glanceable. Make cards crisp, clear, and actionable.
 
-**Try to fit your content within the height of Cortana's canvas**
+#### Try to fit your content within the height of Cortana's canvas
 
 Limiting the content to the size of Cortana's canvas makes it easy for the user to see the content without scrolling.
 
@@ -442,11 +391,11 @@ If your card does extend beyond the height of the canvas, ensure that buttons ar
 
 <!-- I thought they didn't have control over the placement of the buttons - they just define the card's components and the framework builds the cards in a consistent format. A. Adaptive cards supports this in the future, but listed cards don't support placing buttons.-->
 
-**Use cards to provide details**
+#### Use cards to provide details
 
 Cards are meant to provide additional information beyond what the skill speaks. It's generally a poor user experience to have Cortana read all the details that are on the card. Provide a summary of the card using voice, then use the card for the details. For example, if the card shows shirt choices, the skill might say, "Select the shirt's color", while displaying the color options on the card.
 
-**Direct users to a screen only when needed**
+#### Direct users to a screen only when needed
 
 Some users use Cortana on speaker-only devices and can't see a card. If the user needs to see a card, direct them to Cortana's companion app. Try to do this sparingly. Ideally, a user should be able to use your skill on any supported device, regardless of whether it has a screen, without having to use a secondary device. An exception is when the user has to sign in to your skill or provide private information. Other than the sign-in card, cards are read-only on speaker devices.
 
@@ -457,22 +406,22 @@ The following scenario shows a cooking skill that provides a list of ingredients
 
 Note that the time between user utterances is limited. On a speaker-only device,if a timeout occurs, the skill ends. On a Windows device, the skill is still active, but the microphone turns off. <!-- For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.-->
 
-**Tailor the experience**
+#### Tailor the experience
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
-#### Speaker-only device:
+##### Speaker-only device:
 
 - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
 
-#### Device with screen:
+##### Device with screen:
 
 - **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
 - **Card**: Show an image and additional details such as sizes/dimensions and color options.
 
 The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
 
-**Use horizontal lists**
+#### Use horizontal lists
 
 A card's attachment layout specifies how to display multiple card attachments. The framework supports vertical list layout and horizontal carousel layout. Use carousels, if possible.
 
@@ -496,13 +445,15 @@ What design rules apply to .NET FormFlows?
 
 ### All developers
 
+These apply to developers of both enterprise and consumer skills.
+
 Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md).
 
 For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
 
 For guidance on creating invocation names, including a list of invocation phrases that users may say to invoke your skill, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
 
-### Non-enterprise developers
+### Consumer developers
 
 When you publish your skill to the world, the Cortana team reviews your skill to make sure it complies with the design principles, in addition to other requirements. As part of your design process, be sure to read the list of review requirements that your skill must comply with before you can publish your skill. See the [Cortana skills certification requirements](./skill-review-guidelines.md)).
 

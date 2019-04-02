@@ -3,7 +3,7 @@ title: Overview of Cortana Skills - Cortana skills design and development
 description: Provides an overview of Cortana Skills Kit and how you can use it to extend Cortana so your users can use Cortana to interact with your service.
 
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.date: 01/30/2019
+ms.date: 04/02/2019
 ms.topic: article
 
 keywords: cortana
@@ -12,6 +12,8 @@ keywords: cortana
 # Cortana Skills Kit
 
 Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.
+
+>[!IMPORTANT]Cortana skills can be created for general use by the public (consumer skills) or by companies for use internally (enterprise skills). The Skills Kit described here is used for consumer skills. Developers of enterprise skills should start with the [Cortana Skills Kit for Enterprise](../enterprise/overview.md) page.
 
 The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Create Your First Cortana Skill](https://docs.microsoft.com/en-us/cortana/skills/get-started).
 
@@ -47,6 +49,7 @@ For more information about invocation phrases, visit the [Invocation Name Guidel
 When a user invokes your Cortana skill, Cortana sends a structured request to the service that powers your Cortana skill, and waits for a response. There are two ways that Cortana listens for voice requests. The first is when the user presses the microphone button in the Cortana app or in the `Ask me anything` search box in Windows. The second is when the user enables Cortana to respond to `Hey Cortana`. The following are examples of how users might interact with Cortana.  
 
 ### EXAMPLE 1
+
 If a user asks Cortana about the weather, then Cortana triggers the built-in weather skill.
 
 Sample dialogue:
@@ -56,11 +59,13 @@ Sample dialogue:
 >Cortana: "It's currently 58 degrees and mostly cloudy."
 
 ### EXAMPLE 2
+
 If the user invokes a Cortana skill on a device with a screen, then a card with additional information will be displayed onscreen. For example, this card might be displayed when Cortana answers the previous weather question:
 
 > ![Weather Card](../media/images/weather-card.png)  
 
 ### EXAMPLE 3
+
 If a user is trying to invoke your Cortana skill by voice input, they speak an invocation phrase using the invocation name. For example, if a user invokes the Cortana skill `Contoso Photo` to check on the status of an order and make a change, then the conversation that follows might go like this.  
 >
 > User: "Ask Contoso Photo what the status of my order of photos is."
