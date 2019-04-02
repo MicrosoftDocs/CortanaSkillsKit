@@ -3,7 +3,7 @@ title: Cortana Skills Kit FAQ
 description: Tips on Testing & Debugging Cortana Skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 02/26/2019
+ms.date: 04/02/2019
 ms.topic: article
 
 keywords: cortana
@@ -13,28 +13,20 @@ keywords: cortana
 
 <!-- Need to confirm that these answers are still accurate. **Can Cortana provide the user's IP Address?**-->
 
-### What markets (locales) are supported?
-
-Currently, Cortana Skills supports the U.S. market only (en-US locale). 
-
-### Is there a timeline for adding more locales?
-
-LUIS supports a wider range of locales, and the Cortana skills team is planning to add support for more locales as soon as possible.
-
 ### Why do I get redirected to Bing when I invoke my skill?
 
 By default, when Cortana does not recognize an invocation name it will redirect to Bing search. There are a few reasons this might happen.
-1. If the skill is in development, the account logged in with Cortana is not the same as the account that self-published the skill. You must be logged in on the account that published the skill. Check that the account logged in to Cortana (type "settings" into the address bar, or click on the `Settings` button, and then click on `Your account info`), is the same as the account that published the skill on the Azure portal.
-1. The device's region is not U.S., or the language is not English. Check the device's region and language settings; they must be en-US.
+
+1. If the skill is in development, the account logged in with Cortana is not the same as the Microsoft Account (MSA) that self-published the skill. You must be logged in on the account that published the skill. Check that the account logged in to Cortana (type "settings" into the address bar, or click on the `Settings` button, and then click on `Your account info`), is the same as the account that published the skill on the Azure portal.
+1. Similarly, if you are logged in with an AAD (Azure Active Directory) account, and are trying to use a consumer skill that you've developed, it will not work. Consumer skills require an MSA (Microsoft Account), and will not work with an AAD.
+1. The device's region is not U.S. (en-US), or the language is not English. Check the device's region and language settings; they must be en-US.
 1. Cortana is disabled by policy on the device in use.
-1. You're logged in with an Azure Active Directory (AAD) account. Third party skills are not supported for enterprise accounts.
-1. You've found a bug! If you think you've found one, write to the support team at skillsup@microsoft.com.
 
 If these scenarios do not apply, please check the [Known Issues](./known-issues.md) page.
 
 ### Why does my skill time out on the first invocation?
 
-If you use an Azure free tier service plan or the default standard tier plan for your App Service, the App Service will be _unloaded_ after a 20 minute idle period when not in use. This prevents unnecessary resource usage. It may take some time for the service to load when you invoke your skill after it's been unloaded, which results in a "Sorry, but [your skill] isn't responding right now" error. If you use a standard service plan, you can prevent this by changing the App Service state (under Application Settings / General Settings ) to `Always On`. This will keep your app loaded, but will also increase your resource usage.
+If you use an Azure free tier service plan or the default standard tier plan for your App Service, the App Service will be unloaded from memory after a 20 minute idle period when it's not in use. This prevents unnecessary resource usage by your skill. It may take some time for the service to load when you invoke your skill after it's been unloaded, which results in a "Sorry, but [your skill] isn't responding right now" error. If you use a standard service plan, you can prevent this by changing the App Service state (under Application Settings / General Settings ) to `Always On`. This will keep your app loaded, but will also increase your resource usage.
 If you use the free tier plan, you can't change this setting.
 
  Find more performance guidance in the [Azure FAQ](https://docs.microsoft.com/en-us/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time).
@@ -116,6 +108,7 @@ Yes, your voice command definition (VCD) will continue to work.
 ### I've built a bot for Facebook. What do I do next?
 
 You can convert your Facebook bot to a Cortana skill in the following ways:
+
 * If you leveraged Microsoft Bot Framework to create your Facebook bot, then you can make it into a Cortana Skill with a minimal set of modifications. <!-- Would be nice to mention what changes. Are there design changes or just add speech? Quick search of docs for Facebook shows nothing.-->
 * If you leveraged Facebook's API directly, then you need to expose a separate endpoint using Microsoft Bot Framework.
 
@@ -140,6 +133,10 @@ Currently, Cortana Skills Kit enables skills in the U.S. only (en-US locale) whe
 ### When I convert my bot into a Cortana Skill, will Cortana speak the bot's responses in Cortana's voice?
 
 Yes.  You may use SSML to change Cortana's speech patterns, but not her voice. For more information, see [Speech Synthesis Markup Language (SSML) reference](speech-synthesis-markup-language.md).
+
+### What markets are supported, and what is the timeline for adding more?
+
+Currently, Cortana Skills supports the U.S. market only (en-US locale). LUIS supports a wider range of locales, and the Cortana skills team is planning to add support for more locales as soon as possible.
 
 ### Why is the Cortana Skills Kit only available in limited markets?
 
