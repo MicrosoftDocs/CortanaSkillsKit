@@ -15,12 +15,12 @@ If your skill uses a Microsoft service that requires an OAuth access token to au
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
-1. Navigate to [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
-2. Click your bot's name in the list. 
-3. Under **Platforms**, click **Add Platform**.
-4. Click **Web**.
-5. Set the redirect URL to `https://www.bing.com/agents/oauth`. 
-6. click **Save**.
+1. Navigate to [Azure Portal > Azure Active Directory > App registrations (Preview) ](https://ms.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredAppsPreview).
+1. Click on _Applications from personal account_
+1. Click on your skill under **DISPLAY NAME**
+1. Under **Authentication**, select **TYPE** as *Web*
+1. Set the redirect URL to `https://www.bing.com/agents/oauth`. 
+1. click **Save**.
 
 
 Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account. The following steps walk you through the process of adding a connected account.
