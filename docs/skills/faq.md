@@ -78,8 +78,7 @@ Cortana Skills Kit is designed to:
 
 ### How do you add re-prompts using Bot Framework?
 
-Currently the Bot Framework does not support re-prompts.
-<!-- Is this true? I thought they had the retry field? -->
+Currently Cortana does not support Azure Bot Service re-prompts. On screenless devices, Cortana will automatically re-prompt the last message if ExpectingInput is set and will end the conversation after the second reprompt.
 
 ### How long can Cortana's speech response be?
 
