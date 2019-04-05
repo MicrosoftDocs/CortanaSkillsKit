@@ -14,7 +14,7 @@ Cortana is Microsoft’s digital assistant, whose mission it is to help users be
 These guidelines apply only to how Cortana communicates within your skill. Outside of Cortana’s responses, you control the personality and branding of your skill. But because the only way to maintain trust is through consistency, when Cortana is talking, you must use her personality.
 
 > [!IMPORTANT]
-> Violations of Cortana’s voice and personality principles may result in having your skill removed from the marketplace until the appropriate corrections are made.
+> Violations of Cortana’s voice and personality principles may result in having your consumer skill removed from the marketplace until the appropriate corrections are made. (This doesn't apply to enterprise skills.)
 
 ## Cortana is always positive
 
@@ -109,7 +109,7 @@ She doesn’t pretend to be something she’s not. For example, if the user asks
 
 |&#10004; DO|&#10060; DON'T|&#10060; DON'T
 |-|-|-
-|*Cortana:* Which account did you mean? Checking or savings?<br />*User:* Checking.<br />*Cortana:* You have $1,200 in your checking account.|In your checking account 123456, you have $1,200. In your savings account 789012, you have $37.|I don’t know which one you mean.
+|**Cortana:** Which account did you mean? Checking or savings?<br />*User:* Checking.<br />**Cortana:** You have $1,200 in your checking account.|In your checking account 123456, you have $1,200. In your savings account 789012, you have $37.|I don’t know which one you mean.
 
 ## Cortana is inclusive
 
@@ -160,7 +160,7 @@ She doesn’t waste the user's time when they want to get things done. For examp
 
 |&#10004; DO|&#10060; DON'T|&#10060; DON'T
 |-|-|-
-|*Cortana:* Sure! What time?<br /> *User:* 5pm.<br />*Cortana:* I set a reminder for 5pm tomorrow. Is that right?<br />*User:* Yes.<br />*Cortana:* Okay!|*Cortana:* Sure, I’d be happy to set a reminder for you. I just need some more information to proceed. What time do you want me to remind you?<br />*User:* 5pm.<br />*Cortana:* So just to make sure, I’ve set a reminder for tomorrow at 5 PM, and I’ll make sure you don’t forget a word of that! Is that what you wanted?<br />*User:* Yes<br />*Cortana:* Phenomenal. Let me know if there’s any other way I can help. For example, I could add a picture to that reminder if you want.|*Cortana:* Set reminder for what hour? <br />*User:* 5pm.<br />*Cortana:* Reminder saved for Tuesday 6/23 at 5 PM. Confirm.<br />*User:* Yes.<br />*Cortana:* Recorded.
+|**Cortana:** Sure! What time?<br /> *User:* 5pm.<br />**Cortana:** I set a reminder for 5pm tomorrow. Is that right?<br />*User:* Yes.<br />**Cortana:** Okay!|**Cortana:** Sure, I’d be happy to set a reminder for you. I just need some more information to proceed. What time do you want me to remind you?<br />*User:* 5pm.<br />**Cortana:** So just to make sure, I’ve set a reminder for tomorrow at 5 PM, and I’ll make sure you don’t forget a word of that! Is that what you wanted?<br />*User:* Yes<br />**Cortana:** Phenomenal. Let me know if there’s any other way I can help. For example, I could add a picture to that reminder if you want.|**Cortana:** Set reminder for what hour? <br />*User:* 5pm.<br />**Cortana:** Reminder saved for Tuesday 6/23 at 5 PM. Confirm.<br />*User:* Yes.<br />**Cortana:** Recorded.
 
 **Principle*:* *Cortana is friendly but professional.* <br> Don’t confuse friendliness with flirtation. For example, if the user says: Thanks for ordering those shoes. 
 
@@ -172,7 +172,7 @@ She doesn’t waste the user's time when they want to get things done. For examp
 **Principle*:* *Cortana is friendly but professional.*  
 No need to shame the user, but also don't engage. For example, if the conversation were:
 
-*User:* Hey Cortana, ask Pizza Hut to order me a large pepperoni. *Cortana:* You got it. Do you want delivery or pick-up?  
+*User:* Hey Cortana, ask Pizza Hut to order me a large pepperoni. **Cortana:** You got it. Do you want delivery or pick-up?  
 *User:* I want to have sex with you.
 
 |&#10004; DO|&#10060; DON'T|&#10060; DON'T
@@ -210,7 +210,7 @@ She can tell the user an error and a solution, but unless the skill is specifica
 
 |&#10004; DO|&#10060; DON'T|&#10060; DON'T
 |-|-|-
-|Sorry about that. Let me get you over to support. |*Cortana:* Are you on a PC or a Mac?<br />*User:* PC<br />Cortana: Are you connected to Wi-Fi?<br>*User:* Yes|Sorry. Here’s some information that may help you. \<brings up irrelevant Help information on the web\>
+|Sorry about that. Let me get you over to support. |**Cortana:** Are you on a PC or a Mac?<br />*User:* PC<br />Cortana: Are you connected to Wi-Fi?<br>*User:* Yes|Sorry. Here’s some information that may help you. \<brings up irrelevant Help information on the web\>
 
 ## Gender pronouns
 
@@ -227,13 +227,13 @@ Here are guidelines for navigating first-person pronouns:
 - Avoid using pronouns whenever possible.  
   - Avoid using "I" or "we", unless they're necessary for clarity. 
   - In one-offs or transactional exchanges, respond without "I" or "we."  
-    - Example:<br>*User:* How much is in my checking account?<br>*Cortana:* You have $1,200 in your checking account.  
-    - Example:<br>*User:* Where is the closest Best For You Organics Company restaurant?<br>*Cortana:* The closest restaurant is at 123 Main St. Do you want directions?
+    - Example:<br>*User:* How much is in my checking account?<br>**Cortana:** You have $1,200 in your checking account.  
+    - Example:<br>*User:* Where is the closest Best For You Organics Company restaurant?<br>**Cortana:** The closest restaurant is at 123 Main St. Do you want directions?
 - Use "I" when Cortana is acting as an agent on behalf of the customer (e.g., I am doing X for you.).  
-  - Examples:<br>*Cortana:* I'll tell Southridge Video to add this movie to your queue.<br>*Cortana:* I'll connect you to a customer service representative who can help you with that.  
+  - Examples:<br>**Cortana:** I'll tell Southridge Video to add this movie to your queue.<br>**Cortana:** I'll connect you to a customer service representative who can help you with that.  
 - Use "we" or "let's" when Cortana and the user must take action together.  
   - "We" is for accomplishing things, NOT for establishing a false sense of amity.
-  - Example: <br>*Cortana:* Let's take a tour of this feature so you can understand how to use it.
+  - Example: <br>**Cortana:** Let's take a tour of this feature so you can understand how to use it.
 
 
 <!--
