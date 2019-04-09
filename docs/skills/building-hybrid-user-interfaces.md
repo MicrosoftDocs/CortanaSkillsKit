@@ -71,7 +71,7 @@ The skill should support a voice interaction even when a Rich Card is displayed 
 
 If you find yourself presenting the end-user with a form that has multiple input controls, you may want to ask yourself why you're building this interface for a Cortana skill. Cortana supports deep linking to apps and web pages that may be better suited to form input, and the minimal screen real-estate provided by Cortana provides very little room. Use the goals above to stay focused on your hybrid design.
 
-## Example: Form auto-population
+### Example: Form auto-population
 
 The end user wants to create a pre-populated form. The form itself has tens of fields and options. So, the end user asks the Cortana skill to create a form that is populated from a template, or clone their most recent form entered, or to create a form based on the most recent or frequent inputs. Cortana creates the form, and presents the end user with a deep link into the system to view the form, and/or notifies the user via email with a deep link into the system to view the form.
 

@@ -3,7 +3,7 @@ title: Launching apps and websites from Cortana skills
 description: Shows how to launch apps and website from your skill.
 
 ms.assetid: 6B89584E-AE15-4A6E-8104-A77062F2C835
-ms.date: 01/24/2019
+ms.date: 04/09/2019
 ms.topic: article
 
 keywords: cortana
@@ -11,7 +11,7 @@ keywords: cortana
 
 # Launching apps or websites from a Cortana skill
 
-With Cortana, it is possible for your skill to launch an app or website. To launch an app or website, include the `channelData` property in the message that you send Cortana. Set the `channelData` property to an [Action](#Action-object) object that defines the action that you want Cortana to perform. For examples that show how to launch apps and websites, see:
+With Cortana, it is possible for your skill to launch an app or website. To launch an app or website, include the `channelData` property in the message that you send Cortana. Set the `channelData` property to an [Action](#action-object) object that defines the action that you want Cortana to perform. For examples that show how to launch apps and websites, see:
 
 - [Launch a website](#launch-a-website)
 - [Launching and deep linking an app](#launching-and-deep-linking-an-app)
@@ -82,7 +82,6 @@ The following image shows the launched Skype for Business window.
 
 ![Making a Skype call](../media/images/make-a-call.png)
 
-
 **Skype**
 
 If the user is signed in to the standard version of Skype, the following code shows how to start a call with Skype user, echo123.
@@ -113,8 +112,6 @@ The following image shows the crafted email.
 
 ![Created email](../media/images/created-email.png)
 
-
-
 ## Cortana channel data objects used to launch apps and websites
 
 The following are the objects that you use to specify the channel data that you send Cortana.
@@ -131,7 +128,7 @@ Defines a Cortana action.
 
 Defines the action to perform.
 
-| Property | Type | Description 
+| Property | Type | Description
 |----------|------|-------------|
 | type | string | The type of action to perform. The possible values are:<ul><li>LaunchUri</li></ul>
-| uri | string | The URI of the app or website to launch.  
+| uri | string | The URI of the app or website to launch.
