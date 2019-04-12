@@ -47,6 +47,8 @@ If the changes to your data cause you to be rejected, then your current skills m
 
 The Developer/Publisher fields collected on the Developer tab (*required):
 
+![Data entry fields](../media/images/vetting-dev-info.png)
+
 - Email - This field is not editable  Retrieved from the developer object created when the skill was registered with Cortana.
 - Developer Account Type (radio control)
 - First name
@@ -70,8 +72,8 @@ The Developer/Publisher fields collected on the Developer tab (*required):
 
 <!--Hopefully, portions of this data can be pre-populated using data gleaned from the MSA Azure account -->
 
-Pressing `Back to Channels` will return you to the channels page, without saving everything you've entered. Pressing `Save` will save the current data, without submitting. `Submit for Review` will submit the data for approval by the Certification Team.
-
 ![Page buttons](../media/images/vetting-buttons-01.png)
+
+Pressing `Back to Channels` will return you to the channels page, without saving anything you've entered. Pressing `Save` will save the current data, without submitting. `Submit for Review` will submit the data for approval by the Certification Team.
 
 Once you press `Submit for Review`, the data on the page is locked, and the reviewing process is started.
