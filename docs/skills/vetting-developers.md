@@ -25,15 +25,27 @@ Once you've filled in the developer settings and submitted the page, they can be
 >[!NOTE]
 >No notification will be sent to the developer when the process is complete. You have to check the `Developer settings` page for the status message.
 
-Once you're approved, the Group and World tabs are enabled, and the Developer Settings tab displays an approval message. The `Save` and `Submit` buttons on the Developer Setting page remain disabled.
+Once you're approved, the Group and World tabs are enabled, and the Developer Settings tab displays an approval message. 
+
+`Congratulations! Your developer setting have been reviewed and approved.`
+
+The `Save` and `Submit` buttons on the Developer Setting page remain disabled.
 
 Developers only need to be reviewed once, unless you make changes to your information (see [Editing developer settings for an approved developer](#editing-developer-settings-for-an-approved-developer)). Once approved, your developer's settings are carried over to all skills developed with your Microsoft Account (MSA) email address.
 
 ## Developer not approved
 
-If you are not approved, then this notification will be displayed at the top of the settings page: `This developer has not been approved. Please resubmit valid data or contact skillspub@microsoft.com.`
+If you are not approved, then this notification will be displayed at the top of the settings page:
+
+`Unfortunately, your developer settings have not been approved. Please contact skillpub@microsoft.com.`
 
 If you feel this is a mistake, or that you should be approved, you can resubmit your data on the same page, or contact the Certification Team at skillspub@microsoft.com.
+
+It's also possible that you'll see a message like this:
+
+`Something went wrong while processing your developer settings. Please contact skillpub@microsoft.com.  Status: <status code>.`
+
+When you contact us for this kind of message, please make sure to include your MSA identifier and the status code from the message.
 
 ## Editing developer settings for an approved developer
 
