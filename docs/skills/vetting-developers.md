@@ -45,28 +45,24 @@ If the changes to your data cause you to be rejected, then your current skills m
 
 ![Page tabs](../media/images/vetting-buttons-02.png)
 
-The Developer/Publisher fields collected on the Developer tab (*required):
+Most of the fields collected on the Developer tab are self-explanatory. Fields with an asterisk (*) are required. Other information follows the screenshot.
 
 ![Data entry fields](../media/images/vetting-dev-info.png)
 
-- Email - This field is not editable  Retrieved from the developer object created when the skill was registered with Cortana.
-- Developer Account Type (radio control)
-- First name
-- Last name
-- Email
-- Phone number
-- Address 1  
-- Address 2
-- City/District
-- Zip code
-- Country
-- Developed by (for ISVs)
+**Developer information**
+
+- Email **[Maybe this should say 'Account ID' or something like that?]** - This field is not editable. It's retrieved from the developer object created when the skill was registered with Cortana.
+- Developed by (for ISVs) - If the person who owns the MSA used to register the skill didn't develop it, fill this in with the name of whoever did develop the skill. **[How is this differnet from the ISV fields below?]**
 - Developer or Company Website URL
-- Support Contact
+
+**Support Contact** - Remember, we must have a way to contact you in case your skill has a problems. This email (or URL) is the contact that we'll use first.
+
 - Email
-- Website URL
-- Publisher information
-- Name
+- Website URL **[Do we really need two URLs? One in Developer Information (above), and the other one here?]**
+
+**Publisher information**
+
+- Name **[Seems like this should only be entered if it's different from the developer info above, no?]**
 - Email
 - Phone number
 
