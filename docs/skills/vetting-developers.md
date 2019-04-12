@@ -70,4 +70,6 @@ The Developer/Publisher fields collected on the Developer tab (*required):
 
 The Developer Settings page will have `Back`, `Save` and `Submit for Approval` buttons. Pressing `Back` will return you to the channels page. Pressing `Save` will save the current data, without submitting, and `Submit` will submit the data for approval by the Certification Team.
 
+![Page buttons](..media/images/vetting-buttons-01.png)
+
 `Submit` will lock the data on the page, and start the reviewing process.
