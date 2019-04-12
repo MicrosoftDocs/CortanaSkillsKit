@@ -29,7 +29,7 @@ Once you're approved, the Group and World tabs are enabled, and the Developer Se
 
 `Congratulations! Your developer setting have been reviewed and approved.`
 
-The `Save` and `Submit` buttons on the Developer Setting page remain disabled.
+The `Save` and `Submit` buttons on the Developer Setting page remain disabled unless you enter new data into one or more of the fields.
 
 Developers only need to be reviewed once, unless you make changes to your information (see [Editing developer settings for an approved developer](#editing-developer-settings-for-an-approved-developer)). Once approved, your developer's settings are carried over to all skills developed with your Microsoft Account (MSA) email address.
 
