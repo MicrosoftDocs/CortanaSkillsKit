@@ -15,10 +15,9 @@ description: Provides details for writing your own Cortana Skill.
                 <a href="#start">Get Started</a>
                 <ul id="start">
                     <li>
-                        <a href="#buildskill">Build a skill</a>
-                        <ul id="buildskill" class="cardsC">
+                        <ul class="cardsC">
                             <li>
-                                <a href="/cortana/skills/overview">
+                                <a href="/cortana/enterprise/overview">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -28,8 +27,27 @@ description: Provides details for writing your own Cortana Skill.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
+                                                    <h3>Learn about Cortana Enterprise skills </h3>
+                                                    <p>Extend Cortana with custom skills just for your enterprise.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/cortana/skills/overview">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-performance.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
                                                     <h3>Learn about Cortana Skills Kit</h3>
-                                                    <p>An introduction to Cortana Skills.</p>
+                                                    <p>Extend Cortana with new skills.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -48,7 +66,7 @@ description: Provides details for writing your own Cortana Skill.
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Create your first skill</h3>
-                                                    <p>Skills are speech-enabled bots. This section identifies the Bot Framework components that you use to create a skill.</p>
+                                                    <p>Use Bot Framework components to create a skill.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -56,7 +74,7 @@ description: Provides details for writing your own Cortana Skill.
                                 </a>
                             </li>
                             <li>
-                                <a href="/cortana/skills/get-user-profile-context">
+                                <a href="/cortana/enterprise/cortana-and-adaptive-cards">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -66,8 +84,8 @@ description: Provides details for writing your own Cortana Skill.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Personalize your skill</h3>
-                                                    <p>Learn how to get information that Cortana knows about the user so you can personalize the user’s experience with your skill.</p>
+                                                    <h3>Explore adaptive cards</h3>
+                                                    <p>Enhance our skills with the most flexible graphical element. (Enterprise or consumer)</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -75,7 +93,7 @@ description: Provides details for writing your own Cortana Skill.
                                 </a>
                             </li>
                             <li>
-                                <a href="/cortana/skills/authentication">
+                                <a href="/cortana/enterprise/using-ms-graph-with-cortana">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -85,8 +103,8 @@ description: Provides details for writing your own Cortana Skill.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Add authentication to your skill</h3>
-                                                    <p>If your skill uses a service that requires OAuth, learn how easy it is to have Cortana manage the flow for you.</p>
+                                                    <h3>Leverage Microsoft Graph</h3>
+                                                    <p>Build powerful productivity and line-of-business (LOB) experiences with the Microsoft Graph APIs in Cortana skills.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -94,7 +112,26 @@ description: Provides details for writing your own Cortana Skill.
                                 </a>
                             </li>
                             <li>
-                                <a href="/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis">
+                                <a href="/cortana/enterprise/using-qna-maker-with-cortana">
+                                    <div class="cardSize">
+                                        <div class="cardPadding">
+                                            <div class="card">
+                                                <div class="cardImageOuter">
+                                                    <div class="cardImage bgdAccent1">
+                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-resources-faq.svg" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div class="cardText">
+                                                    <h3>Expose knowledge with QnA Maker</h3>
+                                                    <p>From FAQ to skill in minutes with minimal coding. (Enterprise or consumer).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -104,8 +141,8 @@ description: Provides details for writing your own Cortana Skill.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Language understanding</h3>
-                                                    <p>Learn how LUIS and Cognitive Services can help your skill understand language.</p>
+                                                    <h3>Design better conversations</h3>
+                                                    <p>Use LUIS to bring natural language to our conversations. (Enterprise or consumer)</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -113,7 +150,7 @@ description: Provides details for writing your own Cortana Skill.
                                 </a>
                             </li>
                             <li>
-                                <a href="/bot-framework/cognitive-services-bot-intelligence-overview">
+                                <a href="/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-3.0&viewFallbackFrom=azure-bot-service-4.0">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -123,162 +160,14 @@ description: Provides details for writing your own Cortana Skill.
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
-                                                    <h3>Make your skill smarter</h3>
-                                                    <p>Add intelligence to skills with Bot Framework and Microsoft Cognitive Services.</p>
+                                                    <h3>Enrich capabilities with AI</h3>
+                                                    <p>Add intelligence to skills with Microsoft Cognitive Services, including vision and search. (Enterprise or consumer)</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#designskill">Design skills</a>
-                        <ul id="designskill" class="cardsC">
-                            <li>
-                                <a href="/cortana/skills/design-principles">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-principles.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Principles of Cortana skill design</h3>
-                                                    <p>Learn about good voice and UI design that’s essential for a positive user experience.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/cortana/skills/cortana-invocation-guidelines">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-invocation.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Invocation name guidelines</h3>
-                                                    <p>Lean about the do’s and don’ts of naming your skill and the invocation phrases that users use to invoke it.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/cortana/skills/performance-guidelines">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-design-skills-performance.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Performance guidelines</h3>
-                                                    <p>Learn about design choices that impact performance.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#testskills">Test skills</a>
-                        <ul id="testskills" class="cardsC">
-                            <li>
-                                <a href="/cortana/skills/test-debug">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-testing-debugging.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Testing and debugging</h3>
-                                                    <p>Learn about the options for testing and debugging your skill.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/cortana/skills/known-issues">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-testing-known-issues.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Known issues</h3>
-                                                    <p>Provides a list of known issues and possible workarounds.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#pubskills">Publish skills</a>
-                        <ul id="pubskills" class="cardsC">
-                            <li>
-                                <a href="/cortana/skills/publish-skill">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-publish-publishing.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Publishing Cortana skills</h3>
-                                                    <p>Describes the steps used to publish your skill to the different deployment environments.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/cortana/skills/skill-review-guidelines">
-                                    <div class="cardSize">
-                                        <div class="cardPadding">
-                                            <div class="card">
-                                                <div class="cardImageOuter">
-                                                    <div class="cardImage bgdAccent1">
-                                                        <img src="https://docs.microsoft.com/media/hubs/cortana/cortana-get-started-publish-review-guidelines.svg" alt="" />
-                                                    </div>
-                                                </div>
-                                                <div class="cardText">
-                                                    <h3>Cortana Skills Kit review guidelines</h3>
-                                                    <p>Ready to publish your skill to the world? Read this guide to make sure you comply.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>                            
                         </ul>
                     </li>
                 </ul>
