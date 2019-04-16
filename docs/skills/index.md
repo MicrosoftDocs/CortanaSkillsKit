@@ -132,7 +132,7 @@ description: Provides details for writing your own Cortana Skill.
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0">
+                                <a href="https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
@@ -151,7 +151,7 @@ description: Provides details for writing your own Cortana Skill.
                                 </a>
                             </li>
                             <li>
-                                <a href="/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-3.0&viewFallbackFrom=azure-bot-service-4.0">
+                                <a href="https://docs.microsoft.com/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-3.0&viewFallbackFrom=azure-bot-service-4.0">
                                     <div class="cardSize">
                                         <div class="cardPadding">
                                             <div class="card">
