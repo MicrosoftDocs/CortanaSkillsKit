@@ -15,7 +15,8 @@ description: Provides details for writing your own Cortana Skill.
                 <a href="#start">Get Started</a>
                 <ul id="start">
                     <li>
-                        <ul class="cardsC">
+                        <a href="#start-all"></a>
+                        <ul id="start-all" class="cardsC">
                             <li>
                                 <a href="/cortana/enterprise/overview">
                                     <div class="cardSize">
