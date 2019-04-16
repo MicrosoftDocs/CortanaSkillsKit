@@ -85,7 +85,7 @@ description: Provides details for writing your own Cortana Skill.
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Explore adaptive cards</h3>
-                                                    <p>Enhance our skills with the most flexible graphical element. (Enterprise or consumer)</p>
+                                                    <p>Enhance your skills with the most flexible graphical element. (Enterprise or consumer)</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -123,7 +123,7 @@ description: Provides details for writing your own Cortana Skill.
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Expose knowledge with QnA Maker</h3>
-                                                    <p>From FAQ to skill in minutes with minimal coding. (Enterprise or consumer).</p>
+                                                    <p>From FAQ to skill in minutes with minimal coding. (Enterprise or consumer)</p>
                                                 </div>
                                             </div>
                                         </div>
