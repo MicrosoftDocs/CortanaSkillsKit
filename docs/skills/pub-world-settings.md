@@ -27,7 +27,7 @@ For more information about the requirements for publishing to **World**, visit t
 
     1. **Skill information** section
 
-        ![Skills information](../media/images/world_settings-skill_information.png)
+        [Skills information](../media/images/world_settings-skill_information.png)
 
         * `Skill icon`: Click on the `Upload icon` button and select an icon for your Cortana skill.
         * `Display name`: This name is limited to 30 characters.
@@ -49,13 +49,13 @@ For more information about the requirements for publishing to **World**, visit t
 
         * `Supported platforms`: Select the platform(s) your skill supports.
 
-    2. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the **Request user profile data** section.
+    1. `Does this Cortana skill collect users' personal information?`: If you set this switch to `Yes`, you'll see the **Request user profile data** section.
 
-        ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on.png)
+        [Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on.png)
 
-        ![Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on-user_data.png)
+        [Does this Cortana skill collect users' personal information?](../media/images/world_settings-collect_users_information-on-user_data.png)
 
-    3. **Developer Account** section
+    <!-- 3. **Developer Account** section
 
         ![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](../media/images/world_settings-developer_account-company.png)
 
@@ -67,51 +67,51 @@ For more information about the requirements for publishing to **World**, visit t
 
     4. **Developer Information** section: Note that all of the fields on this form are required.
 
-        ![Developer Information](../media/images/world_settings-developer_information.png)
+        ![Developer Information](../media/images/world_settings-developer_information.png) -->
 
-    5. **Support Contact** section
+    <!-- 5. **Support Contact** section
         This is where you provide contact information for the Cortana team to reach you.
 
         ![Support Contact](../media/images/world_settings-support_contact.png)
 
     6. **Publisher Information** section
 
-        ![Publisher Information](../media/images/world_settings-publisher_information.png)
+        ![Publisher Information](../media/images/world_settings-publisher_information.png) -->
 
     7. **Privacy policy and terms of use** section
 
-        ![Privacy policy and terms of use](../media/images/world_settings-privacy_policy_terms_of_use.png)
+        [Privacy policy and terms of use](../media/images/world_settings-privacy_policy_terms_of_use.png)
 
     8. **Validation and testing instructions** section
 
-        ![Validation and testing instructions](../media/images/world_settings-validation_testing_instructions.png)
+        [Validation and testing instructions](../media/images/world_settings-validation_testing_instructions.png)
 
 1. Click on the `Save` button.
 
      The `Save` button is enabled only after all of the required fields are completed.
 
-    ![Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
+    [Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
 
 1. Click `Submit for review`.
 
     The `Submit for review` button is enabled only after all of the required fields are completed.
 
-    ![Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
+    [Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
 
-    ![Submit for Review - enabled](../media/images/world_settings-back-save-submit-active.png)
+    [Submit for Review - enabled](../media/images/world_settings-back-save-submit-active.png)
 
     >[!IMPORTANT]
-    > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdrawing Your Submission](#withdrawing-your-submission) section.
+    > After submission for review, you will not be able to edit the properties you entered, or delete your Cortana skill. See the [Withdrawing Your Submission](publish-skill.md#withdrawing-your-submission) section.
 
 1. After you submit the skill for review, the **World Settings** section displays the following changes.
 
     * The `Save` button and `Submit for Review` button are removed.
 
-        ![Reset Group, Back to Channels, Save changes](../media/images/world_settings-back-submitted-approved.png)
+        [Reset Group, Back to Channels, Save changes](../media/images/world_settings-back-submitted-approved.png)
 
     * The `World Setting` link is updated.
 
-        ![World Settings - submitted](../media/images/world_settings-submitted.png)
+        [World Settings - submitted](../media/images/world_settings-submitted.png)
 
         This message under the `World Setting` link shows the review status for your Cortana skill (`Submitted`, `Not accepted`, or `Accepted`). The Cortana Certification Team reviews all third-party skills before they can be released. If the team has any concerns or questions during the review process, you will receive an email message at the address you specified. If it's rejected, then the details and reasons for rejection are provided. If all requirements are met, then your Cortana skill is accepted and deployed.
 
