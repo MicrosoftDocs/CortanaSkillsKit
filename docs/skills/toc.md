@@ -48,10 +48,10 @@
 ## Publish skills  
 ### [Review guidelines](./skill-review-guidelines.md)  
 ### [Publish Cortana Skills](./publish-skill.md)
-#### [Default settings](./pub-default-settings)
-#### [Developer settings](./pub-developer-settings)
-#### [Test settings](./pub-test-settings)
-#### [World settings](./pub-world-settings)
+#### [Default settings](./pub-default-settings.md)
+#### [Developer settings](./pub-developer-settings.md)
+#### [Test settings](./pub-test-settings.md)
+#### [World settings](./pub-world-settings.md)
 
 ## Reference  
 ### [Speech Synthesis Markup Language (SSML) Reference](./speech-synthesis-markup-language.md)  
