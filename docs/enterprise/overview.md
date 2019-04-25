@@ -2,7 +2,7 @@
 title: Overview of Cortana Skills Kit for Enterprise | Cortana Skills Kit for Enterprise
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
-ms.date: 10/08/2018
+ms.date: 04/25/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc
@@ -46,6 +46,7 @@ Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and lever
 * [IT Admin Portal for managing skill deployment to tenant](https://it-admin-portal-prod.azurewebsites.net/)
     Dedicated portal for IT Administrators and delegated reviewers to review the skills submitted by enterprise developers for deployment to tenant. Reviewers should ensure that custom skills follow company’s guidelines on privacy, security and other practices before approving a skill for tenant deployment. 
 
+<!-- 04/25/2019 commented out because there really is no next step for this version of enterprise --dt
 ## Next steps
 
-Read the [Before you start](/before-you-start.md) page for an overview of the development process.
+Read the [Before you start](/before-you-start.md) page for an overview of the development process. -->
