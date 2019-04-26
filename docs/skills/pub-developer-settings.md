@@ -12,13 +12,16 @@ keywords: cortana
 
 # Developer settings
 
-As a developer, you can create and test skills without filling in the Developer Settings page. The intent is to allow you to test your skills on your own before submitting them for approval. However, all developers need to be reviewed before they can configure a skill for group or world, both of which allow other people to use it. Developers must go through Microsoft's internal review process before they can access the group or world configuration pages. Once you're approved,  the Developer Settings tab displays an approval message, and the Group and World tabs are enabled.
+As a developer, you can create and test skills without filling in the Developer Settings page. The intent is to allow you to test your skills on your own before submitting them for approval. However, all developers need to be reviewed before they can configure a skill for group or world, both of which allow other people to use it. Developers must go through Microsoft's review process before they can access the group or world configuration pages. Once you're approved,  the Developer Settings tab displays an approval message, and the Group and World tabs are enabled.
 
 All developer and publisher information is entered on a tab called `Developer Settings`, which appears on the Cortana Configuration page. The Microsoft Certification team will pass the data to the review team. The review results will be visible only to the Certification Team and the developer.
 
+> [!NOTE]
+> Please note that the approval process will take some time.
+
 ## Developer approval
 
-The Group and World tabs remain disabled until the developer data is successfully processed and the developer is approved. Once you're approved, the Group and World tabs are enabled, and the Developer Settings tab displays an approval message.
+The Group and World tabs remain disabled until the developer data is successfully processed and the developer is approved. Once you're approved,the Group and World tabs are enabled, and the Developer Settings tab displays an approval message.
 
 No notification will be sent to the developer when the process is complete. You have to check the `Developer settings` page for the status message. After you're approved, you'll see the following message:
 
@@ -30,7 +33,7 @@ Developers only need to be reviewed once, unless you make changes to your inform
 
 ## Developer not approved
 
-If you are not approved, then the Group and World tabs remain disabled, and this notification is displayed at the top of the settings page:
+If you are not approved, then the Group and World tabs remain disabled, and the following notification is displayed at the top of the settings page:
 
 `Unfortunately, your developer settings have not been approved. Please contact skillpub@microsoft.com.`
 
@@ -44,7 +47,7 @@ When you contact us, please make sure to include your Microsoft Account (MSA) id
 
 ## Editing developer settings for an approved developer
 
-If you have already been reviewed and approved, you can edit all of the developer settings except for the developer email (which is your MSA ID).  Making changes will cause the settings page to display an `Under Review` message while the new data is reviewed. If you already have skills in production, or deployed for testing, those skills will remain unchanged and will continue functioning as before.
+If you have already been reviewed and approved, you can edit all of the developer settings except for the developer email (which is your MSA ID). Once you press `Save` or `Submit`, the changes will cause the settings page to display an `Under Review` message while the new data is reviewed. The `Group Settings` and the `World Settings` tabs will no longer be available, but if you already have skills in production, or deployed for testing, those skills will remain unchanged and will continue functioning as before.
 
 If the changes to your data cause you to be rejected, then your current skills may be reviewed again. They will continue to function unless and until they're reviewed, at which time they may or may not be re-approved.
 
@@ -64,7 +67,7 @@ Most of the fields collected on the Developer tab are self-explanatory. Fields w
 
 **Support Contact** - Remember, we must have a way to contact you in case your skill has a problem. This email (or URL) is the contact that we'll use first.
 
-- Email
+- Email - This can be a different address from any of the others entered above.
 - Website URL - This can be the same URL that you entered above.
 
 **Publisher information**
