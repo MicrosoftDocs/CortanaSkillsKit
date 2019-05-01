@@ -33,7 +33,7 @@ Once you've been approved, you can deploy your skill using Group or World settin
 * [Test Group Settings](#test-group-settings)
 * [World Settings](#world-settings)
 
-All deployment groups contain the same instance of your Cortana skill. **[Not sure what this means.]**
+All deployment groups contain the same instance of your Cortana skill. In other words, you can't have (for example) one version released to World and a different version released to Group. Releasing new versions requires that you develop the new version with a different invocation name, and then replace the old version's code with the code for the new version.
 
 Two identifiers are assigned to your Cortana skill.
 
@@ -95,26 +95,26 @@ If you read and adhere to the [review guidelines](./skill-review-guidelines.md),
 
 Some common reasons why a Cortana skill fails the review are:
 
-- The invocation name does not meet policy requirements. See [Invocation name guidelines](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines) for help.
+* The invocation name does not meet policy requirements. See [Invocation name guidelines](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines) for help.
 
-- Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, beginning with `ask`, `open`, `tell`, etc. See [Invocation phrases](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines#invocation-phrases) for a list of available invocation phrases.
+* Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, beginning with `ask`, `open`, `tell`, etc. See [Invocation phrases](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines#invocation-phrases) for a list of available invocation phrases.
 
-- You provide sample phrases with one or more of the following issues.
+* You provide sample phrases with one or more of the following issues.
 
-  + The phrase doesn't include a launch word (`ask`, `tell`, and so on) or an invocation name. For example, for a skill called **MyEvents**, these would be incorrect:
+  * The phrase doesn't include a launch word (`ask`, `tell`, and so on) or an invocation name. For example, for a skill called **MyEvents**, these would be incorrect:
 
-      + "MyEvents update": Missing the launch word.
-      + "Ask for an update": Missing the invocation name.
+      * "MyEvents update": Missing the launch word.
+      * "Ask for an update": Missing the invocation name.
 
-  + The samples do not work as expected or described. Before submitting your skill, you should ensure that the invocation phrases work as expected. Ideally, you should provide enough samples to demonstrate all key features.
+  * The samples do not work as expected or described. Before submitting your skill, you should ensure that the invocation phrases work as expected. Ideally, you should provide enough samples to demonstrate all key features.
   
-  + The skill does not provide support for help. Most first-time users will ask the skill for help (usually by saying "Help"). If a user asks for help, then your skill must tell the user how to use the skill.
+  * The skill does not provide support for help. Most first-time users will ask the skill for help (usually by saying "Help"). If a user asks for help, then your skill must tell the user how to use the skill.
   
       Your skill should also prompt the user for correct input if it cannot respond to what the user just entered.
   
-      Example: If your skill involved checking stock prices, and the user failed to provide a stock name, your help could be "Please say the name of a stock. For example, say Contoso."
+      **Example:** If your skill involved checking stock prices, and the user failed to provide a stock name, your help could be "Please say the name of a stock. For example, say Contoso."
   
-  + Your skill infringes on the intellectual property (IP) of another company.
+  * Your skill infringes on the intellectual property (IP) of another company.
   
       The name and invocation name of your Cortana skill should not consist of any trademarked or copyrighted words unless you have permission from the owner. You must ensure that you have the right to share the content that your skill provides, and you must ensure that your skill doesn't make use of any unlicensed or pirated audio or visual content.
 
