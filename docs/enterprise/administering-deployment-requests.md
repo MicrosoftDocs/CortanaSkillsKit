@@ -34,6 +34,6 @@ IT admins can manage Cortana skills for their company through the [IT Admin Port
 The IT Administrator is responsible for sending notification to the skill owners on the skill information page.
 
 >[!IMPORTANT]
->Currently the IT Administration tool and the skill deployment process do not support versioning. To deploy a new version of a skill,you will need to create a new version of the skill, with a different name and invocation phrase, that you'll use during development and testing. When it's ready to be deployed, you'll need to
+>Currently, the IT Administration tool and the skill deployment process do not support versioning. To deploy a new version of a skill, you'll need to create the new version with a different name and invocation phrase that you'll use during development and testing. When the new skill is ready to be deployed, you'll need to
 >1. remove the existing skill, and 
->1. change the name and invocation phrase for the new skill so it's the same as the skill you just removed.
+>1. change the name and invocation phrase for the new skill so they're the same as the skill you just removed.
