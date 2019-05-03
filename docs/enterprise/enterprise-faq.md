@@ -12,11 +12,11 @@ keywords: cortana
 
 # Enterprise skills FAQ
 
-### What markets (locales) are supported?
+## What markets (locales) are supported?
 
 Currently, Cortana Skills supports the U.S. market only (en-US locale). 
 
-### How do I get the Tenant ID of my organization?
+## How do I get the Tenant ID of my organization?
 
 There are several ways.  Using the Azure portal,
 
@@ -26,7 +26,7 @@ There are several ways.  Using the Azure portal,
 
 Or you can hover your cursor over user information in the top right of the portal, and write down the information in parentheses on “Directory” beside your tenant name.
 
-### How do I get the Object ID of a user?
+## How do I get a user's Object ID?
 
 Using the Azure portal:
 
@@ -35,7 +35,7 @@ Using the Azure portal:
 1. Click on them, one at a time.
 1. You will see an info panel – the second section is titled “Identity” and you will see a copy button for `Object ID`.
 
-### My skill name isn’t being recognized by Cortana.
+## Cortana isn’t recognizing my skill name.
 
 There is a bug in switching between Microsoft (personal) Accounts (MSAs)and AAD Accounts due to cached credentials. See the [Known Issues](../skills/known-issues.md#skill-invocation-name-is-not-recognized) page for more details.
 
