@@ -22,25 +22,26 @@ Before configuring your skill for a Connected Account, you need to update your b
 1. Set the redirect URL to `https://www.bing.com/agents/oauth`. 
 1. click **Save**.
 
-
 Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account. The following steps walk you through the process of adding a connected account.
 
 1. Under the **Manage user identity through connected services** section, set the 'Cortana should manage my user's identity` option to on.
-2. Fill in the form.  
-  
-	| Item | Description  |
- 	|------|--------------|
-	| **Sign in at invocation** | Select this option if you want Cortana to sign in the user at the time they invoke your skill.
-	| **Sign in when required** | Select this option if you want to use a Bot Framework SignIn card. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings. |
-	| **Account name** | The name of your skill that you want displayed when the user signs in to it. |
-	| **Client ID for third-party services** | Your bot's application ID. You received the ID when you registered your bot. |
-	| **Space-separated list of scopes** | Specify the scopes that the service requires (see the service's documentation). |
-	| **Authorization URL** | Set to `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`. |
-	| **Token options** | Send auth on the `GET` request or via `POST` (recommended). |
-	| **Grant type** | Select `Authorization code` to use code grant flow (recommended). Select `Implicit` to use implicit flow. |
-	| **Token URL** | If you select `Authorization code`, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`. |
-	| **Client secret/password for third party services** | The bot's password. You received the password when you registered your bot. |
-	| **Client authentication scheme** | Select `Credentials in request body`. |
+2. Fill in the form.
+
+[!div class="mx-tdBreakAll"]
+  | Item | Description  |
+  |------|--------------|
+  | **Sign in at invocation** | Select this option if you want Cortana to sign the user in at the time they invoke your skill.|
+  | **Sign in when required** | Select this option if you want to use a Bot Framework SignIn card. Typically, you use this option if you want to sign in the user only if they use a feature that requires authentication. When your skill sends a message that includes the SignIn card as an attachment, Cortana ignores the SignIn card and performs the authorization flow using the Connect Account settings.|
+  | **Account name** | The name of your skill that you want displayed when the user signs in to it.|
+  | **Client ID for third-party services** | Your bot's application ID. You received the ID when you registered your bot.|
+  | **Space-separated list of scopes** | Specify the scopes that the service requires (see the service's documentation).|
+  | **Authorization URL** | Set to `https://login.microsoftonline.com/common/oauth2/v2.0/authorize`.|
+  | **Token options** | Send auth on the `GET` request or via `POST` (recommended).|
+  | **Grant type** | Select `Authorization code` to use code grant flow (recommended). Select `Implicit` to use implicit flow.|
+  | **Token URL** | If you select `Authorization code`, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`.|
+  | **Client secret/password for third party services** | The bot's password. You received the password when you registered your bot.|
+  | **Client authentication scheme** | Select `Credentials in request body`.|
+[/div]
   
 3. Save the skill.
 
@@ -64,8 +65,8 @@ If you created a bot and registered it with Bot Framework, it is already registe
 1. Navigate to [https://apps.dev.microsoft.com/portal/quickstart](https://apps.dev.microsoft.com/portal/quickstart).
 2. Click **Web**.
 3. Provide the following information:
-	1. **Application Name** 
-	2. **Contact Email**
+  1. **Application Name** 
+  2. **Contact Email**
 3. Click **Create**.
 4. Enter `https://www.bing.com/agents/oauth` as the redirect URL and save.
 5. Click **go to settings** to continue configuring your skill.
