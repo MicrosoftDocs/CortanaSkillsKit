@@ -2,12 +2,12 @@
 title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
 
-ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 02/26/2019
+ms.date: 05/03/2019
 ms.topic: article
+ms.author: v-daturc
 
 keywords: cortana
---- 
+---
 
 # Configure authentication for Microsoft's identity server
 
@@ -25,7 +25,7 @@ Before configuring your skill for a Connected Account, you need to update your b
 Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account. The following steps walk you through the process of adding a connected account.
 
 1. Under the **Manage user identity through connected services** section, set the 'Cortana should manage my user's identity` option to on.
-1. Fill in the form.
+1. Fill in the form, as described in the following table.
 
 | Item | Description  |
 |------|--------------|
