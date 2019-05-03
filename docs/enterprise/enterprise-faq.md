@@ -3,11 +3,11 @@ title: Enterprise FAQ
 description: Frequently asked questions about authoring enterprise skills for Cortana.
 
 label: Conceptual
-ms.date: 
+ms.date: 05/03/2019
 ms.topic: article
 ms.author: v-daturc
 
-keywords: cortana
+keywords: cortana, enterprise
 ---
 
 # Enterprise skills FAQ
@@ -39,7 +39,7 @@ Using the Azure portal:
 
 There is a bug in switching between Microsoft (personal) Accounts (MSAs)and AAD Accounts due to cached credentials. See the [Known Issues](../skills/known-issues.md#skill-invocation-name-is-not-recognized) page for more details.
 
-### I can’t see my Calendar or discover skills.
+## I can’t see my Calendar or discover skills.
 
 If you type “accounts” via the search bar, you are presented with the control panel where you can select `Access work or school` to make sure you are connected to the right domain.
 
