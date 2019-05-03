@@ -27,7 +27,7 @@ Next, you need to update the Cortana channel configuration settings for your ski
 1. Under the **Manage user identity through connected services** section, set the 'Cortana should manage my user's identity` option to on.
 1. Fill in the form.
 
-> <!div class="mx-tdBreakAll">
+> <div class="mx-tdBreakAll">
 > | Item | Description  |
 > |------|--------------|
 > | **Sign in at invocation** | Select this option if you want Cortana to sign the user in at the time they invoke your skill.|
