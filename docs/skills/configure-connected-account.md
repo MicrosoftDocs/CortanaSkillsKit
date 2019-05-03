@@ -27,7 +27,6 @@ Next, you need to update the Cortana channel configuration settings for your ski
 1. Under the **Manage user identity through connected services** section, set the 'Cortana should manage my user's identity` option to on.
 1. Fill in the form.
 
-> <div class="mx-tdBreakAll">
 > | Item | Description  |
 > |------|--------------|
 > | **Sign in at invocation** | Select this option if you want Cortana to sign the user in at the time they invoke your skill.|
@@ -41,7 +40,6 @@ Next, you need to update the Cortana channel configuration settings for your ski
 > | **Token URL** | If you select `Authorization code`, set to `https://login.microsoftonline.com/common/oauth2/v2.0/token`.|
 > | **Client secret/password for third party services** | The bot's password. You received the password when you registered your bot.|
 > | **Client authentication scheme** | Select `Credentials in request body`.|
-</div>
 
 3. Save the skill.
 
