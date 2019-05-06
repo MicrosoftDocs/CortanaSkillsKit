@@ -129,7 +129,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     9. **Client secret**  
 
-        If you use Microsoft services, then use your `MicrosoftAppPassword` from when you created your bot.
+        If you use Microsoft services, then use your `MicrosoftAppPassword` from when you created your bot. Note that Microsoft client secrets expire. See the [FAQ](./faq#does-my-client-secret-ever-expire) for details.
 
         If you use another OAuth 2.0 service provider, then the client secret will be provided to you. Your provider may use different terminology, like *consumer secret*.  
 
