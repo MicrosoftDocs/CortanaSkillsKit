@@ -2,7 +2,7 @@
 title: Create your first Cortana Skill
 description: Describes how to create your first Cortana Skill.
 
-ms.date: 02/13/2019
+ms.date: 05/07/2019
 ms.topic: article
 
 keywords: cortana
@@ -18,9 +18,12 @@ For more information on creating your first skill, see [Create your first skill]
 
 ## Step 1 - Create a bot using the Azure Bot Service
 
-To create a bot using the Azure Bot Service, first open the [Microsoft Azure Portal](https://ms.portal.azure.com), log in with your Microsoft account, and then click `New`.
+To create a bot using the Azure Bot Service, first open the [Microsoft Azure Portal](https://ms.portal.azure.com) and log in with your Microsoft account.
 
-In the Azure Marketplace pane, click `AI + Cognitive Services`, and then `Web App Bot`.
+1. Click on `Create a resource`.
+
+1. In the Azure Marketplace pane, click `AI + Machine Learning`.
+1. Click on `Web App Bot` in the `Featured` column.
 
 ![Azure Marketplace](../media/images/mva22_azure_marketplace.png)
 
