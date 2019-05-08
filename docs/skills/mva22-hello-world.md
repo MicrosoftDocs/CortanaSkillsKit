@@ -22,7 +22,8 @@ To create a bot using the Azure Bot Service, first open the [Microsoft Azure Por
 
 1. Click on `Create a resource`.
 
-1. In the Azure Marketplace pane, click `AI + Machine Learning`.
+1. In the `Azure Marketplace` pane, click `AI + Machine Learning`.
+
 1. Click on `Web App Bot` in the `Featured` column.
 
 ![Azure Marketplace](../media/images/mva22_azure_marketplace.png)
@@ -33,7 +34,15 @@ Specify your subscription plan, location, app name, and the bot template you wan
 
 ![Create Pane](../media/images/mva22_create.png)
 
-It may take a few minutes to provision and initialize your bot. When the process is complete, you can test your bot. Click `Test in Web Chat` to open the **Test** pane.
+It may take a few minutes to provision and initialize your bot. When the process is complete, you can test your bot. If it's not listed under `Recent resources`, click on `See all your resources`.
+
+![Response pane](../media/images/mva22_response_pane.png)
+
+In the `All resources` pane, you should see your skill named listed. There will probably be more than one entry on the list. Click on the one that says `Web App Bot`.
+
+![Response pane](../media/images/mva22_resource_pane.png)
+
+Click `Test in Web Chat` to open the **Test** pane.
 
 ![Open Test](../media/images/mva22_open_test.png)
 
