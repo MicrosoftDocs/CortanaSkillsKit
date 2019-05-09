@@ -36,19 +36,27 @@ Specify your subscription plan, location, app name, and the bot template you wan
 
 It may take a few minutes to provision and initialize your bot. When the process is complete, you can test your bot. If it's not listed under `Recent resources`, click on `See all your resources`.
 
+![Resource pane](../media/images/mva22_resource_pane.png)
+
+In the `All resources` pane, you should see your skill named listed. There will probably be more than one entry on the list. Click on the one whose type is `Web App Bot`.
+
 ![Response pane](../media/images/mva22_response_pane.png)
-
-In the `All resources` pane, you should see your skill named listed. There will probably be more than one entry on the list. Click on the one that says `Web App Bot`.
-
-![Response pane](../media/images/mva22_resource_pane.png)
 
 Click `Test in Web Chat` to open the **Test** pane.
 
 ![Open Test](../media/images/mva22_open_test.png)
 
-Try typing something into the `Type your message` prompt. The bot repeats what you typed, preceded by "You said " and a count of how many messages you've typed. You can reset the count by typing `reset`.
+This will bring up a summary screen showing the options for your bot. The screenshot below highlights the two testing options, `Test in Web Chat` and `Test your bot online in Web Chat`. You can click on either of them. They take you to the same test screen.
 
-![Test Bot](../media/images/mva22_test.png)
+![Bot summary screen](../media/images/mva22_bot_summary.png)
+
+In the test screen, try typing something into the `Type your message` prompt at the bottom of the screen. No matter what you enter, you'll see the test screen shown below.
+
+![Test Bot](../media/images/mva22_test_02.png)
+
+No matter what you respond to the `What can I help you with today?` query,the test will ask `What can I help you with today?`. Again, no matter how you respond, it will then put you into a guided conversation about booking travel. It's not actually doing anything on the backend. You can book any trip you like, as this sample shows.
+
+![Test trip booking](../media/images/mva22_sample_trip.png)
 
 ## Step 2 - Explore the code
 
