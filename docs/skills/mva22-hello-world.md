@@ -46,11 +46,11 @@ This will bring up a summary screen showing the options for your bot. The screen
 
 ![Bot summary screen](../media/images/mva22_bot_summary.png)
 
-In the test screen, try typing something into the `Type your message` prompt at the bottom of the screen. No matter what you enter, you'll see the screen shown below.
+In the test screen, try typing something over the `Type your message...` prompt at the bottom of the screen. It doesn't matter what you enter, you'll see the screen shown below.
 
 ![Test Bot](../media/images/mva22_test_02.png)
 
-No matter what you respond to the `What can I help you with today?` query, the test will ask `Where would you like to travel to?`. This is the start of a guided conversation about booking a trip. It's not actually doing anything on the backend. You can book any trip you like, as this sample shows.
+Again, when you see the `What can I help you with today?` query, it doesn't matter what your response is. The test will always ask `Where would you like to travel to?`. This is the start of a guided conversation about booking a trip. The bot isn't actually doing anything on the backend. You can book any trip you like, as this sample shows.
 
 ![Test trip booking](../media/images/mva22_sample_trip.png)
 
@@ -60,7 +60,7 @@ The dxtBasic bot uses .NET C# code that is part of the Basic bot template. To vi
 
 1. Click `Build` under `Bot management`.
 
-1. For purposes of this example, click on the `Open online code editor` to open the `App Service Editor`.
+1. For purposes of this example, click on the `Open online code editor` link to open the `App Service Editor`.
 
 1. If you'd prefer to work in a local editor, you can click on `Download Bot source code` in the `Build` section, but this example won't cover that.
 
@@ -70,15 +70,15 @@ When the online editor opens, it will display the readme file (readme.md).
 
 ![Online editor readme example](../media/images/mva22_editor_readme.png)
 
-As you can see by looking at the sidebar, there's C# code in the `Bots`, `Controllers`, and `Dialogs` sections. For this example, the bot's confirmation output line has been changed in `MainDialog.cs` (highlighted below). For the changes to take effect, you need to redeploy the bot. In the `App Service Editor`, click the `Open Console` icon to open the Console window.
+As you can see by looking at the sidebar, there's C# code in the `Bots`, `Controllers`, and `Dialogs` sections. For this example, the bot's confirmation output line has been changed in `MainDialog.cs` (highlighted below). For the changes to take effect, you need to redeploy the bot. Click the `Open Console` icon to open the console window.
 
 ![Changed line](../media/images/mva22_changed_line.png)
 
-Enter `build.cmd`.
+After the console opens, enter `build.cmd`.
 
 ![Console Window](../media/images/mva22_console_window.png)
 
-Once the redeployment is complete, you can return to the `Test` pane to test your bot. In this case, after going through the guided conversation again, you'll see a different confirmation line.
+You'll see a lot of status lines printed to the console. Once the process is complete, you can return to the `Test` pane to test your bot. In this case, after going through the guided conversation again, you'll see a different confirmation line.
 
 ![New booking confirmation message](../media/images/mva22_sample_trip_02.png)
 
@@ -86,7 +86,9 @@ Once the redeployment is complete, you can return to the `Test` pane to test you
 
 Once you have created a bot, connect it to the Cortana channel to make it a Cortana skill.
 
-In the Azure Portal, click the Channels tab to view the available channels, and then click the Cortana channel.
+On the bot's Overview page, click on the `Connect your bot to channels.` link.
+
+![Bot overview page](../media/images/mva22_connect_to_channels.png)
 
 On the Configure Cortana page, scroll down to the **Discovery and Management** section and click `Manage`. Click the `Publish` menu tab and then `Publish to self` to open the channel configuration settings, where you can specify an optional icon for the skill, a display name, and the invocation name. Cortana uses the invocation name you specify to invoke the skill.
 
