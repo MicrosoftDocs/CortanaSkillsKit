@@ -30,23 +30,23 @@ To create a bot using the Azure Bot Service, first open the [Microsoft Azure Por
 
 Enter a name for your bot. The bot service uses the bot name as the default name for the resource group name and app name.
 
-Specify your subscription plan, location, app name, and the bot template you want to use, and then click `Create`. To create a simple single-dialog bot that echoes back the user input, use the `Basic` template.
+Specify your subscription plan, location, app name, and the bot template you want to use, and then click `Create`. To create a simple guided conversation bot that pretends to book a trip for you, use the `Basic` template.
 
 ![Create Pane](../media/images/mva22_create.png)
 
-It may take a few minutes to provision and initialize your bot. When the process is complete, you can test your bot. If it's not listed under `Recent resources`, click on `See all your resources`.
+It may take a while to provision and initialize your bot. When the process is complete, you'll be taken to a screen that lists your resource. From here, you can test your bot. If it's not listed under `Recent resources`, click on `See all your resources`.
 
 ![Resource pane](../media/images/mva22_resource_pane.png)
 
-In the `All resources` pane, you should see your skill named listed. There will probably be more than one entry on the list. Click on the one whose type is `Web App Bot`.
+In the `All resources` pane, you should see your skill name listed. There will probably be more than one entry on the list. Click on the one whose type is `Web App Bot`.
 
 ![Response pane](../media/images/mva22_response_pane.png)
 
-This will bring up a summary screen showing the options for your bot. The screenshot below highlights the two testing options, `Test in Web Chat` and `Test your bot online in Web Chat`. You can click on either of them. They take you to the same test screen.
+This will bring up a summary screen showing the options for your bot. The screenshot below highlights the two testing options, `Test in Web Chat` and `Test your bot online in Web Chat`. You can click on either one. They both take you to the same test screen.
 
 ![Bot summary screen](../media/images/mva22_bot_summary.png)
 
-In the test screen, try typing something into the `Type your message` prompt at the bottom of the screen. No matter what you enter, you'll see the test screen shown below.
+In the test screen, try typing something into the `Type your message` prompt at the bottom of the screen. No matter what you enter, you'll see the screen shown below.
 
 ![Test Bot](../media/images/mva22_test_02.png)
 
@@ -56,109 +56,29 @@ No matter what you respond to the `What can I help you with today?` query, the t
 
 ## Step 2 - Explore the code
 
-The mva-hello-world bot uses .NET C# code that is part of the Basic bot template. To view the code behind the bot, click `Build` and then `Open online code editor` to open the **App Service Editor**.
+The dxtBasic bot uses .NET C# code that is part of the Basic bot template. To view the code behind the bot:
 
-![Open Code Editor](../media/images/mva22_open_code_editor.png)
+1. Click `Build` under `Bot management`.
 
-The code that handles the bot's response to the message you type can be found in the `MessagesController.cs` and `EchoDialog.cs` modules. Expand the **Controllers** and **Dialogs** trees under WWWROOT in the **App Service Editor** to view the code.
+1. For purposes of this example, click on the `Open online code editor` to open the `App Service Editor`.
 
-![Code Modules](../media/images/mva22_modules.png)
+1. If you'd prefer to work in a local editor, you can click on `Download Bot source code` in the `Build` section, but this example won't cover that.
 
-The Post method in `MessagesController.cs` invokes an instance of the `EchoDialog` class when a user types a message:
+![Find the code](../media/images/mva22_open_the_code.png)
 
-``` C#
-    public virtual async Task<HttpResponseMessage> Post([FromBody] Activity activity)
-    {
-         // check if activity is of type message
-        if (activity != null && activity.GetActivityType() == ActivityTypes.Message)
-        {
-            await Conversation.SendAsync(activity, () => new EchoDialog());
-        }
-        else
-        {
-            HandleSystemMessage(activity);
-        }
-        return new HttpResponseMessage(System.Net.HttpStatusCode.Accepted);
-    }
-```
+When the online editor opens, it will display the readme file (readme.md).
 
-The `EchoDialog` class contains the code that creates the response:
+![Online editor readme example](../media/images/mva22_editor_readme.png)
 
-``` C#
-    public class EchoDialog : IDialog<object>
-    {
-        protected int count = 1;
+As you can see by looking at the sidebar, there is C# code in `Bots`, `Controllers`, and `Dialogs`. For this example, the bot's confirmation output line has been changed in `MainDialog.cs`.
 
-        public async Task StartAsync(IDialogContext context)
-        {
-            context.Wait(MessageReceivedAsync);
-        }
-
-        public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
-        {
-            var message = await argument;
-
-            if (message.Text == "reset")
-            {
-                PromptDialog.Confirm(
-                    context,
-                    AfterResetAsync,
-                    "Are you sure you want to reset the count?",
-                    "Didn't get that!",
-                    promptStyle: PromptStyle.Auto);
-            }
-            else
-            {
-                await context.PostAsync($"{this.count++}: You said {message.Text}");
-                context.Wait(MessageReceivedAsync);
-            }
-        }
-
-        public async Task AfterResetAsync(IDialogContext context, IAwaitable<bool> argument)
-        {
-            var confirm = await argument;
-            if (confirm)
-            {
-                this.count = 1;
-                await context.PostAsync("Reset count.");
-            }
-            else
-            {
-                await context.PostAsync("Did not reset count.");
-            }
-            context.Wait(MessageReceivedAsync);
-        }
-    }
-```
-
-You can revise the code to customize the response. For example, you could revise the `EchoDialog` class to display how many characters are in the message:
-
-``` C#
-    public class EchoDialog : IDialog<object>
-    {
-        public async Task StartAsync(IDialogContext context)
-        {
-            context.Wait(MessageReceivedAsync);
-        }
-
-        public async Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> argument)
-        {
-            var message = await argument;
-            int msgLength = (message.Text ?? string.Empty).Length;
-
-            await context.PostAsync("'" + message.Text + "'" + " has " + msgLength + " characters.");
-            context.Wait(MessageReceivedAsync);
-        }
-    }
-```
-
-For the changes to take effect, you need to redeploy the bot. In the **App Service Editor**, click the `Open Console` icon to open the **Console** window, and then enter `build.cmd`.
+For the changes to take effect, you need to redeploy the bot. In the `App Service Editor`, click the `Open Console` icon to open the Console window, and then enter `build.cmd`.
 
 ![Console Window](../media/images/mva22_console_window.png)
 
-Once the redeployment is complete, you can return to the **Test** pane to test your bot.
+Once the redeployment is complete, you can return to the `Test` pane to test your bot. In this case, after going through the guided conversation again, you'll see a different confirmation line output.
 
-![Revised Bot](../media/images/mva22_revised_bot.png)
+![New booking confirmation message](../media/images/mva22_sample_trip_02.png)
 
 ## Step 3 - Connect your Azure Bot to the Cortana Channel
 
