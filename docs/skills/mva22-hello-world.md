@@ -42,10 +42,6 @@ In the `All resources` pane, you should see your skill named listed. There will 
 
 ![Response pane](../media/images/mva22_response_pane.png)
 
-Click `Test in Web Chat` to open the **Test** pane.
-
-![Open Test](../media/images/mva22_open_test.png)
-
 This will bring up a summary screen showing the options for your bot. The screenshot below highlights the two testing options, `Test in Web Chat` and `Test your bot online in Web Chat`. You can click on either of them. They take you to the same test screen.
 
 ![Bot summary screen](../media/images/mva22_bot_summary.png)
@@ -54,7 +50,7 @@ In the test screen, try typing something into the `Type your message` prompt at 
 
 ![Test Bot](../media/images/mva22_test_02.png)
 
-No matter what you respond to the `What can I help you with today?` query,the test will ask `What can I help you with today?`. Again, no matter how you respond, it will then put you into a guided conversation about booking travel. It's not actually doing anything on the backend. You can book any trip you like, as this sample shows.
+No matter what you respond to the `What can I help you with today?` query, the test will ask `Where would you like to travel to?`. This is the start of a guided conversation about booking a trip. It's not actually doing anything on the backend. You can book any trip you like, as this sample shows.
 
 ![Test trip booking](../media/images/mva22_sample_trip.png)
 
