@@ -70,13 +70,15 @@ When the online editor opens, it will display the readme file (readme.md).
 
 ![Online editor readme example](../media/images/mva22_editor_readme.png)
 
-As you can see by looking at the sidebar, there is C# code in `Bots`, `Controllers`, and `Dialogs`. For this example, the bot's confirmation output line has been changed in `MainDialog.cs`.
+As you can see by looking at the sidebar, there's C# code in the `Bots`, `Controllers`, and `Dialogs` sections. For this example, the bot's confirmation output line has been changed in `MainDialog.cs` (highlighted below). For the changes to take effect, you need to redeploy the bot. In the `App Service Editor`, click the `Open Console` icon to open the Console window.
 
-For the changes to take effect, you need to redeploy the bot. In the `App Service Editor`, click the `Open Console` icon to open the Console window, and then enter `build.cmd`.
+![Changed line](../media/images/mva22_changed_line.png)
+
+Enter `build.cmd`.
 
 ![Console Window](../media/images/mva22_console_window.png)
 
-Once the redeployment is complete, you can return to the `Test` pane to test your bot. In this case, after going through the guided conversation again, you'll see a different confirmation line output.
+Once the redeployment is complete, you can return to the `Test` pane to test your bot. In this case, after going through the guided conversation again, you'll see a different confirmation line.
 
 ![New booking confirmation message](../media/images/mva22_sample_trip_02.png)
 
