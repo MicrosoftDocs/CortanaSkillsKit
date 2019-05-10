@@ -3,7 +3,7 @@ title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
 ms.topic: article
 ms. assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms. date: 02/06/2019
+ms. date: 05/10/2019
 ms. topic: article
 
 keywords: cortana
@@ -17,12 +17,14 @@ keywords: cortana
 > If you haven't created one yet, visit the [Create your first skill](./get-started.md) page.
 
 Deploy your Cortana skill to each of the three deployment groups.
+
 * [Default Settings](#default-settings)
 * [Test Group Settings](#test-group-settings)
 * [World Settings](#world-settings)
 
 All deployment groups contain the same instance of your Cortana skill.
 Two identifiers are assigned to your Cortana skill.
+
 * `skillId`:  The identifier (ID) of your Cortana skill is unique per deployment group. If your skill checks the ID, then verify the IDs are different for each group. Use the ID of your Cortana skill if you want to turn on additional logging for the group environment.
 * `skillProductId`: The product ID of your Cortana skill is unique across deployment groups.
 
@@ -82,6 +84,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
         ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
 
     * `When should Cortana prompt for a user to sign in?`
+
         * `Sign in at invocation`: The user signs in once, and the authorization token will be passed as needed.
         * `Sign in when required`: The user will be asked to sign in whenever necessary.
 
@@ -323,14 +326,9 @@ For more information about the requirements for publishing to **World**, visit t
 
 ### Withdrawing Your Submission
 
-Your Cortana skill is locked while the Certification Team is reviewing it. If you want to make changes to your skill, click on the `Withdraw your submission` button.
+Your Cortana skill is locked while the Certification Team is reviewing it. If you want to make changes to your skill, click on the `Withdraw your submission` button. You may withdraw your Cortana skill at any point before the review is complete. If the skill is rejected, you will have an option to edit the skill and resubmit.
 
-You may withdraw your Cortana skill only during the following stages.
-
-- Prior to start of review
-- During review
-
-Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, you must either delete the Cortana channel or write to us (skillsup@microsoft.com) asking us to take the skill down.
+Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, write to us (skillsup@microsoft.com) asking us to take the skill down.
 
 All the properties entered in **World Settings** are saved. You may update the publishing properties of your Cortana skill and submit it again for review and certification.
 
