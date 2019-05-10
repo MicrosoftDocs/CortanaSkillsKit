@@ -90,16 +90,12 @@ On the bot's Overview page, click on the `Connect your bot to channels.` link.
 
 ![Bot overview page](../media/images/mva22_connect_to_channels.png)
 
-On the Configure Cortana page, scroll down to the **Discovery and Management** section and click `Manage`. Click the `Publish` menu tab and then `Publish to self` to open the channel configuration settings, where you can specify an optional icon for the skill, a display name, and the invocation name. Cortana uses the invocation name you specify to invoke the skill.
+On the Configure Cortana page, scroll down to the `Discovery and Management` section and click `Manage`. Click the `Publish` menu tab and then `Publish to self` to open the channel configuration settings, where you can specify an optional icon for the skill, a display name, and the invocation name. Cortana uses the invocation name you specify to invoke the skill.
 
-<!-- new -->  
 ![Configure Cortana Skill](../media/images/cortana-configure-settings.png)  
-<!-- new -->  
 
 On the Channels tab of the Azure Portal, you can now see Cortana listed as an `mva-hello-world` bot service channel.
 
-![Bot Channel](../media/images/mva22_helloworld_channel.png)
+![Bot Channel](../media/images/mva22_cortana_channel.png)
 
-To return to the **Configure Cortana** page, where you can update the skill's configuration settings, click `Edit`. To test your new skill, direct Cortana to invoke the skill using the invocation name you specified; for example, "Tell Hello World 'hi there'."
-
-![Hello World Cortana](../media/images/mva22_helloworld_cortana.png)
+To return to the `Configure Cortana` page, where you can update the skill's configuration settings, click `Edit`. To test your new skill, direct Cortana to invoke the skill using the invocation name you specified. For example, "Cortana, tell Hello World 'hi there'."
