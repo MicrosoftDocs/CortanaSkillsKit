@@ -36,7 +36,6 @@
 ### [Using profile data in your Cortana skill](./mva52-using-profile-data.md)  
 ### [Using authentication in your Cortana skill](./mva61-authentication.md)  
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
-### [Publishing your Cortana skill](./mva72-publish-skill.md)  
 
 ## Samples  
 ### [Skill samples](./cortana-samples.md)  
