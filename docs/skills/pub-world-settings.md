@@ -2,7 +2,7 @@
 title: World Group Settings
 description: Describes how to fill out World Group section when publishing a Cortana skill.
 ms.topic: article
-ms.date: 04/23/2019
+ms.date: 05/14/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -27,7 +27,7 @@ For more information about the requirements for publishing to **World**, visit t
 
     1. **Skill information** section
 
-        [Skills information](../media/images/world_settings-skill_information.png)
+        ![Skills information](../media/images/world_settings-skill_information.png)
 
         * `Skill icon`: Click on the `Upload icon` button and select an icon for your Cortana skill.
         * `Display name`: This name is limited to 30 characters.
