@@ -33,7 +33,7 @@ For more information about the requirements for publishing to **World**, visit t
         * `Display name`: This name is limited to 30 characters.
         * `Invocation name`:  This field displays the name that the user speaks (or types) to invoke your skill.
             >[!NOTE]
-             > The invocation name will be filled in with the name that was defined previously defined in the setup process. The name can't be changed here.
+             > The invocation name field will contain the name that was previously defined in the setup process. The name can't be changed here.
         * `Short description`
         * `Long description`
         * `Sample Invocation Phrase`: Enter an invocation phrase and click on the `Add sample invocation phrase` button.
