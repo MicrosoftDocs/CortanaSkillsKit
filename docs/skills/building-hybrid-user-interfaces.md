@@ -3,7 +3,7 @@ title: Building hybrid user interfaces
 description: Describes the process for approving or rejecting third-party Cortana devs.
 label: Conceptual
 
-ms.date: 03/26/2019
+ms.date: 05/16/2019
 ms.topic: article
 
 keywords: cortana
@@ -34,7 +34,7 @@ Keep in mind that voice-driven interfaces are also inclusive interfaces. It may 
 *Use case: Where do you want to go?*
 *A user would like to fly from A to B. Instead of presenting the user with long lists of potential sources and destinations, just ask: "Where are you coming from?" and "Where do you want to go?".*
 
-## The Design Process
+## The design process
 
 Building a great Cortana skill that meets the voice design goals means having a clear picture of how the problem you are trying to solve fits with the voice-enabled solution. We’ve borrowed some concepts from Process Re-engineering: Identify. Review. Design. Test.
 
@@ -59,15 +59,15 @@ As a suggestion for designing successful conversations, think about these questi
 - Clear?
 - Trustworthy?
 
-Does the dialog allow the user to correct or cancel an activity gracefully? Can the user get contextual help easily?Can they get feedback or a summary of where you are in the conversation?
+Does the dialog allow the user to correct or cancel an activity gracefully? Can the user get contextual help easily? Can they get feedback, or a summary of where you are in the conversation?
 
-## When to use Rich Cards
+## When to use rich cards
 
 Visual elements should be used to support your skill. Ideally, conversations should stand alone. See the design tips in the [Design your skill's visual elements](https://docs.microsoft.com/en-us/cortana/skills/design-principles#card-design-tips) section of the [Principles of Cortana skills design](https://docs.microsoft.com/en-us/cortana/skills/design-principles) page.
 
 The card should, in general, not provide any new information to the conversation.
 
-The skill should support a voice interaction even when a Rich Card is displayed (remember: not all Cortana devices have screens, and the goal it to design interactions that are hands-free).
+The skill should support a voice interaction even when a rich card is displayed (remember: not all Cortana devices have screens, and the goal it to design interactions that are hands-free).
 
 If you find yourself presenting the end-user with a form that has multiple input controls, you may want to ask yourself why you're building this interface for a Cortana skill. Cortana supports deep linking to apps and web pages that may be better suited to form input, and the minimal screen real-estate provided by Cortana provides very little room. Use the goals above to stay focused on your hybrid design.
 
@@ -75,7 +75,7 @@ If you find yourself presenting the end-user with a form that has multiple input
 
 The end user wants to create a pre-populated form. The form itself has tens of fields and options. So, the end user asks the Cortana skill to create a form that is populated from a template, or clone their most recent form entered, or to create a form based on the most recent or frequent inputs. Cortana creates the form, and presents the end user with a deep link into the system to view the form, and/or notifies the user via email with a deep link into the system to view the form.
 
-## Being a Bot – Support Short Conversations
+## Being a bot – support short conversations
 
 A good conversation should work similarly on text and by voice (as the voice component is transcribed into text). Although these docs are not directly related to Cortana, some of the Azure Bot Service documentation might be helpful:
 
@@ -89,9 +89,9 @@ Where procedural conversation flow is required (directed prompts), make it as si
 
 A well-designed bot will have a conversation flow that feels natural. The bot should be able to handle the core conversation seamlessly and handle interruptions gracefully (for example, if the user switches to a new topic).
 
-## Using Buttons, Choices, and Links
+## Using buttons, choices, and links
 
-Displaying buttons from Rich Cards should follow the general guidance on buttons:
+Displaying buttons from rich cards should follow the general guidance on buttons:
 
 - [Command Buttons](https://docs.microsoft.com/en-us/windows/desktop/uxguide/ctrl-command-buttons)
 
@@ -123,7 +123,7 @@ The summary:
 
     Visit [Adaptive Cards Overview](https://docs.microsoft.com/en-us/adaptive-cards/) for more details.
 
-## From Bot to Assistant – Follow Up
+## From bot to assistant – follow up
 
 When a user gets a response (for example, a link) that takes them away from the conversation, consider saving the state of conversation such that if the user returns in a short amount of time that they can pull up their previous state without having to navigate to it again.
 
@@ -131,19 +131,19 @@ Maintaining state across conversations allows the end user to change devices or 
 
 You also have the opportunity to gather performance metrics on the previous results.
 
-### Example: Support ticket Follow up
+### Example: Support ticket follow-up
 
 The user created a support ticket from a template using Cortana. The skill queries for a state change on the ticket, such that the user does not need to remember the ticket number, and notifies the user the next time they invoke the skill.
 
-*Use case: Search Follow up*
-*The user searched a knowledge base for help. He/she followed the links and followed the procedure, but it was not applicable. He/she invokes the skill again shortly after, and is asked if the previous results answered the question. A negative response continues the search or escalation.*
+*Use case: Search follow-up*
+*The user searched a knowledge base for help. He/she followed the links and followed the procedure, but it was not applicable. He/she invokes the skill again shortly after, and is asked if the previous results answered the question. A negative response continues the search, or allows the user to escalate to live help or filing a support ticket.*
 
->**Returning user:** Open my skill.  
->**MySkill:** Welcome back <User Name>. Did <link name> help you with <previous search query>?  
->**Returning user:** No.
+>**Returning user:** Open MySkill.  
+>**MySkill:** Welcome back. Did that link help you with your question?  
+>**Returning user:** No.  
 >**MySkill:** Would you like to ‘search again’, ‘chat with a live agent’, or ‘open a support ticket’?
 
-## Dealing with Large Amounts of Data
+## Dealing with large amounts of data
 
 Bots and voice skills are not designed to relay a lot of information. If the user needs to scroll to see all of the information you're trying to display, you’ve presented too much data.
 
@@ -157,9 +157,9 @@ However, for some applications, you can't avoid presenting a lot of information.
 Refining the search result is usually the best way to optimize the user’s time.
 
 *Use case: A user wants to know what international holidays might affect a product launch.*
-*You could forward the user to a web page with a table of holidays, or you could focus on the answer, as shown below.*
+*On the desktop, you might forward the user to a web page that displays a table of holidays. For Cortana, it's better if you focus on the answer, as shown below.*
 
 >**User:** What holidays are within 30 days of July 15?  
->**MySkill:** There are 12 international holidays within 30 days of July 15. Would you like me to list them, review by country, or review by type of holiday?  
+>**MySkill:** There are 12 international holidays within 30 days of July 15. Would you like me to list them all, review them by country, or review by type of holiday?  
 >**User:** What are the US holidays?  
->**MySkill:** July 4 is Independence Day in the United States. It is a national statutory holiday.
+>**MySkill:** July 4 is Independence Day in the United States. It is a statutory national holiday.
