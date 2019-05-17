@@ -42,7 +42,7 @@ Follow these instructions to access the Cortana Configuration page and update ea
 
 1. On the *My bots* page, click the name of your bot.
 
-    ![your Web App Bot blade menu](../media/images/web_app_bot_blade-menu.png)
+    ![your Web App Bot blade menu](../media/images/my-bots-page.png)
 
 1. On the *Microsoft Azure* portal, in your Web App Bot blade, under the *Bot Management* section, click on the **Channels** icon.
 
