@@ -10,6 +10,7 @@
 
 ## Skills design  
 ### [Design principles](./design-principles.md)  
+### [Building hybrid user interfaces](./building-hybrid-user-interfaces.md)
 ### [Invocation name guidelines](./cortana-invocation-guidelines.md)  
 ### [Performance guidelines](./performance-guidelines.md)  
 
