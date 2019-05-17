@@ -11,6 +11,8 @@
 
 ### [Principles of Cortana skills design](../skills/design-principles.md)
 
+### [Building hybrid user interfaces](../skills/building-hybrid-user-interfaces.md)
+
 ### [Cortana's persona](../skills/cortanas-persona.md)
 
 ### [Invocation name guidelines](../skills/cortana-invocation-guidelines.md)
