@@ -9,7 +9,8 @@
 ### [Add MSA authentication](./configure-connected-account.md)  
 
 ## Skills design  
-### [Design principles](./design-principles.md)  
+### [Principles of Cortana skills design](./design-principles.md)  
+### [Building hybrid user interfaces](./building-hybrid-user-interfaces.md)
 ### [Invocation name guidelines](./cortana-invocation-guidelines.md)  
 ### [Performance guidelines](./performance-guidelines.md)  
 
