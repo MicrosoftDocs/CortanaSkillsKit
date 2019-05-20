@@ -12,19 +12,19 @@ keywords: cortana
 
 # Cortana design guidelines
 
-These guidelines and recommendations describe how your app can best use **Cortana** to interact with the user, help them accomplish a task, and communicate clearly how it's all happening.
+These guidelines and recommendations describe how your app can best use Cortana to interact with the user, help them accomplish a task, and communicate clearly how it's all happening.
 
-<!-- **Cortana** enables applications running in the background to prompt the user for confirmation or disambiguation, and in return provide the user with feedback on the status of the voice command. The process is lightweight, quick, and doesn’t force the user to leave the **Cortana** experience or switch context to the application. -->
+<!-- Cortana enables applications running in the background to prompt the user for confirmation or disambiguation, and in return provide the user with feedback on the status of the voice command. The process is lightweight, quick, and doesn’t force the user to leave the Cortana experience or switch context to the application. -->
 
-While the user should feel that **Cortana** is helping to make the process as light and easy as possible, you probably want **Cortana** to also be explicit that it's your app accomplishing the task.
+While the user should feel that Cortana is helping to make the process as light and easy as possible, you probably want Cortana to also be explicit that it's your app accomplishing the task.
 
-We use a trip planning and management app named **Adventure Works** integrated into the **Cortana** UI, shown here, to demonstrate many of the concepts and features we discuss.
+We use a trip planning and management app named **Adventure Works** integrated into the Cortana UI, shown here, to demonstrate many of the concepts and features we discuss.
 
 ![cortana canvas overview](../media/images/cortana-overview.png)
 
-## <span id="Conversational_writing_"></span><span id="conversational_writing_"></span><span id="CONVERSATIONAL_WRITING_"></span>Conversational writing
+## Conversational writing
 
-Successful **Cortana** interactions require you to follow some fundamental principles when crafting text-to-speech (TTS) and GUI strings.
+Successful Cortana interactions require you to follow some fundamental principles when crafting text-to-speech (TTS) and GUI strings.
 
 | Principle |   | Bad example | Good example |
 |---|---|---|
@@ -42,9 +42,9 @@ Use some variation in your responses to help make your app sound more natural. P
 Use phrases like "OK" and "All right" in your responses judiciously. While they can provide acknowledgment and a sense of progress, they can also get repetitive if used too often and without variation.
 
 > [!NOTE]
-> Use acknowledgment phrases in TTS only. Due to the limited space on the **Cortana** canvas, don't repeat them on the screen.
+> Use acknowledgment phrases in TTS only. Due to the limited space on the Cortana canvas, don't repeat them on the screen.
 
-Use contractions in your responses for more natural interactions and additional space saving on the **Cortana** canvas. For example," I can’t find that movie" instead of "I was unable to find that movie". Write for the ear, not the eye.
+Use contractions in your responses for more natural interactions and additional space saving on the Cortana canvas. For example," I can’t find that movie" instead of "I was unable to find that movie". Write for the ear, not the eye.
 
 Use language that the system understands. Users tend to repeat the terms they are presented with. Know what you display, and expect to hear it back from the user.
 
@@ -57,7 +57,7 @@ To initiate an action using a voice command, your app must register voice comman
 
 You should localize the voice commands your app responds to, as well as all TTS and GUI strings.
 
-Avoid lengthy GUI strings. The **Cortana** canvas provides three lines for responses and will truncate strings longer than that.
+Avoid lengthy GUI strings. The Cortana canvas provides three lines for responses and will truncate strings longer than that.
 
 For more info, see the [Globlization and localization section](https://msdn.microsoft.com/windows/uwp/globalizing/guidelines-and-checklist-for-globalizing-your-app).
 
@@ -103,20 +103,20 @@ See [VoiceCommandContentTileType](https://msdn.microsoft.com/library/windows/app
 
 ## Example
 
-This example demonstrates an end-to-end task flow for a background app in **Cortana**. We're using the **Adventure Works** app to cancel a trip to Las Vegas. This example uses the "Title with 68x68 icon and text" template.
+This example demonstrates an end-to-end task flow for a background app in Cortana. We're using the **Adventure Works** app to cancel a trip to Las Vegas. This example uses the "Title with 68x68 icon and text" template.
 
 ![end to end cortana background app flow](../media/images/e2e-canceltrip.png)
 
 Here are the steps outlined in this image:
 
-1. The user taps the microphone to initiate **Cortana**.
-1.  The user says "Cancel my Adventure Works trip to Vegas" to launch the **Adventure Works** app in the background. The app uses both **Cortana** speech and canvas to interact with the user.
-1.  **Cortana** transitions to a handoff screen that gives the user acknowledgment feedback ("I'll get Adventure Works on that."), a status bar, and a cancel button.
-1.  In this case, the user has multiple trips that match the query, so the app provides a disambiguation screen that lists all the matching results and asks, “Which one do you wanna cancel?”
-1.  The user specifies the "Vegas Tech Conference" item.
-1.  As the cancellation cannot be undone, the app provides a confirmation screen that asks the user to confirm their intent.
-1.  The user says "Yes".
-1.  The app then provides a completion screen that shows the result of the operation.
+1. The user taps the microphone to initiate Cortana.
+1. The user says "Cancel my Adventure Works trip to Vegas" to launch the **Adventure Works** app in the background. The app uses both Cortana speech and canvas to interact with the user.
+1. Cortana transitions to a handoff screen that gives the user acknowledgment feedback ("I'll get Adventure Works on that."), a status bar, and a cancel button.
+1. In this case, the user has multiple trips that match the query, so the app provides a disambiguation screen that lists all the matching results and asks, “Which one do you wanna cancel?”
+1. The user specifies the "Vegas Tech Conference" item.
+1. As the cancellation cannot be undone, the app provides a confirmation screen that asks the user to confirm their intent.
+1. The user says "Yes".
+1. The app then provides a completion screen that shows the result of the operation.
 
 We explore these steps in more detail here.
 
@@ -130,9 +130,9 @@ We explore these steps in more detail here.
 |--- |
 | Cancel trip with handoff screen | 
 
-Tasks that take less than 500ms for your app to respond, and require no additional information from the user, can be completed without further participation from **Cortana**, other than displaying the completion screen.
+Tasks that take less than 500ms for your app to respond, and require no additional information from the user, can be completed without further participation from Cortana, other than displaying the completion screen.
 
-If your application requires more than 500ms to respond, **Cortana** provides a handoff screen. The app icon and name are displayed, and you must provide both GUI and TTS handoff strings to indicate that the voice command was correctly understood. The handoff screen will be shown for up to 5 seconds; if your app doesn't respond within this time, **Cortana** presents a generic error screen.
+If your application requires more than 500ms to respond, Cortana provides a handoff screen. The app icon and name are displayed, and you must provide both GUI and TTS handoff strings to indicate that the voice command was correctly understood. The handoff screen will be shown for up to 5 seconds; if your app doesn't respond within this time, Cortana presents a generic error screen.
 
 ### GUI and TTS guidelines for handoff screens
 
@@ -161,7 +161,7 @@ The GUI and TTS strings can be the same, but don’t need to be. Try to keep the
 
 When a task takes a while between steps, your app needs to step in and update the user on what’s happening on a progress screen. The app icon is displayed, and you must provide both GUI and TTS progress strings to indicate that the task is underway.
 
-You should provide a link to your app with launch parameters to start the app in the appropriate state. This lets the user view or complete the task themselves. **Cortana** provides the link text (such as, "Go to Adventure Works").
+You should provide a link to your app with launch parameters to start the app in the appropriate state. This lets the user view or complete the task themselves. Cortana provides the link text (such as, "Go to Adventure Works").
 
 Progress screens will show for 5 seconds each, after which they must be followed by another screen or the task will time out.
 
@@ -196,7 +196,7 @@ Use an action verb that confirms the task is underway.
 
 Some tasks can be implicitly confirmed by the nature of the user’s command; others are potentially more sensitive and require explicit confirmation. Here are some guidelines for when to use explicit vs. implicit confirmation.
 
-Both GUI and TTS strings on the confirmation screen are specified by your app, and the app icon, if provided, is shown instead of the **Cortana** avatar.
+Both GUI and TTS strings on the confirmation screen are specified by your app, and the app icon, if provided, is shown instead of the Cortana avatar.
 
 After the customer responds to the confirmation, your application must provide the next screen within 500 ms to avoid going to a progress screen.
 
@@ -242,7 +242,7 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 
 Some tasks might require the user to select from a list of entities to complete the task.
 
-Both GUI and TTS strings on the disambiguation screen are specified by your app, and the app icon, if provided, is shown instead of the **Cortana** avatar.
+Both GUI and TTS strings on the disambiguation screen are specified by your app, and the app icon, if provided, is shown instead of the Cortana avatar.
 
 After the customer responds to the disambiguation question, your application must provide the next screen within 500 ms to avoid going to a progress screen.
 
@@ -276,9 +276,9 @@ Provide a variation of the question for a re-prompt, in case the voice command i
 
 On successful task completion, your app should inform the user that the requested task was completed successfully.
 
-Both GUI and TTS strings on the completion screen are specified by your app, and the app icon (if provided), is shown instead of the **Cortana** avatar.
+Both GUI and TTS strings on the completion screen are specified by your app, and the app icon (if provided), is shown instead of the Cortana avatar.
 
-You should provide a link to your app with launch parameters to start the app in the appropriate state. This lets the user view or complete the task themselves. **Cortana** provides the link text (such as, "Go to Adventure Works").
+You should provide a link to your app with launch parameters to start the app in the appropriate state. This lets the user view or complete the task themselves. Cortana provides the link text (such as, "Go to Adventure Works").
 
 ### GUI and TTS guidelines for completion screens
 
@@ -299,11 +299,11 @@ If the entity is shown, or it has been referenced on prior turn, only reference 
 | --- |
 | Cancel trip with error screen |
 
-When one of the following errors occur, **Cortana** displays the same generic error message.
+When one of the following errors occur, Cortana displays the same generic error message.
 
 - The app service terminates unexpectedly.
-- **Cortana** fails to communicate with the app service.
-- The app fails to provide a screen after **Cortana** shows a handoff screen or a progress screen for 5 seconds.
+- Cortana fails to communicate with the app service.
+- The app fails to provide a screen after Cortana shows a handoff screen or a progress screen for 5 seconds.
 
 ## Related articles
 
