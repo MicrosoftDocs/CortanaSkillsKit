@@ -89,8 +89,8 @@ There are design guides available to help you create an engaging user experience
 * [Skill design principles](./design-principles.md)  
 * [Invocation name guidelines](./cortana-invocation-guidelines.md)  
 * [Performance guidelines](./performance-guidelines.md)  
-* [Publishing review guidelines](./skill-review-guidelines.md)  
-* [Maintaining Your Cortana persona](./cortanas-persona.md)
+* [Publishing review guidelines](./skill-review-guidelines.md) 
+<!-- * [Maintaining Your Cortana persona](./cortanas-persona.md)  This file was archived on 20-May-19 -->
 
 ## Personalize the user experience with user insights  
 
