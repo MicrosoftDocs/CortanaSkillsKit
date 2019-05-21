@@ -23,7 +23,6 @@
 ### [Add authentication to your skill](./authentication.md)  
 ### [Play audio files](./audio-streaming.md)  
 
-
 ## Tutorials  
 ### [Set up your developer environment](./mva21-setup.md)  
 ### [Create your first Cortana skill](./mva22-hello-world.md)  
