@@ -3,7 +3,7 @@ title: Getting started
 description: Getting started authoring skills for Cortana.
 
 label: Conceptual
-ms.date: 02/27/2019
+ms.date: 05/21/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -27,8 +27,6 @@ You're free to use whatever workflow suits you best, but we've found that this o
 ## Design your skill
 
 [Principles of Cortana skills design](../skills/design-principles.md)
-
-[Cortana design guidelines](../skills/cortana-design-guidelines.md)
 
 ## Pick a bot template
 

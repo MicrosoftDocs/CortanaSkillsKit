@@ -17,8 +17,6 @@
 
 ### [Invocation name guidelines](../skills/cortana-invocation-guidelines.md)
 
-### [Cortana design guidelines](../skills/cortana-design-guidelines.md)
-
 ### [Build a skill](build-a-skill.md)
 
 ### [Test and debug](enterprise-test-and-debug.md)
