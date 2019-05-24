@@ -53,6 +53,8 @@ If the changes to your data cause you to be rejected, then your current skills m
 
 ## The developer/publisher data
 
+![Default settings](../media/images/dev_settings.png)
+
 Most of the fields collected on the Developer tab are self-explanatory. Fields with an asterisk (*) are required. Other information follows the screenshot.
 
 ![Page tabs](../media/images/vetting-buttons-02.png)
