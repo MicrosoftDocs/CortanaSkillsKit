@@ -13,9 +13,9 @@ keywords: cortana
 
 Deploying to **Test Group** makes your Cortana skill available to a group of users that you specify, using individual MSA email addresses. Typically, you create a test group to have others test your Cortana skill and provide feedback. It's a really good idea to test and update your skill before making it generally available.
 
-1. On the **Configure Cortana** page, under the **Test Group Settings** section, enter the following information.
+![Test Group Settings - not configured](../media/images/test_group_settings-not_configured.png)
 
-    ![Test Group Settings - not configured](../media/images/test_group_settings-not_configured.png)
+1. On the **Configure Cortana** page, under the **Test Group Settings** section, enter the following information.
 
     Complete the required fields that are marked with an asterisk (*).
 

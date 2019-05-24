@@ -18,9 +18,10 @@ Deploying your Cortana skill to **World** will submit your skill for review. Onc
 
 For more information about the requirements for publishing to **World**, visit the [Cortana skills Kit Certification Requirements](./skill-review-guidelines.md) page.
 
-1. On the *Configure Cortana* page, you'll need to enter the following information under the **World Settings** section.
 
-    ![World Settings - not configured](../media/images/world_settings-not_configured.png)
+![World Settings - not configured](../media/images/world_settings-not_configured.png)
+
+1. On the *Configure Cortana* page, you'll need to enter the following information under the **World Settings** section.
     Complete the required fields that are marked with an asterisk (`*`).
 
     For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
