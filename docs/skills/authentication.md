@@ -4,7 +4,7 @@ description: Learn how to add authentication to your bot-based skill.
 label: Conceptual
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 02/14/2019
+ms.date: 05/13/2019
 ms.topic: article
 
 keywords: cortana
@@ -62,8 +62,8 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 1. Sign into the [Microsoft Azure Portal](https://ms.portal.azure.com).  
 1. In the *portal*, click the name of your bot. 
-1. Under *BOT MANAGEMENT*, click on the **Channels** icon. 
-1. To create the Cortana channel, click the Cortana icon. 
+1. Under *BOT MANAGEMENT*, click on the **Channels** icon.
+1. To create the Cortana channel, click the Cortana icon.
 
     ![Cortana channel icon](../media/images/add_cortana_channel_1.png)  
 
@@ -84,7 +84,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
         If you select `at invocation` then Cortana manages the log in when the user first invokes the skill. Otherwise you can send an OAuthCard attachment before a resource call.
     2. **Account Name**  
         The account name for your Cortana skill.  
-    3. **Client ID** 
+    3. **Client ID**
         The identifier for your client.  
 
         >[!NOTE]
@@ -129,7 +129,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     9. **Client secret**  
 
-        If you use Microsoft services, then use your `MicrosoftAppPassword` from when you created your bot.
+        If you use Microsoft services, then use your `MicrosoftAppPassword` from when you created your bot. Note that Microsoft client secrets expire. See the [FAQ](./faq.md#does-my-client-secret-ever-expire) for details.
 
         If you use another OAuth 2.0 service provider, then the client secret will be provided to you. Your provider may use different terminology, like *consumer secret*.  
 
@@ -161,7 +161,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** How to get an access token using C#.
 
-    ``` C#
+    ```csharp
     // Is the user authenticated?
     string authAccessToken = String.Empty;
 
@@ -177,7 +177,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** How to get an access token using Node.js.  
 
-    ```js
+    ```javascript
     // Get access token from Cortana request
     var tokenEntity = session.message.entities.find((e) => {
             return e.type === 'AuthorizationToken';
@@ -187,7 +187,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using C\#.  
+    **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
 
     ```csharp
     private Activity CreateOAuthCard( Activity activity )
@@ -200,7 +200,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
         // Create the attachment.
         Attachment attachment = new Attachment() {
             ContentType = OAuthCard.ContentType,
-            Content = new OAuthCard();// Cortana ignores any card configuration
+            Content = new OAuthCard() // Cortana ignores any card configuration
         };
 
         message.Attachments.Add(attachment);
@@ -210,23 +210,22 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
 
-    ``` js
+    ```javascript
     var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
     ```  
 
     **Example:** How to add your access token to your resource request using C#.  
 
-    ``` C#
+    ```csharp
     var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
     using (var client = new HttpClient()) {
         client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
         var response = await client.GetAsync(url);
-
     ```  
 
     **Example:** How to add your access token to your resource request using Node.js.  
 
-    ```js
+    ```javascript
     var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
     request.get(url, (err, response, body) => {
     … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token

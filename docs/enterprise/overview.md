@@ -2,7 +2,7 @@
 title: Overview of Cortana Skills Kit for Enterprise | Cortana Skills Kit for Enterprise
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
-ms.date: 10/08/2018
+ms.date: 04/25/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc
@@ -12,8 +12,11 @@ keywords: cortana
 
 # Cortana Skills Kit for Enterprise  
 
+>[!IMPORTANT]
+> Here is our [latest blog update](https://techcommunity.microsoft.com/t5/Cortana-Skills-Kit-Blog/Cortana-Skills-Kit-for-Enterprise-BUILD-2019-Update/ba-p/535109) on Cortana Skills Kit for Enterprise.
+
 >[!NOTE]
-> Cortana Skills Kit for Enterprise is currently available through Microsoft's Technology Adoption Program. Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.
+> Cortana Skills Kit for Enterprise is currently available through Microsoft's Technology Adoption Program. <!-- Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.-->
 
 Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capability by building their own custom skills for domains ranging from HR, IT, Helpdesk, Sales to areas like Smart Building:  
 
@@ -46,6 +49,7 @@ Cortana Skills Kit for Enterprise is built on top of Azure Bot Service and lever
 * [IT Admin Portal for managing skill deployment to tenant](https://it-admin-portal-prod.azurewebsites.net/)
     Dedicated portal for IT Administrators and delegated reviewers to review the skills submitted by enterprise developers for deployment to tenant. Reviewers should ensure that custom skills follow company’s guidelines on privacy, security and other practices before approving a skill for tenant deployment. 
 
+<!-- 04/25/2019 commented out because there really is no next step for this version of enterprise --dt
 ## Next steps
 
-Read the [Before you start](/before-you-start.md) page for an overview of the development process.
+Read the [Before you start](/before-you-start.md) page for an overview of the development process. -->

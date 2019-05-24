@@ -49,7 +49,7 @@ Follow these instructions to access the Cortana Configuration page and update ea
 
 1. On the *My bots* page, click the name of your bot.
 
-    ![your Web App Bot blade menu](../media/images/web_app_bot_blade-menu.png)
+    ![your Web App Bot blade menu](../media/images/my-bots-page.png)
 
 1. On the *Microsoft Azure* portal, in your Web App Bot blade, under the *Bot Management* section, click on the `Channels` icon.
 
@@ -84,7 +84,7 @@ You may withdraw your Cortana skill only during the following stages.
 * Prior to start of review
 * During review **[Is this still true?]**
 
-Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, you must either delete the Cortana channel or write to us (skillsup@microsoft.com) asking us to take the skill down.
+Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, write to us (skillsup@microsoft.com) asking us to take the skill down.
 
 All the properties entered in **World Settings** are saved if you withdraw the skill. You may update the publishing properties of your Cortana skill and submit it again for review and certification.
 

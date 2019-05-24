@@ -489,7 +489,9 @@ What design rules apply to .NET FormFlows?
 
 ## Next steps
 
-Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md).
+For more information on using both voice and text in your skill, see [Building hybrid user interfaces](./building-hybrid-user-interfaces.md).
+
+<!-- Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md). NOTE: The linked file was archived on 20-May-19. -->
 
 For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
 

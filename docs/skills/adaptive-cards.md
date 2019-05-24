@@ -26,7 +26,7 @@ Adaptive cards provide the following options.
 |**Richer text** | Text in your card is not limited to title, subtitle, and text fixed formats. Use a variety of font sizes, formats, and colors. |
 |**A single open card exchange format** | Use your existing cards in a common and consistent way and extend your cards with rich controls using a common schema.  |
 
-Adaptive cards use the open card exchange format. This format enables you to specify user interface content for all cards in your skill in a common and consistent way. You describe the content as a simple JSON object. The JSON content is natively displayed by the skill and automatically adapts to the look and feel of your skill.  
+Adaptive cards use the open card exchange format. This format enables you to specify user interface content for all cards in your skill in a common and consistent way. You describe the content as a simple JSON object. The JSON content is natively displayed by the skill and automatically adapts to the look and feel of your skill.  _Note, Cortana currently support Adaptive Cards version 1.0._
 
 Adaptive cards include elements, containers, actions, and inputs. A basic adaptive card includes:
 
@@ -76,7 +76,7 @@ The Adaptive Cards Visualizer shows you what the JSON data will look like onscre
 1. Specify the elements of your card in code.
 1. Add the card to your Cortana skill as an attachment.
 
-The following code adds an adaptive card to a Cortana skill response.
+The following code adds an adaptive card to a Cortana skill response for Bot Framework V3.
 
  ```csharp
  var response = context.MakeMessage();
@@ -96,6 +96,26 @@ The following code adds an adaptive card to a Cortana skill response.
  await context.PostAsync(response);
  context.Wait(MessageReceived);
  ```  
+ 
+ ```javascript
+let msg = new builder.Message(session)
+// in V3, there is no AdaptiveCard builder or helper, so we send the JSON
+msg.addAttachment({
+		"contentType": "application/vnd.microsoft.card.adaptive",
+		"content": {
+			"$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+			"type": "AdaptiveCard",
+			"version": "1.0",
+			"body": [{
+				"type": "TextBlock",
+				"text": "This is a test",
+				"size": "medium",
+				"weight": "bolder"
+			}]
+		}
+	});
+session.send(msg);
+ ```
 
 ## More Information  
 

@@ -89,8 +89,8 @@ There are design guides available to help you create an engaging user experience
 * [Skill design principles](./design-principles.md)  
 * [Invocation name guidelines](./cortana-invocation-guidelines.md)  
 * [Performance guidelines](./performance-guidelines.md)  
-* [Publishing review guidelines](./skill-review-guidelines.md)  
-* [Maintaining Your Cortana persona](./cortanas-persona.md)
+* [Publishing review guidelines](./skill-review-guidelines.md) 
+<!-- * [Maintaining Your Cortana persona](./cortanas-persona.md)  This file was archived on 20-May-19 -->
 
 ## Personalize the user experience with user insights  
 
@@ -108,7 +108,7 @@ For the full list of Microsoft Cognitive Services that you may integrate, visit 
 
 ## Natural language understanding
 
-Interactions between a user and your Cortana skill are mostly free-form, so Cortana must understand language naturally and in context. You Cortana skill determines what a user wants to do by identifying the user intent from spoken or textual input (an utterance). The intent maps utterances to actions that your Cortana skill can take, such as invoking a dialog. Your Cortana skill may also extract entities, which are important words in utterances.
+Interactions between a user and your Cortana skill are mostly free-form, so Cortana must understand language naturally and in context. Your Cortana skill determines what a user wants to do by identifying the user intent from spoken or textual input (an utterance). The intent maps utterances to actions that your Cortana skill can take, such as invoking a dialog. Your Cortana skill may also extract entities, which are important words in utterances.
 
 You could use a simple method such as using regular expressions to inspect the content of a message and determine intent, but we encourage you to use [Language Understanding Intelligent Service (LUIS)](https://www.luis.ai). LUIS is a powerful natural language processing tool that uses pre-built or custom-trained language models to evaluate user input. LUIS can determine what users want (intent) and identify concepts and entities in a given sentence. Ultimately, this allows your Cortana skill to respond with the appropriate action.
 

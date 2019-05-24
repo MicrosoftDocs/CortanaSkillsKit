@@ -9,7 +9,8 @@
 ### [Add MSA authentication](./configure-connected-account.md)  
 
 ## Skills design  
-### [Design principles](./design-principles.md)  
+### [Principles of Cortana skills design](./design-principles.md)  
+### [Building hybrid user interfaces](./building-hybrid-user-interfaces.md)
 ### [Invocation name guidelines](./cortana-invocation-guidelines.md)  
 ### [Performance guidelines](./performance-guidelines.md)  
 
@@ -21,7 +22,6 @@
 ### [Launch apps or websites](./launch-apps-from-skills.md)  
 ### [Add authentication to your skill](./authentication.md)  
 ### [Play audio files](./audio-streaming.md)  
-
 
 ## Tutorials  
 ### [Set up your developer environment](./mva21-setup.md)  
@@ -36,7 +36,6 @@
 ### [Using profile data in your Cortana skill](./mva52-using-profile-data.md)  
 ### [Using authentication in your Cortana skill](./mva61-authentication.md)  
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
-### [Publishing your Cortana skill](./mva72-publish-skill.md)  
 
 ## Samples  
 ### [Skill samples](./cortana-samples.md)  
