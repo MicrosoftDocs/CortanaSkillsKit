@@ -3,7 +3,7 @@ title: Developer settings
 description: Describes the process for approving or rejecting third-party Cortana developers.
 label: Conceptual
 
-ms.date: 04/23/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.author: v-daturc@microsoft.com
 

@@ -18,7 +18,6 @@ Deploying your Cortana skill to **World** will submit your skill for review. Onc
 
 For more information about the requirements for publishing to **World**, visit the [Cortana skills Kit Certification Requirements](./skill-review-guidelines.md) page.
 
-
 ![World Settings - not configured](../media/images/world_settings-not_configured.png)
 
 1. On the *Configure Cortana* page, you'll need to enter the following information under the **World Settings** section.
