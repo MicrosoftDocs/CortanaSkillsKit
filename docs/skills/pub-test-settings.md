@@ -2,7 +2,7 @@
 title: Test Group Settings
 description: Describes how to fill out Test Group section when publishing a Cortana skill.
 ms.topic: article
-ms.date: 04/23/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -30,7 +30,7 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
         * `Display name`: The length of the name is limited to 30 characters.
         * `Invocation name`: This field displays the name that the user speaks (or types) to invoke your skill.
             >[!NOTE]
-            > The name shown was previously defined in the setup process, and can't be changed here.
+            > The invocation name shown was previously defined in the setup process, and can't be changed here.
 
     2. Request user profile data
 

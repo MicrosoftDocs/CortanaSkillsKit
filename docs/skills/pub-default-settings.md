@@ -2,7 +2,7 @@
 title: Default Group Settings
 description: Describes how to fill out Default Group section when publishing a Cortana skill.
 ms.topic: article
-ms.date: 04/23/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -11,7 +11,7 @@ keywords: cortana
 
 # Default Settings
 
-After configuring the Cortana channel for your skill, it's automatically deployed to **Default Settings**. Deploying to **Default Settings** makes the skill available to you only, so you can thoroughly test it before deploying it to one of the other environments.
+After configuring the Cortana channel for your skill, it's automatically deployed using the **Default Settings**. Deploying with the **Default Settings** makes the skill available to you only, so you can thoroughly test it before deploying it to one of the other environments.
 
 For more information about configuring the Cortana channel, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0) page.
 
@@ -72,7 +72,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
     * `Client secret/password for third party services`: Your bot's password.  If you're using Microsoft Identity Service, then the password is generated when you register your bot in the *Microsoft Application Registration* portal.
 
         >[!IMPORTANT]
-        > The password (client secret) is displayed only once. When you create your bot, it's shown under the **Application Secrets** section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal.
+        > The client secret (password) is displayed only once. When you create your bot, it's shown under the **Application Secrets** section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal.
         >
         > If you don't know the password, you'll need to create a new one by clicking on the `Generate New password` button.
 

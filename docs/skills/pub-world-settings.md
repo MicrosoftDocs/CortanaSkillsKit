@@ -2,7 +2,7 @@
 title: World Group Settings
 description: Describes how to fill out World Group section when publishing a Cortana skill.
 ms.topic: article
-ms.date: 05/14/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -78,19 +78,17 @@ For more information about the requirements for publishing to **World**, visit t
 
         ![Publisher Information](../media/images/world_settings-publisher_information.png) -->
 
-    7. **Privacy policy and terms of use** section
+    1. **Privacy policy and terms of use** section
 
         [Privacy policy and terms of use](../media/images/world_settings-privacy_policy_terms_of_use.png)
 
-    8. **Validation and testing instructions** section
+    1. **Validation and testing instructions** section
 
         [Validation and testing instructions](../media/images/world_settings-validation_testing_instructions.png)
 
 1. Click on the `Save` button.
 
-     The `Save` button is enabled only after all of the required fields are completed.
-
-    [Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
+         [Back to Channels, Save, Submit for Review](../media/images/world_settings-back-save-submit.png)
 
 1. Click `Submit for review`.
 

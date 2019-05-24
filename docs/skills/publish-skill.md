@@ -3,7 +3,7 @@ title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
 ms.topic: article
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.date: 04/23/2019
+ms.date: 05/24/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -17,7 +17,6 @@ keywords: cortana
 >
 > If you haven't created one yet, visit the [Create your first skill](./get-started.md) page.
 
-<!-- Deploy your Cortana skill to each of the three deployment groups. -->
 When you create your skill, it will automatically be deployed using the default settings:
 
 * [Default Settings](#default-settings)
@@ -82,8 +81,8 @@ After you submit your Cortana skill, it's locked while the Certification Team is
 
 You may withdraw your Cortana skill only during the following stages.
 
-- Prior to start of review
-- During review **[Is this still true?]**
+* Prior to start of review
+* During review **[Is this still true?]**
 
 Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, you must either delete the Cortana channel or write to us (skillsup@microsoft.com) asking us to take the skill down.
 
