@@ -82,7 +82,7 @@ After you submit your Cortana skill, it's locked while the Certification Team is
 You may withdraw your Cortana skill only during the following stages.
 
 * Prior to start of review
-* During review **[Is this still true?]**
+* During review
 
 Once the skill is approved and available to the world, the `Withdraw Your Submission` button is no longer available. If you want to withdraw your skill after approval, write to us (skillsup@microsoft.com) asking us to take the skill down.
 
