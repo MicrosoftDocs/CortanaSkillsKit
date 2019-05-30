@@ -138,6 +138,19 @@ Cortana skills should be designed for voice first, so consider this code that su
 - **Snooze** for 10 minutes
 based on simple keyword search.
 
+You will receive a JSON `value` attached to the response message with the `data` properties of the `Action.Submit` buttons, along with
+any `Input` fields with their `id` and `value` fields.  Given this example, if the user clicks the _Snooze_ button, they'll see
+```
+ "value": {
+      "x": "snooze",  <-- the Action.Submit data
+      "snooze": "5"   <-- the Input.ChoiceSet id and selected value
+    }
+```
+_You should ignore the `text` property on the message if a value is present._
+
+If the response is spoken, there will be a `text` response on the message, but no `value`.
+
+
 ### Respond in C#
 ```C#
 ...
