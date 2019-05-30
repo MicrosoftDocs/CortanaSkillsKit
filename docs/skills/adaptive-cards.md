@@ -40,10 +40,6 @@ The AdaptiveCards Designer provides an interactive card builder where you can se
 
 * [adaptivecards.io/designer](https://adaptivecards.io/designer)
 
->[!IMPORTANT]
-> 1. The speak object of an adaptive card needs to be copied to the Message for Cortana to speak the text.
-> 1. The speak object text needs to be wrapped in SSML `<speak>` tags (if it is not already).
-
 <!--
  The sample text block provides the title text for the sample card in the AdaptiveCards Visualizer.
 
@@ -69,6 +65,11 @@ The AdaptiveCards Designer provides an interactive card builder where you can se
  -->
  
 ## Create an AdaptiveCard
+You can create adaptive cards using `proxy pattern` helper classes in the [SDK](https://docs.microsoft.com/adaptive-cards/), or by directly using JSON following the [schema](https://docs.microsoft.com/adaptive-cards/authoring-cards/card-schema).
+
+>[!IMPORTANT]
+> 1. The speak object of an adaptive card needs to be copied to the Message for Cortana to speak the text.
+> 1. The speak object text needs to be wrapped in SSML `<speak>` tags (if it is not already).
 
 ### Create using .NET
 
