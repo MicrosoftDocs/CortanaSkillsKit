@@ -146,9 +146,11 @@ any `Input` fields with their `id` and `value` fields.  Given this example, if t
       "snooze": "5"   <-- the Input.ChoiceSet id and selected value
     }
 ```
-_You should ignore the `text` property on the message if a value is present._
+_You should ignore the `text` property on the message if a `value` is present._
 
 If the response is spoken, there will be a `text` response on the message, but no `value`.
+
+You should handle both cases.
 
 
 ### Respond in C#
