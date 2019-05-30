@@ -1,5 +1,5 @@
 ---
-title: Using adaptive cards in your skill
+title: Using AdaptiveCards in your skill
 description: Learn how to use adaptive cards in your bot-based skill.
 label: Conceptual
 
@@ -10,13 +10,13 @@ ms.topic: article
 keywords: cortana
 ---
 
-# Use adaptive cards in Your Cortana Skill
+# Use AdaptiveCards in Your Cortana Skill
 
 Cards are interface elements that you can use to enhance the user experience in your Cortana skill. As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](./cortana-device-type.md) to get device information.
   
 An adaptive card is the most versatile display card. It's customizable, and can include any combination of text, speech, images, buttons, and input fields.  
 
-## Adaptive cards  
+## AdaptiveCards  
 
 Adaptive cards provide the following options.  
 
@@ -26,17 +26,17 @@ Adaptive cards provide the following options.
 |**Richer text** | Text in your card is not limited to title, subtitle, and text fixed formats. Use a variety of font sizes, formats, and colors. |
 |**A single open card exchange format** | Use your existing cards in a common and consistent way and extend your cards with rich controls using a common schema.  |
 
-Adaptive cards use the open card exchange format. This format enables you to specify user interface content for all cards in your skill in a common and consistent way. You describe the content as a simple JSON object. The JSON content is natively displayed by the skill and automatically adapts to the look and feel of your skill.  _Note, Cortana currently support Adaptive Cards version 1.0._
+AdaptiveCards use the open card exchange format. This format enables you to specify user interface content for all cards in your skill in a common and consistent way. You describe the content as a simple JSON object. The JSON content is natively displayed by the skill and automatically adapts to the look and feel of your skill.  _Note, Cortana currently support Adaptive Cards version 1.0._
 
-Adaptive cards include elements, containers, actions, and inputs. A basic adaptive card includes:
+AdaptiveCards include elements, containers, actions, and inputs. A basic adaptive card includes:
 
 * an adaptive card root object,
 * an adaptive card body, which includes the elements of your card, and
 * actions for your adaptive card, which are typically displayed in an action bar at the bottom of your card.  
 
-## Adaptive Cards Designer
+## AdaptiveCards Designer
 
-The Adaptive Cards Designer provides an interactive card builder where you can see the resulting card JSON data.
+The AdaptiveCards Designer provides an interactive card builder where you can see the resulting card JSON data.
 
 * [adaptivecards.io/designer](https://adaptivecards.io/designer)
 
@@ -45,7 +45,7 @@ The Adaptive Cards Designer provides an interactive card builder where you can s
 > 1. The speak object text needs to be wrapped in SSML `<speak>` tags (if it is not already).
 
 <!--
- The sample text block provides the title text for the sample card in the Adaptive Cards Visualizer.
+ The sample text block provides the title text for the sample card in the AdaptiveCards Visualizer.
 
  ```json
  "type": "TextBlock",
@@ -123,15 +123,17 @@ msg.addAttachment({
 session.send(msg);
  ```
 
-## Respond to an AdaptiveCard
+## Respond to AdaptiveCards
 Take the [Calendar reminder](https://adaptivecards.io/samples/CalendarReminder.html) example on the AdaptiveCards website. 
 Note it has two `Action.Submit` buttons for _Snooze_ or _Late_ response.  For _Snooze_, there is a `Input.ChoiceSet` with
 standard values of 5, 10, and 15 minutes.
 
+Cortana will speak, _"Your  meeting about 'Adaptive Card design session' is starting at 12:30pm. Do you want to Snooze or do you want to send a late notification to the attendees?"_ and display:
+
  ![Sample card](../media/images/calendar_reminder.png)  
 
-Cortana skills should be designed for voice first, so consider this code that supports speech replies like
-- I'll be **late**
+Cortana skills should be designed for voice first, so consider this code that supports spoken replies like
+- I'll be **Late**
 - **Snooze** for 10 minutes
 based on simple keyword search.
 
