@@ -136,7 +136,8 @@ Cortana will speak, _"Your  meeting about 'Adaptive Card design session' is star
 Cortana skills should be designed for voice first, so consider this code that supports spoken replies like
 - I'll be **Late**
 - **Snooze** for 10 minutes
-based on simple keyword search.
+
+based on simple keyword search (in bold).
 
 You will receive a JSON `value` attached to the response message with the `data` properties of the `Action.Submit` buttons, along with
 any `Input` fields with their `id` and `value` fields.  Given this example, if the user clicks the _Snooze_ button, they'll see
@@ -232,7 +233,6 @@ You should handle both cases.
         let message = session.message;
         var response = new builder.Message(session);
 
-        session.conversationData.step = 1; // Reset to first step
         if (message.value) {
             // Got an Action Submit payload
             let xValue = message.value.x;
