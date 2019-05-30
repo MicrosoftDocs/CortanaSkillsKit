@@ -137,6 +137,10 @@ based on simple keyword search.
 
 ### Respond in C#
 ```C#
+...
+        // match 1 or 2 digits and white space and "minute"
+        private static Regex regexMinutes = new Regex(@"(\d{1,2})\s+minute", RegexOptions.IgnoreCase);
+...
                 var message = await argument;
                 var response = context.MakeMessage();
 	    
