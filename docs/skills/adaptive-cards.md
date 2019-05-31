@@ -27,7 +27,8 @@ Adaptive cards provide the following options.
 |**A single open card exchange format** | Use your existing cards in a common and consistent way and extend your cards with rich controls using a common schema.  |
 
 AdaptiveCards use the open card exchange format. This format enables you to specify user interface content for all cards in your skill in a common and consistent way. You describe the content as a simple JSON object. The JSON content is natively displayed by the skill and automatically adapts to the look and feel of your skill.
- [!Note]
+
+>[!NOTE]
 >Cortana currently supports Adaptive Cards version 1.0.
 
 AdaptiveCards include elements, containers, actions, and inputs. A basic adaptive card includes:
@@ -127,7 +128,7 @@ You will receive a JSON `value` attached to the response message with the `data`
     }
 ```
 
-[!IMPORTANT]
+>[!IMPORTANT]
 >Cortana responds differently depending on how the user responds. The example returns data in the JSON `value` because the user pressed the button on the card. If the response is spoken, there will be a `text` response on the message, but no `value`.  
 >You should ignore the `text` property on the message if a `value` is present._ 
 >Your code must handle both cases.
@@ -143,6 +144,7 @@ You will receive a JSON `value` attached to the response message with the `data`
 ...
                 var message = await argument;
                 var response = context.MakeMessage();
+
                 string sValue = "unknown";
 
                 if (message.Value != null)
