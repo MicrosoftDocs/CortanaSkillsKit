@@ -129,7 +129,7 @@ You will receive a JSON `value` attached to the response message with the `data`
 ```
 
 >[!IMPORTANT]
->Cortana responds differently depending on how the user responds. The example returns data in the JSON `value` because the user pressed the button on the card. If the response is spoken, there will be a `text` response on the message, but no `value`.  
+>Cortana responds differently depending on how the user responds. The example returns data in the JSON `value` because the user pressed the button on the card. If the response is spoken, there will be a `text` response, but no `value`.  
 >You should ignore the `text` property on the message if a `value` is present.  
 >Your code must handle both cases.
 
