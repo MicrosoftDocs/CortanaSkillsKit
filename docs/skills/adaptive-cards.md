@@ -143,7 +143,6 @@ You will receive a JSON `value` attached to the response message with the `data`
 ...
                 var message = await argument;
                 var response = context.MakeMessage();
-
                 string sValue = "unknown";
 
                 if (message.Value != null)
