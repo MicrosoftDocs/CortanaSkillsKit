@@ -129,9 +129,13 @@ You will receive a JSON `value` attached to the response message with the `data`
 ```
 
 >[!IMPORTANT]
->Cortana responds differently depending on how the user responds. The example returns data in the JSON `value` because the user pressed the button on the card. If the response is spoken, there will be a `text` response, but no `value`.  
->You should ignore the `text` property on the message if a `value` is present.  
->Your code must handle both cases.
+>Cortana responds differently depending on how the user responds. If the user clicks the button, Cortana returns the value property. If the user speaks the response, Cortana sends the text property.
+
+The example returns data in the JSON `value` because the user pressed the button on the card. If the response is spoken, there will be a `text` response, but no `value`.
+
+You should ignore the `text` property on the message if a `value` is present.
+
+Your code must handle both cases.
 
 # [C#](#tab/cs)
 
