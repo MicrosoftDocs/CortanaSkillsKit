@@ -101,7 +101,8 @@ Check the following
 * If you just saved, then click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
 * Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
 
-### I am not able to create more than 20 Cortana skills  
+<!-- ### I am not able to create more than 20 Cortana skills   -->
+### I am the only one who can invoke my Cortana skill  
 
 You may associate a maximum of 20 skills to a Microsoft accounts (MSA). If you create more than 20 skills, then use an additional MSA.  
 <!-- confirm this limit still exists -->  
@@ -114,7 +115,7 @@ You will get this error when the service endpoint you created fails to respond. 
 * If the response message is not formatted correctly based on the Bot Framework schema.  
 * If your service returns an http status code other than 200.  
 
-### I am the only one who can invoke my Cortana skill
+### I am the only one who can invoke my Cortana skill  
 
 Ensure that you have deployed your skill.
 
