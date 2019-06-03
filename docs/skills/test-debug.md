@@ -113,6 +113,18 @@ You will get this error when the service endpoint you created fails to respond. 
 * If the response message is not formatted correctly based on the Bot Framework schema.  
 * If your service returns an http status code other than 200.  
 
+### I am the only one who can invoke my Cortana skill
+
+Ensure that you have deployed your skill.
+
+* If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
+* If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
+
+See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
+
+>[!IMPORTANT]
+> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
+
 ### I am able to invoke my Cortana skill, but no one else can  
 
 Ensure that you have deployed your skill.
