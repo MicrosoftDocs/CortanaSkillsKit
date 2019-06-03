@@ -4,7 +4,7 @@ description: Learn how to use adaptive cards in your bot-based skill.
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 02/12/2019
+ms.date: 06/03/2019
 ms.topic: article
 
 keywords: cortana
@@ -75,7 +75,9 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
 
  await context.PostAsync(response);
  context.Wait(MessageReceived);
+
  ```  
+
 # [JavaScript](#tab/js)
 
 ### Create using JavaScript
@@ -135,11 +137,12 @@ The example returns data in the JSON `value` because the user pressed the button
 
 You should ignore the `text` property on the message if a `value` is present.
 
-Your code must handle both cases.
+Your code must handle both cases in order to handle conversations correctly.
 
 # [C#](#tab/cs)
 
 ### Respond in C#
+
 ```C#
 ...
         // match 1 or 2 digits and white space and "minute"
@@ -216,6 +219,7 @@ Your code must handle both cases.
 # [JavaScript](#tab/js2)
 
 ### Respond in JavaScript
+
 ```JavaScript
         let message = session.message;
         var response = new builder.Message(session);
