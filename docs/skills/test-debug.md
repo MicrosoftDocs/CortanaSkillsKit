@@ -102,7 +102,7 @@ Check the following
 * Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
 
 <!-- ### I am not able to create more than 20 Cortana skills   -->
-### I am the only one who can invoke my Cortana skill  
+### I am the only one who can invoke my Cortana skills  
 
 You may associate a maximum of 20 skills to a Microsoft accounts (MSA). If you create more than 20 skills, then use an additional MSA.  
 <!-- confirm this limit still exists -->  
