@@ -123,8 +123,9 @@ Ensure that you have deployed your skill.
 
 See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
 
+<!-- 
 >[!IMPORTANT]
-> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
+> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.   -->
 
 ### I am able to invoke my Cortana skill, but no one else can  
 
