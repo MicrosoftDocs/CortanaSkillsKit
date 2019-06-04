@@ -60,7 +60,6 @@ The following provides suggestions for solving common problems.
 
 | Issue  |  
 |:---    |  
-| [I am providing a very long header here for testing purposes](#i-am-providing-a-very-long-header-here-for-testing-purposes)
 | [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill) |  
 | [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) |  
 | [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |  
@@ -68,10 +67,9 @@ The following provides suggestions for solving common problems.
 | [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills) |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
 | [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
-<!-- | [I am the only one who can invoke my Cortana skills](#i_am_the_only_one_who_can_invoke_my_cortana_skills) | -->
-<!-- | [I am the only one who can invoke my Cortana skill](#i_am_the_only_one_who_can_invoke_my_cortana_skill) |  
+| [I am the only one who can invoke my Cortana skill](#i-am-the-only-one-who-can-invoke-my-cortana-skill) |  
 | [I am able to invoke my Cortana skill but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
- -->
+
 
 ### I am providing a very long header here for testing purposes
 
@@ -134,10 +132,6 @@ Ensure that you have deployed your skill.
 * If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
 
 See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
-
-<!-- 
->[!IMPORTANT]
-> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.   -->
 
 ### I am able to invoke my Cortana skill, but no one else can  
 
