@@ -62,8 +62,8 @@ The following provides suggestions for solving common problems.
 |:---                                                                                                                                     |  
 | [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill)                                                                                    |  
 | [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) | 
-| [I am the only one who can invoke my Cortana skills](#i_am_the_only_one_who_can_invoke_my_cortana_skills) |
-<!-- | [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |   -->
+<!-- | [I am the only one who can invoke my Cortana skills](#i_am_the_only_one_who_can_invoke_my_cortana_skills) | -->
+| [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |  
 | [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error) | 
 | [I am the only one who can invoke my Cortana skill](#i_am_the_only_one_who_can_invoke_my_cortana_skill) |
 | [I am able to invoke my Cortana skill but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
@@ -102,8 +102,8 @@ Check the following
 * If you just saved, then click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
 * Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
 
-<!-- ### I am not able to create more than 20 Cortana skills   -->
-### I am the only one who can invoke my Cortana skills  
+### I am not able to create more than 20 Cortana skills  
+<!-- ### I am the only one who can invoke my Cortana skills   -->
 
 You may associate a maximum of 20 skills to a Microsoft accounts (MSA). If you create more than 20 skills, then use an additional MSA.  
 <!-- confirm this limit still exists -->  
