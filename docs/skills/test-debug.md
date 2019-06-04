@@ -3,7 +3,7 @@ title: Testing and debugging Cortana skills
 description: Tips on testing and debugging Cortana skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 03/04/2019
+ms.date: 06/04/2019
 ms.topic: article
 
 keywords: cortana
@@ -67,7 +67,6 @@ The following provides suggestions for solving common problems.
 | [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills) |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
 | [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
-| [I am the only one who can invoke my Cortana skill](#i-am-the-only-one-who-can-invoke-my-cortana-skill) |  
 | [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-can) |  
 
 
@@ -135,15 +134,6 @@ If Cortana reads out the XML characters of your invocation, then the XML is like
 ### Cortana returns a 403 Forbidden error  
 
 Cortana tried to connect to your service, but received an https status code of `403 Forbidden`. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.
-
-### I am the only one who can invoke my Cortana skill  
-
-Ensure that you have deployed your skill.
-
-* If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
-* If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
-
-See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
 
 ### I am able to invoke my Cortana skill, but no one else can  
 
