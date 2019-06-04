@@ -68,7 +68,7 @@ The following provides suggestions for solving common problems.
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
 | [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
 | [I am the only one who can invoke my Cortana skill](#i-am-the-only-one-who-can-invoke-my-cortana-skill) |  
-| [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
+| [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-can) |  
 
 
 ### I am providing a very long header here for testing purposes
@@ -124,6 +124,18 @@ You will get this error when the service endpoint you created fails to respond. 
 * If the response message is not formatted correctly based on the Bot Framework schema.  
 * If your service returns an http status code other than 200.  
 
+### I signed into Bot Framework but do not see my Cortana skills  
+
+Ensure that you signed into Bot Framework with the same MSA that you used to configure the Cortana channel within the Azure portal.  
+
+### SSML reads XML characters aloud
+
+If Cortana reads out the XML characters of your invocation, then the XML is likely not valid. Verify that all opening tags have closing tags and vice-versa. Consider using an XML library to verify that your XML is properly formatted.  
+
+### Cortana returns a 403 Forbidden error  
+
+Cortana tried to connect to your service, but received an https status code of `403 Forbidden`. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.
+
 ### I am the only one who can invoke my Cortana skill  
 
 Ensure that you have deployed your skill.
@@ -144,18 +156,6 @@ See [Publishing Cortana skills](./publish-skill.md) for details on the publishin
 
 >[!IMPORTANT]
 > If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
-
-### I signed into Bot Framework but do not see my Cortana skills  
-
-Ensure that you signed into Bot Framework with the same MSA that you used to configure the Cortana channel within the Azure portal.  
-
-### SSML reads XML characters aloud
-
-If Cortana reads out the XML characters of your invocation, then the XML is likely not valid. Verify that all opening tags have closing tags and vice-versa. Consider using an XML library to verify that your XML is properly formatted.  
-
-### Cortana returns a 403 Forbidden error  
-
-Cortana tried to connect to your service, but received an https status code of `403 Forbidden`. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.
 
 ## Additional resources
 
