@@ -3,7 +3,7 @@ title: Testing and debugging Cortana skills
 description: Tips on testing and debugging Cortana skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 03/04/2019
+ms.date: 06/04/2019
 ms.topic: article
 
 keywords: cortana
@@ -58,16 +58,25 @@ If Cortana reports an error when running your skill, then follow the steps below
 
 The following provides suggestions for solving common problems.
 
-| Issue                                                                                                                                |  
-|:---                                                                                                                                     |  
-| [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill)                                                                                    |  
-| [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) | 
-| [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills)                                                               |  
-| [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error)                                                 |  
-| [I am able to invoke my Cortana skill, but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able)                                                |  
-| [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills)       |  
-| [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud)                                                                     |  
-| [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error)                                                                     |  
+| Issue  |  
+|:---    |  
+| [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill) |  
+| [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) |  
+| [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |  
+| [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error) | 
+| [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills) |  
+| [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
+| [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
+| [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-can) |  
+
+
+### I am providing a very long header here for testing purposes
+
+Then there's some text here, followed by a list.
+
+* List element one
+* Element two
+* And element three.
 
 ### I am not able to invoke my Cortana skill  
 
@@ -101,6 +110,7 @@ Check the following
 * Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
 
 ### I am not able to create more than 20 Cortana skills  
+<!-- ### I am the only one who can invoke my Cortana skills   -->
 
 You may associate a maximum of 20 skills to a Microsoft accounts (MSA). If you create more than 20 skills, then use an additional MSA.  
 <!-- confirm this limit still exists -->  
@@ -113,18 +123,6 @@ You will get this error when the service endpoint you created fails to respond. 
 * If the response message is not formatted correctly based on the Bot Framework schema.  
 * If your service returns an http status code other than 200.  
 
-### I am able to invoke my Cortana skill, but no one else can  
-
-Ensure that you have deployed your skill.
-
-* If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
-* If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
-
-See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
-
->[!IMPORTANT]
-> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
-
 ### I signed into Bot Framework but do not see my Cortana skills  
 
 Ensure that you signed into Bot Framework with the same MSA that you used to configure the Cortana channel within the Azure portal.  
@@ -136,6 +134,18 @@ If Cortana reads out the XML characters of your invocation, then the XML is like
 ### Cortana returns a 403 Forbidden error  
 
 Cortana tried to connect to your service, but received an https status code of `403 Forbidden`. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.
+
+### I am able to invoke my Cortana skill, but no one else can  
+
+Ensure that you have deployed your skill.
+
+* If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
+* If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
+
+See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
+
+>[!IMPORTANT]
+> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
 
 ## Additional resources
 

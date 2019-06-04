@@ -11,7 +11,7 @@ keywords: cortana
 
 # Launching apps or websites from a Cortana skill
 
-With Cortana, it is possible for your skill to launch an app or website. To launch an app or website, include the `channelData` property in the message that you send Cortana. Set the `channelData` property to an [Action](#Action-object) object that defines the action that you want Cortana to perform. For examples that show how to launch apps and websites, see:
+With Cortana, it is possible for your skill to launch an app or website. To launch an app or website, include the `channelData` property in the message that you send Cortana. Set the `channelData` property to an [Action object](#action-object) that defines the action that you want Cortana to perform. For examples that show how to launch apps and websites, see:
 
 - [Launch a website](#launch-a-website)
 - [Launching and deep linking an app](#launching-and-deep-linking-an-app)
