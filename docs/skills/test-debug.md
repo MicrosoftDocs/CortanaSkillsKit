@@ -68,7 +68,7 @@ The following provides suggestions for solving common problems.
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
 | [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
 | [I am the only one who can invoke my Cortana skill](#i-am-the-only-one-who-can-invoke-my-cortana-skill) |  
-| [I am able to invoke my Cortana skill but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
+| [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
 
 
 ### I am providing a very long header here for testing purposes
