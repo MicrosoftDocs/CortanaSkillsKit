@@ -60,6 +60,7 @@ The following provides suggestions for solving common problems.
 
 | Issue  |  
 |:---    |  
+| [I am providing a very long header here for testing purposes](#i-am-providing-a-very-long-header-here-for-testing-purposes)
 | [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill) |  
 | [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) |  
 | [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |  
@@ -71,6 +72,14 @@ The following provides suggestions for solving common problems.
 <!-- | [I am the only one who can invoke my Cortana skill](#i_am_the_only_one_who_can_invoke_my_cortana_skill) |  
 | [I am able to invoke my Cortana skill but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
  -->
+
+### I am providing a very long header here for testing purposes
+
+Then there's some text here, followed by a list.
+
+* List element one
+* Element two
+* And element three.
 
 ### I am not able to invoke my Cortana skill  
 
