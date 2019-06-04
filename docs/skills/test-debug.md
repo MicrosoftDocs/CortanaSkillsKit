@@ -62,14 +62,14 @@ The following provides suggestions for solving common problems.
 |:---    |  
 | [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill) |  
 | [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) |  
-<!-- | [I am the only one who can invoke my Cortana skills](#i_am_the_only_one_who_can_invoke_my_cortana_skills) | -->
 | [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |  
 | [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error) | 
 | [I am the only one who can invoke my Cortana skill](#i_am_the_only_one_who_can_invoke_my_cortana_skill) |  
-| [I am able to invoke my Cortana skill but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |   
+| [I am able to invoke my Cortana skill but no one else is able](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-is-able) |  
 | [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills) |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
 | [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
+<!-- | [I am the only one who can invoke my Cortana skills](#i_am_the_only_one_who_can_invoke_my_cortana_skills) | -->
 
 ### I am not able to invoke my Cortana skill  
 
