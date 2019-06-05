@@ -10,10 +10,12 @@ keywords: cortana
 
 # Getting started with Cortana skills
 
-To create a skill, use the [Bot Framework](https://docs.microsoft.com/bot-framework) to create a speech bot. The framework provides two options that you can use to build your bot: a .NET SDK or a Node.js SDK.
+To create a skill, use the [Bot Framework](https://docs.microsoft.com/bot-framework) to create a bot. The framework provides two options that you can use to build your bot: a .NET SDK or a Node.js SDK.
 
 >[!TIP]
 > For an overview of the framework, see [How the Bot Framework works](https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-3.0). These are the Bot Framework topics that will tell you what you need to know in order to build and deploy your first bot.
+
+After you create a bot, you need to enable speech.
 
 ## Use the online editor to create your Cortana skill
 
