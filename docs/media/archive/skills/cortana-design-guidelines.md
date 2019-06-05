@@ -307,5 +307,5 @@ When one of the following errors occur, Cortana displays the same generic error 
 
 ## Related articles
 
-<!-- - [Principles of Cortana skills design](design-principles.md) commented out for archiving -->
-- [Cortana skills](../../skills/get-started.md)
+<!-- - [Principles of Cortana skills design](design-principles.md) commented out for archiving
+- [Cortana skills](../../skills/get-started.md) -->
