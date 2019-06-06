@@ -3,7 +3,7 @@ title: Before you start
 description: Advice on getting started developing Cortana skills.
 label: Conceptual
 ms.author: v-daturc
-ms.date: 03/26/2019
+ms.date: 06/06/2019
 ms.topic: article
 keywords: cortana
 ---
