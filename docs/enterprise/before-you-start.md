@@ -18,7 +18,13 @@ As an example, instead of trying to provide a list of a dozen choices on the scr
 
 You're free to use whatever workflow suits you best, but we've found that this one works well for creating Cortana skills.
 
-   ![Cortana's Notebook](../media/images/development-lifecycle.png)
+   ![Development lifecycle](../media/images/development-lifecycle.png)
+
+## Enterprise-specific app lifecycle
+
+The development lifecycle shown above applies to both enterprise and consumer skills. Here's a more detailed look at the enterprise app lifecycle.
+
+![Enterprise skill lifecycle](../media/images/enterprise-app-lifecycle.png)
 
 ## Next steps
 
