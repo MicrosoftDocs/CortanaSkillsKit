@@ -20,7 +20,7 @@ You're free to use whatever workflow suits you best, but we've found that this o
 
    ![Development lifecycle](../media/images/development-lifecycle.png)
 
-## Enterprise-specific app lifecycle
+## App lifecycle
 
 The development lifecycle shown above applies to both enterprise and consumer skills. Here's a more detailed look at the enterprise and consumer app lifecycles.
 
