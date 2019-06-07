@@ -22,9 +22,17 @@ You're free to use whatever workflow suits you best, but we've found that this o
 
 ## Enterprise-specific app lifecycle
 
-The development lifecycle shown above applies to both enterprise and consumer skills. Here's a more detailed look at the enterprise app lifecycle.
+The development lifecycle shown above applies to both enterprise and consumer skills. Here's a more detailed look at the enterprise and consumer app lifecycles.
+
+# [Enterprise](#tab/e)
 
 ![Enterprise skill lifecycle](../media/images/enterprise-app-lifecycle.png)
+
+# [Consumer](#tab/c)
+
+![Consumer skill lifecycle](../media/images/consumer-app-lifecycle.png)
+
+---
 
 ## Next steps
 
