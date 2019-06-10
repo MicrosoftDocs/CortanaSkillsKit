@@ -62,58 +62,31 @@ The following provides suggestions for solving common problems.
 |:---    |  
 | [I am not able to invoke my Cortana skill](#i-am-not-able-to-invoke-my-cortana-skill) |  
 | [Cortana is spelling my invocation name incorrectly when I say it](#cortana-is-spelling-my-invocation-name-incorrectly-when-i-say-it) |  
-| [I am not able to create more than 20 Cortana skills](#i-am-not-able-to-create-more-than-20-cortana-skills) |  
 | [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error) | 
 | [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills) |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
 | [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
 | [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-can) |  
 
-
-### I am providing a very long header here for testing purposes
-
-Then there's some text here, followed by a list.
-
-* List element one
-* Element two
-* And element three.
-
 ### I am not able to invoke my Cortana skill  
 
 Check the following
 
-* If you just saved, then click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
-* Verify that you enabled debugging.  
-
-    >[!TIP]
-    > For more information, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.  
-
+* If you just made changes and saved, click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
+* Verify that debugging is enabled. For more information, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.  
 * Verify that you signed into Cortana using the same MSA that you used to sign into Bot Framework.  
 * Ensure that you are properly invoking your skill.  
-* Verify that Cortana uses the correct name when invoked.  The Cortana Canvas types the name in the `Type here to search box` as you speak.  
-* Ensure that your device is set to one of the allowed locales.  
-
-    >[!TIP]
-    > For more information, visit the [Supported Cortana locales](./supported-locales.md) page.  
-
-* Ensure that your microphone is configured.  
-
-    >[!TIP]
-    > For more information, visit the [Get started](./get-started.md) page.  
+* Verify that Cortana uses the correct name when invoked. The Cortana Canvas types the name in the `Type here to search box` as you speak.  
+* Check that your device is set to one of the allowed locales. The [Supported Cortana locales](./supported-locales.md) page has more information.  
+* Make sure that your microphone is configured. Visit the [Get started](./get-started.md) page for more information.  
 
 ### Cortana is spelling my invocation name incorrectly when I say it  
 
-Check the following
+Check the following:
 
-* If you just saved for the first time, then updates to Cortana may be delayed up to 10 minutes before recognizing the invocation name of your Cortana skill.  
-* If you just saved, then click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
+* If you just saved for the first time, updates to Cortana may be delayed up to 10 minutes before recognizing the invocation name of your Cortana skill.  
+* If you just made changes and saved, click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
 * Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Guidelines](./cortana-invocation-guidelines.md) page.  
-
-### I am not able to create more than 20 Cortana skills  
-<!-- ### I am the only one who can invoke my Cortana skills   -->
-
-You may associate a maximum of 20 skills to a Microsoft accounts (MSA). If you create more than 20 skills, then use an additional MSA.  
-<!-- confirm this limit still exists -->  
 
 ### I get a `DownstreamDependencyFailed` error  
 
@@ -142,10 +115,10 @@ Ensure that you have deployed your skill.
 * If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
 * If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
 
-See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
+    See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.
 
->[!IMPORTANT]
-> If your skill includes code that checks the skill ID in the request, then you must adjust the ID since the value is different between default, test group, and world versions of your Cortana skill.  
+    >[!IMPORTANT]
+    > If your skill includes code that checks the skill ID in the request, then you have to remember to change the ID as you move between steps. The ID value will be different for each of the default, test group, and world versions of your Cortana skill.  
 
 ## Additional resources
 
@@ -177,27 +150,3 @@ See [Publishing Cortana skills](./publish-skill.md) for details on the publishin
 
 * [Bot Framework troubleshooting guide](https://aka.ms/hsjcm9)  
 * [Troubleshooting Bot Framework authentication](https://aka.ms/aei8qy)  
-
-<!--
-![Debugging using Bot Framework Channel Emulator](../media/images/bot-emulator-debugging.png)
-
-**Not all Bot Framework Cards are supported in Cortana**
-
-Currently Cortana supports the following Bot Framework cards: Hero Card, Thumbnail Card, Receipt Card.
--->
-
-<!-- //TODO: AIT
-## Custom skills imported from Alexa
-
-*Third-party trademarks used herein are the property of their respective owners.  Use of such marks does not imply any affiliation, sponsorship, or endorsement.*
-
-If you are importing a skill from Alexa, it should be safe to assume that your skill was working on Alexa. The following are some tips on testing and debugging issues with Alexa import skills.
-
-**I can trigger my Alexa imported skill but it is not working**
-
-* Make sure to either disable the Alexa application ID verification in the Alexa code as Cortana will pass a different application ID (skill ID) or update your service to accept the skill id of your Cortana skill. If your code is a Node.js function, check to see if there is an **APP_ID** property in it. If it is present, add an if statement to check that the request contains either your Alexa skill application ID or your Cortana skill ID.
-
-**Which image URL is Cortana using?**
-
-Cortana will use the small image URL if it is available. If it isn't, it will then fall back to the large image URL if it is available and will scale the image as needed. The Cortana card scales images to 100% of the width of Cortana's canvas and then scales the height such that it maintains the original image aspect ratio.
--->

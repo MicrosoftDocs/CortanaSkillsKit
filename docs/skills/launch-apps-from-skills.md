@@ -18,103 +18,6 @@ With Cortana, it is possible for your skill to launch an app or website. To laun
 - [Start a Skype call or IM](#start-a-skype-call-or-im)
 - [Create an email](#create-an-email)
 
-
-## Launch a website
-
-The following example shows how to specify the channel data used to launch the Bing website.
-
-```csharp
-var message = context.MakeMessage() as IMessageActivity;
-reply.ChannelData = JObject.FromObject(new {
-     action = new { type = "LaunchUri", uri = "https://bing.com"}
-});
-await context.PostAsync(message);
-```
-
-## Launching and deep linking an app
-
-To launch an app, use the app's protocol activation URL. In Windows 10, the built-in Maps app supports launching and deep linking. For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app). 
-
-The following example shows how to specify the channel data used to launch the Maps app and center the map over Paris.
-
-```csharp
-var message = context.MakeMessage() as IMessageActivity;
-message.ChannelData = JObject.FromObject(new {
-     action = new { type = "LaunchUri", uri = "bingmaps:?where=Paris"}
-});
-await context.PostAsync(message);
-```
-
-The following image shows the launched Map app.
-
-![Map App centered over Paris](../media/images/launched-map-app.png)
-
-
-## Start a Skype call or IM
-
-If the user has Skype installed, they can launch it to to start a call or instant message conversation in [Skype for Business](https://technet.microsoft.com/library/gg398376(v=ocs.15).aspx) or the home version of [Skype](https://msdn.microsoft.com/library/office/dn745878.aspx) on Windows, Android, and iOS.
-
-**Skype for Business**
-
-If the user is signed into Skype for Business, the following code opens an instant message conversation window with "someone@example.com".
-
-```csharp
-var message = context.MakeMessage() as IMessageActivity;
-message.ChannelData = JObject.FromObject(new
-{
-    action = new { type = "LaunchUri", uri = "sip:someone@example.com" }
-});
-await context.PostAsync(message);
-```
-
-If the user is signed into Skype for Business, the following code opens a window and readies a phone call to "123123123123".
-
-```csharp
-var message = context.MakeMessage() as IMessageActivity;
-message.ChannelData = JObject.FromObject(new
-{
-    action = new { type = "LaunchUri", uri = "tel:123123123123" }
-});
-await context.PostAsync(message);
-```
-
-The following image shows the launched Skype for Business window.
-
-![Making a Skype call](../media/images/make-a-call.png)
-
-
-**Skype**
-
-If the user is signed in to the standard version of Skype, the following code shows how to start a call with Skype user, echo123.
-
-```csharp
-var message = context.MakeMessage() as IMessageActivity;
-message.ChannelData = JObject.FromObject(new
-{
-    action = new { type = "LaunchUri", uri = "skype:echo123?call" }
-});
-await context.PostAsync(message);
-```
-
-## Create an email
-
-To send an email to a user, use the [mailto URI protocol](https://msdn.microsoft.com/library/jj710215(v=vs.85).aspx). The following example shows how to create an email in the user's email client that's ready for them to send. The example creates and email addressed to "someone@example.com", with a subject line of "This is the subject", and a body of "This is the body".
-
-```csharp
-var message = context.MakeMessage() as IMessageActivity;
-message.ChannelData = JObject.FromObject(new
-{
-    action = new { type = "LaunchUri", uri = "mailto:someone@example.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body" }
-});
-await context.PostAsync(message);
-```
-
-The following image shows the crafted email.
-
-![Created email](../media/images/created-email.png)
-
-
-
 ## Cortana channel data objects used to launch apps and websites
 
 The following are the objects that you use to specify the channel data that you send Cortana.
@@ -135,3 +38,187 @@ Defines the action to perform.
 |----------|------|-------------|
 | type | string | The type of action to perform. The possible values are:<ul><li>LaunchUri</li></ul>
 | uri | string | The URI of the app or website to launch.  
+
+
+## Launch a website
+
+The following example shows how to specify the channel data used to launch the Bing website.
+
+```csharp
+var message = context.MakeMessage() as IMessageActivity;
+reply.ChannelData = JObject.FromObject(new {
+     action = new { type = "LaunchUri", uri = "https://bing.com"}
+});
+await context.PostAsync(message);
+```
+
+```JavaScript
+var msg = new builder.Message(session)
+     .sourceEvent(
+       {
+       cortana: {
+        action: {
+          type: "LaunchUri",
+          uri: "https://bing.com"
+          }
+        }
+    });
+    session.endConversation(msg); 
+```
+
+## Launching and deep linking an app
+
+To launch an app, use the app's protocol activation URL. In Windows 10, the built-in Maps app supports launching and deep linking. For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app). 
+
+The following example shows how to specify the channel data used to launch the Maps app and center the map over Paris.
+You can find documentation on UWP protocol handlers [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app).
+
+```csharp
+var message = context.MakeMessage() as IMessageActivity;
+message.ChannelData = JObject.FromObject(new {
+     action = new { type = "LaunchUri", uri = "bingmaps:?where=Paris"}
+});
+await context.PostAsync(message);
+```
+
+```JavaScript
+var msg = new builder.Message(session)
+     .sourceEvent(
+       {
+       cortana: {
+        action: {
+          type: "LaunchUri",
+          uri: "bingmaps:?where=Paris"
+          }
+        }
+    });
+    session.endConversation(msg); 
+```
+
+The following image shows the launched Map app.
+
+![Map App centered over Paris](../media/images/launched-map-app.png)
+
+
+## Start a Skype call or IM
+
+If the user has Skype installed, they can launch it to to start a call or instant message conversation in [Skype for Business](https://technet.microsoft.com/library/gg398376(v=ocs.15).aspx) or the home version of [Skype](https://msdn.microsoft.com/library/office/dn745878.aspx) on Windows, Android, and iOS.
+
+**Skype for Business**
+
+If the user is signed into Skype for Business, the following code opens an instant message conversation window with "someone@example.com" because there is limited support for `sip` protocol [RFC3261](https://www.ietf.org/rfc/rfc3261.txt).
+
+```csharp
+var message = context.MakeMessage() as IMessageActivity;
+message.ChannelData = JObject.FromObject(new
+{
+    action = new { type = "LaunchUri", uri = "sip:someone@example.com" }
+});
+await context.PostAsync(message);
+```
+
+```JavaScript
+var msg = new builder.Message(session)
+     .sourceEvent(
+       {
+       cortana: {
+        action: {
+          type: "LaunchUri",
+          uri: "sip:someone@example.com"
+          }
+        }
+    });
+    session.endConversation(msg); 
+```
+
+If the user is signed into Skype for Business, the following code opens a window and readies a phone call to "123123123123"
+as there is limited support for `tel` protocol [RFC3966](https://www.ietf.org/rfc/rfc3966.txt).
+
+
+```csharp
+var message = context.MakeMessage() as IMessageActivity;
+message.ChannelData = JObject.FromObject(new
+{
+    action = new { type = "LaunchUri", uri = "tel:123123123123" }
+});
+await context.PostAsync(message);
+```
+
+```JavaScript
+var msg = new builder.Message(session)
+     .sourceEvent(
+       {
+       cortana: {
+        action: {
+          type: "LaunchUri",
+          uri: ""tel:123123123123"
+          }
+        }
+    });
+    session.endConversation(msg); 
+```
+
+The following image shows the launched Skype for Business window.
+
+![Making a Skype call](../media/images/make-a-call.png)
+
+
+**Skype**
+
+If the user is signed in to the standard version of Skype, the following code shows how to start a call with Skype user, echo123.
+The URI API reference is [here](https://docs.microsoft.com/skype-sdk/skypeuris/skypeuriapireference).
+
+```csharp
+var message = context.MakeMessage() as IMessageActivity;
+message.ChannelData = JObject.FromObject(new
+{
+    action = new { type = "LaunchUri", uri = "skype:echo123?call" }
+});
+await context.PostAsync(message);
+```
+
+```JavaScript
+var msg = new builder.Message(session)
+     .sourceEvent(
+       {
+       cortana: {
+        action: {
+          type: "LaunchUri",
+          uri: "skype:echo123?call"
+          }
+        }
+    });
+    session.endConversation(msg); 
+```
+
+## Create an email
+
+To send an email to a user, use the [mailto URI protocol](https://msdn.microsoft.com/library/jj710215(v=vs.85).aspx). The following example shows how to create an email in the user's email client that's ready for them to send. The example creates and email addressed to "someone@example.com", with a subject line of "This is the subject", and a body of "This is the body".
+
+```csharp
+var message = context.MakeMessage() as IMessageActivity;
+message.ChannelData = JObject.FromObject(new
+{
+    action = new { type = "LaunchUri", uri = "mailto:someone@example.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body" }
+});
+await context.PostAsync(message);
+```
+
+```JavaScript
+var msg = new builder.Message(session)
+     .sourceEvent(
+       {
+       cortana: {
+        action: {
+          type: "LaunchUri",
+          uri: "mailto:someone@example.com?subject=This%20is%20the%20subject&body=This%20is%20the%20body"
+          }
+        }
+    });
+    session.endConversation(msg); 
+```
+
+The following image shows the crafted email.
+
+![Created email](../media/images/created-email.png)
+

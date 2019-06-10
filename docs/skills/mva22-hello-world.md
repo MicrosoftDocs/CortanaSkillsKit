@@ -34,6 +34,15 @@ Specify your subscription plan, location, app name, and the bot template you wan
 
 ![Create Pane](../media/images/mva22_create.png)
 
+
+> [!NOTE]
+> The process described automatically create an Azure App Registration, providing an App ID and password.
+> There are times you want to create these manually (or have an IT administrator create them). In these cases,
+> please review the [App Registration documentation](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+> Cortana requires that access tokens be version 2, and that the skill (app) be multi-tenant.
+> You can verify the manifest under App Registrations, and check `"accessTokenAcceptedVersion": 2` and     
+> `"signInAudience": "AzureADandPersonalMicrosoftAccount"` are set.  
+
 It may take a while to provision and initialize your bot. When the process is complete, you'll be taken to a screen that lists your resource. From here, you can test your bot. If it's not listed under `Recent resources`, click on `See all your resources`.
 
 ![Resource pane](../media/images/mva22_resource_pane.png)
