@@ -61,6 +61,15 @@ As a suggestion for designing successful conversations, think about these questi
 
 Does the dialog allow the user to correct or cancel an activity gracefully? Can the user get contextual help easily? Can they get feedback, or a summary of where you are in the conversation?
 
+## Simple text styles
+Cortana clients support a limited set of `markdown` features for text formating. In the text returned from your skill, you can use
+- _\* italic \* (or use \_)_
+- **\*\* bold \*\*** ; or
+- \[link text\]\(URL\)
+
+For example, where you might add emphasis on a word with [SSML](./speech-synthesis-markup-language), you can correspondly **bold** face your text.
+
+
 ## When to use rich cards
 
 Visual elements should be used to support your skill. Ideally, conversations should stand alone. See the design tips in the [Design your skill's visual elements](https://docs.microsoft.com/en-us/cortana/skills/design-principles#card-design-tips) section of the [Principles of Cortana skills design](https://docs.microsoft.com/en-us/cortana/skills/design-principles) page.
