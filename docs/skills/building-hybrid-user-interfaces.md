@@ -5,7 +5,7 @@ label: Conceptual
 
 ms.date: 06/12/2019
 ms.topic: article
-author: v-daturc@microsoft.com
+ms.author: v-daturc@microsoft.com
 
 keywords: cortana, hybrid, design, interface
 ---
@@ -83,7 +83,7 @@ Cortana clients support a limited set of Markdown features for text formating. I
 - **bold** (\*\*bold\*\*) ; or
 - [Markdown links](https://docs.microsoft.com/en-us/contribute/markdown-reference#links) (\[link text\]\(URL\)).
 
-For example, where you might add emphasis to a spoken word with [SSML](./speech-synthesis-markup-language), you can also emphasize the corresponding text with **bold**.
+For example, where you might add emphasis to a spoken word with [SSML](./speech-synthesis-markup-language.md), you can also emphasize the corresponding text with **bold**.
 
 ## Being a bot – support short conversations
 
