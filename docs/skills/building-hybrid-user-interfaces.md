@@ -77,11 +77,14 @@ If you find yourself presenting the end-user with a form that has multiple input
 The end user wants to create a pre-populated form. The form itself has tens of fields and options. So, the end user asks the Cortana skill to create a form that is populated from a template, or clone their most recent form entered, or to create a form based on the most recent or frequent inputs. Cortana creates the form, and presents the end user with a deep link into the system to view the form, and/or notifies the user via email with a deep link into the system to view the form.
 
 ## Simple text styles with Markdown
-Cortana clients support a limited set of Markdown features for text formating. In the text returned from your skill, you can use
+Cortana clients support a limited set of [Markdown](https://docs.microsoft.com/en-us/contribute/markdown-reference) features for text formating. In the text returned from your skill, you can use
 
 - _italics_ (\*italic\* or \_italic_\)
 - **bold** (\*\*bold\*\*) ; or
 - [Markdown links](https://docs.microsoft.com/en-us/contribute/markdown-reference#links) (\[link text\]\(URL\)).
+
+>[!NOTE]
+>The markdown features listed on this page are the only ones that work with Cortana.
 
 For example, where you might add emphasis to a spoken word with [SSML](./speech-synthesis-markup-language.md), you can also emphasize the corresponding text with **bold**.
 
