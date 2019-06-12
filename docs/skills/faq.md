@@ -145,3 +145,13 @@ Currently, Cortana Skills supports the U.S. market only (en-US locale). LUIS sup
 ## Why is the Cortana Skills Kit only available in limited markets?
 
 We want to ensure that the Cortana Skills Kit is available at high quality, and with natural language support. We are working on making the Cortana Skills Kit available in more markets over time, and will announce additional markets as they become available.
+
+## How long does it take for published invocation names to be recognized by Cortana clients?
+
+1. When Self publish of Default Setting by developer the invocation name is immediately available on publish <!-- including all developers listed for enterprise skills -->
+1. When Group publish is performed the invocation name is immediately available to all testers in the group.
+1. On Publish to World <!-- or Enterprise Tenant --> the invocation name takes 24 to 48 hours to be primed and available.
+
+## How can I increase the accuracy of recognized acronyms and unique names from speech?
+
+In general, to recognize unique words you need to integrate with [LUIS](https://www.luis.ai). Improvements will be seen _after_ your skill has been invoked.  You can use entity lists, phrase lists, or patterns to help increase accuracy. Consider [this blog](https://blog.botframework.com/2018/06/07/improving-accuracy-in-luis-with-patterns/) for _how to_ information.
