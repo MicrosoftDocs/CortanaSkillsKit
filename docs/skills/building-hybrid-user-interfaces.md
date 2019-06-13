@@ -83,10 +83,10 @@ Cortana clients support a limited set of [Markdown](https://docs.microsoft.com/e
 - **bold** (\*\*bold\*\*) ; or
 - [Markdown links](https://docs.microsoft.com/en-us/contribute/markdown-reference#links) (\[link text\]\(URL\)).
 
->[!NOTE]
->The markdown features listed on this page are the only ones that work with Cortana.
-
 For example, where you might add emphasis to a spoken word with [SSML](./speech-synthesis-markup-language.md), you can also emphasize the corresponding text with **bold**.
+
+>[!NOTE]
+>The markdown features listed in this section are the only ones that work with Cortana.
 
 ## Being a bot – support short conversations
 
