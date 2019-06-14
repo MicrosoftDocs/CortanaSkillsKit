@@ -37,10 +37,7 @@ Defines the action to perform.
 
 | Property | Type | Description 
 |----------|------|-------------|
-| type | string | The type of action to perform. The possible values are:
-
-- LaunchUri
-
+| type | string | The type of action to perform. The value to use: `LaunchUri`
 | uri | string | The URI of the app or website to launch.  
 
 ## Launch a website
