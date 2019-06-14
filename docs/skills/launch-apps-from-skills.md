@@ -41,7 +41,7 @@ Defines the action to perform.
 
 - LaunchUri
 
-- | uri | string | The URI of the app or website to launch.  
+| uri | string | The URI of the app or website to launch.  
 
 ## Launch a website
 
@@ -155,7 +155,6 @@ var msg = new builder.Message(session)
 
 If the user is signed into Skype for Business, the following code opens a window and readies a phone call to "123123123123".
 
-
 # [C#](#tab/cs4)
 
 ```csharp
@@ -190,7 +189,7 @@ The following image shows the launched Skype for Business window.
 ![Making a Skype call](../media/images/make-a-call.png)
 
 >[!NOTE]
->At the time of writing, there is limited support for both the [SIP](https://www.ietf.org/rfc/rfc3261.txt) and [TEL](https://www.ietf.org/rfc/rfc3966.txt) protocols in Skype for Business.
+>At the time of writing, there is limited support for both the [SIP](https://www.ietf.org/rfc/rfc3261.txt) and [tel](https://www.ietf.org/rfc/rfc3966.txt) protocols in Skype for Business.
 
 **Skype**
 
@@ -232,7 +231,7 @@ This example shows how to create an email message in the user's email client, re
 
 # [C#](#tab/cs6)
 
-```c#
+```csharp
 var message = context.MakeMessage() as IMessageActivity;
 message.ChannelData = JObject.FromObject(new
 {
@@ -259,7 +258,6 @@ var msg = new builder.Message(session)
 
 ---
 
-The following image shows the email message as displayed.
+Here's the email message as displayed as displayed to the user, ready to send.
 
 ![Created email](../media/images/created-email.png)
-
