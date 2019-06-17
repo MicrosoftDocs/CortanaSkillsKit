@@ -185,7 +185,12 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
      // check authAccessToken not empty 
     ```
 
-    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  
+    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  _Do not send an OAuth card if you've enabled authentication on invocation._
+  
+    >[!NOTE]
+    > You should check for an auth token first, and if there is one present, do not send a new card. Cortana will _skip_
+    > any subsequent OAuth login if a token is aleady present. And, as Cortana doesn't not support OAuth logout at
+    > this time, you can clear any cached token by disconnecting the skill from the Cortana Notebook.
 
     **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
 
@@ -211,6 +216,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     let message = MessageFactory.attachment( card );
     await turnContext.sendActivity(msg);
     ```  
+
 
     **Example:** How to add your access token to your resource request using C#.  
 
