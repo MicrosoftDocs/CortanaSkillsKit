@@ -161,7 +161,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** How to get an access token using C#.
 
-    ```C#
+    ```CSharp
     // Get the auth access token
     string authAccessToken = String.Empty;
     var AuthEntity = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("AuthorizationToken", StringComparison.Ordinal));
@@ -194,7 +194,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
 
-    ```C#
+    ```CSharp
         Activity message = activity.CreateReply();
         if (message.Attachments == null) {
             message.Attachments = new List<Attachment>();
@@ -222,7 +222,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** How to add your access token to your resource request using C#.  
 
-    ```C#
+    ```CSharp
     var url = "https://graph.microsoft.com/v1.0/users/myboss@contoso.com";
     using (var client = new HttpClient()) {
         client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
