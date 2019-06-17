@@ -56,33 +56,35 @@ Return to the Cortana channel configuration and turn on `Cortana should manage m
 
 Your bot and Active Directory should now be configured to make calls to secured resources!
 
-```nodejs
-// get the token (V3)
-var tokenEntity = session.message.entities.find((e) => {
-   return e.type === 'AuthorizationToken';
-   });
-// send request with auth header    
-request.get('https://graph.microsoft.com/v1.0/users/myboss@contoso.com', (err, response, body) => {
-   // do something with body
-   }).setHeader('Authorization', 'Bearer '+ tokenEntity.token )
+```JavaScript
+// get the token (V4)
+if ( turnContext.activity.entities ) {
+  let authEntity = turnContext.activity.entities.find((e) => {
+    return e.type === 'AuthorizationToken';
+    });
+  if(authEntity && authEntity.token) {
+    // send request with auth header    
+    request.get('https://graph.microsoft.com/v1.0/users/myboss@contoso.com', (err, response, body) => {
+      // do something with body
+      }).setHeader('Authorization', 'Bearer '+ authEntity.token );
+    } else {
+      // no Entity means Cortana is either not managing auth or dev wants to send OAuth card
+    }
+  }
 ```
 
-```c#
-// get the token (V3)
+```C#
+// get the token (V4)
 string authAccessToken = String.Empty;
-if (activity.Entities != null)
-{
-foreach (var entity in activity.Entities)
-{
-if (entity.Type == "AuthorizationToken")
-{
-dynamic authResult = entity.Properties;
-authAccessToken = authResult.token;
-}
-}
-}
+var AuthEntity = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("AuthorizationToken", StringComparison.Ordinal));
+if (AuthEntity != null) {
+   authAccessToken = AuthEntity.Properties["token"]?.ToString();
+   // should check authAccessToken for empty
+   } else {
+   // no Entity means Cortana is either not managing auth or dev wants to send OAuth card
+   }
 // send request with auth header
-var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
+var url = "https://graph.microsoft.com/v1.0/users/myboss@contoso.com";
 using (var client = new HttpClient())
 {
 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken);
