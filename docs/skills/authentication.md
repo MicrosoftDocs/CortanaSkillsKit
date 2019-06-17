@@ -218,7 +218,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     ```  
 
 
-    You use youre access token by attaching it to the HTTP request header.
+    You use your access token by attaching it to the HTTP request header.
 
     **Example:** How to add your access token to your resource request using C#.  
 
