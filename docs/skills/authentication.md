@@ -161,63 +161,61 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** How to get an access token using C#.
 
-    ```csharp
-    // Is the user authenticated?
+    ```C#
+    // Get the auth access token
     string authAccessToken = String.Empty;
-
-    if (activity.Entities != null) {
-        foreach (var entity in activity.Entities) {
-            if (entity.Type == "AuthorizationToken") {
-                dynamic authResult = entity.Properties;
-                authAccessToken = authResult.token;
-            }
-        }
-    }  
+    var AuthEntity = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("AuthorizationToken", StringComparison.Ordinal));
+    if (AuthEntity != null) 
+      authAccessToken = AuthEntity.Properties["token"]?.ToString();
+    // check authAccessToken not empty
     ```  
 
     **Example:** How to get an access token using Node.js.  
 
     ```javascript
-    // Get access token from Cortana request
-    var tokenEntity = session.message.entities.find((e) => {
-            return e.type === 'AuthorizationToken';
-        }
-    );
+    // Get the auth access token
+    let authAccessToken = '';
+    if ( turnContext.activity.entities ) {
+       let authEntity = turnContext.activity.entities.find((e) => {
+         return e.type === 'AuthorizationToken';
+         });
+       if(authEntity && authEntity.token)
+         authAccessToken = authEntity.token;
+       }
+     // check authAccessToken not empty 
     ```
 
     If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  
 
     **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
 
-    ```csharp
-    private Activity CreateOAuthCard( Activity activity )
-    {
+    ```C#
         Activity message = activity.CreateReply();
         if (message.Attachments == null) {
             message.Attachments = new List<Attachment>();
         }
 
         // Create the attachment.
-        Attachment attachment = new Attachment() {
-            ContentType = OAuthCard.ContentType,
-            Content = new OAuthCard() // Cortana ignores any card configuration
+        Attachment attachment = new Attachment {
+            ContentType = OAuthCard.ContentType
         };
 
         message.Attachments.Add(attachment);
-        return message;
-    }
+        await turnContext.SendActivityAsync(message, cancellationToken);
     ```
 
     **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
 
     ```javascript
-    var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
+    let card = CardFactory.oauthCard('Ignored', 'Sign in to Contoso', 'Contoso sign in'); // Cortana ignores these parameters
+    let message = MessageFactory.attachment( card );
+    await turnContext.sendActivity(msg);
     ```  
 
     **Example:** How to add your access token to your resource request using C#.  
 
-    ```csharp
-    var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
+    ```C#
+    var url = "https://graph.microsoft.com/v1.0/users/myboss@contoso.com";
     using (var client = new HttpClient()) {
         client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
         var response = await client.GetAsync(url);
@@ -226,9 +224,9 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     **Example:** How to add your access token to your resource request using Node.js.  
 
     ```javascript
-    var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
+    var url = 'https://graph.microsoft.com/v1.0/users/myboss@contoso.com';
     request.get(url, (err, response, body) => {
-    … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token
+    … }).setHeader('Authorization', 'Bearer ' + authAccessToken); // sets the auth token
     ```
 
     >[!NOTE]
