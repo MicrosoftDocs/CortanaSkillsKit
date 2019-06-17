@@ -212,11 +212,13 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
 
     ```javascript
-    let card = CardFactory.oauthCard('', '', ''); // Cortana ignores these parameters
+    let card = CardFactory.oauthCard('', '', ''); // Cortana ignores any parameters
     let message = MessageFactory.attachment( card );
     await turnContext.sendActivity(msg);
     ```  
 
+
+    You use youre access token by attaching it to the HTTP request header.
 
     **Example:** How to add your access token to your resource request using C#.  
 
