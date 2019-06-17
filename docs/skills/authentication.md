@@ -212,7 +212,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
 
     ```javascript
-    let card = CardFactory.oauthCard('Ignored', 'Sign in to Contoso', 'Contoso sign in'); // Cortana ignores these parameters
+    let card = CardFactory.oauthCard('', '', ''); // Cortana ignores these parameters
     let message = MessageFactory.attachment( card );
     await turnContext.sendActivity(msg);
     ```  
