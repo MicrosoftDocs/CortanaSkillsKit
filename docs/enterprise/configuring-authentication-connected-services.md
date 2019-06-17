@@ -55,23 +55,7 @@ Return to the Cortana channel configuration and turn on `Cortana should manage m
 >If your skill fails in the OAuth flow with a 401 error, try changing this setting.
 
 Your bot and Active Directory should now be configured to make calls to secured resources!
-
-```JavaScript
-// get the token (V4)
-if ( turnContext.activity.entities ) {
-  let authEntity = turnContext.activity.entities.find((e) => {
-    return e.type === 'AuthorizationToken';
-    });
-  if(authEntity && authEntity.token) {
-    // send request with auth header    
-    request.get('https://graph.microsoft.com/v1.0/users/myboss@contoso.com', (err, response, body) => {
-      // do something with body
-      }).setHeader('Authorization', 'Bearer '+ authEntity.token );
-    } else {
-      // no Entity means Cortana is either not managing auth or dev wants to send OAuth card
-    }
-  }
-```
+# [C#](#tab/cs)
 
 ```C#
 // get the token (V4)
@@ -90,3 +74,24 @@ using (var client = new HttpClient())
 client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken);
 var response = await client.GetAsync(url);
 ```
+
+# [JavaScript](#tab/js)
+
+```JavaScript
+// get the token (V4)
+if ( turnContext.activity.entities ) {
+  let authEntity = turnContext.activity.entities.find((e) => {
+    return e.type === 'AuthorizationToken';
+    });
+  if(authEntity && authEntity.token) {
+    // send request with auth header    
+    request.get('https://graph.microsoft.com/v1.0/users/myboss@contoso.com', (err, response, body) => {
+      // do something with body
+      }).setHeader('Authorization', 'Bearer '+ authEntity.token );
+    } else {
+      // no Entity means Cortana is either not managing auth or dev wants to send OAuth card
+    }
+  }
+```
+
+---
