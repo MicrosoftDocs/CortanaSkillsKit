@@ -56,8 +56,9 @@ The following C# code shows how to access the `User.Info.Email` and `User.Semant
 The following example shows the same implementation using JavaScript.
 
 ```javascript
+    var userInfo;
     if ( turnContext.activity.entities ) {
-       let authEntity = turnContext.activity.entities.find((e) => {
+       userInfo = turnContext.activity.entities.find((e) => {
        return e.type === 'UserInfo';
        });
     if (userInfo) {
