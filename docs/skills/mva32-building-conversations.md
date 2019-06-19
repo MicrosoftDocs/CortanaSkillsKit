@@ -8,6 +8,9 @@ ms.topic: article
 keywords: cortana
 ---
 
+>[!NOTE]
+> This page has been deprecated as we update our documentation to Azure Bot Service v4.
+
 # Building conversations
 
 In [Create your first Cortana skill](./mva22-hello-world.md) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed.
