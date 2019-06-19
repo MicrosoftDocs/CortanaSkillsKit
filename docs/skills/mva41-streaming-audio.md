@@ -7,6 +7,8 @@ ms.topic: article
 
 keywords: cortana
 --- 
+>[!NOTE]
+> This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Adding audio to Cortana skills
 
