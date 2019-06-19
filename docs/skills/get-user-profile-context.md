@@ -28,9 +28,7 @@ To receive this information, you must specify the type of user data that you wan
 The following C# code shows how to access the `User.Info.Email` and `User.SemanticLocation.Current` entities. The example assumes that `UserName` and `CurrentLocation` were used as the property (friendly) names during the channel configuration.
 
 ```csharp
-if (activity.Entities != null)
-{
-    var userInfo = activity.Entities.FirstOrDefault(e => e.Type.Equals("UserInfo"));
+    var userInfo = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("UserInfo", StringComparison.Ordinal));
     if(userInfo != null)
     {
         var email = userInfo.Properties.Value<string>("UserEmail");
@@ -53,32 +51,28 @@ if (activity.Entities != null)
             //Do something with the user's location information.
         }
     }
-}
 ```
 
 The following example shows the same implementation using JavaScript.
 
 ```javascript
-if (session.message && session.message.entities){
-    var userInfo = session.message.entities.find((e) => {
-        return e.type === 'UserInfo';
-    });
-
+    if ( turnContext.activity.entities ) {
+       let authEntity = turnContext.activity.entities.find((e) => {
+       return e.type === 'UserInfo';
+       });
     if (userInfo) {
-        var email = userInfo['UserEmail']);
+        let email = userInfo['UserEmail']);
 
         if(email && email !== ''){
             //Do something with the user's email address.
         }
 
-         var currentLocation = userInfo['CurrentLocation'];
-
-        if (currentLocation)
+        let currentLocation = userInfo['CurrentLocation'];
+        if (currentLocation && currentLocation.Hub)
         {
             //Access the latitude and longitude values of the user's location.
             var lat = currentLocation.Hub.Latitude;
             var lon = currentLocation.Hub.Longitude;
-
             //Do something with the user's location information.
         }
     }
