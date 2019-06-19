@@ -27,8 +27,9 @@
 ### [Set up your developer environment](./mva21-setup.md)  
 ### [Create your first Cortana skill](./mva22-hello-world.md)  
 ### [Understanding types of conversations](./mva31-understanding-conversations.md)  
-### [Building conversations](./mva32-building-conversations.md)  
 ### [Showing progress to the user](./show-progress.md)  
+<!--
+### [Building conversations](./mva32-building-conversations.md)  
 ### [Adding audio to Cortana Skills](./mva41-streaming-audio.md)  
 ### [Adding visual elements to Cortana Skills](./mva42-visual-ux.md)  
 ### [Using client code with Cortana Skills](./mva43-client-code.md)  
@@ -36,6 +37,7 @@
 ### [Using profile data in your Cortana skill](./mva52-using-profile-data.md)  
 ### [Using authentication in your Cortana skill](./mva61-authentication.md)  
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
+-->
 
 ## Samples  
 ### [Skill samples](./cortana-samples.md)  
