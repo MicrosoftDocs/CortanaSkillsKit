@@ -246,7 +246,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     … }).setHeader('Authorization', 'Bearer ' + authAccessToken); // sets the auth token
     ```
 
----
+    ---
 
     Make sure you check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
 
