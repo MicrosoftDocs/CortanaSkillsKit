@@ -215,8 +215,6 @@ Your code must handle both cases in order to handle conversations correctly.
                     {
                         response.Text = "I am not sure what you mean.";
                         response.Speak = response.Text;
-
-                        Trace.WriteLine(sText);
                     }
                 }
 
@@ -282,6 +280,6 @@ Your code must handle both cases in order to handle conversations correctly.
 ## More Information  
 
 * For more information about adaptive cards, visit the  [adaptivecards.io](https://adaptivecards.io) page.  
-* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) for .NET page.
-* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) for Node.js page.
+* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0) for .NET page.
+* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0) for Node.js page.
 * For more info on the examples referenced on this page, please visit [cortana-skills-samples on GitHub](https://github.com/Microsoft/cortana-skills-samples)
