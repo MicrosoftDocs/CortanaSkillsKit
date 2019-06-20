@@ -146,7 +146,7 @@ The following are the `CurrentAudioInfo` properties.
 |-|-|-
 | Url | string | The URL of the audio stream that's playing. 
 
-<!-- | Value | String | A user-defined value that's stored with the audio stream. -->
+<!- - | Value | String | A user-defined value that's stored with the audio stream. - ->
 
 Cortana includes the `CurrentAudioInfo` object in the channel data on speaker-only devices only.
 
