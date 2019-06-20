@@ -163,7 +163,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     # [C#](#tab/cs1)
 
-    ```C#
+    ```csharp
     // Get the auth access token
     string authAccessToken = String.Empty;
     var AuthEntity = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("AuthorizationToken", StringComparison.Ordinal));
@@ -192,13 +192,15 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  _Do not send an OAuth card if you've enabled authentication on invocation._
   
     >[!NOTE]
-    > You should check for an auth token first, and if there is one present, do not send a new card. Cortana will _skip_
-    > any subsequent OAuth login if a token is aleady present. And, as Cortana doesn't not support OAuth logout at
-    > this time, you can clear any cached token by disconnecting the skill from the Cortana Notebook.
+    > You should check for an auth token first, and if there is one present, don't send a new card. Cortana will _skip_
+    > any subsequent OAuth login if a token is already present. Because Cortana doesn't currently support OAuth logout, 
+    > you can clear any cached token by disconnecting the skill from the Cortana Notebook.
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
+    **Example:** Request a sign-in with an OAuthCard for Cortana using C# or Node.js.
+  
+    # [C#](#tab/cs2)
 
-    ```CSharp
+    ```csharp
         Activity message = activity.CreateReply();
         if (message.Attachments == null) {
             message.Attachments = new List<Attachment>();
@@ -213,33 +215,38 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
         await turnContext.SendActivityAsync(message, cancellationToken);
     ```
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
+    # [JavaScript](#tab/js2)
 
     ```javascript
     let card = CardFactory.oauthCard('', '', ''); // Cortana ignores any parameters
     let message = MessageFactory.attachment( card );
     await turnContext.sendActivity(msg);
-    ```  
+    ```
 
+    ---
 
     You use your access token by attaching it to the HTTP request header.
 
-    **Example:** How to add your access token to your resource request using C#.  
+    **Example:** How to add your access token to your resource request using C# or Node.js.  
 
-    ```CSharp
+    # [C#](#tab/cs3)
+
+    ```csharp
     var url = "https://graph.microsoft.com/v1.0/users/myboss@contoso.com";
     using (var client = new HttpClient()) {
         client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
         var response = await client.GetAsync(url);
     ```  
 
-    **Example:** How to add your access token to your resource request using Node.js.  
+    # [JavaScript](#tab/js3)
 
     ```javascript
     var url = 'https://graph.microsoft.com/v1.0/users/myboss@contoso.com';
     request.get(url, (err, response, body) => {
     … }).setHeader('Authorization', 'Bearer ' + authAccessToken); // sets the auth token
     ```
+
+---
 
     >[!NOTE]
     > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
