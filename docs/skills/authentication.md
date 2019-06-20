@@ -248,9 +248,8 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 ---
 
-    >[!NOTE]
-    > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
- 
+    Make sure you check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+
 ## Next Steps
 
 If you use a Microsoft service that requires users to have Microsoft accounts, and are looking for more information about configuring Connected Account channel settings for Microsoft identity server, visit the [Configure authentication for Microsoft identity server](./configure-connected-account.md) page.
