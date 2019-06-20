@@ -78,7 +78,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 1. Fill in the OAuth configuration field values.  
 
-    ![](../media/images/cortana-manage-user-identity.png)
+    ![Cortana manage user identity](../media/images/cortana-manage-user-identity.png)
 
     1. **Sign in at invocation** | radiobox  
         If you select `at invocation` then Cortana manages the log in when the user first invokes the skill. Otherwise you can send an OAuthCard attachment before a resource call.
@@ -149,7 +149,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     * Click **Add Platform**, click **Web**, verify that you registered your redirect URL for Cortana, and then save your changes. You do not need a sign-out URL.  
 
-             ![Add Platforms](../media/images/add_platform_1.png)  
+           ![Add Platforms](../media/images/add_platform_1.png)  
 
     * For other service providers: Refer to the documentation from your service provider about allowing the redirect callback.  
 
@@ -159,18 +159,20 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     When the access token expires, the correct solution is to display an OAuthCard to reacquire a token.
 
-    **Example:** How to get an access token using C#.
+    **Example:** How to get an access token using C# or Node.js.
 
-    ```CSharp
+    # [C#](#tab/cs1)
+
+    ```C#
     // Get the auth access token
     string authAccessToken = String.Empty;
     var AuthEntity = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("AuthorizationToken", StringComparison.Ordinal));
     if (AuthEntity != null) 
       authAccessToken = AuthEntity.Properties["token"]?.ToString();
     // check authAccessToken not empty
-    ```  
+    ```
 
-    **Example:** How to get an access token using Node.js.  
+    # [JavaScript](#tab/js1)
 
     ```javascript
     // Get the auth access token
@@ -184,6 +186,8 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
        }
      // check authAccessToken not empty 
     ```
+
+    ---
 
     If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  _Do not send an OAuth card if you've enabled authentication on invocation._
   
