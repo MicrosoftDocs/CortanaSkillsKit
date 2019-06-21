@@ -59,10 +59,11 @@ You can create adaptive cards using `proxy pattern` helper classes in the [SDK](
 The following code adds an adaptive card to a Cortana skill response for Bot Framework V3.
 
  ```csharp
- var response = context.MakeMessage();
-
+ // make a response
+ var response = turnContext.Activity.CreateReply();
+ 
+ // create a Card and add elements
  AdaptiveCard card = new AdaptiveCard();
-
  card.Body.Add(new AdaptiveTextBlock()
      {
          Text = "This is a test",
@@ -71,10 +72,11 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
      }
  );
 
+ // add card as attachment
  response.Attachments.Add(card.ToAttachment());
 
- await context.PostAsync(response);
- context.Wait(MessageReceived);
+ // send the response
+ await turnContext.SendActivityAsync(response, cancellationToken: cancellationToken);
 
  ```  
 
@@ -87,23 +89,29 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
 1. Add the card to your skill as an attachment.
 
  ```javascript
-let msg = new builder.Message(session)
 // In JavaScript, JSON is integrated
-msg.addAttachment({
-    "contentType": "application/vnd.microsoft.card.adaptive",
-    "content": {
-        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-        "type": "AdaptiveCard",
-        "version": "1.0",
-        "body": [{
-            "type": "TextBlock",
-            "text": "This is a test",
-            "size": "medium",
-            "weight": "bolder"
-        }]
+// Create the Card from JSON
+const card = CardFactory.adaptiveCard( {
+  "contentType": "application/vnd.microsoft.card.adaptive",
+  "content": {
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [{
+      "type": "TextBlock",
+      "text": "This is a test",
+      "size": "medium",
+      "weight": "bolder"
+       }]
     }
-});
-session.send(msg);
+  } );
+  
+// Send the card  
+await turnContext.sendActivity( {
+ text: 'Here is an Adaptive Card:',
+ speak: card.content.speak || 'Sorry, this card does not contain speech.',
+ attachments: [ card ] 
+ } );
  ```
 
 ---
@@ -148,8 +156,8 @@ Your code must handle both cases in order to handle conversations correctly.
         // match 1 or 2 digits and white space and "minute"
         private static Regex regexMinutes = new Regex(@"(\d{1,2})\s+minute", RegexOptions.IgnoreCase);
 ...
-                var message = await argument;
-                var response = context.MakeMessage();
+                var message = turnContext.Activity;
+                var response = turnContext.Activity.CreateReply(); 
 
                 string sValue = "unknown";
 
@@ -207,13 +215,10 @@ Your code must handle both cases in order to handle conversations correctly.
                     {
                         response.Text = "I am not sure what you mean.";
                         response.Speak = response.Text;
-
-                        Trace.WriteLine(sText);
                     }
                 }
 
-                await context.PostAsync(response);
-                context.Wait(MessageReceivedAsync); // hand back to "say anything to show the card"        
+                await turnContext.SendActivityAsync(response, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/js2)
@@ -221,8 +226,8 @@ Your code must handle both cases in order to handle conversations correctly.
 ### Respond in JavaScript
 
 ```JavaScript
-        let message = session.message;
-        var response = new builder.Message(session);
+        let message = turnContext.activity;
+        var response = {};
 
         if (message.value) {
             // Got an Action Submit payload
@@ -230,18 +235,16 @@ Your code must handle both cases in order to handle conversations correctly.
             if (xValue === 'snooze') {
                 let snoozeValue = message.value.snooze;
                 let msg = `You clicked "Snooze" for ${snoozeValue} minutes.`;
-                response.text(msg);
-                response.speak(msg);
+                response.text = msg;
+                response.speak = msg;
             } else if (xValue === 'late') {
                 const msg = 'You clicked "I\'ll be late."';
-                response.text(msg);
-                response.speak(msg);
+                response.text = msg;
+                response.speak = msg;
             } else {
                 const msg = 'Unsupported input detected.';
-                response.text(msg);
-                response.speak(msg);
-
-                console.log(JSON.stringify(message.value));
+                response.text = msg;
+                response.speak = msg;
             }
         } else {
             // Got a Voice/Text response - check for keywords
@@ -252,26 +255,24 @@ Your code must handle both cases in order to handle conversations correctly.
                 var match = regexMinutes.exec(text);
                 if (match && match.constructor === Array && match.length == 2) {
                     let msg = `You said "Snooze" for ${match[1]} minutes.`;
-                    response.text(msg);
-                    response.speak(msg);
+                    response.text = msg;
+                    response.speak = msg;
                 } else {
                     const msg = 'You said "Snooze". I\'ll snooze for the default 5 minutes.';
-                    response.text(msg);
-                    response.speak(msg);
+                    response.text = msg;
+                    response.speak = msg;
                 }
             } else if (text.includes('LATE')) {
                 const msg = 'You said "I\'ll be late."';
-                response.text(msg);
-                response.speak(msg);
+                response.text = msg;
+                response.speak = msg;
             } else {
                 const msg = 'I am not sure what you mean.';
-                response.text(msg);
-                response.speak(msg);
-
-                console.log(text);
+                response.text = msg;
+                response.speak = msg;
             }
         }
-        session.send(response);
+        await turnContext.sendActivity(response);
 ```
 
 ---
@@ -279,6 +280,6 @@ Your code must handle both cases in order to handle conversations correctly.
 ## More Information  
 
 * For more information about adaptive cards, visit the  [adaptivecards.io](https://adaptivecards.io) page.  
-* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) for .NET page.
-* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) for Node.js page.
+* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp#send-an-adaptive-card) for .NET page.
+* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=javascript#send-an-adaptive-card) for Node.js page.
 * For more info on the examples referenced on this page, please visit [cortana-skills-samples on GitHub](https://github.com/Microsoft/cortana-skills-samples)
