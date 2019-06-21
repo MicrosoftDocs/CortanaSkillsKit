@@ -4,10 +4,10 @@ description: Learn how to add authentication to your bot-based skill.
 label: Conceptual
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 05/13/2019
+ms.date: 06/20/2019
 ms.topic: article
 
-keywords: cortana
+keywords: cortana, oauth, authentication
 ---
 
 # Adding Authentication to Your Cortana Skill  
@@ -58,7 +58,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 **Example:** Creates a bot in Azure Bot Service using the Basic C# bot template.  
 
 >[!NOTE]
-> If you have not created a bot, and are looking for more information on how to get started, then visit the [Create a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-3.0) page.
+> If you have not created a bot, and are looking for more information on how to get started, then visit the [Create a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) page.
 
 1. Sign into the [Microsoft Azure Portal](https://ms.portal.azure.com).  
 1. In the *portal*, click the name of your bot. 
