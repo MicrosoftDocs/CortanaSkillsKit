@@ -149,7 +149,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     * Click **Add Platform**, click **Web**, verify that you registered your redirect URL for Cortana, and then save your changes. You do not need a sign-out URL.  
 
-             ![Add Platforms](../media/images/add_platform_1.png)  
+           ![Add Platforms](../media/images/add_platform_1.png)  
 
     * For other service providers: Refer to the documentation from your service provider about allowing the redirect callback.  
 
