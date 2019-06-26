@@ -3,7 +3,7 @@ title: Testing and debugging Cortana skills
 description: Tips on testing and debugging Cortana skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 06/04/2019
+ms.date: 06/25/2019
 ms.topic: article
 
 keywords: cortana
@@ -15,11 +15,11 @@ The following options are available to test and debug your Cortana skill.
 
 * Use the Bot Framework emulator to test and debug your skill while you are developing it. The emulator interacts with your bot, and displays the messages exchanged.  
 
-    Currently, the emulator does not support passing user profile and contextual information to your Cortana skill. For more information about using the emulator, visit the [Debug with the emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-3.0) page.  
+    Currently, the emulator does not support passing user profile and contextual information to your Cortana skill. For more information about using the emulator, visit the [Debug with the emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) page.  
 
 * Use the debugger in Visual Studio Code to walk through your code as it runs in the console window.  
 
-   For more information, visit the [Debug a Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-3.0) page.  
+   For more information, visit the [Debug a Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page.  
 
 * Use the Chat window in the Bot Framework portal. Typically, you test after configuring your Cortana channel and deploying your service in order to confirm that your bot is running.
 
@@ -27,7 +27,7 @@ The following options are available to test and debug your Cortana skill.
 
    For information about enabling debugging, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.
 
-   For details about debugging your Cortana skill in Azure [continuous publishing](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-3.0#set-up-continuous-deployment) environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-3.0) page.
+   For details about debugging your Cortana skill in Azure [continuous publishing](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-4.0) environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page.
 
    >[!TIP]
    >Before you start debugging your Cortana skill, visit the [Troubleshooting tips](#troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
