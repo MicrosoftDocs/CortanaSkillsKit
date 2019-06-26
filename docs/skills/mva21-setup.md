@@ -67,7 +67,7 @@ Make sure Cortana is set up to work with your skill:
 
 * You must be signed into Cortana on your computer or device with your Microsoft account.
 * Make sure the microphone on your computer or device is working and turned on so that you can speak to Cortana.
-* Optionally, set debug mode under Cortana channel configuration through Azure Portal. When you invoke a Cortana skill in debug mode, Cortana gives you [additional information](./test-debug#enable-debugging-in-cortana) that you can use fine-tune the skill.
+* Optionally, set debug mode under Cortana channel configuration through Azure Portal. When you invoke a Cortana skill in debug mode, Cortana gives you [additional information](./test-debug.md#enable-debugging-in-cortana) that you can use fine-tune the skill.
 
 ## Step 4 - Set up your Cortana device (optional)
 
