@@ -33,7 +33,7 @@ Developing a Cortana skill requires a variety of cloud resources. For example, y
 
 Other resources include:
 
-* **Bot Framework**. To create a Cortana skill, you must first create a bot. Then sign into the [Bot Framework Developer Portal](https://dev.botframework.com) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. 
+* **Bot Framework**. To create a Cortana skill, you must first create a bot. Once the bot is working, sign into the [Bot Framework Developer Portal](https://dev.botframework.com) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. 
 <!-- 
 For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
 -->
@@ -52,7 +52,7 @@ For information on creating your first Cortana skill, see [Create your first Cor
 
 You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update (build 1607), using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Framework SDK](https://github.com/microsoft/botframework-sdk).
 
-Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
+Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
 
 >[!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
