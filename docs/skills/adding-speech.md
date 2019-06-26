@@ -19,6 +19,24 @@ Bot Service bots do not speak by default, so you need to make minor modification
 
 On a `turn` you have two forms of `sendActivityAsync`: the first method takes an activity (message), and the second takes optional named arguments `speak` and `inputHint`.
 
+### First method
+
+# [C#](#tab/cs2)
+
+```csharp
+   await turnContext.SendActivityAsync( "This is displayed", speak: "This is spoken", inputHint: "expectingInput" );
+```
+
+# [JavaScript](#tab/js2)
+
+```javascript
+await turnContext.sendActivity( 'This is displayed', 'This is spoken', 'expectingInput' );
+```
+
+---
+
+### Second method
+
 # [C#](#tab/cs1)
 
 ```csharp
@@ -44,23 +62,7 @@ On a `turn` you have two forms of `sendActivityAsync`: the first method takes an
 
 ---
 
-OR
-
-# [C#](#tab/cs2)
-
-```csharp
-   await turnContext.SendActivityAsync( "This is displayed", speak: "This is spoken", inputHint: "expectingInput" );
-```
-
-# [JavaScript](#tab/js2)
-
-```javascript
-await turnContext.sendActivity( 'This is displayed', 'This is spoken', 'expectingInput' );
-```
-
----
-
-Bot Service V4 reference documentation is here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
+The Bot Service V4 reference documentation is here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
 or [JavaScript](https://docs.microsoft.com/JavaScript/api/botbuilder-core/turncontext#sendactivity).
 
 ## Input Hints
