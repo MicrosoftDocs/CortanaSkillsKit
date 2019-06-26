@@ -3,7 +3,7 @@ title: Configuring authentication with connected services
 description: Configuring enterprise skills to work with connected services.
 
 ms.author: v-daturc
-ms.date: 03/13/2019
+ms.date: 06/26/2019
 ms.topic: article
 
 keywords: cortana, enterprise, skills
