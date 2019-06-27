@@ -20,9 +20,9 @@ User profile information is data that the user provided to Cortana that's stored
 
 User contextual information is information that Cortana has about the user, such as their location.
 
-To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see [Request user profile data](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0)).
+To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see the *Request user profile data* section in the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0)) page.
 
-The sample code shows how to access `userInfo.Properties` in order to retrieve the user's email and location. The examples assume that `UserEmail` and `CurrentLocation` were used as the property (friendly) names during the channel configuration.
+The sample code shows how to access `userInfo.Properties` in order to retrieve the user's email address (which is profile info) and location (which is contextual info). The examples assume that `UserEmail` and `CurrentLocation` were used as the property's friendly names during the channel configuration.
 
 # [C#](#tab/cs)
 
