@@ -10,12 +10,12 @@ ms.topic: article
 keywords: cortana
 ---
 
-# Use AdaptiveCards in Your Cortana Skill
+# Using AdaptiveCards in your Cortana skill
 
-Cards are interface elements that you can use to enhance the user experience in your Cortana skill. As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](./cortana-device-type.md) for details on how to get device information.
-  
-An adaptive card is the most versatile display card. It's customizable, and can include any combination of text, speech, images, buttons, and input fields.  
+Cards are interface elements that you can use to enhance the user experience in your Cortana skill. An adaptive card is the most versatile display card. It's customizable, and can include any combination of text, speech, images, buttons, and input fields.
 
+As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](./cortana-device-type.md) for details on how to get device information.
+ 
 ## AdaptiveCards  
 
 Adaptive cards provide the following options.  
@@ -42,7 +42,7 @@ AdaptiveCards include elements, containers, actions, and inputs. A basic adaptiv
 The [AdaptiveCards Designer](https://adaptivecards.io/designer) provides an interactive card builder where you can see the resulting card JSON data.
 
 ## Create an AdaptiveCard
-You can create adaptive cards using `proxy pattern` helper classes in the [SDK](https://docs.microsoft.com/adaptive-cards/), or by directly using JSON following the [schema](https://docs.microsoft.com/adaptive-cards/authoring-cards/card-schema).
+You can create adaptive cards using `proxy pattern` helper classes in the [SDK](https://docs.microsoft.com/adaptive-cards/), or by directly using JSON (check out the [Schema Explorer](https://adaptivecards.io/explorer/) for details).
 
 >[!IMPORTANT]
 > 1. The speak object of an adaptive card must be copied to the Message for Cortana to speak the text.
@@ -61,7 +61,7 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
  ```csharp
  // make a response
  var response = turnContext.Activity.CreateReply();
- 
+
  // create a Card and add elements
  AdaptiveCard card = new AdaptiveCard();
  card.Body.Add(new AdaptiveTextBlock()
@@ -84,7 +84,7 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
 
 ### Create using JavaScript
 
-1. Install the `adaptivecards` [NPM package](https://docs.microsoft.com/en-us/adaptive-cards/sdk/rendering-cards/javascript/getting-started) (optional)
+1. Install the `adaptivecards` [NPM package](https://docs.microsoft.com/en-us/adaptive-cards/sdk/rendering-cards/javascript/getting-started#install) (optional)
 1. Use JSON to build your card in code, or the proxy object from the `adaptivecards` package
 1. Add the card to your skill as an attachment.
 
@@ -117,7 +117,7 @@ await turnContext.sendActivity( {
 ---
 
 ## Respond to AdaptiveCards
-If you look at the [Calendar reminder](https://adaptivecards.io/samples/CalendarReminder.html) example on the AdaptiveCards website, you'll note that it has two `Action.Submit` buttons, one for the _Snooze_ response, and one for the _I'll be Late_ response.  For _Snooze_, there is a `Input.ChoiceSet` with standard values of 5, 10, and 15 minutes.
+If you look at the [Calendar reminder](https://adaptivecards.io/samples/CalendarReminder.html) example on the AdaptiveCards website, you'll note that it has two `Action.Submit` buttons, one for the _Snooze_ response, and one for the _I'll be Late_ response.  For _Snooze_, there is a `Input.ChoiceSet` with standard values of 5, 15, and 30 minutes.
 
 In our example, Cortana will say, _"Your meeting 'Adaptive Card design session' is starting at 12:30pm. Do you want to snooze or do you want to send a late notification to the attendees?"_  At the same time, she will display this card:
 
@@ -277,9 +277,8 @@ Your code must handle both cases in order to handle conversations correctly.
 
 ---
 
-## More Information  
+## More information  
 
 * For more information about adaptive cards, visit the  [adaptivecards.io](https://adaptivecards.io) page.  
-* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp#send-an-adaptive-card) for .NET page.
-* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=javascript#send-an-adaptive-card) for Node.js page.
+* For more information about Bot Framework cards, see the [Send an Adaptive Card](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp#send-an-adaptive-card) section on the [Add media to messages](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp) page.
 * For more info on the examples referenced on this page, please visit [cortana-skills-samples on GitHub](https://github.com/Microsoft/cortana-skills-samples)
