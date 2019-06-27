@@ -425,19 +425,19 @@ In addition to cards, Node.js users can use a set of [built-in prompts](https://
 
 Limiting the title to 84 characters keeps the title to two lines or less. Having longer titles doesn't look good and pushes the rest of the content down in the card.  
 
-**Create brief but meaningful responses**
+#### Create brief but meaningful responses
 
 When possible, create brief but meaningful responses with a bias toward text-based answers that are glanceable. Make cards crisp, clear, and actionable.
 
-**Try to fit your content within the height of Cortana's canvas**
+#### Try to fit your content within the height of Cortana's canvas
 
 Limiting the content to the size of Cortana's canvas makes it easy for the user to see the content without scrolling.
 
-**Use cards to provide details**
+#### Use cards to provide details
 
 Cards are meant to provide additional information beyond what the skill speaks. It's generally a poor user experience to have Cortana read all the details that are on the card. Provide a summary of the card using voice, then use the card for the details. For example, if the card shows shirt choices, the skill might say, "Select the shirt's color", while displaying the color options on the card.
 
-**Direct users to a screen only when needed**
+#### Direct users to a screen only when needed
 
 Some users use Cortana on speaker-only devices and can't see a card. If the user needs to see a card, direct them to Cortana's companion app. Try to do this sparingly. Ideally, a user should be able to use your skill on any supported device, regardless of whether it has a screen, without having to use a secondary device. An exception is when the user has to sign in to your skill or provide private information. Other than the sign-in card, cards are read-only on speaker devices.
 
@@ -448,20 +448,22 @@ The following scenario shows a cooking skill that provides a list of ingredients
 
 Note that the time between user utterances is limited. On a speaker-only device,if a timeout occurs, the skill ends. On a Windows device, the skill is still active, but the microphone turns off. <!-- For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.-->
 
-**Tailor the experience**
+#### Tailor the experience
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
-#### Speaker-only device:
-  - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
+**Speaker-only device:**
 
-#### Device with screen: 
-  - **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
-  - **Card**: Show an image and additional details such as sizes/dimensions and color options.
+- **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
+
+**Device with screen:**
+
+- **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
+- **Card**: Show an image and additional details such as sizes/dimensions and color options.
 
 The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
 
-**Use horizontal lists**
+#### Use horizontal lists
 
 A card's attachment layout specifies how to display multiple card attachments. The framework supports vertical list layout and horizontal carousel layout. Use carousels, if possible.
 
