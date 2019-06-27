@@ -13,9 +13,8 @@ keywords: cortana
 
 > [!NOTE]
 > This document provides details about obtaining user information for skills built using the Microsoft Bot Framework.
-> 
 
-Cortana can send the user's profile and contextual information as part of the message that it sends to your skill. You can use this information to provide a custom experience for the user.
+Cortana can provide the user's profile and contextual information as part of the data that it makes available to your skill. You can use this information to build a custom experience for the user.
 
 User profile information is data that the user provided to Cortana that's stored in Cortana's Notebook. Cortana passes this information to your skill if it's available, and if the user has provided explicit consent to share this information with your skill. _Your skill must have a valid reason to use profile information in order to pass certification._ See the [Skill review guidelines](https://docs.microsoft.com/cortana/skills/skill-review-guidelines) for more details.
 
@@ -23,7 +22,7 @@ User contextual information is information that Cortana has about the user, such
 
 To receive this information, you must specify the type of user data that you want when you configure your Cortana channel (see [Request user profile data](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0)).
 
-The sample code shows how to access `userInfo.Properties` in order to retrieve the user's email and location. The example assumes that `UserEmail` and `CurrentLocation` were used as the property (friendly) names during the channel configuration.
+The sample code shows how to access `userInfo.Properties` in order to retrieve the user's email and location. The examples assume that `UserEmail` and `CurrentLocation` were used as the property (friendly) names during the channel configuration.
 
 # [C#](#tab/cs)
 
