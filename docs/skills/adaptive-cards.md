@@ -4,7 +4,7 @@ description: Learn how to use adaptive cards in your bot-based skill.
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 06/03/2019
+ms.date: 06/27/2019
 ms.topic: article
 
 keywords: cortana
@@ -56,7 +56,7 @@ You can create adaptive cards using `proxy pattern` helper classes in the [SDK](
 1. Specify the elements of your card in code.
 1. Add the card to your Cortana skill as an attachment.
 
-The following code adds an adaptive card to a Cortana skill response for Bot Framework V3.
+The following code adds an adaptive card to a Cortana skill response for Bot Framework version 4.
 
  ```csharp
  // make a response
