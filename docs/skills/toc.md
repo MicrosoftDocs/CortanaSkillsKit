@@ -39,9 +39,6 @@
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
 -->
 
-## Samples  
-### [Skill samples](./cortana-samples.md)  
-
 ## Test skills  
 ### [Test and debug](./test-debug.md)  
 ### [Known issues](./known-issues.md)  

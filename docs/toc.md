@@ -22,10 +22,10 @@
 ### [Play audio files](./skills/audio-streaming.md)  
 
 ## Tutorials  
-### [Set up your developer environment](./mva21-setup.md)  
-### [Create your first Cortana skill](./mva22-hello-world.md)  
-### [Understanding types of conversations](./mva31-understanding-conversations.md)  
-### [Showing progress to the user](./show-progress.md)  
+### [Set up your developer environment](./skills/mva21-setup.md)
+### [Create your first Cortana skill](./skills/mva22-hello-world.md)
+### [Understanding types of conversations](./skills/mva31-understanding-conversations.md)
+### [Showing progress to the user](./skills/show-progress.md)
 <!--
 ### [Building conversations](./mva32-building-conversations.md)  
 ### [Adding audio to Cortana Skills](./mva41-streaming-audio.md)  
@@ -36,9 +36,6 @@
 ### [Using authentication in your Cortana skill](./mva61-authentication.md)  
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
 -->
-
-## Samples  
-### [Skill samples](./skills/cortana-samples.md)  
 
 ## Test skills  
 ### [Test and debug](./skills/test-debug.md)  
