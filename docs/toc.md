@@ -5,7 +5,7 @@
 
 ## Quickstarts  
 ### [Create your first skill](./skills/get-started.md)  
-### [Add MSA authentication](./skills/configure-connected-account.md)  
+### [Add services](./skills/configure-connected-account.md)  
 
 ## Skills design  
 ### [Design principles](./skills/design-principles.md)  
