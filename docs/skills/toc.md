@@ -6,7 +6,7 @@
 ## Quickstarts  
 ### [Create your first skill](./get-started.md)  
 ### [Add speech](./adding-speech.md)  
-### [Add MSA authentication](./configure-connected-account.md)  
+### [Add services](./configure-connected-account.md)  
 
 ## Skills design  
 ### [Principles of Cortana skills design](./design-principles.md)  
