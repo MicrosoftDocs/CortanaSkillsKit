@@ -3,7 +3,7 @@ title: Principles of Cortana skill design
 description: Overview of best practices Cortana skill design.
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 12/26/2018
+ms.date: 06/27/2019
 ms.topic: article
 
 keywords: cortana
@@ -229,6 +229,7 @@ For directed prompts, use the form, "Please select X, Y, or Z." Don't use the fo
 
 If the list of options is long (for example, a list of stock investments) or variable (for example, movie titles), using a directed prompt is impractical. In this case, use an open prompt. For example:
 
+> **User**: Hey, Cortana, ask My Stock Check.
 > **Cortana**: Please say a stock name.  
 > **User**: Help.  
 > **Cortana**: Please say a stock name. For example, say Microsoft.
@@ -240,9 +241,10 @@ If the list of options is long (for example, a list of stock investments) or var
 
 A confirmation is an acknowledgement that your skill heard the user's response. For example:
 
+> **User**: Hey, Cortana, book a flight.
 > **Cortana:** Where do you want to fly?  
 > **User:** Paris.  
-> **Cortana:** Which date do you want to leave for Paris?
+> **Cortana:** What date do you want to leave for Paris?
 
 Think about where in the conversation flow the users need confirmations. Recognizing speech from a telephone is not perfect, particularly under noisy conditions. In addition, when skills are used in a standalone speaker, you only have one channel of communication with the user. An effective confirmation and correction strategy helps with these issues.
 
@@ -366,14 +368,10 @@ Cortana's text-to-speech translator handles most text such as abbreviations and 
 
 For example:
 
-  - "Dr. Smith" is spoken as "Doctor Smith"
-  - "Microsoft.com" is spoken as "microsoft dot com"
-  - "Shopping Ctr." is spoken as "shopping center"
-  - "Lake Shore Dr." is spoken as "Lake Shore Drive"
-
-<!--
-If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principles since the purpose of using voice is to get to a result faster.
--->
+- "Dr. Smith" is spoken as "Doctor Smith"
+- "Microsoft.com" is spoken as "microsoft dot com"
+- "Shopping Ctr." is spoken as "shopping center"
+- "Lake Shore Dr." is spoken as "Lake Shore Drive"
 
 ## Design your skill's visual elements 
 
@@ -415,9 +413,9 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 ![Cortana's Canvas](../media/images/cortana-canvas.png)
 
-To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0).  
+To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0).
 
-In addition to cards, Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
+In addition to cards, Node.js users can use a set of built-in prompts to simplify collecting inputs from a user (see the [Prompt for user input](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0) page). For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
 
 ### Card design tips
 
