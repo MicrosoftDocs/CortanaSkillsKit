@@ -3,7 +3,7 @@ title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
 
 ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 05/20/2019
+ms.date: 06/28/2019
 ms.topic: article
 
 keywords: cortana
@@ -13,7 +13,8 @@ keywords: cortana
 
 If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Service feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
 
-> [!NOTE] You can use _any_ vendor's identity manager that manages resource for their services _if_ they
+> [!NOTE]
+> You can use _any_ vendor's identity manager that manages resource for their services _if_ they
 > support OAuth 2 code authentication flow.
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
@@ -28,7 +29,7 @@ Before configuring your skill for a Connected Account, you need to update your b
 Next, you need to update the Cortana channel configuration settings for your skill. One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected service.
 
 1. Under the **Manage user identity through connected services** section press the option to enable it.
-1. Fill in the form.  
+1. Fill in the form.
   
     | Item | Description  |
      |------|--------------|
@@ -88,4 +89,4 @@ If you already registered your bot, you need to edit the registration to add the
 
 ## Next steps
 
-For more information about using authentication, see [Adding authentication to your skill](authentication.md).
+For more information about using authentication, see [Adding authentication to your skill](./authentication.md).
