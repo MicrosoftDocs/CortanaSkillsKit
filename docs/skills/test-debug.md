@@ -70,23 +70,19 @@ Suggestions for solving common problems.
 
 ### I am not able to invoke my Cortana skill  
 
-Check the following
-
-- If you just made changes and saved, click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
-- Verify that debugging is enabled. For more information, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.  
+- If you just made changes and saved your skill, you may need to refresh the Cortana skills information. Click on the `Home` icon on the top-left menu.
+- Verify that debugging is enabled. For more information, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.
 - Verify that you signed into Cortana using the same MSA that you used to sign into Bot Framework.  
-- Ensure that you are properly invoking your skill.  
-- Verify that Cortana uses the correct name when invoked. The Cortana Canvas types the name in the `Type here to search box` as you speak.  
-- Check that your device is set to one of the allowed locales. The [Supported Cortana locales](./supported-locales.md) page has more information.  
-- Make sure that your microphone is configured. Visit the [Getting started with Cortana skills](./get-started.md) page for more information.  
+- Ensure that you are properly invoking your skill.
+- Verify that Cortana uses the correct name when invoked. The Cortana Canvas types the name in the `Type here to search box` as you speak.
+- Check that your device is set to one of the allowed locales. The [Supported Cortana locales](./supported-locales.md) page has more information.
+- Make sure that your microphone is configured. Visit the [Getting started with Cortana skills](./get-started.md) page for more information.
 
-### Cortana is spelling my invocation name incorrectly when I say it  
+### Cortana is spelling my invocation name incorrectly when I say it
 
-Check the following:
-
-- If you just saved for the first time, updates to Cortana may be delayed up to 10 minutes before recognizing the invocation name of your Cortana skill.  
-- If you just made changes and saved, click on the `Home` icon on top-left menu to refresh the Cortana skills information.  
-- Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.  
+- If you just saved for the first time, your updates to Cortana may be delayed up to 10 minutes before recognizing the invocation name of your Cortana skill.  
+- If you just made changes and saved your skill, you may need to refresh the Cortana skills information. Click on the `Home` icon on the top-left menu.
+- Your invocation name may be difficult for Cortana to recognize. For more information about designing invocation names, see the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.  
 
 ### I get a `DownstreamDependencyFailed` error  
 
@@ -104,7 +100,7 @@ Ensure that you signed into Bot Framework with the same MSA that you used to con
 
 If Cortana reads out the XML characters of your invocation, then the XML is likely not valid. Verify that all opening tags have closing tags and vice-versa. Consider using an XML library to verify that your XML is properly formatted.  
 
-### Cortana returns a 403 Forbidden error  
+### Cortana returns a `403 Forbidden` error  
 
 Cortana tried to connect to your service, but received an https status code of `403 Forbidden`. Verify that your service endpoint is configured to accept `POST` requests, not `GET` requests.
 
