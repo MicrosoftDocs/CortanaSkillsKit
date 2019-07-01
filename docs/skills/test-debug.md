@@ -56,7 +56,7 @@ If Cortana reports an error when running your skill, then follow the steps below
 
 ## Troubleshooting tips
 
-The following provides suggestions for solving common problems.
+Suggestions for solving common problems.
 
 | Issue  |  
 |:---    |  
@@ -65,7 +65,7 @@ The following provides suggestions for solving common problems.
 | [I get a `DownstreamDependencyFailed` error](#i-get-a-downstreamdependencyfailed-error) | 
 | [I signed into Bot Framework but do not see my Cortana skills](#i-signed-into-bot-framework-but-do-not-see-my-cortana-skills) |  
 | [SSML reads XML characters aloud](#ssml-reads-xml-characters-aloud) |  
-| [Cortana returns a 403 Forbidden error](#cortana-returns-a-403-forbidden-error) |  
+| [Cortana returns a `403 Forbidden` error](#cortana-returns-a-403-forbidden-error) |  
 | [I am able to invoke my Cortana skill but no one else can](#i-am-able-to-invoke-my-cortana-skill-but-no-one-else-can) |  
 
 ### I am not able to invoke my Cortana skill  
@@ -134,8 +134,7 @@ Ensure that you have deployed your skill.
 #### Azure Web Apps
 
 * [Remote debugging Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/web-sites-dotnet-troubleshoot-visual-studio#a-nameremotedebugaremote-debugging-web-apps)  
-  * After enabling remote debugging, simply invoke your Cortana skill and Cortana stops at your breakpoint as you walk through your code. Cortana is likely to timeout on your request, but you are still able to step through your code and look for issues.  
-
+* After enabling remote debugging, simply invoke your Cortana skill and Cortana stops at your breakpoint as you walk through your code. Cortana is likely to timeout on your request, but you are still able to step through your code and look for issues.  
 * [Best practices and troubleshooting guide for node applications on Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-nodejs-best-practices-and-troubleshoot-guide)  
 * [Troubleshoot slow web app performance issues in Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)  
 * [Best Practices for Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-best-practices)  
