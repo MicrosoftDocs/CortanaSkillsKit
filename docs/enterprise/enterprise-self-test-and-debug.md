@@ -23,7 +23,7 @@ When you use your skill, you will see an expander titled `Expand/collapse debugg
 
 There are resources available to allow you to perform local box testing (including source-level debugging via your IDE.)
 
-- [Debug with the emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-3.0) describes how to set up the bot emulator for testing. This is part of the bot framework, so it's not specific to Cortana.
+- [Debug with the emulator](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) describes how to set up the bot emulator for testing. This is part of the bot framework, so it's not specific to Cortana.
 - [Debug any Channel locally using ngrok](https://blog.botframework.com/2017/10/19/debug-channel-locally-using-ngrok/) describes how you can use ngrok to forward traffic to your local machine by changing the Messaging Endpoint. This is also not specific to Cortana.
 
 If you run into something you can't fix, and believe the problem is with Cortana or the Enterprise Skills Kit, please click the feedback icon and send us feedback.
