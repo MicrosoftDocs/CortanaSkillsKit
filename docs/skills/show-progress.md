@@ -15,7 +15,7 @@ It's important to keep the user informed while you're working on their request. 
 
 # [C#](#tab/cs)
 
-## C# example
+### C# example
 This example uses the `ExecuteWithTimeoutHandler` method to notify the user if the request exceeds three seconds. The `ExecuteWithTimeoutHandler` method executes the default message handler for the specified number of milliseconds. If the method exceeds the limit, it executes the timeout handler, which sends a message to the user (for example, "Working on it...").
 
 ```csharp
@@ -68,7 +68,7 @@ This example uses the `ExecuteWithTimeoutHandler` method to notify the user if t
 
 # [JavaScript](#tab/js)
 
-## Node.js example
+### Node.js example
 This example is a bot that starts a task timer and displays an out-of-band wait message until the task is complete.
 
 ```javascript
