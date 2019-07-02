@@ -229,7 +229,7 @@ For directed prompts, use the form, "Please select X, Y, or Z." Don't use the fo
 
 If the list of options is long (for example, a list of stock investments) or variable (for example, movie titles), using a directed prompt is impractical. In this case, use an open prompt. For example:
 
-> **User**: Hey, Cortana, ask My Stock Check.
+> **User**: Hey, Cortana, ask My Stock Check.  
 > **Cortana**: Please say a stock name.  
 > **User**: Help.  
 > **Cortana**: Please say a stock name. For example, say Microsoft.
@@ -241,7 +241,7 @@ If the list of options is long (for example, a list of stock investments) or var
 
 A confirmation is an acknowledgement that your skill heard the user's response. For example:
 
-> **User**: Hey, Cortana, book a flight.
+> **User**: Hey, Cortana, book a flight.  
 > **Cortana:** Where do you want to fly?  
 > **User:** Paris.  
 > **Cortana:** What date do you want to leave for Paris?
@@ -346,11 +346,11 @@ It's important to keep the user informed while you're working on their request. 
 
 ### Use default values
 
-Use default values when the user is not specific. For example, if the user says,"Make my room warmer," Cortana should say, "I’ve raised your room temperature to seventy two degrees" instead of "Sure, what temperature?"
+When possible, use default values when the user is not specific. For example, if the user says, "Make my room warmer," Cortana could say, "I’ve raised your room temperature to seventy two degrees" instead of "Sure, what temperature?"
 
 ### Identify the skill when invoked
 
-If the user invokes your skill without including an utterance, you should identify your skill and display your help content, or ask them what they want to do with leading questions.
+If the user invokes your skill without including an utterance, you should identify your skill and display your help content,or ask them what they want to do with leading questions.
 
 > **Good**: Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles* or *Used miles*.  
 > **Bad**: What can I do for you?
@@ -409,11 +409,11 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 -->
 
-<!-- //TODO: AITSkills that have been imported from Alexa are limited an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
+<!-- //TODO: AITSkills that have been imported from Alexa are limited to an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
 
 ![Cortana's Canvas](../media/images/cortana-canvas.png)
 
-To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0).
+To add cards to your skill, see [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0)  (Node.js version) or [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0) (.NET version).
 
 In addition to cards, Node.js users can use a set of built-in prompts to simplify collecting inputs from a user (see the [Prompt for user input](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0) page). For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
 
@@ -471,7 +471,7 @@ For more information on using both voice and text in your skill, see [Building h
 
 <!-- Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md). NOTE: The linked file was archived on 20-May-19. -->
 
-For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
+For performance design considerations, including Azure services, see [Skills performance guidelines](./performance-guidelines.md).
 
 For guidance on creating invocation names, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
 
