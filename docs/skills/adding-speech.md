@@ -77,4 +77,4 @@ Cortana requires a hint as to whether or not to open the microphone to have a co
 
 Use `deviceInfo` to modify your skill's behavior based on device type, documented in the [Determine Cortana's device type](https://docs.microsoft.com/cortana/skills/cortana-device-type) section.
 
-You can find how-to documentation on specifying input hints in the [Add input hints to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-3.0) page.
+You can find how-to documentation on specifying input hints in the [Add input hints to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-4.0) page.
