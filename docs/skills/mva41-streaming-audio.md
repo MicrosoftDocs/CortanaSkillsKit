@@ -6,7 +6,8 @@ ms.date: 10/08/2018
 ms.topic: article
 
 keywords: cortana
---- 
+---
+
 >[!NOTE]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
