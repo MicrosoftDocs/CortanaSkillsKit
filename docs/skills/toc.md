@@ -1,5 +1,5 @@
 
-# Cortana Skill Kit  
+# Cortana Skills Kit  
 
 ## [Overview](./overview.md)  
 
@@ -63,8 +63,8 @@
 ### [Terms of use sample](./terms-of-use.md)  
 ### [Privacy policy guidelines](./privacy-policy-guidelines.md)  
 
-# Cortana Skills Kit for Enterprise  
-## [Overview](../enterprise/overview.md)  
-
 # Cortana SDK
 ## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)
+
+# Cortana Skills Kit for Enterprise  
+## [Overview](../enterprise/overview.md)  
