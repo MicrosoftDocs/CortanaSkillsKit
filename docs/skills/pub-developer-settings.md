@@ -78,13 +78,15 @@ Most of the fields collected on the Developer tab are self-explanatory. Fields w
 - Email
 - Phone number
 
-![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)  ![Developer Account Type - Company](../media/images/world_settings-developer_account-company.png)
+![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)
 
 **Developer Account Type**
 
 - Specify whether the developer account is an individual account, or a company account.
 
 <!--Hopefully, portions of this data can be pre-populated using data gleaned from the MSA Azure account -->
+
+**Save, submit, or go back**
 
 ![Page buttons](../media/images/vetting-buttons-01.png)
 
