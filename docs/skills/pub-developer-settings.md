@@ -78,9 +78,9 @@ Most of the fields collected on the Developer tab are self-explanatory. Fields w
 - Email
 - Phone number
 
-![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)
-
 **Developer Account Type**
+
+![Developer Account Type - Developer](../media/images/world_settings-developer_account-developer.png)
 
 - Specify whether the developer account is an individual account, or a company account.
 
