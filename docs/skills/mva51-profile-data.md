@@ -2,12 +2,13 @@
 title: Understanding Cortana user profile data
 description: Introduces Cortana user profile data.
 
-ms.date: 02/06/2019
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
 ---
->[!NOTE]
+
+> [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Understanding Cortana's user profile data

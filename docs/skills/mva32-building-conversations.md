@@ -2,13 +2,13 @@
 title: Building conversations
 description: Describes how to build Cortana conversations.
 
-ms.date: 02/14/2019
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
 ---
 
->[!NOTE]
+> [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Building conversations

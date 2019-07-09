@@ -2,12 +2,13 @@
 title: Sharing your Cortana Skill to a group
 description: Describes how to share your Cortana Skill to a group.
 
-ms.date: 10/08/2018
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
 ---
->[!NOTE]
+
+> [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Sharing your Cortana skill to a group

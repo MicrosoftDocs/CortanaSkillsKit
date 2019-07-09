@@ -3,13 +3,16 @@ title: Testing and debugging Cortana skills
 description: Tips on testing and debugging Cortana skills.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 06/25/2019
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
 ---
 
 # Testing and debugging Cortana skills
+
+   >[!TIP]
+   >Before you start debugging your Cortana skill, visit the [Troubleshooting tips](#troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
 
 The following options are available to test and debug your Cortana skill.
 
@@ -27,10 +30,11 @@ The following options are available to test and debug your Cortana skill.
 
    For information about enabling debugging, visit the [Enable debugging in Cortana](#enable-debugging-in-cortana) section.
 
-   For details about debugging your Cortana skill in the Azure environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page. If you're working in a continuous publishing environment, see the [Set up continuous deployment](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-4.0).
+<!-- 07/09/2019: Commented this out because it points to the same debugger as above, and I am unable to find a  page referencing
+    debugging in the Azure environment. --dt
+   For details about debugging your Cortana skill in the Azure environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page. -->
 
-   >[!TIP]
-   >Before you start debugging your Cortana skill, visit the [Troubleshooting tips](#troubleshooting-tips) section and the [Known Issues](./known-issues.md) page.  
+   If you're working in a continuous publishing environment, see the [Set up continuous deployment](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-4.0) page.
 
 ## Enable debugging in Cortana
 
@@ -38,7 +42,7 @@ If Cortana reports an error when running your skill, then follow the steps below
 
 1. Go to the Configure Cortana page for your Cortana skill. Under the *Enable Cortana debug mode across all devices* section, click `Run Cortana in debug mode`  to enable.
 
-1. Invoke Cortana to test your Cortana skill. Make sure you're signed in using the same MSA that you used for the Bot Framework.
+1. Invoke Cortana to test your Cortana skill. Make sure you're signed in using the same Microsoft Account (MSA) that you used for the Bot Framework.
 
     For more information, visit the [Getting started with Cortana skills](get-started.md) page.
 
@@ -108,7 +112,7 @@ Cortana tried to connect to your service, but received an https status code of `
 
 Ensure that you have successfully deployed your skill.
 
-- If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./publish-skill.md#test-group-settings) option.  
+- If you want to make your skill available to a group of people, such as your family and friends, use the [Test Group settings](./pub-test-settings.md) option.  
 - If you want everyone to have access to your skill, use the [World settings](./publish-skill.md#world-settings) option. Your skill will be reviewed by Microsoft if you choose this option.
 
     See [Publishing Cortana skills](./publish-skill.md) for details on the publishing process.

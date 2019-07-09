@@ -26,7 +26,8 @@
 ### [Create your first Cortana skill](./skills/mva22-hello-world.md)
 ### [Understanding types of conversations](./skills/mva31-understanding-conversations.md)
 ### [Showing progress to the user](./skills/show-progress.md)
-<!--
+
+<!-- commented out and deprecated because they use the MixTape example
 ### [Building conversations](./mva32-building-conversations.md)  
 ### [Adding audio to Cortana Skills](./mva41-streaming-audio.md)  
 ### [Adding visual elements to Cortana Skills](./mva42-visual-ux.md)  

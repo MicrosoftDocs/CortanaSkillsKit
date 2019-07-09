@@ -2,11 +2,13 @@
 title: Using profile data in your Cortana Skill
 description: Describes how to use profile data in your Cortana Skill.
 
-ms.date: 10/08/2018
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
---->[!NOTE]
+---
+
+> [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Using profile data in your Cortana skill
