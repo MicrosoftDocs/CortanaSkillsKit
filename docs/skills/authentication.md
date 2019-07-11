@@ -26,9 +26,9 @@ You decide whether Cortana signs in the user when they invoke your skill, or onl
 * Refresh token expires.
 * User changes password.
 
-Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0#manage-user-identity) section.  
+Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [User authentication within a conversation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) section.
 
-The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.  
+The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.
 
 ## Get Your Cached Access Token  
 
