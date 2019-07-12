@@ -15,14 +15,14 @@ To create a skill, use the [Azure Bot Service](https://docs.microsoft.com/bot-fr
 >[!TIP]
 > For an overview of the framework, see [How the Azure Bot Service works](https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-4.0). These are the Bot Framework topics that will tell you what you need to know in order to build and deploy your first bot.
 
-After you create a bot, you need to enable speech.  This is covered in the next section, [add speech](./adding-speech.md).
+After you create a bot, you need to enable speech.  This is covered in the [Add speech to your Cortana skill](./adding-speech.md) page.
 
 ## Use the online editor to create your Cortana skill
 
 | Topic | Description |
 |:--- |:--- |
-| [Tutorial to create your Cortana skill](./mva22-hello-world.md) | Tutorial to quickly build a bot for your Cortana Skill. |
-| [My bots list configured for Cortana](https://dev.botframework.com/bots?c=cortana) | View or create  bots for your Cortana Skill. |
+| [Create your first Cortana skill](./mva22-hello-world.md) | Tutorial to quickly build a bot for your Cortana Skill. |
+| [My bots list, configured for Cortana](https://dev.botframework.com/bots?c=cortana) | View or create  bots for your Cortana Skill. |
 
 ## Use Visual Studio to create your Cortana skill
 
@@ -65,11 +65,11 @@ If you see your Cortana skill on the list, then you can invoke your skill from C
 
 When you're all set, click the Cortana microphone and invoke your skill. For example, if your invocation name is `Contoso Photo`, you can invoke your skill by saying, `Ask Contoso Photo to...` or `Tell Contoso Photo that...`. When Cortana recognizes your skill, it launches and displays on the canvas.
 
-If you have any issues, see [Test your Cortana Skill](./test-debug.md).
+If you have any issues, see [Testing and debugging Cortana skills](./test-debug.md).
 
 ## Next steps
 
-To design the perfect skill, see [Skill design principles](./design-principles.md).
+To design the perfect skill, see [Principles of Cortana skills design](./design-principles.md).
 
 To make your skill smart, add intelligence to your skill with [Cognitive Services](https://docs.microsoft.com/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-4.0). 
 

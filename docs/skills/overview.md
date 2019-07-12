@@ -13,7 +13,7 @@ keywords: cortana
 
 Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.
 
-The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Create Your First Cortana Skill](https://docs.microsoft.com/en-us/cortana/skills/get-started).
+The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Getting started with Cortana skills](https://docs.microsoft.com/en-us/cortana/skills/get-started).
 
 Because Cortana is available on many different devices, some may have a screen, while others may have a speaker, and some may have both. You should ensure that your bot is capable of handling any of these devices. The bot framework provides device information to your skill.
 
@@ -54,9 +54,9 @@ If a user asks Cortana about the weather, then Cortana triggers the built-in wea
 
 Sample dialogue:
 
->User: "What's the weather like?"
+>**User:** "What's the weather like?"
 >
->Cortana: "It's currently 58 degrees and mostly cloudy."
+>**Cortana:** "It's currently 58 degrees and mostly cloudy."
 
 ### EXAMPLE 2
 If the user invokes a Cortana skill on a device with a screen, then a card with additional information will be displayed onscreen. For example, this card might be displayed when Cortana answers the previous weather question:
@@ -66,23 +66,23 @@ If the user invokes a Cortana skill on a device with a screen, then a card with 
 ### EXAMPLE 3
 If a user is trying to invoke your Cortana skill by voice input, they speak an invocation phrase using the invocation name. For example, if a user invokes the Cortana skill `Contoso Photo` to check on the status of an order and make a change, then the conversation that follows might go like this.  
 >
-> User: "Ask Contoso Photo what the status of my photo order is."
+> **User:** "Ask Contoso Photo what the status of my photo order is."
 >
-> Cortana: "Your photo order will be ready in an hour."  
+> **Cortana:** "Your photo order will be ready in an hour."  
 >
-> Cortana: "Can I help you with anything else?"
+> **Cortana:** "Can I help you with anything else?"
 >
-> User: "What did I order?"
+> **User:** "What did I order?"
 >
-> Cortana: "Three copies of prints on glossy paper. Would you like to make a change?"
+> **Cortana:** "Three copies of prints on glossy paper. Would you like to make a change?"
 >
-> User: "Make it matte paper."
+> **User:** "Make it matte paper."
 >
-> Cortana: "You would like to change the paper to matte. Is this correct?"
+> **Cortana:** "You would like to change the paper to matte. Is this correct?"
 >
-> User: "Yes."
+> **User:** "Yes."
 >
-> Cortana: "Your order has been updated."
+> **Cortana:** "Your order has been updated."
 
 There are design guides available to help you create an engaging user experience.
 
@@ -116,7 +116,7 @@ For information about recognizing intents and entities with LUIS, visit the  [Us
 
 ## Next steps  
 
-Get ready to create your Cortana skill! Visit the [Create Your First Cortana Skill](./get-started.md) page.  
+Get ready to create your Cortana skill! Visit the [Getting started with Cortana skills](./get-started.md) page.  
 
 ## FAQ
 For answers to commonly asked questions, visit the [Cortana Skills Kit FAQ](https://docs.microsoft.com/en-us/cortana/skills/faq) page.  
