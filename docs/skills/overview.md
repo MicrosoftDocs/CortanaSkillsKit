@@ -3,7 +3,7 @@ title: Overview of Cortana Skills - Cortana skills design and development
 description: Provides an overview of Cortana Skills Kit and how you can use it to extend Cortana so your users can use Cortana to interact with your service.
 
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
-ms.date: 01/30/2019
+ms.date: 07/12/2019
 ms.topic: article
 
 keywords: cortana
@@ -66,9 +66,9 @@ If the user invokes a Cortana skill on a device with a screen, then a card with 
 ### EXAMPLE 3
 If a user is trying to invoke your Cortana skill by voice input, they speak an invocation phrase using the invocation name. For example, if a user invokes the Cortana skill `Contoso Photo` to check on the status of an order and make a change, then the conversation that follows might go like this.  
 >
-> User: "Ask Contoso Photo what the status of my order of photos is."
+> User: "Ask Contoso Photo what the status of my photo order is."
 >
-> Cortana: "Your order of photos will be ready in an hour."  
+> Cortana: "Your photo order will be ready in an hour."  
 >
 > Cortana: "Can I help you with anything else?"
 >
@@ -104,7 +104,7 @@ Microsoft Cognitive Services taps into a growing collection of powerful AI algor
 
 A well-designed Cortana skill that uses these technologies will respond like a person who sees the world as people see it. Your Cortana skill will discover information and extract knowledge from different sources to provide useful answers. Best of all, your Cortana skill will learn by experience, and will continuously improve its capabilities.  
 
-For the full list of Microsoft Cognitive Services that you may integrate, visit the [Add intelligence to bots with Cognitive Services](https://docs.microsoft.com/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-3.0) page.  
+For the full list of Microsoft Cognitive Services that you may integrate, visit the [Add intelligence to bots with Cognitive Services](https://docs.microsoft.com/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-4.0) page.  
 
 ## Natural language understanding
 
@@ -112,7 +112,7 @@ Interactions between a user and your Cortana skill are mostly free-form, so Cort
 
 You could use a simple method such as using regular expressions to inspect the content of a message and determine intent, but we encourage you to use [Language Understanding Intelligent Service (LUIS)](https://www.luis.ai). LUIS is a powerful natural language processing tool that uses pre-built or custom-trained language models to evaluate user input. LUIS can determine what users want (intent) and identify concepts and entities in a given sentence. Ultimately, this allows your Cortana skill to respond with the appropriate action.
 
-For information about recognizing intents and entities with LUIS, visit the  [Using LUIS with the Node.js SDK](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-3.0) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-3.0) page, depending on the Bot Framework SDK that you use.
+For information about recognizing intents and entities with LUIS, visit the  [Using LUIS with the Node.js SDK](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-4.0) or [Using LUIS with the .NET SDK](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-4.0) page, depending on the Bot Framework SDK that you use.
 
 ## Next steps  
 

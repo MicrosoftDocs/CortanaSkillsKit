@@ -2,7 +2,7 @@
 title: Cortana Skills performance guidelines
 description: Tips and guidelines for crating performant Cortana skills.
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 02/13/2019
+ms.date: 07/12/2019
 ms.topic: article
 keywords: cortana
 ---
@@ -60,6 +60,6 @@ If you are not using Azure's automatic scaling feature, you should disable appli
 
 ## Additional performance resources
 
-- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-3.0)
+- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-4.0)
 - [Troubleshoot performance issues in Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)
 - [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)

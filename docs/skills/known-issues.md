@@ -85,7 +85,7 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 }
 ```
 
-For JavaScript, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-3.0) that maps an empty string to a help intent.
+For JavaScript, you can create a [custom recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-4.0) that maps an empty string to a help intent.
 
 ### Bot created from the QnA (V3) template fails when invoked without an intent
 
