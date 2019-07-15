@@ -55,9 +55,14 @@ The sample code shows how to access `userInfo.Properties` in order to retrieve t
 # [JavaScript](#tab/js)
 
 ```javascript
+<<<<<<< HEAD
     var userInfo;
     if ( turnContext.activity.entities ) {
        userInfo = turnContext.activity.entities.find((e) => {
+=======
+    if ( turnContext.activity.entities ) {
+       let authEntity = turnContext.activity.entities.find((e) => {
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
        return e.type === 'UserInfo';
        });
     if (userInfo) {

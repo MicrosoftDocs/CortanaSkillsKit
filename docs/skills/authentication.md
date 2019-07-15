@@ -10,12 +10,12 @@ ms.topic: article
 keywords: cortana, oauth, authentication
 ---
 
-# Adding Authentication to Your Cortana Skill  
+# Adding authentication to your Cortana skill  
 
 >[!IMPORTANT]
 > Cortana skills handle authentication differently than Microsoft Bot Framework.
 
-## Link a Connected Account to a Cortana Skill  
+## Link an account to a Cortana skill  
 
 If your skill uses a service that requires users to authenticate using OAuth 2.0, then you should use the Connected Account feature in Cortana. The Connected Account feature in Cortana is used to get an access token for use with the service. All you need to do is provide Cortana with OAuth 2.0 settings, and Cortana manages the rest for you.  
 
@@ -30,7 +30,7 @@ Cortana skills supports both code grant flow and implicit grant flow for OAuth 2
 
 The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.
 
-## Get Your Cached Access Token  
+## Get your cached access token  
 
 If you configure the channel for connected accounts in Cortana, then Cortana sends the authentication token to your skill as entity data. From the point you ask Cortana to authenticate your user, the `entities` property for each message includes an `AuthorizationToken` object.  
 
@@ -42,7 +42,7 @@ The `AuthorizationToken` object includes the following properties.
 | `token`    | string   | The access token. The value is `null` under the following conditions. <ul> <li>User cancels the sign-in process</li> <li>User does not give consent</li> </ul> |  
 | `status`   | string   | The status of the access token. The following are the possible values. <ul> <li><code>0</code> : The `token` field is set to valid access token.</li> <li><code>1</code> : Sign in succeeded. This value is set on the first message following user sign in. The `token` field is set to valid access token.</li> <li><code>2</code> : Sign in canceled by user. The `token` field is set to `null`.</li> </ul>  |  
 
-### Example of AuthorizationToken Object  
+### Example of AuthorizationToken object  
 
 ```json
 {
@@ -52,7 +52,7 @@ The `AuthorizationToken` object includes the following properties.
 }
 ```  
 
-## Create an OAuth Enabled Cortana Skill  
+## Create an OAuth enabled Cortana skill  
 
 Create an OAuth 2.0-enabled Cortana skill using the following steps.  
 **Example:** Creates a bot in Azure Bot Service using the Basic C# bot template.  
@@ -149,7 +149,11 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     * Click **Add Platform**, click **Web**, verify that you registered your redirect URL for Cortana, and then save your changes. You do not need a sign-out URL.  
 
+<<<<<<< HEAD
            ![Add Platforms](../media/images/add_platform_1.png)  
+=======
+    ![Add Platforms](../media/images/add_platform_1.png)  
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
 
     * For other service providers: Refer to the documentation from your service provider about allowing the redirect callback.  
 
@@ -246,10 +250,17 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
     … }).setHeader('Authorization', 'Bearer ' + authAccessToken); // sets the auth token
     ```
 
+<<<<<<< HEAD
     ---
 
     Make sure you check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
 
 ## Next Steps
+=======
+    >[!NOTE]
+    > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+ 
+## Next steps
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
 
 If you use a Microsoft service that requires users to have Microsoft accounts, and are looking for more information about configuring Connected Account channel settings for Microsoft identity server, visit the [Configure authentication for Microsoft identity server](./configure-connected-account.md) page.
