@@ -14,7 +14,7 @@ In [Using profile data in your Cortana skill](./mva52-using-profile-data.md), yo
 
 That module described using the `Publish to self` option, which is the best publishing option to use when you are developing and testing a skill. `Publish to self` makes the skill available only to you. You must be logged in to your Microsoft account to use and test the skill.
 
-When you are done testing your skill and ready to share it with other users, you have the following additional publishing options:
+When you are done testing your skill and are ready to share it with other users, you have additional publishing options:
 
 - `Publish to group`, which lets you deploy the skill to a specified group of users.
 
@@ -22,27 +22,27 @@ When you are done testing your skill and ready to share it with other users, you
 
 In this module, you'll learn how to publish <!-- the **Mixtape** --> your skill, developed in the previous modules, to a group. In the next page [Publishing your Cortana skill](./mva72-publish-skill.md), you'll learn how to publish your completed skill to **World**, so that anyone can use it.
 
-For more information on Cortana publishing options, [Publishing Cortana Skills](./publish-skill.md)
+For more information on Cortana publishing options, see [Publishing Cortana Skills](./publish-skill.md).
 
 ## Step 1 - Create a group
 
-To create a group of users who can use and test your Cortana skill, update the Group Settings channel configuration settings.  
+To create a group of users who can use and test your Cortana skill, update the **Group Settings** channel configuration settings.  
 
 ![Publish to Group](../media/images/settings-group_setting-configured.png)
 
-![Publish to Group](../media/images/group_settings_configured-request_user_profile_data-data.png)
+<!-- ![Publish to Group](../media/images/group_settings_configured-request_user_profile_data-data.png) -->
 
-Under the Group section, under the Member email list, click on the `Add team member` link to add the member emails to the group.  
+Under the **Group** section, under the Member email list, click on the `Add team member` link to add the member emails to the group.  
 The Member email list displays the email address associated with the Microsoft account for each user. 
 
 >[!NOTE]
 > The email account doesn't have to be a Microsoft account, but it must be associated with a registered Microsoft account.  
 
-![Publish to Group](../media/images/group_settings_configured-group-member_email.png)  
+![Publish to Group](../media/images/group_settings_configured-group-member_email.png)
 
-Any member email address may be deleted by clicking on the trash icon next to it.  
+Any member email address may be deleted by clicking on the trash icon next to it.
 
-![Publish to Group](../media/images/group_settings_configured-group-group_access_url.png) 
+![Publish to Group](../media/images/group_settings_configured-group-group_access_url.png)
 
 To create the group, click on the `Save changes` button.  
 <!-- new -->
