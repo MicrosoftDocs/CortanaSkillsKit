@@ -44,8 +44,7 @@ Any member email address may be deleted by clicking on the trash icon next to it
 
 ![Publish to Group](../media/images/group_settings_configured-group-group_access_url.png)
 
-To create the group, click on the `Save changes` button.  
-<!-- new -->
+To create the group, click on the `Save changes` button.
 
 ## Step 2 - Invite users to join the group
 
