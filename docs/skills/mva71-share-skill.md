@@ -65,7 +65,7 @@ Each user in the group who has accepted the invitation should now have access to
 <!-- ![Skill Access](../media/images/mva41_tada.png) -->
 
 >[!NOTE]
->To leave the group, a user can open the group access URL and click `Leave`.
+>To leave the group later, including after testing is complete, users can open the group access URL and click `Leave`.
 
 ## Step 3 - Test your published skill
 
