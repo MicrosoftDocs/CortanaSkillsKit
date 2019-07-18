@@ -3,7 +3,7 @@ title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 02/21/2019
+ms.date: 07/08/2019
 ms.topic: article
 
 keywords: cortana
@@ -43,17 +43,25 @@ Cortana will sometimes append punctuation, such as a period, to the end of a use
 
 Currently Cortana does not support user's interrupting her when she is speaking. She also ignores clicking on her canvas while she is speaking.  
 
+<!-- Bug 737656: resolved 26-Jan-18
+
 ### User email address not available on iOS and Android
 
-<!-- Bug 737656 -->
-
-Currently, the user's email address from the user's profile information is not available on iOS and Android.
+Currently, the user's email address from the user's profile information is not available on iOS and Android. -->
 
 ### Windows Phone does not support login
 
-<!-- Bug 750050 -->
+<!-- Bug 750050: closed 26-Jan-18. An error message will be displayed on the phone, but no fix will be made. -->
 
 Currently, Cortana does not support logging into skills on Windows Phone. Log in using any other supported device first before using the skill on Windows Phone.
+
+### Cortana doesn't return to the previous volume level
+
+In Windows, iOS, and Android versions, if your message includes speech along with the audio attachment, Cortana plays the audio stream at a reduced volume in the background until she finishes speaking. The audio volume does not reset to normal levels.
+
+### Cortana commands to control streaming don't work
+
+Users may try to control streaming by using Cortana commands, such as *pause*, *resume*, *next*, or *previous*. This is not supported on Windows, iOS, or Android.
 
 <!--
 ### Known Bot Framework issues affecting skills

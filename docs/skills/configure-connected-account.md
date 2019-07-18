@@ -3,7 +3,7 @@ title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
 
 ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 05/20/2019
+ms.date: 06/28/2019
 ms.topic: article
 
 keywords: cortana
@@ -11,7 +11,11 @@ keywords: cortana
 
 # Configure authentication for Microsoft's identity server
 
-If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Account feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
+If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Service feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
+
+> [!NOTE]
+> You can use _any_ vendor's identity manager that manages resource for their services _if_ they
+> support OAuth 2 code authentication flow.
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
@@ -22,10 +26,10 @@ Before configuring your skill for a Connected Account, you need to update your b
 1. Set the redirect URL to `https://www.bing.com/agents/oauth`. 
 1. click **Save**.
 
-Next, you need to update the Cortana channel configuration settings for your skill. For information about configuring the channel, see the [Add your bot to the Cortana Channel](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0). One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected account.
+Next, you need to update the Cortana channel configuration settings for your skill. One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected service.
 
 1. Under the **Manage user identity through connected services** section press the option to enable it.
-1. Fill in the form.  
+1. Fill in the form.
   
     | Item | Description  |
      |------|--------------|
@@ -43,7 +47,7 @@ Next, you need to update the Cortana channel configuration settings for your ski
 
 1. Save the skill.
 
-If you previously configured the channel and want to update it to include a connected account:
+If you previously configured the channel and want to update it to include a connected service:
 
 1. Navigate to the [Bot Framework portal](https://dev.botframework.com/bots) and select your bot.
 1. Press the **Edit** button next to the Cortana channel.
@@ -51,14 +55,14 @@ If you previously configured the channel and want to update it to include a conn
 
 <!--
 
-The following are the tasks you need to do to use Microsoft identity as a connected account in your skill. 
+The following are the tasks you need to do to use Microsoft identity as a connected service in your skill. 
 
 1. Register your skill in the Microsoft ecosystem.
 2. Update your skill to use connected accounts. 
 
 #### Register your skill in the Microsoft ecosystem
 
-If you created a bot and registered it with Bot Framework, it is already registered in the Microsoft ecosystem. If not, the following steps show you how to register a new skill in the Microsoft ecosystem.
+If you created a bot and registered it with Azure Bot Services, it is already registered in the Microsoft ecosystem. If not, the following steps show you how to register a new skill in the Microsoft ecosystem.
 
 1. Navigate to [https://apps.dev.microsoft.com/portal/quickstart](https://apps.dev.microsoft.com/portal/quickstart).
 2. Click **Web**.
@@ -85,4 +89,4 @@ If you already registered your bot, you need to edit the registration to add the
 
 ## Next steps
 
-For more information about using authentication, see [Adding authentication to your skill](authentication.md).
+For more information about using authentication, see [Adding authentication to your skill](./authentication.md).

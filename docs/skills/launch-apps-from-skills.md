@@ -3,15 +3,16 @@ title: Launching apps and websites from Cortana skills
 description: Shows how to launch apps and website from your skill.
 
 ms.assetid: 6B89584E-AE15-4A6E-8104-A77062F2C835
-ms.date: 01/24/2019
+ms.date: 06/14/2019
 ms.topic: article
+ms.author: v-daturc
 
-keywords: cortana
+keywords: cortana, apps
 ---
 
 # Launching apps or websites from a Cortana skill
 
-With Cortana, it is possible for your skill to launch an app or website. To launch an app or website, include the `channelData` property in the message that you send Cortana. Set the `channelData` property to an [Action object](#action-object) that defines the action that you want Cortana to perform. For examples that show how to launch apps and websites, see:
+With Cortana, it's possible for your skill to launch an app or website. To do this, include the `channelData` property in the message that you send Cortana, and set the `channelData` property to the [Action object](#action-object) that defines the action you want Cortana to perform. For examples, see:
 
 - [Launch a website](#launch-a-website)
 - [Launching and deep linking an app](#launching-and-deep-linking-an-app)
@@ -20,7 +21,7 @@ With Cortana, it is possible for your skill to launch an app or website. To laun
 
 ## Cortana channel data objects used to launch apps and websites
 
-The following are the objects that you use to specify the channel data that you send Cortana.
+These are the objects that you use to specify the channel data that you send to Cortana.
 
 ### Action object
 
@@ -28,7 +29,7 @@ Defines a Cortana action.
 
 | Property | Type | Description 
 |-|-|-
-| action | [CortanaAction](#cortanaaction-object) | The action to perform. 
+| action | [CortanaAction](#cortanaaction-object) | The action to perform.
 
 ### CortanaAction object
 
@@ -36,13 +37,14 @@ Defines the action to perform.
 
 | Property | Type | Description 
 |----------|------|-------------|
-| type | string | The type of action to perform. The possible values are:<ul><li>LaunchUri</li></ul>
+| type | string | The type of action to perform. Use the value `LaunchUri`.
 | uri | string | The URI of the app or website to launch.  
-
 
 ## Launch a website
 
-The following example shows how to specify the channel data used to launch the Bing website.
+This example shows how to specify the channel data used to launch the Bing website.
+
+# [C#](#tab/cs1)
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -51,6 +53,8 @@ reply.ChannelData = JObject.FromObject(new {
 });
 await context.PostAsync(message);
 ```
+
+# [JavaScript](#tab/js1)
 
 ```JavaScript
 var msg = new builder.Message(session)
@@ -66,12 +70,16 @@ var msg = new builder.Message(session)
     session.endConversation(msg); 
 ```
 
+---
+
 ## Launching and deep linking an app
 
-To launch an app, use the app's protocol activation URL. In Windows 10, the built-in Maps app supports launching and deep linking. For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app). 
+To launch an app, use the app's protocol activation URL.
 
-The following example shows how to specify the channel data used to launch the Maps app and center the map over Paris.
-You can find documentation on UWP protocol handlers [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app).
+As an example, in Windows 10, the built-in Maps app supports launching and deep linking. (For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app).) 
+This code shows how to specify the channel data used to launch the Maps app, and center the map over Paris.
+
+# [C#](#tab/cs2)
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -80,6 +88,8 @@ message.ChannelData = JObject.FromObject(new {
 });
 await context.PostAsync(message);
 ```
+
+# [JavaScript](#tab/js2)
 
 ```JavaScript
 var msg = new builder.Message(session)
@@ -95,10 +105,13 @@ var msg = new builder.Message(session)
     session.endConversation(msg); 
 ```
 
+---
+
 The following image shows the launched Map app.
 
 ![Map App centered over Paris](../media/images/launched-map-app.png)
 
+For further reference, you can find documentation on UWP protocol handlers [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app).
 
 ## Start a Skype call or IM
 
@@ -106,7 +119,9 @@ If the user has Skype installed, they can launch it to to start a call or instan
 
 **Skype for Business**
 
-If the user is signed into Skype for Business, the following code opens an instant message conversation window with "someone@example.com" because there is limited support for `sip` protocol [RFC3261](https://www.ietf.org/rfc/rfc3261.txt).
+If the user is signed into Skype for Business, the following code opens an instant message conversation window with "someone@example.com".
+
+# [C#](#tab/cs3)
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -116,6 +131,8 @@ message.ChannelData = JObject.FromObject(new
 });
 await context.PostAsync(message);
 ```
+
+# [JavaScript](#tab/js3)
 
 ```JavaScript
 var msg = new builder.Message(session)
@@ -131,9 +148,11 @@ var msg = new builder.Message(session)
     session.endConversation(msg); 
 ```
 
-If the user is signed into Skype for Business, the following code opens a window and readies a phone call to "123123123123"
-as there is limited support for `tel` protocol [RFC3966](https://www.ietf.org/rfc/rfc3966.txt).
+---
 
+If the user is signed into Skype for Business, the following code opens a window and readies a phone call to "123123123123".
+
+# [C#](#tab/cs4)
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -143,6 +162,8 @@ message.ChannelData = JObject.FromObject(new
 });
 await context.PostAsync(message);
 ```
+
+# [JavaScript](#tab/js4)
 
 ```JavaScript
 var msg = new builder.Message(session)
@@ -158,15 +179,21 @@ var msg = new builder.Message(session)
     session.endConversation(msg); 
 ```
 
+---
+
 The following image shows the launched Skype for Business window.
 
 ![Making a Skype call](../media/images/make-a-call.png)
 
+>[!NOTE]
+>At the time of writing, there is limited support for both the [SIP](https://www.ietf.org/rfc/rfc3261.txt) and [tel](https://www.ietf.org/rfc/rfc3966.txt) protocols in Skype for Business.
 
 **Skype**
 
-If the user is signed in to the standard version of Skype, the following code shows how to start a call with Skype user, echo123.
+If the user is signed in to the standard version of Skype, then the following code will start a call with Skype user "echo123".
 The URI API reference is [here](https://docs.microsoft.com/skype-sdk/skypeuris/skypeuriapireference).
+
+# [C#](#tab/cs5)
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -176,6 +203,8 @@ message.ChannelData = JObject.FromObject(new
 });
 await context.PostAsync(message);
 ```
+
+# [JavaScript](#tab/js5)
 
 ```JavaScript
 var msg = new builder.Message(session)
@@ -191,9 +220,13 @@ var msg = new builder.Message(session)
     session.endConversation(msg); 
 ```
 
+---
+
 ## Create an email
 
-To send an email to a user, use the [mailto URI protocol](https://msdn.microsoft.com/library/jj710215(v=vs.85).aspx). The following example shows how to create an email in the user's email client that's ready for them to send. The example creates and email addressed to "someone@example.com", with a subject line of "This is the subject", and a body of "This is the body".
+This example shows how to create an email message in the user's email client, ready for them to send. The example creates an email addressed to "someone@example.com", with a subject line of "This is the subject", and a body of "This is the body".
+
+# [C#](#tab/cs6)
 
 ```csharp
 var message = context.MakeMessage() as IMessageActivity;
@@ -203,6 +236,8 @@ message.ChannelData = JObject.FromObject(new
 });
 await context.PostAsync(message);
 ```
+
+# [JavaScript](#tab/js6)
 
 ```JavaScript
 var msg = new builder.Message(session)
@@ -218,7 +253,8 @@ var msg = new builder.Message(session)
     session.endConversation(msg); 
 ```
 
-The following image shows the crafted email.
+---
+
+Here's the email message as displayed as displayed to the user, ready to send.
 
 ![Created email](../media/images/created-email.png)
-

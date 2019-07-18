@@ -18,7 +18,7 @@
 ### [Get user profile and context](./skills/get-user-profile-context.md)  
 ### [Use Adaptive Cards in your skill](./skills/adaptive-cards.md)  
 ### [Launch apps or websites](./skills/launch-apps-from-skills.md)  
-### [Add authentication to your skill](./skills/authentication.md)  
+### [Adding authentication to your skill](./skills/authentication.md)  
 ### [Play audio files](./skills/audio-streaming.md)  
 
 ## Tutorials  
