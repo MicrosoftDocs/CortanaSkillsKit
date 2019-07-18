@@ -2,7 +2,7 @@
 title: Get Cortana's channel data
 description: Shows how to get the Cortana's channel data when your skill runs.
 ms.assetid: 2C558B30-1B9B-445D-B190-56E1197E16E1
-ms.date: 02/21/2019
+ms.date: 07/18/2019
 ms.topic: article
 keywords: cortana
 ---
