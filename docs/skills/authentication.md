@@ -164,80 +164,88 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 # [C#](#tab/cs)
 
 ```csharp
-// Is the user authenticated?
-string authAccessToken = String.Empty;
-
-if (activity.Entities != null) {
-    foreach (var entity in activity.Entities) {
-        if (entity.Type == "AuthorizationToken") {
-            dynamic authResult = entity.Properties;
-            authAccessToken = authResult.token;
+    // Is the user authenticated?
+    string authAccessToken = String.Empty;
+    
+    if (activity.Entities != null) {
+        foreach (var entity in activity.Entities) {
+            if (entity.Type == "AuthorizationToken") {
+                dynamic authResult = entity.Properties;
+                authAccessToken = authResult.token;
+            }
         }
-    }
-}  
+    }  
 ```  
 
 # [JavaScript](#tab/js)
 
 ```javascript
-// Get access token from Cortana request
-var tokenEntity = session.message.entities.find((e) => {
-        return e.type === 'AuthorizationToken';
-    }
-);
+    // Get access token from Cortana request
+    var tokenEntity = session.message.entities.find((e) => {
+            return e.type === 'AuthorizationToken';
+        }
+    );
 ```
 
 ---
 
-    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.
+   If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
+   **Example:** Request a sign-in with an OAuthCard for Cortana using C# or Node.js.  
 
-    ```csharp
-    private Activity CreateOAuthCard( Activity activity )
-    {
-        Activity message = activity.CreateReply();
-        if (message.Attachments == null) {
-            message.Attachments = new List<Attachment>();
-        }
+# [C#](#tab/cs1)
 
-        // Create the attachment.
-        Attachment attachment = new Attachment() {
-            ContentType = OAuthCard.ContentType,
-            Content = new OAuthCard() // Cortana ignores any card configuration
-        };
+   ```csharp
+   private Activity CreateOAuthCard( Activity activity )
+   {
+       Activity message = activity.CreateReply();
+       if (message.Attachments == null) {
+           message.Attachments = new List<Attachment>();
+       }
 
-        message.Attachments.Add(attachment);
-        return message;
-    }
-    ```
+       // Create the attachment.
+       Attachment attachment = new Attachment() {
+           ContentType = OAuthCard.ContentType,
+           Content = new OAuthCard() // Cortana ignores any card configuration
+       };
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
+       message.Attachments.Add(attachment);
+       return message;
+   }
+   ```
+
+# [JavaScript](#tab/js1)
 
     ```javascript
     var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
     ```  
 
-    **Example:** How to add your access token to your resource request using C#.  
+   **Example:** How to add your access token to your resource request using C# or Node.js.  
 
-    ```csharp
-    var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
-    using (var client = new HttpClient()) {
-        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
-        var response = await client.GetAsync(url);
-    ```  
+# [C#](#tab/cs2)
 
-    **Example:** How to add your access token to your resource request using Node.js.  
+   ```csharp
+   var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
+   using (var client = new HttpClient()) {
+       client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
+       var response = await client.GetAsync(url);
+   ```  
 
-    ```javascript
-    var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
-    request.get(url, (err, response, body) => {
-    … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token
-    ```
+---
 
-    >[!NOTE]
+# [JavaScript](#tab/js2)
+
+   ```javascript
+   var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
+   request.get(url, (err, response, body) => {
+   … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token
+   ```
+
+---
+
+   >[!NOTE]
     > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
- 
+
 ## Next steps
 
 If you use a Microsoft service that requires users to have Microsoft accounts, and are looking for more information about configuring Connected Account channel settings for Microsoft identity server, visit the [Configure authentication for Microsoft identity server](./configure-connected-account.md) page.
