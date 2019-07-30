@@ -67,10 +67,9 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     ![Cortana channel icon](../media/images/add_cortana_channel_1.png)  
 
-    >[!NOTE]
-    > If your bot is already connected to the Cortana channel, then click **Edit** to access the **Default settings**.
-    > 
-    > ![Edit Channels](../media/images/edit_cortana_1.png)  
+    If your bot is already connected to the Cortana channel, click **Edit** to access the **Default settings**.
+
+    ![Edit Channels](../media/images/edit_cortana_1.png)  
 
 1. Scroll down the **Configure Cortana** page, under **Cortana should manage my user's identity**, click on the toggle.  
 
@@ -166,7 +165,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 ```csharp
     // Is the user authenticated?
     string authAccessToken = String.Empty;
-    
+
     if (activity.Entities != null) {
         foreach (var entity in activity.Entities) {
             if (entity.Type == "AuthorizationToken") {
@@ -189,7 +188,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 ---
 
-   If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.
+   If the token is empty, or if you selected the `auth on demand` option, then you may construct an OAuthCard for Cortana to request a sign-in.
 
    **Example:** Request a sign-in with an OAuthCard for Cortana using C# or Node.js.  
 
@@ -234,8 +233,6 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
        var response = await client.GetAsync(url);
    ```  
 
----
-
 # [JavaScript](#tab/js2)
 
    ```javascript
@@ -246,8 +243,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 ---
 
-   >[!NOTE]
-   > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+   You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
 
 ## Next steps
 
