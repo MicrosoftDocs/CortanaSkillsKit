@@ -159,33 +159,37 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     When the access token expires, the correct solution is to display an OAuthCard to reacquire a token.
 
-    **Example:** How to get an access token using C#.
+    **Example:** How to get an access token using C# or Node.js.
 
-    ```csharp
-    // Is the user authenticated?
-    string authAccessToken = String.Empty;
+# [C#](#tab/cs)
 
-    if (activity.Entities != null) {
-        foreach (var entity in activity.Entities) {
-            if (entity.Type == "AuthorizationToken") {
-                dynamic authResult = entity.Properties;
-                authAccessToken = authResult.token;
-            }
+```csharp
+// Is the user authenticated?
+string authAccessToken = String.Empty;
+
+if (activity.Entities != null) {
+    foreach (var entity in activity.Entities) {
+        if (entity.Type == "AuthorizationToken") {
+            dynamic authResult = entity.Properties;
+            authAccessToken = authResult.token;
         }
-    }  
-    ```  
+    }
+}  
+```  
 
-    **Example:** How to get an access token using Node.js.  
+# [JavaScript](#tab/js)
 
-    ```javascript
-    // Get access token from Cortana request
-    var tokenEntity = session.message.entities.find((e) => {
-            return e.type === 'AuthorizationToken';
-        }
-    );
-    ```
+```javascript
+// Get access token from Cortana request
+var tokenEntity = session.message.entities.find((e) => {
+        return e.type === 'AuthorizationToken';
+    }
+);
+```
 
-    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  
+---
+
+    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.
 
     **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
 

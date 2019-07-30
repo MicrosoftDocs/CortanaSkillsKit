@@ -3,7 +3,7 @@ title: Configure a connected account for Microsoft's identity server
 description: Describes how to configure a connected account for Microsoft's identify service in Cortana's channel configuration settings.
 
 ms.assetid: D7B5F7D3-12E9-4DB1-BC6F-1EC3FB1812C5
-ms.date: 06/28/2019
+ms.date: 07/30/2019
 ms.topic: article
 
 keywords: cortana
@@ -14,12 +14,12 @@ keywords: cortana
 If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Service feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
 
 > [!NOTE]
-> You can use _any_ vendor's identity manager that manages resource for their services _if_ they
+> You can use any vendor's identity manager that manages resource for their services _if_ they
 > support OAuth 2 code authentication flow.
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
-1. Navigate to [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
+1. Navigate to  the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade). <!-- [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList). -->
 1. Click your bot's name in the list. 
 1. Under **Platforms**, click **Add Platform**.
 1. Click **Web**.
@@ -52,40 +52,6 @@ If you previously configured the channel and want to update it to include a conn
 1. Navigate to the [Bot Framework portal](https://dev.botframework.com/bots) and select your bot.
 1. Press the **Edit** button next to the Cortana channel.
 1. Specify the steps above to configure the connected account.
-
-<!--
-
-The following are the tasks you need to do to use Microsoft identity as a connected service in your skill. 
-
-1. Register your skill in the Microsoft ecosystem.
-2. Update your skill to use connected accounts. 
-
-#### Register your skill in the Microsoft ecosystem
-
-If you created a bot and registered it with Azure Bot Services, it is already registered in the Microsoft ecosystem. If not, the following steps show you how to register a new skill in the Microsoft ecosystem.
-
-1. Navigate to [https://apps.dev.microsoft.com/portal/quickstart](https://apps.dev.microsoft.com/portal/quickstart).
-2. Click **Web**.
-3. Provide the following information:
-    1. **Application Name** 
-    2. **Contact Email**
-3. Click **Create**.
-4. Enter `https://www.bing.com/agents/oauth` as the redirect URL and save.
-5. Click **go to settings** to continue configuring your skill.
-6. On the configuration page, click **Generate new password** to generate an application secret. Make sure to save it somewhere safe!
-
-If you already registered your bot, you need to edit the registration to add the redirect URL. To add authentication support to an already registered bot, follow these steps.
-
-1. Navigate to [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList).
-2. Select your bot from the list of apps. 
-3. Under **Platforms**, click **Add Platform**.
-4. Click **Web**.
-5. Set the redirect URL to `https://www.bing.com/agents/oauth` and click **Save**.
-6. The password used for authentication is your bot's password. 
-
--->
-
-
 
 ## Next steps
 

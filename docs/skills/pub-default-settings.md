@@ -48,7 +48,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     * `Client ID for third-party services`: The application ID of your bot.
 
-        If you use a Microsoft service, the you get your application ID on the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/#/appList) page. Click the name of your BotFramework bot, listed under the **My Applications** section.
+        If you use a Microsoft service, the you get your application ID on the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) page. Click the name of your BotFramework bot, listed under the **My Applications** section.
 
     * `Space-separated list of scopes`: The list of scopes, separated by spaces.
     * `Authorization URL`: The authorization URL of your OAuth 2.0 provider.
@@ -72,7 +72,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
     * `Client secret/password for third party services`: Your bot's password.  If you're using Microsoft Identity Service, then the password is generated when you register your bot in the *Microsoft Application Registration* portal.
 
         >[!IMPORTANT]
-        > The client secret (password) is displayed only once. When you create your bot, it's shown under the **Application Secrets** section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal.
+        > The client secret (password) is displayed only once. When you create your bot, it's shown under the **Application Secrets** section of the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) portal.
         >
         > If you don't know the password, you'll need to create a new one by clicking on the `Generate New password` button.
 
