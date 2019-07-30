@@ -216,11 +216,14 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 # [JavaScript](#tab/js1)
 
-    ```javascript
-    var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
-    ```  
+   ```javascript
+   var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
 
-   **Example:** How to add your access token to your resource request using C# or Node.js.  
+   ```
+
+---
+
+  **Example:** How to add your access token to your resource request using C# or Node.js.  
 
 # [C#](#tab/cs2)
 
@@ -244,7 +247,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 ---
 
    >[!NOTE]
-    > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+   > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
 
 ## Next steps
 
