@@ -19,7 +19,7 @@ If your skill uses a Microsoft service that requires an OAuth access token to au
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
-1. Navigate to  the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade). <!-- [https://apps.dev.microsoft.com/#/appList](https://apps.dev.microsoft.com/#/appList). -->
+1. Navigate to  the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
 1. Click your bot's name in the list. 
 1. Under **Platforms**, click **Add Platform**.
 1. Click **Web**.
