@@ -10,6 +10,7 @@
 
 ## Skills design  
 ### [Principles of Cortana skills design](./design-principles.md)  
+### [Building hybrid user interfaces](./building-hybrid-user-interfaces.md)
 ### [Invocation name guidelines](./cortana-invocation-guidelines.md)  
 ### [Performance guidelines](./performance-guidelines.md)  
 
@@ -19,9 +20,8 @@
 ### [Get user profile and context](./get-user-profile-context.md)  
 ### [Use Adaptive Cards in your skill](./adaptive-cards.md)  
 ### [Launch apps or websites](./launch-apps-from-skills.md)  
-### [Add authentication to your skill](./authentication.md)  
+### [Adding authentication to your skill](./authentication.md)  
 ### [Play audio files](./audio-streaming.md)  
-
 
 ## Tutorials  
 ### [Set up your developer environment](./mva21-setup.md)  
@@ -36,7 +36,6 @@
 ### [Using profile data in your Cortana skill](./mva52-using-profile-data.md)  
 ### [Using authentication in your Cortana skill](./mva61-authentication.md)  
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
-### [Publishing your Cortana skill](./mva72-publish-skill.md)  
 
 ## Samples  
 ### [Skill samples](./cortana-samples.md)  
@@ -46,8 +45,12 @@
 ### [Known issues](./known-issues.md)  
 
 ## Publish skills  
-### [Publish Cortana Skills](./publish-skill.md)  
 ### [Review guidelines](./skill-review-guidelines.md)  
+### [Publish Cortana Skills](./publish-skill.md)
+#### [Default settings](./pub-default-settings.md)
+#### [Developer settings](./pub-developer-settings.md)
+#### [Test settings](./pub-test-settings.md)
+#### [World settings](./pub-world-settings.md)
 
 ## Reference  
 ### [Speech Synthesis Markup Language (SSML) Reference](./speech-synthesis-markup-language.md)  
@@ -61,13 +64,7 @@
 ### [Privacy policy guidelines](./privacy-policy-guidelines.md)  
 
 # Cortana Skills Kit for Enterprise  
-
 ## [Overview](../enterprise/overview.md)  
 
-# Additional Cortana APIs  
-
-## Voice Commands  
-### [Overview](../voice-commands/vcd.md)  
-
-## Structured Data Markup  
-### [Overview](../data-markup/structured-data-markup.md)  
+# Cortana SDK
+## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)

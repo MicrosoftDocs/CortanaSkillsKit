@@ -2,7 +2,7 @@
 title: Cortana invocation guidelines
 description: Choose an invocation name that is easily spoken and readily recognized by the Cortana natural language speech engine.  
 ms.assetid: 8887c784-abc1-434c-b0ef-01ec71ddf11d
-ms.date: 04/01/2019
+ms.date: 08/01/2019
 ms.topic: article
 keywords: cortana
 ---
@@ -60,7 +60,7 @@ Compound words can be difficult to recognize.  
 
 ### Avoid hard to pronounce word​s.
 
-An invocation name that contains difficult words to pronounce, such as Quinoa, makes it harder for your users to pronounce correctly, and for Cortana to understand.​
+An invocation name that contains difficult-to-pronounce words, such as Quinoa, makes it harder for your users to pronounce correctly, and for Cortana to understand.​
 
 ### Avoid names that combine multiple words into one.
 
@@ -74,6 +74,8 @@ If your skill uses a Language Understanding Intelligence Service (LUIS) app from
 - Ask My Radio to play classical music
 - Ask My Radio for classical music
 - Ask My Radio for some classical
+
+For more information see the [Configure speech priming](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) page.
 
 <!-- This doesn't belong in a guidance doc. Check to see if it's elsewhere. 02/01/2019 (dt)
 To specify your model:

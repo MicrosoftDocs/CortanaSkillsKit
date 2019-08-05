@@ -2,8 +2,9 @@
 title: Set up your development environment
 description: Describes how to set up the Cortana development environment.
 
-ms.date: 02/13/2019
+ms.date: 05/06/2019
 ms.topic: article
+ms.author: v-daturc
 
 keywords: cortana
 ---
@@ -14,12 +15,16 @@ Before you can build your first skill, you need to set up your development envir
 
 * Set up access to cloud resources, as listed below.
 * Make sure your PC or Mac has the necessary development tools and operating system version.
-* Set up Cortana.
+
+>[!IMPORTANT]
+>Cortana currently supports only one locale: U.S. English (en-US).
+
+* Set up Cortana on your machine.
 * Optionally, set up your Android or iOS mobile device, or Harman Kardon Invoke speaker, to work with Cortana.
 
 ## Step 1 - Set up cloud resources
 
-Developing a Cortana skill requires a variety of cloud resources. For example, you need a Microsoft account in order to register your skill and connect it to Cortana. If you don't already have a Microsoft account, go to the [Microsoft Account](https://account.microsoft.com/account) web site to sign up for one.
+Developing a Cortana skill requires a variety of cloud resources. For example, you need a Microsoft account in order to register your skill and connect it to Cortana. If you don't already have a Microsoft account, go to the [Microsoft Account](https://account.microsoft.com/account) website to sign up for one.
 
 >[!NOTE]
 > To develop a Cortana skill, you must use a [Microsoft account](https://account.microsoft.com/account) rather than an Azure Active Directory (Azure AD) organizational account, such as an account associated with Office 365.
@@ -44,7 +49,7 @@ Other resources include:
 
 You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update (build 1607), using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/microsoft/botbuilder-v3).
 
-Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
+Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
 
 >[!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.

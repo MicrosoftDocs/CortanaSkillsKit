@@ -8,9 +8,8 @@ ms.topic: article
 
 keywords: cortana
 ---
-# Add speech to your Cortana skill
-
-The Cortana channel will speak the message or response sent from the skill to the channel if the `speak` property is set on the message.
+# Add speech to your Cortana skill #
+The Cortana channel will speak the message or response sent from the skill to the channel if the `speak` property is set on the message (and the conversation turn was triggered by voice input).
 Bot Service bots do not speak by default, so you need to make minor modifications to get Cortana to speak.
 
 ## Add Speech to Bot Service (V4) bots
