@@ -14,7 +14,7 @@ keywords: cortana
 If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Service feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
 
 > [!NOTE]
-> You can use any vendor's identity manager that manages resource for their services _if_ they
+> You can use any vendor's identity manager that manages resource for their services, as long as they
 > support OAuth 2 code authentication flow.
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
@@ -23,18 +23,14 @@ Before configuring your skill for a Connected Account, you need to update your b
 1. Click your bot's name in the list. 
 1. Under **Platforms**, click **Add Platform**.
 1. Click **Web**.
-1. Set the redirect URL to `https://www.bing.com/agents/oauth`. 
+1. Set the redirect URL to `https://www.bing.com/agents/oauth`.
 1. click **Save**.
 
 Next, you need to update the Cortana channel configuration settings for your skill. One of the channel configuration options is to specify a connected account (see **Manage user identity**).
 
 The following steps walk you through adding a connected service.
 
-1. Under the **Manage user identity through connected services** section press the option to enable it.
-
-![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-off.png)
-
-1. Fill in the form.
+1. Under the **Manage user identity through connected services** section press the option to enable it, then fill in the form.
 
 ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
   

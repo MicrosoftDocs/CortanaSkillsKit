@@ -34,7 +34,6 @@ For more information about configuring the Cortana channel, visit the [Connect a
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.
 
     1. Manage user identity through Connected Services
-    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-off.png)
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
 
