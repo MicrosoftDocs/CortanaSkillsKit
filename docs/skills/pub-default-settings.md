@@ -38,7 +38,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
 
-        ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
+       ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
 
     * `When should Cortana prompt for a user to sign in?`
         * `Sign in at invocation`: The user signs in once, and the authorization token will be passed as needed.

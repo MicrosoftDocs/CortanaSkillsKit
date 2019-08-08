@@ -26,10 +26,17 @@ Before configuring your skill for a Connected Account, you need to update your b
 1. Set the redirect URL to `https://www.bing.com/agents/oauth`. 
 1. click **Save**.
 
-Next, you need to update the Cortana channel configuration settings for your skill. One of the channel configuration options is to specify a connected account (see **Manage user identity**). The following steps walk you through adding a connected service.
+Next, you need to update the Cortana channel configuration settings for your skill. One of the channel configuration options is to specify a connected account (see **Manage user identity**).
+
+The following steps walk you through adding a connected service.
 
 1. Under the **Manage user identity through connected services** section press the option to enable it.
+
+![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-off.png)
+
 1. Fill in the form.
+
+![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
   
     | Item | Description  |
      |------|--------------|
