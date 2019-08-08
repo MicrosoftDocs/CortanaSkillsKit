@@ -2,7 +2,7 @@
 title: Default Group Settings
 description: Describes how to fill out Default Group section when publishing a Cortana skill.
 ms.topic: article
-ms.date: 07/31/2019
+ms.date: 08/08/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -90,8 +90,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
 
-        >[!TIP]
-        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+        For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
 1. After all of the required fields are completed, you can click on the `Deploy on Cortana` button.
 
