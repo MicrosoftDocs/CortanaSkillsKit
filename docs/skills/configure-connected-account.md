@@ -12,7 +12,7 @@ keywords: cortana
 # Configure a connected account
 
 > [!IMPORTANT]
-> You can use any vendor's identity manager that manages resource for their services, as long as it
+> You can use any vendor's identity manager that manages resources for their services, as long as it
 > supports OAuth 2 code authentication flow.
 
 ## Configure authentication for Microsoft's identity server
