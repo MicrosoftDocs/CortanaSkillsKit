@@ -37,6 +37,8 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
 
+   <!-- This graphic is also included in configure-connected-account.md  Make sure to update text there if you change it! -->
+
        ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
 
     * `When should Cortana prompt for a user to sign in?`
@@ -54,7 +56,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         If you use a Microsoft service, then the authorization URL is:
 
-        ```url
+        ```URL
         https://login.microsoftonline.com/common/oauth2/v2.0/authorize
         ```
 
@@ -64,7 +66,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         If you are using a Microsoft service, then set to the following value.
 
-        ```url
+        ```URL
         https://login.microsoftonline.com/common/oauth2/v2.0/token
         ```
 
@@ -83,7 +85,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         ![Request user profile](../media/images/default_settings-request_user_profile_data-empty.png)
 
-        Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
+        Click on `Add a user profile request` and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
 
         >[!IMPORTANT]
         > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines.md#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines.md).
@@ -99,4 +101,3 @@ For more information about configuring the Cortana channel, visit the [Connect a
     ![Deploy on Cortana - enabled](../media/images/default_settings-back-deploy-manage-active.png) -->
 
 You can confirm that your Cortana skill is deployed on the Bot Framework portal or Azure portal page by logging in with the same Microsoft account (MSA) that you registered in the *Bot Framework* portal.
-

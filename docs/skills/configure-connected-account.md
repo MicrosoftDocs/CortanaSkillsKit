@@ -20,7 +20,7 @@ If your skill uses a Microsoft service that requires an OAuth access token to au
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
 1. Navigate to  the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
-1. Click your bot's name in the list. 
+1. Click your bot's name in the list.
 1. Under **Platforms**, click **Add Platform**.
 1. Click **Web**.
 1. Set the redirect URL to `https://www.bing.com/agents/oauth`.
@@ -31,6 +31,8 @@ Next, you need to update the Cortana channel configuration settings for your ski
 The following steps walk you through adding a connected service.
 
 1. Under the **Manage user identity through connected services** section press the option to enable it, then fill in the form.
+
+   <!-- This graphic is also included in pub-default-settings.md  Make sure to update text there if you change it! -->
 
    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
 
