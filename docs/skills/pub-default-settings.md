@@ -39,7 +39,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
    <!-- This graphic is also included in configure-connected-account.md  Make sure to update text there if you change it! -->
 
-       ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
+    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
 
     * `When should Cortana prompt for a user to sign in?`
         * `Sign in at invocation`: The user signs in once, and the authorization token will be passed as needed.
