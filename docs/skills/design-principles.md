@@ -287,36 +287,6 @@ If the user answers this question with a date, then the answer implies that Seat
 
 Answering with a simple yes or no does not answer this kind of question.
 
-<!--
-Removed per Dorrene
-
-- [Short time-out confirmation](#Short-Time-out-Confirmation)
-
-### Short time-out confirmation
-
-Short time-out confirmations echo the user's answer and waits a short period of time for a user's utterance. The lack of an utterance by the user within the time-out period implies acceptance. The skill does not expect a response. Instead, the skill makes a statement of its understanding to the user and invites a correction. Assuming that the skill is correct most of the time, the conversation flows quickly and smoothly.
-
-```
-Cortana: Which city do you want to fly to?
-User: Seattle.
-Cortana: Seattle.
-User: "" 
-Cortana: "What time do you want to fly?
-```
-
-Because the user did not correct the skill when it repeated the value, the skill accepts the value, *Seattle*. 
-
-If the user utters anything during the time-out period (for example, mumbling, asking for Help, or saying Repeat), it's a good idea to revert to an explicit confirmation state.
-
-```
-Cortana: Which city do you want to fly to?
-User: Seattle.
-Cortana: Seattle.
-User: ~Mumble~
-Cortana: Am I right with Seattle?
-```
--->
-
 ## Other design considerations
 
 ### Present help
@@ -350,15 +320,20 @@ Use default values when the user is not specific. For example, if the user says,
 
 If the user invokes your skill without including an utterance, you should identify your skill and display your help content, or ask them what they want to do with leading questions.
 
-> **Good**: Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles* or *Used miles*.  
-> **Bad**: What can I do for you?
+| |   |
+|-:| - |
+| **Good**:| Welcome to My Travel Agent. To book a trip, say *Book a trip*, or to get the status of your miles say, *Available miles* or *Used miles*. |
+| **Bad**:| What can I do for you? |
+
 
 ### Break lists into manageable pieces
 
-Generally, the human brain can only remember a limited amount of information when listening to instructions. Limit voice interactions to only what is absolutely required. For example, present only three items of a list at a time. 
+Generally, the human brain can only remember a limited amount of information when listening to instructions. Limit voice interactions to only what is absolutely required. For example, present only three items of a list at a time.
 
-> **Good**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Would you like to hear more?  
-> **Bad**: I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Number four,  Me and Julio. Number five, Millenial Keyboards....
+| |   |
+|-:| - |
+| **Good**: | I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Would you like to hear more? |
+| **Bad**: | I've found ten concerts near you. Number one, Spring Fling. Number two, Hot Summer Night. Number three, Fall's A-coming. Number four, Me and Julio. Number five, Millenial Keyboards... |
 
 ### Understand abbreviations and symbols
 
@@ -366,14 +341,10 @@ Cortana's text-to-speech translator handles most text such as abbreviations and 
 
 For example:
 
-  - "Dr. Smith" is spoken as "Doctor Smith"
-  - "Microsoft.com" is spoken as "microsoft dot com"
-  - "Shopping Ctr." is spoken as "shopping center"
-  - "Lake Shore Dr." is spoken as "Lake Shore Drive"
-
-<!--
-If you're porting a text-based app to voice, you likely need to change the design to use voice-based design principles since the purpose of using voice is to get to a result faster.
--->
+- "Dr. Smith" is spoken as "Doctor Smith"
+- "Microsoft.com" is spoken as "microsoft dot com"
+- "Shopping Ctr." is spoken as "shopping center"
+- "Lake Shore Dr." is spoken as "Lake Shore Drive"
 
 ## Design your skill's visual elements 
 
@@ -399,19 +370,6 @@ Cortana supports Bot Framework cards, which are rich graphical controls that can
 | Sign-In Card | A card that lets the skill initiate a sign-in procedure | Single |
 
 The following image shows a card displayed on Cortana's canvas.
-
-<!-- There are two main components of the card; 
-
-1. The skill information which consists of the logo and name specified when registering your Cortana skill. The name of the skill is limited to 30 characters. The logo is a png or jpeg that is 60 by 60 pixels and can be up to 30kb in size.
-2. The second is the canvas area of Cortana where the content of each response is displayed. The layout of the content varies. Bot Framework based skills support a number of different card layouts. 
-
-???? Is the 30 character limit a Cortana limit (bot framework's limit is 35 characters)?
-Bot framework supports only PNG format and not JPEG.
-Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, not shape.)?
-
--->
-
-<!-- //TODO: AITSkills that have been imported from Alexa are limited an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
 
 ![Cortana's Canvas](../media/images/cortana-canvas.png)
 
@@ -449,8 +407,11 @@ Some users use Cortana on speaker-only devices and can't see a card. If the user
 
 The following scenario shows a cooking skill that provides a list of ingredients.
 
-> **Good**: This recipe has five ingredients. Here are the first three. Two eggs, a cup of flour, and a half a cup of water. Say *next* for the rest of the ingredients.  
-> **Bad**: Open the companion app to see the list of ingredients.
+|   |   |
+| -:| - |
+| **Good**: | This recipe has five ingredients. Here are the first three. Two eggs, a cup of flour, and a half a cup of water. Say *next* for the rest of the ingredients. |
+| **Bad**: | Open the companion app to see the list of ingredients. |
+|  |  |
 
 Note that the time between user utterances is limited. On a speaker-only device,if a timeout occurs, the skill ends. On a Windows device, the skill is still active, but the microphone turns off. <!-- For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.-->
 
@@ -458,12 +419,14 @@ Note that the time between user utterances is limited. On a speaker-only device,
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
-#### Speaker-only device:
-  - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
+#### Speaker-only device
 
-#### Device with screen: 
-  - **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
-  - **Card**: Show an image and additional details such as sizes/dimensions and color options.
+> **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
+
+#### Device with screen
+
+> **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
+> **Card**: Show an image and additional details such as sizes/dimensions and color options.
 
 The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
 
@@ -501,4 +464,4 @@ When you publish your skill to the world, the Cortana team reviews your skill to
 
 <!-- Think about including the bot framework's design principles 
 
-Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-3.0).
+Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-3.0). -->
