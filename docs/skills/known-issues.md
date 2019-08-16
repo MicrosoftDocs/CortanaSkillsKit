@@ -23,7 +23,7 @@ In the v3 bot framework, it's possible to use ```SendActivitiesAsync``` to show 
 
 As a workaround, you should use ```SendActivityAsync``` with a list of cards, as shown in the sample code below.
 
-``` C#
+```csharp
 var cardAttachmentl = CreateAdaptiveCardAttachment(_cards[0]);
 var cardAttachment2 = CreateAdaptiveCardAttachment(_cards[l]);
 
