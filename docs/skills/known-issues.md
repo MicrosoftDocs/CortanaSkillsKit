@@ -17,6 +17,27 @@ Cortana Skills Kit is currently in preview. This document lists known issues, an
 
 The public preview for Cortana is available for the U.S. English (en-US) market only.
 
+### Cortana does not display all cards when using ```SendActivitiesAsync``` in the v4 bot framework
+
+In the v3 bot framework, it's possible to use ```SendActivitiesAsync``` to show multiple cards in Cortana. However, in v4, this will not work. Cortana will display the first card, but none of the others on the list will be shown.
+
+As a workaround, you should use ```SendActivityAsync``` with a list of cards, as shown in the sample code below.
+
+``` C#
+var cardAttachmentl = CreateAdaptiveCardAttachment(_cards[0]);
+var cardAttachment2 = CreateAdaptiveCardAttachment(_cards[l]);
+
+var activity = MessageFactory.Text("Testing a list of adaptive cards.");
+activity.AttachmentLayout = AttachmentLayoutTypes.List;
+activity.Attachments = new List<Attachment>();
+
+activity.Attachments.Add(cardAttachmentl);
+activity.Attachments.Add(cardAttachment2);
+
+await stepContext.Context.SendActivityAsync(activity, cancellationToken);
+break;
+```
+
 ### Cortana stops talking after 15 seconds, or displays the message, "Unfortunately this skill won't work on this version of Windows"
 
 Cortana in the Windows 10 Anniversary update (version 1607) limits speech to 15 seconds. This limit has been removed in the Windows 10 Creators update (version 1703). A workaround is to break your speech text into multiple responses. You can send multiple replies to a single user invocation, as long as the input hint of the first N-1 replies is `IgnoringInput`. The last reply must set the input hint to `ExpectingInput` (which automatically turns the microphone on), or `AcceptingInput` (which doesn't).
