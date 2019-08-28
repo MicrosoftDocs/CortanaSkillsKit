@@ -3,7 +3,7 @@ title: Understanding types of conversations
 description: Explains the different types of Cortana conversations.
 
 
-ms.date: 10/08/2018
+ms.date: 08/28/2019
 ms.topic: article
 
 keywords: cortana
@@ -22,7 +22,7 @@ The most basic Cortana conversation is a *single-turn* conversation. In this exa
 
 ![Forecast](../media/images/mva31_forecast.png)
 
-You can also have a *multi-turn* conversation, in which there a dialog between Cortana and the user. Cortana responds appropriately to the second question by remembering the intent (or context) established by the first interaction.
+You can also have a *multi-turn* conversation, in which there's a dialog between Cortana and the user. Cortana responds appropriately to the second question by remembering the intent (or context) established by the first interaction.
 
 >**User:** Hey Cortana, what's the weather today?  
 >**Cortana:** The forecast shows light rain with a high of 47 and a low of 42.  
