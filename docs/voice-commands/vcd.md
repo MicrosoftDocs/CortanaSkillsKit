@@ -1,8 +1,8 @@
 ---
-Title: Cortana voice commands - Cortana UWP design and development
-Description: Extend the basic functionality of Cortana with voice commands.
-Author: kbridge
-Label: Conceptual
+title: Cortana voice commands - Cortana UWP design and development
+description: Extend the basic functionality of Cortana with voice commands.
+author: kbridge
+label: Conceptual
 ms.assetid: 18e45699-6f2f-431a-a4e7-7706171d1d8b
 
 ms.date: 02/08/2017
