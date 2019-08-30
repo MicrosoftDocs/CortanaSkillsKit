@@ -2,7 +2,7 @@
 title: Overview of Cortana Skills Kit for Enterprise | Cortana Skills Kit for Enterprise
 description: Extend your Cortana capabilities to help your employees be more productive. 
 
-ms.date: 04/25/2019
+ms.date: 08/30/2019
 ms.topic: article
 ms.prod: cortana
 ms.author: v-daturc
@@ -11,12 +11,6 @@ keywords: cortana
 ---  
 
 # Cortana Skills Kit for Enterprise  
-
->[!IMPORTANT]
-> Here is our [latest blog update](https://techcommunity.microsoft.com/t5/Cortana-Skills-Kit-Blog/Cortana-Skills-Kit-for-Enterprise-BUILD-2019-Update/ba-p/535109) on Cortana Skills Kit for Enterprise.
-
->[!NOTE]
-> Cortana Skills Kit for Enterprise is currently available through Microsoft's Technology Adoption Program. <!-- Please fill out the [interest form](http://aka.ms/CortanaForEnterprise) and we will keep you informed about the program.-->
 
 Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capabilities by building their own custom skills for domains ranging from HR, IT, Helpdesk, and Sales to areas like Smart Buildings. Cortana is designed to:  
 
