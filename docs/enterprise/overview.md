@@ -12,7 +12,7 @@ keywords: cortana
 
 # Cortana Skills Kit for Enterprise  
 
-Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capabilities by building their own custom skills for domains ranging from HR, IT, Helpdesk, and Sales to areas like Smart Buildings. Cortana is designed to:  
+Cortana is a digital assistant that keeps users informed and productive, helping them get things done throughout the day. With Cortana Skills Kit for Enterprise, businesses can now extend Cortana’s capabilities by building their own custom skills for domains ranging from HR, IT, Helpdesk, and Sales to areas like smart buildings. Cortana is designed to:  
 
 :::row:::
     :::column:::

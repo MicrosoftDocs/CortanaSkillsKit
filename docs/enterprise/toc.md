@@ -61,7 +61,6 @@
 
 ## Appendix
 
-<<<<<<< HEAD
 ### [Supporting Multiple Channel OAuth](supporting-multiple-channel-oauth.md)
 
 ### [IT Admin-managed "default" scopes](admin-managed-default-scopes.md)
@@ -69,6 +68,3 @@
 ### [Configuring authentication with connected services](configuring-authentication-connected-services.md)
 
 ## [Ideas](enterprise-ideas.md)
-=======
-## [Overview](./overview.md)  
->>>>>>> master

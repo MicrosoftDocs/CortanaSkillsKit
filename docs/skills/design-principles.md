@@ -426,22 +426,6 @@ The Bot Framework's Hero card is a good option for this case. If presenting seve
 
 A card's attachment layout specifies how to display multiple card attachments. The framework supports vertical list layout and horizontal carousel layout. Use carousels, if possible.
 
-<!--
-
-Need to add a section like this:
-
-## Using other Bot Framework UI elements
-
-In addition to cards, Bot Framework provides the following UI elements that your skill may use. 
-
-Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0#prompt-types).
-
-.NET users can use [FormFlow](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-formflow?view=azure-bot-service-3.0).
-
-What design rules apply to Node.js prompts?
-What design rules apply to .NET FormFlows?
--->
-
 ## Next steps
 
 ### All skills developers
@@ -449,8 +433,6 @@ What design rules apply to .NET FormFlows?
 These apply to developers of both enterprise and consumer skills.
 
 For more information on using both voice and text in your skill, see [Building hybrid user interfaces](./building-hybrid-user-interfaces.md).
-
-Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md).
 
 For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
 
