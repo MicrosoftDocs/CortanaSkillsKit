@@ -22,20 +22,22 @@ In this module you'll learn how to extend the **Mixtape** skill developed in [Bu
 
 You can use Cortana's **ChannelData** object to launch the default client email using the [mailto URI protocol](https://msdn.microsoft.com/en-us/library/jj710215(v=vs.85).aspx). Revise the **SaveSongIntent** method in the **BasicLuisDialog.cs** module of your **Mixtape** skill as follows:
 
-    public async Task SaveSongIntent(IDialogContext context, LuisResult result)
+```csharp
+public async Task SaveSongIntent(IDialogContext context, LuisResult result)
+{
+    var response = context.MakeMessage();
+    response.Text = "Sign in to save the song to a mixtape.";
+    response.Speak = response.Text;
+
+    response.ChannelData = JObject.FromObject(new
     {
-        var response = context.MakeMessage();
-        response.Text = "Sign in to save the song to a mixtape.";
-        response.Speak = response.Text;
+        action = new { type = "LaunchUri", uri = "mailto://" }
+    });
 
-        response.ChannelData = JObject.FromObject(new
-        {
-            action = new { type = "LaunchUri", uri = "mailto://" }
-        });
-
-        await context.PostAsync(response);
-        context.Wait(MessageReceived);
-    }
+    await context.PostAsync(response);
+    context.Wait(MessageReceived);
+}
+```
 
 For more information on working with the **ChannelData** object, see [Get Cortana's channel data](./cortana-channel-data.md).
 
@@ -45,29 +47,31 @@ You can also use the **ChannelData** object to launch a variety of apps or websi
 
 The Mixtape skill can save a song by sending it in email if a user invokes the skill on a device with a screen and email client, but that approach will not work correctly for a headless device such as the Invoke speaker. To make sure the skill works correctly for the current device, you can check the device's **supportsDisplay** property and then take appropriate action. Revise the **SaveSongIntent** method as follows:
 
-    public async Task SaveSongIntent(IDialogContext context, LuisResult result)
+```csharp
+public async Task SaveSongIntent(IDialogContext context, LuisResult result)
+{
+    var response = context.MakeMessage();
+
+    var userInfo = ((Activity)context.Activity).Entities.FirstOrDefault(e => e.Type.Equals("DeviceInfo"));
+    var hasDisplay = userInfo.Properties["supportsDisplay"].ToString();
+
+    if (hasDisplay =="true")
     {
-        var response = context.MakeMessage();
-
-        var userInfo = ((Activity)context.Activity).Entities.FirstOrDefault(e => e.Type.Equals("DeviceInfo"));
-        var hasDisplay = userInfo.Properties["supportsDisplay"].ToString();
-
-        if (hasDisplay =="true")
+        response.ChannelData = JObject.FromObject(new
         {
-            response.ChannelData = JObject.FromObject(new
-            {
-                action = new { type = "LaunchUri", uri = "mailto://" }
-            });
-        }
-        else
-        {
-            response.Text = "Sorry, I cannot save this song on this device. Check back soon.";
-            response.Speak = response.Text;
-        }
-
-        await context.PostAsync(response);
-        context.Wait(MessageReceived);
+            action = new { type = "LaunchUri", uri = "mailto://" }
+        });
     }
+    else
+    {
+        response.Text = "Sorry, I cannot save this song on this device. Check back soon.";
+        response.Speak = response.Text;
+    }
+
+    await context.PostAsync(response);
+    context.Wait(MessageReceived);
+}
+```
 
 The skill now launches the device's default mail program if the device's **supportsDisplay** property is **true**. Otherwise, the skill responds with a message that Cortana cannot save the song on the device.
 
@@ -75,29 +79,31 @@ The skill now launches the device's default mail program if the device's **suppo
 
 You can further enhance the Mixtape skill by passing data from the service to the mail application. You can add query parameters to the **mail to** deep link to pass a variety of information to the application. For example, revise the **SaveSongIntent** method as follows to add a subject line to the message sent by Cortana:
 
-    public async Task SaveSongIntent(IDialogContext context, LuisResult result)
+```csharp
+public async Task SaveSongIntent(IDialogContext context, LuisResult result)
+{
+    var response = context.MakeMessage();
+
+    var userInfo = ((Activity)context.Activity).Entities.FirstOrDefault(e => e.Type.Equals("DeviceInfo"));
+    var hasDisplay = userInfo.Properties["supportsDisplay"].ToString();
+
+    if (hasDisplay =="true")
     {
-        var response = context.MakeMessage();
-
-        var userInfo = ((Activity)context.Activity).Entities.FirstOrDefault(e => e.Type.Equals("DeviceInfo"));
-        var hasDisplay = userInfo.Properties["supportsDisplay"].ToString();
-
-        if (hasDisplay =="true")
+        response.ChannelData = JObject.FromObject(new
         {
-            response.ChannelData = JObject.FromObject(new
-            {
-                action = new { type = "LaunchUri", uri = "mailto://?subject=Save%20this%20song" }
-            });
-        }
-        else
-        {
-            response.Text = "Sorry, I cannot save this song on this device. Check back soon.";
-            response.Speak = response.Text;
-        }
-
-        await context.PostAsync(response);
-        context.Wait(MessageReceived);
+            action = new { type = "LaunchUri", uri = "mailto://?subject=Save%20this%20song" }
+        });
     }
+    else
+    {
+        response.Text = "Sorry, I cannot save this song on this device. Check back soon.";
+        response.Speak = response.Text;
+    }
+
+    await context.PostAsync(response);
+    context.Wait(MessageReceived);
+}
+```
 
 In addition to the subject line, you can add a variety of items as parameters to the **mail to** deep link. For more information on **mail to** protocol query parameters, see [mailto Protocol](https://msdn.microsoft.com/en-us/library/aa767737(v=vs.85).aspx).
 

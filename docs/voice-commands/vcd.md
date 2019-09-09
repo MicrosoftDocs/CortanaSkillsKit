@@ -1,8 +1,8 @@
 ---
-Title: Cortana voice commands - Cortana UWP design and development
-Description: Extend the basic functionality of Cortana with voice commands that launch and execute a single action in an external application.
-Author: kbridge
-Label: Conceptual
+title: Cortana voice commands - Cortana UWP design and development
+description: Extend the basic functionality of Cortana with voice commands.
+author: kbridge
+label: Conceptual
 ms.assetid: 18e45699-6f2f-431a-a4e7-7706171d1d8b
 
 ms.date: 02/08/2017
@@ -17,7 +17,7 @@ Extend the basic functionality of **Cortana** with voice commands that launch an
 
 **Other speech components**: See [Speech interactions](https://msdn.microsoft.com/windows/uwp/input-and-devices/speech-interactions) if you're integrating speech recognition and text-to-speech (also known as TTS, or speech synthesis) directly into your app.
 
-> [!NOTE] 
+> [!NOTE]
 > A voice command is a single utterance with a specific intent, defined in a Voice Command Definition (VCD) file, directed at an installed app through **Cortana**.
 
 > A VCD file defines one or more voice commands, each with a unique intent.

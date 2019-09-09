@@ -1,6 +1,16 @@
-# Contributing to Cortana Skillset documentation
+---
+title: Contributing
+description: Describes how to contribute to the repository.
 
-Welcome to the [public repo for Cortana Skillset developer documentation](https://github.com/microsoftdocs/cortanaskillskit)! Any articles you create or edit in this repo **will be visible to the public.** The docs.microsoft.com platform uses [GitHub-flavored Markdown with Markdig extensions](https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
+ms.date: 08/29/2019
+ms.topic: article
+
+keywords: cortana, skills
+---
+
+# Contributing to Cortana skills documentation
+
+Welcome to the [public repo for Cortana skills developer documentation](https://github.com/microsoftdocs/cortanaskillskit)! Any articles you create or edit in this repo **will be visible to the public.** The docs.microsoft.com platform uses [GitHub-flavored Markdown with Markdig extensions](https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
 
 ## Before you start
 
