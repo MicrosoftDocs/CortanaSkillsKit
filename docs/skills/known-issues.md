@@ -3,7 +3,7 @@ title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 08/20/2019
+ms.date: 09/09/2019
 ms.topic: article
 
 keywords: cortana
@@ -19,7 +19,7 @@ The public preview for Cortana is available for the U.S. English (en-US) market 
 
 ### Cortana does not display all cards when using ```SendActivitiesAsync``` in the v4 bot framework
 
-In the v3 bot framework, it's possible to use ```SendActivitiesAsync``` to show multiple cards in Cortana. However, in v4, this will not work. Cortana will display the first card, but none of the others on the list will be shown.
+Using ```SendActivitiesAsync``` to show multiple cards in Cortana will not work. Cortana will display the first card, but none of the others on the list will be shown.
 
 As a workaround, you should use ```SendActivityAsync``` with a list of cards, as shown in the sample code below. Set the `AttachmentLayout` property to "list" or to "carousel". If the channel does not support carousel format, it will display the rich cards in list format, even if the `AttachmentLayout` property specifies "carousel".
 
