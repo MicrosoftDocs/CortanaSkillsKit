@@ -17,7 +17,7 @@ Cortana Skills Kit is currently in preview. This document lists known issues, an
 
 The public preview for Cortana is available for the U.S. English (en-US) market only.
 
-### Cortana does not display all cards when using ```SendActivitiesAsync``` in the v4 bot framework
+### Cortana does not display all cards when using ```SendActivitiesAsync```
 
 Using ```SendActivitiesAsync``` to show multiple cards in Cortana will not work. Cortana will display the first card, but none of the others on the list will be shown.
 
@@ -38,7 +38,6 @@ activity.Attachments.Add(cardAttachmentl);
 activity.Attachments.Add(cardAttachment2);
 
 await stepContext.Context.SendActivityAsync(activity, cancellationToken);
-break;
 ```
 
 ### Cortana stops talking after 15 seconds, or displays the message, "Unfortunately this skill won't work on this version of Windows"
