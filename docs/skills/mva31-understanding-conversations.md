@@ -3,36 +3,36 @@ title: Understanding types of conversations
 description: Explains the different types of Cortana conversations.
 
 
-ms.date: 10/08/2018
+ms.date: 08/28/2019
 ms.topic: article
 
 keywords: cortana
---- 
+---
 
 # Understanding types of conversations
- 
+
 Underlying what makes Cortana invoke a skill is a simple concept: Cortana has a conversation with a user by responding to input it receives from that user.
 
 A Cortana conversation can be as simple as asking a specific question and getting an answer, or it could be a dialog with a series of interactions.
 
 The most basic Cortana conversation is a *single-turn* conversation. In this example, the user asks a question, and Cortana responds verbally, and if the device being used has a screen, adds an appropriate display:
 
-    User: Hey Cortana, what's the weather today?
-    Cortana: The forecast shows light rain with a high of 47 and a low of 42.
+>**User:** Hey Cortana, what's the weather today?  
+>**Cortana:** The forecast shows light rain with a high of 47 and a low of 42.
 
 ![Forecast](../media/images/mva31_forecast.png)
 
-You can also have a *multi-turn* conversation, in which there a dialog between Cortana and the user. Cortana responds appropriately to the second question by remembering the intent (or context) established by the first interaction.
+You can also have a *multi-turn* conversation, in which there's a dialog between Cortana and the user. Cortana responds appropriately to the second question by remembering the intent (or context) established by the first interaction.
 
-    User: Hey Cortana, what's the weather today?
-    Cortana: The forecast shows light rain with a high of 47 and a low of 42.
-    User: Should I bring a jacket?
-    Cortana: Yes, you'll probably want a jacket today.
+>**User:** Hey Cortana, what's the weather today?  
+>**Cortana:** The forecast shows light rain with a high of 47 and a low of 42.  
+>**User:** Should I bring a jacket?  
+>**Cortana:** Yes, you'll probably want a jacket today.
 
 ![Forecast](../media/images/mva31_jacket.png)
 
-    User: Thanks!
-    Cortana: My pleasure!
+>**User:** Thanks!  
+>**Cortana:** My pleasure!
 
 For many situations, a Cortana skill that relies on a single-turn conversation is perfectly fine. The user gets the information they need in one quick interaction. However, a skill that handles multi-turn conversations makes it possible to provide users with a richer experience. For example, you could create a skill that checks the status of an order, tells the user the order details, and lets the user make changes to the order. A multi-turn Cortana skill requires that your skill have the ability to:
 

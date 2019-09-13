@@ -2,7 +2,7 @@
 title: Get Cortana's channel data
 description: Shows how to get the Cortana's channel data when your skill runs.
 ms.assetid: 2C558B30-1B9B-445D-B190-56E1197E16E1
-ms.date: 02/21/2019
+ms.date: 07/18/2019
 ms.topic: article
 keywords: cortana
 ---
@@ -18,7 +18,7 @@ Cortana and skills use the message's `channelData` property to pass Cortana-spec
 | skillId | string  | An ID that uniquely identifies the skill per deployment. For example, the ID may be 123 when the skill is deployed to self, and 456 when it's deployed to group. |
 | skillProductId | string  | An ID that uniquely identifies the skill.  |
 | isDebug | Boolean  | Specifies whether Cortana is in debug mode. If **true**, debugging is enabled and messages are written to her canvas. For more information, see [Enable debugging in Cortana](test-debug.md#enable-debugging-in-cortana). |
-| currentAudioInfo | CurrentAudioInfo | A `CurrentAudioInfo` object that contains information about the audio stream that's playing. The channel data includes this property only if your skill is playing audio on a speaker-only device. For more information, see [Getting the playback state](audio-streaming.md#getting-the-playback-state).
+| currentAudioInfo | CurrentAudioInfo | A `CurrentAudioInfo` object that contains information about the audio stream that's playing. The channel data includes this property only if your skill is playing audio on a speaker-only device. For more information, see [Add audio streaming to your skill](audio-streaming.md).
 
 Here's an example of the `channelData` object that Cortana sends.
 

@@ -1,10 +1,10 @@
 ---
-title: Adding Authentication to Your Cortana Skills
+title: Adding authentication to your Cortana skill
 description: Learn how to add authentication to your bot-based skill.
 label: Conceptual
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 05/13/2019
+ms.date: 09/12/2019
 ms.topic: article
 
 keywords: cortana
@@ -26,7 +26,7 @@ You decide whether Cortana signs in the user when they invoke your skill, or onl
 * Refresh token expires.
 * User changes password.
 
-Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0#manage-user-identity) section.  
+Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0#manage-user-identity) section.  
 
 The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.  
 
@@ -67,10 +67,9 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     ![Cortana channel icon](../media/images/add_cortana_channel_1.png)  
 
-    >[!NOTE]
-    > If your bot is already connected to the Cortana channel, then click **Edit** to access the **Default settings**.
-    > 
-    > ![Edit Channels](../media/images/edit_cortana_1.png)  
+    If your bot is already connected to the Cortana channel, click **Edit** to access the **Default settings**.
+
+    ![Edit Channels](../media/images/edit_cortana_1.png)  
 
 1. Scroll down the **Configure Cortana** page, under **Cortana should manage my user's identity**, click on the toggle.  
 
@@ -159,9 +158,11 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     When the access token expires, the correct solution is to display an OAuthCard to reacquire a token.
 
-    **Example:** How to get an access token using C#.
+    **Example:** How to get an access token using C# or Node.js.
 
-    ```csharp
+# [C#](#tab/cs)
+
+```csharp
     // Is the user authenticated?
     string authAccessToken = String.Empty;
 
@@ -173,67 +174,77 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
             }
         }
     }  
-    ```  
+```  
 
-    **Example:** How to get an access token using Node.js.  
+# [JavaScript](#tab/js)
 
-    ```javascript
+```javascript
     // Get access token from Cortana request
     var tokenEntity = session.message.entities.find((e) => {
             return e.type === 'AuthorizationToken';
         }
     );
-    ```
+```
 
-    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  
+---
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using C#.  
+   If the token is empty, or if you selected the `auth on demand` option, then you may construct an OAuthCard for Cortana to request a sign-in.
 
-    ```csharp
-    private Activity CreateOAuthCard( Activity activity )
-    {
-        Activity message = activity.CreateReply();
-        if (message.Attachments == null) {
-            message.Attachments = new List<Attachment>();
-        }
+   **Example:** Request a sign-in with an OAuthCard for Cortana using C# or Node.js.  
 
-        // Create the attachment.
-        Attachment attachment = new Attachment() {
-            ContentType = OAuthCard.ContentType,
-            Content = new OAuthCard() // Cortana ignores any card configuration
-        };
+# [C#](#tab/cs1)
 
-        message.Attachments.Add(attachment);
-        return message;
-    }
-    ```
+   ```csharp
+   private Activity CreateOAuthCard( Activity activity )
+   {
+       Activity message = activity.CreateReply();
+       if (message.Attachments == null) {
+           message.Attachments = new List<Attachment>();
+       }
 
-    **Example:** Request a sign-in with an OAuthCard for Cortana using Node.js.  
+       // Create the attachment.
+       Attachment attachment = new Attachment() {
+           ContentType = OAuthCard.ContentType,
+           Content = new OAuthCard() // Cortana ignores any card configuration
+       };
 
-    ```javascript
-    var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
-    ```  
+       message.Attachments.Add(attachment);
+       return message;
+   }
+   ```
 
-    **Example:** How to add your access token to your resource request using C#.  
+# [JavaScript](#tab/js1)
 
-    ```csharp
-    var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
-    using (var client = new HttpClient()) {
-        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
-        var response = await client.GetAsync(url);
-    ```  
+   ```javascript
+   var msg = new builder.Message(session).addAttachment( new builder.OAuthCard(session) );
 
-    **Example:** How to add your access token to your resource request using Node.js.  
+   ```
 
-    ```javascript
-    var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
-    request.get(url, (err, response, body) => {
-    … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token
-    ```
+---
 
-    >[!NOTE]
-    > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
- 
+  **Example:** How to add your access token to your resource request using C# or Node.js.  
+
+# [C#](#tab/cs2)
+
+   ```csharp
+   var url = "https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName";
+   using (var client = new HttpClient()) {
+       client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
+       var response = await client.GetAsync(url);
+   ```  
+
+# [JavaScript](#tab/js2)
+
+   ```javascript
+   var url = 'https://graph.microsoft.com/v1.0/me/contacts?select=birthday,nickName,surname,givenName';
+   request.get(url, (err, response, body) => {
+   … }).setHeader('Authorization', 'Bearer ' + tokenEntity.token); // sets the auth token
+   ```
+
+---
+
+   You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+
 ## Next steps
 
 If you use a Microsoft service that requires users to have Microsoft accounts, and are looking for more information about configuring Connected Account channel settings for Microsoft identity server, visit the [Configure authentication for Microsoft identity server](./configure-connected-account.md) page.

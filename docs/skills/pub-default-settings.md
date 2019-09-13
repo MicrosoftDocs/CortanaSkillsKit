@@ -1,8 +1,8 @@
 ---
-title: Default Group Settings
+title: Default Settings
 description: Describes how to fill out Default Group section when publishing a Cortana skill.
 ms.topic: article
-ms.date: 05/24/2019
+ms.date: 08/08/2019
 ms.topic: article
 ms.author: v-daturc
 
@@ -34,11 +34,12 @@ For more information about configuring the Cortana channel, visit the [Connect a
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.
 
     1. Manage user identity through Connected Services
-    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-off.png)
 
         `Cortana should manage my user's identity`: If you select this option, then you must complete the following fields.
 
-        ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
+   <!-- This graphic is also included in configure-connected-account.md  Make sure to update text there if you change it! -->
+
+    ![Manage user identity through Connected Services](../media/images/default_settings-manage_user_identity_connected_services-on.png)
 
     * `When should Cortana prompt for a user to sign in?`
         * `Sign in at invocation`: The user signs in once, and the authorization token will be passed as needed.
@@ -48,14 +49,14 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     * `Client ID for third-party services`: The application ID of your bot.
 
-        If you use a Microsoft service, the you get your application ID on the [Microsoft Application Registration Portal](https://apps.dev.microsoft.com/#/appList) page. Click the name of your BotFramework bot, listed under the **My Applications** section.
+        If you use a Microsoft service, the you get your application ID on the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) page. Click the name of your BotFramework bot, listed under the **My Applications** section.
 
     * `Space-separated list of scopes`: The list of scopes, separated by spaces.
     * `Authorization URL`: The authorization URL of your OAuth 2.0 provider.
 
         If you use a Microsoft service, then the authorization URL is:
 
-        ```url
+        ```URL
         https://login.microsoftonline.com/common/oauth2/v2.0/authorize
         ```
 
@@ -65,14 +66,14 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         If you are using a Microsoft service, then set to the following value.
 
-        ```url
+        ```URL
         https://login.microsoftonline.com/common/oauth2/v2.0/token
         ```
 
     * `Client secret/password for third party services`: Your bot's password.  If you're using Microsoft Identity Service, then the password is generated when you register your bot in the *Microsoft Application Registration* portal.
 
         >[!IMPORTANT]
-        > The client secret (password) is displayed only once. When you create your bot, it's shown under the **Application Secrets** section of the [Microsoft Application Registration](https://apps.dev.microsoft.com/#/appList) portal.
+        > The client secret (password) is displayed only once. When you create your bot, it's shown under the **Application Secrets** section of the [App Registration portal](https://ms.portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade) portal.
         >
         > If you don't know the password, you'll need to create a new one by clicking on the `Generate New password` button.
 
@@ -84,15 +85,14 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         ![Request user profile](../media/images/default_settings-request_user_profile_data-empty.png)
 
-        Click on **Add a user profile request** and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
+        Click on `Add a user profile request` and select the user profile information from the drop-down menu. Repeat to select additional user profile data.
 
         >[!IMPORTANT]
         > You are allowed to collect user profile data only to add to your skill's functionality. See section [2.5 Personal Information](./skill-review-guidelines.md#25-personal-information) in the [Cortana skills certification requirements page](./skill-review-guidelines.md).
 
         ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
 
-        >[!TIP]
-        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+        For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
 
 1. After all of the required fields are completed, you can click on the `Deploy on Cortana` button.
 
@@ -101,4 +101,3 @@ For more information about configuring the Cortana channel, visit the [Connect a
     ![Deploy on Cortana - enabled](../media/images/default_settings-back-deploy-manage-active.png) -->
 
 You can confirm that your Cortana skill is deployed on the Bot Framework portal or Azure portal page by logging in with the same Microsoft account (MSA) that you registered in the *Bot Framework* portal.
-

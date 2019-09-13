@@ -38,28 +38,30 @@ For more information about Bot Framework cards, see [Add rich card attachments t
 
 To add a visual interface element that displays a title heading and text to the Mixtape skill, add a Hero card. For example, revise the Mixtape skill's **PlaySongIntent** method as follows:
 
-    public async Task PlaySongIntent(IDialogContext context, LuisResult result)
+```csharp
+public async Task PlaySongIntent(IDialogContext context, LuisResult result)
+{
+    var response = context.MakeMessage();
+
+    HeroCard visuals = new HeroCard
     {
-        var response = context.MakeMessage();
+    Title = "Do you like this song?",
+        Text = "Let me know if I should save the song and we'll add it to your mixtape."
+    };
 
-        HeroCard visuals = new HeroCard
-        {
-            Title = "Do you like this song?",
-            Text = "Let me know if I should save the song and we'll add it to your mixtape."
-        };
+    AudioCard card = new AudioCard
+    { 
+    Media = new MediaUrl[] { new MediaUrl("https://myaudio.azurewebsites.net/song.mp3") }
+    };
 
-        AudioCard card = new AudioCard
-        { 
-            Media = new MediaUrl[] { new MediaUrl("https://myaudio.azurewebsites.net/song.mp3") }
-        };
+    response.Attachments.Add(visuals.ToAttachment());
+    response.Attachments.Add(card.ToAttachment());
 
-        response.Attachments.Add(visuals.ToAttachment());
-        response.Attachments.Add(card.ToAttachment());
-
-        response.InputHint = InputHints.ExpectingInput;
-        await context.PostAsync(response);
-        context.Wait(MessageReceived);
-    }
+    response.InputHint = InputHints.ExpectingInput;
+    await context.PostAsync(response);
+    context.Wait(MessageReceived);
+}
+```
 
 Because you are displaying text on the Hero card, the initial *response.Text* entry is unnecessary and can be deleted. Instead, the code creates a Hero card that displays a title and text. 
 
