@@ -1,12 +1,12 @@
 
-# Cortana Skill Kit  
+# Cortana Skills Kit  
 
 ## [Overview](./overview.md)  
 
 ## Quickstarts  
 ### [Create your first skill](./get-started.md)  
 ### [Add speech](./adding-speech.md)  
-### [Add MSA authentication](./configure-connected-account.md)  
+### [Add services](./configure-connected-account.md)  
 
 ## Skills design  
 ### [Principles of Cortana skills design](./design-principles.md)  
@@ -26,9 +26,11 @@
 ## Tutorials  
 ### [Set up your developer environment](./mva21-setup.md)  
 ### [Create your first Cortana skill](./mva22-hello-world.md)  
-### [Understanding types of conversations](./mva31-understanding-conversations.md)  
-### [Building conversations](./mva32-building-conversations.md)  
+### [Understanding types of conversations](./mva31-understanding-conversations.md)
 ### [Showing progress to the user](./show-progress.md)  
+
+<!-- commented out and deprecated because they use the MixTape example
+### [Building conversations](./mva32-building-conversations.md)  
 ### [Adding audio to Cortana Skills](./mva41-streaming-audio.md)  
 ### [Adding visual elements to Cortana Skills](./mva42-visual-ux.md)  
 ### [Using client code with Cortana Skills](./mva43-client-code.md)  
@@ -36,9 +38,7 @@
 ### [Using profile data in your Cortana skill](./mva52-using-profile-data.md)  
 ### [Using authentication in your Cortana skill](./mva61-authentication.md)  
 ### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
-
-## Samples  
-### [Skill samples](./cortana-samples.md)  
+-->
 
 ## Test skills  
 ### [Test and debug](./test-debug.md)  
@@ -63,8 +63,8 @@
 ### [Terms of use sample](./terms-of-use.md)  
 ### [Privacy policy guidelines](./privacy-policy-guidelines.md)  
 
-# Cortana Skills Kit for Enterprise  
-## [Overview](../enterprise/overview.md)  
-
 # Cortana SDK
 ## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)
+
+# Cortana Skills Kit for Enterprise  
+## [Overview](../enterprise/overview.md)  

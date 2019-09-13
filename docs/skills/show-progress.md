@@ -3,7 +3,7 @@ title: Show the user you're working on their request
 description: For long running request, show the user that you're still working on their request.
 
 ms.assetid: 23802F09-921E-4475-AD34-3A71C9078290
-ms.date: 01/31/2019
+ms.date: 07/02/2019
 ms.topic: article
 
 keywords: cortana
@@ -15,7 +15,7 @@ It's important to keep the user informed while you're working on their request. 
 
 # [C#](#tab/cs)
 
-## C# example
+### C# example
 This example uses the `ExecuteWithTimeoutHandler` method to notify the user if the request exceeds three seconds. The `ExecuteWithTimeoutHandler` method executes the default message handler for the specified number of milliseconds. If the method exceeds the limit, it executes the timeout handler, which sends a message to the user (for example, "Working on it...").
 
 ```csharp
@@ -58,8 +58,8 @@ This example uses the `ExecuteWithTimeoutHandler` method to notify the user if t
                 reply.InputHint = InputHints.ExpectingInput;
                 await context.PostAsync(reply);
             }, async () => {
-                Activity reply = activity.CreateReply($"Working on it...Please hold on");
-                reply.Speak = $"Working on it...Please hold on";
+                Activity reply = activity.CreateReply($"Working on it...please wait");
+                reply.Speak = $"Working on it...please wait";
                 reply.InputHint = InputHints.IgnoringInput;
                 await context.PostAsync(reply);
             });
@@ -68,7 +68,7 @@ This example uses the `ExecuteWithTimeoutHandler` method to notify the user if t
 
 # [JavaScript](#tab/js)
 
-## Node.js example
+### Node.js example
 This example is a bot that starts a task timer and displays an out-of-band wait message until the task is complete.
 
 ```javascript
@@ -98,7 +98,7 @@ bot.set('storage', new builder.MemoryBotStorage());
 const kWelcomeText = 'Hi! Say \'start\' to create a timer and a polling loop.';
 const kMisunderstood = 'Sorry, I didn\'t get that.';
 const kStarting = 'Starting 30 second timer. Please wait.';
-const kWaiting = 'Please wait.';
+const kWaiting = 'Working on it...please wait';
 const kDone = 'My task is done.';
 
 bot.dialog('/', function (session) {
