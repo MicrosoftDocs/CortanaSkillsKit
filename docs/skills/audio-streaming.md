@@ -82,7 +82,7 @@ The following example shows how to add a single track for Cortana to play and st
 
 Be sure to use `ExpectingInput` as the input hint in your message. You should not use `IgnoringInput` as the input hint. If you set the hint to `IgnoringInput` without sending a follow-up `ExpectingInput` hint, the conversation will eventually error out because the system is expecting your skill to send another message.
 
-> ![NOTE]
+> [!NOTE]
 > Cortana does not notify the skill when the audio stream or playlist completes.
 
 If the message includes speech, Cortana reduces the volume of the audio stream (plays it in the background) until she finishes speaking.
