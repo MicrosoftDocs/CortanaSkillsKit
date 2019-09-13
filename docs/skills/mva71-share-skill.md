@@ -2,11 +2,7 @@
 title: Sharing your Cortana Skill to a group
 description: Describes how to share your Cortana Skill to a group.
 
-<<<<<<< HEAD
 ms.date: 07/16/2019
-=======
-ms.date: 07/09/2019
->>>>>>> new-v4
 ms.topic: article
 
 keywords: cortana

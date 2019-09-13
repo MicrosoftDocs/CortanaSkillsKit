@@ -2,11 +2,7 @@
 title: Adding visual elements to Cortana Skills
 description: Describes how to develop a Cortana Skill that uses visual elements.
 
-<<<<<<< HEAD
 ms.date: 09/13/2019
-=======
-ms.date: 07/09/2019
->>>>>>> new-v4
 ms.topic: article
 
 keywords: cortana
@@ -81,4 +77,3 @@ Before you can test the revised skill, you must republish it. If you are working
 To test your revised skill, direct Cortana to invoke the skill using the invocation name you specified. Cortana responds with the text you specified and displays the Hero card containing the title and text you specified.
 
 ![Hero Card](../media/images/mva42_hero_card.png)
- 

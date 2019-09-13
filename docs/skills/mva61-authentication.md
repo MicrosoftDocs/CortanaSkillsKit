@@ -2,11 +2,7 @@
 title: Using authentication in your Cortana Skill
 description: Describes how to use authentication in your Cortana Skill.
 
-<<<<<<< HEAD
 ms.date: 07/16/2019
-=======
-ms.date: 07/09/2019
->>>>>>> new-v4
 ms.topic: article
 
 keywords: cortana
