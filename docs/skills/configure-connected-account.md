@@ -17,7 +17,13 @@ keywords: cortana
 
 ## Configure authentication for Microsoft's identity server
 
+
+> [!NOTE]
+> You can use any vendor's identity manager that manages resources for their services. The manager *must*
+> support OAuth 2 code authentication flow.
+
 If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Service feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
+
 
 Before configuring your skill for a Connected Account, you need to update your bot's registration to specify the redirect URL.
 
