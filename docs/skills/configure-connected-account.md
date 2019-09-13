@@ -15,10 +15,10 @@ keywords: cortana
 > You can use any vendor's identity manager that manages resources for their services, as long as it
 > supports OAuth 2 code authentication flow.
 
-# Using Cortana to access Connected Services
+## Using Cortana to access Connected Services
 Cortana can manage OAuth 2 authentication with Microsoft services via Microsoft's Application (App) Registration process and Identity Access Manager, or third party resource access through OAuth 2 compliant App Registration and Identity Access Managers.
 
-# Configure authentication for Microsoft's identity server
+## Configure authentication for Microsoft's identity server
 
 If your skill uses a Microsoft service that requires an OAuth access token to authenticate the user, use Cortana's Connected Service feature. With the Connected Accounts feature, you specify a few OAuth settings and then Cortana handles all the work to get the token.
 

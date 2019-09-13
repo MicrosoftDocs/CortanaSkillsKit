@@ -33,9 +33,6 @@ Please refer to the [Azure Bot Service documentation](https://docs.microsoft.com
 The following example shows how to add a single track for Cortana to play and stop the conversation.
 
 # [C#](#tab/cs)
->>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
->>>>>>> new-v4
-
 
 ```csharp
     // Cards are sent as Attachments in the Bot Framework.
@@ -84,7 +81,6 @@ The following example shows how to add a single track for Cortana to play and st
 ---
 
 Be sure to use `ExpectingInput` as the input hint in your message. You should not use `IgnoringInput` as the input hint. If you set the hint to `IgnoringInput` without sending a follow-up `ExpectingInput` hint, the conversation will eventually error out because the system is expecting your skill to send another message.
->>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
 
 > ![NOTE]
 > Cortana does not notify the skill when the audio stream or playlist completes.
