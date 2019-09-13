@@ -33,7 +33,10 @@ Developing a Cortana skill requires a variety of cloud resources. For example, y
 
 Other resources include:
 
-* **Bot Framework**. To create a Cortana skill, you must first create a bot. Then sign into the [Bot Framework Developer Portal](https://dev.botframework.com) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill. For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
+* **Bot Framework**. To create a Cortana skill, you must first create a bot. Once the bot is working, sign into the [Bot Framework Developer Portal](https://dev.botframework.com) using your Microsoft account, register the bot, and connect it to the Cortana channel to make it a Cortana skill.
+<!-- 
+For information on creating your first Cortana skill, see [Create your first Cortana skill](./mva22-hello-world.md).
+-->
 
 ![Bot Framework developer portal](../media/images/bot_framework_dev_portal.png)
 
@@ -47,14 +50,14 @@ Other resources include:
 
 ## Step 2 - Set up your PC, Mac, or Cortana device
 
-You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update (build 1607), using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Builder SDK](https://github.com/microsoft/botbuilder-v3).
+You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update (build 1607), using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Framework SDK](https://github.com/microsoft/botframework-sdk).
 
-Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](https://docs.microsoft.com/visualstudio/install/install-visual-studio). 
+Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
 
 >[!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
-For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-3.0) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
+For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
 
 If you are developing your skill on a Mac, or developing for an iOS, Android, or Harman Kardon Invoke device, you also need to set up the device where Cortana invokes the skill. Since Cortana is not available in a Mac environment, skills developed in a Mac environment must be invoked on a mobile device or in a virtual machine environment running Windows.
 
@@ -64,7 +67,7 @@ Make sure Cortana is set up to work with your skill:
 
 * You must be signed into Cortana on your computer or device with your Microsoft account.
 * Make sure the microphone on your computer or device is working and turned on so that you can speak to Cortana.
-* Optionally, set debug mode in the [Cortana Developer Center](https://developer.microsoft.com/cortana). When you invoke a Cortana skill in debug mode, Cortana gives you additional information that you can use fine-tune the skill.
+* Optionally, set debug mode under Cortana channel configuration through Azure Portal. When you invoke a Cortana skill in debug mode, Cortana gives you [additional information](./test-debug.md#enable-debugging-in-cortana) that you can use fine-tune the skill.
 
 ## Step 4 - Set up your Cortana device (optional)
 

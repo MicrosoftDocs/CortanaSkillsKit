@@ -2,7 +2,7 @@
 title: Cortana Skills performance guidelines
 description: Tips and guidelines for crating performant Cortana skills.
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 02/13/2019
+ms.date: 07/12/2019
 ms.topic: article
 keywords: cortana
 ---
@@ -13,7 +13,7 @@ keywords: cortana
 
 **Load resources at start up**
 
-If you need to retrieve data that the user may request (for example, a list of songs, images, locations), load it at startup, not after the user requests the information.
+If you need to retrieve data that the user may request (for example, a list of songs, or images, or locations), load it at startup, not after the user requests the information.
   
 **Avoid large images**
 
@@ -52,7 +52,7 @@ I took it out because it's useless. It just takes you to the Create page.-->
 
 If an Azure function or Web app is not used for a period of time (typically about 20 minutes), Azure recycles it. Recycled functions and apps can take up to 10 seconds to restart. This is known as a cold start. You can prevent cold starts by enabling the [Always On](https://docs.microsoft.com/azure/azure-functions/functions-scale#always-on) option in the application settings of your Azure [Function](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings) or [Web app](https://docs.microsoft.com/azure/app-service-web/web-sites-configure).
 
-Azure functions and Web apps that are on Free or Shared App service plans do not have the option to be always on.
+Azure functions and Web apps that are on *Free* or *Shared App* service plans do not have the option to always be on.
 
 **Disable ARR affinity cache**
 
@@ -60,6 +60,6 @@ If you are not using Azure's automatic scaling feature, you should disable appli
 
 ## Additional performance resources
 
-- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-3.0)
+- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-4.0)
 - [Troubleshoot performance issues in Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)
 - [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)

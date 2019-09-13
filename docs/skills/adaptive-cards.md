@@ -4,18 +4,18 @@ description: Learn how to use adaptive cards in your bot-based skill.
 label: Conceptual
 
 ms.assetid: A7CD987E-5DD1-42EA-A436-49D4E8327365
-ms.date: 06/03/2019
+ms.date: 06/27/2019
 ms.topic: article
 
 keywords: cortana
 ---
 
-# Use AdaptiveCards in Your Cortana Skill
+# Using AdaptiveCards in your Cortana skill
 
-Cards are interface elements that you can use to enhance the user experience in your Cortana skill. As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](./cortana-device-type.md) for details on how to get device information.
-  
-An adaptive card is the most versatile display card. It's customizable, and can include any combination of text, speech, images, buttons, and input fields.  
+Cards are interface elements that you can use to enhance the user experience in your Cortana skill. An adaptive card is the most versatile display card. It's customizable, and can include any combination of text, speech, images, buttons, and input fields.
 
+As with all cards, you can only use them when Cortana is running on a device with a display. See [Determine Cortana's device type](./cortana-device-type.md) for details on how to get device information.
+ 
 ## AdaptiveCards  
 
 Adaptive cards provide the following options.  
@@ -42,7 +42,7 @@ AdaptiveCards include elements, containers, actions, and inputs. A basic adaptiv
 The [AdaptiveCards Designer](https://adaptivecards.io/designer) provides an interactive card builder where you can see the resulting card JSON data.
 
 ## Create an AdaptiveCard
-You can create adaptive cards using `proxy pattern` helper classes in the [SDK](https://docs.microsoft.com/adaptive-cards/), or by directly using JSON following the [schema](https://docs.microsoft.com/adaptive-cards/authoring-cards/card-schema).
+You can create adaptive cards using `proxy pattern` helper classes in the [SDK](https://docs.microsoft.com/adaptive-cards/), or by directly using JSON (check out the [Schema Explorer](https://adaptivecards.io/explorer/) for details).
 
 >[!IMPORTANT]
 > 1. The speak object of an adaptive card must be copied to the Message for Cortana to speak the text.
@@ -56,13 +56,14 @@ You can create adaptive cards using `proxy pattern` helper classes in the [SDK](
 1. Specify the elements of your card in code.
 1. Add the card to your Cortana skill as an attachment.
 
-The following code adds an adaptive card to a Cortana skill response for Bot Framework V3.
+The following code adds an adaptive card to a Cortana skill response for Bot Framework version 4.
 
  ```csharp
- var response = context.MakeMessage();
+ // make a response
+ var response = turnContext.Activity.CreateReply();
 
+ // create a Card and add elements
  AdaptiveCard card = new AdaptiveCard();
-
  card.Body.Add(new AdaptiveTextBlock()
      {
          Text = "This is a test",
@@ -71,10 +72,11 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
      }
  );
 
+ // add card as attachment
  response.Attachments.Add(card.ToAttachment());
 
- await context.PostAsync(response);
- context.Wait(MessageReceived);
+ // send the response
+ await turnContext.SendActivityAsync(response, cancellationToken: cancellationToken);
 
  ```  
 
@@ -82,34 +84,40 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
 
 ### Create using JavaScript
 
-1. Install the `adaptivecards` [NPM package](https://docs.microsoft.com/en-us/adaptive-cards/sdk/rendering-cards/javascript/getting-started) (optional)
+1. Install the `adaptivecards` [NPM package](https://docs.microsoft.com/en-us/adaptive-cards/sdk/rendering-cards/javascript/getting-started#install) (optional)
 1. Use JSON to build your card in code, or the proxy object from the `adaptivecards` package
 1. Add the card to your skill as an attachment.
 
  ```javascript
-let msg = new builder.Message(session)
 // In JavaScript, JSON is integrated
-msg.addAttachment({
-    "contentType": "application/vnd.microsoft.card.adaptive",
-    "content": {
-        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
-        "type": "AdaptiveCard",
-        "version": "1.0",
-        "body": [{
-            "type": "TextBlock",
-            "text": "This is a test",
-            "size": "medium",
-            "weight": "bolder"
-        }]
+// Create the Card from JSON
+const card = CardFactory.adaptiveCard( {
+  "contentType": "application/vnd.microsoft.card.adaptive",
+  "content": {
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.0",
+    "body": [{
+      "type": "TextBlock",
+      "text": "This is a test",
+      "size": "medium",
+      "weight": "bolder"
+       }]
     }
-});
-session.send(msg);
+  } );
+  
+// Send the card  
+await turnContext.sendActivity( {
+ text: 'Here is an Adaptive Card:',
+ speak: card.content.speak || 'Sorry, this card does not contain speech.',
+ attachments: [ card ] 
+ } );
  ```
 
 ---
 
 ## Respond to AdaptiveCards
-If you look at the [Calendar reminder](https://adaptivecards.io/samples/CalendarReminder.html) example on the AdaptiveCards website, you'll note that it has two `Action.Submit` buttons, one for the _Snooze_ response, and one for the _I'll be Late_ response.  For _Snooze_, there is a `Input.ChoiceSet` with standard values of 5, 10, and 15 minutes.
+If you look at the [Calendar reminder](https://adaptivecards.io/samples/CalendarReminder.html) example on the AdaptiveCards website, you'll note that it has two `Action.Submit` buttons, one for the _Snooze_ response, and one for the _I'll be Late_ response.  For _Snooze_, there is a `Input.ChoiceSet` with standard values of 5, 15, and 30 minutes.
 
 In our example, Cortana will say, _"Your meeting 'Adaptive Card design session' is starting at 12:30pm. Do you want to snooze or do you want to send a late notification to the attendees?"_  At the same time, she will display this card:
 
@@ -148,8 +156,8 @@ Your code must handle both cases in order to handle conversations correctly.
         // match 1 or 2 digits and white space and "minute"
         private static Regex regexMinutes = new Regex(@"(\d{1,2})\s+minute", RegexOptions.IgnoreCase);
 ...
-                var message = await argument;
-                var response = context.MakeMessage();
+                var message = turnContext.Activity;
+                var response = turnContext.Activity.CreateReply(); 
 
                 string sValue = "unknown";
 
@@ -207,13 +215,10 @@ Your code must handle both cases in order to handle conversations correctly.
                     {
                         response.Text = "I am not sure what you mean.";
                         response.Speak = response.Text;
-
-                        Trace.WriteLine(sText);
                     }
                 }
 
-                await context.PostAsync(response);
-                context.Wait(MessageReceivedAsync); // hand back to "say anything to show the card"        
+                await turnContext.SendActivityAsync(response, cancellationToken: cancellationToken);
 ```
 
 # [JavaScript](#tab/js2)
@@ -221,8 +226,8 @@ Your code must handle both cases in order to handle conversations correctly.
 ### Respond in JavaScript
 
 ```JavaScript
-        let message = session.message;
-        var response = new builder.Message(session);
+        let message = turnContext.activity;
+        var response = {};
 
         if (message.value) {
             // Got an Action Submit payload
@@ -230,18 +235,16 @@ Your code must handle both cases in order to handle conversations correctly.
             if (xValue === 'snooze') {
                 let snoozeValue = message.value.snooze;
                 let msg = `You clicked "Snooze" for ${snoozeValue} minutes.`;
-                response.text(msg);
-                response.speak(msg);
+                response.text = msg;
+                response.speak = msg;
             } else if (xValue === 'late') {
                 const msg = 'You clicked "I\'ll be late."';
-                response.text(msg);
-                response.speak(msg);
+                response.text = msg;
+                response.speak = msg;
             } else {
                 const msg = 'Unsupported input detected.';
-                response.text(msg);
-                response.speak(msg);
-
-                console.log(JSON.stringify(message.value));
+                response.text = msg;
+                response.speak = msg;
             }
         } else {
             // Got a Voice/Text response - check for keywords
@@ -252,33 +255,30 @@ Your code must handle both cases in order to handle conversations correctly.
                 var match = regexMinutes.exec(text);
                 if (match && match.constructor === Array && match.length == 2) {
                     let msg = `You said "Snooze" for ${match[1]} minutes.`;
-                    response.text(msg);
-                    response.speak(msg);
+                    response.text = msg;
+                    response.speak = msg;
                 } else {
                     const msg = 'You said "Snooze". I\'ll snooze for the default 5 minutes.';
-                    response.text(msg);
-                    response.speak(msg);
+                    response.text = msg;
+                    response.speak = msg;
                 }
             } else if (text.includes('LATE')) {
                 const msg = 'You said "I\'ll be late."';
-                response.text(msg);
-                response.speak(msg);
+                response.text = msg;
+                response.speak = msg;
             } else {
                 const msg = 'I am not sure what you mean.';
-                response.text(msg);
-                response.speak(msg);
-
-                console.log(text);
+                response.text = msg;
+                response.speak = msg;
             }
         }
-        session.send(response);
+        await turnContext.sendActivity(response);
 ```
 
 ---
 
-## More Information  
+## More information  
 
 * For more information about adaptive cards, visit the  [adaptivecards.io](https://adaptivecards.io) page.  
-* For more information about Bot Framework cards using .Net, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) for .NET page.
-* For more information about Bot Framework cards using Node.js, visit the [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) for Node.js page.
+* For more information about Bot Framework cards, see the [Send an Adaptive Card](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp#send-an-adaptive-card) section on the [Add media to messages](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp) page.
 * For more info on the examples referenced on this page, please visit [cortana-skills-samples on GitHub](https://github.com/Microsoft/cortana-skills-samples)

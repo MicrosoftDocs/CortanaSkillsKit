@@ -4,10 +4,14 @@ description: Learn how to add authentication to your bot-based skill.
 label: Conceptual
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
+<<<<<<< HEAD
 ms.date: 09/12/2019
+=======
+ms.date: 06/20/2019
+>>>>>>> new-v4
 ms.topic: article
 
-keywords: cortana
+keywords: cortana, oauth, authentication
 ---
 
 # Adding authentication to your Cortana skill  
@@ -26,9 +30,13 @@ You decide whether Cortana signs in the user when they invoke your skill, or onl
 * Refresh token expires.
 * User changes password.
 
+<<<<<<< HEAD
 Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0#manage-user-identity) section.  
+=======
+Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [User authentication within a conversation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-concept-authentication?view=azure-bot-service-4.0) section.
+>>>>>>> new-v4
 
-The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.  
+The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.
 
 ## Get your cached access token  
 
@@ -58,7 +66,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 **Example:** Creates a bot in Azure Bot Service using the Basic C# bot template.  
 
 >[!NOTE]
-> If you have not created a bot, and are looking for more information on how to get started, then visit the [Create a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-3.0) page.
+> If you have not created a bot, and are looking for more information on how to get started, then visit the [Create a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) page.
 
 1. Sign into the [Microsoft Azure Portal](https://ms.portal.azure.com).  
 1. In the *portal*, click the name of your bot. 
@@ -77,7 +85,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
 1. Fill in the OAuth configuration field values.  
 
-    ![](../media/images/cortana-manage-user-identity.png)
+    ![Cortana manage user identity](../media/images/cortana-manage-user-identity.png)
 
     1. **Sign in at invocation** | radiobox  
         If you select `at invocation` then Cortana manages the log in when the user first invokes the skill. Otherwise you can send an OAuthCard attachment before a resource call.
@@ -148,7 +156,15 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     * Click **Add Platform**, click **Web**, verify that you registered your redirect URL for Cortana, and then save your changes. You do not need a sign-out URL.  
 
+<<<<<<< HEAD
     ![Add Platforms](../media/images/add_platform_1.png)  
+=======
+<<<<<<< HEAD
+           ![Add Platforms](../media/images/add_platform_1.png)  
+=======
+    ![Add Platforms](../media/images/add_platform_1.png)  
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
+>>>>>>> new-v4
 
     * For other service providers: Refer to the documentation from your service provider about allowing the redirect callback.  
 
@@ -160,12 +176,25 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 
     **Example:** How to get an access token using C# or Node.js.
 
+<<<<<<< HEAD
 # [C#](#tab/cs)
 
 ```csharp
     // Is the user authenticated?
-    string authAccessToken = String.Empty;
+=======
+    # [C#](#tab/cs1)
 
+    ```csharp
+    // Get the auth access token
+>>>>>>> new-v4
+    string authAccessToken = String.Empty;
+    var AuthEntity = turnContext.Activity.Entities?.FirstOrDefault(entity => entity.Type.Equals("AuthorizationToken", StringComparison.Ordinal));
+    if (AuthEntity != null) 
+      authAccessToken = AuthEntity.Properties["token"]?.ToString();
+    // check authAccessToken not empty
+    ```
+
+<<<<<<< HEAD
     if (activity.Entities != null) {
         foreach (var entity in activity.Entities) {
             if (entity.Type == "AuthorizationToken") {
@@ -246,5 +275,93 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
    You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
 
 ## Next steps
+=======
+    # [JavaScript](#tab/js1)
+
+    ```javascript
+    // Get the auth access token
+    let authAccessToken = '';
+    if ( turnContext.activity.entities ) {
+       let authEntity = turnContext.activity.entities.find((e) => {
+         return e.type === 'AuthorizationToken';
+         });
+       if(authEntity && authEntity.token)
+         authAccessToken = authEntity.token;
+       }
+     // check authAccessToken not empty 
+    ```
+
+    ---
+
+    If the token is empty, or if you selected the *auth on demand* option, then you may construct an OAuthCard for Cortana to request a sign-in.  _Do not send an OAuth card if you've enabled authentication on invocation._
+  
+    >[!NOTE]
+    > You should check for an auth token first, and if there is one present, don't send a new card. Cortana will _skip_
+    > any subsequent OAuth login if a token is already present. Because Cortana doesn't currently support OAuth logout, 
+    > you can clear any cached token by disconnecting the skill from the Cortana Notebook.
+
+    **Example:** Request a sign-in with an OAuthCard for Cortana using C# or Node.js.
+  
+    # [C#](#tab/cs2)
+
+    ```csharp
+        Activity message = activity.CreateReply();
+        if (message.Attachments == null) {
+            message.Attachments = new List<Attachment>();
+        }
+
+        // Create the attachment.
+        Attachment attachment = new Attachment {
+            ContentType = OAuthCard.ContentType
+        };
+
+        message.Attachments.Add(attachment);
+        await turnContext.SendActivityAsync(message, cancellationToken);
+    ```
+
+    # [JavaScript](#tab/js2)
+
+    ```javascript
+    let card = CardFactory.oauthCard('', '', ''); // Cortana ignores any parameters
+    let message = MessageFactory.attachment( card );
+    await turnContext.sendActivity(msg);
+    ```
+
+    ---
+
+    You use your access token by attaching it to the HTTP request header.
+
+    **Example:** How to add your access token to your resource request using C# or Node.js.  
+
+    # [C#](#tab/cs3)
+
+    ```csharp
+    var url = "https://graph.microsoft.com/v1.0/users/myboss@contoso.com";
+    using (var client = new HttpClient()) {
+        client.DefaultRequestHeaders.Add("Authorization", "Bearer " + authAccessToken); 
+        var response = await client.GetAsync(url);
+    ```  
+
+    # [JavaScript](#tab/js3)
+
+    ```javascript
+    var url = 'https://graph.microsoft.com/v1.0/users/myboss@contoso.com';
+    request.get(url, (err, response, body) => {
+    … }).setHeader('Authorization', 'Bearer ' + authAccessToken); // sets the auth token
+    ```
+
+<<<<<<< HEAD
+    ---
+
+    Make sure you check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+
+## Next Steps
+=======
+    >[!NOTE]
+    > You should check for errors and HTTP status codes on the OAuth card, such as `401 unauthorized`.
+ 
+## Next steps
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
+>>>>>>> new-v4
 
 If you use a Microsoft service that requires users to have Microsoft accounts, and are looking for more information about configuring Connected Account channel settings for Microsoft identity server, visit the [Configure authentication for Microsoft identity server](./configure-connected-account.md) page.

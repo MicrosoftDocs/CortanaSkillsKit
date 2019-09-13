@@ -2,11 +2,14 @@
 title: Adding audio to Cortana Skills
 description: Describes how to develop a Cortana Skill that uses SSML and streaming audio.
 
-ms.date: 10/08/2018
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
---- 
+---
+
+> [!IMPORTANT]
+> This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Adding audio to Cortana skills
 

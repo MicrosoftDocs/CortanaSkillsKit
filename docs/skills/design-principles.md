@@ -3,7 +3,7 @@ title: Principles of Cortana skill design
 description: Overview of best practices Cortana skill design.
 
 ms.assetid: 182bda3b-5466-4337-8399-72598116cd9f
-ms.date: 12/26/2018
+ms.date: 06/27/2019
 ms.topic: article
 
 keywords: cortana
@@ -229,6 +229,7 @@ For directed prompts, use the form, "Please select X, Y, or Z." Don't use the fo
 
 If the list of options is long (for example, a list of stock investments) or variable (for example, movie titles), using a directed prompt is impractical. In this case, use an open prompt. For example:
 
+> **User**: Hey, Cortana, ask My Stock Check.  
 > **Cortana**: Please say a stock name.  
 > **User**: Help.  
 > **Cortana**: Please say a stock name. For example, say Microsoft.
@@ -240,9 +241,10 @@ If the list of options is long (for example, a list of stock investments) or var
 
 A confirmation is an acknowledgement that your skill heard the user's response. For example:
 
+> **User**: Hey, Cortana, book a flight.  
 > **Cortana:** Where do you want to fly?  
 > **User:** Paris.  
-> **Cortana:** Which date do you want to leave for Paris?
+> **Cortana:** What date do you want to leave for Paris?
 
 Think about where in the conversation flow the users need confirmations. Recognizing speech from a telephone is not perfect, particularly under noisy conditions. In addition, when skills are used in a standalone speaker, you only have one channel of communication with the user. An effective confirmation and correction strategy helps with these issues.
 
@@ -314,11 +316,11 @@ It's important to keep the user informed while you're working on their request. 
 
 ### Use default values
 
-Use default values when the user is not specific. For example, if the user says,"Make my room warmer," Cortana should say, "I’ve raised your room temperature to seventy two degrees" instead of "Sure, what temperature?"
+When possible, use default values when the user is not specific. For example, if the user says, "Make my room warmer," Cortana could say, "I’ve raised your room temperature to seventy two degrees" instead of "Sure, what temperature?"
 
 ### Identify the skill when invoked
 
-If the user invokes your skill without including an utterance, you should identify your skill and display your help content, or ask them what they want to do with leading questions.
+If the user invokes your skill without including an utterance, you should identify your skill and display your help content,or ask them what they want to do with leading questions.
 
 | |   |
 |-:| - |
@@ -371,37 +373,47 @@ Cortana supports Bot Framework cards, which are rich graphical controls that can
 
 The following image shows a card displayed on Cortana's canvas.
 
+<<<<<<< HEAD
+=======
+<!-- There are two main components of the card; 
+
+1. The skill information which consists of the logo and name specified when registering your Cortana skill. The name of the skill is limited to 30 characters. The logo is a png or jpeg that is 60 by 60 pixels and can be up to 30kb in size.
+2. The second is the canvas area of Cortana where the content of each response is displayed. The layout of the content varies. Bot Framework based skills support a number of different card layouts. 
+
+???? Is the 30 character limit a Cortana limit (bot framework's limit is 35 characters)?
+Bot framework supports only PNG format and not JPEG.
+Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, not shape.)?
+
+-->
+
+<!-- //TODO: AITSkills that have been imported from Alexa are limited to an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
+
+>>>>>>> new-v4
 ![Cortana's Canvas](../media/images/cortana-canvas.png)
 
-To add cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0).  
+To add cards to your skill, see [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0)  (Node.js version) or [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0) (.NET version).
 
-In addition to cards, Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0#prompt-types).
+In addition to cards, Node.js users can use a set of built-in prompts to simplify collecting inputs from a user (see the [Prompt for user input](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0) page). For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
 
 ### Card design tips
 
-**Limit the card's title to 84 characters or less**
+#### Limit the card's title to 84 characters or less
 
 Limiting the title to 84 characters keeps the title to two lines or less. Having longer titles doesn't look good and pushes the rest of the content down in the card.  
 
-**Create brief but meaningful responses**
+#### Create brief but meaningful responses
 
 When possible, create brief but meaningful responses with a bias toward text-based answers that are glanceable. Make cards crisp, clear, and actionable.
 
-**Try to fit your content within the height of Cortana's canvas**
+#### Try to fit your content within the height of Cortana's canvas
 
 Limiting the content to the size of Cortana's canvas makes it easy for the user to see the content without scrolling.
 
-<!--
-If your card does extend beyond the height of the canvas, ensure that buttons are in the initial view. Having to scroll for buttons is not user friendly and also likely to be missed.
--->
-
-<!-- I thought they didn't have control over the placement of the buttons - they just define the card's components and the framework builds the cards in a consistent format. A. Adaptive cards supports this in the future, but listed cards don't support placing buttons.-->
-
-**Use cards to provide details**
+#### Use cards to provide details
 
 Cards are meant to provide additional information beyond what the skill speaks. It's generally a poor user experience to have Cortana read all the details that are on the card. Provide a summary of the card using voice, then use the card for the details. For example, if the card shows shirt choices, the skill might say, "Select the shirt's color", while displaying the color options on the card.
 
-**Direct users to a screen only when needed**
+#### Direct users to a screen only when needed
 
 Some users use Cortana on speaker-only devices and can't see a card. If the user needs to see a card, direct them to Cortana's companion app. Try to do this sparingly. Ideally, a user should be able to use your skill on any supported device, regardless of whether it has a screen, without having to use a secondary device. An exception is when the user has to sign in to your skill or provide private information. Other than the sign-in card, cards are read-only on speaker devices.
 
@@ -415,10 +427,11 @@ The following scenario shows a cooking skill that provides a list of ingredients
 
 Note that the time between user utterances is limited. On a speaker-only device,if a timeout occurs, the skill ends. On a Windows device, the skill is still active, but the microphone turns off. <!-- For cases like this, it may also be a good to ask the user if they would like the instructions emailed to them.-->
 
-**Tailor the experience**
+#### Tailor the experience
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
+<<<<<<< HEAD
 #### Speaker-only device
 
 > **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
@@ -431,24 +444,22 @@ Tailor the experience based on the device the user is using. If they are using a
 The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
 
 **Use horizontal lists**
+=======
+**Speaker-only device:**
+>>>>>>> new-v4
+
+- **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
+
+**Device with screen:**
+
+- **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
+- **Card**: Show an image and additional details such as sizes/dimensions and color options.
+
+The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
+
+#### Use horizontal lists
 
 A card's attachment layout specifies how to display multiple card attachments. The framework supports vertical list layout and horizontal carousel layout. Use carousels, if possible.
-
-<!--
-
-Need to add a section like this:
-
-## Using other Bot Framework UI elements
-
-In addition to cards, Bot Framework provides the following UI elements that your skill may use. 
-
-Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0#prompt-types).
-
-.NET users can use [FormFlow](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-formflow?view=azure-bot-service-3.0).
-
-What design rules apply to Node.js prompts?
-What design rules apply to .NET FormFlows?
--->
 
 ## Next steps
 
@@ -456,7 +467,7 @@ For more information on using both voice and text in your skill, see [Building h
 
 <!-- Cortana's persona has been carefully crafted. It's very important that you maintain her character when interacting with users. For information about maintaining her persona in your skill, see [Cortana's persona](./cortanas-persona.md). NOTE: The linked file was archived on 20-May-19. -->
 
-For performance design considerations, including Azure services, see [Performance guidelines](./performance-guidelines.md).
+For performance design considerations, including Azure services, see [Skills performance guidelines](./performance-guidelines.md).
 
 For guidance on creating invocation names, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
 
@@ -464,4 +475,8 @@ When you publish your skill to the world, the Cortana team reviews your skill to
 
 <!-- Think about including the bot framework's design principles 
 
+<<<<<<< HEAD
 Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-3.0). -->
+=======
+Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0).
+>>>>>>> new-v4

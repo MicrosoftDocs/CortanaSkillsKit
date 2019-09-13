@@ -28,36 +28,62 @@ To play a single track, include a single Audio Card attachment in the message yo
 
 To specify the audio to play, use the Audio Card's `Media` property. The audio that you want to play must be Internet accessible, and it must use the HTTPS protocol. You should also set the card's `Title` property to the name of the track. Cortana ignores all other Audio Card properties.
 
-The following example shows how to add a single track for Cortana to play.
+Please refer to the [Azure Bot Service documentation](https://docs.microsoft.com/en-us/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0) on Media attachments for more details.
 
+<<<<<<< HEAD
 # [C#](#tab/cs)
+=======
+<<<<<<< HEAD
+The following example shows how to add a single track for Cortana to play and stop the conversation.
+=======
+# [C#](#tab/cs)
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
+>>>>>>> new-v4
+
 
 ```csharp
-    // Create a reply message
-    Activity reply = activity.CreateReply();
+    // Cards are sent as Attachments in the Bot Framework.
+    // So we need to create a list of attachments for the reply activity.
+    var attachments = new List<Attachment>();
 
-    // Set up attachments on the reply
-    reply.Attachments = new List<Attachment>();
-
-	// Add a single media URL for Cortana to play
+    // Reply to the activity we received with an activity.
+    var reply = MessageFactory.Attachment(attachments);
+    
+    // Add a single media URL for Cortana to play
     MediaUrl murl = new MediaUrl("https://{yourstreamurl}");
     MediaUrl[] medias = new MediaUrl[] {murl};
 
-	// Create a new AudioCard and attach your media URL
+    // Create a new AudioCard and attach your media URL
     AudioCard audioCard = new AudioCard()
     {
         Media = medias,
     };
 
-	// Add the attachment and send the reply
-    Attachment audioCardAttach = audioCard.ToAttachment();
-    reply.Attachments.Add(audioCardAttach);
+    // Add the attachment and send the reply
+    reply.Attachments.Add( audioCard.ToAttachment() );
 
-    reply.InputHint = InputHints.ExpectingInput;
-
-    await connector.Conversations.ReplyToActivityAsync(reply);
+    // Send the Audio Card
+    await turnContext.SendActivityAsync(reply, cancellationToken);
+    
+    // EndConversation
+    var message = turnContext.Activity.CreateReply().AsEndOfConversationActivity();
+    await turnContext.SendActivityAsync( message, cancellationToken);
+    await _conversationState.ClearStateAsync(turnContext, cancellationToken); // if you have state
+```
+```javascript
+    // create an AudioCard using CardFactory
+    let audioCard = CardFactory.audioCard( 'Title', [ "https://{yourstreamurl}" ] );
+    
+    // set the reply Activity with the card
+    await turnContext.sendActivity( { attachments: [ audioCard ] } );
+    
+    // EndConversation
+    await turnContext.sendActivity( { type: ActivityTypes.EndOfCOnversation, code: EndOfConversationCodes.CompletedSuccessfully } );
+    // and clear conversation state if any
 ```
 
+<<<<<<< HEAD
+=======
 # [JavaScript](#tab/js)
 
 ```javascript
@@ -72,11 +98,30 @@ The following example shows how to add a single track for Cortana to play.
     // and clear conversation state if any
 ```
 
+<<<<<<< HEAD
+# [JavaScript](#tab/js)
+
+```javascript
+    // create an AudioCard using CardFactory
+    let audioCard = CardFactory.audioCard( 'Title', [ "https://{yourstreamurl}" ] );
+    
+    // set the reply Activity with the card
+    await turnContext.sendActivity( { attachments: [ audioCard ] } );
+    
+    // EndConversation
+    await turnContext.sendActivity( { type: ActivityTypes.EndOfCOnversation, code: EndOfConversationCodes.CompletedSuccessfully } );
+    // and clear conversation state if any
+```
+
+=======
+>>>>>>> new-v4
 ---
 
 Be sure to use `ExpectingInput` as the input hint in your message. You should not use `IgnoringInput` as the input hint. If you set the hint to `IgnoringInput` without sending a follow-up `ExpectingInput` hint, the conversation will eventually error out because the system is expecting your skill to send another message.
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
 
-Cortana does not notify the skill when the audio stream or playlist completes.
+> ![NOTE]
+> Cortana does not notify the skill when the audio stream or playlist completes.
 
 If the message includes speech, Cortana reduces the volume of the audio stream (plays it in the background) until she finishes speaking.
 
@@ -85,7 +130,15 @@ To play audio on Windows, Android, and iOS, Cortana must remain open. Closing he
 On Windows, Cortana sends user utterances to your skill until you end the conversation. After you end the conversation, Cortana handles the user's utterances. However, on speaker-only devices, Cortana handles all user utterances while an audio stream is playing. For your skill to receive user utterances while the audio is playing, the user must invoke your skill (for example, "Ask My Radio to...").
 
 <!--
+<<<<<<< HEAD
 // Commented out because these features do not work with third party skills.  --Bernie Wieser 06/19
+=======
+<<<<<<< HEAD
+// Commented out because these features do not work with third party skills.
+=======
+// Commented out because these features do not work with third party skills.  --Bernie Wieser 06/19
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
+>>>>>>> new-v4
 // Also, current OTG/UWP only play one audio card.
 
 ## Skill audio commands
@@ -137,7 +190,15 @@ The following are the `CurrentAudioInfo` properties.
 |-|-|-
 | Url | string | The URL of the audio stream that's playing. 
 
+<<<<<<< HEAD
 | Value | String | A user-defined value that's stored with the audio stream.
+=======
+<<<<<<< HEAD
+<!- - | Value | String | A user-defined value that's stored with the audio stream. - ->
+=======
+| Value | String | A user-defined value that's stored with the audio stream.
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
+>>>>>>> new-v4
 
 Cortana includes the `CurrentAudioInfo` object in the channel data on speaker-only devices only.
 
@@ -153,4 +214,19 @@ The following example shows how to get the audio information from the message's 
     }
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+## Known issues
+
+The following are known issues.
+
+|Platform|Expected behavior|Issue
+|-|-|-
+|Windows, iOS, Android|If your message includes speech along with the audio attachment, Cortana reduces the volume of the audio stream (plays it in the background) until she finishes speaking.|The audio volume does not reset to normal levels.
+|Windows, iOS, Android|Users may use the Cortana commands to control streaming, such as pause, resume, next, and previous.|Not supported.
+
+=======
+>>>>>>> 8b936453edc7eb9db220cef1a6779f6533b0df8f
+>>>>>>> new-v4
 -->

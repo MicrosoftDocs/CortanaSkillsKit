@@ -3,7 +3,11 @@ title: Known Issues
 description: A list of known issues in the Cortana Skills Kit platform.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
+<<<<<<< HEAD
 ms.date: 09/12/2019
+=======
+ms.date: 07/08/2019
+>>>>>>> new-v4
 ms.topic: article
 
 keywords: cortana
@@ -113,7 +117,11 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 }
 ```
 
+<<<<<<< HEAD
 For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-4.0) that maps an empty string to a help intent.
+=======
+For JavaScript, you can create a [custom recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-4.0) that maps an empty string to a help intent.
+>>>>>>> new-v4
 
 ### Bot created from the QnA (V3) template fails when invoked without an intent
 

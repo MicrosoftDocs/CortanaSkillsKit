@@ -2,7 +2,11 @@
 title: Default Settings
 description: Describes how to fill out Default Group section when publishing a Cortana skill.
 ms.topic: article
+<<<<<<< HEAD
 ms.date: 08/08/2019
+=======
+ms.date: 07/12/2019
+>>>>>>> new-v4
 ms.topic: article
 ms.author: v-daturc
 
@@ -11,9 +15,9 @@ keywords: cortana
 
 # Default Settings
 
-After configuring the Cortana channel for your skill, it's automatically deployed using the **Default Settings**. Deploying with the **Default Settings** makes the skill available to you only, so you can thoroughly test it before deploying it to one of the other environments.
+After you configure the Cortana channel for your skill, it's automatically deployed using the **Default Settings**. Deploying with the **Default Settings** makes the skill available only to you, so you can thoroughly test it before deploying it to one of the other environments.
 
-For more information about configuring the Cortana channel, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-3.0) page.
+For more information about configuring the Cortana channel, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0) page.
 
 ![Default settings](../media/images/default_settings.png)
 
@@ -29,7 +33,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     * `Skill icon`: Click on the `Upload icon` button and select an icon for your Cortana skill.
     * `Display name`: The value is limited to 30 characters.
-    * `Invocation name`: The name used to invoke your Cortana skill. This value must be unique across Cortana (all Cortana skills).
+    * `Invocation name`: The name used to invoke your Cortana skill. This value must be unique across Cortana (all Cortana skills must have unique names).
 
         For more information about invocation naming, visit the [Invocation Name Guidelines](./cortana-invocation-guidelines.md) page.
 
@@ -81,7 +85,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     * `This skill's Connected Service requires intranet access to authenticate users (leave this unchecked if you are unsure).` Check this only if your app requires access to an intranet.
 
-    1. Request user profile data
+    2. Request user profile data
 
         ![Request user profile](../media/images/default_settings-request_user_profile_data-empty.png)
 

@@ -2,11 +2,18 @@
 title: Using authentication in your Cortana Skill
 description: Describes how to use authentication in your Cortana Skill.
 
+<<<<<<< HEAD
 ms.date: 07/16/2019
+=======
+ms.date: 07/09/2019
+>>>>>>> new-v4
 ms.topic: article
 
 keywords: cortana
 ---
+
+> [!IMPORTANT]
+> This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Using authentication in your Cortana skill
 

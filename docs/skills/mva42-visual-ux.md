@@ -2,11 +2,18 @@
 title: Adding visual elements to Cortana Skills
 description: Describes how to develop a Cortana Skill that uses visual elements.
 
+<<<<<<< HEAD
 ms.date: 09/13/2019
+=======
+ms.date: 07/09/2019
+>>>>>>> new-v4
 ms.topic: article
 
 keywords: cortana
 ---
+
+> [!IMPORTANT]
+> This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Adding visual elements to Cortana skills
 

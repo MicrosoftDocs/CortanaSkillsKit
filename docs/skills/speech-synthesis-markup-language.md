@@ -3,12 +3,11 @@ title: Speech Synthesis Markup Language (SSML) Reference
 description: Overview of the SSML schema used by Cortana.
 
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
-ms.date: 12/17/2018
+ms.date: 07/12/2019
 ms.topic: article
 
 keywords: cortana
 ---
-
 
 # Speech Synthesis Markup Language (SSML) reference
 
@@ -18,7 +17,7 @@ Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech
 
 ## Supported SSML elements
 
-For information about using SSML in your skill, see *Add speech to messages* in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-3.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-3.0).
+For information about using SSML in your skill, see *Add speech to messages* in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-4.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-4.0).
 
 > [!IMPORTANT]
 > Don't forget to use double quotes around attribute values. Standards for well-formed, valid XML require attribute values to be enclosed in double quotation marks. For example, `<prosody volume="90">` is a well-formed, valid element, but `<prosody volume=90>` is not. SSML may not recognize attribute values that are not in quotes.
@@ -42,7 +41,7 @@ Custom skills imported from Alexa can use SSML in the `outputSpeech` property of
 ```
 -->
 
-These are the SSML elements that Cortana supports. The **speak** element is **required.** All other elements are optional.
+These are the SSML elements that Cortana supports. The `speak` element is **required.** All other elements are optional.
 
 |SSML element | Required? | Summary
 |:---|:---:|:---|
@@ -89,7 +88,7 @@ The root element of the SSML document.
 | Attribute | Description | 
 |-----------|-------------|
 | version | **Required.** Indicates the version of the SSML specification used to interpret the document markup. The current version is 1.0. | 
-| xml:lang | **Required.** Specifies the language of the root document. The value may contain a lowercase, two-letter language code (for example, **en**), or the language code and uppercase country/region (for example, **en-US**).  |
+| xml:lang | **Required.** Specifies the language of the root document. The value may contain a lowercase, two-letter language code (for example, **en**), or the language code and uppercase country/region (for example, **en-US**). |
 | xmlns | **Required.** Specifies the URI to the document that defines the markup vocabulary (the element types and attribute names) of the SSML document. The current URI is https://www.w3.org/2001/10/synthesis. |
 
 > [!NOTE]
@@ -124,7 +123,6 @@ An optional element that you use to insert a recorded audio file.
 | Attribute | Description |
 |-----------|-------------|
 | src | **Required.** The URL for the audio file.  |
-
 
 **Remarks**
 
@@ -176,11 +174,11 @@ An optional element used to insert pauses between words, or to prevent pauses th
 | Attribute | Description |
 |-----------|-------------|
 | strength | **Optional.** Specifies the relative duration of a pause using one of the following values:<ul><li>none</li><li>x-weak</li><li>weak</li><li>medium (default)</li><li>strong</li><li>x-strong</li></ul> |
-| time | **Optional.** Specifies the absolute duration of a pause in seconds or milliseconds. Examples of valid values are 2s and 500|
+| time | **Optional.** Specifies the absolute duration of a pause in seconds or milliseconds. Examples of valid values are `2s` and `500`|
 
 **Remarks**
 
-Use this element to override the default behavior of text-to-speech (TTS) for a word or phrase if the synthesized speech for that word or phrase sounds unnatural. Set `strength` to *none* to prevent a prosodic break which the speech synthesis engine would otherwise insert. 
+Use this element to override the default behavior of text-to-speech (TTS) for a word or phrase if the synthesized speech for that word or phrase sounds unnatural. Set `strength` to *none* to prevent a prosodic break which the speech synthesis engine would otherwise insert.
 
 **Example**
      
@@ -252,7 +250,7 @@ An optional element that specifies the phonetic pronunciation for the specified 
 
 **Remarks**
 
-Phonetic alphabets are composed of phones, which consist of letters, numbers or characters, sometimes in combination. Each phone describes a unique sound of speech. This is in contrast to the Latin alphabet, where any letter may represent multiple spoken sounds. Consider the different pronunciations of the letter "c" in the words "candy" and "cease", or the different pronunciations of the letter combination "th" in the words "thing" and "those". 
+Phonetic alphabets are composed of phones, which consist of letters, numbers or characters, sometimes in combination. Each phone describes a unique sound of speech. This is in contrast to the Latin alphabet, where any letter may represent multiple spoken sounds. Consider the different pronunciations of the letter "c" in the words "candy" and "cease", or the different pronunciations of the letter combination "th" in the words "thing" and "those".
 
 **Usage**
 
