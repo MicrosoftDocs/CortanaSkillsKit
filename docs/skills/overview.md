@@ -68,7 +68,7 @@ If a user is trying to invoke your Cortana skill by voice input, they speak an i
 > **User:** "Ask Contoso Photo what the status of my order of photos is."
 >
 > **Cortana:** "Your order of photos will be ready in an hour."  
-=======
+>
 > **User:** "Ask Contoso Photo what the status of my photo order is."
 >
 > **Cortana:** "Your photo order will be ready in an hour."  
