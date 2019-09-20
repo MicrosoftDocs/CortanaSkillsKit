@@ -8,6 +8,8 @@ ms.topic: article
 
 keywords: cortana
 ---
+>[!IMPORTANT]
+> Please note that this feature/API will be deprecated in future release. This feature/API will not be supported in Cortana starting with Windows 20H1 release. 
 
 # Activate a foreground app with voice commands through Cortana
 
