@@ -2,11 +2,14 @@
 title: Using client code with Cortana Skills
 description: Describes how to use client code with a Cortana Skill.
 
-ms.date: 10/08/2018
+ms.date: 07/09/2019
 ms.topic: article
 
 keywords: cortana
 ---
+
+> [!IMPORTANT]
+> This page has been deprecated as we update our documentation to Azure Bot Service v4.
 
 # Using client code with Cortana skills
 
