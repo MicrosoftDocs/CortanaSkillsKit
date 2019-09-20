@@ -9,7 +9,7 @@ ms.topic: article
 
 keywords: cortana
 ---
->[!IMPORTANT]
+>[!WARNING]
 > Please note that this feature/API will be deprecated in future release. This feature/API will not be supported in Cortana starting with Windows 20H1 release. 
 
 # Cortana design guidelines
