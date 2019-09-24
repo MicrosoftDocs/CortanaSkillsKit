@@ -22,7 +22,7 @@ This image shows how users interact with Cortana and your skill. No matter which
 ![Cortana Skills workflow](../media/images/workflow.png)  
 
 ## How do users invoke skills?  
-
+ 
 Users invoke skills simply by speaking to Cortana. Users don't install or activate skills. New skills that the user may be interested in using can be found on the [Cortana Skills page](https://www.microsoft.com/en-us/windows/cortana/cortana-skills/). They can also manage and control skills that they've already connected to in the Cortana Notebook.
 
 >[!NOTE]
@@ -66,15 +66,9 @@ If the user invokes a Cortana skill on a device with a screen, then a card with 
 ### EXAMPLE 3
 If a user is trying to invoke your Cortana skill by voice input, they speak an invocation phrase using the invocation name. For example, if a user invokes the Cortana skill `Contoso Photo` to check on the status of an order and make a change, then the conversation that follows might go like this.  
 >
-<<<<<<< HEAD
-> **User:** "Ask Contoso Photo what the status of my order of photos is."
->
-> **Cortana:** "Your order of photos will be ready in an hour."  
-=======
 > **User:** "Ask Contoso Photo what the status of my photo order is."
 >
 > **Cortana:** "Your photo order will be ready in an hour."  
->>>>>>> new-v4
 >
 > **Cortana:** "Can I help you with anything else?"
 >

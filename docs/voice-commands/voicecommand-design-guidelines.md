@@ -4,7 +4,7 @@ description: These guidelines and recommendations describe how your app can use 
 
 ms.assetid: 332ccb95-0e56-410e-ab63-cc028fce4192
 
-ms.date: 10/08/2018
+ms.date: 09/24/2019
 ms.topic: article
 
 keywords: cortana

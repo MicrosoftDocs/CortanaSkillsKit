@@ -3,7 +3,7 @@ title: Interact with a background app in Cortana - Cortana UWP design and develo
 description: Enable user interaction with a background app, through speech and text input in the Cortana canvas, while executing a voice command.
 
 ms.assetid: e42917dc-aece-4880-813f-80b897f9126c
-ms.date: 10/08/2018
+ms.date: 09/24/2019
 ms.topic: article
 
 keywords: cortana

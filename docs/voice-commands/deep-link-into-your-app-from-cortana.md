@@ -4,7 +4,7 @@ description: Provide deep links from a background app in **Cortana** that launch
 
 
 ms.assetid: 6fe5fcc5-9ee4-4c04-92f4-7b1bf7ef5651
-ms.date: 10/08/2018
+ms.date: 09/24/2019
 ms.topic: article
 
 keywords: cortana
