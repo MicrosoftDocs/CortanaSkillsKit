@@ -5,11 +5,13 @@ author: kbridge
 label: Conceptual
 ms.assetid: c2959c1b-c2f2-4a8d-8f3e-79585f69afcf
 
-ms.date: 02/08/2017
+ms.date: 09/24/2019
 ms.topic: article
 
 keywords: cortana
 ---
+>[!WARNING]
+> Please note that this feature/API will be deprecated in future release. This feature/API will not be supported in Cortana starting with Windows 20H1 release. 
 
 # Support natural language voice commands in Cortana
 

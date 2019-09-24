@@ -5,11 +5,13 @@ author: kbridge
 label: Conceptual
 ms.assetid: 18e45699-6f2f-431a-a4e7-7706171d1d8b
 
-ms.date: 02/08/2017
+ms.date: 09/24/2019
 ms.topic: article
 
 keywords: cortana
 ---
+>[!WARNING]
+> Please note that this feature/API will be deprecated in future release. This feature/API will not be supported in Cortana starting with Windows 20H1 release. 
 
 # Cortana voice commands
 

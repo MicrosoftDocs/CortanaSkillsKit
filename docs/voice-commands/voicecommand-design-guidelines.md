@@ -4,11 +4,13 @@ description: These guidelines and recommendations describe how your app can use 
 
 ms.assetid: 332ccb95-0e56-410e-ab63-cc028fce4192
 
-ms.date: 10/08/2018
+ms.date: 09/24/2019
 ms.topic: article
 
 keywords: cortana
 ---
+>[!WARNING]
+> Please note that this feature/API will be deprecated in future release. This feature/API will not be supported in Cortana starting with Windows 20H1 release. 
 
 # Cortana design guidelines
 
