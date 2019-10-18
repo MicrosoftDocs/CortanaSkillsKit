@@ -4,7 +4,7 @@ description: Describes how to set up the Cortana development environment.
 
 ms.date: 05/06/2019
 ms.topic: article
-ms.author: v-daturc
+
 
 keywords: cortana
 ---
