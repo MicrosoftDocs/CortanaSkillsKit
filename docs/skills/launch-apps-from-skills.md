@@ -5,7 +5,7 @@ description: Shows how to launch apps and website from your skill.
 ms.assetid: 6B89584E-AE15-4A6E-8104-A77062F2C835
 ms.date: 06/14/2019
 ms.topic: article
-ms.author: v-daturc
+
 
 keywords: cortana, apps
 ---
