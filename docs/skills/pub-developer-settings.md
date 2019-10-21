@@ -5,7 +5,7 @@ label: Conceptual
 
 ms.date: 05/24/2019
 ms.topic: article
-ms.author: v-daturc@microsoft.com
+
 
 keywords: cortana
 ---

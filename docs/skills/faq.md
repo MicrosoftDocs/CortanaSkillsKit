@@ -5,8 +5,6 @@ description: Tips on Testing & Debugging Cortana Skills.
 ms.assetid: 3f37e309-3170-4896-8434-33bdce3c1889
 ms.date: 05/03/2019
 ms.topic: article
-ms.author: v-daturc
-
 keywords: cortana, faq
 ---
 
