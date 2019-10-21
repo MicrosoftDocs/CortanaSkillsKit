@@ -2,11 +2,8 @@
 title: Building hybrid user interfaces
 description: Describes the process for approving or rejecting third-party Cortana devs.
 label: Conceptual
-
 ms.date: 06/12/2019
 ms.topic: article
-ms.author: v-daturc@microsoft.com
-
 keywords: cortana, hybrid, design, interface
 ---
 

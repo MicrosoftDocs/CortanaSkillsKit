@@ -4,7 +4,7 @@ description: Describes how to fill out Test Group section when publishing a Cort
 ms.topic: article
 ms.date: 05/24/2019
 ms.topic: article
-ms.author: v-daturc
+
 
 keywords: cortana
 ---

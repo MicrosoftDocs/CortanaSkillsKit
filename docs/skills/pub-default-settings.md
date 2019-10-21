@@ -4,8 +4,6 @@ description: Describes how to fill out Default Group section when publishing a C
 ms.topic: article
 ms.date: 08/08/2019
 ms.topic: article
-ms.author: v-daturc
-
 keywords: cortana
 ---
 
