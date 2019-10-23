@@ -373,8 +373,6 @@ Cortana supports Bot Framework cards, which are rich graphical controls that can
 
 The following image shows a card displayed on Cortana's canvas.
 
-<<<<<<< HEAD
-=======
 <!-- There are two main components of the card; 
 
 1. The skill information which consists of the logo and name specified when registering your Cortana skill. The name of the skill is limited to 30 characters. The logo is a png or jpeg that is 60 by 60 pixels and can be up to 30kb in size.
@@ -388,7 +386,6 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 <!-- //TODO: AITSkills that have been imported from Alexa are limited to an image, title and text based content in a predefined layout as shown in the [Imported Alexa Skill Card Designs](#Imported-Alexa-Skill-Card-Designs) section below.-->
 
->>>>>>> new-v4
 ![Cortana's Canvas](../media/images/cortana-canvas.png)
 
 To add cards to your skill, see [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0)  (Node.js version) or [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0) (.NET version).
@@ -431,22 +428,7 @@ Note that the time between user utterances is limited. On a speaker-only device,
 
 Tailor the experience based on the device the user is using. If they are using a standalone speaker device, rely on speech to convey the message to the user. If they have a screen, share a quick summary using voice and add additional information in the card. This example shows one way to present information to a user who is shopping for a gift.
 
-<<<<<<< HEAD
-#### Speaker-only device
-
-> **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
-
-#### Device with screen
-
-> **Cortana**: The Contoso shirt is a custom-made shirt that retails for thirty dollars.
-> **Card**: Show an image and additional details such as sizes/dimensions and color options.
-
-The Bot Framework's Hero card is a good option for this case. If presenting several options to the user, a carousel of Hero cards works well.
-
-**Use horizontal lists**
-=======
 **Speaker-only device:**
->>>>>>> new-v4
 
 - **Cortana**: The Contoso shirt is a custom-made shirt available in three colors: red, blue, and orange. Sizes include small, medium, and large. It retails for thirty dollars.
 
@@ -475,8 +457,4 @@ When you publish your skill to the world, the Cortana team reviews your skill to
 
 <!-- Think about including the bot framework's design principles 
 
-<<<<<<< HEAD
-Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-3.0). -->
-=======
-Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0).
->>>>>>> new-v4
+Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0). -->
