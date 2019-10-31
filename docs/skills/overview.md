@@ -9,7 +9,7 @@ ms.topic: article
 keywords: cortana
 ---
 >[!WARNING]
-> Please note that Cortana skills kit for Consumer (developer platform) and the skills built on this platform will be retired on March 31st 2020. Click [**here**](../skills/third-party-deprecation.md) to learn more. 
+> Please note that Cortana skills kit for Consumer (developer platform) and the skills built on this platform will be retired on March 31st 2020. Click [here](../skills/third-party-deprecation.md) to learn more. 
 
 # Cortana Skills Kit
 
