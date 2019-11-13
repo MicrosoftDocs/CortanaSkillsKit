@@ -5,7 +5,6 @@ description: Extend your Cortana capabilities to help your employees be more pro
 ms.date: 09/05/2019
 ms.topic: article
 ms.prod: cortana
-ms.author: v-daturc
 
 keywords: cortana
 ---  
