@@ -1,7 +1,6 @@
 ---
 title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
-ms.topic: article
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
 ms.date: 05/24/2019
 ms.topic: article
