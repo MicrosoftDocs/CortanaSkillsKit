@@ -1,0 +1,116 @@
+### YamlMime:Hub
+
+title: Cortana Skills documentation # < 60 chars
+summary:  Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: brand
+
+metadata:
+  title: Cortana Skills documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # Required; article description that is displayed in search results. < 160 chars.
+  ms.service: cortana #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.topic: hub-page # Required
+  author: mattwojo #Required; your GitHub user alias, with correct capitalization.
+  ms.author: mattwojo #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/12/2018 #Required; mm/dd/yyyy format.
+
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Learn about Cortana Skills Kit
+      itemType: overview
+      url: overview.md
+    # Card
+    - title: Create your first skill
+      itemType: get-started
+      url: get-started.md
+    # Card
+    - title: Personalize your skill
+      itemType: how-to-guide
+      url: get-user-profile-context.md
+    # Card
+    - title: Add authentication to your skill
+      itemType: how-to-guide
+      url: authentication.md
+    # Card
+    - title: Language Understanding
+      itemType: how-to-guide
+      url: https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis
+    # Card
+    - title: Make your skill smarter
+      itemType: how-to-guide
+      url: https://docs.microsoft.com/bot-framework/cognitive-services-bot-intelligence-overview
+
+# conceptualContent section (optional)
+conceptualContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Design Cortana Skills
+      links:
+        - url: design-principles.md
+          itemType: concept
+          text: Principles of Cortana skills design
+        - url: cortana-invocation-guidelines.md
+          itemType: concept
+          text: Invocation name guidelines
+        - url: performance-guidelines.md
+          itemType: concept
+          text: Skills performance guidelines
+    # Card
+    - title: Test Cortana Skills
+      links:
+        - url: test-debug.md
+          itemType: how-to-guide
+          text: Testing and debugging Cortana Skills
+        - url: known-issues.md
+          itemType: concept
+          text: Known Issues
+    # Card
+    - title: Publish Cortana Skills
+      links:
+        - url: publish-skill.md
+          itemType: how-to-guide
+          text: Publishing Cortana skills
+        - url: skill-review-guidelines.md
+          itemType: concept
+          text: Cortana skills certification requirements
+    # Card
+    - title: Reference
+      links:
+        - url: speech-synthesis-markup-language.md
+          itemType: reference
+          text: Speech Synthesis Markup Language
+        - url: user-profile-contextual-info.md
+          itemType: reference
+          text: Cortana user profile and contextual information
+        - url: supported-locales.md
+          itemType: reference
+          text: Supported Cortana locales
+
+# additionalContent section (optional)
+# Card with links style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - items:
+        # Card
+        - title: Resources
+          links:
+            - text: Support
+              url: cortana-support.md
+            - text: FAQs
+              url: faq.md
+            - text: Terms of Use 
+              url: terms-of-use.md
+            - text: Privacy Policy
+              url: privacy-policy-guidelines.md
+            - text: Samples
+              url: cortana-samples.md
+            - text: Blog
+              url: https://techcommunity.microsoft.com/t5/cortana-skills-kit-blog/bg-p/cortanaskillskit
+
+
