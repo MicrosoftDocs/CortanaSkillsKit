@@ -10,7 +10,7 @@ keywords: cortana, skills
 
 # Contributing to Cortana skills documentation
 
-Welcome to the [public repo for Cortana skills developer documentation](https://github.com/microsoftdocs/cortanaskillskit)! Any articles you create or edit in this repo **will be visible to the public.** The docs.microsoft.com platform uses [GitHub-flavored Markdown with Markdig extensions](https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
+Welcome to the [public repo for Cortana skills developer documentation](https://github.com/microsoftdocs/cortanaskillskit)! Any articles you create or edit in this repo **will be visible to the public.** The docs.microsoft.com platform uses [GitHub-flavored Markdown with Markdig extensions](https://docs.microsoft.com/contribute/how-to-write-use-markdown). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
 
 ## Before you start
 
@@ -87,8 +87,8 @@ Use the following workflow to create new articles in the documentation via web b
 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
-- [Markdown basics](https://docs.microsoft.com/en-us/contribute/how-to-write-use-markdown)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/en-us/contribute/markdown-reference)
+- [Markdown basics](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/markdown-reference)
 - [Markdig overview](https://github.com/lunet-io/markdig?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
 
 ### Adding tables
