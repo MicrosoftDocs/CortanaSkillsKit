@@ -133,7 +133,7 @@
     {
       "source_path": "docs/voicecommands/voicecommand-design-guidelines.md",
       "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/vcd",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/voicecommands/dynamically-modify-voice-command-definition-vcd-phrase-lists.md",
@@ -143,7 +143,7 @@
     {
       "source_path": "docs/voicecommands/interact-with-a-background-app-in-cortana.md",
       "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/voicecommands/launch-a-background-app-with-voice-commands-in-cortana.md",
