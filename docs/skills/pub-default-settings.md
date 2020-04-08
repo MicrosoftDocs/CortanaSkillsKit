@@ -1,7 +1,6 @@
 ---
 title: Default Settings
 description: Describes how to fill out Default Group section when publishing a Cortana skill.
-ms.topic: article
 ms.date: 08/08/2019
 ms.topic: article
 keywords: cortana

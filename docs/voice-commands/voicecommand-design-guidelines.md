@@ -122,11 +122,11 @@ For more info, see the [Globlization and localization section](https://msdn.micr
 
 Universal Windows Platform (UWP) apps can automatically select the most appropriate app logo image based on specific settings and device capabilities (high contrast, effective pixels, locale, and so on). All you need to do is provide the images and ensure you use the appropriate naming convention and folder organization within the app project for the different resource versions. If you don't provide the recommended resource versions, accessibility, localization, and image quality can suffer, depending on the user's preferences, abilities, device type, and location.
 
-For more detail on image resources for high contrast and scale factors, see [Guidelines for tile and icon assets](https://msdn.microsoft.com/en-us/windows/uwp/controls-and-patterns/tiles-and-notifications-app-assets).
+For more detail on image resources for high contrast and scale factors, see [Guidelines for tile and icon assets](https://msdn.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-app-assets).
 
 You name resources using qualifiers. Resource qualifiers are folder and filename modifiers that identify the context in which a particular version of a resource should be used.
 
-The standard naming convention is "foldername/qualifiername-value\[\_qualifiername-value\]/filename.qualifiername-value\[\_qualifiername-value\].ext". For example: images/en-US/logo.scale-100\_contrast-white.png is simply referred to in code using the root folder and the filename: images/logo.png. See [Manage language and region](https://msdn.microsoft.com/windows/uwp/globalizing/manage-language-and-region) and [How to name resources using qualifiers](https://msdn.microsoft.com/library/windows/apps/xaml/hh965324).
+The standard naming convention is "foldername/qualifiername-value\[\_qualifiername-value\]/filename.qualifiername-value\[\_qualifiername-value\].ext". For example: images/logo.scale-100\_contrast-white.png is simply referred to in code using the root folder and the filename: images/logo.png. See [Manage language and region](https://msdn.microsoft.com/windows/uwp/globalizing/manage-language-and-region) and [How to name resources using qualifiers](https://msdn.microsoft.com/library/windows/apps/xaml/hh965324).
 
 We recommend that you mark the default language on string resource files (such as "en-US\\resources.resw") and the default scale factor on images (such as "logo.scale-100.png"), even if you do not currently plan to provide localized or multiple resolution resources. However, at a minimum, we recommend that you provide assets for 100, 200, and 400 scale factors.
 

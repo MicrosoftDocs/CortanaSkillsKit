@@ -1,7 +1,6 @@
 ---
 title: Cortana skills Publishing Process
 description: Describes the publishing process for Cortana skills and how to deploy skills to self, group, and world. 
-ms.topic: article
 ms.assetid: 6dad0848-3886-4729-90fa-0bcd424b3561
 ms.date: 05/24/2019
 ms.topic: article
@@ -92,9 +91,9 @@ If you read and adhere to the [review guidelines](./skill-review-guidelines.md),
 
 Some common reasons why a Cortana skill fails the review are:
 
-* The invocation name does not meet policy requirements. See [Invocation name guidelines](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines) for help.
+* The invocation name does not meet policy requirements. See [Invocation name guidelines](https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines) for help.
 
-* Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, beginning with `ask`, `open`, `tell`, etc. See [Invocation phrases](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines#invocation-phrases) for a list of available invocation phrases.
+* Your submission does not provide sample invocation phrases.  You must provide at least three sample invocation phrases that demonstrate your Cortana skill. Each of the samples should use a different phrase, beginning with `ask`, `open`, `tell`, etc. See [Invocation phrases](https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines#invocation-phrases) for a list of available invocation phrases.
 
 * You provide sample phrases with one or more of the following issues.
 
