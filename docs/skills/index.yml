@@ -3,7 +3,6 @@
 title: Cortana Skills documentation # < 60 chars
 summary:  Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # < 160 chars
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
-brand: brand
 
 metadata:
   title: Cortana Skills documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
@@ -90,27 +89,24 @@ conceptualContent:
         - url: supported-locales.md
           itemType: reference
           text: Supported Cortana locales
-
-# additionalContent section (optional)
-# Card with links style
-additionalContent:
-  # Supports up to 3 sections
-  sections:
-    - items:
-        # Card
-        - title: Resources
-          links:
-            - text: Support
-              url: cortana-support.md
-            - text: FAQs
-              url: faq.md
-            - text: Terms of Use 
-              url: terms-of-use.md
-            - text: Privacy Policy
-              url: privacy-policy-guidelines.md
-            - text: Samples
-              url: cortana-samples.md
-            - text: Blog
-              url: https://techcommunity.microsoft.com/t5/cortana-skills-kit-blog/bg-p/cortanaskillskit
-
-
+    # Card
+    - title: Resources
+      links:
+        - url: cortana-support.md
+          itemType: overview
+          text: Speech Synthesis Markup Language
+        - url: faq.md
+          itemType: overview
+          text: FAQs
+        - url: terms-of-use.md
+          itemType: concept
+          text: Terms of Use
+        - url: privacy-policy-guidelines.md
+          itemType: concept
+          text: Privacy Policy
+        - url: https://docs.microsoft.com/cortana/skills/cortana-samples
+          itemType: sample
+          text: Samples
+        - url: https://techcommunity.microsoft.com/t5/cortana-skills-kit-blog/bg-p/cortanaskillskit
+          itemType: overview
+          text: Blog
