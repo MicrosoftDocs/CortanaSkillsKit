@@ -141,9 +141,9 @@ Ensure that you have successfully deployed your skill.
 
 #### Azure Functions  
 
-- [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-best-practices)  
+- [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)  
 - [How to code and test Azure functions locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local)  
-- [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local)  
+- [Code and test Azure Functions locally](https://docs.microsoft.com/azure/azure-functions/functions-develop-local)  
 
 ### Bot Framework troubleshooting guides  
 

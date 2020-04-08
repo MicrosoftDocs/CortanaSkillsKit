@@ -132,7 +132,7 @@ Your skill should attempt to properly manage the state of the conversation. For 
 
 #### 2.4.4
 
-Your skill should follow Cortana and Bot Framework suggested practices for conversational and interactive design. For Cortana guidance, see [Understanding types of conversations](https://docs.microsoft.com/en-us/cortana/skills/mva31-understanding-conversations).
+Your skill should follow Cortana and Bot Framework suggested practices for conversational and interactive design. For Cortana guidance, see [Understanding types of conversations](https://docs.microsoft.com/cortana/skills/mva31-understanding-conversations).
 
 #### 2.4.5
 

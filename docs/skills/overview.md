@@ -13,7 +13,7 @@ keywords: cortana
 
 Cortana is a personal digital assistant that keeps users informed and productive, helping them get things done across devices and platforms. Skills define the tasks that Cortana can accomplish. You can extend Cortana by adding your own skills that let your users interact with your service via Cortana. Cortana invokes the skills based on input from the user, either spoken or typed.
 
-The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Getting started with Cortana skills](https://docs.microsoft.com/en-us/cortana/skills/get-started).
+The Cortana Skills Kit enables you to develop skills for Cortana. The kit is a suite of tools that will help you build skills that connect users to your custom services and solutions. To get started, go to [Getting started with Cortana skills](https://docs.microsoft.com/cortana/skills/get-started).
 
 Because Cortana is available on many different devices, some may have a screen, while others may have a speaker, and some may have both. You should ensure that your bot is capable of handling any of these devices. The bot framework provides device information to your skill.
 
@@ -23,7 +23,7 @@ This image shows how users interact with Cortana and your skill. No matter which
 
 ## How do users invoke skills?  
  
-Users invoke skills simply by speaking to Cortana. Users don't install or activate skills. New skills that the user may be interested in using can be found on the [Cortana Skills page](https://www.microsoft.com/en-us/windows/cortana/cortana-skills/). They can also manage and control skills that they've already connected to in the Cortana Notebook.
+Users invoke skills simply by speaking to Cortana. Users don't install or activate skills. New skills that the user may be interested in using can be found on the [Cortana Skills page](https://www.microsoft.com/windows/cortana/cortana-skills/). They can also manage and control skills that they've already connected to in the Cortana Notebook.
 
 >[!NOTE]
 > Cortana will respond with speech when queried with speech. Queries by text will have a text-only response.
@@ -43,7 +43,7 @@ When invoking skills by speaking (or typing) to Cortana, the user can optionally
 
 If an invocation name is not provided, then Cortana may suggest a skill that she thinks can fulfill the user request.
 
-For more information about invocation phrases, visit the [Invocation Name Guidelines](https://docs.microsoft.com/en-us/cortana/skills/cortana-invocation-guidelines) page.
+For more information about invocation phrases, visit the [Invocation Name Guidelines](https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines) page.
 
 ## How do users interact with skills?  
 
@@ -119,4 +119,4 @@ For information about recognizing intents and entities with LUIS, visit the  [Us
 Get ready to create your Cortana skill! Visit the [Getting started with Cortana skills](./get-started.md) page.  
 
 ## FAQ
-For answers to commonly asked questions, visit the [Cortana Skills Kit FAQ](https://docs.microsoft.com/en-us/cortana/skills/faq) page.  
+For answers to commonly asked questions, visit the [Cortana Skills Kit FAQ](https://docs.microsoft.com/cortana/skills/faq) page.  

@@ -23,7 +23,7 @@ In this module you'll learn how to extend the **Mixtape** skill developed in [Bu
 
 ## Step 1 - Revise your skill to launch email 
 
-You can use Cortana's **ChannelData** object to launch the default client email using the [mailto URI protocol](https://msdn.microsoft.com/en-us/library/jj710215(v=vs.85).aspx). Revise the **SaveSongIntent** method in the **BasicLuisDialog.cs** module of your **Mixtape** skill as follows:
+You can use Cortana's **ChannelData** object to launch the default client email using the [mailto URI protocol](https://msdn.microsoft.com/library/jj710215(v=vs.85).aspx). Revise the **SaveSongIntent** method in the **BasicLuisDialog.cs** module of your **Mixtape** skill as follows:
 
 ```csharp
 public async Task SaveSongIntent(IDialogContext context, LuisResult result)
@@ -108,7 +108,7 @@ public async Task SaveSongIntent(IDialogContext context, LuisResult result)
 }
 ```
 
-In addition to the subject line, you can add a variety of items as parameters to the **mail to** deep link. For more information on **mail to** protocol query parameters, see [mailto Protocol](https://msdn.microsoft.com/en-us/library/aa767737(v=vs.85).aspx).
+In addition to the subject line, you can add a variety of items as parameters to the **mail to** deep link. For more information on **mail to** protocol query parameters, see [mailto Protocol](https://msdn.microsoft.com/library/aa767737(v=vs.85).aspx).
 
 ## Step 4 - Test the revised skill
 

@@ -62,7 +62,7 @@ If your skill uses a Language Understanding Intelligence Service (LUIS) app from
 * Ask My Radio for classical music
 * Ask My Radio for some classical
 
-For more information see the [Configure speech priming](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) page.
+For more information see the [Configure speech priming](https://docs.microsoft.com/azure/bot-service/bot-service-manage-speech-priming?view=azure-bot-service-4.0) page.
 
 <!-- This doesn't belong in a guidance doc. Check to see if it's elsewhere. 02/01/2019 (dt)
 To specify your model:
