@@ -74,7 +74,7 @@ The following example shows how to add a single track for Cortana to play and st
     await turnContext.sendActivity( { attachments: [ audioCard ] } );
     
     // EndConversation
-    await turnContext.sendActivity( { type: ActivityTypes.EndOfCOnversation, code: EndOfConversationCodes.CompletedSuccessfully } );
+    await turnContext.sendActivity( { type: ActivityTypes.EndOfConversation, code: EndOfConversationCodes.CompletedSuccessfully } );
     // and clear conversation state if any
 ```
 
