@@ -179,7 +179,7 @@ private async Task SendCompletionMessageForDestination(string destination)
 
 ## <span id="Hand-off_screen"></span><span id="hand-off_screen"></span><span id="HAND-OFF_SCREEN"></span>Hand-off screen
 
-Once a voice command is recognized, **Cortana** must call ReportSuccessAsync and present feedback within approximately 500If the app service cannot complete the action specified by the voice command within 500ms, **Cortana** presents a hand-off screen that is shown until your app calls ReportSuccessAsync, or for up to 5 seconds.
+Once a voice command is recognized, **Cortana** must call ReportSuccessAsync and present feedback within approximately 500ms. If the app service cannot complete the action specified by the voice command within 500ms, **Cortana** presents a hand-off screen that is shown until your app calls ReportSuccessAsync, or for up to 5 seconds.
 
 If the app service doesn’t call ReportSuccessAsync, or any other VoiceCommandServiceConnection method, the user receives an error message and the app service call is cancelled.
 
