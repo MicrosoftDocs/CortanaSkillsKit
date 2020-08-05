@@ -1,6 +1,7 @@
 
 # Cortana Skills Kit  
 
+## [Developer notification](./skills/deprecation.md)
 ## [Overview](./skills/overview.md)  
 
 ## Quickstarts  
