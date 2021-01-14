@@ -6,10 +6,10 @@ ms.date: 09/24/2019
 ms.topic: article
 keywords: cortana
 ---
+# Dynamically modify Cortana VCD phrase lists
+
 >[!WARNING]
 > Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
-
-# Dynamically modify Cortana VCD phrase lists
 
 **Important APIs**
 
