@@ -8,10 +8,11 @@ ms.topic: article
 
 keywords: cortana
 ---
->[!WARNING]
-> Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
 
 # Interact with a background app in Cortana
+
+>[!WARNING]
+> Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
 
 Enable user interaction with a background app, through speech and text input in the **Cortana** canvas, while executing a voice command.
 
