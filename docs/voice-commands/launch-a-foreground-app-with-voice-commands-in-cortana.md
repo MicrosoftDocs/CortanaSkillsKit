@@ -8,10 +8,10 @@ ms.topic: article
 
 keywords: cortana
 ---
+# Activate a foreground app with voice commands through Cortana
+
 >[!WARNING]
 > Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
-
-# Activate a foreground app with voice commands through Cortana
 
 In addition to using voice commands within **Cortana** to access system features, you can also extend **Cortana** with features and functionality from your app. Using voice commands, your app can be activated to the foreground and an action or command executed within the app. 
 

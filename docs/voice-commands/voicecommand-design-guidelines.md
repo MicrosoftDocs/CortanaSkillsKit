@@ -9,10 +9,10 @@ ms.topic: article
 
 keywords: cortana
 ---
+# Cortana design guidelines
+
 >[!WARNING]
 > Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
-
-# Cortana design guidelines
 
 
 These guidelines and recommendations describe how your app can best use **Cortana** to interact with the user, help them accomplish a task, and communicate clearly how it's all happening.

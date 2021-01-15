@@ -10,10 +10,10 @@ ms.topic: article
 
 keywords: cortana
 ---
+# Cortana voice commands
+
 >[!WARNING]
 > Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
-
-# Cortana voice commands
 
 Extend the basic functionality of **Cortana** with voice commands that launch and execute a single action in an external application.
 

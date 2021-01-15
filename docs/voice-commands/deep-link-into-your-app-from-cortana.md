@@ -9,11 +9,11 @@ ms.topic: article
 
 keywords: cortana
 ---
+# Deep link from a background app in Cortana to a foreground app
+
 >[!WARNING]
 > Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
   
-# Deep link from a background app in Cortana to a foreground app
-
 
 **Important APIs**
 
