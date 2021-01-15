@@ -81,7 +81,7 @@ After you've identified the command set, get a reference to the phrase list that
 In this example, we update the **PhraseList** shown in the previous example with an additional destination to Phoenix.
 
 ```CSharp
-Windows.ApplicationModel.VoiceCommands.VoiceCommnadDefinition.VoiceCommandSet commandSetEnUs;
+Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinition.VoiceCommandSet commandSetEnUs;
 
 if (Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager.
       InstalledCommandSets.TryGetValue(
