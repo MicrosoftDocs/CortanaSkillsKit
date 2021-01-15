@@ -28,7 +28,7 @@ To play a single track, include a single Audio Card attachment in the message yo
 
 To specify the audio to play, use the Audio Card's `Media` property. The audio that you want to play must be Internet accessible, and it must use the HTTPS protocol. You should also set the card's `Title` property to the name of the track. Cortana ignores all other Audio Card properties.
 
-Please refer to the [Azure Bot Service documentation](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0) on Media attachments for more details.
+Please refer to the [Azure Bot Service documentation](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&preserve-view=true) on Media attachments for more details.
 
 The following example shows how to add a single track for Cortana to play and stop the conversation.
 
