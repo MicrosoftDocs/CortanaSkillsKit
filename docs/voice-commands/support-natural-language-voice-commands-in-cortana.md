@@ -10,10 +10,10 @@ ms.topic: article
 
 keywords: cortana
 ---
+# Support natural language voice commands in Cortana
+
 >[!WARNING]
 > Please note that this feature will be removed in a future release. This feature will not be supported in Cortana starting with the Windows 20H1 release. 
-
-# Support natural language voice commands in Cortana
 
 Extend **Cortana** with more flexible and natural voice commands that let a user say your app's name anywhere in the command.
 
