@@ -115,7 +115,7 @@ You should localize the voice commands your app responds to and all TTS and GUI 
 
 You should avoid lengthy GUI strings. The **Cortana** canvas provides three lines for responses and will truncate strings longer than that.
 
-For more info, see the [Globlization and localization section](https://msdn.microsoft.com/windows/uwp/globalizing/guidelines-and-checklist-for-globalizing-your-app).
+For more info, see the [Globalization and localization section](https://msdn.microsoft.com/windows/uwp/globalizing/guidelines-and-checklist-for-globalizing-your-app).
 
 ## <span id="Image_resources_and_scaling"></span><span id="image_resources_and_scaling"></span><span id="IMAGE_RESOURCES_AND_SCALING"></span>Image resources and scaling
 
