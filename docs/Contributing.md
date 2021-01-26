@@ -10,7 +10,7 @@ keywords: cortana, skills
 
 # Contributing to Cortana skills documentation
 
-Welcome to the [public repo for Cortana skills developer documentation](https://github.com/microsoftdocs/cortanaskillskit)! Any articles you create or edit in this repo **will be visible to the public.** The docs.microsoft.com platform uses [GitHub-flavored Markdown with Markdig extensions](https://docs.microsoft.com/contribute/how-to-write-use-markdown). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
+Welcome to the [public repo for Cortana skills developer documentation](https://github.com/microsoftdocs/cortanaskillskit)! Any articles you create or edit in this repo **will be visible to the public.** The docs.microsoft.com platform uses [GitHub-flavored Markdown with Markdig extensions](/contribute/how-to-write-use-markdown). This page covers the basic steps and guidelines for contributing, as well as links to Markdown basics. Thank you for your contribution!
 
 ## Before you start
 
@@ -87,15 +87,15 @@ Use the following workflow to create new articles in the documentation via web b
 
 The following resources will help you learn how to edit documentation using the Markdown language:
 
-- [Markdown basics](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
-- [Additional resources for writing Markdown for docs.microsoft.com](https://docs.microsoft.com/contribute/markdown-reference)
+- [Markdown basics](/contribute/how-to-write-use-markdown)
+- [Additional resources for writing Markdown for docs.microsoft.com](/contribute/markdown-reference)
 - [Markdig overview](https://github.com/lunet-io/markdig?branch=master&tabs=dfm) and [Markdig multi-column support](https://review.docs.microsoft.com/curtcu-test/row-and-column?view=contososerver-2.1&branch=master)
 
 ### Adding tables
 
 Because of the way docs.microsoft.com styles tables, they won’t have borders or custom styles. Inline CSS may appear to work, but eventually the platform will strip the styling out of the table. Plan ahead and keep your tables simple. [Here’s a site that makes Markdown tables easy](https://www.tablesgenerator.com/markdown_tables).
 
-The [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit your document.
+The [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) also makes table generation easy if you're using [Visual Studio Code](#using-visual-studio-code) to edit your document.
 
 ### Adding images
 
@@ -180,7 +180,7 @@ Use the following workflow to make changes to the documentation with Visual Stud
 
 The following Visual Studio Code extensions are very useful when editing documentation:
 
-- [Docs Markdown Extension for Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) - Use `Alt+M` to bring up a menu of authoring options like:
+- [Docs Markdown Extension for Visual Studio Code](/teamblog/docs-extension) - Use `Alt+M` to bring up a menu of authoring options like:
    - Search and reference images you've uploaded.
    - Add formatting like lists, tables, and docs-specific call-outs like `>[!NOTE]`.
    - Search and reference internal links and bookmarks (links to specific sections within a page).

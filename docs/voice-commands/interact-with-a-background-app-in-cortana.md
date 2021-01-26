@@ -19,8 +19,8 @@ Enable user interaction with a background app, through speech and text input in 
 
 **Important APIs**
 
--   [**Windows.ApplicationModel.VoiceCommands**](https://msdn.microsoft.com/library/windows/apps/dn706594)
--   [**Voice Command Definition (VCD) elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+-   [**Windows.ApplicationModel.VoiceCommands**](/uwp/api/Windows.ApplicationModel.VoiceCommands)
+-   [**Voice Command Definition (VCD) elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 Cortana supports a complete turn-by-turn workflow with your app. This workflow is defined by your app, and can support functionality such as: 
 
@@ -37,18 +37,18 @@ This topic builds on [Launch a background app with voice commands in Cortana](la
 
 If you're new to developing Universal Windows Platform (UWP) apps, have a look through these topics to get familiar with the technologies discussed here.
 
--   [Create your first app](https://msdn.microsoft.com/library/windows/apps/bg124288)
--   Learn about events with [Events and routed events overview](https://msdn.microsoft.com/library/windows/apps/mt185584)
+-   [Create your first app](/windows/uwp/get-started/your-first-app)
+-   Learn about events with [Events and routed events overview](/windows/uwp/xaml-platform/events-and-routed-events-overview)
 
 **User experience guidelines**
 
-See [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233) for info about how to integrate your app with **Cortana** and [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121) for helpful tips on designing a useful and engaging speech-enabled app.
+See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
 
 ## <span id="Feedback_strings"></span><span id="feedback_strings"></span><span id="FEEDBACK_STRINGS"></span>Feedback strings
 
 Compose the feedback strings that are both displayed and spoken by **Cortana**.
 
-The [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)provides recommendations on composing strings for **Cortana**.
+The [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)provides recommendations on composing strings for **Cortana**.
 
 ## <span id="Feedback_strings"></span><span id="feedback_strings"></span><span id="FEEDBACK_STRINGS"></span>Feedback strings
 
@@ -201,7 +201,7 @@ Here's an example of a progress screen for the **Adventure Works** app. In this 
 
 ![cortana background app progress screen ](../media/images/cortana-progress-screen.png)
 
-AdventureWorksVoiceCommandService.cs contains the following progress message method, which calls [**ReportProgressAsync**](https://msdn.microsoft.com/library/windows/apps/dn706579) to show the progress screen in **Cortana**.
+AdventureWorksVoiceCommandService.cs contains the following progress message method, which calls [**ReportProgressAsync**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) to show the progress screen in **Cortana**.
 
 
 ```    CSharp
@@ -236,7 +236,7 @@ The confirmation screen includes a message customized for the action, an icon, a
 
 ![cortana background app confirmation screen](../media/images/cortana-confirmation-screen.png)
 
-AdventureWorksVoiceCommandService.cs contains the following trip cancellation method, which calls [**RequestConfirmationAsync**](https://msdn.microsoft.com/library/windows/apps/dn706582) to show a confirmation screen in **Cortana**.
+AdventureWorksVoiceCommandService.cs contains the following trip cancellation method, which calls [**RequestConfirmationAsync**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) to show a confirmation screen in **Cortana**.
 
 ```    CSharp
 /// <summary>
@@ -365,7 +365,7 @@ The disambiguation screen includes a message customized for the action, an icon,
 
 ![cortana background app disambiguation screen ](../media/images/cortana-disambiguation-screen.png)
 
-AdventureWorksVoiceCommandService.cs contains the following trip cancellation method, which calls [**RequestDisambiguationAsync**](https://msdn.microsoft.com/library/windows/apps/dn706583) to show the disambiguation screen in **Cortana**.
+AdventureWorksVoiceCommandService.cs contains the following trip cancellation method, which calls [**RequestDisambiguationAsync**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) to show the disambiguation screen in **Cortana**.
 
 ```csharp
 /// <summary>
@@ -442,7 +442,7 @@ Here's an example of an error screen for the **Adventure Works** app. In this ex
 
 The app service provides **Cortana** with an error screen that includes a message customized for the action, an icon, and the specific error message.
 
-Call [**ReportFailureAsync**](https://msdn.microsoft.com/library/windows/apps/dn706578) to show the error screen in **Cortana**.
+Call [**ReportFailureAsync**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) to show the error screen in **Cortana**.
 
 ```csharp
 var userMessage = new VoiceCommandUserMessage();
@@ -460,11 +460,11 @@ var userMessage = new VoiceCommandUserMessage();
 
 **Developers**
 * [Voice commands](./vcd.md)
-* [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+* [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)
-* [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
+* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)

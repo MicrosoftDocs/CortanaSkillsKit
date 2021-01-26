@@ -132,7 +132,7 @@ Your skill should attempt to properly manage the state of the conversation. For 
 
 #### 2.4.4
 
-Your skill should follow Cortana and Bot Framework suggested practices for conversational and interactive design. For Cortana guidance, see [Understanding types of conversations](https://docs.microsoft.com/cortana/skills/mva31-understanding-conversations).
+Your skill should follow Cortana and Bot Framework suggested practices for conversational and interactive design. For Cortana guidance, see [Understanding types of conversations](./mva31-understanding-conversations.md).
 
 #### 2.4.5
 
@@ -297,4 +297,4 @@ Skills must not directly or indirectly engage in or benefit from promotional pra
 
 If these Cortana Skills Kit Review Guidelines are not followed, Microsoft reserves the right, at its sole discretion and without any obligation to do so, to review and remove content and to terminate your skill from Cortana Services and remove you from the Cortana Skill Store.
 
-<!-- By "...and remove you from the Cortana Skill Store", do you mean remove the skill from the store, or remove all of their skills from the store?  --> 
+<!-- By "...and remove you from the Cortana Skill Store", do you mean remove the skill from the store, or remove all of their skills from the store?  -->

@@ -26,7 +26,7 @@ You decide whether Cortana signs in the user when they invoke your skill, or onl
 * Refresh token expires.
 * User changes password.
 
-Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0#manage-user-identity) section.  
+Cortana skills supports both code grant flow and implicit grant flow for OAuth 2.0. For information about adding a connected account to your skill, visit the  [Manage user identity in the channel configuration for Cortana](/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0#manage-user-identity) section.  
 
 The Connected Account feature supports using a single identity service. If your skill requests different services that use different identity services, then you may use Connected Account with one of those services. You may use Connected Account with another service, but you must use a different mechanism to authenticate your user with the service.
 
@@ -58,7 +58,7 @@ Create an OAuth 2.0-enabled Cortana skill using the following steps.
 **Example:** Creates a bot in Azure Bot Service using the Basic C# bot template.  
 
 >[!NOTE]
-> If you have not created a bot, and are looking for more information on how to get started, then visit the [Create a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) page.
+> If you have not created a bot, and are looking for more information on how to get started, then visit the [Create a bot with Bot Service](/azure/bot-service/bot-service-quickstart?view=azure-bot-service-4.0) page.
 
 1. Sign into the [Microsoft Azure Portal](https://ms.portal.azure.com).  
 1. In the *portal*, click the name of your bot. 

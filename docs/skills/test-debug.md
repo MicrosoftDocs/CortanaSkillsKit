@@ -18,11 +18,11 @@ The following options are available to test and debug your Cortana skill.
 
 - Use the Bot Framework emulator to test and debug your skill while you are developing it. The emulator interacts with your bot, and displays the messages exchanged.  
 
-    Currently, the emulator does not support passing user profile and contextual information to your Cortana skill. For more information about using the emulator, visit the [Debug with the emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) page.  
+    Currently, the emulator does not support passing user profile and contextual information to your Cortana skill. For more information about using the emulator, visit the [Debug with the emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) page.  
 
 - Use the debugger in Visual Studio Code to walk through your code as it runs in the console window.  
 
-   For more information, visit the [Debug a bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page.  
+   For more information, visit the [Debug a bot](/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page.  
 
 - Use the Chat window in the Bot Framework portal. In order to confirm that your bot is running, you typically test after configuring your Cortana channel and deploying your service.
 
@@ -32,9 +32,9 @@ The following options are available to test and debug your Cortana skill.
 
 <!-- 07/09/2019: Commented this out because it points to the same debugger as above, and I am unable to find a  page referencing
     debugging in the Azure environment. --dt
-   For details about debugging your Cortana skill in the Azure environment, visit the [Debug an Azure Bot Service bot](https://docs.microsoft.com/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page. -->
+   For details about debugging your Cortana skill in the Azure environment, visit the [Debug an Azure Bot Service bot](/azure/bot-service/bot-service-debug-bot?view=azure-bot-service-4.0) page. -->
 
-   If you're working in a continuous publishing environment, see the [Set up continuous deployment](https://docs.microsoft.com/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-4.0) page.
+   If you're working in a continuous publishing environment, see the [Set up continuous deployment](/azure/bot-service/bot-service-continuous-deployment?view=azure-bot-service-4.0) page.
 
 ## Enable debugging in Cortana
 
@@ -133,19 +133,19 @@ Ensure that you have successfully deployed your skill.
 
 #### Azure Web Apps
 
-- [Best Practices for Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-best-practices)  
+- [Best Practices for Azure App Service](/azure/app-service-web/app-service-best-practices)  
 
-- [Remote debugging Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/web-sites-dotnet-troubleshoot-visual-studio#a-nameremotedebugaremote-debugging-web-apps): After enabling remote debugging, simply invoke your Cortana skill and Cortana stops at your breakpoint as you walk through your code. Cortana is likely to time out on your request, but you are still able to step through your code and look for issues.  
-- [Best practices and troubleshooting guide for node applications on Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-nodejs-best-practices-and-troubleshoot-guide)  
-- [Troubleshoot slow app performance issues in Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation) 
+- [Remote debugging Azure Web Apps](/azure/app-service-web/web-sites-dotnet-troubleshoot-visual-studio#a-nameremotedebugaremote-debugging-web-apps): After enabling remote debugging, simply invoke your Cortana skill and Cortana stops at your breakpoint as you walk through your code. Cortana is likely to time out on your request, but you are still able to step through your code and look for issues.  
+- [Best practices and troubleshooting guide for node applications on Azure Web Apps](/azure/app-service-web/app-service-web-nodejs-best-practices-and-troubleshoot-guide)  
+- [Troubleshoot slow app performance issues in Azure App Service](/azure/app-service-web/app-service-web-troubleshoot-performance-degradation) 
 
 #### Azure Functions  
 
-- [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)  
-- [How to code and test Azure functions locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local)  
-- [Code and test Azure Functions locally](https://docs.microsoft.com/azure/azure-functions/functions-develop-local)  
+- [Optimize the performance and reliability of Azure Functions](/azure/azure-functions/functions-best-practices)  
+- [How to code and test Azure functions locally](/azure/azure-functions/functions-run-local)  
+- [Code and test Azure Functions locally](/azure/azure-functions/functions-develop-local)  
 
 ### Bot Framework troubleshooting guides  
 
-- [Bot Framework troubleshooting guide](https://aka.ms/hsjcm9)  
-- [Troubleshooting Bot Framework authentication](https://aka.ms/aei8qy)  
+- [Bot Framework troubleshooting guide](/azure/bot-service/bot-service-troubleshoot-general-problems)  
+- [Troubleshooting Bot Framework authentication](/azure/bot-service/bot-service-troubleshoot-authentication-problems)

@@ -22,7 +22,7 @@ For more information about the requirements for publishing to **World**, visit t
 1. On the *Configure Cortana* page, you'll need to enter the following information under the **World Settings** section.
     Complete the required fields that are marked with an asterisk (`*`).
 
-    For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+    For more information about the bot configuration fields, visit the [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana) page.
 
     1. **Skill information** section
 

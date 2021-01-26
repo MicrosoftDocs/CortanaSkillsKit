@@ -50,7 +50,7 @@ I took it out because it's useless. It just takes you to the Create page.-->
 
 **Avoid cold starts in Azure**
 
-If an Azure function or Web app is not used for a period of time (typically about 20 minutes), Azure recycles it. Recycled functions and apps can take up to 10 seconds to restart. This is known as a cold start. You can prevent cold starts by enabling the [Always On](https://docs.microsoft.com/azure/azure-functions/functions-scale#always-on) option in the application settings of your Azure [Function](https://docs.microsoft.com/azure/azure-functions/functions-how-to-use-azure-function-app-settings) or [Web app](https://docs.microsoft.com/azure/app-service-web/web-sites-configure).
+If an Azure function or Web app is not used for a period of time (typically about 20 minutes), Azure recycles it. Recycled functions and apps can take up to 10 seconds to restart. This is known as a cold start. You can prevent cold starts by enabling the [Always On](/azure/azure-functions/functions-scale#always-on) option in the application settings of your Azure [Function](/azure/azure-functions/functions-how-to-use-azure-function-app-settings) or [Web app](/azure/app-service-web/web-sites-configure).
 
 Azure functions and Web apps that are on *Free* or *Shared App* service plans do not have the option to always be on.
 
@@ -60,6 +60,6 @@ If you are not using Azure's automatic scaling feature, you should disable appli
 
 ## Additional performance resources
 
-- [Bot Framework - Troubleshooting general problems](https://docs.microsoft.com/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-4.0)
-- [Troubleshoot performance issues in Azure Web Apps](https://docs.microsoft.com/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)
-- [Optimize the performance and reliability of Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-best-practices)
+- [Bot Framework - Troubleshooting general problems](/azure/bot-service/bot-service-troubleshoot-general-problems?view=azure-bot-service-4.0)
+- [Troubleshoot performance issues in Azure Web Apps](/azure/app-service-web/app-service-web-troubleshoot-performance-degradation)
+- [Optimize the performance and reliability of Azure Functions](/azure/azure-functions/functions-best-practices)

@@ -15,7 +15,7 @@ Chat bots use a textual interface. You can supplement the conversations with ric
 
 ## Cortana as the Primary Experience
 
-If you are designing for voice first, you should read the [Principles of Cortana skills design](https://docs.microsoft.com/cortana/skills/design-principles) page.
+If you are designing for voice first, you should read the [Principles of Cortana skills design](./design-principles.md) page.
 
 To summarize the goals, you pick a voice experience when
 
@@ -27,7 +27,7 @@ Your interactions should be efficient, relevant, clear, and trustworthy. Keep yo
 
 When possible, use directed prompts and let the user pick from a short list of options. Try to break down a conversation into a series of steps with a few succinct actions. Or, if there are too many choices (more than three), use an open prompt. Say what you want to do, and discern the users intent.
 
-Keep in mind that voice-driven interfaces are also inclusive interfaces. It may be helpful to review the [Designing inclusive software for Windows 10](https://docs.microsoft.com/windows/uwp/design/accessibility/designing-inclusive-software) guidelines.
+Keep in mind that voice-driven interfaces are also inclusive interfaces. It may be helpful to review the [Designing inclusive software for Windows 10](/windows/uwp/design/accessibility/designing-inclusive-software) guidelines.
 
 *Use case: Where do you want to go?*
 *A user would like to fly from A to B. Instead of presenting the user with long lists of potential sources and destinations, just ask: "Where are you coming from?" and "Where do you want to go?".*
@@ -61,7 +61,7 @@ Does the dialog allow the user to correct or cancel an activity gracefully? Can 
 
 ## When to use rich cards
 
-Visual elements should be used to support your skill. Ideally, conversations should stand alone. See the design tips in the [Design your skill's visual elements](https://docs.microsoft.com/cortana/skills/design-principles#card-design-tips) section of the [Principles of Cortana skills design](https://docs.microsoft.com/cortana/skills/design-principles) page.
+Visual elements should be used to support your skill. Ideally, conversations should stand alone. See the design tips in the [Design your skill's visual elements](./design-principles.md#card-design-tips) section of the [Principles of Cortana skills design](./design-principles.md) page.
 
 The card should, in general, not provide any new information to the conversation.
 
@@ -74,11 +74,11 @@ If you find yourself presenting the end-user with a form that has multiple input
 The end user wants to create a pre-populated form. The form itself has tens of fields and options. So, the end user asks the Cortana skill to create a form that is populated from a template, or clone their most recent form entered, or to create a form based on the most recent or frequent inputs. Cortana creates the form, and presents the end user with a deep link into the system to view the form, and/or notifies the user via email with a deep link into the system to view the form.
 
 ## Simple text styles with Markdown
-Cortana clients support a limited set of [Markdown](https://docs.microsoft.com/contribute/how-to-write-use-markdown) features for text formating. In the text returned from your skill, you can use these Markdown commands.
+Cortana clients support a limited set of [Markdown](/contribute/how-to-write-use-markdown) features for text formating. In the text returned from your skill, you can use these Markdown commands.
 
 - _italics_ (\*italic\* or \_italic_\)
 - **bold** (\*\*bold\*\*)
-- [Markdown links](https://docs.microsoft.com/contribute/markdown-reference#links) (\[link text\]\(URL\)).
+- [Markdown links](/contribute/markdown-reference#links) (\[link text\]\(URL\)).
 
 For example, where you might add emphasis to a spoken word with [SSML](./speech-synthesis-markup-language.md), you can also emphasize the corresponding text in your card with **bold**.
 
@@ -89,9 +89,9 @@ For example, where you might add emphasis to a spoken word with [SSML](./speech-
 
 A good conversation should work similarly with text or by voice. as the voice component is transcribed into text. Although these documents are not directly related to Cortana, some of the Azure Bot Service documentation might be helpful:
 
-- [Principles of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
-- [Design and control conversation flow](https://docs.microsoft.com/azure/bot-service/bot-service-design-conversation-flow?view=azure-bot-service-4.0)
-- [Design the user experience](https://docs.microsoft.com/azure/bot-service/bot-service-design-user-experience?view=azure-bot-service-4.0)
+- [Principles of bot design](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0)
+- [Design and control conversation flow](/azure/bot-service/bot-service-design-conversation-flow?view=azure-bot-service-4.0)
+- [Design the user experience](/azure/bot-service/bot-service-design-user-experience?view=azure-bot-service-4.0)
 
 Using a bot to automate tasks or answer questions should make the task easier, not more complicated.
 
@@ -103,7 +103,7 @@ A well-designed bot will have a conversation flow that feels natural. The bot sh
 
 Displaying buttons from rich cards should follow the general guidance on buttons:
 
-- [Command Buttons](https://docs.microsoft.com/windows/desktop/uxguide/ctrl-command-buttons)
+- [Command Buttons](/windows/desktop/uxguide/ctrl-command-buttons)
 
 Buttons should be used to confirm actions.
 
@@ -118,20 +118,20 @@ If you decide to give your users the option of responding in a screen, would a c
 
 As our applications are also responsive (and mobile first), you might also consider reviewing Universal Windows Platform (UWP) control patterns.
 
-[UI basics for Universal Windows Platform (UWP) apps](https://msdn.microsoft.com/library/windows/apps/dn958432.aspx?f=255&MSPPError=-2147217396)
+[UI basics for Universal Windows Platform (UWP) apps](/windows/uwp/design/basics/?f=255&MSPPError=-2147217396)
 
 Guidance specific to buttons:
 
-[Buttons](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/buttons)
+[Buttons](/windows/uwp/design/controls-and-patterns/buttons)
 
 The summary:
 
 - Use a button to let the user initiate an immediate action, such as submitting a form.
-- Don't use a button when the action is to navigate to another page. Use a HyperlinkButton instead. See [Hyperlinks](https://docs.microsoft.com/windows/uwp/design/controls-and-patterns/hyperlinks) for more info.  
+- Don't use a button when the action is to navigate to another page. Use a HyperlinkButton instead. See [Hyperlinks](/windows/uwp/design/controls-and-patterns/hyperlinks) for more info.  
 
     Adaptive Cards do not support HyperlinkButtons, but you can use link markup in the text block. Or, simply use link markup in the message (activity) text. This lets the user know that they are leaving the conversation and the client application.
 
-    Visit [Adaptive Cards Overview](https://docs.microsoft.com/adaptive-cards/) for more details.
+    Visit [Adaptive Cards Overview](/adaptive-cards/) for more details.
 
 ## From bot to assistant – follow up
 

@@ -113,7 +113,7 @@ protected override async Task MessageReceived(IDialogContext context, IAwaitable
 }
 ```
 
-For `javascript`, you can create a [customer recognizer](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-4.0) that maps an empty string to a help intent.
+For `javascript`, you can create a [customer recognizer](/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-messages?view=azure-bot-service-4.0) that maps an empty string to a help intent.
 
 ### Bot created from the QnA (V3) template fails when invoked without an intent
 
@@ -176,7 +176,7 @@ The likely causes are as follows:
   * **unit**, **interjection** and **expletive** are not supported by Cortana.
   * **time** - both platforms support a *time* option however, Alexa interprets this for durations while Cortana interprets this as 12 or 24 hour times. 
   * **date** - both platforms support a *date* option however, Alexa allows dates to consist of simply a number (e.g. `<say-as interpret-as=”date”>121</say-as>`) while Cortana requires the date parameters to be seperated by a "-" or "." (e.g. `<say-as interpret-as=”date”>1.21</say-as>`) as this removes the potential ambiguity as `121` could mean "December 1st" or "January 21st".
-* Alexa has a custom SSML tag `<amazon:effect name="whispered">` which is not supported by Cortana, however a similar effect can be achieved using the [prosody tag](../reference/ssml.md#prosody-Element).
+* Alexa has a custom SSML tag `<amazon:effect name="whispered">` which is not supported by Cortana, however a similar effect can be achieved using the [prosody tag](./speech-synthesis-markup-language.md#prosody-Element).
 
 ### Not all built-in intents and entities supported by Alexa are available in Cortana
 

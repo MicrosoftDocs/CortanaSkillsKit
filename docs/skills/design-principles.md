@@ -388,9 +388,9 @@ Is the 60x60 limit a Cortana limit (bot framework's limit applies to size only, 
 
 ![Cortana's Canvas](../media/images/cortana-canvas.png)
 
-To add cards to your skill, see [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0)  (Node.js version) or [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0) (.NET version).
+To add cards to your skill, see [Add rich card attachments to messages](/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0)  (Node.js version) or [Add rich card attachments to messages](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0) (.NET version).
 
-In addition to cards, Node.js users can use a set of built-in prompts to simplify collecting inputs from a user (see the [Prompt for user input](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0) page). For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
+In addition to cards, Node.js users can use a set of built-in prompts to simplify collecting inputs from a user (see the [Prompt for user input](/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0) page). For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
 
 ### Card design tips
 
@@ -457,4 +457,4 @@ When you publish your skill to the world, the Cortana team reviews your skill to
 
 <!-- Think about including the bot framework's design principles 
 
-Check out the Bot Framework [Principals of bot design](https://docs.microsoft.com/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0). -->
+Check out the Bot Framework [Principals of bot design](/azure/bot-service/bot-service-design-principles?view=azure-bot-service-4.0). -->

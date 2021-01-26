@@ -74,7 +74,7 @@ Each user in the group who has accepted the invitation should now have access to
 
 Once you have published your skill to the group, any group member can invoke the skill. Cortana prompts for credentials, if necessary, and launches <!-- the Mixtape --> your skill.
 
-You might want to ask members of your group to use different invocation phrases during their testing. Check out [Invocation phrases](https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines#invocation-phrases) on the [Invocation name guidelines](cortana-invocation-guidelines.md) for more details. <!-- *Ask Mixtape to make me a mixtape.*  -->
+You might want to ask members of your group to use different invocation phrases during their testing. Check out [Invocation phrases](./cortana-invocation-guidelines.md#invocation-phrases) on the [Invocation name guidelines](cortana-invocation-guidelines.md) for more details. <!-- *Ask Mixtape to make me a mixtape.*  -->
 
 <!-- For example, any group member can direct Cortana to invoke the Mixtape your skill. -->
 

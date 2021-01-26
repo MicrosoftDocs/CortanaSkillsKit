@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Building conversations
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Building conversations
 
 In [Create your first Cortana skill](./mva22-hello-world.md) you learned how to create a Cortana skill that uses a basic single-turn conversation. You type something and Cortana repeats it, telling you how many characters you typed.
 
@@ -38,7 +38,7 @@ The language understanding service automatically creates a LUIS application for 
 
 ![LUIS MyApps](../media/images/mva32_luis_myapps.png)
 
-For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](https://docs.microsoft.com/azure/bot-service/bot-service-concept-templates?view=azure-bot-service-3.0#language-understanding-bot).
+For more information about creating a LUIS bot, see [Create a bot using the Language understanding template](/azure/bot-service/bot-service-concept-templates?view=azure-bot-service-3.0#language-understanding-bot).
 
 ## Step 2 - Add intents to your LUIS application
 

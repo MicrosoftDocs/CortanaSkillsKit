@@ -13,8 +13,8 @@ keywords: cortana
 
 **Important APIs**
 
--   [**Windows.ApplicationModel.VoiceCommands**](https://msdn.microsoft.com/library/windows/apps/dn706594)
--   [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+-   [**Windows.ApplicationModel.VoiceCommands**](/uwp/api/Windows.ApplicationModel.VoiceCommands)
+-   [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 Access and update the list of supported phrases (**PhraseList** elements) in a Voice Command Definition (VCD) file at run time using the speech recognition result.
 
@@ -24,7 +24,7 @@ For example, let's say you have a travel app where users can enter destinations,
 
 Updating the phrase list at run time eliminates the need to create a separate **ListenFor** element for each possible destination. Instead, you can dynamically populate **PhraseList** with destinations specified by the user as they enter their itineraries. 
 
-For more info about **PhraseList** and other VCD elements, see the [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593) reference.
+For more info about **PhraseList** and other VCD elements, see the [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2) reference.
 
 **Prerequisites**
 
@@ -32,12 +32,12 @@ This topic builds on [Launch a foreground app with voice commands in Cortana](la
 
 If you're new to developing Universal Windows Platform (UWP) apps, have a look through these topics to get familiar with the technologies discussed here.
 
--   [Create your first app](https://msdn.microsoft.com/library/windows/apps/bg124288)
--   Learn about events with [Events and routed events overview](https://msdn.microsoft.com/library/windows/apps/mt185584)
+-   [Create your first app](/windows/uwp/get-started/your-first-app)
+-   Learn about events with [Events and routed events overview](/windows/uwp/xaml-platform/events-and-routed-events-overview)
 
 **User experience guidelines**
 
-See [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233) for info about how to integrate your app with **Cortana** and [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121) for helpful tips on designing a useful and engaging speech-enabled app.
+See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
 
 ## <span id="Identify_the_command"></span><span id="identify_the_command"></span><span id="IDENTIFY_THE_COMMAND"></span>Identify the command and update the phrase list
 
@@ -71,12 +71,12 @@ Here's an example VCD file that defines a **Command** "showTripToDestination" an
 
 ```
 
-To update a **PhraseList** element in the VCD file, get the **CommandSet** element that contains the phrase list. Use the **Name** attribute of that **CommandSet** element (**Name** must be unique in the VCD file) as a key to access the [**VoiceCommandManager.InstalledCommandSets**](https://msdn.microsoft.com/library/windows/apps/dn653257) property and get the [**VoiceCommandSet**](https://msdn.microsoft.com/library/windows/apps/dn653258) reference.
+To update a **PhraseList** element in the VCD file, get the **CommandSet** element that contains the phrase list. Use the **Name** attribute of that **CommandSet** element (**Name** must be unique in the VCD file) as a key to access the [**VoiceCommandManager.InstalledCommandSets**](/uwp/api/Windows.Media.SpeechRecognition.VoiceCommandManager) property and get the [**VoiceCommandSet**](/uwp/api/Windows.Media.SpeechRecognition.VoiceCommandSet) reference.
 
-After you've identified the command set, get a reference to the phrase list that you want to modify and call the [**SetPhraseListAsync**](https://msdn.microsoft.com/library/windows/apps/dn653261) method; use the **Label** attribute of the **PhraseList** element and an array of strings as the new content of the phrase list.
+After you've identified the command set, get a reference to the phrase list that you want to modify and call the [**SetPhraseListAsync**](/uwp/api/Windows.Media.SpeechRecognition.VoiceCommandSet) method; use the **Label** attribute of the **PhraseList** element and an array of strings as the new content of the phrase list.
 
 > [!NOTE] 
-> If you modify a phrase list, the entire phrase list is replaced. If you want to insert new items into a phrase list, you must specify both the existing items and the new items in the call to [**SetPhraseListAsync**](https://msdn.microsoft.com/library/windows/apps/dn653261).
+> If you modify a phrase list, the entire phrase list is replaced. If you want to insert new items into a phrase list, you must specify both the existing items and the new items in the call to [**SetPhraseListAsync**](/uwp/api/Windows.Media.SpeechRecognition.VoiceCommandSet).
 
 In this example, we update the **PhraseList** shown in the previous example with an additional destination to Phoenix.
 
@@ -133,18 +133,14 @@ In our example, we have a **PhraseTopic** with a **Scenario** of "Search", furth
 * [Voice commands](vcd.md)
 * [Launch a foreground app with voice commands in Cortana](launch-a-foreground-app-with-voice-commands-in-cortana.md)
 * [Launch a background app with voice commands in Cortana](launch-a-background-app-with-voice-commands-in-cortana.md)
-* [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+* [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)
-* [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
+* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  
-
-
-
-
