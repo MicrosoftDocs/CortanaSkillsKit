@@ -17,7 +17,7 @@ keywords: cortana
 
 Extend the basic functionality of **Cortana** with voice commands that launch and execute a single action in an external application.
 
-**Other speech components**: See [Speech interactions](https://msdn.microsoft.com/windows/uwp/input-and-devices/speech-interactions) if you're integrating speech recognition and text-to-speech (also known as TTS, or speech synthesis) directly into your app.
+**Other speech components**: See [Speech interactions](/windows/uwp/design/input/speech-interactions) if you're integrating speech recognition and text-to-speech (also known as TTS, or speech synthesis) directly into your app.
 
 > [!NOTE]
 > A voice command is a single utterance with a specific intent, defined in a Voice Command Definition (VCD) file, directed at an installed app through **Cortana**.
@@ -42,11 +42,11 @@ By integrating the basic functionality of your app, and providing a central entr
 
 ## Related articles
 
-* [VCD elements and attributes v1.2](https://msdn.microsoft.com/library/windows/apps/dn706593)
+* [VCD elements and attributes v1.2](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
-* [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)
+* [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
+* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)

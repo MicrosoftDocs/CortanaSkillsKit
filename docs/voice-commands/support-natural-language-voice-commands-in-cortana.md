@@ -19,8 +19,8 @@ Extend **Cortana** with more flexible and natural voice commands that let a user
 
 **Important APIs**
 
--   [**Windows.ApplicationModel.VoiceCommands**](https://msdn.microsoft.com/library/windows/apps/dn706594)
--   [**Voice Command Definition (VCD) elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+-   [**Windows.ApplicationModel.VoiceCommands**](/uwp/api/Windows.ApplicationModel.VoiceCommands)
+-   [**Voice Command Definition (VCD) elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 
 Using voice commands to extend Cortana with functionality from your app requires the user to specify both the app and the command or function to execute. This is typically accomplished by announcing the app name at the beginning or the end of the voice command. For example, "Adventure Works, add a new trip to Las Vegas."
@@ -39,12 +39,12 @@ This topic builds on [Launch a background app with voice commands in Cortana](la
 
 If you're new to developing Universal Windows Platform (UWP) apps, have a look through these topics to get familiar with the technologies discussed here.
 
--   [Create your first app](https://msdn.microsoft.com/library/windows/apps/bg124288)
--   Learn about events with [Events and routed events overview](https://msdn.microsoft.com/library/windows/apps/mt185584)
+-   [Create your first app](/windows/uwp/get-started/your-first-app)
+-   Learn about events with [Events and routed events overview](/windows/uwp/xaml-platform/events-and-routed-events-overview)
 
 **User experience guidelines**
 
-See [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233) for info about how to integrate your app with **Cortana** and [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121) for helpful tips on designing a useful and engaging speech-enabled app.
+See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
 
 ## <span id="Specify_an_AppName_element_in_the_VCD"></span><span id="specify_an_appname_element_in_the_vcd"></span><span id="SPECIFY_AN_APPNAME_ELEMENT_IN_THE_VCD"></span>Specify an **AppName** element in the VCD
 
@@ -203,18 +203,14 @@ Here is a VCD file that demonstrates various ways to provide more natural langua
 
 **Developers**
 * [Voice commands](vcd.md)
-* [**VCD elements and attributes v1.2**](https://msdn.microsoft.com/library/windows/apps/dn706593)
+* [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Cortana design guidelines](https://msdn.microsoft.com/library/windows/apps/dn974233)
-* [Speech design guidelines](https://msdn.microsoft.com/library/windows/apps/dn596121)
+* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)
  
 
  
-
-
-
-

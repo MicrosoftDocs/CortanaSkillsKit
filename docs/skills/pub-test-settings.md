@@ -19,7 +19,7 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
     Complete the required fields that are marked with an asterisk (*).
 
     >[!NOTE]
-    > For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+    > For more information about the bot configuration fields, visit the [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana) page.
 
     1. **Skill information** section
 
@@ -43,7 +43,7 @@ Deploying to **Test Group** makes your Cortana skill available to a group of use
         ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
 
         >[!TIP]
-        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+        > For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana) page.
 
     3. Group
         ![MSA email addresses - empty](../media/images/test_group_settings-group-empty.png)

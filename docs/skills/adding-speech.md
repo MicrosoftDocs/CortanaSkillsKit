@@ -62,8 +62,8 @@ await turnContext.sendActivity( 'This is displayed', 'This is spoken', 'expectin
 
 ---
 
-The Bot Service V4 reference documentation is here: [C#](https://docs.microsoft.com/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
-or [JavaScript](https://docs.microsoft.com/JavaScript/api/botbuilder-core/turncontext#sendactivity).
+The Bot Service V4 reference documentation is here: [C#](/dotnet/api/microsoft.bot.builder.iturncontext.sendactivityasync)
+or [JavaScript](/JavaScript/api/botbuilder-core/turncontext#sendactivity).
 
 ## Input Hints
 
@@ -75,6 +75,6 @@ Cortana requires a hint as to whether or not to open the microphone to have a co
 | `expectingInput` | Opens the mic and actively waits for input. Timeout closes mic and Cortana passively waits for input. | Reprompts once before closing the conversation |
 | `ignoringInput`| Proceeds to the next turn (until reaching a turn specifies expecting or accepting input). | Proceeds to the next turn. |
 
-Use `deviceInfo` to modify your skill's behavior based on device type, documented in the [Determine Cortana's device type](https://docs.microsoft.com/cortana/skills/cortana-device-type) section.
+Use `deviceInfo` to modify your skill's behavior based on device type, documented in the [Determine Cortana's device type](./cortana-device-type.md) section.
 
-You can find how-to documentation on specifying input hints in the [Add input hints to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-4.0) page.
+You can find how-to documentation on specifying input hints in the [Add input hints to messages](/azure/bot-service/dotnet/bot-builder-dotnet-add-input-hints?view=azure-bot-service-4.0) page.

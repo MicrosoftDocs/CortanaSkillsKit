@@ -10,7 +10,7 @@ keywords: cortana
 
 After you configure the Cortana channel for your skill, it's automatically deployed using the **Default Settings**. Deploying with the **Default Settings** makes the skill available only to you, so you can thoroughly test it before deploying it to one of the other environments.
 
-For more information about configuring the Cortana channel, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0) page.
+For more information about configuring the Cortana channel, visit the [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana?view=azure-bot-service-4.0) page.
 
 ![Default settings](../media/images/default_settings.png)
 
@@ -18,7 +18,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
     Complete the required fields (marked with an asterisk).
 
-    For more information about the bot configuration fields, visit the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+    For more information about the bot configuration fields, visit the [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana) page.
 
     1. **Skill information** section
 
@@ -89,7 +89,7 @@ For more information about configuring the Cortana channel, visit the [Connect a
 
         ![Request user profile - all](../media/images/default_settings-request_user_profile_data-all.png)
 
-        For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page.
+        For more information about the bot configuration fields, visit the  [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana) page.
 
 1. After all of the required fields are completed, you can click on the `Deploy on Cortana` button.
 

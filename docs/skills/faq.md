@@ -28,7 +28,7 @@ If these scenarios do not apply, please check the [Known Issues](./known-issues.
 If you use an Azure free tier service plan or the default standard tier plan for your App Service, the App Service will be unloaded from memory after a 20 minute idle period when it's not in use. This prevents unnecessary resource usage by your skill. It may take some time for the service to load when you invoke your skill after it's been unloaded, which results in a "Sorry, but [your skill] isn't responding right now" error. If you use a standard service plan, you can prevent this by changing the App Service state (under Application Settings / General Settings ) to `Always On`. This will keep your app loaded, but will also increase your resource usage.
 If you use the free tier plan, you can't change this setting.
 
- Find more performance guidance in the [Azure FAQ](https://docs.microsoft.com/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time).
+ Find more performance guidance in the [Azure FAQ](/azure/app-service/faq-availability-performance-application-issues#how-do-i-decrease-the-response-time-for-the-first-request-after-idle-time).
 
 ## Does my client secret ever expire?
 

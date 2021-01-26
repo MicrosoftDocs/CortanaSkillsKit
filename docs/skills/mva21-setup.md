@@ -52,12 +52,12 @@ For information on creating your first Cortana skill, see [Create your first Cor
 
 You can develop a Cortana skill on either a Mac or a PC running Windows 10 Anniversary Update (build 1607), using your choice of development tools. The only requirement is that you have installed the [Microsoft Bot Framework SDK](https://github.com/microsoft/botframework-sdk).
 
-Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](https://docs.microsoft.com/visualstudio/install/install-visual-studio).
+Although you can use any development environment, Microsoft Visual Studio offers a variety of useful tools and features, including Bot Application, Bot Controller, and Bot Dialog templates. For information about installing Visual Studio, see [Install Visual Studio 2019](/visualstudio/install/install-visual-studio).
 
 >[!NOTE]
 > The Bot Builder SDK for .NET currently supports C#. Visual Studio for Mac is not supported.
 
-For either a Mac or PC environment, install the [Bot Framework Emulator](https://docs.microsoft.com/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
+For either a Mac or PC environment, install the [Bot Framework Emulator](/azure/bot-service/bot-service-debug-emulator?view=azure-bot-service-4.0) to be able to view and test your bot in action before registering it and connecting it to the Cortana channel.
 
 If you are developing your skill on a Mac, or developing for an iOS, Android, or Harman Kardon Invoke device, you also need to set up the device where Cortana invokes the skill. Since Cortana is not available in a Mac environment, skills developed in a Mac environment must be invoked on a mobile device or in a virtual machine environment running Windows.
 

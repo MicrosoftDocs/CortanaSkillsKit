@@ -76,7 +76,7 @@ var msg = new builder.Message(session)
 
 To launch an app, use the app's protocol activation URL.
 
-As an example, in Windows 10, the built-in Maps app supports launching and deep linking. (For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app).) 
+As an example, in Windows 10, the built-in Maps app supports launching and deep linking. (For information about the Maps app and different ways to launch it, see [Launch the Windows Map app](/windows/uwp/launch-resume/launch-maps-app).) 
 This code shows how to specify the channel data used to launch the Maps app, and center the map over Paris.
 
 # [C#](#tab/cs2)
@@ -111,11 +111,11 @@ The following image shows the launched Map app.
 
 ![Map App centered over Paris](../media/images/launched-map-app.png)
 
-For further reference, you can find documentation on UWP protocol handlers [here](https://docs.microsoft.com/windows/uwp/launch-resume/launch-maps-app).
+For further reference, you can find documentation on UWP protocol handlers [here](/windows/uwp/launch-resume/launch-maps-app).
 
 ## Start a Skype call or IM
 
-If the user has Skype installed, they can launch it to to start a call or instant message conversation in [Skype for Business](https://technet.microsoft.com/library/gg398376(v=ocs.15).aspx) or the home version of [Skype](https://msdn.microsoft.com/library/office/dn745878.aspx) on Windows, Android, and iOS.
+If the user has Skype installed, they can launch it to to start a call or instant message conversation in [Skype for Business](/previous-versions/office/lync-server-2013/lync-server-2013-starting-lync-from-another-application) or the home version of [Skype](/skype-sdk/skypeuris/skypeuris) on Windows, Android, and iOS.
 
 **Skype for Business**
 
@@ -191,7 +191,7 @@ The following image shows the launched Skype for Business window.
 **Skype**
 
 If the user is signed in to the standard version of Skype, then the following code will start a call with Skype user "echo123".
-The URI API reference is [here](https://docs.microsoft.com/skype-sdk/skypeuris/skypeuriapireference).
+The URI API reference is [here](/skype-sdk/skypeuris/skypeuriapireference).
 
 # [C#](#tab/cs5)
 

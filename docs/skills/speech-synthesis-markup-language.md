@@ -17,7 +17,7 @@ Cortana's implementation of SSML is based on World Wide Web Consortium's [Speech
 
 ## Supported SSML elements
 
-For information about using SSML in your skill, see *Add speech to messages* in [Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-4.0) and [.NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-4.0).
+For information about using SSML in your skill, see *Add speech to messages* in [Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-4.0) and [.NET](/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-4.0).
 
 > [!IMPORTANT]
 > Don't forget to use double quotes around attribute values. Standards for well-formed, valid XML require attribute values to be enclosed in double quotation marks. For example, `<prosody volume="90">` is a well-formed, valid element, but `<prosody volume=90>` is not. SSML may not recognize attribute values that are not in quotes.
@@ -245,7 +245,7 @@ An optional element that specifies the phonetic pronunciation for the specified 
 
 | Attribute | Description |
 |-----------|-------------|
-| alphabet | **Optional.** Specifies the phonetic alphabet to use when synthesizing the pronunciation of the string in the `ph` attribute. The string specifying the alphabet must be specified in lowercase letters. The following are the possible alphabets that you may specify.<ul><li>ipa &ndash; International Phonetic Alphabet</li><li>sapi &ndash; Speech API Phone Set</li><li>ups &ndash; Universal Phone Set</li></ul>The alphabet applies only to the containing phoneme. For more information, see [Phonetic Alphabet Reference](https://msdn.microsoft.com/library/hh362879(v=office.14).aspx). |
+| alphabet | **Optional.** Specifies the phonetic alphabet to use when synthesizing the pronunciation of the string in the `ph` attribute. The string specifying the alphabet must be specified in lowercase letters. The following are the possible alphabets that you may specify.<ul><li>ipa &ndash; International Phonetic Alphabet</li><li>sapi &ndash; Speech API Phone Set</li><li>ups &ndash; Universal Phone Set</li></ul>The alphabet applies only to the containing phoneme. For more information, see [Phonetic Alphabet Reference](/previous-versions/office/developer/speech-technologies/hh362879(v=office.14)). |
 | ph |  **Required.** A string containing phones that specify the pronunciation of the word in the `phoneme` element. If the specified string contains unrecognized phones, the text-to-speech (TTS) engine rejects the entire SSML document and produces none of the speech output specified in the document. |
 
 **Remarks**
@@ -406,4 +406,3 @@ The following instructs the text-to-speech engine to pronounce the string "SAPI"
     <sub alias="Speech Application Programming Interface">SAPI</sub>
 </speak>
 ```
-

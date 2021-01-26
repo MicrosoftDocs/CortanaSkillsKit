@@ -37,11 +37,11 @@ highlightedContent:
     # Card
     - title: Language Understanding
       itemType: how-to-guide
-      url: https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis
+      url: /bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis
     # Card
     - title: Make your skill smarter
       itemType: how-to-guide
-      url: https://docs.microsoft.com/bot-framework/cognitive-services-bot-intelligence-overview
+      url: /bot-framework/cognitive-services-bot-intelligence-overview
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -104,7 +104,7 @@ conceptualContent:
         - url: privacy-policy-guidelines.md
           itemType: concept
           text: Privacy Policy
-        - url: https://docs.microsoft.com/cortana/skills/cortana-samples
+        - url: /cortana/skills/cortana-samples
           itemType: sample
           text: Samples
         - url: https://techcommunity.microsoft.com/t5/cortana-skills-kit-blog/bg-p/cortanaskillskit

@@ -42,11 +42,11 @@ AdaptiveCards include elements, containers, actions, and inputs. A basic adaptiv
 The [AdaptiveCards Designer](https://adaptivecards.io/designer) provides an interactive card builder where you can see the resulting card JSON data.
 
 ## Create an AdaptiveCard
-You can create adaptive cards using `proxy pattern` helper classes in the [SDK](https://docs.microsoft.com/adaptive-cards/), or by directly using JSON (check out the [Schema Explorer](https://adaptivecards.io/explorer/) for details).
+You can create adaptive cards using `proxy pattern` helper classes in the [SDK](/adaptive-cards/), or by directly using JSON (check out the [Schema Explorer](https://adaptivecards.io/explorer/) for details).
 
 >[!IMPORTANT]
 > 1. The speak object of an adaptive card must be copied to the Message for Cortana to speak the text.
-> 1. The speak object text must be wrapped in SSML `<speak>` tags. (See the [Speech Synthesis Markup Language (SSML) reference](https://docs.microsoft.com/cortana/skills/speech-synthesis-markup-language).)
+> 1. The speak object text must be wrapped in SSML `<speak>` tags. (See the [Speech Synthesis Markup Language (SSML) reference](./speech-synthesis-markup-language.md).)
 
 # [.NET](#tab/dotnet)
 
@@ -84,7 +84,7 @@ The following code adds an adaptive card to a Cortana skill response for Bot Fra
 
 ### Create using JavaScript
 
-1. Install the `adaptivecards` [NPM package](https://docs.microsoft.com/adaptive-cards/sdk/rendering-cards/javascript/getting-started#install) (optional)
+1. Install the `adaptivecards` [NPM package](/adaptive-cards/sdk/rendering-cards/javascript/getting-started#install) (optional)
 1. Use JSON to build your card in code, or the proxy object from the `adaptivecards` package
 1. Add the card to your skill as an attachment.
 
@@ -280,5 +280,5 @@ Your code must handle both cases in order to handle conversations correctly.
 ## More information  
 
 * For more information about adaptive cards, visit the  [adaptivecards.io](https://adaptivecards.io) page.  
-* For more information about Bot Framework cards, see the [Send an Adaptive Card](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp#send-an-adaptive-card) section on the [Add media to messages](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-add-media-attachments?view=azure-bot-service-4.0&tabs=csharp) page.
+* For more information about Bot Framework cards, see the [Send an Adaptive Card](/azure/bot-service/bot-builder-howto-add-media-attachments?tabs=csharp&view=azure-bot-service-4.0#send-an-adaptive-card) section on the [Add media to messages](/azure/bot-service/bot-builder-howto-add-media-attachments?tabs=csharp&view=azure-bot-service-4.0) page.
 * For more info on the examples referenced on this page, please visit [cortana-skills-samples on GitHub](https://github.com/Microsoft/cortana-skills-samples)

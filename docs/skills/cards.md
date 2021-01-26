@@ -24,17 +24,17 @@ If you determine that your skill requires a user interface, Bot Framework suppor
 | SignIn Card | A card that lets the user sign-in to a service that the skill uses. | Single 
 
 
-For information about adding these cards to your skill, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0). 
+For information about adding these cards to your skill, see [Add cards to your skill using Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) or [Add cards to your skill using .NET](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0). 
 
-In addition to cards, Node.js users can use a set of [built-in prompts](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0#prompt-types).
+In addition to cards, Node.js users can use a set of [built-in prompts](/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-3.0#prompt-types).
 
-If these cards and prompts don't meet your needs, see [Adaptive Cards](https://docs.microsoft.com/adaptive-cards). Adaptive cards are flexible, user-designed cards that contain only the UI elements that you want in the format you want. See the following adaptive card resources: 
+If these cards and prompts don't meet your needs, see [Adaptive Cards](/adaptive-cards). Adaptive cards are flexible, user-designed cards that contain only the UI elements that you want in the format you want. See the following adaptive card resources: 
 
-- [Adaptive Cards for Bot developers](https://docs.microsoft.com/adaptive-cards/get-started/bots)&mdash;Provides information about using adaptive cards with bots. 
-- [Platform SDKs](https://docs.microsoft.com/adaptive-cards/get-started/bots#platform-sdks)&mdash;Provides information about downloading the adaptive card SDKs for Node.js and .NET.
-- [Adaptive card example using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0#send-an-adaptive-card)
-- [Adaptive card example using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0#adaptive-card)
-- [Schema explorer](https://adaptivecards.io/explorer) and [Card schema](https://docs.microsoft.com/adaptive-cards/create/cardschema)&mdash;Provides details about the adaptive card schema.
+- [Adaptive Cards for Bot developers](/adaptive-cards/get-started/bots)&mdash;Provides information about using adaptive cards with bots. 
+- [Platform SDKs](/adaptive-cards/get-started/bots#platform-sdks)&mdash;Provides information about downloading the adaptive card SDKs for Node.js and .NET.
+- [Adaptive card example using Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0#send-an-adaptive-card)
+- [Adaptive card example using .NET](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0#adaptive-card)
+- [Schema explorer](https://adaptivecards.io/explorer) and [Card schema](/adaptive-cards/create/cardschema)&mdash;Provides details about the adaptive card schema.
 - [Visualizer](https://adaptivecards.io/visualizer)&mdash;Lets you see how your adaptive card renders as you're design it. 
 - [AdaptiveCards.io](https://adaptivecards.io)&mdash;The adaptive card developer portal. 
 
