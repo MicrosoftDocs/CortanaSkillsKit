@@ -42,13 +42,13 @@ If you're new to developing Universal Windows Platform (UWP) apps, have a look t
 
 **User experience guidelines**
 
-See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
+See [Cortana design guidelines](../skills/index.yml) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
 
 ## <span id="Feedback_strings"></span><span id="feedback_strings"></span><span id="FEEDBACK_STRINGS"></span>Feedback strings
 
 Compose the feedback strings that are both displayed and spoken by **Cortana**.
 
-The [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)provides recommendations on composing strings for **Cortana**.
+The [Cortana design guidelines](../skills/index.yml)provides recommendations on composing strings for **Cortana**.
 
 ## <span id="Feedback_strings"></span><span id="feedback_strings"></span><span id="FEEDBACK_STRINGS"></span>Feedback strings
 
@@ -463,7 +463,7 @@ var userMessage = new VoiceCommandUserMessage();
 * [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Cortana design guidelines](../skills/index.yml)
 * [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
 
 **Samples**

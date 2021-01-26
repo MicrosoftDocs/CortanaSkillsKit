@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Adding visual elements to Cortana skills
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Adding visual elements to Cortana skills
 
 If you are creating a Cortana skill for a device with a screen, such as a PC or mobile device, you may want to use your skill's visual  interface to enhance the user's experience. In [Adding audio to Cortana skills](./mva41-streaming-audio.md), you learned how to use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips, and how to use an Audio card to stream audio. In this module you'll see how to extend your <!-- the **Mixtape** --> skill to add visual elements.
 

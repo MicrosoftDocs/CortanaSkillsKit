@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Using client code with Cortana skills
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Using client code with Cortana skills
 
 In addition to developing audio and video interfaces to enhance your Cortana skill, you can create interfaces that launch native code on a user's active device. In [Adding audio to Cortana skills](./mva41-streaming-audio.md) and [Adding visual elements to Cortana skills](./mva42-visual-ux.md), you learned how to use audio and visual elements in your skill. In this module you'll see how to extend the **Mixtape** skill to use client code.
 

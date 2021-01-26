@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Sharing your Cortana skill to a group
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Sharing your Cortana skill to a group
 
 In [Using profile data in your Cortana skill](./mva52-using-profile-data.md), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings.
 
