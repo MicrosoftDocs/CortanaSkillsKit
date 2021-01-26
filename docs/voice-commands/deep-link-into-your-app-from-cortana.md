@@ -27,7 +27,7 @@ Provide deep links from a background app in **Cortana** that launch the app to t
 
 A deep link is displayed by default on the **Cortana** completion screen as shown here ("Go to AdventureWorks"), but you can display deep links on various other screens. 
 
-![cortana background app completion screen](../media/images/cortana-completion-screen-upcomingtrip-small.png)
+![Screenshot of the Cortana deep link to background app completion screen.](../media/images/cortana-completion-screen-upcomingtrip-small.png)
 
 **Prerequisites**
 
@@ -66,7 +66,7 @@ There are three ways to provide deep links:
 
 **Cortana** displays a "Go to &lt;app&gt;" deep link below the content card on most screens.
 
-![cortana background app completion screen](../media/images/cortana-completion-screen.png)
+![Screenshot of the Cortana Go to app deep link on a background app completion screen](../media/images/cortana-completion-screen.png)
 
 You can provide a launch argument for this link that opens your app in similar context as the app service. If you don't provide a launch argument, the app is launched to the main screen.
 
