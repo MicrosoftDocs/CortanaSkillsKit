@@ -46,7 +46,7 @@ By integrating the basic functionality of your app, and providing a central entr
 
 **Designers**
 * [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
-* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Cortana design guidelines](../skills/index.yml)
 
 **Samples**
 * [Cortana voice command sample](https://go.microsoft.com/fwlink/p/?LinkID=619899)

@@ -37,35 +37,33 @@ This topic builds on [Launch a background app with voice commands in Cortana](la
 
 If you're new to developing Universal Windows Platform (UWP) apps, have a look through these topics to get familiar with the technologies discussed here.
 
--   [Create your first app](/windows/uwp/get-started/your-first-app)
--   Learn about events with [Events and routed events overview](/windows/uwp/xaml-platform/events-and-routed-events-overview)
+- [Create your first app](/windows/uwp/get-started/your-first-app)
+- Learn about events with [Events and routed events overview](/windows/uwp/xaml-platform/events-and-routed-events-overview)
 
 **User experience guidelines**
 
-See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
+See [Cortana design guidelines](../skills/index.yml) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
 
-## <span id="Feedback_strings"></span><span id="feedback_strings"></span><span id="FEEDBACK_STRINGS"></span>Feedback strings
+## Composing feedback strings
 
 Compose the feedback strings that are both displayed and spoken by **Cortana**.
 
-The [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)provides recommendations on composing strings for **Cortana**.
-
-## <span id="Feedback_strings"></span><span id="feedback_strings"></span><span id="FEEDBACK_STRINGS"></span>Feedback strings
+The [Cortana design guidelines](../skills/index.yml) provides recommendations on composing strings for **Cortana**.
 
 Content cards can provide additional context for the user and help you keep feedback strings concise.
 
 **Cortana** supports the following content card templates (only one template can be used on the completion screen):
 
-    -   Title only
-    -   Title with up to three lines of text
-    -   Title with image
-    -   Title with image and up to three lines of text
+- Title only
+- Title with up to three lines of text
+- Title with image
+- Title with image and up to three lines of text
 
 The image can be:
 
-    -   68w x 68h
-    -   68w x 92h
-    -   280w x 140h
+- 68w x 68h
+- 68w x 92h
+- 280w x 140h
 
 You can also let users launch your app in the foreground by clicking either a card or the text link to your app.
 
@@ -463,7 +461,7 @@ var userMessage = new VoiceCommandUserMessage();
 * [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Cortana design guidelines](../skills/index.yml)
 * [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
 
 **Samples**

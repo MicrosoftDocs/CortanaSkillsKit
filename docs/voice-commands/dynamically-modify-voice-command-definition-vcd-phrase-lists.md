@@ -37,7 +37,7 @@ If you're new to developing Universal Windows Platform (UWP) apps, have a look t
 
 **User experience guidelines**
 
-See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
+See [Cortana design guidelines](../skills/index.yml) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.
 
 ## <span id="Identify_the_command"></span><span id="identify_the_command"></span><span id="IDENTIFY_THE_COMMAND"></span>Identify the command and update the phrase list
 
@@ -136,7 +136,7 @@ In our example, we have a **PhraseTopic** with a **Scenario** of "Search", furth
 * [**VCD elements and attributes v1.2**](/uwp/schemas/voicecommands/voice-command-elements-and-attributes-1-2)
 
 **Designers**
-* [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)
+* [Cortana design guidelines](../skills/index.yml)
 * [Speech design guidelines](/windows/uwp/design/input/speech-interactions)
 
 **Samples**

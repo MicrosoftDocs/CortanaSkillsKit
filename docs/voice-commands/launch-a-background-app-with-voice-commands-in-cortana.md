@@ -60,7 +60,7 @@ If you are new to developing Universal Windows Platform (UWP) apps, have a look 
 
 **User experience guidelines**  
 
-See [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.  
+See [Cortana design guidelines](../skills/index.yml) for info about how to integrate your app with **Cortana** and [Speech design guidelines](/windows/uwp/design/input/speech-interactions) for helpful tips on designing a useful and engaging speech-enabled app.  
 
 <!-- ## <span id="Create_a_new_solution_with_a_primary_project_in_Visual_Studio"></span><span id="create_a_new_solution_with_a_primary_project_in_visual_studio"></span><span id="CREATE_A_NEW_SOLUTION_WITH_A_PRIMARY_PROJECT_IN_VISUAL_STUDIO"></span> -->
 
@@ -544,7 +544,7 @@ Process the voice command in the app service.
     2.  To determine what the user said, check the value of [**Text**](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionResult) or the semantic properties of the recognized phrase in the [`SpeechRecognitionSemanticInterpretation`](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionSemanticInterpretation) dictionary.  
 7.  Take the appropriate action in your app service.  
 8.  Display and speak the feedback to the voice command using **Cortana**.  
-    1.  Determine the strings that you want **Cortana** to display and speak to the user in response to the voice command and create a [`VoiceCommandResponse`](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse) object. For guidance on how to select the feedback strings that **Cortana** shows and speaks, see [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill).  
+    1.  Determine the strings that you want **Cortana** to display and speak to the user in response to the voice command and create a [`VoiceCommandResponse`](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse) object. For guidance on how to select the feedback strings that **Cortana** shows and speaks, see [Cortana design guidelines](../skills/index.yml).  
     2.  Use the [**VoiceCommandServiceConnection**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) instance to report progress or completion to **Cortana** by calling [**ReportProgressAsync**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) or [**ReportSuccessAsync**](/uwp/api/Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection) with the `VoiceCommandServiceConnection` object.  
 
     >[!NOTE]
@@ -692,7 +692,7 @@ If the app takes longer than 0.5 second to make the call, **Cortana** inserts a 
 *   [How to name resources using qualifiers](/previous-versions/windows/apps/hh965324(v=win.10))  
 
 ### Designers  
-*   [Cortana design guidelines](../skills/index.yml#pivot=start&panel=designskill)  
+*   [Cortana design guidelines](../skills/index.yml)  
 *   [Speech design guidelines](/windows/uwp/design/input/speech-interactions)  
 *   [Responsive design 101 for UWP apps](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design)  
 *   [Guidelines for tile and icon assets](/windows/uwp/app-resources/images-tailored-for-scale-theme-contrast)  
