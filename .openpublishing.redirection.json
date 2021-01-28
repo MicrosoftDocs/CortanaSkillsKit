@@ -132,7 +132,7 @@
     },
     {
       "source_path": "docs/voicecommands/voicecommand-design-guidelines.md",
-      "redirect_url": "/cortana/voice-commands/vcd",
+      "redirect_url": "/windows/uwp/design/input/cortana-interactions/cortana-design-guidelines",
       "redirect_document_id": false
     },
     {
@@ -162,8 +162,8 @@
     },
     {
       "source_path": "docs/vcd.md",
-      "redirect_url": "/cortana/voice-commands/vcd",
-      "redirect_document_id": true
+      "redirect_url": "/windows/uwp/design/input/cortana-interactions",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/index.md",
