@@ -162,7 +162,7 @@
     },
     {
       "source_path": "docs/voicecommands/vcd.md",
-      "redirect_url": "/windows/uwp/design/input/cortana-interactions",
+      "redirect_url": "https://docs.microsoft.com/windows/uwp/design/input/cortana-interactions",
       "redirect_document_id": false
     },
     {
