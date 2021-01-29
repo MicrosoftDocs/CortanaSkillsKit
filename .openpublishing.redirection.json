@@ -152,7 +152,7 @@
     },
     {
       "source_path": "docs/voicecommands/launch-a-foreground-app-with-voice-commands-in-cortana.md",
-      "redirect_url": "/cortana/voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana",
+      "redirect_url": "/windows/uwp/design/input/cortana-launch-a-foreground-app-with-voice-commands",
       "redirect_document_id": true
     },
     {
@@ -161,7 +161,7 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/vcd.md",
+      "source_path": "docs/voicecommands/vcd.md",
       "redirect_url": "/windows/uwp/design/input/cortana-interactions",
       "redirect_document_id": false
     },
