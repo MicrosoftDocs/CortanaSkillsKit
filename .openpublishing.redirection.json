@@ -169,6 +169,11 @@
       "source_path": "docs/index.md",
       "redirect_url": "/cortana/skills",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/enterprise/overview.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
     }
   ]
 }
