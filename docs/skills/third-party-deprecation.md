@@ -1,9 +1,8 @@
 ---
 title: Developer Notification
-description: List of compatible locales for Cortana extensibility.
+description: Developer notification of Cortana Skills Kit deprecation.
 label: Conceptual
 ms.date: 08/05/2020
-ms.author: v-anids
 ms.topic: article
 keywords: cortana, deprecate
 ---
