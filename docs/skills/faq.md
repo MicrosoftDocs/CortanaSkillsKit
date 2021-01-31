@@ -65,11 +65,11 @@ No. Any internet accessible endpoint is an option. Your service endpoint must be
 
 ## How do the Cortana Skills Kit, Cortana Devices SDK, and Cortana Intelligence Suite work together?
 
-Microsoft is deeply committed to its AI vision, and sees key roles for agents, apps, services, and infrastructure. Cortana is a personal digital assistant, an agent, designed to help users achieve more. Many of the intelligent services that Cortana uses are available to enterprises to build their own intelligent experiences. 
+Microsoft is deeply committed to its AI vision, and sees key roles for agents, apps, services, and infrastructure. Many of the intelligent services that Cortana uses are available to build your own intelligent experiences.
 
 * **Cortana Skills Kit** allows developers to integrate their experiences (bots, web services, apps, and websites) with Cortana so she can intelligently drive engagement of these experiences when the user needs them.
 * **Cortana Devices SDK** allows OEMs/ODMs to bring the Cortana personal assistant to their devices where she can run on top of different underlying OSes - including variants of Linux, Android, and Windows IoT. [Interested? Contact us for more info](https://aka.ms/cortanadevicepreview).
-* **Cortana Intelligence Suite** allows enterprises and developers to build their own intelligent experiences using enterprise-grade APIs from Microsoft. Find out more [here](https://www.microsoft.com/cloud-platform/cortana-intelligence-suite).
+* **Azure AI** proven, secure, and responsible AI capabilities for building mission-critical solutions that can analyze images, comprehend speech, make predictions using data, and imitate other intelligent human behaviors. Find out more at [Azure AI](https://azure.microsoft.com/overview/ai-platform/).
 
 Cortana Skills Kit is designed to:
 
@@ -146,9 +146,9 @@ We want to ensure that the Cortana Skills Kit is available at high quality, and 
 
 ## How long does it take for published invocation names to be recognized by Cortana clients?
 
-1. When Self publish of Default Setting by developer the invocation name is immediately available on publish <!-- including all developers listed for enterprise skills -->
+1. When Self publish of Default Setting by developer the invocation name is immediately available on publish
 1. When Group publish is performed the invocation name is immediately available to all testers in the group.
-1. On Publish to World <!-- or Enterprise Tenant --> the invocation name takes 24 to 48 hours to be primed and available.
+1. On Publish to World the invocation name takes 24 to 48 hours to be primed and available.
 
 ## How can I increase the accuracy of recognized acronyms and unique names from speech?
 

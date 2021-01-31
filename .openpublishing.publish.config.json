@@ -41,10 +41,6 @@
     "live": [
       "Publish",
       "Pdf"
-    ],
-    "enterprise-updates": [
-      "Publish",
-      "Pdf"
     ]
   },
   "need_generate_pdf_url_template": true,
