@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Using authentication in your Cortana skill
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Using authentication in your Cortana skill
 
 If your Cortana skill uses a service that requires authentication, you can let Cortana manage authentication by configuring the skill to use a connected service. You can specify whether to prompt the user for authentication credentials when Cortana invokes the skill.
 

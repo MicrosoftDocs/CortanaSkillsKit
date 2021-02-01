@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Understanding Cortana's user profile data
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Understanding Cortana's user profile data
 
 In previous modules, you learned how to build conversation into your Cortana skill, how to use audio and visual elements, and how to launch apps or websites from your skill. In this module, you'll learn the basics about Cortana's user profile data, which you'll use in the next module to customize your Cortana skill.
 
