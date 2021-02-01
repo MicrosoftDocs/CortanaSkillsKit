@@ -1,9 +1,8 @@
 ---
 title: Developer Notification
-description: List of compatible locales for Cortana extensibility.
+description: Developer notification of Cortana Skills Kit deprecation.
 label: Conceptual
 ms.date: 08/05/2020
-ms.author: v-anids
 ms.topic: article
 keywords: cortana, deprecate
 ---
@@ -22,7 +21,3 @@ This change is part of our goal to transform the modern productivity experiences
 4. On September 7, 2020, all Cortana third-party consumer skills built with the Cortana skills kit will be retired.   
  
 If you have any questions, please email [skillpub@microsoft.com](mailto:skillpub@microsoft.com).
-
-## How do I build Cortana skills in the future?
-[**Cortana skills kit for Enterprise**](../enterprise/overview.md) will continue to be available for TAP customers to build skills for their organization. 
-

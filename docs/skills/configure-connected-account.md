@@ -99,7 +99,7 @@ If you previously configured the channel and want to update it to include a conn
 1. Press the **Edit** button next to the Cortana channel.
 1. Specify the steps above to configure the connected account.
 
-Please visit the [Azure AD App Registration](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+Please visit the [Azure AD App Registration](/azure/active-directory/develop/quickstart-register-app)
 quickstart for details on how Azure App Registration works.
 
 ## Next steps

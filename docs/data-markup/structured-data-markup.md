@@ -9,10 +9,11 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Cortana and structured data markup
+
 >[!WARNING]
 >Do not use. The Data Markup API for Cortana has been deprecated.
 
-# Cortana and structured data markup
 Structured data markup describes the embedding of structured data in e-mail messages and websites for consumption by Cortana. 
 
 The structured data is in the form of schema.org markup in either [schema.org](https://schema.org) [Microdata and JSON-LD](https://schema.org/docs/gs.html) formats. Cortana extracts and interprets the structured data and exposes an skill based on that data.

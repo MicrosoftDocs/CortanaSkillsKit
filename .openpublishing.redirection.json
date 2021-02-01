@@ -2,12 +2,12 @@
   "redirections": [
     {
       "source_path": "docs/structured-data-markup.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/data-markup/structured-data-markup",
+      "redirect_url": "/cortana/data-markup/structured-data-markup",
       "redirect_document_id": true
     },
     {
       "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/skills/authentication",
+      "redirect_url": "/cortana/skills/authentication",
       "redirect_document_id": true
     },
     {
@@ -62,7 +62,7 @@
     },
     {
       "source_path": "docs/design-guides/guide-invocation.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines",
+      "redirect_url": "/cortana/skills/cortana-invocation-guidelines",
       "redirect_document_id": true
     },
     {
@@ -126,48 +126,53 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "docs/voicecommands/deep-link-into-your-app-from-cortana.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/deep-link-into-your-app-from-cortana",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/voicecommands/voicecommand-design-guidelines.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/vcd",
+      "source_path": "docs/voice-commands/deep-link-into-your-app-from-cortana.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-deep-link-into-your-app",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/voicecommands/dynamically-modify-voice-command-definition-vcd-phrase-lists.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/dynamically-modify-voice-command-definition-vcd-phrase-lists",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "docs/voicecommands/interact-with-a-background-app-in-cortana.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana",
+      "source_path": "docs/voice-commands/voicecommand-design-guidelines.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-design-guidelines",
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/voicecommands/launch-a-background-app-with-voice-commands-in-cortana.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/launch-a-background-app-with-voice-commands-in-cortana",
-      "redirect_document_id": true
+      "source_path": "docs/voice-commands/dynamically-modify-voice-command-definition-vcd-phrase-lists.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-dynamically-modify-voice-command-definition-vcd-phrase-lists",
+      "redirect_document_id": false
     },
     {
-      "source_path": "docs/voicecommands/launch-a-foreground-app-with-voice-commands-in-cortana.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana",
-      "redirect_document_id": true
+      "source_path": "docs/voice-commands/interact-with-a-background-app-in-cortana.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-interact-with-a-background-app",
+      "redirect_document_id": false
     },
     {
-      "source_path": "docs/voicecommands/support-natural-language-voice-commands-in-cortana.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/voice-commands/support-natural-language-voice-commands-in-cortana",
-      "redirect_document_id": true
+      "source_path": "docs/voice-commands/launch-a-background-app-with-voice-commands-in-cortana.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-launch-a-background-app-with-voice-commands",
+      "redirect_document_id": false
     },
     {
-      "source_path": "docs/vcd.md",
-      "redirect_url": "/cortana/voice-commands/vcd",
-      "redirect_document_id": true
+      "source_path": "docs/voice-commands/launch-a-foreground-app-with-voice-commands-in-cortana.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-launch-a-foreground-app-with-voice-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/voice-commands/support-natural-language-voice-commands-in-cortana.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-support-natural-language-voice-commands",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/voice-commands/vcd.md",
+      "redirect_url": "/windows/uwp/design/input/cortana-interactions",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/index.md",
-      "redirect_url": "https://docs.microsoft.com/cortana/skills",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/enterprise/overview.md",
+      "redirect_url": "/cortana/skills",
       "redirect_document_id": false
     }
   ]

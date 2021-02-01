@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Sharing your Cortana skill to a group
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Sharing your Cortana skill to a group
 
 In [Using profile data in your Cortana skill](./mva52-using-profile-data.md), you learned how to make user profile data available to your Cortana skill by updating the skill's channel configuration settings.
 
@@ -31,9 +31,7 @@ For more information on Cortana publishing options, see [Publishing Cortana Skil
 
 To create a group of users who can use and test your Cortana skill, update the **Group Settings** channel configuration settings.  
 
-![Publish to Group](../media/images/settings-group_setting-configured.png)
-
-<!-- ![Publish to Group](../media/images/group_settings_configured-request_user_profile_data-data.png) -->
+![Screenshot of Group settings channel configuration.](../media/images/settings-group_setting-configured.png)
 
 Under the **Group** section, under the Member email list, click on the `Add team member` link to add the member emails to the group.  
 The Member email list displays the email address associated with the Microsoft account for each user. 
@@ -41,11 +39,11 @@ The Member email list displays the email address associated with the Microsoft a
 >[!NOTE]
 > The email account doesn't have to be a Microsoft account, but it must be associated with a registered Microsoft account.  
 
-![Publish to Group](../media/images/group_settings_configured-group-member_email.png)
+![Screenshot of Member email list in Group settings channel configuration.](../media/images/group_settings_configured-group-member_email.png)
 
 Any member email address may be deleted by clicking on the trash icon next to it.
 
-![Publish to Group](../media/images/group_settings_configured-group-group_access_url.png)
+![Screenshot of saving the Member email list in Group settings channel configuration.](../media/images/group_settings_configured-group-group_access_url.png)
 
 To create the group, click on the `Save changes` button.
 
@@ -74,7 +72,7 @@ Each user in the group who has accepted the invitation should now have access to
 
 Once you have published your skill to the group, any group member can invoke the skill. Cortana prompts for credentials, if necessary, and launches <!-- the Mixtape --> your skill.
 
-You might want to ask members of your group to use different invocation phrases during their testing. Check out [Invocation phrases](https://docs.microsoft.com/cortana/skills/cortana-invocation-guidelines#invocation-phrases) on the [Invocation name guidelines](cortana-invocation-guidelines.md) for more details. <!-- *Ask Mixtape to make me a mixtape.*  -->
+You might want to ask members of your group to use different invocation phrases during their testing. Check out [Invocation phrases](./cortana-invocation-guidelines.md#invocation-phrases) on the [Invocation name guidelines](cortana-invocation-guidelines.md) for more details. <!-- *Ask Mixtape to make me a mixtape.*  -->
 
 <!-- For example, any group member can direct Cortana to invoke the Mixtape your skill. -->
 

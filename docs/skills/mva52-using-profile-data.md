@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Using profile data in your Cortana skill
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Using profile data in your Cortana skill
 
 As you learned in [Understanding Cortana's user profile data](./mva51-profile-data.md), Cortana's user profile contains a variety of information that you can view and use in your Cortana skill with the user's consent. In this module, you'll learn how to customize <!-- the **SkillTest** -->your skill <!-- developed in previous modules  -->to include profile data.
 

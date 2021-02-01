@@ -30,17 +30,6 @@
 ### [Understanding types of conversations](./mva31-understanding-conversations.md)
 ### [Showing progress to the user](./show-progress.md)  
 
-<!-- commented out and deprecated because they use the MixTape example
-### [Building conversations](./mva32-building-conversations.md)  
-### [Adding audio to Cortana Skills](./mva41-streaming-audio.md)  
-### [Adding visual elements to Cortana Skills](./mva42-visual-ux.md)  
-### [Using client code with Cortana Skills](./mva43-client-code.md)  
-### [Understanding Cortana user profile data](./mva51-profile-data.md)  
-### [Using profile data in your Cortana skill](./mva52-using-profile-data.md)  
-### [Using authentication in your Cortana skill](./mva61-authentication.md)  
-### [Sharing your Cortana skill to a group](./mva71-share-skill.md)  
--->
-
 ## Test skills  
 ### [Test and debug](./test-debug.md)  
 ### [Known issues](./known-issues.md)  
@@ -66,6 +55,3 @@
 
 # Cortana SDK
 ## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)
-
-# Cortana Skills Kit for Enterprise  
-## [Overview](../enterprise/overview.md)  

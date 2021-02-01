@@ -8,10 +8,11 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Adding audio to Cortana skills
+
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Adding audio to Cortana skills
 
 Whether you are developing a Cortana skill for a headless device (a device without a screen, such as the Harman Kardon Invoke speaker), or a device with a screen (such as a PC or mobile device), you can use a variety of audio features to enhance a user's experience. 
 

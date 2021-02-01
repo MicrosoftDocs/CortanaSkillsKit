@@ -8,10 +8,10 @@ ms.topic: article
 keywords: cortana
 ---
 
+# Adding visual elements to Cortana skills
+
 > [!IMPORTANT]
 > This page has been deprecated as we update our documentation to Azure Bot Service v4.
-
-# Adding visual elements to Cortana skills
 
 If you are creating a Cortana skill for a device with a screen, such as a PC or mobile device, you may want to use your skill's visual  interface to enhance the user's experience. In [Adding audio to Cortana skills](./mva41-streaming-audio.md), you learned how to use Speech Synthesis Markup Language (SSML) to customize speech and embed short audio clips, and how to use an Audio card to stream audio. In this module you'll see how to extend your <!-- the **Mixtape** --> skill to add visual elements.
 
@@ -37,7 +37,7 @@ You can add a variety of visual interface elements, or cards, to your Cortana sk
 
 - SignIn card - allows the user to sign in to a service that the skill uses.
 
-For more information about Bot Framework cards, see [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0) for .NET or [Add rich card attachments to messages](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0) for Node.js. 
+For more information about Bot Framework cards, see [Add rich card attachments to messages](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-3.0&preserve-view=true) for .NET or [Add rich card attachments to messages](/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-3.0&preserve-view=true) for Node.js. 
 
 To add a visual interface element that displays a title heading and text to the Mixtape skill, add a Hero card. For example, revise the Mixtape skill's **PlaySongIntent** method as follows:
 

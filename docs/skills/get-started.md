@@ -10,10 +10,10 @@ keywords: cortana
 
 # Getting started with Cortana skills
 
-To create a skill, use the [Azure Bot Service](https://docs.microsoft.com/bot-framework) to create a bot. The framework provides two options that you can use to build your bot: a .NET SDK or a Node.js SDK.
+To create a skill, use the [Azure Bot Service](/bot-framework) to create a bot. The framework provides two options that you can use to build your bot: a .NET SDK or a Node.js SDK.
 
 >[!TIP]
-> For an overview of the framework, see [How the Azure Bot Service works](https://docs.microsoft.com/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-4.0). These are the Bot Framework topics that will tell you what you need to know in order to build and deploy your first bot.
+> For an overview of the framework, see [How the Azure Bot Service works](/azure/bot-service/bot-service-overview-readme?view=azure-bot-service-4.0). These are the Bot Framework topics that will tell you what you need to know in order to build and deploy your first bot.
 
 After you create a bot, you need to enable speech.  This is covered in the [Add speech to your Cortana skill](./adding-speech.md) page.
 
@@ -28,12 +28,12 @@ After you create a bot, you need to enable speech.  This is covered in the [Add 
 
 | Topic | Description |
 |:--- |:--- | 
-|[Create a bot with .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)<br />[Create a bot with Node.js](https://docs.microsoft.com/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0) | Guide that walks you through installing the SDK, creating your first bot, and running it.
-|[Add speech to your bot with .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-4.0)<br />[Add speech to your bot with Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-4.0)|Shows the mechanisms that you use to add speech to bots.
-|[Build a speech bot with .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-cortana-skill?view=azure-bot-service-4.0)<br />[Build a speech bot with Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-cortana-skill?view=azure-bot-service-4.0)|Shows how to add speech to bots.
-|[Deploy a bot to the cloud](https://docs.microsoft.com/azure/bot-service/bot-service-build-continuous-deployment?view=azure-bot-service-4.0)|Shows how to deploy your bot to the cloud.
+|[Create a bot with .NET](/azure/bot-service/dotnet/bot-builder-dotnet-sdk-quickstart?view=azure-bot-service-4.0)<br />[Create a bot with Node.js](/azure/bot-service/javascript/bot-builder-javascript-quickstart?view=azure-bot-service-4.0) | Guide that walks you through installing the SDK, creating your first bot, and running it.
+|[Add speech to your bot with .NET](/azure/bot-service/dotnet/bot-builder-dotnet-text-to-speech?view=azure-bot-service-4.0)<br />[Add speech to your bot with Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-text-to-speech?view=azure-bot-service-4.0)|Shows the mechanisms that you use to add speech to bots.
+|[Build a speech bot with .NET](/azure/bot-service/dotnet/bot-builder-dotnet-cortana-skill?view=azure-bot-service-4.0)<br />[Build a speech bot with Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-cortana-skill?view=azure-bot-service-4.0)|Shows how to add speech to bots.
+|[Deploy a bot to the cloud](/azure/bot-service/bot-service-build-continuous-deployment?view=azure-bot-service-4.0)|Shows how to deploy your bot to the cloud.
 
-If you successfully followed the steps in the table above, then you've already run your skill in the Bot Framework emulator. To run your skill locally in Cortana, there are two more steps. First, use the [Register a bot with Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-quickstart-registration) page to register your bot. This will get your app ID and password. Then, connect your bot to Cortana using the [Connect a bot to Cortana](https://docs.microsoft.com/azure/bot-service/bot-service-channel-connect-cortana) page. For this exercise, specify only the configuration settings listed in the **General bot information** section.
+If you successfully followed the steps in the table above, then you've already run your skill in the Bot Framework emulator. To run your skill locally in Cortana, there are two more steps. First, use the [Register a bot with Bot Service](/azure/bot-service/bot-service-quickstart-registration) page to register your bot. This will get your app ID and password. Then, connect your bot to Cortana using the [Connect a bot to Cortana](/azure/bot-service/bot-service-channel-connect-cortana) page. For this exercise, specify only the configuration settings listed in the **General bot information** section.
 
 Configuring your bot with the Cortana channel adds your skill to Cortana on your computer. To ensure the skill has been added, visit the [My Bot List Configured for Cortana](https://dev.botframework.com/bots?c=cortana) page. You must sign into Bot Framework using the same Microsoft account that you used to register your Cortana Skill in Azure.
 For information about specifying an invocation name, see [Invocation name guidelines](./cortana-invocation-guidelines.md).
@@ -71,11 +71,11 @@ If you have any issues, see [Testing and debugging Cortana skills](./test-debug.
 
 To design the perfect skill, see [Principles of Cortana skills design](./design-principles.md).
 
-To make your skill smart, add intelligence to your skill with [Cognitive Services](https://docs.microsoft.com/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-4.0). 
+To make your skill smart, add intelligence to your skill with [Cognitive Services](/azure/bot-service/bot-service-concept-intelligence?view=azure-bot-service-4.0). 
 
-To add UI elements, see [Add cards to your skill using Node.js](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0) or [Add cards to your skill using .NET](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0). Cortana supports [adaptive](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0#send-an-adaptive-card), hero, thumbnail, receipt, and sign-in cards. In addition to cards, Node.js users can use a set of built-in prompts ([Prompt for user input](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0)) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
+To add UI elements, see [Add cards to your skill using Node.js](/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0) or [Add cards to your skill using .NET](/azure/bot-service/dotnet/bot-builder-dotnet-add-rich-card-attachments?view=azure-bot-service-4.0). Cortana supports [adaptive](/azure/bot-service/nodejs/bot-builder-nodejs-send-rich-cards?view=azure-bot-service-4.0#send-an-adaptive-card), hero, thumbnail, receipt, and sign-in cards. In addition to cards, Node.js users can use a set of built-in prompts ([Prompt for user input](/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0)) to simplify collecting inputs from a user. For example, you can use the `choice` prompt to present a list of choices that the user can pick from, or you can use the `confirm` prompt to confirm an action. For a list of prompts, see [Prompt types](/azure/bot-service/nodejs/bot-builder-nodejs-dialog-prompt?view=azure-bot-service-4.0#prompt-types).
 
-To add natural language understanding to your skill, see [Recognize intents and entities with LUIS](https://docs.microsoft.com/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-4.0) for Node.js, or [Recognize intents and entities with LUIS](https://docs.microsoft.com/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-4.0) for .NET.
+To add natural language understanding to your skill, see [Recognize intents and entities with LUIS](/azure/bot-service/nodejs/bot-builder-nodejs-recognize-intent-luis?view=azure-bot-service-4.0) for Node.js, or [Recognize intents and entities with LUIS](/azure/bot-service/dotnet/bot-builder-dotnet-luis-dialogs?view=azure-bot-service-4.0) for .NET.
 
 To personalize your skill, see [Use the user's profile and contextual information](./get-user-profile-context.md).
 
