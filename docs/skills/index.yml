@@ -1,13 +1,13 @@
 ### YamlMime:Hub
 
 title: Cortana Skills documentation # < 60 chars
-summary: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. See below for links to related features.# < 160 chars
+summary: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. See below for links to related features. # < 160 chars
 
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
 metadata:
-  title: Cortana Skills documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # Required; article description that is displayed in search results. < 160 chars.
+  title: Cortana Skills Kit documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: cortana #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
   author: kbridge #Required; your GitHub user alias, with correct capitalization.
@@ -19,6 +19,10 @@ metadata:
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
+    # Card
+    - title: Speech, voice, and conversation in Windows 10
+      itemType: overview
+      url: /windows/apps/speech
     # Card
     - title: Learn about Cortana Skills Kit
       itemType: overview
