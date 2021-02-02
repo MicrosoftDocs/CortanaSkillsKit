@@ -1,7 +1,8 @@
 ### YamlMime:Hub
 
 title: Cortana Skills documentation # < 60 chars
-summary:  Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # < 160 chars
+summary: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. See below for links to related features.# < 160 chars
+
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
 metadata:
@@ -9,9 +10,9 @@ metadata:
   description: Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: cortana #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: mattwojo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mattwojo #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/12/2018 #Required; mm/dd/yyyy format.
+  author: kbridge #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kbridge #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/02/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
