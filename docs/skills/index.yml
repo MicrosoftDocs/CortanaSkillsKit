@@ -62,4 +62,7 @@ conceptualContent:
       links:
         - url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
           itemType: overview
-          text: Discussion
+          text: Cortana Skills discussion group
+        - url: mailto:skillpub@microsoft.com
+          itemType: overview
+          text: Questions?
