@@ -1,7 +1,7 @@
 ### YamlMime:Hub
 
-title: Cortana Skills documentation # < 60 chars
-summary: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. See below for links to related features. # < 160 chars
+title: Cortana Skills Kit documentation # < 60 chars
+summary: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. See below for links to some related features. # < 160 chars
 
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
@@ -24,46 +24,24 @@ highlightedContent:
       itemType: overview
       url: /windows/apps/speech
     # Card
-    - title: Learn about Cortana Skills Kit
+    - title: Cortana in Microsoft 365
+      itemType: concept
+      url: /microsoft-365/admin/misc/cortana-integration?view=o365-worldwide
+    # Card
+    - title: Azure AI
       itemType: overview
-      url: overview.md
-    # Card
-    - title: Create your first skill
-      itemType: get-started
-      url: get-started.md
-    # Card
-    - title: Personalize your skill
-      itemType: how-to-guide
-      url: get-user-profile-context.md
-    # Card
-    - title: Add authentication to your skill
-      itemType: how-to-guide
-      url: authentication.md
-    # Card
-    - title: Language Understanding
-      itemType: how-to-guide
-      url: /bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis
-    # Card
-    - title: Make your skill smarter
-      itemType: how-to-guide
-      url: /bot-framework/cognitive-services-bot-intelligence-overview
+      url: https://azure.microsoft.com/overview/ai-platform/
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Design Cortana Skills
+    - title: Microsoft 365 Blog
       links:
-        - url: design-principles.md
-          itemType: concept
-          text: Principles of Cortana skills design
-        - url: cortana-invocation-guidelines.md
-          itemType: concept
-          text: Invocation name guidelines
-        - url: performance-guidelines.md
-          itemType: concept
-          text: Skills performance guidelines
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/what-s-new-with-cortana-your-personal-productivity-assistant/ba-p/1675341
+          itemType: whats-new
+          text: What's new with Cortana, your personal productivity assistant
     # Card
     - title: Test Cortana Skills
       links:
