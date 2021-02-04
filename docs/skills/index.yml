@@ -57,12 +57,19 @@ conceptualContent:
         - url: https://azure.microsoft.com/en-us/services/bot-services/
           itemType: overview
           text: Azure Bot Services
-    # Card
-    - title: Resources
-      links:
-        - url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
-          itemType: overview
-          text: Cortana Skills discussion group
-        - url: mailto:skillpub@microsoft.com
-          itemType: overview
-          text: Questions?
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Resources # < 60 chars (optional)
+      summary: # < 160 chars (optional)
+      items:
+        # Card
+        - title: Cortana Skills discussion group
+          summary: cardsummary1
+          url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
+        # Card
+        - title: Questions?
+          summary: cardsummary2
+          url: mailto:skillpub@microsoft.com
