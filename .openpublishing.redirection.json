@@ -1,9 +1,9 @@
 {
   "redirections": [
     {
-      "source_path": "docs/structured-data-markup.md",
-      "redirect_url": "/cortana/data-markup/structured-data-markup",
-      "redirect_document_id": true
+      "source_path": "docs/data-markup/structured-data-markup.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md",
