@@ -65,10 +65,10 @@ additionalContent:
     - title: Resources # < 60 chars (optional)
       items:
         # Card
-        - title: Cortana Skills discussion group
-          summary: cardsummary1
+        - title: Discussion group
+          summary: Cortana Skills community
           url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
         # Card
         - title: Questions?
-          summary: cardsummary2
+          summary: Cortana Skills inbox
           url: mailto:skillpub@microsoft.com
