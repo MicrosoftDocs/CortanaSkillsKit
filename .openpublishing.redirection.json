@@ -6,7 +6,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "docs/media/*.md",
+      "source_path": "docs/skills/*.md",
       "redirect_url": "/cortana/skills",
       "redirect_document_id": false
     },
