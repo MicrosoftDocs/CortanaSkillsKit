@@ -69,6 +69,10 @@ additionalContent:
           summary: Cortana Skills community
           url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
         # Card
+        - title: Stack Overflow
+          summary: Get and share knowledge
+          url: https://stackoverflow.com/questions/tagged/cortana+cortana-skills-kit
+        # Card
         - title: Questions?
           summary: Cortana Skills inbox
           url: mailto:skillpub@microsoft.com
