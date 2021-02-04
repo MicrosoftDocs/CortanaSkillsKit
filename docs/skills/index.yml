@@ -25,7 +25,7 @@ highlightedContent:
       url: /windows/apps/speech
     # Card
     - title: Cortana in Microsoft 365
-      itemType: concept
+      itemType: overview
       url: /microsoft-365/admin/misc/cortana-integration?view=o365-worldwide
     # Card
     - title: Azure AI
@@ -41,7 +41,7 @@ conceptualContent:
       links:
         - url: /windows/uwp/design/input/cortana-interactions
           itemType: whats-new
-          text: Extend the basic functionality of Cortana with voice commands that launch and execute a single action in a Windows application.
+          text: Extend the basic functionality of Cortana with voice commands Windows apps.
     # Card
     - title: Microsoft 365 Blog
       links:
@@ -70,7 +70,7 @@ additionalContent:
           url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
         # Card
         - title: Stack Overflow
-          summary: Get and share knowledge
+          summary: More Cortana Skills community knowledge
           url: https://stackoverflow.com/questions/tagged/cortana+cortana-skills-kit
         # Card
         - title: Questions?
