@@ -63,7 +63,6 @@ additionalContent:
   # Supports up to 3 sections
   sections:
     - title: Resources # < 60 chars (optional)
-      summary:   # < 160 chars (optional)
       items:
         # Card
         - title: Cortana Skills discussion group
