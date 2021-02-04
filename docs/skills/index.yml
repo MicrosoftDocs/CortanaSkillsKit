@@ -1,17 +1,18 @@
 ### YamlMime:Hub
 
-title: Cortana Skills documentation # < 60 chars
-summary:  Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # < 160 chars
+title: Cortana Skills Kit (DEPRECATED) # < 60 chars
+summary: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. See below for links to some related features. # < 160 chars
+
 # brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
 
 metadata:
-  title: Cortana Skills documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Extend Cortana by adding your own skills that let your users interact with your service via Cortana. # Required; article description that is displayed in search results. < 160 chars.
+  title: Cortana Skills Kit documentation (DEPRECATED) # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: The Cortana Skills Kit for consumer and enterprise, and the skills built on these platforms, have been deprecated. # Required; article description that is displayed in search results. < 160 chars.
   ms.service: cortana #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.topic: hub-page # Required
-  author: mattwojo #Required; your GitHub user alias, with correct capitalization.
-  ms.author: mattwojo #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/12/2018 #Required; mm/dd/yyyy format.
+  author: kbridge #Required; your GitHub user alias, with correct capitalization.
+  ms.author: kbridge #Required; microsoft alias of author; optional team alias.
+  ms.date: 02/02/2020 #Required; mm/dd/yyyy format.
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -19,94 +20,59 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Learn about Cortana Skills Kit
+    - title: Speech, voice, and conversation in Windows 10
       itemType: overview
-      url: overview.md
+      url: /windows/apps/speech
     # Card
-    - title: Create your first skill
-      itemType: get-started
-      url: get-started.md
+    - title: Cortana in Microsoft 365
+      itemType: overview
+      url: /microsoft-365/admin/misc/cortana-integration?view=o365-worldwide
     # Card
-    - title: Personalize your skill
-      itemType: how-to-guide
-      url: get-user-profile-context.md
-    # Card
-    - title: Add authentication to your skill
-      itemType: how-to-guide
-      url: authentication.md
-    # Card
-    - title: Language Understanding
-      itemType: how-to-guide
-      url: /bot-framework/nodejs/bot-builder-nodejs-recognize-intent-luis
-    # Card
-    - title: Make your skill smarter
-      itemType: how-to-guide
-      url: /bot-framework/cognitive-services-bot-intelligence-overview
+    - title: Azure AI
+      itemType: overview
+      url: https://azure.microsoft.com/overview/ai-platform/
 
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Design Cortana Skills
+    - title: Cortana interactions in Windows apps
       links:
-        - url: design-principles.md
-          itemType: concept
-          text: Principles of Cortana skills design
-        - url: cortana-invocation-guidelines.md
-          itemType: concept
-          text: Invocation name guidelines
-        - url: performance-guidelines.md
-          itemType: concept
-          text: Skills performance guidelines
+        - url: /windows/uwp/design/input/cortana-interactions
+          itemType: whats-new
+          text: Extend the basic functionality of Cortana with voice commands Windows apps.
     # Card
-    - title: Test Cortana Skills
+    - title: Microsoft 365 Blog
       links:
-        - url: test-debug.md
-          itemType: how-to-guide
-          text: Testing and debugging Cortana Skills
-        - url: known-issues.md
-          itemType: concept
-          text: Known Issues
+        - url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/what-s-new-with-cortana-your-personal-productivity-assistant/ba-p/1675341
+          itemType: whats-new
+          text: What's new with Cortana, your personal productivity assistant
     # Card
-    - title: Publish Cortana Skills
+    - title: AI apps and agents
       links:
-        - url: publish-skill.md
-          itemType: how-to-guide
-          text: Publishing Cortana skills
-        - url: skill-review-guidelines.md
-          itemType: concept
-          text: Cortana skills certification requirements
-    # Card
-    - title: Reference
-      links:
-        - url: speech-synthesis-markup-language.md
-          itemType: reference
-          text: Speech Synthesis Markup Language
-        - url: user-profile-contextual-info.md
-          itemType: reference
-          text: Cortana user profile and contextual information
-        - url: supported-locales.md
-          itemType: reference
-          text: Supported Cortana locales
-    # Card
-    - title: Resources
-      links:
-        - url: cortana-support.md
+        - url: https://azure.microsoft.com/services/cognitive-services/
           itemType: overview
-          text: Speech Synthesis Markup Language
-        - url: faq.md
+          text: Azure Cognitive Services
+        - url: https://azure.microsoft.com/en-us/services/bot-services/
           itemType: overview
-          text: FAQs
-        - url: terms-of-use.md
-          itemType: concept
-          text: Terms of Use
-        - url: privacy-policy-guidelines.md
-          itemType: concept
-          text: Privacy Policy
-        - url: /cortana/skills/cortana-samples
-          itemType: sample
-          text: Samples
-        - url: https://techcommunity.microsoft.com/t5/cortana-skills-kit-blog/bg-p/cortanaskillskit
-          itemType: overview
-          text: Blog
+          text: Azure Bot Services
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 3 sections
+  sections:
+    - title: Resources # < 60 chars (optional)
+      items:
+        # Card
+        - title: Discussion group
+          summary: Cortana Skills community
+          url: https://techcommunity.microsoft.com/t5/cortana-skills/ct-p/cortanadev
+        # Card
+        - title: Stack Overflow
+          summary: More Cortana Skills community knowledge
+          url: https://stackoverflow.com/questions/tagged/cortana+cortana-skills-kit
+        # Card
+        - title: Questions?
+          summary: Cortana Skills inbox
+          url: mailto:skillpub@microsoft.com
