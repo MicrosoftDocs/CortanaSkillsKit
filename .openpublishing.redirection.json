@@ -6,6 +6,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/media/*.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md",
       "redirect_url": "/cortana/skills/authentication",
       "redirect_document_id": true
