@@ -30,6 +30,26 @@
       "redirect_url": "/cortana/skills",
       "redirect_document_id": false
     },
+    {
+      "source_path": "docs/skills/design-principles.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/building-hybrid-user-interfaces.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/cortana-invocation-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/performance-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
 
 
 
