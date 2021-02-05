@@ -50,6 +50,41 @@
       "redirect_url": "/cortana/skills",
       "redirect_document_id": false
     },
+    {
+      "source_path": "docs/skills/cortana-device-type.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/cortana-channel-data.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/get-user-profile-context.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/adaptive-cards.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/launch-apps-from-skills.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/authentication.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/audio-streaming.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
 
 
 
