@@ -1,10 +1,244 @@
 {
   "redirections": [
     {
-      "source_path": "docs/structured-data-markup.md",
-      "redirect_url": "/cortana/data-markup/structured-data-markup",
-      "redirect_document_id": true
+      "source_path": "docs/data-markup/structured-data-markup.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
     },
+    {
+      "source_path": "docs/skills/overview.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/third-party-deprecation.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/get-started.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/adding-speech.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/configure-connected-account.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/design-principles.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/building-hybrid-user-interfaces.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/cortana-invocation-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/performance-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/cortana-device-type.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/cortana-channel-data.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/get-user-profile-context.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/adaptive-cards.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/launch-apps-from-skills.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/authentication.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/audio-streaming.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva21-setup.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva22-hello-world.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva31-understanding-conversations.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/show-progress.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/test-debug.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/known-issues.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/skill-review-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/publish-skill.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/pub-default-settings.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/pub-developer-settings.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/pub-test-settings.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/pub-world-settings.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/speech-synthesis-markup-language.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/user-profile-contextual-info.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/supported-locales.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/cortana-support.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/faq.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/terms-of-use.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/privacy-policy-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "docs/skills/mva32-building-conversations.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva41-streaming-audio.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva42-visual-ux.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva43-client-code.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva51-profile-data.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva52-using-profile-data.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva61-authentication.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva71-share-skill.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva72-publish-skill.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
     {
       "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md",
       "redirect_url": "/cortana/skills/authentication",
