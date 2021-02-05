@@ -85,6 +85,36 @@
       "redirect_url": "/cortana/skills",
       "redirect_document_id": false
     },
+    {
+      "source_path": "docs/skills/mva21-setup.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva22-hello-world.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/mva31-understanding-conversations.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/show-progress.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/test-debug.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/known-issues.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
 
 
 
