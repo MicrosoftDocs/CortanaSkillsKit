@@ -11,6 +11,38 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/skills/third-party-deprecation.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/get-started.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/adding-speech.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/skills/configure-connected-account.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
       "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md",
       "redirect_url": "/cortana/skills/authentication",
       "redirect_document_id": true
