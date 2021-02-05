@@ -227,18 +227,21 @@
       "redirect_url": "/cortana/skills",
       "redirect_document_id": false
     },
-
-
-
-
-
-
-
-
-
-
-
-
+    {
+      "source_path": "docs/media/archive/skills/cortana-design-guidelines.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/media/archive/skills/cortana-samples.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/media/archive/skills/cortanas-persona.md",
+      "redirect_url": "/cortana/skills",
+      "redirect_document_id": false
+    },
     {
       "source_path": "docs/tutorials/bot-skills/bot-skill-auth.md",
       "redirect_url": "/cortana/skills/authentication",
