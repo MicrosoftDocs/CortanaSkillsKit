@@ -37,7 +37,6 @@
     "globalMetadata": {
       "breadcrumb_path": "/cortana/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "uhfHeaderId": "MSDocsHeader-Cortana",
       "titleSuffix": "Cortana",
       "ms.prod": "cortana",
       "ms.date": "09/11/2018",
