@@ -1,9 +1,8 @@
-
 # Cortana Skill Kit  
 
-## [Overview](../skills/overview.md)  
+## [Overview](../skills/index.yml)  
 
 # Additional Cortana APIs  
 
 ## Structured Data Markup  
-### [Overview](./structured-data-markup.md)  
+### [Overview](../skills/index.yml)

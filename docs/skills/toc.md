@@ -1,57 +1,56 @@
-
 # Cortana Skills Kit  
 
-## [Developer notification](./third-party-deprecation.md)
-## [Overview](./overview.md)  
+## [Developer notification](./index.yml)
+## [Overview](./index.yml)  
 
 ## Quickstarts  
-### [Create your first skill](./get-started.md)  
-### [Add speech](./adding-speech.md)  
-### [Add services](./configure-connected-account.md)  
+### [Create your first skill](./index.yml)  
+### [Add speech](./index.yml)  
+### [Add services](./index.yml)  
 
 ## Skills design  
-### [Principles of Cortana skills design](./design-principles.md)  
-### [Building hybrid user interfaces](./building-hybrid-user-interfaces.md)
-### [Invocation name guidelines](./cortana-invocation-guidelines.md)  
-### [Performance guidelines](./performance-guidelines.md)  
+### [Principles of Cortana skills design](./index.yml)  
+### [Building hybrid user interfaces](./index.yml)
+### [Invocation name guidelines](./index.yml)  
+### [Performance guidelines](./index.yml)  
 
 ## How-to guides  
-### [Determine device type](./cortana-device-type.md)  
-### [Get Cortana channel data](./cortana-channel-data.md)  
-### [Get user profile and context](./get-user-profile-context.md)  
-### [Use Adaptive Cards in your skill](./adaptive-cards.md)  
-### [Launch apps or websites](./launch-apps-from-skills.md)  
-### [Adding authentication to your skill](./authentication.md)  
-### [Play audio files](./audio-streaming.md)  
+### [Determine device type](./index.yml)  
+### [Get Cortana channel data](./index.yml)  
+### [Get user profile and context](./index.yml)  
+### [Use Adaptive Cards in your skill](./index.yml)  
+### [Launch apps or websites](./index.yml)  
+### [Adding authentication to your skill](./index.yml)  
+### [Play audio files](./index.yml)  
 
 ## Tutorials  
-### [Set up your developer environment](./mva21-setup.md)  
-### [Create your first Cortana skill](./mva22-hello-world.md)  
-### [Understanding types of conversations](./mva31-understanding-conversations.md)
-### [Showing progress to the user](./show-progress.md)  
+### [Set up your developer environment](./index.yml)  
+### [Create your first Cortana skill](./index.yml)  
+### [Understanding types of conversations](./index.yml)
+### [Showing progress to the user](./index.yml)  
 
 ## Test skills  
-### [Test and debug](./test-debug.md)  
-### [Known issues](./known-issues.md)  
+### [Test and debug](./index.yml)  
+### [Known issues](./index.yml)  
 
 ## Publish skills  
-### [Review guidelines](./skill-review-guidelines.md)  
-### [Publish Cortana Skills](./publish-skill.md)
-#### [Default settings](./pub-default-settings.md)
-#### [Developer settings](./pub-developer-settings.md)
-#### [Test settings](./pub-test-settings.md)
-#### [World settings](./pub-world-settings.md)
+### [Review guidelines](./index.yml)  
+### [Publish Cortana Skills](./index.yml)
+#### [Default settings](./index.yml)
+#### [Developer settings](./index.yml)
+#### [Test settings](./index.yml)
+#### [World settings](./index.yml)
 
 ## Reference  
-### [Speech Synthesis Markup Language (SSML) Reference](./speech-synthesis-markup-language.md)  
-### [User Profile and Contextual Information](./user-profile-contextual-info.md)  
-### [Supported Locales](./supported-locales.md)  
+### [Speech Synthesis Markup Language (SSML) Reference](./index.yml)  
+### [User Profile and Contextual Information](./index.yml)  
+### [Supported Locales](./index.yml)  
 
 ## Resources  
-### [Support](./cortana-support.md)  
-### [FAQ](./faq.md)  
-### [Terms of use sample](./terms-of-use.md)  
-### [Privacy policy guidelines](./privacy-policy-guidelines.md)  
+### [Support](./index.yml)  
+### [FAQ](./index.yml)  
+### [Terms of use sample](./index.yml)  
+### [Privacy policy guidelines](./index.yml)  
 
 # Cortana SDK
 ## [Cortana for Devices](https://developer.microsoft.com/cortana/devices)

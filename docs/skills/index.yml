@@ -41,7 +41,7 @@ conceptualContent:
       links:
         - url: /windows/uwp/design/input/cortana-interactions
           itemType: whats-new
-          text: Extend the basic functionality of Cortana with voice commands Windows apps.
+          text: Extend the basic functionality of Cortana with voice commands in Windows apps.
     # Card
     - title: Microsoft 365 Blog
       links:
